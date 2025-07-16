@@ -11,6 +11,7 @@ from dotenv import find_dotenv, load_dotenv
 from openai import OpenAI
 from firebase import db
 from plan_research_task import plan_research_task, save_plan_to_firebase
+from context_vectore_store import ContextVectorStore
 from terminal_aesthetics import Spinner
 from url_scraper import read_website_fast, read_website_full, extract_information
 from aggregate import execute_aggregate
@@ -36,6 +37,8 @@ class TaskDispatcher:
     def __init__(self):
         self.plans_col = db.collection("research_plans")
         self.openai    = OpenAI(api_key=OPENAI_API_KEY)
+        # RAG vector store for context retrieval
+        self.vector_store = ContextVectorStore()
 
     # ——— History ———
 
@@ -136,7 +139,16 @@ class TaskDispatcher:
 
         self.save_results(plan_id, sub["id"], deduped)
         print(f"\r   ✓ [search] fetched {len(deduped)} URLs{' '*10}")
-
+        
+        # --- Summarize & store context ---
+        summary = (
+            f"Search subtask {sub['id']} returned {len(deduped)} URLs: "
+            f"{', '.join(d['url'] for d in deduped[:5])} ..."
+        )
+        self.vector_store.add(
+            summary,
+            metadata={"plan_id": plan_id, "subtask_id": sub["id"], "type": "search"}
+        )
     # ——— Scrape ———
 
     def execute_scrape(self, plan_id: str, sub: dict):
@@ -221,7 +233,7 @@ class TaskDispatcher:
 
     # ——— Validate ———
 
-    def _gpt_rank_results(self, plan_id, items, threshold):
+    def _gpt_rank_results(self, plan_id, items, threshold, sub):
         """
         Batch the items into chunks and call GPT-4 on each to avoid context overflow.
         Returns a final deduped + sorted list of {title,snippet,url,score}.
@@ -229,6 +241,9 @@ class TaskDispatcher:
         plan    = self.plans_col.document(plan_id).get().to_dict()
         goal    = plan["goal"]
         system_msg = {"role":"system", "content":"You apply scoring heuristics precisely."}
+        # Retrieve top-5 relevant summaries for this goal
+        context_snippets = self.vector_store.query(goal, top_k=5)
+        context_block    = "\n\n".join(context_snippets)
 
         batch_size = 20
         all_ranked = []
@@ -238,6 +253,7 @@ class TaskDispatcher:
             items_json = json.dumps(batch, indent=2)
 
             user_prompt = (
+                f"Context from past subtasks:\n{context_block}\n\n"
                 f"Research goal:\n  \"{goal}\"\n\n"
                 f"Batch {start//batch_size+1} of {((len(items)-1)//batch_size)+1}, "
                 f"{len(batch)} results:\n{items_json}\n\n"
@@ -260,7 +276,8 @@ class TaskDispatcher:
                 ).choices[0].message.content
 
             # self._append_history(plan_id, "assistant", resp)
-
+            
+            
             try:
                 partial = json.loads(resp)
             except json.JSONDecodeError:
@@ -269,6 +286,15 @@ class TaskDispatcher:
 
         # Dedupe by URL
         seen, unique = set(), []
+        
+        # Summarize validation results for context
+        val_summary = (
+            f"Validate subtask filtered to {len(unique)} URLs above threshold {threshold}."
+        )
+        self.vector_store.add(
+            val_summary,
+            metadata={"plan_id": plan_id, "subtask_id": sub.get("id"), "type": "validate"}
+        )
         for item in all_ranked:
             url = item.get("url")
             if url and url not in seen:
@@ -289,12 +315,19 @@ class TaskDispatcher:
             print(f"   ⚠️ [validate] no items for {sub['id']}")
             return
 
-        ranked = self._gpt_rank_results(plan_id, items, threshold)
+        ranked = self._gpt_rank_results(plan_id, items, threshold, sub)
         # now drop malformed URLs
         filtered = [i for i in ranked if is_valid_url(i.get("url",""))]
 
         self.save_results(plan_id, sub["id"], filtered)
         print(f"\r   ✓ [validate] {len(filtered)} passed (thr={threshold}){' '*10}")
+        
+        # Summarize & store
+        summary = f"Validate subtask {sub['id']} yielded {len(filtered)} valid URLs."
+        self.vector_store.add(
+            summary,
+            metadata={"plan_id": plan_id, "subtask_id": sub["id"], "type": "validate"}
+        )
 
     # ——— API Stub ———
 
@@ -318,6 +351,14 @@ class TaskDispatcher:
 
         # 2) Save into Firestore under research_plans/{plan_id}/results/{sub_id}
         self.save_results(plan_id, sub["id"], final_items)
+        # Summarize & store
+        summary = (
+          f"Aggregate subtask {sub['id']} consolidated {len(final_items)} items."
+        )
+        self.vector_store.add(
+            summary,
+            metadata={"plan_id": plan_id, "subtask_id": sub["id"], "type": "aggregate"}
+        )
 
         # 3) Log
         print(f"   ✓ [aggregate] saved {len(final_items)} items for subtask {sub['id']}")

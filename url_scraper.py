@@ -16,12 +16,16 @@ if dotenv_path:
 _client = OpenAI(api_key=os.getenv("OPENAI_RANDY_KEY"))
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-2025-04-14")
 
-def _chunk_text_for_model(text: str, max_tokens: int, model: str):
+def _chunk_text_for_model(text: str, max_tokens: int, model: str = OPENAI_MODEL):
     """
     Yield substrings of `text` each ≲ max_tokens (by token count), 
     using the model’s own tokenizer.
     """
-    enc = tiktoken.encoding_for_model(model)
+    try:
+        enc = tiktoken.encoding_for_model(model)
+    except KeyError:
+        # fallback for unknown model names like 'gpt-4.1-2025-04-14'
+        enc = tiktoken.get_encoding("cl100k_base")
     toks = enc.encode(text)
     for i in range(0, len(toks), max_tokens):
         yield enc.decode(toks[i : i+max_tokens])
