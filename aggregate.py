@@ -1,29 +1,39 @@
 import os
 import json
 import math
+import numpy as np
 
 from dotenv import find_dotenv, load_dotenv
 from openai import OpenAI
 from terminal_aesthetics import Spinner
 from firebase import db
+from context_vector_store import ContextVectorStore
 
 # ——— Environment & Clients ———
 dotenv_path = find_dotenv()
 if dotenv_path:
     load_dotenv(dotenv_path)
 
-plans_col   = db.collection("research_plans")
-openai      = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-MODEL       = os.getenv("OPENAI_MODEL", "gpt-4")
+plans_col    = db.collection("research_plans")
+openai       = OpenAI(api_key=os.getenv("OPENAI_RANDY_KEY"))
+MODEL        = os.getenv("OPENAI_MODEL", "gpt-4")
+
+# ——— Vector Store for RAG & Duplicate Detection ———
+vector_store = ContextVectorStore()
 
 def execute_aggregate(plan_id: str, subtask: dict):
     """
-    Consolidate all scrape outputs via GPT-4 in chunks.
-    Params:
-      subtask["params"]["source_subtasks"]: list of validate subtask IDs
-    Saves final deduped list under results/{subtask_id}.
+    1) Gather all scrape outputs.
+    2) Retrieve past aggregate summary from vector store for context.
+    3) Batch‐wise GPT consolidation with prior context to avoid duplicates.
+    4) Approximate dedupe via embeddings.
+    5) Persist results and store new summary to vector store.
     """
-    # 1) Gather all scraped items from the named subtasks
+    # load goal
+    plan = plans_col.document(plan_id).get().to_dict() or {}
+    goal = plan.get("goal", "")
+
+    # 1) Gather scraped items
     sources   = subtask["params"].get("source_subtasks", [])
     coll      = plans_col.document(plan_id).collection("results")
     all_items = []
@@ -32,38 +42,44 @@ def execute_aggregate(plan_id: str, subtask: dict):
         all_items.extend(doc.get("results", []))
 
     if not all_items:
-        print(f"   ⚠️ No items to aggregate for subtask {subtask['id']}")
+        print(f"   ⚠️ No items to aggregate for {subtask['id']}")
         return []
 
-    # 2) Determine batch size to keep each payload ≲ ~2000 tokens
-    #    Rough heuristic: assume 100 items ≈ 2000 tokens
-    batch_size = 100
+    # 2) Retrieve last aggregate summary for context
+    past_summaries = vector_store.query(goal, top_k=1)
+    context_block  = past_summaries[0] if past_summaries else ""
+
+    # 3) Batch‐wise GPT consolidation
+    batch_size  = 100
     num_batches = math.ceil(len(all_items) / batch_size)
     consolidated = []
 
-    # 3) Process each batch
     for idx in range(num_batches):
-        chunk = all_items[idx*batch_size : (idx+1)*batch_size]
+        chunk      = all_items[idx*batch_size : (idx+1)*batch_size]
         chunk_json = json.dumps(chunk, indent=2)
 
-        user_prompt = f"""
-                        You are finalizing the research goal:
-                        "{plans_col.document(plan_id).get().to_dict().get('goal')}"
+        prompt = f"""
+Previously aggregated summary:
+{context_block or 'None'}
 
-                        Here is batch {idx+1}/{num_batches} containing {len(chunk)} items:
-                        {chunk_json}
+You are finalizing the research goal:
+  "{goal}"
 
-                        Please deduplicate within this batch and return a JSON array of objects
-                        with keys "name" and "address" (or other fields relevant to the goal).
-                        Do NOT include duplicates. Output raw JSON only.
-                    """
+Here is batch {idx+1}/{num_batches} containing {len(chunk)} items:
+{chunk_json}
 
+Please deduplicate within this batch—and avoid any items already mentioned above.
+Return a JSON array of objects with keys "name" and "address" relevant to the goal.
+Output raw JSON only.
+"""
+        print("Here's the prompt for batch consolidation:")
+        print(prompt)
         with Spinner(f"[{subtask['id']}] Aggregating batch {idx+1}"):
             resp = openai.chat.completions.create(
                 model=MODEL,
                 messages=[
-                    {"role": "system",  "content": "You consolidate scraped data into a list."},
-                    {"role": "user",    "content": user_prompt}
+                    {"role":"system", "content":"You consolidate scraped data into a list without repeats."},
+                    {"role":"user",   "content":prompt}
                 ],
                 temperature=0.0
             ).choices[0].message.content
@@ -71,25 +87,52 @@ def execute_aggregate(plan_id: str, subtask: dict):
         try:
             partial = json.loads(resp)
         except json.JSONDecodeError:
-            print(f"   ⚠️ Failed to parse batch {idx+1} response, skipping")
+            print(f"   ⚠️ Batch {idx+1} parse failed, skipping")
             partial = []
 
         consolidated.extend(partial)
 
-    # 4) Global deduplication across batches
-    seen, final_items = set(), []
+    # 4) Approximate dedupe via embeddings
+    seen_embeddings = []
+    final_items     = []
     for item in consolidated:
-        key = json.dumps(item, sort_keys=True)
-        if key not in seen:
-            seen.add(key)
-            final_items.append(item)
+        name    = item.get("name","").strip()
+        address = item.get("address","").strip()
+        text    = f"{name} {address}"
+        if not text:
+            continue
 
-    # 5) Persist results
+        vec = vector_store.model.encode(text)
+        if seen_embeddings:
+            sims = np.dot(seen_embeddings, vec) / (
+                np.linalg.norm(seen_embeddings, axis=1) * np.linalg.norm(vec)
+            )
+            if np.max(sims) > 0.9:
+                continue
+
+        final_items.append(item)
+        seen_embeddings.append(vec)
+
+    # 5) Persist final results
     plans_col \
       .document(plan_id) \
       .collection("results") \
       .document(subtask["id"]) \
       .set({"results": final_items})
 
-    print(f"\r   ✓ [aggregate] {len(final_items)} total items saved{' ' * 10}")
+    # 6) Store new summary in vector store
+    summary = (
+        f"Aggregate subtask {subtask['id']} produced "
+        f"{len(final_items)} unique items: "
+        + ", ".join(i["name"] for i in final_items[:5])
+        + "..."
+    )
+    print("Here's the summary of the aggregation:")
+    print(summary)
+    vector_store.add(
+        summary,
+        metadata={"plan_id": plan_id, "subtask_id": subtask["id"], "type": "aggregate"}
+    )
+
+    print(f"\r   ✓ [aggregate] {len(final_items)} total unique items saved{' '*10}")
     return final_items

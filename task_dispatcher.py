@@ -11,10 +11,11 @@ from dotenv import find_dotenv, load_dotenv
 from openai import OpenAI
 from firebase import db
 from plan_research_task import plan_research_task, save_plan_to_firebase
-from context_vectore_store import ContextVectorStore
+from context_vector_store import ContextVectorStore
 from terminal_aesthetics import Spinner
 from url_scraper import read_website_fast, read_website_full, extract_information
 from aggregate import execute_aggregate
+from semantic_ranker import load_model, rank_results_by_similarity
 
 # ——— Env Setup ———
 dotenv_path = find_dotenv()
@@ -39,6 +40,8 @@ class TaskDispatcher:
         self.openai    = OpenAI(api_key=OPENAI_API_KEY)
         # RAG vector store for context retrieval
         self.vector_store = ContextVectorStore()
+        # Load semantic model for ranking
+        self.semantic_model = load_model()
 
     # ——— History ———
 
@@ -145,6 +148,8 @@ class TaskDispatcher:
             f"Search subtask {sub['id']} returned {len(deduped)} URLs: "
             f"{', '.join(d['url'] for d in deduped[:5])} ..."
         )
+        print("   → Summary: ", end="")
+        print(f"   → {summary}")
         self.vector_store.add(
             summary,
             metadata={"plan_id": plan_id, "subtask_id": sub["id"], "type": "search"}
@@ -244,7 +249,7 @@ class TaskDispatcher:
         # Retrieve top-5 relevant summaries for this goal
         context_snippets = self.vector_store.query(goal, top_k=5)
         context_block    = "\n\n".join(context_snippets)
-
+        print(f"   → Context for validation: {context_block[:100]}...")
         batch_size = 20
         all_ranked = []
 
@@ -304,6 +309,29 @@ class TaskDispatcher:
         # Final sort
         unique.sort(key=lambda x: x["score"], reverse=True)
         return unique
+    
+    def _semantic_rank_results(self, plan_id, items, threshold, sub):
+        """
+        Use semantic similarity to rank items against the goal.
+        Returns a final deduped + sorted list of {title,snippet,url,similarity_score}.
+        """
+        # load goal
+        goal = self.plans_col.document(plan_id).get().to_dict().get("goal", "")
+        print(f"   → Semantic ranking against goal: {goal!r}")
+
+        # rank via vector similarity
+        ranked = rank_results_by_similarity(
+            results=items,
+            query=goal,
+            model=self.semantic_model,
+            threshold=threshold,
+            top_k=None
+        )
+
+        # normalize key name to 'score'
+        for entry in ranked:
+            entry["score"] = entry.pop("similarity_score", 0.0)
+        return ranked
 
     def execute_validate(self, plan_id, sub):
         p, coll = sub["params"], self.plans_col.document(plan_id).collection("results")
@@ -315,7 +343,8 @@ class TaskDispatcher:
             print(f"   ⚠️ [validate] no items for {sub['id']}")
             return
 
-        ranked = self._gpt_rank_results(plan_id, items, threshold, sub)
+        # ranked = self._gpt_rank_results(plan_id, items, threshold, sub)
+        ranked = self._semantic_rank_results(plan_id, items, threshold, sub)
         # now drop malformed URLs
         filtered = [i for i in ranked if is_valid_url(i.get("url",""))]
 

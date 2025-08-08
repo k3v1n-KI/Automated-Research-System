@@ -49,8 +49,8 @@ def plan_research_task(task_description: str) -> dict:
     user_prompt = (
         f"The research goal is: \"{task_description}\".\n"
         "1. Generate **2–4 diverse search query variations** for broad coverage.\n"
-        "2. Create a **search** subtask using those query_variations and a limit of 15.\n"
-        "3. Create a **validate** subtask that cross-references the search subtask results with a threshold of 3.0.\n"
+        "2. Create a **search** subtask using those query_variations and a limit of 25.\n"
+        "3. Create a **validate** subtask that cross-references the search subtask results with a threshold of 0.6.\n"
         "4. For **each URL** returned by the validate subtask, create a **scrape** subtask:\n"
         "   - The scrape subtask should fetch and clean the page, then extract any new items relevant to the original goal.\n"
         "   - Use params: {\"url\": <that URL>, \"source_subtasks\": [<validate subtask id>]}\n"

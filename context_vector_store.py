@@ -29,8 +29,17 @@ class ContextVectorStore:
 
     def query(self, text: str, top_k: int = 5) -> list[str]:
         """
-        Embed `text` and return the top_k most relevant summary_texts.
+        Embed `text` and return the top_k most relevant summary_texts,
+        filtering out invalid indices (-1) and any out-of-range results.
         """
+        if not self.stored:
+            return []
         vec = self.model.encode(text)
         D, I = self.index.search(np.array([vec], dtype="float32"), top_k)
-        return [self.stored[i][0] for i in I[0] if i < len(self.stored)]
+        results = []
+        for idx in I[0]:
+            if idx < 0 or idx >= len(self.stored):
+                continue
+            summary, _meta = self.stored[idx]
+            results.append(summary)
+        return results
