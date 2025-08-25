@@ -27,20 +27,21 @@ def plan_research_task(task_description: str) -> dict:
         "You are an expert research assistant.  Output a single JSON object (no markdown, no extra text) "
         "with this exact schema:\n"
         "{\n"
-        '  "goal": string,           # the overall research goal\n'
-        '  "plan_id": string,        # unique identifier\n'
+        '  "goal": string,\n'
+        '  "plan_id": string,\n'
         '  "subtasks": [\n'
         "    {\n"
-        '      "id": string,         # unique per subtask\n'
-        '      "type": string,       # one of "search","validate","scrape","aggregate"\n'
+        '      "id": string,\n'
+        '      "type": string,       # one of "search","validate","refine","scrape","aggregate"\n'
         '      "description": string,\n'
-        '      "params": object      # exactly the schema for its type\n'
+        '      "params": object\n'
         "    }\n"
         "  ]\n"
         "}\n\n"
         "PARAM SCHEMA (params must match exactly):\n"
         "  • search   → {\"query_variations\": [string], \"limit\": integer}\n"
         "  • validate → {\"source_subtasks\": [string], \"threshold\": number}\n"
+        "  • refine   → {\"source_subtasks\": [string], \"max_new_queries\": integer}\n"
         "  • scrape   → {\"url\": string, \"source_subtasks\": [string]}\n"
         "  • aggregate→ {\"source_subtasks\": [string], \"output_format\": string}\n"
         "No other keys are allowed in params."
@@ -50,21 +51,21 @@ def plan_research_task(task_description: str) -> dict:
         f"The research goal is: \"{task_description}\".\n"
         "1. Generate **2–4 diverse search query variations** for broad coverage.\n"
         "2. Create a **search** subtask using those query_variations and a limit of 25.\n"
-        "3. Create a **validate** subtask that cross-references the search subtask results with a threshold of 0.6.\n"
+        "3. Create a **validate** subtask that cross-references the search subtask results with a **threshold of 0.6** (semantic similarity scale 0–1).\n"
+        "3.5 Create a **refine** subtask that proposes **additional queries to cover gaps** (missed cities/regions, underrepresented domains) based on the validate results.\n"
+        "    Use params: {\"source_subtasks\": [<validate subtask id>], \"max_new_queries\": 8}.\n"
         "4. For **each URL** returned by the validate subtask, create a **scrape** subtask:\n"
-        "   - The scrape subtask should fetch and clean the page, then extract any new items relevant to the original goal.\n"
-        "   - Use params: {\"url\": <that URL>, \"source_subtasks\": [<validate subtask id>]}\n"
-        "5. Finally, add an **aggregate** subtask that combines all scrape outputs into your desired output_format (e.g. JSON list).\n"
+        "   - Fetch/clean the page using paragraph-based chunking (~3000 chars), then extract items relevant to the goal.\n"
+        "   - Use params: {\"url\": <URL>, \"source_subtasks\": [<validate subtask id>]}\n"
+        "5. Add an **aggregate** subtask that combines all scrape outputs into your desired output_format (e.g., JSON list of {name,address}).\n"
         "\n"
-        "When extracting or describing, refer to the goal generically (e.g. “extract items relevant to the research goal”)—do not hardcode specific entity names."
+        "When extracting or describing, refer to the goal generically (e.g. “extract items relevant to the research goal”)."
     )
 
     resp = client.chat.completions.create(
         model=OPENAI_MODEL,
-        messages=[
-            {"role": "system",  "content": system_prompt},
-            {"role": "user",    "content": user_prompt}
-        ],
+        messages=[{"role": "system", "content": system_prompt},
+                  {"role": "user",   "content": user_prompt}],
         temperature=0.3,
     )
 
@@ -72,15 +73,7 @@ def plan_research_task(task_description: str) -> dict:
     plan["plan_id"] = str(uuid4())
     return plan
 
-# ——— Firebase Storage Function ———
 def save_plan_to_firebase(plan: dict):
-    """
-    Persists the plan dict into Firestore under collection 'research_plans'.
-    Document ID will be plan['plan_id'].
-    """
     plan_id = plan.get("plan_id") or str(uuid4())
-    doc_ref = db.collection("research_plans").document(plan_id)
-    plan["dispatched"] = False
-    doc_ref.set(plan)
+    db.collection("research_plans").document(plan_id).set({**plan, "dispatched": False})
     print(f"Saved plan {plan_id} to Firestore.")
-
