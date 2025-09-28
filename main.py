@@ -9,6 +9,7 @@ sudo docker compose up -d
 
 """
 
-task = "Find a list of hospitals in Ontario."
-dispatcher = TaskDispatcher()
-dispatcher.dispatch(task)
+if __name__ == "__main__":
+    task = "Find a list of hospitals in Ontario."
+    dispatcher = TaskDispatcher()
+    dispatcher.run(task)  

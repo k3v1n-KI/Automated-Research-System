@@ -72,8 +72,8 @@ Please deduplicate within this batch—and avoid any items already mentioned abo
 Return a JSON array of objects with keys "name" and "address" relevant to the goal.
 Output raw JSON only.
 """
-        print("Here's the prompt for batch consolidation:")
-        print(prompt)
+        # print("Here's the prompt for batch consolidation:")
+        # print(prompt)
         with Spinner(f"[{subtask['id']}] Aggregating batch {idx+1}"):
             resp = openai.chat.completions.create(
                 model=MODEL,
@@ -96,8 +96,11 @@ Output raw JSON only.
     seen_embeddings = []
     final_items     = []
     for item in consolidated:
-        name    = item.get("name","").strip()
-        address = item.get("address","").strip()
+        try:
+            name    = item.get("name","").strip()
+            address = item.get("address","").strip()
+        except AttributeError:
+            continue
         text    = f"{name} {address}"
         if not text:
             continue
@@ -127,8 +130,8 @@ Output raw JSON only.
         + ", ".join(i["name"] for i in final_items[:5])
         + "..."
     )
-    print("Here's the summary of the aggregation:")
-    print(summary)
+    # print("Here's the summary of the aggregation:")
+    # print(summary)
     vector_store.add(
         summary,
         metadata={"plan_id": plan_id, "subtask_id": subtask["id"], "type": "aggregate"}

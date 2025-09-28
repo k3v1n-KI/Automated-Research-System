@@ -71,6 +71,12 @@ def plan_research_task(task_description: str) -> dict:
 
     plan = json.loads(resp.choices[0].message.content)
     plan["plan_id"] = str(uuid4())
+    # ✅ Guarantee a usable goal
+    raw_goal = (plan.get("goal") or "").strip()
+    if not raw_goal:
+        plan["goal"] = task_description.strip()
+    else:
+        plan["goal"] = raw_goal
     return plan
 
 def save_plan_to_firebase(plan: dict):
