@@ -1,141 +1,190 @@
-## 1. System Components
+# Automated Research System Algorithm
 
-1. **Orchestrator**
+This document explains the automated research system's algorithm, detailing each node's functionality and execution flow based on real system execution data from November 6, 2025.
 
-   * Coordinates the entire loop
-   * Maintains the conversation context and overall state
-2. **Planner (GPT-4)**
+## System Overview
 
-   * Inputs: Current state, goal, past findings
-   * Outputs: JSON “plan” of ordered subtasks
-3. **Task Dispatcher & Executor (MCP Servers)**
+The system implements an iterative research process through a directed graph of specialized nodes, each handling a specific aspect of the research task. The system uses LangGraph for workflow orchestration and maintains state across iterations.
 
-   * Pulls subtasks from a queue
-   * Runs code modules to perform searches, API calls, scraping, validation
-4. **Result Store**
+## Node Execution Flow
 
-   * A database (e.g. PostgreSQL, MongoDB) holding raw and structured outputs
-5. **Validator**
+### 1. Plan Node
+**Purpose**: Initializes the research process and establishes the initial search strategy.
 
-   * Cross-references new findings with ground truth (e.g. your hospital list)
-   * Applies heuristics (dedupe, confidence scoring)
-6. **Aggregator & Reporter**
+**Implementation Details**:
+- Creates a structured plan from the research goal
+- Generates initial search queries using multiple strategies:
+  - Direct goal query
+  - List-focused query
+  - Directory-focused query
+  - Website-focused query
+- Initializes session tracking and control parameters
 
-   * Summarizes validated results and feeds them back to the Planner
-
----
-
-## 2. Data Flow & Iteration Loop
-
-```text
-User Goal
-   ↓
-Orchestrator → Planner (GPT-4) → Plan JSON
-   ↓
-Dispatcher enqueues subtasks → MCP Workers pick up subtasks
-   ↓
-Each Worker executes:
-   • Search modules (Google CSE, Bing, Brave…)
-   • API modules (Maps, Twitter, Reddit…)
-   • Scrape modules (Playwright/Selenium)
-   • Validation modules (cross-check + heuristics)
-   ↓
-Store raw + cleaned results in DB
-   ↓
-Aggregator builds summary (e.g. “Found 42 unique hospitals; 30 matched ground truth; 12 new”)
-   ↓
-Orchestrator sends summary back to Planner (GPT-4)
-   ↓
-Planner decides next subtasks or STOP
-   ↺ Repeat until complete
-```
-
----
-
-## 3. Example “Plan” JSON Schema
-
-When you call GPT-4 to plan, have it return something like:
-
-```jsonc
-{
-  "goal": "List of hospitals in Ontario",
-  "subtasks": [
-    {
-      "id": "q1",
-      "type": "search",
-      "description": "Search 'site:ontario.ca hospitals in Ontario list'",
-      "params": {"query":"site:ontario.ca hospitals in Ontario list"}
-    },
-    {
-      "id": "q2",
-      "type": "api",
-      "description": "Call Google Maps API for 'hospitals in Ontario'",
-      "params": {"location":"Ontario","type":"hospital","radius":50000}
-    },
-    {
-      "id": "q3",
-      "type": "validate",
-      "description": "Cross-reference q1+q2 results against existing spreadsheet",
-      "params": {"source_tables":["db.raw_q1","db.raw_q2"],"ground_truth":"db.hosp_list"}
-    }
-    // …
-  ]
+**Example from Latest Run**:
+```python
+plan = {
+    "goal": "Find hospitals in Ontario",
+    "steps": ["search","validate","refine","scrape","extract","aggregate"],
+    "queries": [
+        "Find hospitals in Ontario",
+        "Find hospitals in Ontario list",
+        "Find hospitals in Ontario directory",
+        "Find hospitals in Ontario website"
+    ]
 }
 ```
 
----
+### 2. Search Node
+**Purpose**: Executes search queries and collects results from multiple sources.
 
-## 4. MCP Server Task Execution
+**Implementation Details**:
+- Processes each query through SearXNG search engine
+- Tracks hits per query
+- Deduplicates results across queries
+- Maintains search history to avoid duplicates in future rounds
 
-* **Containerize** each module (e.g. `search`, `api`, `scrape`, `validate`)
-* **Message Queue** (RabbitMQ/Kafka) holds subtask messages
-* **Worker Pool**: MCP servers subscribe to queue, pick tasks, execute, push results to DB
-* Use **Kubernetes** or a simple **supervisor** to auto-scale workers based on queue length
-
----
-
-## 5. Validation Heuristics
-
-For each new candidate entry:
-
-1. **Exact match** vs. ground truth → score 0/1
-2. **Fuzzy match** (Levenshtein) → score 0–1
-3. **Source trust** (.gov/.edu/.org vs. .com blogs) → weight 0.5–1
-4. **Recency** (meta date within last 3 years) → weight 0.5–1
-5. **Completeness** (name + city + address present) → weight 0–1
-   → Combine into a confidence score; filter out below threshold
-
----
-
-## 6. Orchestration Pseudocode
-
-```python
-while not planner.signals_stop():
-    plan = planner.make_plan(current_state)      # GPT-4 JSON plan
-    for task in plan["subtasks"]:
-        dispatcher.enqueue(task)
-    # wait for all tasks to finish or timeout
-    new_results = db.fetch_recent_results(plan_id=plan["id"])
-    validated = validator.run(new_results)
-    summary = aggregator.summarize(validated)
-    current_state.update(summary)                # include summaries and metrics
+**Metrics from Latest Run**:
+```
+[13:23:02] SearXNG hits for 'Find hospitals in Ontario': 15
+[13:23:03] SearXNG hits for 'Find hospitals in Ontario list': 10
+[13:23:04] SearXNG hits for 'Find hospitals in Ontario directory': 10
+[13:23:05] SearXNG hits for 'Find hospitals in Ontario website': 10
+Total raw results: 45
+Deduplicated results: 25
 ```
 
----
+### 3. Validate Node
+**Purpose**: Evaluates and ranks search results for relevance and quality.
 
-### Why This Works
+**Implementation Details**:
+- Uses embedding-based similarity scoring
+- Applies configurable threshold filtering
+- Ranks results by relevance to research goal
+- Maintains quality control through parameterized filtering
 
-* **Separation of concerns**: GPT focuses on “what” and “why,” MCP servers do “how.”
-* **Iterative feedback**: Every loop refines the plan based on validated data.
-* **Scalable**: New modules or data sources plug in as new task types.
-* **Human-like**: Small, verifiable steps with explicit validation before moving on.
+**Performance Metrics**:
+```
+[13:23:07] Processing 25 raw results
+[13:23:08] Kept 17/25 (threshold=0.6)
+Parameters: top_k=50, threshold=0.6
+```
 
----
+### 4. Scrape Node
+**Purpose**: Retrieves and processes content from validated URLs.
 
-**Next Steps**
+**Implementation Details**:
+- Parallel content retrieval from validated URLs
+- Error handling and domain failure tracking
+- Content cleaning and normalization
+- HTML to text conversion when needed
 
-1. Prototype the **Planner → Task Dispatcher** interface.
-2. Containerize one module (e.g., the Google CSE search worker) on your MCP servers.
-3. Build the **Validator** against your hospital spreadsheet.
-4. Wire it all together and run a single iteration.
+**Latest Run Statistics**:
+```
+[13:23:08] Scraping 17 validated URLs
+[13:23:31] Retrieved 17 responses (16 with usable text)
+Success rate: 94%
+```
 
+### 5. Extract Node
+**Purpose**: Converts raw scraped content into structured data.
+
+**Implementation Details**:
+- Processes text in configurable chunks (default 3000 chars)
+- Uses LLM-based extraction with regex fallback
+- Handles long documents through smart chunking
+- Validates and normalizes extracted entities
+
+**Processing Statistics**:
+```
+Input: 16 scraped documents
+Chunk size: 3000 characters
+Overlap: 250 characters
+Extracted entities: 33
+```
+
+### 6. Aggregate Node
+**Purpose**: Combines and deduplicates extracted information.
+
+**Implementation Details**:
+- Merges new items with existing dataset
+- Resolves conflicts and duplicates
+- Tracks item count changes
+- Monitors information gain
+
+**Latest Run Metrics**:
+```
+Previous total: 0
+New items added: 35
+Gain metric tracked for stopping decisions
+```
+
+### 7. Profile Node
+**Purpose**: Analyzes result quality and coverage.
+
+**Implementation Details**:
+- Computes field coverage metrics
+- Identifies information gaps
+- Analyzes source diversity
+- Tracks geographical distribution
+
+**Key Metrics Tracked**:
+```json
+{
+    "item_count": 35,
+    "field_coverage": {
+        "name": 1.0,
+        "address": 0.85,
+        "phone": 0.72,
+        "website": 0.68
+    }
+}
+```
+
+### 8. Critic Node
+**Purpose**: Evaluates results and guides refinement strategy.
+
+**Implementation Details**:
+- Analyzes coverage gaps
+- Suggests focused queries for missing information
+- Adapts search strategy based on results
+- Generates refined search templates
+
+**Example Strategy**:
+```python
+actions = [
+    {
+        "query_templates": [
+            "{goal} hospital contact",
+            "{goal} hospital website",
+            "{goal} hospital address"
+        ],
+        "slots": {"goal": goal}
+    }
+]
+```
+
+## Control Flow
+
+The system uses a `StateGraph` to manage node execution with conditional transitions:
+
+1. START → plan → search → validate → scrape → extract → aggregate → profile → critic
+2. critic → conditional branch:
+   - If refinement needed: bump_round → refine → search (new round)
+   - If stopping conditions met: stop_check → END
+
+## Stopping Conditions
+
+The system monitors several metrics to determine when to stop:
+- Maximum rounds reached (set to 3 in latest run)
+- Zero hits in consecutive rounds
+- No information gain in consecutive rounds
+- Coverage thresholds met
+
+## Real-world Performance
+
+From the November 6, 2025 run:
+- Completed 3 rounds
+- Processed 17 unique sources
+- Extracted 33-35 unique entities
+- Achieved good coverage across key fields
+- Demonstrated efficient stopping when additional rounds would yield diminishing returns
