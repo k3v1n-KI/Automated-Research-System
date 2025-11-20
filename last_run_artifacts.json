@@ -1,0 +1,48 @@
+{
+  "plan_id": "494493b7-e526-44ff-94a3-a0333c773f0c",
+  "run_id": "6cc93d29-08ca-41bc-b654-d66fc4b44cf3",
+  "goal": "Give me a list of hospitals in Ontario",
+  "generated": "2025-11-20T12:30:00",
+  "status": "completed",
+  "queries": [
+    "Give me a list of hospitals in Ontario",
+    "Comprehensive list of public and private hospitals in Ontario",
+    "Ontario hospital directory by city and specialty",
+    "Accredited healthcare facilities and hospitals in Ontario, Canada",
+    "Ontario Ministry of Health official hospital listings and resources"
+  ],
+  "metrics": {
+    "total_rounds": 3,
+    "total_items": 58,
+    "execution_time_seconds": 180,
+    "search": {
+      "raw_results": 50,
+      "after_dedup": 37,
+      "dedup_rate": 0.26
+    },
+    "validate": {
+      "input_urls": 37,
+      "accepted": 13,
+      "rejected": 24,
+      "success_rate": 0.351
+    },
+    "scrape": {
+      "attempted": 13,
+      "successful": 13,
+      "success_rate": 1.0
+    },
+    "extract": {
+      "before_dedup": 69,
+      "after_dedup": 66,
+      "dedup_rate": 0.043
+    }
+  },
+  "sample_results": [
+    {
+      "name": "St. Michael's Hospital",
+      "address": "30 Bond Street, Toronto, ON",
+      "phone": "416-813-6621",
+      "website": "www.stmichaelshospital.com"
+    }
+  ]
+}

@@ -7,9 +7,21 @@ class SeedQueryGen(dspy.Module):
         super().__init__()
         self.gen = dspy.Predict(SeedQueryGenSig)
 
-    def forward(self, goal: str, n: int = 12):
-        out = self.gen(goal=goal, n=n)
-        return out.queries or []
+    def forward(self, goal: str, n: int = 4):
+        # Always generate exactly 4 queries (original will be prepended by planner)
+        out = self.gen(goal=goal, n=4)
+        queries = out.queries or []
+        # Clean and dedupe, ensure exactly 4
+        clean_qs = [str(q).strip() for q in queries if str(q).strip() and str(q).strip().lower() != goal.lower()]
+        seen = set()
+        unique_qs = []
+        for q in clean_qs:
+            if q not in seen:
+                seen.add(q)
+                unique_qs.append(q)
+        while len(unique_qs) < 4:
+            unique_qs.append(f"{goal} alternative {len(unique_qs)+1}")
+        return unique_qs[:4]
 
 class CriticActions(dspy.Module):
     def __init__(self):

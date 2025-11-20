@@ -21,6 +21,7 @@ def _wrap_node(name: str, fn, services):
 class State(TypedDict, total=False):
     plan_id: str
     goal: str
+    plan: Dict[str, Any]
 
     # pipeline
     queries: List[str]
@@ -63,14 +64,49 @@ def _write_artifact(services, kind: str, payload: Dict[str, Any]):
 # Nodes
 # ------------------------
 def plan_node(state, services):
+    import re
+
+    # Diagnostic: log incoming state keys and plan shape to help debug why
+    # the plan sometimes appears missing at runtime.
+    try:
+        logger.log("INFO", f"[plan_node] incoming state keys: {list(state.keys())}")
+        logger.log("INFO", f"[plan_node] plan(raw): {str(state.get('plan'))[:400]}")
+    except Exception:
+        pass
+
     goal = (state.get("goal") or "").strip()
-    plan = state.get("plan") or {
-        "goal": goal,
-        "steps": ["search","validate","refine","scrape","extract","aggregate"],
-        "queries": [goal, f"{goal} list", f"{goal} directory", f"{goal} website"]
-    }
+    plan = state.get("plan")
+
+    # Enforce that a planner (LLM/DSPy) provides a plan with queries.
+    # Do NOT silently fall back to deterministic, goal-derived query templates.
+    if not plan or not isinstance(plan, dict):
+        logger.log("ERROR", "[plan] Missing LLM plan; DSPy planner required. Aborting to avoid fallback queries.")
+        raise RuntimeError("LLM plan missing. DSPy planner must provide a plan with 'queries'.")
+
     seeds = [q.strip() for q in (plan.get("queries") or []) if q and str(q).strip()]
     seeds = list(dict.fromkeys(seeds))
+
+    # Detect common deterministic fallback patterns like
+    # [goal, f"{goal} list", f"{goal} directory", f"{goal} website"].
+    def _looks_like_fallback(qs: list[str]) -> bool:
+        if not qs or not goal:
+            return False
+        # match queries that begin with the goal and end with a small set
+        # of fallback suffixes (list/directory/website/site)
+        suffix_re = re.compile(rf"^{re.escape(goal)}\s+(list|directory|website|site|list of|directory of)$", re.IGNORECASE)
+        count = 0
+        for q in qs:
+            try:
+                if isinstance(q, str) and suffix_re.search(q.strip()):
+                    count += 1
+            except Exception:
+                continue
+        return count >= 2
+
+    allow_fallback = bool(services.controls.get("allow_fallback_queries", False))
+    if _looks_like_fallback(seeds) and not allow_fallback:
+        logger.log("ERROR", "[plan] Detected fallback-style queries in plan; aborting. Set services.controls['allow_fallback_queries']=True to override.")
+        raise RuntimeError("Detected fallback-style queries in plan; aborting to enforce LLM-only queries.")
 
     _write_step(services, "plan", {
         "goal": goal,

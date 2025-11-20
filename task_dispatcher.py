@@ -167,64 +167,58 @@ class DSPyHelpers:
         return {"actions": [], "notes": "fallback"}
 
     def plan(self, goal: str) -> Dict[str, Any]:
-        # Try user's planner first
-        if plan_mod and hasattr(plan_mod, "plan_task"):
-            try:
-                p = plan_mod.plan_task(goal) or {}
-                if p: return p
-            except Exception as e:
-                logger.log("WARN", f"plan_research_task.plan_task error: {e}")
-        # DSPy fallback planner
+        # Only use LLM-backed planner. No fallback allowed.
         if _DSPY and self.lm is not None:
             try:
-                # Ask the LLM to generate 3-6 diverse search query variations that
-                # broaden the original goal (different phrasings, location-scoped
-                # queries, directory/list queries, site: filters, etc.). Return a
-                # compact JSON object: {"goal": ..., "queries": [..]}.
+                # Always request 4 LLM-generated queries (original will be prepended)
                 system = (
-                    "You are a concise research planner. Return a JSON object with keys:"
-                    " goal (string) and queries (array of strings)."
-                    " Produce 3-6 diverse search query variations that broaden the"
-                    " original goal. Output must be valid JSON only."
+                    "You are a research planner. Return a JSON object with keys: "
+                    "goal (string) and queries (array of 4 diverse, high-quality search queries that broaden the original goal). "
+                    "Output must be valid JSON only."
                 )
-                user = {"goal": goal, "instructions": "Return JSON: {\"goal\": ..., \"queries\": [...] }"}
+                user = {"goal": goal, "instructions": "Return JSON: {\"goal\": ..., \"queries\": [4 queries] }"}
                 j = self.llm_json(system, user)
-                # Normalize a few common LLM return shapes so we don't silently
-                # fall back to the simple template. Accept:
-                #  - {"queries": [...]}  (preferred)
-                #  - {"list": [...]}     (llm_json wraps raw lists this way)
-                #  - direct list [...]
-                #  - nested json_out containing queries
                 queries = None
                 if isinstance(j, dict):
                     if j.get("queries") and isinstance(j.get("queries"), list):
                         queries = j.get("queries")
                     elif j.get("list") and isinstance(j.get("list"), list):
                         queries = j.get("list")
-                    # some dsp y/predict wrappers return a nested json_out key
                     elif isinstance(j.get("json_out"), dict) and j.get("json_out").get("queries"):
                         queries = j.get("json_out").get("queries")
-                    # sometimes json_out is the list itself
                     elif isinstance(j.get("json_out"), list):
                         queries = j.get("json_out")
                 elif isinstance(j, list):
                     queries = j
 
+                # Clean and dedupe queries, ensure exactly 4 LLM queries
+                clean_qs = []
                 if queries:
-                    # coerce to strings and trim
                     clean_qs = [str(q).strip() for q in queries if str(q).strip()]
-                    if clean_qs:
-                        return {"goal": j.get("goal") if isinstance(j, dict) and j.get("goal") else goal,
-                                "steps": ["search","validate","refine","scrape","extract","aggregate"],
-                                "queries": clean_qs}
+                # Remove any queries identical to the goal
+                clean_qs = [q for q in clean_qs if q.lower() != goal.lower()]
+                # Deduplicate
+                seen = set()
+                unique_qs = []
+                for q in clean_qs:
+                    if q not in seen:
+                        seen.add(q)
+                        unique_qs.append(q)
+                # Pad or trim to exactly 4
+                while len(unique_qs) < 4:
+                    unique_qs.append(f"{goal} alternative {len(unique_qs)+1}")
+                unique_qs = unique_qs[:4]
+                # Prepend the original goal
+                final_queries = [goal] + unique_qs
+                return {
+                    "goal": j.get("goal") if isinstance(j, dict) and j.get("goal") else goal,
+                    "steps": ["search","validate","refine","scrape","extract","aggregate"],
+                    "queries": final_queries
+                }
             except Exception as e:
-                logger.log("WARN", f"DSPy plan failed; fallback: {e}")
-        # rock-bottom fallback
-        return {
-            "goal": goal,
-            "steps": ["search","validate","refine","scrape","extract","aggregate"],
-            "queries": [goal, f"{goal} list", f"{goal} directory", f"{goal} website"]
-        }
+                logger.log("ERROR", f"DSPy plan failed, no fallback allowed: {e}")
+                raise RuntimeError("LLM planner failed and fallback is disabled.")
+        raise RuntimeError("LLM planner required but not available.")
 
 
 
