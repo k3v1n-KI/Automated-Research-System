@@ -1,82 +1,227 @@
-from sentence_transformers import SentenceTransformer
-import numpy as np
+"""
+Semantic Ranker - Ranks items based on semantic similarity to queries.
+Uses embeddings to score relevance of extracted items to the original research prompt.
+"""
 
-def load_model(model_name: str = "all-MiniLM-L6-v2") -> SentenceTransformer:
-    """
-    Load and return a SentenceTransformer model.
-    """
-    return SentenceTransformer(model_name)
+import os
+import json
+from typing import List, Dict, Optional
+from openai import OpenAI
+
+# Initialize OpenAI client lazily
+_openai_client = None
+_embedding_model = None
+
+def get_openai_client():
+    """Get or create OpenAI client"""
+    global _openai_client, _embedding_model
+    if _openai_client is None:
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY not set in environment")
+        _openai_client = OpenAI(api_key=api_key)
+        _embedding_model = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
+    return _openai_client, _embedding_model
 
 
-def score_result_similarity(
-    result: dict,
+def get_embedding(text: str) -> List[float]:
+    """Get embedding for text"""
+    client, model = get_openai_client()
+    
+    # Truncate long text
+    if len(text) > 8000:
+        text = text[:8000]
+    
+    response = client.embeddings.create(
+        model=model,
+        input=text
+    )
+    return response.data[0].embedding
+
+
+def cosine_similarity(vec1: List[float], vec2: List[float]) -> float:
+    """Calculate cosine similarity between two vectors"""
+    dot_product = sum(a * b for a, b in zip(vec1, vec2))
+    mag1 = sum(a * a for a in vec1) ** 0.5
+    mag2 = sum(b * b for b in vec2) ** 0.5
+    
+    if mag1 == 0 or mag2 == 0:
+        return 0.0
+    
+    return dot_product / (mag1 * mag2)
+
+
+def rank_items(
+    items: List[Dict],
     query: str,
-    model: SentenceTransformer
-) -> dict:
+    score_key: str = "semantic_score",
+    threshold: float = 0.5
+) -> List[Dict]:
     """
-    Compute cosine similarity between the query and a search result
-    (using title + snippet only).
-
+    Rank items based on semantic similarity to query.
+    
     Args:
-        result: {"title": str, "snippet": str, "url": str}
-        query: original search query string
-        model: loaded SentenceTransformer
+        items: List of items to rank (dicts with 'name', 'text', or 'content' fields)
+        query: Query/prompt to rank against
+        score_key: Key name for the score in returned items
+        threshold: Minimum score to keep (0-1, where 1 is perfect match)
     
     Returns:
-        {"similarity_score": float}
+        List of items sorted by semantic relevance, filtered by threshold
     """
-    # combine title + snippet
-    text = (result.get("title", "") + " " + result.get("snippet", "")).strip()
-    if not text:
-        return {"similarity_score": 0.0}
+    
+    if not items:
+        return []
+    
+    if not query:
+        return items
+    
+    try:
+        # Get query embedding
+        query_embedding = get_embedding(query)
+        
+        # Score each item
+        scored_items = []
+        for item in items:
+            # Extract text from item (try multiple common fields)
+            text = ""
+            if isinstance(item, dict):
+                text = item.get('text') or item.get('content') or item.get('name') or str(item)
+            else:
+                text = str(item)
+            
+            if not text:
+                continue
+            
+            # Get item embedding and score
+            item_embedding = get_embedding(text)
+            score = cosine_similarity(query_embedding, item_embedding)
+            
+            # Add score to item
+            scored_item = item.copy() if isinstance(item, dict) else {'value': item}
+            scored_item[score_key] = score
+            scored_items.append(scored_item)
+        
+        # Filter by threshold and sort
+        filtered = [item for item in scored_items if item[score_key] >= threshold]
+        sorted_items = sorted(filtered, key=lambda x: x[score_key], reverse=True)
+        
+        return sorted_items
+    
+    except Exception as e:
+        print(f"❌ Semantic ranking failed: {e}")
+        # Fallback: return items with 0 score
+        for item in items:
+            if isinstance(item, dict):
+                item[score_key] = 0
+        return items
 
-    # embed both
-    query_emb  = model.encode(query, convert_to_numpy=True)
-    result_emb = model.encode(text,  convert_to_numpy=True)
 
-    # cosine similarity
-    sim = np.dot(query_emb, result_emb) / (
-        np.linalg.norm(query_emb) * np.linalg.norm(result_emb)
-    )
-    return {"similarity_score": float(sim)}
-
-
-def rank_results_by_similarity(
-    results: list[dict],
+def rank_search_results(
+    results: List[Dict],
     query: str,
-    model: SentenceTransformer,
-    top_k: int = None,
-    threshold: float = None
-) -> list[dict]:
+    min_score: float = 0.4
+) -> List[Dict]:
     """
-    Score and sort a list of search results by semantic similarity to the query.
-
+    Rank search results by relevance to query.
+    
     Args:
-        results: list of {"title", "snippet", "url"} dicts
-        query: original search query string
-        model: loaded SentenceTransformer
-        top_k: if set, only return the top_k highest-scoring results
-        threshold: if set, only return results with similarity_score >= threshold
-
+        results: List of search results (from search node)
+        query: Original search query
+        min_score: Minimum score to keep
+    
     Returns:
-        List of results dicts extended with "similarity_score", sorted descending.
+        Ranked list of search results
     """
-    scored = []
-    for res in results:
-        score = score_result_similarity(res, query, model)["similarity_score"]
-        entry = dict(res)
-        entry["similarity_score"] = score
-        scored.append(entry)
+    
+    if not results:
+        return []
+    
+    try:
+        query_embedding = get_embedding(query)
+        
+        scored_results = []
+        for result in results:
+            # Combine title and snippet for ranking
+            text = f"{result.get('title', '')} {result.get('snippet', '')}"
+            if not text.strip():
+                continue
+            
+            item_embedding = get_embedding(text)
+            score = cosine_similarity(query_embedding, item_embedding)
+            
+            result_copy = result.copy()
+            result_copy['relevance_score'] = score
+            scored_results.append(result_copy)
+        
+        # Sort by relevance
+        ranked = sorted(scored_results, key=lambda x: x['relevance_score'], reverse=True)
+        
+        # Filter by minimum score
+        return [r for r in ranked if r['relevance_score'] >= min_score]
+    
+    except Exception as e:
+        print(f"❌ Search result ranking failed: {e}")
+        return results
 
-    # apply threshold filter
-    if threshold is not None:
-        scored = [r for r in scored if r["similarity_score"] >= threshold]
 
-    # sort by descending similarity
-    scored.sort(key=lambda x: x["similarity_score"], reverse=True)
+def rerank_extracted_items(
+    items: List[Dict],
+    queries: List[str],
+    min_score: float = 0.5
+) -> List[Dict]:
+    """
+    Rerank extracted items using multiple queries.
+    Assigns a composite score based on similarity to all queries.
+    
+    Args:
+        items: Extracted data items
+        queries: List of search queries used
+        min_score: Minimum composite score to keep
+    
+    Returns:
+        Reranked items sorted by composite relevance
+    """
+    
+    if not items or not queries:
+        return items
+    
+    try:
+        # Get embeddings for all queries
+        query_embeddings = [get_embedding(q) for q in queries]
+        
+        scored_items = []
+        for item in items:
+            # Combine all fields into searchable text
+            text = " ".join(str(v) for v in item.values() if v)
+            if not text:
+                continue
+            
+            item_embedding = get_embedding(text)
+            
+            # Calculate average similarity across all queries
+            scores = [cosine_similarity(item_embedding, q_emb) for q_emb in query_embeddings]
+            avg_score = sum(scores) / len(scores)
+            max_score = max(scores)
+            
+            item_copy = item.copy()
+            item_copy['composite_score'] = avg_score
+            item_copy['max_query_score'] = max_score
+            item_copy['query_scores'] = scores
+            
+            scored_items.append(item_copy)
+        
+        # Filter and sort
+        filtered = [item for item in scored_items if item['composite_score'] >= min_score]
+        ranked = sorted(filtered, key=lambda x: x['composite_score'], reverse=True)
+        
+        return ranked
+    
+    except Exception as e:
+        print(f"❌ Item reranking failed: {e}")
+        return items
 
-    # apply top_k
-    if top_k is not None:
-        scored = scored[:top_k]
 
-    return scored
+if __name__ == "__main__":
+    # Test
+    print("Semantic Ranker loaded. Use rank_items(), rank_search_results(), or rerank_extracted_items().")

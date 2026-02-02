@@ -1,0 +1,60 @@
+services:
+  # The Database (Postgres + Vector)
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: agent_db
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      # Persist data to your local WSL filesystem
+      - ./database/data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - agent_network
+
+  # The UI Dashboard (PgAdmin)
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: agent_pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - agent_network
+
+  # Research Agent Server (Flask + SocketIO + LangGraph)
+  research_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    container_name: research_server
+    restart: always
+    environment:
+      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@db:5432/${DB_NAME}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      PORT: 8000
+      DEBUG: "False"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - agent_network
+    volumes:
+      - .:/app
+    command: python server.py
+
+networks:
+  agent_network:
+    driver: bridge

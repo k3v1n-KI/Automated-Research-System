@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Builder - Setup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #212529;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .prompt-box {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 100px;
+            transition: border-color 0.2s;
+        }
+
+        .prompt-box:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .columns-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 8px;
+        }
+
+        .column-input-group {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            transition: all 0.2s;
+        }
+
+        .column-input-group:hover {
+            background: #f0f0f0;
+            border-color: #667eea;
+        }
+
+        .column-input-group.error {
+            border-color: #ff6b6b;
+            background: #fff5f5;
+        }
+
+        .column-input {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .column-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .column-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .priority-checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .priority-checkbox-label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        .remove-column-btn {
+            padding: 6px 10px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .remove-column-btn:hover {
+            background: #ff5252;
+        }
+
+        .add-column-btn {
+            padding: 10px 16px;
+            background: #e7f5ff;
+            color: #667eea;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            align-self: flex-start;
+        }
+
+        .add-column-btn:hover {
+            background: #667eea;
+            color: white;
+            border-style: solid;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .start-btn {
+            flex: 1;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .start-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .start-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .reset-btn {
+            padding: 14px 24px;
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .reset-btn:hover {
+            background: #f0f4ff;
+        }
+
+        .error-message {
+            color: #c92a2a;
+            font-size: 12px;
+            margin-top: 8px;
+            padding: 10px;
+            background: #ffe0e0;
+            border-left: 3px solid #c92a2a;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .info-box {
+            background: #e7f5ff;
+            border-left: 4px solid #667eea;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #1971c2;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .info-box strong {
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .column-input-group {
+                flex-direction: column;
+            }
+
+            .column-controls {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dataset Builder Setup</h1>
+            <p>Define your research and columns to track diversity</p>
+        </div>
+
+        <div class="info-box">
+            <strong>Priority Columns:</strong> Select which columns to use for diversity analysis. The Gini-Simpson Index will track how diverse your data is for these columns.
+        </div>
+
+        <form id="setupForm">
+            <!-- Prompt Section -->
+            <div class="form-section">
+                <label class="form-section-title">Research Prompt</label>
+                <textarea
+                    id="promptInput"
+                    class="prompt-box"
+                    placeholder="Example: Find all hospitals in Ontario with Name, Address, and Website"
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Columns Section -->
+            <div class="form-section">
+                <label class="form-section-title">Columns to Track</label>
+                
+                <div class="columns-container" id="columnsContainer">
+                    <div class="column-input-group">
+                        <input
+                            type="text"
+                            class="column-input"
+                            placeholder="Column name (e.g., Name, Address, Website)"
+                            value="Name"
+                            required
+                        >
+                        <div class="column-controls">
+                            <label class="priority-checkbox-label">
+                                <input type="checkbox" class="priority-checkbox" checked>
+                                Priority
+                            </label>
+                            <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="column-input-group">
+                        <input
+                            type="text"
+                            class="column-input"
+                            placeholder="Column name"
+                            value="Address"
+                            required
+                        >
+                        <div class="column-controls">
+                            <label class="priority-checkbox-label">
+                                <input type="checkbox" class="priority-checkbox">
+                                Priority
+                            </label>
+                            <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="column-input-group">
+                        <input
+                            type="text"
+                            class="column-input"
+                            placeholder="Column name"
+                            value="Website"
+                            required
+                        >
+                        <div class="column-controls">
+                            <label class="priority-checkbox-label">
+                                <input type="checkbox" class="priority-checkbox">
+                                Priority
+                            </label>
+                            <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="add-column-btn" onclick="addColumn()">+ Add Column</button>
+                <div class="error-message" id="errorMessage"></div>
+            </div>
+
+            <!-- Actions -->
+            <div class="actions">
+                <button type="submit" class="start-btn" id="startBtn">Start Research</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function addColumn() {
+            const container = document.getElementById('columnsContainer');
+            const group = document.createElement('div');
+            group.className = 'column-input-group';
+            group.innerHTML = `
+                <input
+                    type="text"
+                    class="column-input"
+                    placeholder="Column name"
+                    required
+                >
+                <div class="column-controls">
+                    <label class="priority-checkbox-label">
+                        <input type="checkbox" class="priority-checkbox">
+                        Priority
+                    </label>
+                    <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
+                </div>
+            `;
+            container.appendChild(group);
+        }
+
+        function removeColumn(event) {
+            event.preventDefault();
+            const container = document.getElementById('columnsContainer');
+            const groups = container.querySelectorAll('.column-input-group');
+            
+            if (groups.length <= 1) {
+                showError('You must have at least one column');
+                return;
+            }
+            
+            event.target.closest('.column-input-group').remove();
+            clearError();
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.classList.add('show');
+        }
+
+        function clearError() {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.classList.remove('show');
+        }
+
+        document.getElementById('setupForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            clearError();
+
+            const prompt = document.getElementById('promptInput').value.trim();
+            const columnGroups = document.querySelectorAll('.column-input-group');
+            
+            if (!prompt) {
+                showError('Research prompt is required');
+                return;
+            }
+
+            const columns = [];
+            columnGroups.forEach(group => {
+                const input = group.querySelector('.column-input');
+                const isChecked = group.querySelector('.priority-checkbox').checked;
+                const columnName = input.value.trim();
+                
+                if (!columnName) {
+                    showError('All columns must have names');
+                    return;
+                }
+
+                if (columns.some(c => c.name.toLowerCase() === columnName.toLowerCase())) {
+                    showError('Duplicate column names not allowed');
+                    return;
+                }
+
+                columns.push({
+                    name: columnName,
+                    isPriority: isChecked
+                });
+            });
+
+            if (columns.length === 0) {
+                showError('At least one column is required');
+                return;
+            }
+
+            const hasPriority = columns.some(c => c.isPriority);
+            if (!hasPriority) {
+                showError('At least one column must be marked as Priority');
+                return;
+            }
+
+            // Store in session storage and navigate to chat
+            sessionStorage.setItem('researchSetup', JSON.stringify({
+                prompt,
+                columns,
+                startTime: new Date().toISOString()
+            }));
+
+            window.location.href = '/chat';
+        });
+
+        // Load saved setup if exists
+        window.addEventListener('load', () => {
+            const saved = sessionStorage.getItem('researchSetup');
+            if (saved) {
+                try {
+                    const setup = JSON.parse(saved);
+                    document.getElementById('promptInput').value = setup.prompt;
+                    
+                    // Clear default columns
+                    document.getElementById('columnsContainer').innerHTML = '';
+                    
+                    // Add saved columns
+                    setup.columns.forEach(col => {
+                        const group = document.createElement('div');
+                        group.className = 'column-input-group';
+                        group.innerHTML = `
+                            <input
+                                type="text"
+                                class="column-input"
+                                value="${col.name}"
+                                required
+                            >
+                            <div class="column-controls">
+                                <label class="priority-checkbox-label">
+                                    <input type="checkbox" class="priority-checkbox" ${col.isPriority ? 'checked' : ''}>
+                                    Priority
+                                </label>
+                                <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
+                            </div>
+                        `;
+                        document.getElementById('columnsContainer').appendChild(group);
+                    });
+                } catch (e) {
+                    console.error('Error loading setup:', e);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

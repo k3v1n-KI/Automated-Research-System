@@ -207,6 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 #  Custom
-searxng/
-llm-automated-research-firebase-adminsdk.json
-llm-automated-research-firebase-adminsdk-fbsvc-5100c64faa.json:Zone.Identifier
+searxng-docker/
+auto_research.json
+auto_research.Identifier

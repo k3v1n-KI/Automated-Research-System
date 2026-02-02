@@ -1,0 +1,78 @@
+Address,City,Name,Website,Website URL,address,city,name,source_url,url,website URL,website_url
+,,,,,"200 Fletcher Crescent, Alliston, ON L9R 1W7",Alliston,Stevenson Memorial Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,Royal Victoria Regional Health Centre,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"2100 Bovaird Drive East, Brampton, ON L6R 3J7",Brampton,Brampton Civic Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"101 Humber College Boulevard, Etobicoke, ON M9V 1R8",Etobicoke,Etobicoke General Hospital (Toronto),https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"20 Lynch Street, Brampton, ON L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"200 Church Street, Toronto, ON M9N 1N8",Toronto,Reactivation Care Centre – Church (Toronto),https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"459 Hume Street, Collingwood, ON L9Y 1W9",Collingwood,Collingwood General And Marine Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"100 Frank Miller Drive, Huntsville, ON P1H 1H7",Huntsville,Huntsville District Memorial Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"75 Ann Street, Bracebridge, ON P1L 2E4",Bracefordshire,South Muskoka Memorial Hospital (Bracebridge),https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"381 Church Street, Markham, ON L3P 7P3",Markham,Markham-Stouffville Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"4 Campbell Drive, Uxbridge, ON L9P 1S4",Uxbridge,Uxbridge Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"2111 Finch Avenue West, Toronto, ON M3N 1N1",Toronto,Reactivation Care Centre – Finch (Toronto),https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"1112 St. Andrew's Drive, Midland, ON L4R 4P4",Midland,Georgian Bay General Hospital – Main Site,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"611 Prospect Boulevard, Midland, ON L4R 4K3",Midland,Georgian Bay General Hospital – Prospect Boulevard Site,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"2200 Eglinton Avenue West, Mississauga, ON L5M 2N1",Mississauga,Credit Valley Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"100 Queensway West, Mississauga, ON L5B 1B8",Mississauga,Mississauga Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"150 Sherway Drive, Toronto, ON M9C 1A5",Toronto,Queensway Health Centre (Toronto),https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"2180 Speakman Drive, Ground Floor, Mississauga, ON L5K 0B1",Mississauga,Speakman Dialysis Care Centre,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"82 Buttonwood Avenue, Toronto, ON M6M 2J5",Toronto,UHN Reactivation Care Centre (Toronto),https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"596 Davis Drive, Newmarket, ON L3Y 2P9",Newmarket,Newmarket Site,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"3001 Hospital Drive, Oakville, ON L6M 0L8",Oakville,Oakville Trafalgar Memorial Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,,,,,"725 Bronte Street South, Milton, ON L9T 9K1",Milton,Milton District Hospital,https://www.ontario.ca/page/general-hospital-locations,,,https://www.ontario.ca/page/general-hospital-locations
+,Toronto,"University Health Network (Toronto General, Western, Princess Margaret, Toronto Rehab)",https://uhn.ca,,,,,https://www.blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,Humber River Hospital,https://hrh.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,York Region (Richmond Hill / Vaughan),Mackenzie Health (Richmond Hill / Vaughan),https://mackenziehealth.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Markham,Markham Stouffville Hospital,https://ehr.meditech.com,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Brampton,"William Osler Health System (Brampton Civic, Etobicoke General, Peel Memorial)",https://williamoslerhs.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Mississauga,"Trillium Health Partners (Credit Valley, Mississauga, Queensway)",https://thp.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,The Hospital for Sick Children (SickKids),https://uhn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,Women's College Hospital,https://uhn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,"Unity Health Toronto (St. Joseph's Health Centre, St. Michael's Hospital, Providence Healthcare)",https://unityhealth.to,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Mississauga,"Trillium Health Partners (Mississauga, Credit Valley, Queensway)",https://thp.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,Sunnybrook Health Sciences Centre,https://canhealth.com,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,Sinai Health (Mount Sinai Hospital & Hennick Bridgepoint),https://ehealthontario.on.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,North York General Hospital,https://fiercehealthcare.com,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto,Michael Garron Hospital,,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Hamilton,"Hamilton Health Sciences (General, Juravinski, McMaster UMC, etc.)",https://hamiltonhealthsciences.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Hamilton,St. Joseph's Healthcare Hamilton,https://stjoes.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Toronto (Scarborough),Scarborough Health Network,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Oshawa,Lakeridge Health,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Peterborough,Peterborough Regional Health Centre,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Halton Hills / Oakville,"Halton Healthcare (Milton, Oakville, Georgetown)",https://novarihealth.com,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Cobourg,Northumberland Hills Hospital,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Lindsay,Ross Memorial Hospital,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Haliburton,Haliburton Highlands Health Services,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Campbellford,Campbellford Memorial Hospital,https://shn.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Ottawa,The Ottawa Hospital (all campuses),https://hgh.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Ottawa,CHEO (Children's Hospital Eastern Ont.),https://cheo.on.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Ottawa,Univ. of Ottawa Heart Institute,https://hgh.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Hawkesbury,Hawkesbury & District General Hospital,https://hgh.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Renfrew,Renfrew Victoria Hospital,https://hgh.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Barry's Bay,St. Francis Memorial Hospital,https://hgh.ca,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Deep River,Deep River & District Hospital,https://drdh.org,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Kemptville,Kemptville District Hospital,https://drdh.org,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Winchester,Winchester District Memorial Hospital,https://drdh.org,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+,Ottawa/Brockville,The Royal (Ottawa & Brockville),https://pemreghos.org,,,,,https://blog.mingli.ca/ontario-hospital-ehr-systems-directory/,,,
+"200 Elizabeth Street, Toronto, ON M5G 2C4",Toronto,Toronto General Hospital,,,,,,https://www.uhn.ca/OurHospitals/TGH,,https://www.uhn.ca/OurHospitals/TGH,
+"200 Elizabeth Street, Toronto, Ontario M5G 2C4",Toronto,Princess Margaret Cancer Centre,,https://www.uhnresearch.ca/service/uhn-hospitals,,,,https://www.uhnresearch.ca/service/uhn-hospitals,,,
+"200 Elizabeth Street, Toronto, Ontario M5G 2C4",Toronto,Toronto General Hospital,,https://www.uhnresearch.ca/service/uhn-hospitals,,,,https://www.uhnresearch.ca/service/uhn-hospitals,,,
+"200 Elizabeth Street, Toronto, Ontario M5G 2C4",Toronto,Toronto Rehab,,https://www.uhnresearch.ca/service/uhn-hospitals,,,,https://www.uhnresearch.ca/service/uhn-hospitals,,,
+"200 Elizabeth Street, Toronto, Ontario M5G 2C4",Toronto,Toronto Western Hospital,,https://www.uhnresearch.ca/service/uhn-hospitals,,,,https://www.uhnresearch.ca/service/uhn-hospitals,,,
+30 Bond Street,Toronto,St. Michael’s Hospital,,,,,,https://unityhealth.to/locations/st-michaels-hospital/,,https://unityhealth.to/locations/st-michaels-hospital/,
+,,,,,501 Smyth Road,Ottawa,The Ottawa Hospital - General Campus,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,1053 Carling Avenue,Ottawa,The Ottawa Hospital - Civic Campus,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,1967 Riverside Drive,Ottawa,The Ottawa Hospital - Riverside Campus,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario (CHEO),https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,3045 Baseline Road,Ottawa,Queensway-Carleton Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,713 Montreal Road,Ottawa,Montfort Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,501 Smyth Road,Ottawa,Ottawa Regional Cancer Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,1145 Carling Avenue,Ottawa,Royal Ottawa Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,43 Bruyère Street,Ottawa,Bruyère Continuing Care Élisabeth Bruyère Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,879 Hiawatha Park Road,Ottawa,Bruyère Continuing Care Résidence Saint-Louis,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,60 Cambridge Street North,Ottawa,Bruyère Continuing Care Saint-Vincent Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,505 Smyth Road,Ottawa,The Rehabilitation Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+,,,,,40 Ruskin Street,Ottawa,University of Ottawa Heart Institute,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx,,
+2295 S Vineyard Ave,Ontario,Ontario Medical Center,,,,,,https://healthy.kaiserpermanente.org/southern-california/facilities/ontario-medical-center-300511,,https://healthy.kaiserpermanente.org/southern-california/facilities/ontario-medical-center-300511,
+351 SW 9th Street,Ontario,Saint Alphonsus Medical Center - Ontario,,,,,,https://www.saintalphonsus.org/location/saint-alphonsus-medical-center-ontario,,https://www.saintalphonsus.org/location/saint-alphonsus-medical-center-ontario,

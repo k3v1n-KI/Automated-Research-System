@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Builder - Research Algorithm</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 90vh; /* Fixed height to ensure scrolling works */
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ff6b6b;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.connected {
+            background: #51cf66;
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            /* Changed from row-reverse to row to put Chat on Left, Progress on Right */
+            flex-direction: row; 
+        }
+
+        /* LEFT SIDE - CHAT & RESULTS */
+        .chat-section {
+            flex: 6; /* Takes up 60% of width */
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #e9ecef; /* Separator on right now */
+            background: white;
+            min-width: 0; /* Prevents flex overflow */
+        }
+
+        .chat-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e9ecef;
+            background: #f8f9fa;
+        }
+
+        .chat-header h2 {
+            font-size: 16px;
+            color: #212529;
+            font-weight: 600;
+        }
+
+        .messages-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: white;
+        }
+
+        .message {
+            display: flex;
+            gap: 12px;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            flex-direction: row-reverse;
+        }
+
+        .message-content {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px 0 12px 12px;
+        }
+
+        .message.assistant .message-content {
+            background: #e9ecef;
+            color: #212529;
+            border-radius: 0 12px 12px 12px;
+        }
+
+        .message.system .message-content {
+            background: #fff3cd;
+            color: #856404;
+            font-size: 13px;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* Results Area Moved Here */
+        .results-area {
+            padding: 15px 20px;
+            background: #f0f4ff;
+            border-top: 1px solid #e9ecef;
+            display: none;
+            max-height: 300px;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        .results-area.show {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .chat-input-area {
+            padding: 15px 20px;
+            border-top: 1px solid #e9ecef;
+            background: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .input-wrapper {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px 0 0 8px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: none;
+            max-height: 80px;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .send-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            white-space: nowrap;
+        }
+
+        .send-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* RIGHT SIDE - PROGRESS */
+        .progress-section {
+            flex: 4; /* Takes up 40% of width */
+            display: flex;
+            flex-direction: column;
+            background: #f8f9fa;
+            overflow: hidden;
+            border-left: 1px solid #e9ecef;
+        }
+
+        .progress-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e9ecef;
+            background: white;
+        }
+
+        .progress-header h2 {
+            font-size: 16px;
+            color: #212529;
+            font-weight: 600;
+        }
+
+        .progress-items {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .progress-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #dee2e6;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .progress-item.active {
+            border-left-color: #667eea;
+            background: #f0f4ff;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+        }
+
+        .progress-item.complete {
+            border-left-color: #51cf66;
+        }
+
+        .progress-title {
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .progress-spinner {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #667eea;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .progress-detail {
+            font-size: 13px;
+            color: #6c757d;
+            margin-left: 20px; /* Align with text, not spinner */
+        }
+
+        /* Stats Styling */
+        .dataset-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns for compact look */
+            gap: 10px;
+            margin-bottom: 0;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+
+        .stat-number {
+            font-size: 18px;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .previous-sessions {
+            padding: 10px 0;
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 10px;
+        }
+
+        .previous-sessions-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .sessions-dropdown {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        .tweak-instructions {
+            margin-bottom: 10px;
+        }
+
+        .tweak-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 40px;
+        }
+
+        @media (max-width: 1000px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .chat-section {
+                flex: none;
+                height: 60vh;
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+            .progress-section {
+                flex: none;
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dataset Builder</h1>
+            <div class="status-indicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Connecting...</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2>Chat with Research Agent</h2>
+                    <div id="setupInfo" style="font-size: 12px; color: #6c757d; margin-top: 8px; display: none;">
+                        <strong>Columns:</strong> <span id="columnsList"></span><br>
+                        <strong>Priority Columns:</strong> <span id="priorityColumnsList" style="color: #667eea; font-weight: 600;"></span>
+                    </div>
+                </div>
+                
+                <div class="messages-area" id="messagesArea">
+                    <div class="message system">
+                        <div class="message-content">Connected! Describe the dataset you want to build.</div>
+                    </div>
+                </div>
+
+                <div class="results-area" id="resultsArea">
+                    <h3 style="color: #212529; margin-bottom: 10px; font-size: 14px;">Dataset Complete</h3>
+                    <div class="dataset-stats" id="statsContainer"></div>
+                </div>
+
+                <div class="chat-input-area">
+                    <div id="errorContainer"></div>
+                
+                    <div class="previous-sessions" id="previousSessionsContainer" style="display: none;">
+                        <div class="previous-sessions-label">Continue from previous session:</div>
+                        <select class="sessions-dropdown" id="previousSessionsSelect" onchange="loadPreviousSession()">
+                            <option value="">Start new research</option>
+                        </select>
+                    </div>
+                    
+                    <div class="tweak-instructions" id="tweakSection" style="display: none;">
+                        <textarea 
+                            id="tweakInput" 
+                            class="tweak-input"
+                            placeholder="Tweaks for this run (e.g. 'Focus on northern Ontario')"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-wrapper">
+                            <input 
+                                type="text"
+                                id="chatInput" 
+                                class="chat-input"
+                                placeholder="Example: Find all hospitals in Ontario..."
+                                onkeypress="handleKeyPress(event)"
+                                disabled
+                            >
+                            <button class="send-btn" id="sendBtn" onclick="sendMessage()" disabled>Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-header">
+                    <h2>Research Progress</h2>
+                </div>
+                <div class="progress-items" id="progressContainer">
+                    <div style="color: #6c757d; text-align: center; padding: 20px; font-size: 13px;">
+                        Ready to start research
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let socket = null;
+        let currentSessionId = null;
+        let previousSessionId = null;
+        let isRunning = false;
+
+        function initSocket() {
+            // Auto-detect server URL from current window location
+            socket = io({
+                transports: ['websocket', 'polling'],
+                reconnection: true,
+                reconnectionDelay: 1000,
+                reconnectionDelayMax: 5000,
+                reconnectionAttempts: 5
+            });
+
+            socket.on('connect', () => {
+                console.log('Connected to server');
+                document.getElementById('statusDot').className = 'status-dot connected';
+                document.getElementById('statusText').textContent = 'Connected';
+                document.getElementById('chatInput').disabled = false;
+                document.getElementById('sendBtn').disabled = false;
+                addSystemMessage('Connected! Ready to build your dataset.');
+                
+                // Load previous sessions
+                socket.emit('get_previous_sessions');
+            });
+
+            socket.on('disconnect', () => {
+                console.log('Disconnected from server');
+                document.getElementById('statusDot').className = 'status-dot';
+                document.getElementById('statusText').textContent = 'Disconnected';
+                document.getElementById('chatInput').disabled = true;
+                document.getElementById('sendBtn').disabled = true;
+                addSystemMessage('Disconnected from server');
+            });
+
+            socket.on('previous_sessions', (data) => {
+                loadSessionsDropdown(data.sessions);
+            });
+
+            socket.on('research_start', (data) => {
+                currentSessionId = data.session_id;
+                console.log('Research started:', currentSessionId);
+                addSystemMessage(`Research session ${currentSessionId.substring(0, 8)}... started`);
+            });
+
+            socket.on('context_loaded', (data) => {
+                console.log('Previous context loaded:', data);
+                addSystemMessage(`Loaded ${data.previous_queries_count} previous queries and ${data.previous_items_count} items`);
+            });
+
+            socket.on('progress', (data) => {
+                console.log('Progress:', data);
+                updateProgress(data);
+            });
+
+            socket.on('research_complete', (data) => {
+                console.log('Research complete:', data);
+                console.log('Diversity report:', data.diversity_report);
+                console.log('Priority columns:', data.priority_columns);
+                completeResearch(data);
+            });
+
+            socket.on('research_error', (data) => {
+                console.error('Research error:', data);
+                addSystemMessage('Error: ' + (data.error || 'Unknown error'));
+                isRunning = false;
+                document.getElementById('sendBtn').disabled = false;
+            });
+
+            socket.on('error', (error) => {
+                console.error('Socket error:', error);
+                addSystemMessage('Connection error: ' + error);
+            });
+
+            socket.on('connect_error', (error) => {
+                console.error('Connection error:', error);
+                addSystemMessage('Connection failed: ' + error.message);
+            });
+        }
+
+        function addSystemMessage(text) {
+            const messagesArea = document.getElementById('messagesArea');
+            const messageEl = document.createElement('div');
+            messageEl.className = 'message system';
+            messageEl.innerHTML = `<div class="message-content">${text}</div>`;
+            messagesArea.appendChild(messageEl);
+            messagesArea.scrollTop = messagesArea.scrollHeight;
+        }
+
+        function addUserMessage(text) {
+            const messagesArea = document.getElementById('messagesArea');
+            const messageEl = document.createElement('div');
+            messageEl.className = 'message user';
+            messageEl.innerHTML = `<div class="message-content">${text}</div>`;
+            messagesArea.appendChild(messageEl);
+            messagesArea.scrollTop = messagesArea.scrollHeight;
+        }
+
+        function addAssistantMessage(text) {
+            const messagesArea = document.getElementById('messagesArea');
+            const messageEl = document.createElement('div');
+            messageEl.className = 'message assistant';
+            messageEl.innerHTML = `<div class="message-content">${text}</div>`;
+            messagesArea.appendChild(messageEl);
+            messagesArea.scrollTop = messagesArea.scrollHeight;
+        }
+
+        function updateProgress(data) {
+            const container = document.getElementById('progressContainer');
+            const stepId = (data.step || 'unknown').replace(/\s+/g, '_').toLowerCase();
+            let stepEl = document.getElementById('step-' + stepId);
+            
+            if (!stepEl) {
+                stepEl = document.createElement('div');
+                stepEl.id = 'step-' + stepId;
+                stepEl.className = 'progress-item active';
+                const title = (data.step || 'Processing').split('\n')[0];
+                stepEl.innerHTML = `
+                    <div class="progress-title">
+                        <span class="progress-spinner"></span>${title}
+                    </div>
+                    <div class="progress-detail">${data.detail || ''}</div>
+                `;
+                container.appendChild(stepEl);
+            } else {
+                stepEl.querySelector('.progress-detail').textContent = data.detail || '';
+                stepEl.className = 'progress-item active';
+            }
+
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function completeProgressStep(stepId) {
+            const container = document.getElementById('progressContainer');
+            const step = container.querySelector(`[id="step-${stepId}"]`);
+            if (step) {
+                step.className = 'progress-item complete';
+                const spinner = step.querySelector('.progress-spinner');
+                if (spinner) {
+                    spinner.outerHTML = '✅';
+                }
+            }
+        }
+
+        function completeResearch(data) {
+            isRunning = false;
+            document.getElementById('sendBtn').disabled = false;
+            
+            console.log('completeResearch called with data:', data);
+            
+            // Mark all steps complete with checkmark
+            document.querySelectorAll('.progress-item').forEach(el => {
+                el.className = 'progress-item complete';
+                const spinner = el.querySelector('.progress-spinner');
+                if (spinner) {
+                    spinner.outerHTML = '✅';
+                }
+            });
+
+            // Show results with diversity metrics
+            const stats = data.statistics || {};
+            const diversity = data.diversity_report || null;
+            const columns = data.columns || [];
+            const priority_columns = data.priority_columns || [];
+            
+            console.log('Display data:', { stats, diversity, columns, priority_columns });
+            
+            let statsHtml = `
+                <div class="stat-box">
+                    <div class="stat-number">${stats.queries || 0}</div>
+                    <div class="stat-label">Queries</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">${stats.urls_found || 0}</div>
+                    <div class="stat-label">URLs</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">${stats.urls_validated || 0}</div>
+                    <div class="stat-label">Valid</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">${stats.final_count || 0}</div>
+                    <div class="stat-label">Records</div>
+                </div>
+            `;
+            
+            // Add diversity metrics if available
+            if (diversity && priority_columns.length > 0) {
+                console.log('✅ Diversity metrics available, rendering...');
+                const diversityIndex = diversity.overall_diversity_index || 0;
+                statsHtml += `
+                <div style="grid-column: 1/-1; margin-top: 8px; padding: 10px; background: #fff3cd; border-radius: 6px; border-left: 3px solid #ffc107;">
+                    <div style="font-size: 14px; font-weight: 600; color: #856404; margin-bottom: 6px;">📊 Diversity Index: ${diversityIndex.toFixed(3)}</div>
+                `;
+                
+                // Per-column diversity with all unique values
+                if (diversity.column_analysis && Array.isArray(diversity.column_analysis)) {
+                    console.log('Per-column analysis:', diversity.column_analysis);
+                    diversity.column_analysis.forEach(col => {
+                        console.log('Adding column:', col);
+                        statsHtml += `<div style="font-size: 10px; color: #333; margin-bottom: 6px; padding: 6px; background: white; border-radius: 4px;">
+                            <strong style="color: #856404;">${col.column}</strong> (index: ${(col.diversity_index).toFixed(3)}) - ${col.unique_count}/${col.total_count}<br>`;
+                        
+                        // Show all unique values with percentages
+                        if (col.value_breakdown && Array.isArray(col.value_breakdown)) {
+                            col.value_breakdown.forEach(item => {
+                                const val = item.value || '(empty)';
+                                const pct = item.percentage || 0;
+                                statsHtml += `<div style="margin-top: 2px; font-size: 9px; color: #666;">• ${val}: ${pct.toFixed(1)}%</div>`;
+                            });
+                        }
+                        
+                        statsHtml += `</div>`;
+                    });
+                } else {
+                    console.log('❌ No column_analysis in diversity report');
+                }
+                
+                statsHtml += `</div>`;
+            } else {
+                console.log(`❌ Skipping diversity: diversity=${!!diversity}, priority_columns.length=${priority_columns.length}`);
+            }
+            
+            document.getElementById('statsContainer').innerHTML = statsHtml;
+            document.getElementById('resultsArea').classList.add('show');
+            
+            addAssistantMessage(`Dataset complete! Found ${stats.final_count || 0} records.`);
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            if (!socket || !socket.connected) {
+                addSystemMessage('Not connected to server');
+                return;
+            }
+
+            if (isRunning) {
+                addSystemMessage('Research in progress. Please wait.');
+                return;
+            }
+
+            addUserMessage(message);
+            input.value = '';
+            
+            isRunning = true;
+            document.getElementById('sendBtn').disabled = true;
+            document.getElementById('progressContainer').innerHTML = '';
+            document.getElementById('resultsArea').classList.remove('show');
+            clearError();
+
+            // Get tweak instructions safely
+            const tweakElement = document.getElementById('tweakInput');
+            const tweakInstructions = tweakElement ? tweakElement.value.trim() : '';
+            
+            // Load setup data from sessionStorage
+            const setupData = JSON.parse(sessionStorage.getItem('researchSetup') || '{}');
+            const columns = setupData.columns || [];
+            const priority_columns = columns.filter(c => c.isPriority).map(c => c.name);
+            
+            console.log('Sending start_research with:');
+            console.log('  prompt:', message);
+            console.log('  columns:', columns);
+            console.log('  priority_columns:', priority_columns);
+            console.log('  previous_session_id:', previousSessionId);
+            console.log('  tweak_instructions:', tweakInstructions);
+            
+            socket.emit('start_research', { 
+                prompt: message,
+                columns: columns,
+                priority_columns: priority_columns,
+                previous_session_id: previousSessionId,
+                tweak_instructions: tweakInstructions
+            });
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        function clearError() {
+            document.getElementById('errorContainer').innerHTML = '';
+        }
+
+        function loadSessionsDropdown(sessions) {
+            const select = document.getElementById('previousSessionsSelect');
+            const container = document.getElementById('previousSessionsContainer');
+            const tweakSection = document.getElementById('tweakSection');
+            
+            if (sessions && sessions.length > 0) {
+                container.style.display = 'block';
+                tweakSection.style.display = 'block';
+                
+                // Keep existing option
+                while (select.options.length > 1) {
+                    select.remove(1);
+                }
+                
+                // Add sessions
+                sessions.forEach((session, index) => {
+                    const option = document.createElement('option');
+                    option.value = session.session_id;
+                    const timestamp = new Date(session.created_at).toLocaleString();
+                    option.textContent = `Session ${index + 1} (${timestamp})`;
+                    select.appendChild(option);
+                });
+            } else {
+                container.style.display = 'none';
+                tweakSection.style.display = 'none';
+            }
+        }
+
+        function loadPreviousSession() {
+            const select = document.getElementById('previousSessionsSelect');
+            previousSessionId = select.value;
+            
+            if (previousSessionId) {
+                addAssistantMessage(`Selected previous session: ${previousSessionId.substring(0, 8)}...`);
+                addAssistantMessage('New queries will be added to existing data. Specify tweaks in the box below.');
+            } else {
+                previousSessionId = null;
+                document.getElementById('tweakInput').value = '';
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            initSocket();
+            
+            // Load and display setup information
+            const setupData = JSON.parse(sessionStorage.getItem('researchSetup') || '{}');
+            if (setupData.columns && setupData.columns.length > 0) {
+                const setupInfo = document.getElementById('setupInfo');
+                const columnsList = document.getElementById('columnsList');
+                const priorityColumnsList = document.getElementById('priorityColumnsList');
+                
+                const allColumns = setupData.columns.map(c => c.name).join(', ');
+                const priorityColumns = setupData.columns
+                    .filter(c => c.isPriority)
+                    .map(c => c.name)
+                    .join(', ');
+                
+                columnsList.textContent = allColumns;
+                priorityColumnsList.textContent = priorityColumns;
+                setupInfo.style.display = 'block';
+                
+                // Auto-start research with the prompt from setup
+                // Wait a moment for socket to connect
+                setTimeout(() => {
+                    if (socket && socket.connected) {
+                        document.getElementById('chatInput').value = setupData.prompt;
+                        sendMessage();
+                    } else {
+                        // If socket not ready, try again
+                        setTimeout(() => {
+                            if (socket && socket.connected) {
+                                document.getElementById('chatInput').value = setupData.prompt;
+                                sendMessage();
+                            }
+                        }, 1000);
+                    }
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

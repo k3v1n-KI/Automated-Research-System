@@ -1,0 +1,291 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                  MULTI-SESSION RESEARCH SYSTEM ARCHITECTURE                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            FRONTEND (BROWSER)                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  Chat Section (LEFT)              Progress Section (RIGHT)                   │
+│  ┌──────────────────────┐         ┌──────────────────────┐                  │
+│  │ Messages             │         │ Progress Items       │                  │
+│  │ ┌────────────────┐   │         │ ┌────────────────┐   │                  │
+│  │ │ User prompt    │   │         │ │ Query Gen   ✓  │   │                  │
+│  │ │ Assistant resp │   │         │ │ Search      ✓  │   │                  │
+│  │ │ System message │   │         │ │ Validate    ✓  │   │                  │
+│  │ └────────────────┘   │         │ │ Scrape      ✓  │   │                  │
+│  │                      │         │ │ Extract     ✓  │   │                  │
+│  │ Input Area:          │         │ │ Deduplicate ✓  │   │                  │
+│  │ ┌──────────────────┐ │         │ └────────────────┘   │                  │
+│  │ │ [Previous Sessions│ │         │                     │                  │
+│  │ │  dropdown] ◄─────┼─┼─────┐   │ Results Stats:      │                  │
+│  │ │ [Tweak textarea]  │ │     │   │ • Queries: 8       │                  │
+│  │ │ [Send Button]     │ │     │   │ • URLs: 145        │                  │
+│  │ └──────────────────┘ │     │   │ • Records: 120     │                  │
+│  └──────────────────────┘     │   └──────────────────────┘                  │
+│                               │                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                   ▲ │
+                  Socket.IO         │ │  Socket.IO
+                  Events            │ │  Events
+                  ┌────────────────┬┘ └─────────────────┐
+                  │                                      │
+        ┌─────────▼──────────────────────────────────────▼────────────┐
+        │         FLASK WEBSOCKET SERVER (server.py)                   │
+        ├─────────────────────────────────────────────────────────────┤
+        │                                                               │
+        │  @socketio.on('start_research')                              │
+        │  ┌─────────────────────────────────────────────────┐         │
+        │  │ 1. Get prompt + previous_session_id + tweaks    │         │
+        │  │ 2. Load previous context if continuing:         │         │
+        │  │    - Query previous queries                     │         │
+        │  │    - Load previous items                        │         │
+        │  │ 3. Create new ResearchState with context       │         │
+        │  │ 4. Invoke LangGraph pipeline                   │         │
+        │  │ 5. Save results to vector store                │         │
+        │  └─────────────────────────────────────────────────┘         │
+        │                                                               │
+        │  Handlers:                                                   │
+        │  • get_previous_sessions() → queries SessionHistory          │
+        │  • emit progress() → streams to frontend                     │
+        │  • save_csv() → writes datasets/ folder                      │
+        │                                                               │
+        └────────────┬──────────────────────────────┬──────────────────┘
+                     │                              │
+                     ▼                              ▼
+        ┌────────────────────────────┐  ┌──────────────────────────┐
+        │  LANGGRAPH PIPELINE         │  │  VECTOR STORE (Postgres) │
+        │  (algorithm.py)             │  │  (vector_store.py)       │
+        ├────────────────────────────┤  ├──────────────────────────┤
+        │                             │  │                          │
+        │  1. Query Generation        │  │  Tables:                 │
+        │     • Use previous queries  │  │  • knowledge_base        │
+        │     • LLM generates new     │  │    (queries, items, etc) │
+        │     • Combine old + new     │  │  • thoughts              │
+        │                             │  │    (reasoning steps)     │
+        │  2. Search                  │  │                          │
+        │     • All 8 queries (4+4)   │  │  Features:               │
+        │     • SearXNG API           │  │  • Embeddings (pgvector) │
+        │     • Find URLs             │  │  • Semantic search       │
+        │                             │  │  • Deduplication        │
+        │  3. Validate                │  │  • Session tracking      │
+        │     • Extract URLs          │  │                          │
+        │                             │  │  Async methods:          │
+        │  4. Scrape                  │  │  • save_research()       │
+        │     • Playwright            │  │  • load_session()        │
+        │     • Get HTML content      │  │  • search_documents()    │
+        │                             │  │                          │
+        │  5. Extract                 │  │                          │
+        │     • LLM extraction        │  │                          │
+        │     • New fields from tweaks│  │                          │
+        │                             │  │                          │
+        │  6. Deduplicate             │  │                          │
+        │     • Merge all records     │  │                          │
+        │     • Normalize fields      │  │                          │
+        │     • Remove duplicates     │  │                          │
+        │                             │  │                          │
+        └────────────┬────────────────┘  └──────────────────────────┘
+                     │
+                     ▼
+        ┌─────────────────────────────┐
+        │  CSV OUTPUT & PERSISTENCE    │
+        ├─────────────────────────────┤
+        │                              │
+        │  1. Save to datasets/        │
+        │     • dataset_xxxxx.csv      │
+        │     • All records preserved  │
+        │     • All fields normalized  │
+        │                              │
+        │  2. Save to vector store     │
+        │     • Context for next loop  │
+        │     • Queries + items + meta │
+        │     • Semantic embeddings    │
+        │                              │
+        │  3. Display stats            │
+        │     • Emit results to client │
+        │     • Show in progress panel │
+        │                              │
+        └─────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                              DATA FLOW EXAMPLE                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+SESSION 1: Initial Research
+─────────────────────────────
+Input:  prompt="Find hospitals in Ontario"
+        no previous_session_id
+        no tweak_instructions
+
+Processing:
+  Query Gen → LLM generates 4 queries
+              ["Ontario hospitals", "Toronto clinics", ...]
+  Search    → 50 URLs found
+  Validate  → 45 URLs extracted
+  Scrape    → 40 pages fetched
+  Extract   → 87 records extracted (Name, Address, Website)
+  Deduplicate → 87 unique records
+
+Output: 
+  • datasets/dataset_abc123.csv (87 records × 3 fields)
+  • Vector Store: Session context saved
+    - Queries: ["Ontario hospitals", ...]
+    - Items: [{Name: "General Hospital", ...}, ...]
+    - Metadata: {timestamp, count, fields}
+
+SESSION 2: Refinement with Tweaks
+──────────────────────────────────
+Input:  prompt="Find hospitals in Ontario"
+        previous_session_id="abc123..."
+        tweaks="Also include phone numbers and operating hours"
+
+Processing:
+  Load Context → From vector store:
+                 - Previous queries: ["Ontario hospitals", ...]
+                 - Previous items: 87 records
+  
+  Query Gen → LLM sees previous queries + tweaks
+              Generates 4 NEW queries
+              ["Ontario hospital phone directory", ...]
+              Combines: 4 old + 4 new = 8 total queries
+  
+  Search    → 8 queries × more comprehensive coverage
+              75 URLs found (some overlap, some new)
+  
+  Validate  → 65 URLs extracted
+  
+  Scrape    → 55 pages fetched
+  
+  Extract   → 120 records extracted
+              - 87 from previous queries (updated with phone/hours)
+              - 33 new records from new queries
+              Fields: Name, Address, Website, Phone, Hours
+  
+  Deduplicate → 120 unique records total
+
+Output:
+  • datasets/dataset_xyz789.csv (120 records × 5 fields)
+  • All 87 previous records preserved
+  • All 33 new records added
+  • Field normalization: all records have all 5 fields
+  • Vector Store: New session saved
+    - Queries: 8 (4 old + 4 new)
+    - Items: 120 records
+    - Metadata: {linked_to_session_abc123, timestamp, ...}
+
+SESSION 3: Third Iteration
+──────────────────────────
+Input:  prompt="Find hospitals in Ontario"
+        previous_session_id="xyz789..." (continuing from Session 2)
+        tweaks="Focus on rural areas, add director names"
+
+Output:
+  • 156 records total (120 previous + 36 new)
+  • New fields: Name, Address, Website, Phone, Hours, Director
+  • All previous records preserved and updated
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           KEY SYSTEM COMPONENTS                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─ context_persistence.py ────────────────────────────────────────────────────┐
+│ ResearchContextManager                                                       │
+│  • save_research_session(session_data) → saves to vector store              │
+│  • load_session_context(session_id) → retrieves context                    │
+│  • get_previous_queries(session_id) → get queries from past                 │
+│  • get_previous_extracted_items(session_id) → get previous data            │
+│  • analyze_data_gaps(session_id, instructions) → find missing info          │
+│                                                                              │
+│ SessionHistory                                                               │
+│  • record_session(session_id, metadata)                                     │
+│  • get_all_sessions() → list for dropdown                                   │
+│  • get_latest_session() → most recent                                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌─ algorithm.py (ResearchState TypedDict) ───────────────────────────────────┐
+│ Fields (original):                                                           │
+│  • initial_prompt, column_specs, queries, search_results, validated_urls   │
+│  • scraped_content, extracted_items, final_dataset, session_id, round      │
+│                                                                              │
+│ Fields (NEW):                                                                │
+│  • previous_session_id: Optional[str]  ← which session to continue from     │
+│  • tweak_instructions: Optional[str]   ← what to refine                    │
+│  • previous_queries: List[str]         ← from prior session                 │
+│  • previous_items: List[Dict]          ← extracted data to build on         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌─ server.py (WebSocket Handlers) ────────────────────────────────────────────┐
+│ @socketio.on('start_research')                                              │
+│  • Accepts: prompt, previous_session_id (optional), tweaks (optional)       │
+│  • Loads context if continuing from previous session                        │
+│  • Creates state with all fields populated                                  │
+│  • Invokes LangGraph with full state                                        │
+│  • Saves results to vector store                                            │
+│                                                                              │
+│ @socketio.on('get_previous_sessions')                                       │
+│  • Returns list of all previous sessions with timestamps                    │
+│  • Populates dropdown on client side                                        │
+│                                                                              │
+│ handle_export_dataset()                                                      │
+│  • Saves with field normalization                                           │
+│  • All records have all fields                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          SOCKET.IO EVENT FLOW                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+CLIENT                           SERVER
+
+            start_research ────────→
+          {prompt, prev_id, tweaks}
+                                   ├─ Load context (async)
+                                   ├─ Create state
+                                   ├─ Invoke algorithm
+                                   
+            ←──── research_start ────
+                {session_id}
+                
+            ←──── progress ─────────
+             {step, detail, data}    (multiple times)
+             
+            ←──── context_loaded ───
+         {prev_queries_count, prev_items_count}
+         
+            ←──── research_complete ─
+          {session_id, statistics}
+
+            ←──── previous_sessions ─
+            {sessions: [...]}        (emitted on connect)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         BENEFITS & OUTCOMES                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+BEFORE (Single Session):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Session 1: Collect 87 records                                                │
+│ Session 2: Collect 92 NEW records (but lose Session 1's data structure)    │
+│ Session 3: Collect 85 NEW records (but lose Session 1 & 2)                 │
+│                                                                              │
+│ Problem: Each session independent, can't build on previous work              │
+│          Data inconsistent across sessions, manual merging needed            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+AFTER (Multi-Session):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Session 1: Collect 87 records (save context)                                │
+│ Session 2: Load previous context, add tweaks → 120 records (87+33)          │
+│ Session 3: Load previous, more tweaks → 156 records (120+36)                │
+│                                                                              │
+│ Benefits:                                                                    │
+│  ✓ Progressive data growth                                                   │
+│  ✓ Targeted refinement with tweaks                                          │
+│  ✓ All records preserved (no data loss)                                     │
+│  ✓ Consistent schema across sessions                                        │
+│  ✓ Semantic awareness of previous work                                      │
+│  ✓ Reduced redundant queries                                                │
+│  ✓ Better data quality through iteration                                    │
+│  ✓ Complete audit trail (all sessions saved)                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
