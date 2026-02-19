@@ -1,0 +1,207 @@
+[
+  {
+    "hospital_name": "Orillia Soldiers' Memorial Hospital",
+    "address": "170 Colborne Street West, Orillia, ON L3V 2Z3",
+    "city": "Orillia"
+  },
+  {
+    "hospital_name": "Waypoint Centre for Mental Health Care (main site)",
+    "address": "500 Church Street, Penetanguishene, ON L9M 1G3",
+    "city": "Penetanguishene"
+  },
+  {
+    "hospital_name": "Bayshore Drive Site (Midland)",
+    "address": "287 Bayshore Drive, Midland, ON L4R 1L3",
+    "city": "Midland"
+  },
+  {
+    "hospital_name": "Mackenzie Richmond Hill Hospital",
+    "address": "10 Trench Street, Richmond Hill, ON L4C 4Z3",
+    "city": "Richmond Hill"
+  },
+  {
+    "hospital_name": "Cortellucci Vaughan Hospital (Vaughan)",
+    "address": "3200 Major Mackenzie Drive West, Vaughan, ON L6A 1S1",
+    "city": "Vaughan"
+  },
+  {
+    "hospital_name": "Jane Street Site (Vaughan)",
+    "address": "9401 Jane Street, Suite 101, Vaughan, ON L6A 4H7",
+    "city": "Vaughan"
+  },
+  {
+    "hospital_name": "Reactivation Care Centre-Finch (Toronto)",
+    "address": "2111 Finch Avenue West, Toronto ON M3N 1N1",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Glengarry Memorial Hospital",
+    "address": "20260 County Road 43, Alexandria, ON K0C 1A0",
+    "city": "Alexandria"
+  },
+  {
+    "hospital_name": "Almonte General Hospital",
+    "address": "75 Spring Street, Almonte, ON K0A 1A0",
+    "city": "Almonte"
+  },
+  {
+    "hospital_name": "Arnprior And District Memorial Hospital (The)",
+    "address": "350 John Street North, Arnprior, ON K7S 2P6",
+    "city": "Arnprior"
+  },
+  {
+    "hospital_name": "St Francis Memorial Hospital",
+    "address": "7 St. Francis Memorial Drive, Barry's Bay, ON K0J 1B0",
+    "city": "Barry's Bay"
+  },
+  {
+    "hospital_name": "Belleville General Hospital",
+    "address": "265 Dundas Street East, Belleville, ON K8N 5A9",
+    "city": "Belleville"
+  },
+  {
+    "hospital_name": "North Hastings Hospital (Bancroft)",
+    "address": "1-H Manor Lane, Bancroft, ON K0L 1C0",
+    "city": "Bancroft"
+  },
+  {
+    "hospital_name": "Prince Edward County Memorial Hospital (Picton)",
+    "address": "403 Main Street East, Picton, ON K0K 2T0",
+    "city": "Picton"
+  },
+  {
+    "hospital_name": "Trenton Memorial Hospital (Trenton)",
+    "address": "242 King Street, Trenton, ON K8V 3X1",
+    "city": "Trenton"
+  },
+  {
+    "hospital_name": "Brockville General Hospital",
+    "address": "75 Charles Street, Brockville, ON K6V 1S8",
+    "city": "Brockville"
+  },
+  {
+    "hospital_name": "Campbellford Memorial Hospital",
+    "address": "146 Oliver Road, Campbellford, ON K0L 1L0",
+    "city": "Campbellford"
+  },
+  {
+    "hospital_name": "Carleton Place And District Memorial Hospital",
+    "address": "211 Lake Avenue East, Carleton Place, ON K7C 1J4",
+    "city": "Carleton Place"
+  },
+  {
+    "hospital_name": "Northumberland Hills Hospital",
+    "address": "1000 DePalma Drive, Coburg, ON K9A 5W6",
+    "city": "Coburg"
+  },
+  {
+    "hospital_name": "St. Joseph's Continuing Care Centre",
+    "address": "14 York Street, Cornwall, ON K6J 5T2",
+    "city": "Cornwall"
+  },
+  {
+    "hospital_name": "Cornwall Community Hospital/Hôpital communautaire de Cornwall",
+    "address": "840 McConnell Avenue, Cornwall, ON K6H 5S5",
+    "city": "Cornwall"
+  },
+  {
+    "hospital_name": "Deep River And District Health",
+    "address": "117 Banting Drive, Deep River, ON K0J 1P0",
+    "city": "Deep River"
+  },
+  {
+    "hospital_name": "Haliburton Site",
+    "address": "7199 Gelert Road, P.O. Box 115, Haliburton, ON K0M 1S0",
+    "city": "Haliburton"
+  },
+  {
+    "hospital_name": "Minden Site",
+    "address": "4575 Deep Bay Road, Minden, ON K0M 2K0",
+    "city": "Minden"
+  },
+  {
+    "hospital_name": "Hawkesbury And District General Hospital",
+    "address": "1111 Ghislain Street, Hawkesbury, ON K6A 3G5",
+    "city": "Hawkesbury"
+  },
+  {
+    "hospital_name": "Kemptville District Hospital",
+    "address": "2675 Concession Road, Kemptville, ON K0G 1J0",
+    "city": "Kemptville"
+  },
+  {
+    "hospital_name": "Hotel Dieu Hospital",
+    "address": "166 Brock Street, Kingston, ON K7L 5G2",
+    "city": "Kingston"
+  },
+  {
+    "hospital_name": "Kingston General Hospital",
+    "address": "76 Stuart Street, Kingston, ON K7L 2V7",
+    "city": "Kingston"
+  },
+  {
+    "hospital_name": "Breast Imaging Kingston Centre",
+    "address": "820 John Marks Avenue, Kingston, ON K7L 4X3",
+    "city": "Kingston"
+  },
+  {
+    "hospital_name": "Brockville Dialysis Clinic",
+    "address": "555 California Avenue, Unit 7 & 8, Brockville, ON, K6V 7N6",
+    "city": "Brockville"
+  },
+  {
+    "hospital_name": "Street Health Centre",
+    "address": "115 Barrack Street, Kingston, ON K7L 1G2",
+    "city": "Kingston"
+  },
+  {
+    "hospital_name": "Providence Care Hospital",
+    "address": "752 King Street West, Kingston, ON K7L 4X3",
+    "city": "Kingston"
+  },
+  {
+    "hospital_name": "Transitional Care Centre",
+    "address": "340 Union Street, Kingston, ON K7L 4X3",
+    "city": "Kingston"
+  },
+  {
+    "hospital_name": "Ross Memorial Hospital",
+    "address": "10 Angeline Street North, Lindsay, ON K9V 4M8",
+    "city": "Lindsay"
+  },
+  {
+    "hospital_name": "Lennox And Addington County General Hospital",
+    "address": "8 Richmond Park Drive, Napanee, ON K7R 2Z4",
+    "city": "Napanee"
+  },
+  {
+    "hospital_name": "Oshawa Hospital",
+    "address": "1 Hospital Court, Oshawa, ON L1G 2B9",
+    "city": "Oshawa"
+  },
+  {
+    "hospital_name": "Bowmanville Hospital",
+    "address": "47 Liberty Street South, Bowmanville, ON L1C 2N4",
+    "city": "Bowmanville"
+  },
+  {
+    "hospital_name": "Ajax and Pickering Health Centre (Ajax)",
+    "address": "580 Harwood Avenue South, Ajax, ON L1S 2J4",
+    "city": "Ajax"
+  },
+  {
+    "hospital_name": "Port Perry Hospital",
+    "address": "451 Paxton Street, Port Perry, ON L9L 1L9",
+    "city": "Port Perry"
+  },
+  {
+    "hospital_name": "Whitby Hospital",
+    "address": "300 Gordon Street, Whitby, ON L1N 2T5",
+    "city": "Whitby"
+  },
+  {
+    "hospital_name": "Jerry Coughlan Health and Wellness Centre (Pickering)",
+    "address": "1690 Dersan Street, Pickering, ON L1V 2P8",
+    "city": "Pickering"
+  }
+]

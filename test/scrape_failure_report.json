@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-02-02T12:22:10.798678",
+  "total_urls": 12,
+  "successful": 3,
+  "failed": 9,
+  "success_rate": "25.0%",
+  "failures": [
+    {
+      "url": "https://www.healthyalberta.com/glossary/hospitals",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://www.sjwh.ca/",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://www.smh.ca/",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://www.michaelgarron.ca/",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://www.hhs.ca/",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://www.shothamilton.ca/",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://www.caredtoronto.ca/",
+      "reason": "Unknown",
+      "category": "OTHER"
+    },
+    {
+      "url": "https://toronto.jamsports.com/pdfs/hospital_list.pdf",
+      "reason": "PDF file - Playwright cannot process downloads",
+      "category": "PDF_DOWNLOAD"
+    },
+    {
+      "url": "https://socialwork.utoronto.ca/wp-content/uploads/2015/01/Public-Hospitals-List.pdf",
+      "reason": "PDF file - Playwright cannot process downloads",
+      "category": "PDF_DOWNLOAD"
+    }
+  ],
+  "content_stats": {
+    "total_urls_scraped": 3,
+    "total_html_size": 332018,
+    "total_text_length": 9602,
+    "avg_html_size": 110672.66666666667,
+    "avg_text_length": 3200.6666666666665,
+    "minimal_content_pages": 0
+  }
+}

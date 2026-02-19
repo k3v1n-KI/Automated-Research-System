@@ -1,0 +1,90 @@
+### Parry Sound
+Group | Hospital | Address  
+---|---|---  
+C,E,M | West Parry Sound Health Centre | 6 Albert Street, Parry Sound, ON P2A 3A4
+### Sault Ste Marie
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Sault Area Hospital | 750 Great Northern Road, Sault Ste. Marie, ON P6B 0A8
+### Smooth Rock Falls
+Group | Hospital | Address  
+---|---|---  
+C,G | Smooth Rock Falls Hospital | 107 Kelley Road, Smooth Rock Falls, ON P0L 2B0
+### Sturgeon Falls
+Group | Hospital | Address  
+---|---|---  
+C,G,M | West Nipissing General Hospital | 725 Coursol Road, Sturgeon Falls, ON P2B 2Y6
+### Sudbury
+#### Health Sciences North
+Group | Hospital | Address  
+---|---|---  
+A,D,J,M,N,T | Ramsey Lake Health Centre | 41 Ramsey Lake Road, Sudbury, ON P3E 5J1  
+K | Children’s Treatment Centre | 1933 Regent Street, Sudbury, ON P3E 5R2  
+A | Kirkwood Site | 680 Kirkwood Drive, Sudbury, ON P3E 1X3  
+####  St. Joseph's Continuing Care Centre of Sudbury
+Group | Hospital | Address  
+---|---|---  
+E,G | South Bay Road site | 1140 South Bay Road, Sudbury, ON P3E 0B6  
+E | Lasalle site | 319 Lasalle Boulevard, Sudbury, ON P3A 1W7
+### Timmins
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Timmins And District General Hospital | 700 Ross Avenue East, Timmins, ON P4N 8P2
+### Wawa
+Group | Hospital | Address  
+---|---|---  
+C | Lady Dunn Health Centre | 17 Government Road, Wawa, ON P0S 1K0
+## Ontario Health North West
+### Atikokan
+Group | Hospital | Address  
+---|---|---  
+C | Atikokan Health and Community Services | 120 Dorothy Street, Atikokan, ON P0T 1C0
+### Dryden
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Dryden Regional Health Centre | 58 Goodall Street, Dryden, ON P8N 2Z6
+### Fort Frances
+#### Riverside Health Care Facilities Inc
+Group | Hospital | Address  
+---|---|---  
+C,G,M | La Verendrye Hospital | 110 Victoria Avenue, Fort Frances, ON P9A 2B7  
+C | Emo Health Centre | 170 Front Street, Emo, ON P0W 1E0  
+C | Rainy River Health Centre | 115 Fourth Street, Rainy River, ON P0W 1L0
+### Geraldton
+Group | Hospital | Address  
+---|---|---  
+C | Geraldton District Hospital | 500 Hogarth Avenue West, Geraldton, ON P0T 1M0
+### Kenora
+Group | Hospital | Address  
+---|---|---  
+C,M,N | Lake-Of-The-Woods District Hospital | 21 Sylvan Street, Kenora, ON P9N 3W7
+### Manitouwadge
+Group | Hospital | Address  
+---|---|---  
+C | Santé Manitouwadge Health | 1 Health Care Crescent, Manitouwadge, ON P0T 2C0
+### Marathon
+#### North of Superior Healthcare Group
+Group | Hospital | Address  
+---|---|---  
+C,G | Wilson Memorial General Hospital | 26 Peninsula Road, Marathon, ON P0T 2E0  
+C,G | McCausland Hospital (Terrace Bay) | 20B Cartier Road, Terrace Bay, ON P0T 2W0
+### Nipigon
+Group | Hospital | Address  
+---|---|---  
+C | Nipigon District Memorial Hospital | 125 Hogan Road, Nipigon, ON P0T 2J0
+### Red Lake
+Group | Hospital | Address  
+---|---|---  
+C,G | Red Lake Margaret Cochenour Memorial Hospital (The) | No. 51, Hwy 105, Red Lake, ON P0V 2M0
+### Sioux Lookout
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Sioux Lookout Meno-Ya-Win Health Centre | 1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4
+### Thunder Bay
+####  St. Joseph's Care Group
+Group | Hospital | Address  
+---|---|---  
+E,G,H,J |  St. Joseph's Hospital | 35 North Algoma Street, Thunder Bay, ON P7B 5G7  
+Group | Hospital | Address  
+---|---|---  
+A,D,M,N | Thunder Bay Regional Health Sciences Centre | 980 Oliver Road, Thunder Bay, ON P7B 6V4

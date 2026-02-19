@@ -1,0 +1,42 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 4,
+  "records": [
+    {
+      "hospital_name": "H\u00f4tel-Dieu Grace Healthcare",
+      "address": "1453 Prince Road, Windsor, ON N9C 3Z4",
+      "city": "Windsor",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Windsor Regional Hospital",
+      "address": "1995 Lens Avenue, Windsor, ON N8W 1L9",
+      "city": "Windsor",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Windsor Regional Hospital",
+      "address": "1030 Ouellette Avenue, Windsor, ON N9A 1E1",
+      "city": "Windsor",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Windsor Regional Hospital",
+      "address": "3640 Wells Street, Windsor, ON N9C 1T9",
+      "city": "Windsor",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Wingham And District Hospital",
+      "address": "270 Carling Terrace, Wingham, ON N0G 2W0",
+      "city": "Wingham",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Woodstock Hospital",
+      "address": "270 Riddell Street, Woodstock, ON N4S 6N6",
+      "city": "Woodstock",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    }
+  ]
+}

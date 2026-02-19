@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-02-03T09:58:42.408067",
+  "goal": "hospitals in ontario",
+  "metrics": [
+    {
+      "method": "LLM Simple Expansion",
+      "iteration": 1,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 32.6,
+      "coverage_score": 50.0,
+      "diversity_score": 84.19,
+      "processing_time_seconds": 16.66
+    },
+    {
+      "method": "LLM Simple Expansion",
+      "iteration": 2,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 33.0,
+      "coverage_score": 50.0,
+      "diversity_score": 87.76,
+      "processing_time_seconds": 16.29
+    },
+    {
+      "method": "Query Expansion Matrix",
+      "iteration": 1,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 58.53,
+      "coverage_score": 100.0,
+      "diversity_score": 100.0,
+      "processing_time_seconds": 55.54
+    },
+    {
+      "method": "Query Expansion Matrix",
+      "iteration": 2,
+      "query_count": 14,
+      "unique_queries": 14,
+      "avg_query_length": 187.21,
+      "coverage_score": 100.0,
+      "diversity_score": 100.0,
+      "processing_time_seconds": 95.78
+    }
+  ],
+  "query_samples": {
+    "simple_llm_iter1": [
+      "list of hospitals in Ontario",
+      "Ontario hospitals by city",
+      "hospitals in Ontario emergency departments map",
+      "Ontario pediatric hospitals",
+      "Ontario cancer treatment centers"
+    ],
+    "simple_llm_iter2": [
+      "List of hospitals in Ontario",
+      "Ontario Canada hospital directory",
+      "Hospitals near Toronto Ontario",
+      "Ottawa hospitals",
+      "Teaching hospitals in Ontario"
+    ],
+    "qem_iter1": [
+      "Ontario general acute-care hospitals provincial dataset",
+      "Ontario Ministry of Health teaching/university-affiliated hospitals CSV",
+      "Ontario pediatric-focused hospitals provincial dataset",
+      "Greater Toronto Area general acute-care hospitals data CSV Ontario",
+      "Ottawa teaching university-affiliated hospitals Ontario"
+    ],
+    "qem_iter2": [
+      "Ontario acute care hospitals broad scope facility_type: acute care, bed_size_class: large (>500 beds), teaching_status: teaching, data_source: Government open data portal CSV/JSON",
+      "Ontario psychiatric hospitals medium scope facility_type: psychiatric, bed_size_class: small (<200 beds), teaching_status: non-teaching, data_source: CIHI datasets CSV/Excel",
+      "Ontario rehabilitation hospitals narrow scope facility_type: rehabilitation, bed_size_class: medium (200-500 beds), teaching_status: teaching, data_source: Hospital websites and annual reports HTML/PDF filetype:pdf",
+      "Ontario acute care hospitals broad scope facility_type: acute care, bed_size_class: small (<200 beds), teaching_status: non-teaching, data_source: Government open data portal CSV/JSON",
+      "Ontario psychiatric hospitals medium scope facility_type: psychiatric, bed_size_class: large (>500 beds), teaching_status: teaching, data_source: CIHI datasets CSV/Excel"
+    ]
+  },
+  "summary": {
+    "simple_llm_expansion": {
+      "avg_diversity_score": 85.97,
+      "avg_coverage_score": 50.0,
+      "avg_query_count": 15.0,
+      "consistency_pct": 6.67
+    },
+    "query_expansion_matrix": {
+      "avg_diversity_score": 100.0,
+      "avg_coverage_score": 100.0,
+      "avg_query_count": 14.5,
+      "consistency_pct": 0.0
+    },
+    "comparative_gains": {
+      "diversity_improvement": 14.03,
+      "coverage_improvement": 50.0,
+      "query_increase_pct": -3.33
+    }
+  }
+}

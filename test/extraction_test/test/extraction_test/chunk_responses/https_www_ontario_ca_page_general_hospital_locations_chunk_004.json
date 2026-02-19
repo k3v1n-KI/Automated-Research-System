@@ -1,0 +1,162 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 4,
+  "records": [
+    {
+      "hospital_name": "West Parry Sound Health Centre",
+      "address": "6 Albert Street, Parry Sound, ON P2A 3A4",
+      "city": "Parry Sound",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Sault Area Hospital",
+      "address": "750 Great Northern Road, Sault Ste. Marie, ON P6B 0A8",
+      "city": "Sault Ste. Marie",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Smooth Rock Falls Hospital",
+      "address": "107 Kelley Road, Smooth Rock Falls, ON P0L 2B0",
+      "city": "Smooth Rock Falls",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "West Nipissing General Hospital",
+      "address": "725 Coursol Road, Sturgeon Falls, ON P2B 2Y6",
+      "city": "Sturgeon Falls",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Ramsey Lake Health Centre",
+      "address": "41 Ramsey Lake Road, Sudbury, ON P3E 5J1",
+      "city": "Sudbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Children's Treatment Centre",
+      "address": "1933 Regent Street, Sudbury, ON P3E 5R2",
+      "city": "Sudbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Kirkwood Site",
+      "address": "680 Kirkwood Drive, Sudbury, ON P3E 1X3",
+      "city": "Sudbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "South Bay Road site",
+      "address": "1140 South Bay Road, Sudbury, ON P3E 0B6",
+      "city": "Sudbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Lasalle site",
+      "address": "319 Lasalle Boulevard, Sudbury, ON P3A 1W7",
+      "city": "Sudbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Timmins And District General Hospital",
+      "address": "700 Ross Avenue East, Timmins, ON P4N 8P2",
+      "city": "Timmins",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Lady Dunn Health Centre",
+      "address": "17 Government Road, Wawa, ON P0S 1K0",
+      "city": "Wawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Atikokan Health and Community Services",
+      "address": "120 Dorothy Street, Atikokan, ON P0T 1C0",
+      "city": "Atikokan",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Dryden Regional Health Centre",
+      "address": "58 Goodall Street, Dryden, ON P8N 2Z6",
+      "city": "Dryden",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "La Verendrye Hospital",
+      "address": "110 Victoria Avenue, Fort Frances, ON P9A 2B7",
+      "city": "Fort Frances",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Emo Health Centre",
+      "address": "170 Front Street, Emo, ON P0W 1E0",
+      "city": "Emo",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Rainy River Health Centre",
+      "address": "115 Fourth Street, Rainy River, ON P0W 1L0",
+      "city": "Rainy River",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Geraldton District Hospital",
+      "address": "500 Hogarth Avenue West, Geraldton, ON P0T 1M0",
+      "city": "Geraldton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Lake-Of-The-Woods District Hospital",
+      "address": "21 Sylvan Street, Kenora, ON P9N 3W7",
+      "city": "Kenora",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Sant\u00e9 Manitouwadge Health",
+      "address": "1 Health Care Crescent, Manitouwadge, ON P0T 2C0",
+      "city": "Manitouwadge",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Wilson Memorial General Hospital",
+      "address": "26 Peninsula Road, Marathon, ON P0T 2E0",
+      "city": "Marathon",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "McCausland Hospital (Terrace Bay)",
+      "address": "20B Cartier Road, Terrace Bay, ON P0T 2W0",
+      "city": "Terrace Bay",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Nipigon District Memorial Hospital",
+      "address": "125 Hogan Road, Nipigon, ON P0T 2J0",
+      "city": "Nipigon",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Red Lake Margaret Cochenour Memorial Hospital (The)",
+      "address": "No. 51, Hwy 105, Red Lake, ON P0V 2M0",
+      "city": "Red Lake",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Sioux Lookout Meno-Ya-Win Health Centre",
+      "address": "1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4",
+      "city": "Sioux Lookout",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "St. Joseph's Hospital",
+      "address": "35 North Algoma Street, Thunder Bay, ON P7B 5G7",
+      "city": "Thunder Bay",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Thunder Bay Regional Health Sciences Centre",
+      "address": "980 Oliver Road, Thunder Bay, ON P7B 6V4",
+      "city": "Thunder Bay",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    }
+  ]
+}

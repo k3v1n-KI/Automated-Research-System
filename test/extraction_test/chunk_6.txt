@@ -1,0 +1,125 @@
+### Hamilton
+####  St. Joseph’s Healthcare Hamilton
+Group | Hospital | Address  
+---|---|---  
+A,E,G,M,N,O | Charlton Campus | 50 Charlton Avenue East, Hamilton, ON L8N 4A6  
+M,V | King Campus | 2757 King Street East, Hamilton, ON L8G 5E4  
+H,M,N | West 5th Campus | 100 West 5th Street, Hamilton, ON L9C 0E3  
+V | Stedman House (Brantford) | 99 Wayne Gretzky Parkway, Brantford, ON N3S 7P1  
+#### Hamilton Health Sciences Corporation
+Group | Hospital | Address  
+---|---|---  
+A,E,J,K,M,N,O,S,T | Hamilton General Hospital | 237 Barton Street East, Hamilton, ON L8L 2X2  
+A,E,M,N,O,S | Juravinski Hospital and Cancer Centre | 699 Concession Street, Hamilton, ON L8V 5C2  
+A,M,N,O,Q,S,T | McMaster University Medical Centre | 1200 Main Street West, Hamilton, ON L8N 3Z5  
+A,E,J,K,R,S |  St. Peter's Hospital | 88 Maplewood Avenue, Hamilton, ON L8M 1W9  
+U | McMaster Children's Hospital | 1200 Main Street West, Hamilton, ON L8N 3Z5  
+V | West End Clinic | 690 Main Street West, Hamilton, ON L8S 1A4  
+A,C,G,S,M | West Lincoln Memorial Hospital (Grimsby) | 169 Main Street East, Grimsby, ON L3M 1P3
+### Hanover
+Group | Hospital | Address  
+---|---|---  
+C,M | Hanover And District Hospital | 90-7th Avenue, Hanover, ON N4N 1N1
+### Ingersoll
+Group | Hospital | Address  
+---|---|---  
+C,G | Alexandra Hospital | 29 Noxon Street, Ingersoll, ON N5C 3V6
+### Kitchener
+#### Waterloo Regional Health Network
+Group | Hospital | Address  
+---|---|---  
+E,G | Chicopee | 3570 King Street East, Kitchener, ON N2A 2W1  
+B,M,N,T | Midtown | 835 King Street West, Kitchener, ON N2G 1G3  
+B,M,N,T | Queen’s Boulevard | 911 Queen's Boulevard, Kitchener, ON N2M 1B2
+### Leamington
+Group | Hospital | Address  
+---|---|---  
+C,G,M,N | Erie Shores HealthCare | 194 Talbot Street West, Leamington, ON N8H 1N9
+### Listowel
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Listowel Memorial Hospital | 255 Elizabeth Street East, Listowel, ON N4W 2P5
+### London
+####  St. Joseph's Health Care, London
+Group | Hospital | Address  
+---|---|---  
+A,M,N,P |  St. Joseph's Hospital | 268 Grosvenor Street, London, ON N6A 4V2  
+E,F,H,J | Parkwood Institute | 550 Wellington Road, London, Ontario N6C 0A7  
+H | Southwest Centre for Forensic Mental Health Care (St. Thomas) | 401 Sunset Drive, St Thomas, ON N5R 3C6  
+#### London
+#### London Health Sciences Centre
+Group | Hospital | Address  
+---|---|---  
+A,M,N,O,Q | University Hospital | 375 South Street, London, ON N6A 4G5  
+U | Children's Hospital | 800 Commissioners Road East, London, ON N6A 5W9  
+A,D,M,N,S,T | Victoria Hospital | 800 Commissioners Road East, London, ON N6A 5W9
+### Mount Forest
+#### North Wellington Health Care Corporation
+Group | Hospital | Address  
+---|---|---  
+C | Louise Marshall Hospital | 630 Dublin Street, Mount Forest, ON N0G 2L3  
+C,N | Palmerston and District Hospital | 500 Whites Road, Palmerston, ON N0G 2P0
+### Newbury
+Group | Hospital | Address  
+---|---|---  
+C | Four Counties Health Services Corporation | 1824 Concession Dr, Newbury ON, N0L 1Z0
+### Owen Sound
+#### Brightshores Health System
+Group | Hospital | Address  
+---|---|---  
+B,E,M,N | Owen Sound Regional Hospital | 1800 8th Street East, Owen Sound, ON N4K 6M9  
+C | Meaford Hospital | 229 Nelson Street West, Meaford, ON N4L 1A3  
+C,M | Saugeen Shores Hospital | 340 High Street, Southampton, ON N0H 2L0  
+C,G | Wiarton Hospital | 369 Mary Street, Wiarton, ON N0H 2T0  
+C | Markdale Hospital | 220 Toronto Street South, Markdale, ON N0C 1H0  
+C | Lion's Head Hospital | 22 Moore Street, Lion's Head, ON N0H 1W0
+### Sarnia
+#### Bluewater Health
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Sarnia Site | 89 Norman Street, Sarnia, ON N7T 6S3  
+C,G | Charlotte Eleanor Englehart Hospital (Petrolia) | 450 Blanche Street, Petrolia, ON N0N 1R0
+### Simcoe
+Group | Hospital | Address  
+---|---|---  
+B,G,M | Norfolk General Hospital | 365 West Street, Simcoe, ON N3Y 1T7
+###  St. Catharines
+Group | Hospital | Address  
+---|---|---  
+E,G | Hôtel-Dieu Shaver Health and Rehabilitation Centre | 541 Glenridge Avenue, St Catharines, ON L2T 4C2  
+#### Niagara Health System
+Group | Hospital | Address  
+---|---|---  
+B,D,G,H,M,N,V | Marotta Family Hospital | 1200 Fourth Avenue, St. Catharines, ON L2S 0A9  
+C,G | Douglas Memorial Site (Fort Erie) | 230 Bertie Street, Fort Erie, ON L2A 1Z2  
+B,G,M,N,V | Greater Niagara General Hospital (Niagara Falls) | 5546 Portage Road, Niagara Falls, ON L2E 6X2  
+C,G | Port Colborne Site | 260 Sugarloaf Street, Port Colborne, ON L3K 2N7  
+B,G,M,V | Welland Site | 65 Third Street, Welland, ON L3B 4W6
+### St Thomas
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | St Thomas-Elgin General Hospital | 189 Elm Street, St Thomas, ON N5R 5C4
+### Stratford
+#### Huron Perth Healthcare Alliance
+Group | Hospital | Address  
+---|---|---  
+C,G | Clinton Public Hospital | 98 Shipley Street, Clinton, ON N0M 1L0  
+C,E,G | Seaforth Community Hospital | 24 Centennial Drive, Seaforth, ON N0K 1W0  
+B,E,G,M,N | Stratford General Hospital | 46 General Hospital Drive, Stratford, ON N5A 2Y6  
+C,G |  St. Mary’s Memorial Hospital | 267 Queen Street, West, St. Mary's, ON N4X 1B6
+### Strathroy
+Group | Hospital | Address  
+---|---|---  
+C,M,N | Strathroy Middlesex General Hospital | 395 Carrie Street, Strathroy, ON N7G 3J4
+### Tillsonburg
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Tillsonburg District Memorial Hospital | 167 Rolph Street, Tillsonburg, ON N4G 3Y9
+### Walkerton
+#### South Bruce Grey Health Centre
+Group | Hospital | Address  
+---|---|---  
+C,M | Walkerton Site | 21 McGivern Street West, Walkerton, ON N0G 2V0  
+C,M | Kincardine Site | 1199 Queen Street, Kincardine, ON N2Z 1G6  
+C | Durham Site | 320 College Street North, Durham, ON N0G 1R0  
+C | Chesley Site | 39-2nd Street South East, Chesley, ON N0G 1L0

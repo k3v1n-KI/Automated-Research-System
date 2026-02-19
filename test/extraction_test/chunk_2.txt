@@ -1,0 +1,115 @@
+### Orillia
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Orillia Soldiers' Memorial Hospital | 170 Colborne Street West, Orillia, ON L3V 2Z3
+### Penetanguishene
+#### Waypoint Centre for Mental Health Care
+Group | Hospital | Address  
+---|---|---  
+H | Waypoint Centre for Mental Health Care (main site) | 500 Church Street, Penetanguishene, ON L9M 1G3  
+H | Bayshore Drive Site (Midland) | 287 Bayshore Drive, Midland, ON L4R 1L3
+### Richmond Hill
+#### Mackenzie Health
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Mackenzie Richmond Hill Hospital | 10 Trench Street, Richmond Hill, ON L4C 4Z3  
+B,E,G,M,N | Cortellucci Vaughan Hospital (Vaughan) | 3200 Major Mackenzie Drive West, Vaughan, ON L6A 1S1  
+V | Jane Street Site (Vaughan) | 9401 Jane Street, Suite 101, Vaughan, ON L6A 4H7  
+C,E,G | Reactivation Care Centre-Finch (Toronto) | 2111 Finch Avenue West, Toronto ON M3N 1N1
+## Ontario Health East
+### Alexandria
+Group | Hospital | Address  
+---|---|---  
+C,E | Glengarry Memorial Hospital | 20260 County Road 43, Alexandria, ON K0C 1A0
+### Almonte
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Almonte General Hospital | 75 Spring Street, Almonte, ON K0A 1A0
+### Arnprior
+Group | Hospital | Address  
+---|---|---  
+C,G | Arnprior And District Memorial Hospital (The) | 350 John Street North, Arnprior, ON K7S 2P6
+### Barry's Bay
+Group | Hospital | Address  
+---|---|---  
+C,G | St Francis Memorial Hospital | 7 St. Francis Memorial Drive, Barry's Bay, ON K0J 1B0
+### Belleville
+#### Quinte Health
+Group | Hospital | Address  
+---|---|---  
+B,E,G,K,M | Belleville General Hospital | 265 Dundas Street East, Belleville, ON K8N 5A9  
+C,M | North Hastings Hospital (Bancroft) | 1-H Manor Lane, Bancroft, ON K0L 1C0  
+C | Prince Edward County Memorial Hospital (Picton) | 403 Main Street East, Picton, ON K0K 2T0  
+C,M | Trenton Memorial Hospital (Trenton) | 242 King Street, Trenton, ON K8V 3X1
+### Brockville
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M | Brockville General Hospital | 75 Charles Street, Brockville, ON K6V 1S8
+### Campbellford
+Group | Hospital | Address  
+---|---|---  
+C,M | Campbellford Memorial Hospital | 146 Oliver Road, Campbellford, ON K0L 1L0
+### Carleton Place
+Group | Hospital | Address  
+---|---|---  
+C | Carleton Place And District Memorial Hospital | 211 Lake Avenue East, Carleton Place, ON K7C 1J4
+### Cobourg
+Group | Hospital | Address  
+---|---|---  
+B,E,M,N | Northumberland Hills Hospital | 1000 DePalma Drive, Coburg, ON K9A 5W6
+### Cornwall
+Group | Hospital | Address  
+---|---|---  
+G |  St. Joseph's Continuing Care Centre | 14 York Street, Cornwall, ON K6J 5T2  
+B,E,M | Cornwall Community Hospital/Hôpital communautaire de Cornwall | 840 McConnell Avenue, Cornwall, ON K6H 5S5
+### Deep River
+Group | Hospital | Address  
+---|---|---  
+C | Deep River And District Health | 117 Banting Drive, Deep River, ON K0J 1P0
+### Haliburton
+#### Haliburton Highlands Health Services Corporation
+Group | Hospital | Address  
+---|---|---  
+C,M | Haliburton Site | 7199 Gelert Road, P.O. Box 115,  
+Haliburton, ON K0M 1S0  
+C | Minden Site | 4575 Deep Bay Road, Minden, ON K0M 2K0
+### Hawkesbury
+Group | Hospital | Address  
+---|---|---  
+C,G,M,N | Hawkesbury And District General Hospital | 1111 Ghislain Street, Hawkesbury, ON K6A 3G5
+### Kemptville
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Kemptville District Hospital | 2675 Concession Road, Kemptville, ON K0G 1J0
+### Kingston
+#### Kingston Health Sciences Centre
+Group | Hospital | Address  
+---|---|---  
+A,K,M,T | Hotel Dieu Hospital | 166 Brock Street, Kingston, ON K7L 5G2  
+A,D,M,N,O | Kingston General Hospital | 76 Stuart Street, Kingston, ON K7L 2V7  
+M,V | Breast Imaging Kingston Centre | 820 John Marks Avenue, Kingston, ON K7L 4X3  
+V | Brockville Dialysis Clinic | 555 California Avenue, Unit 7 & 8, Brockville, ON, K6V 7N6  
+V | Street Health Centre | 115 Barrack Street, Kingston, ON K7L 1G2  
+#### Providence Care Centre
+Group | Hospital | Address  
+---|---|---  
+E,G,H,J | Providence Care Hospital | 752 King Street West, Kingston, ON K7L 4X3  
+G | Transitional Care Centre | 340 Union Street, Kingston, ON K7L 4X3
+### Lindsay
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Ross Memorial Hospital | 10 Angeline Street North, Lindsay, ON K9V 4M8
+### Napanee
+Group | Hospital | Address  
+---|---|---  
+C,M | Lennox And Addington County General Hospital | 8 Richmond Park Drive, Napanee, ON K7R 2Z4
+### Oshawa
+#### Lakeridge Health
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Oshawa Hospital | 1 Hospital Court, Oshawa, ON L1G 2B9  
+C,G,M | Bowmanville Hospital | 47 Liberty Street South, Bowmanville, ON L1C 2N4  
+B,E,G,M,N,U | Ajax and Pickering Health Centre (Ajax) | 580 Harwood Avenue South, Ajax, ON L1S 2J4  
+C,M | Port Perry Hospital | 451 Paxton Street, Port Perry, ON L9L 1L9  
+C,E,G | Whitby Hospital | 300 Gordon Street, Whitby, ON L1N 2T5  
+V | Jerry Coughlan Health and Wellness Centre (Pickering) | 1690 Dersan Street, Pickering, ON L1V 2P8

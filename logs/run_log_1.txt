@@ -1,0 +1,1078 @@
+Warning: Vector store failed to initialize: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "kevin"
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: OnjtHg1RuEWxxHWQAAAB
+
+======================================================================
+Starting Research Session
+   Client: OnjtHg1RuEWxxHWQAAAB
+   Prompt: Find all hospitals and Institutions that offer addiction counseling in Ontario...
+   Columns: ['Name', 'Address', 'City', 'Phone Number']
+   Priority Columns: ['City']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: 190aad3a-0531-4012-95bb-fb34113d8e48
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns']
+   Prompt: Find all hospitals and Institutions that offer add...
+   Columns: [{'name': 'Name', 'isPriority': False}, {'name': 'Address', 'isPriority': False}, {'name': 'City', 'isPriority': True}, {'name': 'Phone Number', 'isPriority': False}]
+   Priority Columns: ['City']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["Addiction counselling in Ontario", "Substance use treatment centre in Greater Toronto Area (GTA)", "Addiction clinic in Ottawa", "Rehabilitation hospital in Northern Ontario", "Outpatien
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: Addiction counselling in Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: Substance use treatment centre in Greater Toronto Area (GTA)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: Addiction clinic in Ottawa
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: Rehabilitation hospital in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: Outpatient addiction program in Rural Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: Addiction counselling Service type (inpatient/outpatient) in Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: Substance use treatment centre Funding model (public/private) in Greater Toronto Area (GTA)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: Addiction clinic Wait times in Ottawa
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: Rehabilitation hospital Age group (youth/adult) in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: Outpatient addiction program Languages offered in Rural Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: Addiction counselling in Ontario PDF reports
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: Substance use treatment centre in Greater Toronto Area (GTA) CSV datasets
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: Addiction clinic in Ottawa Hospital directories
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: Rehabilitation hospital in Northern Ontario Official hospital websites
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: Outpatient addiction program in Rural Ontario Ontario Health / provincial websites
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 163 unique URLs across 15 queries
+   Data: {"total_urls": 163, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 163 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 163/163 URLs
+   Data: {"validated": 163, "original": 163}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 163 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://canadiancentreforaddictions.org/treatment-programs/outpatient-addiction-treatment/           | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://canadiancentreforaddictions.org/treatment-programs/outpatient-addiction-treatment/           | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://canadiancentreforaddictions.org/treatment-programs/outpatient-addiction-treatment/           | ✓ | ⏱: 1.07s 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=Bu....3255196&longitude=-79.7990319&sd=25&ss=Distance  | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=Bu....3255196&longitude=-79.7990319&sd=25&ss=Distance  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=Bu....3255196&longitude=-79.7990319&sd=25&ss=Distance  | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ http://www.torontocentralhealthline.ca/listServices.aspx?id=10826                                    | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ http://www.torontocentralhealthline.ca/listServices.aspx?id=10826                                    | ✓ | ⏱: 0.09s 
+[COMPLETE] ● http://www.torontocentralhealthline.ca/listServices.aspx?id=10826                                    | ✓ | ⏱: 1.20s 
+[FETCH]... ↓ http://www.northwesthealthline.ca/listServicesDetailed.aspx?id=11484&region=Northern                 | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ http://www.northwesthealthline.ca/listServicesDetailed.aspx?id=11484&region=Northern                 | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.northwesthealthline.ca/listServicesDetailed.aspx?id=11484&region=Northern                 | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://anhp.net/find-services/mental-health-addictions/                                             | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://anhp.net/find-services/mental-health-addictions/                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://anhp.net/find-services/mental-health-addictions/                                             | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ http://www.southeasthealthline.ca/displayService.aspx?id=72834                                       | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ http://www.southeasthealthline.ca/displayService.aspx?id=72834                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.southeasthealthline.ca/displayService.aspx?id=72834                                       | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://canatc.ca/                                                                                   | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://canatc.ca/                                                                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://canatc.ca/                                                                                   | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://ca.indeed.com/q-addiction-counselling-l-ontario-jobs.html                                    | ✓ | ⏱: 1.68s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-addiction-counselling-l-ontario-jobs.html                                    | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://ca.indeed.com/q-addiction-counselling-l-ontario-jobs.html                                    | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ http://www.ontario.ca/document/northern-health-p...professionals-incentive-grant-program-guidelines  | ✓ | ⏱: 1.79s 
+[SCRAPE].. ◆ http://www.ontario.ca/document/northern-health-p...professionals-incentive-grant-program-guidelines  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/document/northern-health-p...professionals-incentive-grant-program-guidelines  | ✓ | ⏱: 1.82s 
+[FETCH]... ↓ http://www.ottawadetox.com/getting-into-ohip-public-addiction-treatment/                             | ✓ | ⏱: 1.96s 
+[SCRAPE].. ◆ http://www.ottawadetox.com/getting-into-ohip-public-addiction-treatment/                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ottawadetox.com/getting-into-ohip-public-addiction-treatment/                             | ✓ | ⏱: 1.98s 
+[FETCH]... ↓ https://addictions.ca/the-path-to-recovery-the-r...tient-rehab-and-addiction-counselors-in-ontario/  | ✓ | ⏱: 1.99s 
+[SCRAPE].. ◆ https://addictions.ca/the-path-to-recovery-the-r...tient-rehab-and-addiction-counselors-in-ontario/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://addictions.ca/the-path-to-recovery-the-r...tient-rehab-and-addiction-counselors-in-ontario/  | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ https://andybhatti.com/interventions/addiction-treatment-centers-ontario/                            | ✓ | ⏱: 2.05s 
+[SCRAPE].. ◆ https://andybhatti.com/interventions/addiction-treatment-centers-ontario/                            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://andybhatti.com/interventions/addiction-treatment-centers-ontario/                            | ✓ | ⏱: 2.09s 
+[FETCH]... ↓ https://clinicaltrials.gov/study/NCT05769777                                                         | ✓ | ⏱: 0.88s 
+[SCRAPE].. ◆ https://clinicaltrials.gov/study/NCT05769777                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://clinicaltrials.gov/study/NCT05769777                                                         | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ http://www.ontario.ca/page/homeless-and-addictio...atment-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 0.70s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/homeless-and-addictio...atment-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/homeless-and-addictio...atment-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 0.72s 
+[FETCH]... ↓ https://addictionrehabcenters.ca/ontario-rehabs/                                                     | ✓ | ⏱: 2.50s 
+[SCRAPE].. ◆ https://addictionrehabcenters.ca/ontario-rehabs/                                                     | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://addictionrehabcenters.ca/ontario-rehabs/                                                     | ✓ | ⏱: 2.59s 
+[FETCH]... ↓ http://www.ontario.ca/page/general-hospital-locations                                                | ✓ | ⏱: 0.98s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/general-hospital-locations                                                | ✓ | ⏱: 0.10s 
+[COMPLETE] ● http://www.ontario.ca/page/general-hospital-locations                                                | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://connexontario.ca/                                                                            | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://connexontario.ca/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://connexontario.ca/                                                                            | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://connect.northeasthealthline.ca/Services/...ohol_and_Drug_Addiction_Assessment_and_Treatment  | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://connect.northeasthealthline.ca/Services/...ohol_and_Drug_Addiction_Assessment_and_Treatment  | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://connect.northeasthealthline.ca/Services/...ohol_and_Drug_Addiction_Assessment_and_Treatment  | ✓ | ⏱: 1.68s 
+[ERROR]... × https://files.ontario.c...t_update_mar_2_2018.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/opendata/mris_early_researcher_awards_data_set_update_mar_2_2018.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/St._John's_Rehab_Hospital                                              | ✓ | ⏱: 0.96s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/St._John's_Rehab_Hospital                                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/St._John's_Rehab_Hospital                                              | ✓ | ⏱: 1.01s 
+[FETCH]... ↓ https://drugaddiction.ca/ontario/                                                                    | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://drugaddiction.ca/ontario/                                                                    | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://drugaddiction.ca/ontario/                                                                    | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://addictionrehabcenters.ca/wait-time-challenges-how-to-cope-while-you-wait-for-a-rehab-spot/   | ✓ | ⏱: 2.22s 
+[SCRAPE].. ◆ https://addictionrehabcenters.ca/wait-time-challenges-how-to-cope-while-you-wait-for-a-rehab-spot/   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://addictionrehabcenters.ca/wait-time-challenges-how-to-cope-while-you-wait-for-a-rehab-spot/   | ✓ | ⏱: 2.27s 
+[FETCH]... ↓ https://andybhatti.com/ontario/rehab-ottawa/                                                         | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://andybhatti.com/ontario/rehab-ottawa/                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://andybhatti.com/ontario/rehab-ottawa/                                                         | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://canatc.ca/addiction-treatment/inpatient/                                                     | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://canatc.ca/addiction-treatment/inpatient/                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://canatc.ca/addiction-treatment/inpatient/                                                     | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://aegismedical.ca/top-mental-health-and-addiction-services-in-ontario/                         | ✓ | ⏱: 3.73s 
+[SCRAPE].. ◆ https://aegismedical.ca/top-mental-health-and-addiction-services-in-ontario/                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://aegismedical.ca/top-mental-health-and-addiction-services-in-ontario/                         | ✓ | ⏱: 3.77s 
+[FETCH]... ↓ https://canatc.ca/company/locations/ottawa/                                                          | ✓ | ⏱: 1.49s 
+[SCRAPE].. ◆ https://canatc.ca/company/locations/ottawa/                                                          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://canatc.ca/company/locations/ottawa/                                                          | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://epe.bac-lac.gc.ca/100/200/301/pwgsc-tpsg...s_canada/2024/082-23-f/POR082-23-Dataset-Pre.csv  | ✓ | ⏱: 1.49s 
+[SCRAPE].. ◆ https://epe.bac-lac.gc.ca/100/200/301/pwgsc-tpsg...s_canada/2024/082-23-f/POR082-23-Dataset-Pre.csv  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://epe.bac-lac.gc.ca/100/200/301/pwgsc-tpsg...s_canada/2024/082-23-f/POR082-23-Dataset-Pre.csv  | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://canatc.ca/locations/                                                                         | ✓ | ⏱: 1.72s 
+[SCRAPE].. ◆ https://canatc.ca/locations/                                                                         | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://canatc.ca/locations/                                                                         | ✓ | ⏱: 1.86s 
+[ERROR]... × https://211ontario.ca/r...0.2481666&topicPath=123  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[ERROR]... × https://211ontario.ca/r...gitude=-75.632338984954  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ https://dfcm.utoronto.ca/greater-toronto-area-gta-stream                                             | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://dfcm.utoronto.ca/greater-toronto-area-gta-stream                                             | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://dfcm.utoronto.ca/greater-toronto-area-gta-stream                                             | ✓ | ⏱: 2.25s 
+[ERROR]... × https://journals.plos.o....0000503&type=printable  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://journals.plos.org/mentalhealth/article/file?id=10.1371/journal.pmen.0000503&type=printable", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[ERROR]... × https://data.ontario.ca/dataset/inventory          | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://data.ontario.ca/dataset/inventory", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 1.29s 
+[FETCH]... ↓ https://connexontario.ca/types-of-mental-health-and-addiction-services-in-ontario/                   | ✓ | ⏱: 1.30s 
+[SCRAPE].. ◆ https://connexontario.ca/types-of-mental-health-and-addiction-services-in-ontario/                   | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://connexontario.ca/types-of-mental-health-and-addiction-services-in-ontario/                   | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://deananderson.ca/                                                                             | ✓ | ⏱: 2.63s 
+[SCRAPE].. ◆ https://deananderson.ca/                                                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://deananderson.ca/                                                                             | ✓ | ⏱: 2.66s 
+[FETCH]... ↓ https://helpwithaddictions.ca/                                                                       | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://helpwithaddictions.ca/                                                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://helpwithaddictions.ca/                                                                       | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://homewoodhealthcentre.com/regional-programs/community-addiction-services/                     | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ https://homewoodhealthcentre.com/regional-programs/community-addiction-services/                     | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://homewoodhealthcentre.com/regional-programs/community-addiction-services/                     | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://freeportrecovery.ca/drug-addiction-rehab-centres-toronto-605190/                             | ✓ | ⏱: 2.30s 
+[SCRAPE].. ◆ https://freeportrecovery.ca/drug-addiction-rehab-centres-toronto-605190/                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://freeportrecovery.ca/drug-addiction-rehab-centres-toronto-605190/                             | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://health-infobase.canada.ca/wastewater/                                                        | ✓ | ⏱: 2.04s 
+[SCRAPE].. ◆ https://health-infobase.canada.ca/wastewater/                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://health-infobase.canada.ca/wastewater/                                                        | ✓ | ⏱: 2.09s 
+[FETCH]... ↓ https://hsnsudbury.ca/en/Services-and-Specialties/Community-Care-Rehabilitation                      | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://hsnsudbury.ca/en/Services-and-Specialties/Community-Care-Rehabilitation                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://hsnsudbury.ca/en/Services-and-Specialties/Community-Care-Rehabilitation                      | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://gbgh.on.ca/programs-and-services/rehabilitation-services/                                    | ✓ | ⏱: 2.20s 
+[SCRAPE].. ◆ https://gbgh.on.ca/programs-and-services/rehabilitation-services/                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://gbgh.on.ca/programs-and-services/rehabilitation-services/                                    | ✓ | ⏱: 2.22s 
+[FETCH]... ↓ https://lastdoor.org/toronto-addiction-treatment-services/                                           | ✓ | ⏱: 1.21s 
+[SCRAPE].. ◆ https://lastdoor.org/toronto-addiction-treatment-services/                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://lastdoor.org/toronto-addiction-treatment-services/                                           | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://newgate180.com/                                                                              | ✓ | ⏱: 1.02s 
+[SCRAPE].. ◆ https://newgate180.com/                                                                              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://newgate180.com/                                                                              | ✓ | ⏱: 1.10s 
+[FETCH]... ↓ https://newdawnmed.com/                                                                              | ✓ | ⏱: 1.21s 
+[SCRAPE].. ◆ https://newdawnmed.com/                                                                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://newdawnmed.com/                                                                              | ✓ | ⏱: 1.26s 
+[FETCH]... ↓ https://freeportrecovery.ca/drug-rehab-facilities-in-toronto-605196/                                 | ✓ | ⏱: 1.28s 
+[SCRAPE].. ◆ https://freeportrecovery.ca/drug-rehab-facilities-in-toronto-605196/                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://freeportrecovery.ca/drug-rehab-facilities-in-toronto-605196/                                 | ✓ | ⏱: 1.33s 
+[FETCH]... ↓ https://link.springer.com/article/10.1186/1472-6963-13-483                                           | ✓ | ⏱: 1.66s 
+[SCRAPE].. ◆ https://link.springer.com/article/10.1186/1472-6963-13-483                                           | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://link.springer.com/article/10.1186/1472-6963-13-483                                           | ✓ | ⏱: 1.78s 
+[FETCH]... ↓ https://freeportrecovery.ca/drug-rehab-clinics-toronto-605195/                                       | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://freeportrecovery.ca/drug-rehab-clinics-toronto-605195/                                       | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://freeportrecovery.ca/drug-rehab-clinics-toronto-605195/                                       | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://nbrhc.on.ca/programs-services/complex-continuing-care-inpatient/                             | ✓ | ⏱: 2.09s 
+[SCRAPE].. ◆ https://nbrhc.on.ca/programs-services/complex-continuing-care-inpatient/                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://nbrhc.on.ca/programs-services/complex-continuing-care-inpatient/                             | ✓ | ⏱: 2.15s 
+[FETCH]... ↓ https://hollandbloorview.ca/                                                                         | ✓ | ⏱: 2.95s 
+[SCRAPE].. ◆ https://hollandbloorview.ca/                                                                         | ✓ | ⏱: 0.22s 
+[COMPLETE] ● https://hollandbloorview.ca/                                                                         | ✓ | ⏱: 3.18s 
+[FETCH]... ↓ https://ontario.cmha.ca/                                                                             | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/                                                                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ontario.cmha.ca/                                                                             | ✓ | ⏱: 1.62s 
+[FETCH]... ↓ https://newgate180.com/service-areas/toronto-gta-rehab-centre/                                       | ✓ | ⏱: 0.65s 
+[SCRAPE].. ◆ https://newgate180.com/service-areas/toronto-gta-rehab-centre/                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://newgate180.com/service-areas/toronto-gta-rehab-centre/                                       | ✓ | ⏱: 0.68s 
+[FETCH]... ↓ https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2812263                                 | ✓ | ⏱: 3.23s 
+[SCRAPE].. ◆ https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2812263                                 | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2812263                                 | ✓ | ⏱: 3.38s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC10037746/                                                   | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC10037746/                                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC10037746/                                                   | ✓ | ⏱: 1.67s 
+[FETCH]... ↓ https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions                       | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions                       | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://mps.cmha.ca/                                                                                 | ✓ | ⏱: 3.30s 
+[SCRAPE].. ◆ https://mps.cmha.ca/                                                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://mps.cmha.ca/                                                                                 | ✓ | ⏱: 3.37s 
+[FETCH]... ↓ https://rehabs.com/treatment/specialized-treatment/teen/                                             | ✓ | ⏱: 0.45s 
+[SCRAPE].. ◆ https://rehabs.com/treatment/specialized-treatment/teen/                                             | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://rehabs.com/treatment/specialized-treatment/teen/                                             | ✓ | ⏱: 0.46s 
+[FETCH]... ↓ https://recovery.care/                                                                               | ✓ | ⏱: 1.91s 
+[SCRAPE].. ◆ https://recovery.care/                                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://recovery.care/                                                                               | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://link.springer.com/article/10.1186/s12889-021-12104-w                                         | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://link.springer.com/article/10.1186/s12889-021-12104-w                                         | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://link.springer.com/article/10.1186/s12889-021-12104-w                                         | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://link.springer.com/article/10.1186/s13011-023-00586-3                                         | ✓ | ⏱: 1.82s 
+[SCRAPE].. ◆ https://link.springer.com/article/10.1186/s13011-023-00586-3                                         | ✓ | ⏱: 0.23s 
+[COMPLETE] ● https://link.springer.com/article/10.1186/s13011-023-00586-3                                         | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://ontario.cmha.ca/documents/residential-treatment-for-children-and-youth/                      | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/documents/residential-treatment-for-children-and-youth/                      | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://ontario.cmha.ca/documents/residential-treatment-for-children-and-youth/                      | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://rehabcareontario.ca/                                                                         | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://rehabcareontario.ca/                                                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://rehabcareontario.ca/                                                                         | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://ontario.cmha.ca/documents/addressing-eme...tal-health-and-addictions-services-and-supports/  | ✓ | ⏱: 1.70s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/documents/addressing-eme...tal-health-and-addictions-services-and-supports/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ontario.cmha.ca/documents/addressing-eme...tal-health-and-addictions-services-and-supports/  | ✓ | ⏱: 1.76s 
+[FETCH]... ↓ https://recovery.com/ontario/                                                                        | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://recovery.com/ontario/                                                                        | ✓ | ⏱: 0.21s 
+[COMPLETE] ● https://recovery.com/ontario/                                                                        | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://noht-eson.ca/resourcenavigator/children-youth/                                               | ✓ | ⏱: 4.22s 
+[SCRAPE].. ◆ https://noht-eson.ca/resourcenavigator/children-youth/                                               | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://noht-eson.ca/resourcenavigator/children-youth/                                               | ✓ | ⏱: 4.29s 
+[FETCH]... ↓ https://serenityhouseottawa.com/                                                                     | ✓ | ⏱: 1.32s 
+[SCRAPE].. ◆ https://serenityhouseottawa.com/                                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://serenityhouseottawa.com/                                                                     | ✓ | ⏱: 1.35s 
+[FETCH]... ↓ https://ohri.ca/en/topic-directory/substance-use-and-addiction                                       | ✓ | ⏱: 4.11s 
+[SCRAPE].. ◆ https://ohri.ca/en/topic-directory/substance-use-and-addiction                                       | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://ohri.ca/en/topic-directory/substance-use-and-addiction                                       | ✓ | ⏱: 4.18s 
+[FETCH]... ↓ https://sjcg.net/services/mental-health_addictions/rehab/main.aspx                                   | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://sjcg.net/services/mental-health_addictions/rehab/main.aspx                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://sjcg.net/services/mental-health_addictions/rehab/main.aspx                                   | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://sah.on.ca/programs-services/mental-health-addictions/addictions-treatment-clinic/            | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://sah.on.ca/programs-services/mental-health-addictions/addictions-treatment-clinic/            | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://sah.on.ca/programs-services/mental-health-addictions/addictions-treatment-clinic/            | ✓ | ⏱: 1.78s 
+[FETCH]... ↓ https://slmhc.on.ca/departments-and-services/rehabilitation/                                         | ✓ | ⏱: 1.32s 
+[SCRAPE].. ◆ https://slmhc.on.ca/departments-and-services/rehabilitation/                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://slmhc.on.ca/departments-and-services/rehabilitation/                                         | ✓ | ⏱: 1.34s 
+[FETCH]... ↓ https://ontario.cmha.ca/documents/caring-togethe...tners-in-the-mental-health-and-addiction-system/  | ✓ | ⏱: 2.68s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/documents/caring-togethe...tners-in-the-mental-health-and-addiction-system/  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://ontario.cmha.ca/documents/caring-togethe...tners-in-the-mental-health-and-addiction-system/  | ✓ | ⏱: 2.77s 
+[FETCH]... ↓ https://utoronto.scholaris.ca/server/api/core/bi...ams/726e6b8f-57b4-4078-8996-5db9a8e12203/content  | ✓ | ⏱: 1.03s 
+[SCRAPE].. ◆ https://utoronto.scholaris.ca/server/api/core/bi...ams/726e6b8f-57b4-4078-8996-5db9a8e12203/content  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://utoronto.scholaris.ca/server/api/core/bi...ams/726e6b8f-57b4-4078-8996-5db9a8e12203/content  | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://tscp.ca/                                                                                     | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://tscp.ca/                                                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://tscp.ca/                                                                                     | ✓ | ⏱: 1.13s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC11658434/                                                   | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC11658434/                                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC11658434/                                                   | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC12616965/                                                   | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC12616965/                                                   | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC12616965/                                                   | ✓ | ⏱: 1.78s 
+[FETCH]... ↓ https://sunnybrook.ca/programs/st-johns-rehab-program/                                               | ✓ | ⏱: 1.75s 
+[SCRAPE].. ◆ https://sunnybrook.ca/programs/st-johns-rehab-program/                                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://sunnybrook.ca/programs/st-johns-rehab-program/                                               | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://www.bchsys.org/en/care-services/mental-health-and-addictions.aspx                            | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://www.bchsys.org/en/care-services/mental-health-and-addictions.aspx                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.bchsys.org/en/care-services/mental-health-and-addictions.aspx                            | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://www.camh.ca/                                                                                 | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://www.camh.ca/                                                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.camh.ca/                                                                                 | ✓ | ⏱: 1.34s 
+[FETCH]... ↓ https://recovery.com/ottawa/                                                                         | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://recovery.com/ottawa/                                                                         | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://recovery.com/ottawa/                                                                         | ✓ | ⏱: 2.31s 
+[FETCH]... ↓ https://recovery.com/toronto/                                                                        | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://recovery.com/toronto/                                                                        | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://recovery.com/toronto/                                                                        | ✓ | ⏱: 2.69s 
+[FETCH]... ↓ https://www.champlainhealthline.ca/listservices.aspx?id=11354                                        | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.champlainhealthline.ca/listservices.aspx?id=11354                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.champlainhealthline.ca/listservices.aspx?id=11354                                        | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://thefarmrehab.com/                                                                            | ✓ | ⏱: 2.57s 
+[SCRAPE].. ◆ https://thefarmrehab.com/                                                                            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://thefarmrehab.com/                                                                            | ✓ | ⏱: 2.63s 
+[FETCH]... ↓ https://recovery.com/trafalgar-ontario/                                                              | ✓ | ⏱: 2.85s 
+[SCRAPE].. ◆ https://recovery.com/trafalgar-ontario/                                                              | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://recovery.com/trafalgar-ontario/                                                              | ✓ | ⏱: 2.98s 
+[FETCH]... ↓ https://www.canadadrugrehab.ca/blog/addiction-tr...nt-withdrawal/inpatient-vs-outpatient-treatment/  | ✓ | ⏱: 1.74s 
+[SCRAPE].. ◆ https://www.canadadrugrehab.ca/blog/addiction-tr...nt-withdrawal/inpatient-vs-outpatient-treatment/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.canadadrugrehab.ca/blog/addiction-tr...nt-withdrawal/inpatient-vs-outpatient-treatment/  | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/news/2023...arms-related-to-substance-use-across-canada.html  | ✓ | ⏱: 2.10s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/news/2023...arms-related-to-substance-use-across-canada.html  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/news/2023...arms-related-to-substance-use-across-canada.html  | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://oasas.ny.gov/find-addiction-treatment                                                        | ✓ | ⏱: 6.85s 
+[SCRAPE].. ◆ https://oasas.ny.gov/find-addiction-treatment                                                        | ✓ | ⏱: 1.85s 
+[COMPLETE] ● https://oasas.ny.gov/find-addiction-treatment                                                        | ✓ | ⏱: 8.74s 
+[FETCH]... ↓ https://www.cvshealth.com/                                                                           | ✓ | ⏱: 3.52s 
+[SCRAPE].. ◆ https://www.cvshealth.com/                                                                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.cvshealth.com/                                                                           | ✓ | ⏱: 3.58s 
+[FETCH]... ↓ https://recovery.com/toronto/outpatient/                                                             | ✓ | ⏱: 5.56s 
+[SCRAPE].. ◆ https://recovery.com/toronto/outpatient/                                                             | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://recovery.com/toronto/outpatient/                                                             | ✓ | ⏱: 5.68s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/locations/bellwood/                                            | ✓ | ⏱: 3.38s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/locations/bellwood/                                            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/locations/bellwood/                                            | ✓ | ⏱: 3.45s 
+[FETCH]... ↓ https://www.cihi.ca/en/indicators/hospital-stay-extended-until-home-care-services-or-supports-ready  | ✓ | ⏱: 3.99s 
+[SCRAPE].. ◆ https://www.cihi.ca/en/indicators/hospital-stay-extended-until-home-care-services-or-supports-ready  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.cihi.ca/en/indicators/hospital-stay-extended-until-home-care-services-or-supports-ready  | ✓ | ⏱: 4.08s 
+[FETCH]... ↓ https://www.cbc.ca/news/canada/toronto/toronto-d...ddiction-mayoral-candidates-byelection-1.6808105  | ✓ | ⏱: 4.45s 
+[SCRAPE].. ◆ https://www.cbc.ca/news/canada/toronto/toronto-d...ddiction-mayoral-candidates-byelection-1.6808105  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.cbc.ca/news/canada/toronto/toronto-d...ddiction-mayoral-candidates-byelection-1.6808105  | ✓ | ⏱: 4.50s 
+[FETCH]... ↓ https://www.facebook.com/ONThealth/posts/ontario...ment-hart-hubs-are-making-prog/1297277815765539/  | ✓ | ⏱: 2.89s 
+[SCRAPE].. ◆ https://www.facebook.com/ONThealth/posts/ontario...ment-hart-hubs-are-making-prog/1297277815765539/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/ONThealth/posts/ontario...ment-hart-hubs-are-making-prog/1297277815765539/  | ✓ | ⏱: 2.93s 
+[FETCH]... ↓ https://www.drugrehab.ca/ontario-teen-drug-rehab.html                                                | ✓ | ⏱: 3.90s 
+[SCRAPE].. ◆ https://www.drugrehab.ca/ontario-teen-drug-rehab.html                                                | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.drugrehab.ca/ontario-teen-drug-rehab.html                                                | ✓ | ⏱: 4.00s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html       | ✓ | ⏱: 3.62s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html       | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html       | ✓ | ⏱: 3.74s 
+[FETCH]... ↓ https://www.freedomaddiction.ca/blog/what-to-do-when-waitlisted-for-rehab/                           | ✓ | ⏱: 3.02s 
+[SCRAPE].. ◆ https://www.freedomaddiction.ca/blog/what-to-do-when-waitlisted-for-rehab/                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.freedomaddiction.ca/blog/what-to-do-when-waitlisted-for-rehab/                           | ✓ | ⏱: 3.08s 
+[FETCH]... ↓ https://www.bayshore.ca/services/nrio/                                                               | ✓ | ⏱: 5.82s 
+[SCRAPE].. ◆ https://www.bayshore.ca/services/nrio/                                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.bayshore.ca/services/nrio/                                                               | ✓ | ⏱: 5.87s 
+[FETCH]... ↓ https://renascent.ca/                                                                                | ✓ | ⏱: 7.40s 
+[SCRAPE].. ◆ Error processing link: 'toll_free_tel' does not appear to be an IPv4 or IPv6 address 
+[SCRAPE].. ◆ https://renascent.ca/                                                                                | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://renascent.ca/                                                                                | ✓ | ⏱: 7.54s 
+[FETCH]... ↓ https://www.camh.ca/en/driving-change/the-crisis-is-real/mental-health-statistics                    | ✓ | ⏱: 3.48s 
+[SCRAPE].. ◆ https://www.camh.ca/en/driving-change/the-crisis-is-real/mental-health-statistics                    | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.camh.ca/en/driving-change/the-crisis-is-real/mental-health-statistics                    | ✓ | ⏱: 3.56s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/locations/ehn-online/                                          | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/locations/ehn-online/                                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/locations/ehn-online/                                          | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://www.camh.ca/en/patients-and-families/programs-and-services                                   | ✓ | ⏱: 3.63s 
+[SCRAPE].. ◆ https://www.camh.ca/en/patients-and-families/programs-and-services                                   | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.camh.ca/en/patients-and-families/programs-and-services                                   | ✓ | ⏱: 3.71s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/locations/guardians-gateway/                                   | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/locations/guardians-gateway/                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/locations/guardians-gateway/                                   | ✓ | ⏱: 1.71s 
+[ERROR]... × https://www.nserc-crsng...C_GRT_FYR2016_AWARD.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.nserc-crsng.gc.ca/opendata/NSERC_GRT_FYR2016_AWARD.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.canadadrugrehab.ca/blog/addiction-tr...ovincial-snapshot-accessing-public-treatment-bc/  | ✓ | ⏱: 1.89s 
+[SCRAPE].. ◆ https://www.canadadrugrehab.ca/blog/addiction-tr...ovincial-snapshot-accessing-public-treatment-bc/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.canadadrugrehab.ca/blog/addiction-tr...ovincial-snapshot-accessing-public-treatment-bc/  | ✓ | ⏱: 1.92s 
+[FETCH]... ↓ https://www.hnhbhealthline.ca/listservices.aspx?id=11498                                             | ✓ | ⏱: 1.49s 
+[SCRAPE].. ◆ https://www.hnhbhealthline.ca/listservices.aspx?id=11498                                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.hnhbhealthline.ca/listservices.aspx?id=11498                                             | ✓ | ⏱: 1.51s 
+[FETCH]... ↓ https://www.canadadrugrehab.ca/ontario/ontario-locate-your-health-authority/toronto-central/         | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://www.canadadrugrehab.ca/ontario/ontario-locate-your-health-authority/toronto-central/         | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.canadadrugrehab.ca/ontario/ontario-locate-your-health-authority/toronto-central/         | ✓ | ⏱: 2.07s 
+[FETCH]... ↓ https://www.northeasthealthline.ca/listservices.aspx?id=10826                                        | ✓ | ⏱: 1.03s 
+[SCRAPE].. ◆ https://www.northeasthealthline.ca/listservices.aspx?id=10826                                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.northeasthealthline.ca/listservices.aspx?id=10826                                        | ✓ | ⏱: 1.07s 
+[ERROR]... × https://www.ola.org/sit...olicy-202208-202412.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ola.org/sites/default/files/data-resources/committee-transcripts/SP-Standing-Committee-on-Social-Policy-202208-202412.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.northwesthealthline.ca/displayservice.aspx?id=141262                                     | ✓ | ⏱: 1.04s 
+[SCRAPE].. ◆ https://www.northwesthealthline.ca/displayservice.aspx?id=141262                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.northwesthealthline.ca/displayservice.aspx?id=141262                                     | ✓ | ⏱: 1.06s 
+[FETCH]... ↓ https://www.josephbranthospital.ca/areas-of-care/rehabilitation                                      | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://www.josephbranthospital.ca/areas-of-care/rehabilitation                                      | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.josephbranthospital.ca/areas-of-care/rehabilitation                                      | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://www.kindredhospitals.com/locations/california/ontario                                        | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://www.kindredhospitals.com/locations/california/ontario                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.kindredhospitals.com/locations/california/ontario                                        | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://www.haltonhealthcare.on.ca/services_/28763/s30118-inpatient-rehabilitation-unit              | ✓ | ⏱: 2.43s 
+[SCRAPE].. ◆ https://www.haltonhealthcare.on.ca/services_/28763/s30118-inpatient-rehabilitation-unit              | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.haltonhealthcare.on.ca/services_/28763/s30118-inpatient-rehabilitation-unit              | ✓ | ⏱: 2.44s 
+[FETCH]... ↓ https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 1.05s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://www.kflaph.ca/en/organizations-and-profe...ls/mental-health-and-substance-use-services.aspx  | ✓ | ⏱: 1.94s 
+[SCRAPE].. ◆ https://www.kflaph.ca/en/organizations-and-profe...ls/mental-health-and-substance-use-services.aspx  | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://www.kflaph.ca/en/organizations-and-profe...ls/mental-health-and-substance-use-services.aspx  | ✓ | ⏱: 2.09s 
+[FETCH]... ↓ https://www.hqontario.ca/system-performance/time-spent-in-emergency-departments                      | ✓ | ⏱: 2.57s 
+[SCRAPE].. ◆ https://www.hqontario.ca/system-performance/time-spent-in-emergency-departments                      | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.hqontario.ca/system-performance/time-spent-in-emergency-departments                      | ✓ | ⏱: 2.64s 
+[FETCH]... ↓ https://www.hamiltonhealthsciences.ca/about-us/o...on/our-locations/regional-rehabilitation-centre/  | ✓ | ⏱: 2.98s 
+[SCRAPE].. ◆ https://www.hamiltonhealthsciences.ca/about-us/o...on/our-locations/regional-rehabilitation-centre/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.hamiltonhealthsciences.ca/about-us/o...on/our-locations/regional-rehabilitation-centre/  | ✓ | ⏱: 3.03s 
+[FETCH]... ↓ https://www.ontariocolleges.ca/en/programs/fields-of-interest/addictions-mental-health               | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://www.ontariocolleges.ca/en/programs/fields-of-interest/addictions-mental-health               | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.ontariocolleges.ca/en/programs/fields-of-interest/addictions-mental-health               | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://www.ottawapublichealth.ca/en/public-health-topics/mental-health-and-addiction-services.aspx  | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://www.ottawapublichealth.ca/en/public-health-topics/mental-health-and-addiction-services.aspx  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ottawapublichealth.ca/en/public-health-topics/mental-health-and-addiction-services.aspx  | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://www.mdpi.com/2071-1050/12/3/997                                                              | ✓ | ⏱: 2.62s 
+[SCRAPE].. ◆ https://www.mdpi.com/2071-1050/12/3/997                                                              | ✓ | ⏱: 0.22s 
+[COMPLETE] ● https://www.mdpi.com/2071-1050/12/3/997                                                              | ✓ | ⏱: 2.85s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/clinical-services/deptpgrmcs/departments/mental-health/          | ✓ | ⏱: 1.86s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/clinical-services/deptpgrmcs/departments/mental-health/          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/clinical-services/deptpgrmcs/departments/mental-health/          | ✓ | ⏱: 1.89s 
+[FETCH]... ↓ https://www.phsd.ca/resources/mental-health-and-substance-use-resources/                             | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://www.phsd.ca/resources/mental-health-and-substance-use-resources/                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.phsd.ca/resources/mental-health-and-substance-use-resources/                             | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://www.psychologytoday.com/ca/therapists/ontario?category=addiction                             | ✓ | ⏱: 1.66s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/ca/therapists/ontario?category=addiction                             | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.psychologytoday.com/ca/therapists/ontario?category=addiction                             | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://www.rideauwood.org/                                                                          | ✓ | ⏱: 1.40s 
+[SCRAPE].. ◆ https://www.rideauwood.org/                                                                          | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.rideauwood.org/                                                                          | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://www.rrcp.sjcg.net/                                                                           | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://www.rrcp.sjcg.net/                                                                           | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.rrcp.sjcg.net/                                                                           | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://www.rvh.on.ca/areas-of-care/mental-health-and-addictions/adult-addiction-services/           | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://www.rvh.on.ca/areas-of-care/mental-health-and-addictions/adult-addiction-services/           | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.rvh.on.ca/areas-of-care/mental-health-and-addictions/adult-addiction-services/           | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/resources/blog/outpatient-vs-inpatient-programs/               | ✓ | ⏱: 4.92s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/resources/blog/outpatient-vs-inpatient-programs/               | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/resources/blog/outpatient-vs-inpatient-programs/               | ✓ | ⏱: 4.99s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=11354                                   | ✓ | ⏱: 0.98s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=11354                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=11354                                   | ✓ | ⏱: 1.00s 
+[FETCH]... ↓ https://www.ontariohealth.ca/clinical/mental-health-addictions/structured-psychotherapy.html         | ✓ | ⏱: 3.19s 
+[SCRAPE].. ◆ https://www.ontariohealth.ca/clinical/mental-health-addictions/structured-psychotherapy.html         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontariohealth.ca/clinical/mental-health-addictions/structured-psychotherapy.html         | ✓ | ⏱: 3.23s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/locations/bellwood/facility/                                   | ✓ | ⏱: 5.19s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/locations/bellwood/facility/                                   | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/locations/bellwood/facility/                                   | ✓ | ⏱: 5.24s 
+[FETCH]... ↓ https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 1.05s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/newsroom/ott...re-please-come-to-or-connect-with-your-hospital/  | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/newsroom/ott...re-please-come-to-or-connect-with-your-hospital/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/newsroom/ott...re-please-come-to-or-connect-with-your-hospital/  | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://www.ontario.ca/page/mental-health-services-children-and-youth                                | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/mental-health-services-children-and-youth                                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/mental-health-services-children-and-youth                                | ✓ | ⏱: 1.15s 
+[FETCH]... ↓ https://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://www.ontariohealth.ca/system/reporting/wait-times                                             | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://www.ontariohealth.ca/system/reporting/wait-times                                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontariohealth.ca/system/reporting/wait-times                                             | ✓ | ⏱: 1.62s 
+[FETCH]... ↓ https://www.uhn.ca/TorontoRehab                                                                      | ✓ | ⏱: 1.82s 
+[SCRAPE].. ◆ https://www.uhn.ca/TorontoRehab                                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.uhn.ca/TorontoRehab                                                                      | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=young-adult-residential          | ✓ | ⏱: 0.99s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=young-adult-residential          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=young-adult-residential          | ✓ | ⏱: 1.03s 
+[FETCH]... ↓ https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx                   | ✓ | ⏱: 1.66s 
+[SCRAPE].. ◆ https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx                   | ✓ | ⏱: 1.70s 
+[FETCH]... ↓ https://www.psychologytoday.com/ca/treatment-rehab/on/brampton                                       | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/ca/treatment-rehab/on/brampton                                       | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.psychologytoday.com/ca/treatment-rehab/on/brampton                                       | ✓ | ⏱: 1.32s 
+[FETCH]... ↓ https://www.psychologytoday.com/us/treatment-rehab/mi/ottawa-county                                  | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/us/treatment-rehab/mi/ottawa-county                                  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.psychologytoday.com/us/treatment-rehab/mi/ottawa-county                                  | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://www.rrh.org.au/journal/article/6413/                                                         | ✓ | ⏱: 3.37s 
+[SCRAPE].. ◆ https://www.rrh.org.au/journal/article/6413/                                                         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.rrh.org.au/journal/article/6413/                                                         | ✓ | ⏱: 3.40s 
+[FETCH]... ↓ https://www.theroyal.ca/                                                                             | ✓ | ⏱: 3.39s 
+[SCRAPE].. ◆ https://www.theroyal.ca/                                                                             | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.theroyal.ca/                                                                             | ✓ | ⏱: 3.46s 
+[FETCH]... ↓ https://www.uhn.ca/West_Park                                                                         | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://www.uhn.ca/West_Park                                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.uhn.ca/West_Park                                                                         | ✓ | ⏱: 1.13s 
+[FETCH]... ↓ https://www.hrh.ca/programs/mental-health-addictions/                                                | ✓ | ⏱: 7.10s 
+[SCRAPE].. ◆ https://www.hrh.ca/programs/mental-health-addictions/                                                | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.hrh.ca/programs/mental-health-addictions/                                                | ✓ | ⏱: 7.15s 
+[FETCH]... ↓ https://www.ymcagta.org/youth-programs/ysap                                                          | ✓ | ⏱: 3.02s 
+[SCRAPE].. ◆ https://www.ymcagta.org/youth-programs/ysap                                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ymcagta.org/youth-programs/ysap                                                          | ✓ | ⏱: 3.04s 
+[FETCH]... ↓ https://www.theroyal.ca/programs-clinics-service...tory/substance-use-concurrent-disorders-program/  | ✓ | ⏱: 2.71s 
+[SCRAPE].. ◆ https://www.theroyal.ca/programs-clinics-service...tory/substance-use-concurrent-disorders-program/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.theroyal.ca/programs-clinics-service...tory/substance-use-concurrent-disorders-program/  | ✓ | ⏱: 2.75s 
+⚠️  Crawl failed for https://newgate180.com/service-areas/toronto-gta-rehab-centre/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/opendata/mris_early_researcher_awards_data_set_update_mar_2_2018.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://newdawnmed.com/: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for https://recovery.com/ottawa/: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for https://serenityhouseottawa.com/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://journals.plos.org/mentalhealth/article/file?id=10.1371/journal.pmen.0000503&type=printable", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://canatc.ca/company/locations/ottawa/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://data.ontario.ca/dataset/inventory", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://mps.cmha.ca/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.nserc-crsng.gc.ca/opendata/NSERC_GRT_FYR2016_AWARD.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for http://www.ontario.ca/page/homeless-and-addiction-recovery-treatment-hart-hubs-reference-document-january-2025: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ola.org/sites/default/files/data-resources/committee-transcripts/SP-Standing-Committee-on-Social-Policy-202208-202412.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ http://amho.ca/wp-content/uploads/2023/10/AMHO_BudgetSubmission_2022_FINAL.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://amho.ca/wp-content/uploads/2023/10/AMHO_BudgetSubmission_2022_FINAL.pdf... 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpoumffwlm.pdf 
+[SCRAPE].. ◆ http://amho.ca/wp-content/uploads/2023/10/AMHO_BudgetSubmission_2022_FINAL.pdf                       | ✓ | ⏱: 1.27s 
+[COMPLETE] ● http://amho.ca/wp-content/uploads/2023/10/AMHO_BudgetSubmission_2022_FINAL.pdf                       | ✓ | ⏱: 1.27s 
+[FETCH]... ↓ http://pcmch.on.ca/wp-content/uploads/2022/05/CC...ition-HCP-Checklist_Final_Feb222022-Fillable.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf... 
+[ERROR]... × http://pcmch.on.ca/wp-c..._Feb222022-Fillable.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf, error: Failed to download PDF from 
+http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf: 403 Client Error: Forbidden for url: http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf, error: Failed to download PDF from http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf: 403 Client Error: Forbidden for url: http://pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-HCP-Checklist_Final_Feb222022-Fillable.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.hqontario.ca/Portals/0/documents/evi...ult-health-care-services-quality-standard-en.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.hqontario.ca/Portals/0/documents/evidence/quality-standards/qs-transitions-from-youth-to-adult-health-care-services-quality-standard-en.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpbm43df3z.pdf 
+[SCRAPE].. ◆ https://www.hqontario.ca/Portals/0/documents/evi...ult-health-care-services-quality-standard-en.pdf  | ✓ | ⏱: 3.56s 
+[COMPLETE] ● https://www.hqontario.ca/Portals/0/documents/evi...ult-health-care-services-quality-standard-en.pdf  | ✓ | ⏱: 3.56s 
+[FETCH]... ↓ https://www.hqontario.ca/portals/0/documents/pr/theme-report-taking-stock-en.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.hqontario.ca/portals/0/documents/pr/theme-report-taking-stock-en.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp5ehz96sx.pdf 
+[SCRAPE].. ◆ https://www.hqontario.ca/portals/0/documents/pr/theme-report-taking-stock-en.pdf                     | ✓ | ⏱: 5.58s 
+[COMPLETE] ● https://www.hqontario.ca/portals/0/documents/pr/theme-report-taking-stock-en.pdf                     | ✓ | ⏱: 5.58s 
+[FETCH]... ↓ https://amho.ca/wp-content/uploads/2025/03/Unloc...Addictions-Supportive-Housing-Needs-AMHO2025.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://amho.ca/wp-content/uploads/2025/03/Unlocking-Solutions_Understanding-and-Addressing-Ontarios-Mental-Health-and-Addictions-Supportive-Housing-Needs-AMHO2025.pdf... 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpgawofwaf.pdf 
+[SCRAPE].. ◆ https://amho.ca/wp-content/uploads/2025/03/Unloc...Addictions-Supportive-Housing-Needs-AMHO2025.pdf  | ✓ | ⏱: 5.00s 
+[COMPLETE] ● https://amho.ca/wp-content/uploads/2025/03/Unloc...Addictions-Supportive-Housing-Needs-AMHO2025.pdf  | ✓ | ⏱: 5.00s 
+[FETCH]... ↓ https://www.ices.on.ca/wp-content/uploads/2023/06/Summary-1.pdf                                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ices.on.ca/wp-content/uploads/2023/06/Summary-1.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpru0ea3na.pdf 
+[SCRAPE].. ◆ https://www.ices.on.ca/wp-content/uploads/2023/06/Summary-1.pdf                                      | ✓ | ⏱: 0.65s 
+[COMPLETE] ● https://www.ices.on.ca/wp-content/uploads/2023/06/Summary-1.pdf                                      | ✓ | ⏱: 0.65s 
+[FETCH]... ↓ https://cmha.ca/wp-content/uploads/2024/11/State-of-Mental-Health-profile-Ontario.pdf                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cmha.ca/wp-content/uploads/2024/11/State-of-Mental-Health-profile-Ontario.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpuu3lybq0.pdf 
+[SCRAPE].. ◆ https://cmha.ca/wp-content/uploads/2024/11/State-of-Mental-Health-profile-Ontario.pdf                | ✓ | ⏱: 0.40s 
+[COMPLETE] ● https://cmha.ca/wp-content/uploads/2024/11/State-of-Mental-Health-profile-Ontario.pdf                | ✓ | ⏱: 0.40s 
+[FETCH]... ↓ https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf                           | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf... 
+[ERROR]... × https://cdpe.org/wp-con...S-Toronto-Nov-2024-.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf, error: Failed to download PDF from https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf: 403 
+Client Error: Forbidden for url: https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf, error: Failed to download PDF from https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf: 403 Client Error: Forbidden for url: https://cdpe.org/wp-content/uploads/2024/11/CDPE-SCS-Toronto-Nov-2024-.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://multiculturalmentalhealth.ca/wp-content/uploads/2019/07/RLGPolicyDocs2006.pdf                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://multiculturalmentalhealth.ca/wp-content/uploads/2019/07/RLGPolicyDocs2006.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfpaa04pm.pdf 
+[SCRAPE].. ◆ https://multiculturalmentalhealth.ca/wp-content/uploads/2019/07/RLGPolicyDocs2006.pdf                | ✓ | ⏱: 0.23s 
+[COMPLETE] ● https://multiculturalmentalhealth.ca/wp-content/uploads/2019/07/RLGPolicyDocs2006.pdf                | ✓ | ⏱: 0.23s 
+[FETCH]... ↓ https://www.stjoes.ca/hospital-services/mental-h...for-adult-residental-addiction-services-2017.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf... 
+[ERROR]... × https://www.stjoes.ca/h...ction-services-2017.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: 
+https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf, error: Failed to download PDF from 
+https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf: 403 Client Error: Forbidden for url: 
+https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf, error: Failed to download PDF from https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf: 403 Client Error: Forbidden for url: https://www.stjoes.ca/hospital-services/mental-health-addiction-services/addiction-services/womankind-addiction-service/ontario-provincial-standards-for-adult-residental-addiction-services-2017.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://mdsc.ca/documents/Publications/Final Rep...port on Mental Health and Addict ENG Aug2010.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf... 
+[ERROR]... × https://mdsc.ca/documen... Addict ENG Aug2010.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf, error: Failed to download PDF from 
+https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf: 404 Client Error: Not Found for url: 
+https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf, error: Failed to download PDF from https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf: 404 Client Error: Not Found for url: https://mdsc.ca/documents/Publications/Final%20Report_Select%20Report%20on%20Mental%20Health%20and%20Addict%20ENG%20Aug2010.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.camh.ca/-/media/research-files/osduhs-mental-health-and-wellbeing-report_2023.pdf        | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/research-files/osduhs-mental-health-and-wellbeing-report_2023.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp359jubqb.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/research-files/osduhs-mental-health-and-wellbeing-report_2023.pdf        | ✓ | ⏱: 31.60s 
+[COMPLETE] ● https://www.camh.ca/-/media/research-files/osduhs-mental-health-and-wellbeing-report_2023.pdf        | ✓ | ⏱: 31.60s 
+[FETCH]... ↓ https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf    | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpoh4l8_g2.pdf 
+[SCRAPE].. ◆ https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf    | ✓ | ⏱: 3.11s 
+[COMPLETE] ● https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf    | ✓ | ⏱: 3.11s 
+[FETCH]... ↓ https://incomesecurity.org/wp-content/uploads/20...s-in-Ontario-w-2-headers-updated-May-2018-_2.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://incomesecurity.org/wp-content/uploads/2020/04/Understanding-the-complexity-of-treatment-of-mental-illness-and-addictions-in-Ontario-w-2-headers-updated-May-2018-_2.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpzihdu34f.pdf 
+[SCRAPE].. ◆ https://incomesecurity.org/wp-content/uploads/20...s-in-Ontario-w-2-headers-updated-May-2018-_2.pdf  | ✓ | ⏱: 0.74s 
+[COMPLETE] ● https://incomesecurity.org/wp-content/uploads/20...s-in-Ontario-w-2-headers-updated-May-2018-_2.pdf  | ✓ | ⏱: 0.74s 
+[FETCH]... ↓ https://www.durham.ca/en/health-and-wellness/res...Services/BoardofHealthManual/2024-AEP-Report.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.durham.ca/en/health-and-wellness/resources/Documents/HealthInformationServices/BoardofHealthManual/2024-AEP-Report.pdf... 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpsokqh73l.pdf 
+[SCRAPE].. ◆ https://www.durham.ca/en/health-and-wellness/res...Services/BoardofHealthManual/2024-AEP-Report.pdf  | ✓ | ⏱: 2.21s 
+[COMPLETE] ● https://www.durham.ca/en/health-and-wellness/res...Services/BoardofHealthManual/2024-AEP-Report.pdf  | ✓ | ⏱: 2.21s 
+[FETCH]... ↓ https://tellingstorieswithdata.com/inputs/pdfs/paper-1-2023-Christina_Wei.pdf                        | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://tellingstorieswithdata.com/inputs/pdfs/paper-1-2023-Christina_Wei.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpc76eiizp.pdf 
+[SCRAPE].. ◆ https://tellingstorieswithdata.com/inputs/pdfs/paper-1-2023-Christina_Wei.pdf                        | ✓ | ⏱: 0.40s 
+[COMPLETE] ● https://tellingstorieswithdata.com/inputs/pdfs/paper-1-2023-Christina_Wei.pdf                        | ✓ | ⏱: 0.40s 
+[FETCH]... ↓ https://www.ottawapublichealth.ca/en/public-heal...es/Documents/mental_health_resource_guide_en.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ottawapublichealth.ca/en/public-health-topics/resources/Documents/mental_health_resource_guide_en.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfhyb5jfv.pdf 
+[SCRAPE].. ◆ https://www.ottawapublichealth.ca/en/public-heal...es/Documents/mental_health_resource_guide_en.pdf  | ✓ | ⏱: 12.06s 
+[COMPLETE] ● https://www.ottawapublichealth.ca/en/public-heal...es/Documents/mental_health_resource_guide_en.pdf  | ✓ | ⏱: 12.06s 
+[FETCH]... ↓ https://www.cda-amc.ca/sites/default/files/es/es...ams-for-treatment-opioid-addiction-in-Canada.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cda-amc.ca/sites/default/files/es/es0335-programs-for-treatment-opioid-addiction-in-Canada.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpi6j98tmc.pdf 
+[SCRAPE].. ◆ https://www.cda-amc.ca/sites/default/files/es/es...ams-for-treatment-opioid-addiction-in-Canada.pdf  | ✓ | ⏱: 5.05s 
+[COMPLETE] ● https://www.cda-amc.ca/sites/default/files/es/es...ams-for-treatment-opioid-addiction-in-Canada.pdf  | ✓ | ⏱: 5.06s 
+[FETCH]... ↓ https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp1wyhm6uz.pdf 
+[SCRAPE].. ◆ https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf                     | ✓ | ⏱: 5.76s 
+[COMPLETE] ● https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf                     | ✓ | ⏱: 5.76s 

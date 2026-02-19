@@ -1,0 +1,31 @@
+iteration,query
+1,Ontario acute-care hospital publicly funded provincially open data portal csv
+1,Ontario teaching university-affiliated hospital open data portal json
+1,Ontario community/general hospital non-teaching publicly funded provincially owned city Toronto csv
+1,Ontario acute-care hospital provincially funded teaching status affiliated with a university regional health region json
+1,Ontario health region hospitals csv regional health authority Ontario
+1,Ontario open data portal hospitals csv by health region
+1,Ontario hospital annual reports pdf teaching affiliated university hospital
+1,Ontario university-affiliated teaching hospital annual report pdf
+1,Toronto acute-care hospital csv publicly funded Ontario
+1,Ottawa community hospital non-teaching csv Ontario publicly funded
+1,Ontario Health statistics API hospitals json
+1,site:ontario.ca hospital annual reports pdf teaching hospital
+1,filetype:pdf Ontario hospital annual report affiliated with university
+1,filetype:csv Ontario hospitals open data portal city Toronto
+1,directory:Ontario hospitals pdf annual report site:ontario.ca
+2,Ontario general acute-care hospital broad dataset CSV Excel bed_capacity_class: large location_type: urban
+2,Ontario teaching hospital medium JSON API feed bed_capacity_class: medium location_type: urban teaching_status: true
+2,Ontario pediatric hospital narrow XML data feed bed_capacity_class: small location_type: rural teaching_status: false
+2,Ontario general acute-care hospital broad filetype:pdf directory:/ontario/hospitals dataset
+2,Ontario teaching hospital medium dataset JSON API feed location_type: urban bed_capacity_class: large teaching_status: true
+2,Ontario general acute-care hospital narrow XML data feed bed_capacity_class: small location_type: rural
+2,Ontario pediatric hospital broad dataset CSV Excel location_type: urban bed_capacity_class: medium teaching_status: false
+2,Ontario general acute-care hospital broad JSON API feed location_type: urban bed_capacity_class: large
+2,Ontario pediatric hospital medium dataset CSV Excel bed_capacity_class: small location_type: rural
+2,Ontario teaching hospital narrow dataset JSON API feed bed_capacity_class: medium location_type: urban
+2,Ontario general acute-care hospital broad XML data feed location_type: rural bed_capacity_class: large
+2,Ontario teaching hospital narrow dataset CSV Excel bed_capacity_class: small location_type: urban
+2,Ontario pediatric hospital broad dataset filetype:xlsx location_type: urban teaching_status: true
+2,Ontario general acute-care hospital medium dataset filetype:csv location_type: rural bed_capacity_class: medium
+2,Ontario pediatric hospital broad dataset filetype:pdf directory:/ontario/hospitals/ontario-pediatrics

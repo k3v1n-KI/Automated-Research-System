@@ -1,0 +1,46 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 1,
+  "chunk_chars": 5888,
+  "content_chars": 3405,
+  "model": "gpt-5-mini",
+  "response": {
+    "id": "chatcmpl-D7UtJSpHuorwV9ngSNFrQ9aZvBulQ",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  {\n    \"hospital_name\": \"Stevenson Memorial Hospital\",\n    \"address\": \"200 Fletcher Crescent\",\n    \"city\": \"Alliston\"\n  },\n  {\n    \"hospital_name\": \"Royal Victoria Regional Health Centre\",\n    \"address\": \"201 Georgian Drive\",\n    \"city\": \"Barrie\"\n  },\n  {\n    \"hospital_name\": \"Brampton Civic Hospital\",\n    \"address\": \"2100 Bovaird Drive East\",\n    \"city\": \"Brampton\"\n  },\n  {\n    \"hospital_name\": \"Etobicoke General Hospital (Toronto)\",\n    \"address\": \"101 Humber College Boulevard\",\n    \"city\": \"Etobicoke\"\n  },\n  {\n    \"hospital_name\": \"Peel Memorial Centre for Integrated Health and Wellness\",\n    \"address\": \"20 Lynch Street\",\n    \"city\": \"Brampton\"\n  },\n  {\n    \"hospital_name\": \"Reactivation Care Centre \u2013 Church (Toronto)\",\n    \"address\": \"200 Church Street\",\n    \"city\": \"Toronto\"\n  },\n  {\n    \"hospital_name\": \"Collingwood General And Marine Hospital\",\n    \"address\": \"459 Hume Street\",\n    \"city\": \"Collingwood\"\n  },\n  {\n    \"hospital_name\": \"Huntsville District Memorial Hospital\",\n    \"address\": \"100 Frank Miller Drive\",\n    \"city\": \"Huntsville\"\n  },\n  {\n    \"hospital_name\": \"South Muskoka Memorial Hospital (Bracebridge)\",\n    \"address\": \"75 Ann Street\",\n    \"city\": \"Bracebridge\"\n  },\n  {\n    \"hospital_name\": \"Markham-Stouffville Hospital\",\n    \"address\": \"381 Church Street\",\n    \"city\": \"Markham\"\n  },\n  {\n    \"hospital_name\": \"Uxbridge Hospital\",\n    \"address\": \"4 Campbell Drive\",\n    \"city\": \"Uxbridge\"\n  },\n  {\n    \"hospital_name\": \"Reactivation Care Centre \u2013 Finch (Toronto)\",\n    \"address\": \"2111 Finch Avenue West\",\n    \"city\": \"Toronto\"\n  },\n  {\n    \"hospital_name\": \"Georgian Bay General Hospital \u2014 Main Site\",\n    \"address\": \"1112 St. Andrew's Drive\",\n    \"city\": \"Midland\"\n  },\n  {\n    \"hospital_name\": \"Georgian Bay General Hospital \u2014 Prospect Boulevard Site\",\n    \"address\": \"611 Prospect Boulevard\",\n    \"city\": \"Midland\"\n  },\n  {\n    \"hospital_name\": \"Credit Valley Hospital\",\n    \"address\": \"2200 Eglinton Avenue West\",\n    \"city\": \"Mississauga\"\n  },\n  {\n    \"hospital_name\": \"Mississauga Hospital\",\n    \"address\": \"100 Queensway West\",\n    \"city\": \"Mississauga\"\n  },\n  {\n    \"hospital_name\": \"Queensway Health Centre (Toronto)\",\n    \"address\": \"150 Sherway Drive\",\n    \"city\": \"Toronto\"\n  },\n  {\n    \"hospital_name\": \"Reactivation Care Centre \u2013 Church (Toronto)\",\n    \"address\": \"200 Church Street\",\n    \"city\": \"Toronto\"\n  },\n  {\n    \"hospital_name\": \"Speakman Dialysis Care Centre\",\n    \"address\": \"2180 Speakman Drive, Ground Floor\",\n    \"city\": \"Mississauga\"\n  },\n  {\n    \"hospital_name\": \"UHN Reactivation Care Centre (Toronto)\",\n    \"address\": \"82 Buttonwood Avenue\",\n    \"city\": \"Toronto\"\n  },\n  {\n    \"hospital_name\": \"Southlake Health \u2014 Newmarket Site\",\n    \"address\": \"596 Davis Drive\",\n    \"city\": \"Newmarket\"\n  },\n  {\n    \"hospital_name\": \"Reactivation Care Centre-Finch (Toronto)\",\n    \"address\": \"2111 Finch Avenue West\",\n    \"city\": \"Toronto\"\n  },\n  {\n    \"hospital_name\": \"Oakville Trafalgar Memorial Hospital\",\n    \"address\": \"3001 Hospital Drive\",\n    \"city\": \"Oakville\"\n  },\n  {\n    \"hospital_name\": \"Milton District Hospital\",\n    \"address\": \"725 Bronte Street South\",\n    \"city\": \"Milton\"\n  },\n  {\n    \"hospital_name\": \"Georgetown Hospital\",\n    \"address\": \"1 Princess Anne Drive\",\n    \"city\": \"Georgetown\"\n  },\n  {\n    \"hospital_name\": \"Headwaters Health Care Centre\",\n    \"address\": \"100 Rolling Hills Drive\",\n    \"city\": \"Orangeville\"\n  }\n]",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1770679413,
+    "model": "gpt-5-mini-2025-08-07",
+    "object": "chat.completion",
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 2922,
+      "prompt_tokens": 1841,
+      "total_tokens": 4763,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1984,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

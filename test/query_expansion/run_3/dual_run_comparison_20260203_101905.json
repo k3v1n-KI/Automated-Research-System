@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-02-03T10:19:05.511181",
+  "goal": "hospitals in ontario",
+  "metrics": [
+    {
+      "method": "LLM Simple Expansion",
+      "iteration": 1,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 34.6,
+      "coverage_score": 50.0,
+      "diversity_score": 83.55,
+      "processing_time_seconds": 15.0
+    },
+    {
+      "method": "LLM Simple Expansion",
+      "iteration": 2,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 37.67,
+      "coverage_score": 50.0,
+      "diversity_score": 89.75,
+      "processing_time_seconds": 15.97
+    },
+    {
+      "method": "Query Expansion Matrix",
+      "iteration": 1,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 69.73,
+      "coverage_score": 100.0,
+      "diversity_score": 100.0,
+      "processing_time_seconds": 85.25
+    },
+    {
+      "method": "Query Expansion Matrix",
+      "iteration": 2,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 105.8,
+      "coverage_score": 100.0,
+      "diversity_score": 95.85,
+      "processing_time_seconds": 73.99
+    }
+  ],
+  "query_samples": {
+    "simple_llm_iter1": [
+      "list of hospitals in Ontario",
+      "Ontario hospital directory with addresses",
+      "teaching hospitals in Ontario province",
+      "pediatric hospitals in Ontario",
+      "hospitals near me Ontario"
+    ],
+    "simple_llm_iter2": [
+      "List of all hospitals in Ontario Canada",
+      "Ontario hospitals directory with contact information",
+      "Teaching hospitals in Ontario",
+      "Children's hospitals in Ontario",
+      "Public hospitals in Ontario Canada"
+    ],
+    "qem_iter1": [
+      "Ontario acute-care hospital publicly funded provincially open data portal csv",
+      "Ontario teaching university-affiliated hospital open data portal json",
+      "Ontario community/general hospital non-teaching publicly funded provincially owned city Toronto csv",
+      "Ontario acute-care hospital provincially funded teaching status affiliated with a university regional health region json",
+      "Ontario health region hospitals csv regional health authority Ontario"
+    ],
+    "qem_iter2": [
+      "Ontario general acute-care hospital broad dataset CSV Excel bed_capacity_class: large location_type: urban",
+      "Ontario teaching hospital medium JSON API feed bed_capacity_class: medium location_type: urban teaching_status: true",
+      "Ontario pediatric hospital narrow XML data feed bed_capacity_class: small location_type: rural teaching_status: false",
+      "Ontario general acute-care hospital broad filetype:pdf directory:/ontario/hospitals dataset",
+      "Ontario teaching hospital medium dataset JSON API feed location_type: urban bed_capacity_class: large teaching_status: true"
+    ]
+  },
+  "summary": {
+    "simple_llm_expansion": {
+      "avg_diversity_score": 86.65,
+      "avg_coverage_score": 50.0,
+      "avg_query_count": 15.0,
+      "consistency_pct": 0.0
+    },
+    "query_expansion_matrix": {
+      "avg_diversity_score": 97.92,
+      "avg_coverage_score": 100.0,
+      "avg_query_count": 15.0,
+      "consistency_pct": 0.0
+    },
+    "comparative_gains": {
+      "diversity_improvement": 11.27,
+      "coverage_improvement": 50.0,
+      "query_increase_pct": 0.0
+    }
+  }
+}

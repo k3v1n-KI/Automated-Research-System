@@ -1,0 +1,312 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 3,
+  "records": [
+    {
+      "hospital_name": "Children's Hospital Of Eastern Ontario-Ottawa Children's Treatment Centre",
+      "address": "401 Smyth Road, Ottawa, ON K1H 8L1",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Queensway-Carleton Hospital",
+      "address": "3045 Baseline Road, Ottawa, ON K2H 8P4",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "University of Ottawa Heart Institute",
+      "address": "40 Ruskin Street, Ottawa, ON K1Y 4W7",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Saint-Vincent Hospital",
+      "address": "60 Cambridge Street North, Ottawa, ON K1R 7A5",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "\u00c9lisabeth Bruy\u00e8re Hospital",
+      "address": "43 Bruyere Street, Ottawa, ON K1N 5C8",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "H\u00f4pital Montfort",
+      "address": "713 Montreal Road, Ottawa, ON K1K 0T2",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Orleans Health Hub (OHH) /Carrefour Sant\u00e9 Orleans (CSO)",
+      "address": "2225 Mer-Bleue Road, Orleans, ON, K4A 5M3",
+      "city": "Orleans",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Civic Campus",
+      "address": "1053 Carling Avenue, Ottawa, ON K1Y 4E9",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "General Campus",
+      "address": "501 Smyth Road, Ottawa, ON K1H 8L6",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Riverside Campus",
+      "address": "1967 Riverside Drive, Ottawa, ON K1H 7W9",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "The Rehabilitation Centre",
+      "address": "505 Smyth Road, Ottawa, ON K1H 8M2",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Irving Greenberg Family Cancer Centre",
+      "address": "3045 Baseline Road, Ottawa, ON K2H 8P4",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Ottawa Dialysis Clinic",
+      "address": "Unit 1-780 Baseline Road, Ottawa, ON K2C 3V8",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Cornwall Dialysis Clinic",
+      "address": "Unit A-691 Brookdale Avenue, Cornwall, ON K2J 5C6",
+      "city": "Cornwall",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Royal Ottawa Mental Health Centre",
+      "address": "1145 Carling Avenue, Ottawa, ON, K1Z 7K4",
+      "city": "Ottawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Brockville Mental Health Centre",
+      "address": "1804 Highway 2 East, Brockville, ON K6V 5V8",
+      "city": "Brockville",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Pembroke Regional Hospital Site",
+      "address": "705 MacKay Street, Pembroke, ON K8A 1G8",
+      "city": "Pembroke",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Marianhill - Complex Continuing Care Site",
+      "address": "Unit 2C, 600 Cecellia Street, Pembroke, ON K8A 7Z3",
+      "city": "Pembroke",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Peterborough Regional Health Centre",
+      "address": "1 Hospital Drive, Peterborough, ON K9J 7C6",
+      "city": "Peterborough",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Renfrew Victoria Hospital",
+      "address": "499 Raglan Street North, Renfrew, ON K7V 1P6",
+      "city": "Renfrew",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Smith Falls Site",
+      "address": "60 Cornelia Street West, Smith Falls, ON K7A 2H9",
+      "city": "Smith Falls",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Great War Memorial Site (Perth)",
+      "address": "33 Drummond Street West, Perth, ON K7H 2K1",
+      "city": "Perth",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Ontario Shores Centre for Mental Health Sciences",
+      "address": "700 Gordon Street, Whitby, ON, L1N 5S9",
+      "city": "Whitby",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Winchester District Memorial Hospital",
+      "address": "566 Louise Street, Winchester, ON K0C 2K0",
+      "city": "Winchester",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Blind River Site",
+      "address": "525 Causley Street, Blind River, ON P0R 1B0",
+      "city": "Blind River",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Richards Landing Site",
+      "address": "180 Richards Street, Richards Landing, ON P0R 1J0",
+      "city": "Richards Landing",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Thessalon Site",
+      "address": "135 Dawson Street, Thessalon, ON P0R 1L0",
+      "city": "Thessalon",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Services De Sante De Chapleau Health Services",
+      "address": "6 Broomhead Road, Chapleau, ON P0M 1K0",
+      "city": "Chapleau",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Lady Minto Hospital (The)",
+      "address": "241 Eighth Street, Cochrane, ON P0L 1C0",
+      "city": "Cochrane",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "St. Joseph's General Hospital",
+      "address": "70 Spine Road, Elliot Lake, ON P5A 1X2",
+      "city": "Elliot Lake",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Espanola General Hospital",
+      "address": "825 McKinnon Drive, Espanola, ON P5E 1R4",
+      "city": "Espanola",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "H\u00f4pital Notre-Dame Hospital (Hearst)",
+      "address": "1405 Edward Street, Hearst, ON P0L 1N0",
+      "city": "Hearst",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Hornepayne Community Hospital",
+      "address": "278 Front Street, Hornepayne, ON P0M 1Z0",
+      "city": "Hornepayne",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Anson General Hospital",
+      "address": "58 Anson Drive, Iroquois Falls, ON P0K 1E0",
+      "city": "Iroquois Falls",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Sensenbrenner Hospital (The)",
+      "address": "101 Progress Crescent, Kapuskasing, ON P5N 3H5",
+      "city": "Kapuskasing",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Kirkland Lake Site",
+      "address": "145 Government Road East, Kirkland Lake, ON P2N 3P4",
+      "city": "Kirkland Lake",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Englehart Site",
+      "address": "61 Fifth Street, Englehart, ON P0J 1H0",
+      "city": "Englehart",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Little Current Hospital",
+      "address": "11 Meredith Street West, Little Current, ON P0P 1K0",
+      "city": "Little Current",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Mindemoya Hospital",
+      "address": "2120 ON-551, Mindemoya, ON P0P 1S0",
+      "city": "Mindemoya",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Sant\u00e9 Manitouwadge Health",
+      "address": "1 Health Care Crescent, Manitouwadge, ON P0T 2C0",
+      "city": "Manitouwadge",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Bingham Memorial Hospital",
+      "address": "507 Eighth Avenue, Matheson, ON P0K 1N0",
+      "city": "Matheson",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Mattawa General Hospital",
+      "address": "217 Turcotte Park Road, Mattawa, ON P0H 1V0",
+      "city": "Mattawa",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Weeneebayko General Hospital",
+      "address": "19 Hospital Drive, Moose Factory, ON P0L 1W0",
+      "city": "Moose Factory",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Attawapiskat Hospital",
+      "address": "972 Riverside East, Attawapiskat, ON P0L 1A0",
+      "city": "Attawapiskat",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Moosonee Health Centre",
+      "address": "5 Percy's Way, Moosonee, ON P0L 1Y0",
+      "city": "Moosonee",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Fort Albany Hospital",
+      "address": "5 Airport Road, Fort Albany, ON P0L 1H0",
+      "city": "Fort Albany",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Temiskaming Hospital",
+      "address": "421 Shepherdson Road, New Liskeard, ON P0J 1P0",
+      "city": "New Liskeard",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "North Bay Site",
+      "address": "50 College Drive, North Bay, ON P1B 5A4",
+      "city": "North Bay",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Devonshire Avenue Site",
+      "address": "200-1164 Devonshire Avenue, North Bay, ON P1B 6X7",
+      "city": "North Bay",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "King Street Site",
+      "address": "120 King Street West, North Bay, ON P1B 5Z7",
+      "city": "North Bay",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Kirkwood Place Site",
+      "address": "680 Kirkwood Drive, Sudbury, ON P3E 1X3",
+      "city": "Sudbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+Address,City,Name,source_url
+200 Elizabeth Street,Toronto,Toronto General Hospital,https://www.uhn.ca/OurHospitals/TGH
+"4001 Leslie St., Toronto, ON M2K 1E1",Toronto,North York General Hospital,https://www.nygh.on.ca/
+600 University Avenue,Toronto,Mount Sinai Hospital,https://www.sinaihealth.ca/our-hospitals/mount-sinai-hospital
+1200 Fourth Ave.,St. Catharines,Niagara Health,https://www.niagarahealth.on.ca/site/home
+"2100 Bovaird Drive East, Brampton, ON L6R 3J7",Brampton,Brampton Civic Hospital,https://www.williamoslerhs.ca/en/index.aspx
+"101 Humber College Boulevard, Etobicoke, ON M9V 1R8",Etobicoke,Etobicoke General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+"20 Lynch Street, Brampton, ON L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.williamoslerhs.ca/en/index.aspx
+"200 Church Street, Etobicoke, ON M9N 1N8",Etobicoke,Reactivation Care Centre,https://www.williamoslerhs.ca/en/index.aspx
+"135 McLaughlin Road South, Brampton, ON L6Y 2C8",Brampton,Withdrawal Management Centre,https://www.williamoslerhs.ca/en/index.aspx
+"30 The Queensway, Toronto, ON M6R 1B5",Toronto,St. Joseph’s Health Centre,https://unityhealth.to/
+340 College Street,Toronto,The Doctor's Hospital,https://en.wikipedia.org/wiki/List_of_hospitals_in_Toronto
+1 Spadina Crescent,Toronto,Spadina Military Hospital,https://en.wikipedia.org/wiki/List_of_hospitals_in_Toronto
+Keele Street,Toronto,Northwestern Hospital,https://en.wikipedia.org/wiki/List_of_hospitals_in_Toronto
+Yonge and Davisville,Toronto,Orthopaedic Military Hospital,https://en.wikipedia.org/wiki/List_of_hospitals_in_Toronto
+30 Bond Street,Toronto,St. Michael’s Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"Corner of Victoria St and Shuter St, one block east and north of Queen and Yonge",Toronto,St. Michael's Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+1235 Wilson Avenue,Toronto,Humber River Health,https://www.hrh.ca/
+200 Elizabeth Street,Toronto,Toronto General Hospital,https://en.wikipedia.org/wiki/Toronto_General_Hospital
+John and King Streets,Toronto,York General Hospital,https://en.wikipedia.org/wiki/Toronto_General_Hospital
+"Gerrard Street East, north side, east of Parliament",Toronto,York General Hospital,https://en.wikipedia.org/wiki/Toronto_General_Hospital
+College Street,Toronto,York General Hospital,https://en.wikipedia.org/wiki/Toronto_General_Hospital
+4001 Leslie Street,Toronto,North York General Hospital,https://en.wikipedia.org/wiki/North_York_General_Hospital
+Leslie Street and Sheppard Avenue,Toronto,North York General Hospital,https://en.wikipedia.org/wiki/North_York_General_Hospital
+Bathurst Street and Finch Avenue West,Toronto,Branson Ambulatory Care Centre,https://en.wikipedia.org/wiki/North_York_General_Hospital
+2111 Finch Avenue West,Toronto,Reactivation Care Centre,https://en.wikipedia.org/wiki/North_York_General_Hospital
+2 Buchan Court,North York,North York General Hospital,https://en.wikipedia.org/wiki/North_York_General_Hospital
+825 Coxwell Avenue,Toronto,Michael Garron Hospital,https://www.tehn.ca/community/about-our-ontario-health-team
+825 Coxwell Avenue,Toronto,Michael Garron Hospital,https://www.tehn.ca/
+3050 Lawrence Ave. E.,Scarborough,General Hospital,https://www.shn.ca/
+200 Elizabeth Street,Toronto,Toronto General Hospital,https://www.uhnresearch.ca/service/uhn-hospitals
+"294 Willow Avenue, Sault Ste. Marie, ON P6B 0A9",Sault Ste. Marie,Algoma Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"435 Grand Avenue West, P.O. Box 1136, Chatham, ON N7M 5L8",Chatham,Chatham-Kent Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"605 Rossland Road East, Whitby, ON L1N 6A3",Whitby,Durham Region Health Department,https://www.ontario.ca/page/public-health-unit-locations
+"1000 Pitt Street, Cornwall, ON K6J 5T1",Cornwall,Eastern Ontario Health Unit,https://www.ontario.ca/page/public-health-unit-locations
+"194 Terrace Hill Street, Brantford, ON N3R 1G7",Brantford,Grand Erie Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"185 Robinson Street, Simcoe, ON N3Y 5L6",Simcoe,Grand Erie Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"101 17th Street East, Owen Sound, ON N4K 0A5",Owen Sound,Grey Bruce Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"200 Rose Glen Road, Port Hope, ON L1A 3V6",Port Hope,Lakelands Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"Jackson Square, 185 King Street, Peterborough, ON K9J 2R8",Peterborough,Lakelands Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"1151 Bronte Road, Oakville, ON L6M 3Ll",Oakville,Halton Region Health Department,https://www.ontario.ca/page/public-health-unit-locations
+"110 King Street West, 2nd Floor, Hamilton, ON L8P 4S6",Hamilton,Hamilton Public Health Services,https://www.ontario.ca/page/public-health-unit-locations
+"653 West Gore Street, Stratford, ON N5A 1L4",Stratford,Huron Perth Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"160 Exmouth Street, Point Edward, ON N7T 7Z6",Point Edward,Lambton Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"355 Wellington Street, Suite 110, London, ON N6A 3N7",London,Middlesex-London Health Unit,https://www.ontario.ca/page/public-health-unit-locations
+"1815 Sir Isaac Brock Way, Thorold, ON L2V 0A2",Thorold,Niagara Region Public Health,https://www.ontario.ca/page/public-health-unit-locations
+"345 Oak Street West, North Bay, ON P1B 2T2",North Bay,North Bay Parry Sound District Health Unit,https://www.ontario.ca/page/public-health-unit-locations
+"1 Hospital Drive Peterborough, ON Canada K9J 7C6",Peterborough,Peterborough Regional Health Centre,https://www.prhc.on.ca/
+201 Georgian Drive,Barrie,Royal Victoria Regional Health Centre,https://www.rvh.on.ca/
+"50 College Drive, P.O. Box 2500, North Bay, ON P1B 5A4",North Bay,NBRHC,https://nbrhc.on.ca/
+"680 Kirkwood Drive, Sudbury, ON P3E 1X3",Sudbury,NBRHC,https://nbrhc.on.ca/
+"340 College Street, Suite 500",Toronto,Access Alliance Multicultural Health and Community Services,https://www.ontario.ca/page/community-health-centres
+"761 Jane Street, 2nd Floor",Toronto,Access Alliance Multicultural Health and Community Services – Access Point on Jane,https://www.ontario.ca/page/community-health-centres
+3079 Danforth Avenue,Toronto,Access Alliance Multicultural Health and Community Services – Access Point on Danforth,https://www.ontario.ca/page/community-health-centres
+225 Queen Street East,Toronto,Anishnawbe Health Toronto,https://www.ontario.ca/page/community-health-centres
+179 Gerrard Street East,Toronto,Anishnawbe Health Toronto – Gerrard,https://www.ontario.ca/page/community-health-centres
+213 Carlton Street,Toronto,Anishnawbe Health Toronto – Carlton Street,https://www.ontario.ca/page/community-health-centres
+490 Huronia Road,Barrie,Barrie Community Health Centre,https://www.ontario.ca/page/community-health-centres
+161 Bridge Street West,Belleville,Belleville and Quinte West Community Health Centre,https://www.ontario.ca/page/community-health-centres
+181 Main Street West,Hamilton,Hamilton Urban Core Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"263 Weller Avenue, Unit 4",Kingston,Kingston Community Health Centres,https://www.ontario.ca/page/community-health-centres
+26 Dundas Street West,Napanee,Kingston Community Health Centres – Greater Napanee Health Home,https://www.ontario.ca/page/community-health-centres
+115 Barrack Street,Kingston,Kingston Community Health Centres – Street Health Centre,https://www.ontario.ca/page/community-health-centres
+"791 Princess Street, Suite 201",Kingston,Kingston Community Health Centres – Midtown Kingston Health Home,https://www.ontario.ca/page/community-health-centres
+44 Francis Street South,Kitchener,Kitchener Downtown Community Health Centre,https://www.ontario.ca/page/community-health-centres
+185 – 5th Street,Etobicoke,Lakeshore Area Multi-Service Project (LAMP),https://www.ontario.ca/page/community-health-centres
+1145 Concession Road,Cambridge,Langs,https://www.ontario.ca/page/community-health-centres
+2958 Greenfield Road,Ayr,Langs – North Dumfries Community Health Centre Satellite,https://www.ontario.ca/page/community-health-centres
+"1700 Dundas Street, Unit 1",London,London Intercommunity Health Centre – Argyle Site,https://www.ontario.ca/page/community-health-centres
+659 Dundas Street East,London,London InterCommunity Health Centre - Dundas Site,https://www.ontario.ca/page/community-health-centres
+"1355 Huron Street, Unit 7",London,London Intercommunity Health Centre – Huron Site,https://www.ontario.ca/page/community-health-centres
+"1100 Main Street, P.O. Box 450",Ignace,Mary Berglund Community Health Centre,https://www.ontario.ca/page/community-health-centres
+130 Wilson Avenue,Timmins,Misiway Milopemahtesewin Community Health Centre,https://www.ontario.ca/page/community-health-centres
+4790 Victoria Avenue,Niagara Falls,Niagara Falls Community Health Centre,https://www.ontario.ca/page/community-health-centres
+99 Toronto Road,Port Hope,Northumberland Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"P.O. Box 1120, 3-59 King Street West",Forest,North Lambton Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"6275 Indian Lane, RR 2",Kettle Point,North Lambton Community Health Centre – Kettle Point,https://www.ontario.ca/page/community-health-centres
+"429 Exmouth Street, Suite 100",Sarnia,North Lambton Community Health Centre – West Lambton Community Health Centre,https://www.ontario.ca/page/community-health-centres
+525 Simpson Street,Thunder Bay,NorWest Community Health Centres,https://www.ontario.ca/page/community-health-centres
+353 Pitt Street,Cornwall,Seaway Valley Community Health Centre,https://www.ontario.ca/page/community-health-centres
+55 Eccles Street,Ottawa,Somerset West Community Health Centre,https://www.ontario.ca/page/community-health-centres
+30 Rosemount Avenue,Ottawa,Somerset West Community Health Centre – Rosemount Branch,https://www.ontario.ca/page/community-health-centres
+14 Ramblewood Road Unit 202,Wasaga Beach,South Georgian Bay Community Health Centre,https://www.ontario.ca/page/community-health-centres
+955 Queen Street East,Toronto,South Riverdale Community Health Centre,https://www.ontario.ca/page/community-health-centres
+55 Victoria Avenue P.O. Box 360,Markdale,South East Grey Community Health Centre,https://www.ontario.ca/page/community-health-centres
+1355 Bank Street Suite 600,Ottawa,South-East Ottawa Community Health Centre,https://www.ontario.ca/page/community-health-centres
+10 Neighbourhood Lane Unit 201,Toronto,Stonegate Community Health Centre,https://www.ontario.ca/page/community-health-centres
+27 Tapscott Road Unit 1 (Malvern Mall),Scarborough,TAIBU Community Health Centre,https://www.ontario.ca/page/community-health-centres
+540 Finch Avenue West,Toronto,Unison Health and Community Services – Bathurst-Finch Community Office,https://www.ontario.ca/page/community-health-centres
+1541 Jane Street,Toronto,Unison Health and Community Services – Jane Street Hub,https://www.ontario.ca/page/community-health-centres
+1651 Keele Street,Toronto,Unison Health and Community Services – Keele-Rogers,https://www.ontario.ca/page/community-health-centres
+12 Flemington Road,Toronto,Unison Health and Community Services – Lawrence Heights,https://www.ontario.ca/page/community-health-centres
+44 St-Christophe Street Unit 3,Noelville,Univi Community Health Centre - Noelville,https://www.ontario.ca/page/community-health-centres
+1 King Street,St. Charles,Univi Community Health Centre – St Charles,https://www.ontario.ca/page/community-health-centres
+39 Lafontaine Street Unit 5 P.O. Box 38,Warren,Univi Community Health Centre – Warren,https://www.ontario.ca/page/community-health-centres
+9401 Jane Street Suite 206,Vaughan,Vaughan Community Health Centre,https://www.ontario.ca/page/community-health-centres
+2398 Yonge Street,Toronto,Vibrant Healthcare Alliance,https://www.ontario.ca/page/community-health-centres
+40 Finchgate Boulevard Suite 325,Brampton,WellFort Community Health Services (Bramalea Community Health Centre),https://www.ontario.ca/page/community-health-centres
+"7205 Goreway Drive, Unit 75",Mississauga,Wellfort Community Health Services – Four Corners Health Centre,https://www.ontario.ca/page/community-health-centres
+"P.O. Box 761, 153 Main Street",West Lorne,West Elgin Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"68 Michaud Street, P.O. Box 6308",Sturgeon Falls,West Nipissing Community Health Centre,https://www.ontario.ca/page/community-health-centres
+1700 Bloor Street West,Toronto,West Toronto Community Health Services,https://www.ontario.ca/page/community-health-centres
+3446 Dundas Street West,Toronto,West Toronto Community Health Services – Dundas Street,https://www.ontario.ca/page/community-health-centres
+"2885 Lauzon Parkway, Unit 107",Windsor,Windsor Essex Community Health Centre – Chronic Disease,https://www.ontario.ca/page/community-health-centres
+3320 College Avenue,Windsor,Windsor Essex Community Health Centre – Sandwich Community Health Centre,https://www.ontario.ca/page/community-health-centres
+4-711 Pelissier Street,Windsor,Windsor Essex Community Health Centre – Street Health,https://www.ontario.ca/page/community-health-centres
+"1361 Ouellette Avenue, #101",Windsor,Windsor Essex Community Health Centre – Teen Health,https://www.ontario.ca/page/community-health-centres
+"2 Carlton Street, Suite 500",Toronto,Women's Health in Women's Hands,https://www.ontario.ca/page/community-health-centres
+35 Metcalf Street,Woodstock,Woodstock and Area Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"P.O. Box 370, 10 Parkside Drive",St. Jacobs,Woolwich Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"1180 Queen's Bush Road, P.O. Box 187",Wellesley,Woolwich Community Health Centre – Wellesley Township Community Health Centre,https://www.ontario.ca/page/community-health-centres
+"237 Barton St E Hamilton, ON L8L 2X2",Hamilton,Hamilton General Hospital,https://www.hamiltonhealthsciences.ca/
+1164 Devonshire Ave.,North Bay,North Bay,https://ontariohealthathome.ca/region/north-east/
+53 Government Road West,Kirkland Lake,Kirkland Lake (By Appointment Only),https://ontariohealthathome.ca/region/north-east/
+6 Albert Street,Parry Sound,Parry Sound (By Appointment Only),https://ontariohealthathome.ca/region/north-east/
+"390 Bay Street, Second Floor",Sault Ste. Marie,Sault Ste. Marie,https://ontariohealthathome.ca/region/north-east/
+"40 Elm St, Suite 41-C",Sudbury,Sudbury,https://ontariohealthathome.ca/region/north-east/
+"330 Second Avenue, Suite 101",Timmins,Timmins,https://ontariohealthathome.ca/region/north-east/
+"596 Davis Drive, Newmarket, Ontario L3Y 2P9",Newmarket,Southlake Health,https://southlake.ca/
+"101 Humber College Boulevard, Etobicoke, ON M9V 1R8",Etobicoke,Etobicoke General Hospital,https://www.williamoslerhs.ca/en/visiting-us/etobicoke-general-hospital.aspx
+2100 Bovaird Drive East,Brampton,Brampton Civic Hospital,https://www.williamoslerhs.ca/en/visiting-us/etobicoke-general-hospital.aspx
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://www.williamoslerhs.ca/en/visiting-us/etobicoke-general-hospital.aspx
+20 Lynch Street,Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.williamoslerhs.ca/en/visiting-us/etobicoke-general-hospital.aspx
+200 Church Street,Etobicoke,Reactivation Care Centre,https://www.williamoslerhs.ca/en/visiting-us/etobicoke-general-hospital.aspx
+135 McLaughlin Road South,Brampton,Withdrawal Management Centre,https://www.williamoslerhs.ca/en/visiting-us/etobicoke-general-hospital.aspx
+825 Coxwell Avenue,Toronto,Michael Garron Hospital,https://www.tehn.ca/about-us/about-michael-garron-hospital
+"3560 Bathurst St, Toronto, ON M6A 2E1",Toronto,Baycrest,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"119 Isabella St, Toronto, ON M4Y 1P2",Toronto,Casey House Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"1001 Queen St W, Toronto, ON M6J 1H4",Toronto,Centre For Addiction And Mental Health (CAMH),https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"250 College St, Toronto, ON M5T 1R8",Toronto,Centre For Addiction And Mental Health (CAMH) - College Street Site,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"150 Kilgour Rd, Toronto, ON M4G 1R8",Toronto,Holland Bloorview Kids Rehabilitation Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"555 University Ave, Toronto, ON M5G 1X8",Toronto,Hospital for Sick Children (The),https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"825 Coxwell Ave, Toronto, ON M4C 3E7",Toronto,Michael Garron Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"4001 Leslie St, Toronto, ON M2K 1E1",Toronto,North York General Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"4001 Leslie St, Toronto, ON M2K 1E1",Toronto,North York General Hospital - General Site,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"625 Runnymede Rd, Toronto, ON M6S 3A3",Toronto,Runnymede Healthcare Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"650 Church St, Toronto, ON M4Y 2G5",Toronto,"Salvation Army Toronto Grace Health Centre, The",https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"3050 Lawrence Ave E, Toronto, ON M1P 2V5",Toronto,Scarborough Health Network - General Site,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"600 University Ave, Toronto, ON M5G 1X5",Toronto,Mount Sinai Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"1 Bridgepoint Dr, Toronto, ON M4M 2B5",Toronto,Hennick Bridgepoint Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"2075 Bayview Ave, Toronto, ON M4N 3M5",Toronto,Sunnybrook Health Sciences Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"43 Wellesley St E, Toronto, ON M4Y 1H1",Toronto,Sunnybrook Health Sciences Centre - Holland Orthopeadic and Arthritic Site,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"150 Sherway Dr, Etobicoke, ON M9C 1A5",Etobicoke,Trillium Health Partners - Queensway Health Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"30 Bond St, Toronto, ON M5B 1W8",Toronto,Unity Health Toronto,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"3276 St Clair Ave E, Toronto, ON M1L 1W1",Toronto,Unity Health Toronto - Providence Healthcare,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"30 The Queensway, Toronto, ON M6R 1B5",Toronto,Unity Health Toronto - St Joseph's Health Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"30 Bond St, Toronto, ON M5B 1W8",Toronto,Unity Health Toronto - St Michael's Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"Administration, 190 Elizabeth St, Toronto, ON M5G 2C4",Toronto,University Health Network,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"610 University Ave, Toronto, ON M5G 2M9",Toronto,University Health Network - Princess Margaret Cancer Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"200 Elizabeth St, Toronto, ON M5G 2C4",Toronto,University Health Network - Toronto General Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"550 University Ave, Toronto, ON M5G 2A2",Toronto,University Health Network - Toronto Rehabilitation Institute,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"130 Dunn Ave, Toronto, ON M6K 2R7",Toronto,University Health Network - Toronto Rehabilitation Institute - EW Bickle Centre for Complex Continuing Care,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"47 Austin Terrace, Toronto, ON M5R 1Y8",Toronto,University Health Network - Toronto Rehabilitation Institute - Hillcrest Reactivation Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"520 Sutherland Dr, Toronto, ON M4G 3V9",Toronto,University Health Network - Toronto Rehabilitation Institute - Lyndhurst Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"347 Rumsey Rd, Toronto, ON M4G 1R7",Toronto,University Health Network - Toronto Rehabilitation Institute - Rumsey Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"399 Bathurst St, Toronto, ON M5T 2S8",Toronto,University Health Network - Toronto Western Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"170 Emmett Ave, Toronto, ON M6M 2J5",Toronto,West Park Healthcare Centre,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"101 Humber College Blvd, Etobicoke, ON M9V 1R8",Etobicoke,William Osler Health System - Etobicoke General Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+"76 Grenville St, Toronto, ON M5S 1B2",Toronto,Women's College Hospital,https://www.torontocentralhealthline.ca/listservices.aspx?id=10078
+76 Stuart Street,Kingston,Kingston General Hospital,https://kingstonhsc.ca/sites/default/files/legacy/documents/basic-page/october_26_2020_board_of_directors_minutes_agenda_and_ceo_report.pdf
+Terrace Hill Street,Brantford,Brantford General Hospital,https://www.bchsys.org/en/about-us/resources/About-Us/BCHS-Strategic-Context-Report-Final.pdf
+,Wawa,Lady Dunn Health Centre,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Moose Factory,Weeneebayko Area Health Authority,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Red Lake,Margaret Cochenour Memorial Hospital,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Parry Sound,West Parry Sound Health Centre,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Elliot Lake,St. Joseph’s General Hospital,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Hearst,Notre-Dame Hospital,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Terrace Bay,North of Superior Healthcare Group (Wilson Memorial Hospital),https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Sault Ste. Marie,Sault Area Hospital,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,Kapuskasing,Sensenbrenner Hospital,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+,New Liskeard,Temiskaming Hospital,https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_hospitalsnorth_en23.pdf
+500 Church Street,Penetanguishene,WAYPOINT Centre for Mental Health Care,https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Accountability%20and%20Performance/Quality%20Improvement%20Plan/2022-2023/2022-2023_QualityImprovementPlan_Complete.pdf
+500 Church Street,Penetanguishene,Waypoint Centre for Mental Health Care,https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Accountability%20and%20Performance/Quality%20Improvement%20Plan/2022-2023/2022-2023_QualityImprovementPlan_Complete.pdf
+500 Church Street,Penetanguishene,Waypoint Centre for Mental Health Care,https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Accountability%20and%20Performance/Quality%20Improvement%20Plan/2023-2024/2023-2024%20Quality%20Improvement%20Plan.pdf
+500 Church Street,Penetanguishene,WAYPOINT Centre for Mental Health Care,https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Accountability%20and%20Performance/Quality%20Improvement%20Plan/2023-2024/2023-2024%20Quality%20Improvement%20Plan.pdf
+840 Coxwell Ave,Toronto,Toronto East Health Network,https://www.tehn.ca/sites/default/files/file-browser/toronto_east_health_network_03312020_final_fs.pdf
+45 Overlea Boulevard,Toronto,Toronto East Health Network,https://www.tehn.ca/sites/default/files/file-browser/toronto_east_health_network_03312020_final_fs.pdf
+2220 Kildare Road,Windsor,Windsor Regional Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+790 Commissioners Road East,London,London Regional Cancer Program,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+"835 King Street West, P.O. Box 9056",Kitchener,Grand River Regional Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+699 Concession Street,Hamilton,Juravinski Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+2200 Eglinton Avenue West,Mississauga,Carlo Fidani Regional Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+2075 Bayview Avenue,Toronto,Odette Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+610 University Avenue,Toronto,Princess Margaret Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+596 Davis Drive,Newmarket,Stronach Regional Cancer Centre at Southlake,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+1 Hospital Court,Oshawa,R.S. McLaughlin Durham Regional Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+25 King Street West,Kingston,Cancer Centre of Southeastern Ontario,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+501 Smyth Road,Ottawa,The Ottawa Hospital Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+201 Georgian Drive,Barrie,Simcoe Muskoka Regional Cancer Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+980 Oliver Road,Thunder Bay,Thunder Bay Regional Health Sciences Centre,https://www.cancercareontario.ca/en/find-cancer-services/regional-cancer-centres/list
+625 Runnymede Road,Toronto,Runnymede Healthcare Centre,https://runnymedehc.ca/newsroom/north-western-toronto-ontario-health-team/
+1 Hospital Drive,Peterborough,Peterborough Regional Health Centre (PRHC),https://www.prhc.on.ca/about-us/our-team/
+"340 College Street, Suite 500",Toronto,Access Alliance Multicultural Health and Community Services,http://www.ontario.ca/page/community-health-centres
+"761 Jane Street, 2nd Floor",Toronto,Access Alliance Multicultural Health and Community Services – Access Point on Jane,http://www.ontario.ca/page/community-health-centres
+3079 Danforth Avenue,Toronto,Access Alliance Multicultural Health and Community Services – Access Point on Danforth,http://www.ontario.ca/page/community-health-centres
+225 Queen Street East,Toronto,Anishnawbe Health Toronto,http://www.ontario.ca/page/community-health-centres
+179 Gerrard Street East,Toronto,Anishnawbe Health Toronto – Gerrard,http://www.ontario.ca/page/community-health-centres
+213 Carlton Street,Toronto,Anishnawbe Health Toronto – Carlton Street,http://www.ontario.ca/page/community-health-centres
+490 Huronia Road,Barrie,Barrie Community Health Centre,http://www.ontario.ca/page/community-health-centres
+161 Bridge Street West,Belleville,Belleville and Quinte West Community Health Centre,http://www.ontario.ca/page/community-health-centres
+26 Main Street,Chelmsford,Centre de santé communautaire du Grand Sudbury – Chelmsford,http://www.ontario.ca/page/community-health-centres
+Box 21 Low Street,Gogama,Centre de santé communautaire du Grand Sudbury – Centre de soins infirmiers de Gogama,http://www.ontario.ca/page/community-health-centres
+344 Elgin Street,Sudbury,Centre de santé communautaire du Grand Sudbury – Clinique du Coin,http://www.ontario.ca/page/community-health-centres
+668 Emily Street,Hanmer,Centre de santé communautaire du Grand Sudbury – Vallsantée-Est,http://www.ontario.ca/page/community-health-centres
+"19, chemin Frood",Sudbury,Centre de santé communautaire de Sudbury,http://www.ontario.ca/page/community-health-centres
+"20 May Street South, P.O. Box 38",New Liskeard,Centre de santé communautaire du Témiskaming,http://www.ontario.ca/page/community-health-centres
+19th Street,Earlton,Centre de santé communautaire du Témiskaming – Earlton,http://www.ontario.ca/page/community-health-centres
+"P.O. Box 40, 22 Water Street",Kirkland Lake,Centre de santé communautaire du Témiskaming – Kirkland Lake,http://www.ontario.ca/page/community-health-centres
+15 Godfrey,Larder Lake,Centre de santé communautaire du Témiskaming – Larder Lake,http://www.ontario.ca/page/community-health-centres
+61 Connel Street,Virginiatown,Centre de santé communautaire du Témiskaming – Virginiatown,http://www.ontario.ca/page/community-health-centres
+555 rue Richmond Ouest Suite 303,Toronto,Centre Francophone de Toronto,http://www.ontario.ca/page/community-health-centres
+420 Cooper Street,Ottawa,Centretown Community Health Centre,http://www.ontario.ca/page/community-health-centres
+150 Richmond Street,Chatham,Chatham-Kent Community Health Centres,http://www.ontario.ca/page/community-health-centres
+14 Notre Dame Street,Pain Court,Chatham-Kent Community Health Centres – Pain Court,http://www.ontario.ca/page/community-health-centres
+808 Dufferin Avenue,Wallaceburg,Chatham-Kent Community Health Centres – Wallaceburg,http://www.ontario.ca/page/community-health-centres
+"785 Tecumseh Road, Unit 2",Walpole Island,Chatham-Kent Community Health Centres – Walpole Island,http://www.ontario.ca/page/community-health-centres
+287 Bayshore Drive,Midland,CHIGAMIK Community Health Centre,http://www.ontario.ca/page/community-health-centres
+1400 Windsor Avenue,Windsor,CMHA Health Centre,http://www.ontario.ca/page/community-health-centres

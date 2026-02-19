@@ -655,20 +655,20 @@
             
             let statsHtml = `
                 <div class="stat-box">
-                    <div class="stat-number">${stats.queries || 0}</div>
-                    <div class="stat-label">Queries</div>
+                    <div class="stat-number">${stats.urls_searched || 0}</div>
+                    <div class="stat-label">URLs Searched</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${stats.urls_found || 0}</div>
-                    <div class="stat-label">URLs</div>
+                    <div class="stat-number">${stats.urls_scraped || 0}</div>
+                    <div class="stat-label">URLs Scraped</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${stats.urls_validated || 0}</div>
-                    <div class="stat-label">Valid</div>
+                    <div class="stat-number">${stats.records_extracted || 0}</div>
+                    <div class="stat-label">Records Extracted</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${stats.final_count || 0}</div>
-                    <div class="stat-label">Records</div>
+                    <div class="stat-number">${stats.records_deduped || 0}</div>
+                    <div class="stat-label">Records Deduped</div>
                 </div>
             `;
             
@@ -712,7 +712,7 @@
             document.getElementById('statsContainer').innerHTML = statsHtml;
             document.getElementById('resultsArea').classList.add('show');
             
-            addAssistantMessage(`Dataset complete! Found ${stats.final_count || 0} records.`);
+            addAssistantMessage(`Dataset complete! Found ${stats.records_deduped || 0} records.`);
         }
 
         function sendMessage() {

@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-02-02T14:31:08.762868",
+  "test_urls": 12,
+  "original": {
+    "successful": 3,
+    "failed": 9,
+    "success_rate": "25.0%",
+    "urls": [
+      {
+        "url": "https://www.torontohealth.ca/",
+        "html_size": 27978,
+        "text_length": 476
+      },
+      {
+        "url": "https://www.sinaihealth.ca/",
+        "html_size": 143616,
+        "text_length": 7129
+      },
+      {
+        "url": "https://www.stmichaelshospital.com/",
+        "html_size": 160422,
+        "text_length": 1997
+      }
+    ]
+  },
+  "improved": {
+    "successfully_scraped": 3,
+    "pdf_detected": 2,
+    "failed": 7,
+    "success_rate_including_pdf": "41.7%",
+    "success_rate_html_only": "25.0%",
+    "improvement_over_original": 0,
+    "scraper_stats": {
+      "dns_skipped": 5,
+      "pdf_detected": 2,
+      "successful": 3,
+      "failed_after_retries": 2,
+      "total_retries_used": 2
+    },
+    "urls": [
+      {
+        "url": "https://www.torontohealth.ca/",
+        "html_size": 27978,
+        "text_length": 476,
+        "attempts": 1
+      },
+      {
+        "url": "https://www.sinaihealth.ca/",
+        "html_size": 143614,
+        "text_length": 7129,
+        "attempts": 1
+      },
+      {
+        "url": "https://www.stmichaelshospital.com/",
+        "html_size": 160422,
+        "text_length": 1997,
+        "attempts": 1
+      }
+    ]
+  },
+  "comparison": {
+    "metric": "Original vs Improved",
+    "rows": [
+      {
+        "metric": "HTML Pages Scraped",
+        "original": 3,
+        "improved": 3,
+        "improvement": "+0"
+      },
+      {
+        "metric": "PDF URLs Detected",
+        "original": "N/A",
+        "improved": 2,
+        "improvement": "New feature"
+      },
+      {
+        "metric": "Failed URLs",
+        "original": 9,
+        "improved": 7,
+        "improvement": "-2"
+      },
+      {
+        "metric": "Success Rate (HTML)",
+        "original": "25.0%",
+        "improved": "25.0%",
+        "improvement": "+0.0%"
+      },
+      {
+        "metric": "With PDF Detection",
+        "original": "25.0%",
+        "improved": "41.7%",
+        "improvement": "+16.7%"
+      },
+      {
+        "metric": "Timeout Duration",
+        "original": "15 seconds",
+        "improved": "30 seconds",
+        "improvement": "2x longer"
+      },
+      {
+        "metric": "Retry Logic",
+        "original": "None",
+        "improved": "3 attempts",
+        "improvement": "New feature"
+      },
+      {
+        "metric": "DNS Validation",
+        "original": "None",
+        "improved": "Yes",
+        "improvement": "Eliminates dead links"
+      }
+    ]
+  }
+}

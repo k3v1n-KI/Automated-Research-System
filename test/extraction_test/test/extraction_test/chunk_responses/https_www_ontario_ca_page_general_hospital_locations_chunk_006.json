@@ -1,0 +1,324 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 6,
+  "records": [
+    {
+      "hospital_name": "Charlton Campus",
+      "address": "50 Charlton Avenue East, Hamilton, ON L8N 4A6",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "King Campus",
+      "address": "2757 King Street East, Hamilton, ON L8G 5E4",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "West 5th Campus",
+      "address": "100 West 5th Street, Hamilton, ON L9C 0E3",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Stedman House (Brantford)",
+      "address": "99 Wayne Gretzky Parkway, Brantford, ON N3S 7P1",
+      "city": "Brantford",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Hamilton General Hospital",
+      "address": "237 Barton Street East, Hamilton, ON L8L 2X2",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Juravinski Hospital and Cancer Centre",
+      "address": "699 Concession Street, Hamilton, ON L8V 5C2",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "McMaster University Medical Centre",
+      "address": "1200 Main Street West, Hamilton, ON L8N 3Z5",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "St. Peter's Hospital",
+      "address": "88 Maplewood Avenue, Hamilton, ON L8M 1W9",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "McMaster Children's Hospital",
+      "address": "1200 Main Street West, Hamilton, ON L8N 3Z5",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "West End Clinic",
+      "address": "690 Main Street West, Hamilton, ON L8S 1A4",
+      "city": "Hamilton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "West Lincoln Memorial Hospital (Grimsby)",
+      "address": "169 Main Street East, Grimsby, ON L3M 1P3",
+      "city": "Grimsby",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Hanover And District Hospital",
+      "address": "90-7th Avenue, Hanover, ON N4N 1N1",
+      "city": "Hanover",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Alexandra Hospital",
+      "address": "29 Noxon Street, Ingersoll, ON N5C 3V6",
+      "city": "Ingersoll",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Chicopee",
+      "address": "3570 King Street East, Kitchener, ON N2A 2W1",
+      "city": "Kitchener",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Midtown",
+      "address": "835 King Street West, Kitchener, ON N2G 1G3",
+      "city": "Kitchener",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Queen\u2019s Boulevard",
+      "address": "911 Queen's Boulevard, Kitchener, ON N2M 1B2",
+      "city": "Kitchener",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Erie Shores HealthCare",
+      "address": "194 Talbot Street West, Leamington, ON N8H 1N9",
+      "city": "Leamington",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Listowel Memorial Hospital",
+      "address": "255 Elizabeth Street East, Listowel, ON N4W 2P5",
+      "city": "Listowel",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "St. Joseph's Hospital",
+      "address": "268 Grosvenor Street, London, ON N6A 4V2",
+      "city": "London",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Parkwood Institute",
+      "address": "550 Wellington Road, London, Ontario N6C 0A7",
+      "city": "London",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Southwest Centre for Forensic Mental Health Care (St. Thomas)",
+      "address": "401 Sunset Drive, St Thomas, ON N5R 3C6",
+      "city": "St Thomas",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "University Hospital",
+      "address": "375 South Street, London, ON N6A 4G5",
+      "city": "London",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Children's Hospital",
+      "address": "800 Commissioners Road East, London, ON N6A 5W9",
+      "city": "London",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Victoria Hospital",
+      "address": "800 Commissioners Road East, London, ON N6A 5W9",
+      "city": "London",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Louise Marshall Hospital",
+      "address": "630 Dublin Street, Mount Forest, ON N0G 2L3",
+      "city": "Mount Forest",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Palmerston and District Hospital",
+      "address": "500 Whites Road, Palmerston, ON N0G 2P0",
+      "city": "Palmerston",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Four Counties Health Services Corporation",
+      "address": "1824 Concession Dr, Newbury ON, N0L 1Z0",
+      "city": "Newbury",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Owen Sound Regional Hospital",
+      "address": "1800 8th Street East, Owen Sound, ON N4K 6M9",
+      "city": "Owen Sound",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Meaford Hospital",
+      "address": "229 Nelson Street West, Meaford, ON N4L 1A3",
+      "city": "Meaford",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Saugeen Shores Hospital",
+      "address": "340 High Street, Southampton, ON N0H 2L0",
+      "city": "Southampton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Wiarton Hospital",
+      "address": "369 Mary Street, Wiarton, ON N0H 2T0",
+      "city": "Wiarton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Markdale Hospital",
+      "address": "220 Toronto Street South, Markdale, ON N0C 1H0",
+      "city": "Markdale",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Lion's Head Hospital",
+      "address": "22 Moore Street, Lion's Head, ON N0H 1W0",
+      "city": "Lion's Head",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Sarnia Site",
+      "address": "89 Norman Street, Sarnia, ON N7T 6S3",
+      "city": "Sarnia",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Charlotte Eleanor Englehart Hospital (Petrolia)",
+      "address": "450 Blanche Street, Petrolia, ON N0N 1R0",
+      "city": "Petrolia",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Norfolk General Hospital",
+      "address": "365 West Street, Simcoe, ON N3Y 1T7",
+      "city": "Simcoe",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "H\u00f4tel-Dieu Shaver Health and Rehabilitation Centre",
+      "address": "541 Glenridge Avenue, St Catharines, ON L2T 4C2",
+      "city": "St Catharines",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Marotta Family Hospital",
+      "address": "1200 Fourth Avenue, St. Catharines, ON L2S 0A9",
+      "city": "St. Catharines",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Douglas Memorial Site (Fort Erie)",
+      "address": "230 Bertie Street, Fort Erie, ON L2A 1Z2",
+      "city": "Fort Erie",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Greater Niagara General Hospital (Niagara Falls)",
+      "address": "5546 Portage Road, Niagara Falls, ON L2E 6X2",
+      "city": "Niagara Falls",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Port Colborne Site",
+      "address": "260 Sugarloaf Street, Port Colborne, ON L3K 2N7",
+      "city": "Port Colborne",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Welland Site",
+      "address": "65 Third Street, Welland, ON L3B 4W6",
+      "city": "Welland",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "St Thomas-Elgin General Hospital",
+      "address": "189 Elm Street, St Thomas, ON N5R 5C4",
+      "city": "St Thomas",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Clinton Public Hospital",
+      "address": "98 Shipley Street, Clinton, ON N0M 1L0",
+      "city": "Clinton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Seaforth Community Hospital",
+      "address": "24 Centennial Drive, Seaforth, ON N0K 1W0",
+      "city": "Seaforth",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Stratford General Hospital",
+      "address": "46 General Hospital Drive, Stratford, ON N5A 2Y6",
+      "city": "Stratford",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "St. Mary\u2019s Memorial Hospital",
+      "address": "267 Queen Street, West, St. Mary's, ON N4X 1B6",
+      "city": "St. Mary's",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Strathroy Middlesex General Hospital",
+      "address": "395 Carrie Street, Strathroy, ON N7G 3J4",
+      "city": "Strathroy",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Tillsonburg District Memorial Hospital",
+      "address": "167 Rolph Street, Tillsonburg, ON N4G 3Y9",
+      "city": "Tillsonburg",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Walkerton Site",
+      "address": "21 McGivern Street West, Walkerton, ON N0G 2V0",
+      "city": "Walkerton",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Kincardine Site",
+      "address": "1199 Queen Street, Kincardine, ON N2Z 1G6",
+      "city": "Kincardine",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Durham Site",
+      "address": "320 College Street North, Durham, ON N0G 1R0",
+      "city": "Durham",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    },
+    {
+      "hospital_name": "Chesley Site",
+      "address": "39-2nd Street South East, Chesley, ON N0G 1L0",
+      "city": "Chesley",
+      "source_url": "https://www.ontario.ca/page/general-hospital-locations"
+    }
+  ]
+}

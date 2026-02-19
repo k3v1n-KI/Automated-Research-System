@@ -25,7 +25,7 @@ def get_openai_client():
         if not api_key:
             raise ValueError("OPENAI_API_KEY not set in environment")
         _openai_client = AsyncOpenAI(api_key=api_key)
-        _openai_model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+        _openai_model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
     return _openai_client, _openai_model
 
 
@@ -41,7 +41,7 @@ class ExtractNode(BaseNode):
         - extracted_items: List of extracted records with source_url
     """
     
-    def __init__(self, char_limit: int = 3000):
+    def __init__(self, char_limit: int = 6000):
         super().__init__()
         self.char_limit = char_limit
     
@@ -74,45 +74,59 @@ class ExtractNode(BaseNode):
                 )
             
             url = item['url']
-            text = item.get('text', '')[:self.char_limit]  # Limit to char_limit
+            text = item.get('text', '')
             
             if not text.strip():
                 continue
             
             try:
-                # Use LLM to extract structured data
-                response = await openai_client.chat.completions.create(
-                    model=openai_model,
-                    messages=[
-                        {
-                            "role": "system",
-                            "content": f"""You are a data extraction expert. Extract structured information based on the task:
+                total_length = len(text)
+                total_chunks = max(1, (total_length + self.char_limit - 1) // self.char_limit)
 
-{initial_prompt}{column_constraint}
+                for chunk_index, start in enumerate(range(0, total_length, self.char_limit), 1):
+                    chunk = text[start:start + self.char_limit]
+                    if not chunk.strip():
+                        continue
+
+                    # Use LLM to extract structured data from each chunk
+                    response = await openai_client.chat.completions.create(
+                        model=openai_model,
+                        messages=[
+                            {
+                                "role": "system",
+                                "content": f"""You are a High-Precision Data Extraction Engine. 
+Your goal is to filter and extract data that **strictly aligns** with the Following constraints:
+
+Task: {initial_prompt}
+Data extraction constraints: {column_constraint}
 
 Extract only valid, complete entries. Return a JSON array of objects."""
-                        },
-                        {
-                            "role": "user",
-                            "content": f"Extract data from this content:\n\n{text}\n\nURL: {url}"
-                        }
-                    ],
-                )
-                
-                content = response.choices[0].message.content
-                
-                # Parse extracted data
-                json_match = re.search(r'\[.*\]', content, re.DOTALL)
-                if json_match:
-                    try:
-                        data = json.loads(json_match.group())
-                        if isinstance(data, list):
-                            for record in data:
-                                record['source_url'] = url
-                                extracted_items.append(record)
-                    except json.JSONDecodeError:
-                        pass
-            
+                            },
+                            {
+                                "role": "user",
+                                "content": (
+                                    f"Extract data from this content chunk ({chunk_index}/{total_chunks}):\n\n"
+                                    f"{chunk}\n\nURL: {url}"
+                                )
+                            }
+                        ],
+                        max_completion_tokens=6000
+                    )
+
+                    content = response.choices[0].message.content
+
+                    # Parse extracted data
+                    json_match = re.search(r'\[.*\]', content, re.DOTALL)
+                    if json_match:
+                        try:
+                            data = json.loads(json_match.group())
+                            if isinstance(data, list):
+                                for record in data:
+                                    record['source_url'] = url
+                                    extracted_items.append(record)
+                        except json.JSONDecodeError:
+                            pass
+
             except Exception as e:
                 print(f"⚠️  Extraction error for {url}: {e}")
         

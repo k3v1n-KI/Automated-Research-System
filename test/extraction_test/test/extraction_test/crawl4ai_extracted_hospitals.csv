@@ -1,0 +1,256 @@
+hospital_name,address,city,source_url
+Stevenson Memorial Hospital,200 Fletcher Crescent,Alliston,https://www.ontario.ca/page/general-hospital-locations
+Royal Victoria Regional Health Centre,201 Georgian Drive,Barrie,https://www.ontario.ca/page/general-hospital-locations
+Brampton Civic Hospital,2100 Bovaird Drive East,Brampton,https://www.ontario.ca/page/general-hospital-locations
+Etobicoke General Hospital (Toronto),101 Humber College Boulevard,Etobicoke,https://www.ontario.ca/page/general-hospital-locations
+Peel Memorial Centre for Integrated Health and Wellness,20 Lynch Street,Brampton,https://www.ontario.ca/page/general-hospital-locations
+Reactivation Care Centre – Church (Toronto),200 Church Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Collingwood General And Marine Hospital,459 Hume Street,Collingwood,https://www.ontario.ca/page/general-hospital-locations
+Huntsville District Memorial Hospital,100 Frank Miller Drive,Huntsville,https://www.ontario.ca/page/general-hospital-locations
+South Muskoka Memorial Hospital (Bracebridge),75 Ann Street,Bracebridge,https://www.ontario.ca/page/general-hospital-locations
+Markham-Stouffville Hospital,381 Church Street,Markham,https://www.ontario.ca/page/general-hospital-locations
+Uxbridge Hospital,4 Campbell Drive,Uxbridge,https://www.ontario.ca/page/general-hospital-locations
+Reactivation Care Centre – Finch (Toronto),2111 Finch Avenue West,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Georgian Bay General Hospital - Main Site,1112 St. Andrew's Drive,Midland,https://www.ontario.ca/page/general-hospital-locations
+Georgian Bay General Hospital - Prospect Boulevard Site,611 Prospect Boulevard,Midland,https://www.ontario.ca/page/general-hospital-locations
+Credit Valley Hospital,2200 Eglinton Avenue West,Mississauga,https://www.ontario.ca/page/general-hospital-locations
+Mississauga Hospital,100 Queensway West,Mississauga,https://www.ontario.ca/page/general-hospital-locations
+Queensway Health Centre (Toronto),150 Sherway Drive,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Speakman Dialysis Care Centre,"2180 Speakman Drive, Ground Floor",Mississauga,https://www.ontario.ca/page/general-hospital-locations
+UHN Reactivation Care Centre (Toronto),82 Buttonwood Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Southlake Health - Newmarket Site,596 Davis Drive,Newmarket,https://www.ontario.ca/page/general-hospital-locations
+Oakville Trafalgar Memorial Hospital,3001 Hospital Drive,Oakville,https://www.ontario.ca/page/general-hospital-locations
+Milton District Hospital,725 Bronte Street South,Milton,https://www.ontario.ca/page/general-hospital-locations
+Georgetown Hospital,1 Princess Anne Drive,Georgetown,https://www.ontario.ca/page/general-hospital-locations
+Headwaters Health Care Centre,100 Rolling Hills Drive,Orangeville,https://www.ontario.ca/page/general-hospital-locations
+Orillia Soldiers' Memorial Hospital,"170 Colborne Street West, Orillia, ON L3V 2Z3",Orillia,https://www.ontario.ca/page/general-hospital-locations
+Waypoint Centre for Mental Health Care (main site),"500 Church Street, Penetanguishene, ON L9M 1G3",Penetanguishene,https://www.ontario.ca/page/general-hospital-locations
+Bayshore Drive Site (Midland),"287 Bayshore Drive, Midland, ON L4R 1L3",Midland,https://www.ontario.ca/page/general-hospital-locations
+Mackenzie Richmond Hill Hospital,"10 Trench Street, Richmond Hill, ON L4C 4Z3",Richmond Hill,https://www.ontario.ca/page/general-hospital-locations
+Cortellucci Vaughan Hospital (Vaughan),"3200 Major Mackenzie Drive West, Vaughan, ON L6A 1S1",Vaughan,https://www.ontario.ca/page/general-hospital-locations
+Jane Street Site (Vaughan),"9401 Jane Street, Suite 101, Vaughan, ON L6A 4H7",Vaughan,https://www.ontario.ca/page/general-hospital-locations
+Reactivation Care Centre-Finch (Toronto),"2111 Finch Avenue West, Toronto ON M3N 1N1",Toronto,https://www.ontario.ca/page/general-hospital-locations
+Glengarry Memorial Hospital,"20260 County Road 43, Alexandria, ON K0C 1A0",Alexandria,https://www.ontario.ca/page/general-hospital-locations
+Almonte General Hospital,"75 Spring Street, Almonte, ON K0A 1A0",Almonte,https://www.ontario.ca/page/general-hospital-locations
+Arnprior And District Memorial Hospital (The),"350 John Street North, Arnprior, ON K7S 2P6",Arnprior,https://www.ontario.ca/page/general-hospital-locations
+St Francis Memorial Hospital,"7 St. Francis Memorial Drive, Barry's Bay, ON K0J 1B0",Barry's Bay,https://www.ontario.ca/page/general-hospital-locations
+Belleville General Hospital,"265 Dundas Street East, Belleville, ON K8N 5A9",Belleville,https://www.ontario.ca/page/general-hospital-locations
+North Hastings Hospital (Bancroft),"1-H Manor Lane, Bancroft, ON K0L 1C0",Bancroft,https://www.ontario.ca/page/general-hospital-locations
+Prince Edward County Memorial Hospital (Picton),"403 Main Street East, Picton, ON K0K 2T0",Picton,https://www.ontario.ca/page/general-hospital-locations
+Trenton Memorial Hospital (Trenton),"242 King Street, Trenton, ON K8V 3X1",Trenton,https://www.ontario.ca/page/general-hospital-locations
+Brockville General Hospital,"75 Charles Street, Brockville, ON K6V 1S8",Brockville,https://www.ontario.ca/page/general-hospital-locations
+Campbellford Memorial Hospital,"146 Oliver Road, Campbellford, ON K0L 1L0",Campbellford,https://www.ontario.ca/page/general-hospital-locations
+Carleton Place And District Memorial Hospital,"211 Lake Avenue East, Carleton Place, ON K7C 1J4",Carleton Place,https://www.ontario.ca/page/general-hospital-locations
+Northumberland Hills Hospital,"1000 DePalma Drive, Coburg, ON K9A 5W6",Cobourg,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph's Continuing Care Centre,"14 York Street, Cornwall, ON K6J 5T2",Cornwall,https://www.ontario.ca/page/general-hospital-locations
+Cornwall Community Hospital/Hôpital communautaire de Cornwall,"840 McConnell Avenue, Cornwall, ON K6H 5S5",Cornwall,https://www.ontario.ca/page/general-hospital-locations
+Deep River And District Health,"117 Banting Drive, Deep River, ON K0J 1P0",Deep River,https://www.ontario.ca/page/general-hospital-locations
+Haliburton Site,"7199 Gelert Road, P.O. Box 115, Haliburton, ON K0M 1S0",Haliburton,https://www.ontario.ca/page/general-hospital-locations
+Minden Site,"4575 Deep Bay Road, Minden, ON K0M 2K0",Minden,https://www.ontario.ca/page/general-hospital-locations
+Hawkesbury And District General Hospital,"1111 Ghislain Street, Hawkesbury, ON K6A 3G5",Hawkesbury,https://www.ontario.ca/page/general-hospital-locations
+Kemptville District Hospital,"2675 Concession Road, Kemptville, ON K0G 1J0",Kemptville,https://www.ontario.ca/page/general-hospital-locations
+Hotel Dieu Hospital,"166 Brock Street, Kingston, ON K7L 5G2",Kingston,https://www.ontario.ca/page/general-hospital-locations
+Kingston General Hospital,"76 Stuart Street, Kingston, ON K7L 2V7",Kingston,https://www.ontario.ca/page/general-hospital-locations
+Breast Imaging Kingston Centre,"820 John Marks Avenue, Kingston, ON K7L 4X3",Kingston,https://www.ontario.ca/page/general-hospital-locations
+Brockville Dialysis Clinic,"555 California Avenue, Unit 7 & 8, Brockville, ON, K6V 7N6",Brockville,https://www.ontario.ca/page/general-hospital-locations
+Street Health Centre,"115 Barrack Street, Kingston, ON K7L 1G2",Kingston,https://www.ontario.ca/page/general-hospital-locations
+Providence Care Hospital,"752 King Street West, Kingston, ON K7L 4X3",Kingston,https://www.ontario.ca/page/general-hospital-locations
+Transitional Care Centre,"340 Union Street, Kingston, ON K7L 4X3",Kingston,https://www.ontario.ca/page/general-hospital-locations
+Ross Memorial Hospital,"10 Angeline Street North, Lindsay, ON K9V 4M8",Lindsay,https://www.ontario.ca/page/general-hospital-locations
+Lennox And Addington County General Hospital,"8 Richmond Park Drive, Napanee, ON K7R 2Z4",Napanee,https://www.ontario.ca/page/general-hospital-locations
+Oshawa Hospital,"1 Hospital Court, Oshawa, ON L1G 2B9",Oshawa,https://www.ontario.ca/page/general-hospital-locations
+Bowmanville Hospital,"47 Liberty Street South, Bowmanville, ON L1C 2N4",Bowmanville,https://www.ontario.ca/page/general-hospital-locations
+Ajax and Pickering Health Centre (Ajax),"580 Harwood Avenue South, Ajax, ON L1S 2J4",Ajax,https://www.ontario.ca/page/general-hospital-locations
+Port Perry Hospital,"451 Paxton Street, Port Perry, ON L9L 1L9",Port Perry,https://www.ontario.ca/page/general-hospital-locations
+Whitby Hospital,"300 Gordon Street, Whitby, ON L1N 2T5",Whitby,https://www.ontario.ca/page/general-hospital-locations
+Jerry Coughlan Health and Wellness Centre (Pickering),"1690 Dersan Street, Pickering, ON L1V 2P8",Pickering,https://www.ontario.ca/page/general-hospital-locations
+Children's Hospital Of Eastern Ontario-Ottawa Children's Treatment Centre,"401 Smyth Road, Ottawa, ON K1H 8L1",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Queensway-Carleton Hospital,"3045 Baseline Road, Ottawa, ON K2H 8P4",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+University of Ottawa Heart Institute,"40 Ruskin Street, Ottawa, ON K1Y 4W7",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Saint-Vincent Hospital,"60 Cambridge Street North, Ottawa, ON K1R 7A5",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Élisabeth Bruyère Hospital,"43 Bruyere Street, Ottawa, ON K1N 5C8",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Hôpital Montfort,"713 Montreal Road, Ottawa, ON K1K 0T2",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Orleans Health Hub (OHH) /Carrefour Santé Orleans (CSO),"2225 Mer-Bleue Road, Orleans, ON, K4A 5M3",Orleans,https://www.ontario.ca/page/general-hospital-locations
+Civic Campus,"1053 Carling Avenue, Ottawa, ON K1Y 4E9",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+General Campus,"501 Smyth Road, Ottawa, ON K1H 8L6",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Riverside Campus,"1967 Riverside Drive, Ottawa, ON K1H 7W9",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+The Rehabilitation Centre,"505 Smyth Road, Ottawa, ON K1H 8M2",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Irving Greenberg Family Cancer Centre,"3045 Baseline Road, Ottawa, ON K2H 8P4",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Ottawa Dialysis Clinic,"Unit 1-780 Baseline Road, Ottawa, ON K2C 3V8",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Cornwall Dialysis Clinic,"Unit A-691 Brookdale Avenue, Cornwall, ON K2J 5C6",Cornwall,https://www.ontario.ca/page/general-hospital-locations
+Royal Ottawa Mental Health Centre,"1145 Carling Avenue, Ottawa, ON, K1Z 7K4",Ottawa,https://www.ontario.ca/page/general-hospital-locations
+Brockville Mental Health Centre,"1804 Highway 2 East, Brockville, ON K6V 5V8",Brockville,https://www.ontario.ca/page/general-hospital-locations
+Pembroke Regional Hospital Site,"705 MacKay Street, Pembroke, ON K8A 1G8",Pembroke,https://www.ontario.ca/page/general-hospital-locations
+Marianhill - Complex Continuing Care Site,"Unit 2C, 600 Cecellia Street, Pembroke, ON K8A 7Z3",Pembroke,https://www.ontario.ca/page/general-hospital-locations
+Peterborough Regional Health Centre,"1 Hospital Drive, Peterborough, ON K9J 7C6",Peterborough,https://www.ontario.ca/page/general-hospital-locations
+Renfrew Victoria Hospital,"499 Raglan Street North, Renfrew, ON K7V 1P6",Renfrew,https://www.ontario.ca/page/general-hospital-locations
+Smith Falls Site,"60 Cornelia Street West, Smith Falls, ON K7A 2H9",Smith Falls,https://www.ontario.ca/page/general-hospital-locations
+Great War Memorial Site (Perth),"33 Drummond Street West, Perth, ON K7H 2K1",Perth,https://www.ontario.ca/page/general-hospital-locations
+Ontario Shores Centre for Mental Health Sciences,"700 Gordon Street, Whitby, ON, L1N 5S9",Whitby,https://www.ontario.ca/page/general-hospital-locations
+Winchester District Memorial Hospital,"566 Louise Street, Winchester, ON K0C 2K0",Winchester,https://www.ontario.ca/page/general-hospital-locations
+Blind River Site,"525 Causley Street, Blind River, ON P0R 1B0",Blind River,https://www.ontario.ca/page/general-hospital-locations
+Richards Landing Site,"180 Richards Street, Richards Landing, ON P0R 1J0",Richards Landing,https://www.ontario.ca/page/general-hospital-locations
+Thessalon Site,"135 Dawson Street, Thessalon, ON P0R 1L0",Thessalon,https://www.ontario.ca/page/general-hospital-locations
+Services De Sante De Chapleau Health Services,"6 Broomhead Road, Chapleau, ON P0M 1K0",Chapleau,https://www.ontario.ca/page/general-hospital-locations
+Lady Minto Hospital (The),"241 Eighth Street, Cochrane, ON P0L 1C0",Cochrane,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph's General Hospital,"70 Spine Road, Elliot Lake, ON P5A 1X2",Elliot Lake,https://www.ontario.ca/page/general-hospital-locations
+Espanola General Hospital,"825 McKinnon Drive, Espanola, ON P5E 1R4",Espanola,https://www.ontario.ca/page/general-hospital-locations
+Hôpital Notre-Dame Hospital (Hearst),"1405 Edward Street, Hearst, ON P0L 1N0",Hearst,https://www.ontario.ca/page/general-hospital-locations
+Hornepayne Community Hospital,"278 Front Street, Hornepayne, ON P0M 1Z0",Hornepayne,https://www.ontario.ca/page/general-hospital-locations
+Anson General Hospital,"58 Anson Drive, Iroquois Falls, ON P0K 1E0",Iroquois Falls,https://www.ontario.ca/page/general-hospital-locations
+Sensenbrenner Hospital (The),"101 Progress Crescent, Kapuskasing, ON P5N 3H5",Kapuskasing,https://www.ontario.ca/page/general-hospital-locations
+Kirkland Lake Site,"145 Government Road East, Kirkland Lake, ON P2N 3P4",Kirkland Lake,https://www.ontario.ca/page/general-hospital-locations
+Englehart Site,"61 Fifth Street, Englehart, ON P0J 1H0",Englehart,https://www.ontario.ca/page/general-hospital-locations
+Little Current Hospital,"11 Meredith Street West, Little Current, ON P0P 1K0",Little Current,https://www.ontario.ca/page/general-hospital-locations
+Mindemoya Hospital,"2120 ON-551, Mindemoya, ON P0P 1S0",Mindemoya,https://www.ontario.ca/page/general-hospital-locations
+Santé Manitouwadge Health,"1 Health Care Crescent, Manitouwadge, ON P0T 2C0",Manitouwadge,https://www.ontario.ca/page/general-hospital-locations
+Bingham Memorial Hospital,"507 Eighth Avenue, Matheson, ON P0K 1N0",Matheson,https://www.ontario.ca/page/general-hospital-locations
+Mattawa General Hospital,"217 Turcotte Park Road, Mattawa, ON P0H 1V0",Mattawa,https://www.ontario.ca/page/general-hospital-locations
+Weeneebayko General Hospital,"19 Hospital Drive, Moose Factory, ON P0L 1W0",Moose Factory,https://www.ontario.ca/page/general-hospital-locations
+Attawapiskat Hospital,"972 Riverside East, Attawapiskat, ON P0L 1A0",Attawapiskat,https://www.ontario.ca/page/general-hospital-locations
+Moosonee Health Centre,"5 Percy's Way, Moosonee, ON P0L 1Y0",Moosonee,https://www.ontario.ca/page/general-hospital-locations
+Fort Albany Hospital,"5 Airport Road, Fort Albany, ON P0L 1H0",Fort Albany,https://www.ontario.ca/page/general-hospital-locations
+Temiskaming Hospital,"421 Shepherdson Road, New Liskeard, ON P0J 1P0",New Liskeard,https://www.ontario.ca/page/general-hospital-locations
+North Bay Site,"50 College Drive, North Bay, ON P1B 5A4",North Bay,https://www.ontario.ca/page/general-hospital-locations
+Devonshire Avenue Site,"200-1164 Devonshire Avenue, North Bay, ON P1B 6X7",North Bay,https://www.ontario.ca/page/general-hospital-locations
+King Street Site,"120 King Street West, North Bay, ON P1B 5Z7",North Bay,https://www.ontario.ca/page/general-hospital-locations
+Kirkwood Place Site,"680 Kirkwood Drive, Sudbury, ON P3E 1X3",Sudbury,https://www.ontario.ca/page/general-hospital-locations
+West Parry Sound Health Centre,"6 Albert Street, Parry Sound, ON P2A 3A4",Parry Sound,https://www.ontario.ca/page/general-hospital-locations
+Sault Area Hospital,"750 Great Northern Road, Sault Ste. Marie, ON P6B 0A8",Sault Ste. Marie,https://www.ontario.ca/page/general-hospital-locations
+Smooth Rock Falls Hospital,"107 Kelley Road, Smooth Rock Falls, ON P0L 2B0",Smooth Rock Falls,https://www.ontario.ca/page/general-hospital-locations
+West Nipissing General Hospital,"725 Coursol Road, Sturgeon Falls, ON P2B 2Y6",Sturgeon Falls,https://www.ontario.ca/page/general-hospital-locations
+Ramsey Lake Health Centre,"41 Ramsey Lake Road, Sudbury, ON P3E 5J1",Sudbury,https://www.ontario.ca/page/general-hospital-locations
+Children’s Treatment Centre,"1933 Regent Street, Sudbury, ON P3E 5R2",Sudbury,https://www.ontario.ca/page/general-hospital-locations
+Kirkwood Site,"680 Kirkwood Drive, Sudbury, ON P3E 1X3",Sudbury,https://www.ontario.ca/page/general-hospital-locations
+South Bay Road site,"1140 South Bay Road, Sudbury, ON P3E 0B6",Sudbury,https://www.ontario.ca/page/general-hospital-locations
+Lasalle site,"319 Lasalle Boulevard, Sudbury, ON P3A 1W7",Sudbury,https://www.ontario.ca/page/general-hospital-locations
+Timmins And District General Hospital,"700 Ross Avenue East, Timmins, ON P4N 8P2",Timmins,https://www.ontario.ca/page/general-hospital-locations
+Lady Dunn Health Centre,"17 Government Road, Wawa, ON P0S 1K0",Wawa,https://www.ontario.ca/page/general-hospital-locations
+Atikokan Health and Community Services,"120 Dorothy Street, Atikokan, ON P0T 1C0",Atikokan,https://www.ontario.ca/page/general-hospital-locations
+Dryden Regional Health Centre,"58 Goodall Street, Dryden, ON P8N 2Z6",Dryden,https://www.ontario.ca/page/general-hospital-locations
+La Verendrye Hospital,"110 Victoria Avenue, Fort Frances, ON P9A 2B7",Fort Frances,https://www.ontario.ca/page/general-hospital-locations
+Emo Health Centre,"170 Front Street, Emo, ON P0W 1E0",Emo,https://www.ontario.ca/page/general-hospital-locations
+Rainy River Health Centre,"115 Fourth Street, Rainy River, ON P0W 1L0",Rainy River,https://www.ontario.ca/page/general-hospital-locations
+Geraldton District Hospital,"500 Hogarth Avenue West, Geraldton, ON P0T 1M0",Geraldton,https://www.ontario.ca/page/general-hospital-locations
+Lake-Of-The-Woods District Hospital,"21 Sylvan Street, Kenora, ON P9N 3W7",Kenora,https://www.ontario.ca/page/general-hospital-locations
+Santé Manitouwadge Health,"1 Health Care Crescent, Manitouwadge, ON P0T 2C0",Manitouwadge,https://www.ontario.ca/page/general-hospital-locations
+Wilson Memorial General Hospital,"26 Peninsula Road, Marathon, ON P0T 2E0",Marathon,https://www.ontario.ca/page/general-hospital-locations
+McCausland Hospital (Terrace Bay),"20B Cartier Road, Terrace Bay, ON P0T 2W0",Terrace Bay,https://www.ontario.ca/page/general-hospital-locations
+Nipigon District Memorial Hospital,"125 Hogan Road, Nipigon, ON P0T 2J0",Nipigon,https://www.ontario.ca/page/general-hospital-locations
+Red Lake Margaret Cochenour Memorial Hospital (The),"No. 51, Hwy 105, Red Lake, ON P0V 2M0",Red Lake,https://www.ontario.ca/page/general-hospital-locations
+Sioux Lookout Meno-Ya-Win Health Centre,"1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4",Sioux Lookout,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph's Hospital,"35 North Algoma Street, Thunder Bay, ON P7B 5G7",Thunder Bay,https://www.ontario.ca/page/general-hospital-locations
+Thunder Bay Regional Health Sciences Centre,"980 Oliver Road, Thunder Bay, ON P7B 6V4",Thunder Bay,https://www.ontario.ca/page/general-hospital-locations
+Humber RIver Hospital,1235 Wilson Ave,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Reactivation Care Centre–Church,200 Church Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Finch Site,555 Finch Ave West,Toronto,https://www.ontario.ca/page/general-hospital-locations
+General Site,4001 Leslie Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+NYGH Minor Surgical Procedures & Elder Care Centre,243 Consumers Road,Toronto,https://www.ontario.ca/page/general-hospital-locations
+NYGH Outpatient & Community Services Centre,2 Champagne Drive,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Phillips House,10 Buchan Court,Toronto,https://www.ontario.ca/page/general-hospital-locations
+St. Michael's Hospital,30 Bond Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph's Health Centre,30 The Queensway,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Providence Healthcare,3276 St. Clair Avenue East,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Reactivation Care Centre - Church,200 Church Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Baycrest Hospital,3560 Bathurst Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Hospital For Sick Children (The),555 University Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Holland Bloorview Kids Rehabilitation Hospital,150 Kilgour Road,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Runnymede Healthcare Centre,625 Runnymede Road,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Salvation Army Toronto Grace Health Centre (The),650 Church Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Toronto East Health Network - Michael Garron Hospital,825 Coxwell Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Women's College Hospital,76 Grenville Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Casey House,119 Isabella Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Mount Sinai Hospital,600 University Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Hennick Bridgepoint Hospital,14 St. Matthews Road,Toronto,https://www.ontario.ca/page/general-hospital-locations
+UHN Reactivation Care Centre,82 Buttonwood Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Toronto General Hospital,200 Elizabeth Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Toronto Western Hospital,399 Bathurst Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Princess Margaret Cancer Centre,610 University Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Bickle Centre,130 Dunn Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+University Centre,550 University Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Lyndhurst Centre,520 Sutherland Drive,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Hillcrest Site,47 Austin Terrace,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Rumsey Centre,347 Rumsey Road,Toronto,https://www.ontario.ca/page/general-hospital-locations
+West Park Healthcare Centre,170 Emmett Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+UHN Reactivation Care Centre,82 Buttonwood Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Bayview Campus,2075 Bayview Avenue,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Holland Centre,43 Wellesley Street East,Toronto,https://www.ontario.ca/page/general-hospital-locations
+St. John's Rehab,285 Cummer Avenue,North York,https://www.ontario.ca/page/general-hospital-locations
+Reactivation Care Centre – Church,200 Church Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Queen Street Site,1001 Queen Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+College Street Site,250 College Street,Toronto,https://www.ontario.ca/page/general-hospital-locations
+General Site,3050 Lawrence Ave East,Scarborough,https://www.ontario.ca/page/general-hospital-locations
+Birchmount Site,3030 Birchmount Road,Toronto,https://www.ontario.ca/page/general-hospital-locations
+Centenary Site,2867 Ellesmere Rd,Scarborough,https://www.ontario.ca/page/general-hospital-locations
+The Brantford General Hospital,200 Terrace Hill Street,Brantford,https://www.ontario.ca/page/general-hospital-locations
+The Willett Hospital (Paris),238 Grand River Street North,Paris,https://www.ontario.ca/page/general-hospital-locations
+Joseph Brant Hospital,1230 North Shore Boulevard,Burlington,https://www.ontario.ca/page/general-hospital-locations
+Cambridge Memorial Hospital,700 Coronation Boulevard,Cambridge,https://www.ontario.ca/page/general-hospital-locations
+Chatham Site,80 Grand Avenue West,Chatham,https://www.ontario.ca/page/general-hospital-locations
+Wallaceburg Site,25 Margaret Avenue,Wallaceburg,https://www.ontario.ca/page/general-hospital-locations
+Haldimand War Memorial Hospital,206 John Street,Dunnville,https://www.ontario.ca/page/general-hospital-locations
+South Huron Hospital,24 Huron Street West,Exeter,https://www.ontario.ca/page/general-hospital-locations
+Groves Memorial Community Hospital,131 Frederick Campbell Street,Fergus,https://www.ontario.ca/page/general-hospital-locations
+Alexandra Marine And General Hospital,120 Napier Street,Goderich,https://www.ontario.ca/page/general-hospital-locations
+Guelph General Hospital,115 Delhi Street,Guelph,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph’s Health Centre Guelph,100 Westmount Road,Guelph,https://www.ontario.ca/page/general-hospital-locations
+West Haldimand General Hospital,75 Parkview Road,Hagersville,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph’s Healthcare Hamilton - Charlton Campus,"50 Charlton Avenue East, Hamilton, ON L8N 4A6",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph’s Healthcare Hamilton - King Campus,"2757 King Street East, Hamilton, ON L8G 5E4",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph’s Healthcare Hamilton - West 5th Campus,"100 West 5th Street, Hamilton, ON L9C 0E3",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+Stedman House (Brantford),"99 Wayne Gretzky Parkway, Brantford, ON N3S 7P1",Brantford,https://www.ontario.ca/page/general-hospital-locations
+Hamilton General Hospital,"237 Barton Street East, Hamilton, ON L8L 2X2",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+Juravinski Hospital and Cancer Centre,"699 Concession Street, Hamilton, ON L8V 5C2",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+McMaster University Medical Centre,"1200 Main Street West, Hamilton, ON L8N 3Z5",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+St. Peter's Hospital,"88 Maplewood Avenue, Hamilton, ON L8M 1W9",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+McMaster Children's Hospital,"1200 Main Street West, Hamilton, ON L8N 3Z5",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+West End Clinic,"690 Main Street West, Hamilton, ON L8S 1A4",Hamilton,https://www.ontario.ca/page/general-hospital-locations
+West Lincoln Memorial Hospital (Grimsby),"169 Main Street East, Grimsby, ON L3M 1P3",Grimsby,https://www.ontario.ca/page/general-hospital-locations
+Hanover And District Hospital,"90-7th Avenue, Hanover, ON N4N 1N1",Hanover,https://www.ontario.ca/page/general-hospital-locations
+Alexandra Hospital,"29 Noxon Street, Ingersoll, ON N5C 3V6",Ingersoll,https://www.ontario.ca/page/general-hospital-locations
+Chicopee,"3570 King Street East, Kitchener, ON N2A 2W1",Kitchener,https://www.ontario.ca/page/general-hospital-locations
+Midtown,"835 King Street West, Kitchener, ON N2G 1G3",Kitchener,https://www.ontario.ca/page/general-hospital-locations
+Queen’s Boulevard,"911 Queen's Boulevard, Kitchener, ON N2M 1B2",Kitchener,https://www.ontario.ca/page/general-hospital-locations
+Erie Shores HealthCare,"194 Talbot Street West, Leamington, ON N8H 1N9",Leamington,https://www.ontario.ca/page/general-hospital-locations
+Listowel Memorial Hospital,"255 Elizabeth Street East, Listowel, ON N4W 2P5",Listowel,https://www.ontario.ca/page/general-hospital-locations
+St. Joseph's Hospital,"268 Grosvenor Street, London, ON N6A 4V2",London,https://www.ontario.ca/page/general-hospital-locations
+Parkwood Institute,"550 Wellington Road, London, Ontario N6C 0A7",London,https://www.ontario.ca/page/general-hospital-locations
+Southwest Centre for Forensic Mental Health Care (St. Thomas),"401 Sunset Drive, St Thomas, ON N5R 3C6",St Thomas,https://www.ontario.ca/page/general-hospital-locations
+University Hospital,"375 South Street, London, ON N6A 4G5",London,https://www.ontario.ca/page/general-hospital-locations
+Children's Hospital,"800 Commissioners Road East, London, ON N6A 5W9",London,https://www.ontario.ca/page/general-hospital-locations
+Victoria Hospital,"800 Commissioners Road East, London, ON N6A 5W9",London,https://www.ontario.ca/page/general-hospital-locations
+Louise Marshall Hospital,"630 Dublin Street, Mount Forest, ON N0G 2L3",Mount Forest,https://www.ontario.ca/page/general-hospital-locations
+Palmerston and District Hospital,"500 Whites Road, Palmerston, ON N0G 2P0",Palmerston,https://www.ontario.ca/page/general-hospital-locations
+Four Counties Health Services Corporation,"1824 Concession Dr, Newbury ON, N0L 1Z0",Newbury,https://www.ontario.ca/page/general-hospital-locations
+Owen Sound Regional Hospital,"1800 8th Street East, Owen Sound, ON N4K 6M9",Owen Sound,https://www.ontario.ca/page/general-hospital-locations
+Meaford Hospital,"229 Nelson Street West, Meaford, ON N4L 1A3",Meaford,https://www.ontario.ca/page/general-hospital-locations
+Saugeen Shores Hospital,"340 High Street, Southampton, ON N0H 2L0",Southampton,https://www.ontario.ca/page/general-hospital-locations
+Wiarton Hospital,"369 Mary Street, Wiarton, ON N0H 2T0",Wiarton,https://www.ontario.ca/page/general-hospital-locations
+Markdale Hospital,"220 Toronto Street South, Markdale, ON N0C 1H0",Markdale,https://www.ontario.ca/page/general-hospital-locations
+Lion's Head Hospital,"22 Moore Street, Lion's Head, ON N0H 1W0",Lion's Head,https://www.ontario.ca/page/general-hospital-locations
+Sarnia Site,"89 Norman Street, Sarnia, ON N7T 6S3",Sarnia,https://www.ontario.ca/page/general-hospital-locations
+Charlotte Eleanor Englehart Hospital (Petrolia),"450 Blanche Street, Petrolia, ON N0N 1R0",Petrolia,https://www.ontario.ca/page/general-hospital-locations
+Norfolk General Hospital,"365 West Street, Simcoe, ON N3Y 1T7",Simcoe,https://www.ontario.ca/page/general-hospital-locations
+Hôtel-Dieu Shaver Health and Rehabilitation Centre,"541 Glenridge Avenue, St Catharines, ON L2T 4C2",St Catharines,https://www.ontario.ca/page/general-hospital-locations
+Marotta Family Hospital,"1200 Fourth Avenue, St. Catharines, ON L2S 0A9",St. Catharines,https://www.ontario.ca/page/general-hospital-locations
+Douglas Memorial Site (Fort Erie),"230 Bertie Street, Fort Erie, ON L2A 1Z2",Fort Erie,https://www.ontario.ca/page/general-hospital-locations
+Greater Niagara General Hospital (Niagara Falls),"5546 Portage Road, Niagara Falls, ON L2E 6X2",Niagara Falls,https://www.ontario.ca/page/general-hospital-locations
+Port Colborne Site,"260 Sugarloaf Street, Port Colborne, ON L3K 2N7",Port Colborne,https://www.ontario.ca/page/general-hospital-locations
+Welland Site,"65 Third Street, Welland, ON L3B 4W6",Welland,https://www.ontario.ca/page/general-hospital-locations
+St Thomas-Elgin General Hospital,"189 Elm Street, St Thomas, ON N5R 5C4",St Thomas,https://www.ontario.ca/page/general-hospital-locations
+Clinton Public Hospital,"98 Shipley Street, Clinton, ON N0M 1L0",Clinton,https://www.ontario.ca/page/general-hospital-locations
+Seaforth Community Hospital,"24 Centennial Drive, Seaforth, ON N0K 1W0",Seaforth,https://www.ontario.ca/page/general-hospital-locations
+Stratford General Hospital,"46 General Hospital Drive, Stratford, ON N5A 2Y6",Stratford,https://www.ontario.ca/page/general-hospital-locations
+St. Mary’s Memorial Hospital,"267 Queen Street, West, St. Mary's, ON N4X 1B6",St. Mary's,https://www.ontario.ca/page/general-hospital-locations
+Strathroy Middlesex General Hospital,"395 Carrie Street, Strathroy, ON N7G 3J4",Strathroy,https://www.ontario.ca/page/general-hospital-locations
+Tillsonburg District Memorial Hospital,"167 Rolph Street, Tillsonburg, ON N4G 3Y9",Tillsonburg,https://www.ontario.ca/page/general-hospital-locations
+Walkerton Site,"21 McGivern Street West, Walkerton, ON N0G 2V0",Walkerton,https://www.ontario.ca/page/general-hospital-locations
+Kincardine Site,"1199 Queen Street, Kincardine, ON N2Z 1G6",Kincardine,https://www.ontario.ca/page/general-hospital-locations
+Durham Site,"320 College Street North, Durham, ON N0G 1R0",Durham,https://www.ontario.ca/page/general-hospital-locations
+Chesley Site,"39-2nd Street South East, Chesley, ON N0G 1L0",Chesley,https://www.ontario.ca/page/general-hospital-locations
+Hôtel-Dieu Grace Healthcare — Tayfour Campus,"1453 Prince Road, Windsor, ON N9C 3Z4",Windsor,https://www.ontario.ca/page/general-hospital-locations
+Windsor Regional Hospital — Metropolitan Campus,"1995 Lens Avenue, Windsor, ON N8W 1L9",Windsor,https://www.ontario.ca/page/general-hospital-locations
+Windsor Regional Hospital — Ouellette Campus,"1030 Ouellette Avenue, Windsor, ON N9A 1E1",Windsor,https://www.ontario.ca/page/general-hospital-locations
+Windsor Regional Hospital — Maryvale Campus,"3640 Wells Street, Windsor, ON N9C 1T9",Windsor,https://www.ontario.ca/page/general-hospital-locations
+Wingham And District Hospital,"270 Carling Terrace, Wingham, ON N0G 2W0",Wingham,https://www.ontario.ca/page/general-hospital-locations
+Woodstock Hospital,"270 Riddell Street, Woodstock, ON N4S 6N6",Woodstock,https://www.ontario.ca/page/general-hospital-locations

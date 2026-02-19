@@ -95,11 +95,21 @@ def handle_start_research(data):
     prompt = data.get("prompt", "").strip()
     previous_session_id = data.get("previous_session_id")
     tweak_instructions = data.get("tweak_instructions", "").strip()
-    columns = data.get("columns", [])  # List of {name: str, isPriority: bool}
+    columns = data.get("columns", [])  # List of {name: str, isPriority: bool, dedupeRole: str}
     priority_columns = data.get("priority_columns", [])  # List of column names
+    hard_identifier_columns = [
+        c["name"] for c in columns if isinstance(c, dict) and c.get("dedupeRole") == "hard"
+    ]
+    soft_identifier_columns = [
+        c["name"] for c in columns if isinstance(c, dict) and c.get("dedupeRole") == "soft"
+    ]
     
     if not prompt:
         emit("error", {"content": "Empty prompt"})
+        return
+
+    if not soft_identifier_columns:
+        emit("error", {"content": "Select at least one Soft ID column for deduplication"})
         return
     
     print(f"\n{'='*70}")
@@ -108,6 +118,8 @@ def handle_start_research(data):
     print(f"   Prompt: {prompt[:100]}...")
     print(f"   Columns: {[c['name'] for c in columns]}")
     print(f"   Priority Columns: {priority_columns}")
+    print(f"   Hard IDs: {hard_identifier_columns}")
+    print(f"   Soft IDs: {soft_identifier_columns}")
     if previous_session_id:
         print(f"   Previous Session: {previous_session_id}")
         print(f"   Tweaks: {tweak_instructions[:100] if tweak_instructions else 'None'}...")
@@ -141,7 +153,9 @@ def handle_start_research(data):
         'previous_queries': [],
         'previous_items': [],
         'columns': columns,
-        'priority_columns': priority_columns
+        'priority_columns': priority_columns,
+        'hard_identifier_columns': hard_identifier_columns,
+        'soft_identifier_columns': soft_identifier_columns
     }
     
     # Load previous context if available
@@ -205,9 +219,11 @@ def _run_algorithm_task(session_id: str, client_id: str, state: dict, algorithm_
         print(f"🔧 Running Algorithm Task")
         print(f"   Session: {session_id}")
         print(f"   State keys: {list(state.keys())}")
-        print(f"   Prompt: {state.get('initial_prompt', 'MISSING')[:50]}...")
+        print(f"   Prompt: {state.get('initial_prompt', 'MISSING')}...")
         print(f"   Columns: {state.get('columns', 'MISSING')}")
         print(f"   Priority Columns: {state.get('priority_columns', 'MISSING')}")
+        print(f"   Hard IDs: {state.get('hard_identifier_columns', 'MISSING')}")
+        print(f"   Soft IDs: {state.get('soft_identifier_columns', 'MISSING')}")
         print(f"{'='*70}\n")
         
         # Run algorithm with state dict
@@ -265,12 +281,10 @@ def _run_algorithm_task(session_id: str, client_id: str, state: dict, algorithm_
             "priority_columns": priority_columns,
             "diversity_report": diversity_report,
             "statistics": {
-                "queries": len(final_state.get('queries', [])),
-                "urls_found": len(final_state.get('search_results', [])),
-                "urls_validated": len(final_state.get('validated_urls', [])),
+                "urls_searched": len(final_state.get('search_results', [])),
                 "urls_scraped": len(final_state.get('scraped_content', [])),
                 "records_extracted": len(final_state.get('extracted_items', [])),
-                "final_count": len(dataset)
+                "records_deduped": len(dataset)
             },
             "timestamp": datetime.now().isoformat()
         }, room=client_id)

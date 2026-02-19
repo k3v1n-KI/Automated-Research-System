@@ -1,0 +1,38 @@
+### Windsor
+#### Hôtel-Dieu Grace Healthcare
+Group | Hospital | Address  
+---|---|---  
+B,E,J,K,L,R,V | Tayfour Campus | 1453 Prince Road, Windsor, ON N9C 3Z4  
+#### Windsor Regional Hospital
+Group | Hospital | Address  
+---|---|---  
+B,E,M,N,S,T,V | Metropolitan Campus | 1995 Lens Avenue, Windsor, ON N8W 1L9  
+B,M,N,V | Ouellete Campus | 1030 Ouellette Avenue, Windsor, ON N9A 1E1  
+C | Maryvale Campus | 3640 Wells Street, Windsor, ON N9C 1T9
+### Wingham
+Group | Hospital | Address  
+---|---|---  
+C,E,G | Wingham And District Hospital | 270 Carling Terrace, Wingham, ON N0G 2W0
+### Woodstock
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Woodstock Hospital | 270 Riddell Street, Woodstock, ON N4S 6N6  
+Updated: October 31, 2025
+Published: April 18, 2023
+## 
+Ministry of Health
+The Ministry of Health works to help people stay healthy, delivering high-quality care when they need it and protecting the health system for future generations.
+## Questions or comments
+There are many ways to contact the Government of Ontario.
+[ Contact us ](https://www.ontario.ca/feedback/contact-us?id=8794&nid=541347)
+  * [About Ontario](https://www.ontario.ca/page/about-ontario)
+  * [Accessibility](https://www.ontario.ca/page/accessibility)
+  * [Archives](https://www.archives.gov.on.ca/topic/archived-websites/#Archived-ontario.ca-pages)
+  * [News](http://news.ontario.ca/newsroom/en)
+  * [Privacy](https://www.ontario.ca/page/privacy-statement)
+  * [Terms of use](https://www.ontario.ca/page/terms-use)
+
+
+[ © King’s Printer for Ontario, 2012–to26 ](https://www.ontario.ca/page/copyright-information)
+  *[St.]: Saint
+  *[Inc.]: incorporated

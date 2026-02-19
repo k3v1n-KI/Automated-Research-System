@@ -1,7 +1,6 @@
 """
 Research Algorithm - LangGraph based dataset generation pipeline.
 6-node architecture: Query Generation -> Search -> Validate -> Scrape -> Extract -> Deduplicate
-No Firebase, uses in-memory state management.
 """
 
 import json
@@ -14,10 +13,11 @@ import os
 
 # Import node implementations
 from nodes.query_generation import QueryGenerationNode
+from nodes.query_expansion_matrix import QueryExpansionMatrixNode
 from nodes.search import SearchNode
 from nodes.validate import ValidateNode
-from nodes.scrape import ScrapeNode
-from nodes.extract import ExtractNode
+from nodes.Crawl4AI_scrape import Crawl4AIScrapeNode
+from nodes.Crawl4AI_extract import Crawl4AIExtractNode
 from nodes.deduplicate import DeduplicateNode
 
 # Load environment
@@ -49,6 +49,8 @@ class ResearchState(TypedDict):
     previous_items: List[Dict]
     columns: List[Dict]
     priority_columns: List[str]
+    hard_identifier_columns: List[str]
+    soft_identifier_columns: List[str]
 
 
 # ============================================================================
@@ -100,11 +102,15 @@ def build_research_algorithm(emit_fn: Optional[Callable] = None):
     progress = ProgressTracker(emit_fn)
     
     # Initialize node instances
-    query_gen_node = QueryGenerationNode()
+    strategy = os.getenv("QUERY_GENERATION_STRATEGY", "qem").lower()
+    if strategy in {"simple", "baseline", "basic"}:
+        query_gen_node = QueryGenerationNode()
+    else:
+        query_gen_node = QueryExpansionMatrixNode()
     search_node = SearchNode()
     validate_node = ValidateNode(threshold=0.5)
-    scrape_node = ScrapeNode(timeout_ms=15000)
-    extract_node = ExtractNode(char_limit=3000)
+    scrape_node = Crawl4AIScrapeNode(timeout_ms=15000)
+    extract_node = Crawl4AIExtractNode(char_limit=12000)
     deduplicate_node = DeduplicateNode()
     
     # Create graph
@@ -136,6 +142,3 @@ def build_research_algorithm(emit_fn: Optional[Callable] = None):
     return graph.compile()
 
 
-if __name__ == "__main__":
-    # Test
-    print("Algorithm module loaded. Use build_research_algorithm() to create graph.")

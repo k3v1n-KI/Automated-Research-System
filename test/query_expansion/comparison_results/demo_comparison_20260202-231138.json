@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-02-02T23:11:38.598269",
+  "goal": "Find hospitals in Ontario",
+  "comparison": {
+    "current_method": {
+      "query_count": 5,
+      "queries": [
+        "hospitals in ontario",
+        "hospital list ontario",
+        "ontario hospital directory",
+        "healthcare facilities ontario",
+        "medical centers in ontario"
+      ],
+      "diversity": "Low",
+      "geographic_variants": 1,
+      "entity_variants": 3,
+      "format_specificity": "No"
+    },
+    "query_matrix": {
+      "query_count": 20,
+      "queries": [
+        "general_hospital in macro",
+        "List of general_hospital in macro CSV",
+        "general_hospital in micro",
+        "emergency_department_present in macro",
+        "general_hospital near meso",
+        "Ontario macro general_hospital university_affiliated filetype:csv",
+        "Ontario macro teaching_hospital emergency_department_present bed_capacity_large filetype:json",
+        "Ontario macro children_hospital filetype:xml",
+        "Ontario meso general_hospital emergency_department_present filetype:csv",
+        "Ontario meso teaching_hospital university_affiliated bed_capacity_large filetype:json",
+        "Ontario meso children_hospital bed_capacity_large filetype:xml",
+        "Ontario micro general_hospital university_affiliated emergency_department_present filetype:csv",
+        "Ontario micro teaching_hospital bed_capacity_large filetype:json",
+        "Ontario micro children_hospital emergency_department_present filetype:xml",
+        "Ontario macro general_hospital bed_capacity_large filetype:csv",
+        "Ontario meso general_hospital university_affiliated filetype:json",
+        "Ontario micro teaching_hospital emergency_department_present filetype:xml",
+        "Ontario micro children_hospital university_affiliated bed_capacity_large filetype:json",
+        "Ontario macro teaching_hospital bed_capacity_large filetype:xml",
+        "Ontario macro general_hospital emergency_department_present filetype:pdf"
+      ],
+      "axes": [
+        {
+          "name": "Entity Types",
+          "value_count": 5,
+          "values": [
+            "general_hospital",
+            "teaching_hospital",
+            "children_hospital",
+            "psychiatric_hospital",
+            "rehabilitation_hospital"
+          ]
+        },
+        {
+          "name": "Geographic Scope",
+          "value_count": 3,
+          "values": [
+            "macro",
+            "meso",
+            "micro"
+          ]
+        },
+        {
+          "name": "Attributes",
+          "value_count": 5,
+          "values": [
+            "university_affiliated",
+            "emergency_department_present",
+            "bed_capacity_large",
+            "specialties_pediatrics",
+            "specialties_oncology"
+          ]
+        },
+        {
+          "name": "Data Formats",
+          "value_count": 5,
+          "values": [
+            "CSV",
+            "JSON",
+            "XML",
+            "GeoJSON",
+            "API"
+          ]
+        }
+      ],
+      "theoretical_matrix_size": 375,
+      "diversity": "Very High"
+    }
+  }
+}

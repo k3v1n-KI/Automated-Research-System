@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-02-03T00:27:57.485919",
+  "goal": "hospitals in ontario",
+  "metrics": [
+    {
+      "method": "Current Method",
+      "iteration": 1,
+      "query_count": 5,
+      "unique_queries": 5,
+      "avg_query_length": 24.4,
+      "coverage_score": 35.0,
+      "diversity_score": 73.43,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "method": "Current Method",
+      "iteration": 2,
+      "query_count": 5,
+      "unique_queries": 5,
+      "avg_query_length": 24.4,
+      "coverage_score": 35.0,
+      "diversity_score": 73.43,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "method": "Query Expansion Matrix",
+      "iteration": 1,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 59.67,
+      "coverage_score": 100.0,
+      "diversity_score": 93.51,
+      "processing_time_seconds": 43.45
+    },
+    {
+      "method": "Query Expansion Matrix",
+      "iteration": 2,
+      "query_count": 15,
+      "unique_queries": 15,
+      "avg_query_length": 51.2,
+      "coverage_score": 100.0,
+      "diversity_score": 100.0,
+      "processing_time_seconds": 38.62
+    }
+  ],
+  "query_samples": {
+    "current_method": [
+      "hospitals in ontario",
+      "hospital list ontario",
+      "ontario hospital directory"
+    ],
+    "qem_iter1": [
+      "Ontario Open Data Portal acute care hospitals JSON",
+      "Ontario Open Data Portal teaching hospitals JSON Ontario",
+      "Ontario Open Data Portal pediatric hospitals ED JSON",
+      "site:data.ontario.ca hospital beds 500-1000 acute care Ontario",
+      "site:data.ontario.ca hospitals CSV Ontario ED ownership"
+    ],
+    "qem_iter2": [
+      "Ontario Ministry of Health open data portal hospitals csv json general acute-care Ontario",
+      "Ontario pediatric hospitals list HTML directory",
+      "Ontario cancer hospitals directory HTML",
+      "Ontario university teaching hospitals general acute-care",
+      "Toronto area general acute-care hospitals university affiliated"
+    ]
+  },
+  "summary": {
+    "current_method": {
+      "avg_diversity_score": 73.43,
+      "avg_coverage_score": 35.0,
+      "avg_query_count": 5.0,
+      "consistency_pct": 100.0
+    },
+    "query_expansion_matrix": {
+      "avg_diversity_score": 96.75,
+      "avg_coverage_score": 100.0,
+      "avg_query_count": 15.0,
+      "consistency_pct": 0.0
+    },
+    "comparative_gains": {
+      "diversity_improvement": 23.32,
+      "coverage_improvement": 65.0,
+      "query_increase_pct": 200.0
+    }
+  }
+}

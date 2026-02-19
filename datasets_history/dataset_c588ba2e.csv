@@ -1,0 +1,81 @@
+Address,City,Name,source_url
+600 University Ave,Toronto,Mount Sinai Hospital,https://www.sinaihealth.ca/our-hospitals/mount-sinai-hospital
+201 Georgian Drive,Barrie,Royal Victoria Regional Health Centre,https://en.wikipedia.org/wiki/List_of_hospitals_in_Canada
+39 Lower Simcoe St,Toronto,Infinity Health Centre,https://www.saintalphonsus.org/location/saint-alphonsus-medical-center-ontario
+2441 Lakeshore Rd W,Oakville,Infinity Health Centre,https://www.saintalphonsus.org/location/saint-alphonsus-medical-center-ontario
+340 College Street,Toronto,The Doctor's Hospital,https://www.ontariohealth.ca/
+1 Spadina Crescent,Toronto,Spadina Military Hospital,https://www.ontariohealth.ca/
+Yonge and Davisville,Toronto,Orthopaedic Military Hospital,https://www.ontariohealth.ca/
+Keele Street,Toronto,Northwestern Hospital,https://www.ontariohealth.ca/
+Church and Keele Sites,Toronto,Humber River Hospital,https://www.ontariohealth.ca/
+College Street Armouries,Toronto,Central Military Convalescence Hospital,https://www.ontariohealth.ca/
+30 Bond Street,Toronto,St. Michael's Hospital,https://www.policyalternatives.ca/news-research/hollowed-out/
+"237 Barton St E Hamilton, ON L8L 2X2",Hamilton,Hamilton General Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"699 Concession Street Hamilton, ON L8V 5C2",Hamilton,Juravinski Cancer Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+711 Concession Street,Hamilton,Juravinski Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+1200 Main St W,Hamilton,McMaster Children’s Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"1200 Main St W Hamilton, ON L8N 3Z5",Hamilton,McMaster University Medical Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"300 Wellington St N Hamilton, Ontario L8L 0A4",Hamilton,Regional Rehabilitation Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"325 Wellington St N Hamilton, ON L8L 0A4",Hamilton,Ron Joyce Children’s Health Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"150 King Street East Hamilton, ON L8N 1B2",Hamilton,Satellite Health Facility,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"88 Maplewood Avenue Hamilton, ON L8M 1W9",Hamilton,St. Peter’s Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+"690 Main Street West Hamilton, ON L8S 1A4",Hamilton,West End Clinic/Urgent Care Centre,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+169 Main Street East,Grimsby,West Lincoln Memorial Hospital,https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+Church Street; Finch Avenue; Keele Street,Toronto,Humber River Regional Hospital,https://www.ontariorenalnetwork.ca/en/local-services/north-west/locations-list
+"3200 Major Mackenzie Dr W, Vaughan ON L6A 4Z3",Vaughan,Cortellucci Vaughan Hospital,https://infinityhealthcentre.com/health-care-options-in-ontario-explained/
+"550 N Monterey Avenue, Ontario, CA 91764",Ontario,Kindred Hospital Ontario,https://pmc.ncbi.nlm.nih.gov/articles/PMC7845691/
+"1200 Fourth Ave., St. Catharines, ON, L2S 0A9",St. Catharines,Niagara Health,https://ontariohealth.ca/news/operational-direction-rehab-ccc-capacity
+2295 S Vineyard Ave,Ontario,Ontario Medical Center,https://www.infrastructureontario.ca/en/news-and-media/news/humber-river-hospital/humber-river-regional-hospital/
+"1453 Prince Road, Windsor, ON N9C 3Z4",Windsor,Hôtel-Dieu Grace Healthcare,https://pmc.ncbi.nlm.nih.gov/articles/PMC11348631/
+"1995 Lens Avenue, Windsor, ON N8W 1L9",Windsor,Windsor Regional Hospital,https://pmc.ncbi.nlm.nih.gov/articles/PMC11348631/
+"1030 Ouellette Avenue, Windsor, ON N9A 1E1",Windsor,Windsor Regional Hospital,https://pmc.ncbi.nlm.nih.gov/articles/PMC11348631/
+"3640 Wells Street, Windsor, ON N9C 1T9",Windsor,Windsor Regional Hospital,https://pmc.ncbi.nlm.nih.gov/articles/PMC11348631/
+"270 Carling Terrace, Wingham, ON N0G 2W0",Wingham,Wingham And District Hospital,https://pmc.ncbi.nlm.nih.gov/articles/PMC11348631/
+"270 Riddell Street, Woodstock, ON N4S 6N6",Woodstock,Woodstock Hospital,https://pmc.ncbi.nlm.nih.gov/articles/PMC11348631/
+980 Oliver Road,Thunder Bay,Thunder Bay Regional Health Sciences Centre (hub hospital),https://data.ontario.ca/en/organization/health?organization_jurisdiction=provincial&keywords_en=Hospital&res_format=CSV
+21 Sylvan Street,Kenora,Lake of the Woods District Hospital (affiliated dialysis provider),https://data.ontario.ca/en/organization/health?organization_jurisdiction=provincial&keywords_en=Hospital&res_format=CSV
+110 Victoria Avenue,Fort Frances,Riverside Healthcare - La Verendrye Hospital (affiliated dialysis provider),https://data.ontario.ca/en/organization/health?organization_jurisdiction=provincial&keywords_en=Hospital&res_format=CSV
+501 Smyth Road,Ottawa,The Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+1053 Carling Avenue,Ottawa,The Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+1967 Riverside Drive,Ottawa,The Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario (CHEO),https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+3045 Baseline Road,Ottawa,Queensway-Carleton Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+713 Montreal Road,Ottawa,Montfort Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+501 Smyth Road,Ottawa,Ottawa Regional Cancer Centre,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+1145 Carling Avenue,Ottawa,Royal Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+43 Bruyère Street,Ottawa,Élisabeth Bruyère Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+879 Hiawatha Park Road,Ottawa,Résidence Saint-Louis,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+60 Cambridge Street North,Ottawa,Saint-Vincent Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+505 Smyth Road,Ottawa,The Rehabilitation Centre,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+40 Ruskin Street,Ottawa,University of Ottawa Heart Institute,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+351 SW 9th Street,Ontario,Saint Alphonsus Medical Center - Ontario,https://www.thehealthline.ca/
+825 Coxwell Avenue,Toronto,Michael Garron Hospital,https://www.hqontario.ca/
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://www.cmajopen.ca/content/9/4/E1026
+"2100 Bovaird Drive East, Brampton, ON L6R 3J7",Brampton,Brampton Civic Hospital,https://www.cmajopen.ca/content/9/4/E1026
+"101 Humber College Boulevard, Etobicoke, ON M9V 1R8",Etobicoke,Etobicoke General Hospital,https://www.cmajopen.ca/content/9/4/E1026
+"20 Lynch Street, Brampton, ON L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.cmajopen.ca/content/9/4/E1026
+"200 Church Street, Etobicoke, ON M9N 1N8",Etobicoke,Reactivation Care Centre,https://www.cmajopen.ca/content/9/4/E1026
+"135 McLaughlin Road South, Brampton, ON L6Y 2C8",Brampton,Withdrawal Management Centre,https://www.cmajopen.ca/content/9/4/E1026
+"200 Elizabeth Street, Toronto, ON M5G 2C4",Toronto,Toronto General Hospital,https://ijic.org/articles/10.5334/ijic.7014
+501 Smyth Road,Ottawa,The Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+1053 Carling Avenue,Ottawa,The Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+1967 Riverside Drive,Ottawa,The Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario (CHEO),https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+3045 Baseline Road,Ottawa,Queensway-Carleton Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+713 Montreal Road,Ottawa,Montfort Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+501 Smyth Road,Ottawa,Ottawa Regional Cancer Centre,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+1145 Carling Avenue,Ottawa,Royal Ottawa Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+43 Bruyère Street,Ottawa,Élisabeth Bruyère Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+879 Hiawatha Park Road,Ottawa,Résidence Saint-Louis,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+60 Cambridge Street North,Ottawa,Saint-Vincent Hospital,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+505 Smyth Road,Ottawa,The Rehabilitation Centre,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+40 Ruskin Street,Ottawa,University of Ottawa Heart Institute,https://data.ontario.ca/en/dataset/?organization_jurisdiction=provincial&_organization_limit=0&res_format=CSV&organization=health&asset_type=dataset&sort=views_recent+desc
+351 SW 9th Street,Ontario,Saint Alphonsus Medical Center - Ontario,https://www.thehealthline.ca/
+825 Coxwell Avenue,Toronto,Michael Garron Hospital,https://www.hqontario.ca/
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://www.cmajopen.ca/content/9/4/E1026
+"2100 Bovaird Drive East, Brampton, ON L6R 3J7",Brampton,Brampton Civic Hospital,https://www.cmajopen.ca/content/9/4/E1026
+"101 Humber College Boulevard, Etobicoke, ON M9V 1R8",Etobicoke,Etobicoke General Hospital,https://www.cmajopen.ca/content/9/4/E1026
+"20 Lynch Street, Brampton, ON L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.cmajopen.ca/content/9/4/E1026
+"200 Church Street, Etobicoke, ON M9N 1N8",Etobicoke,Reactivation Care Centre,https://www.cmajopen.ca/content/9/4/E1026
+"135 McLaughlin Road South, Brampton, ON L6Y 2C8",Brampton,Withdrawal Management Centre,https://www.cmajopen.ca/content/9/4/E1026
+"200 Elizabeth Street, Toronto, ON M5G 2C4",Toronto,Toronto General Hospital,https://ijic.org/articles/10.5334/ijic.7014

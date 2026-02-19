@@ -1,0 +1,46 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 4,
+  "chunk_chars": 1641,
+  "content_chars": 712,
+  "model": "gpt-5-nano",
+  "response": {
+    "id": "chatcmpl-D7UYnfMFFpnFoqsPsmzINelhwos4R",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  {\"hospital_name\":\"H\u00f4tel-Dieu Grace Healthcare\",\"address\":\"1453 Prince Road, Windsor, ON N9C 3Z4\",\"city\":\"Windsor\"},\n  {\"hospital_name\":\"Windsor Regional Hospital\",\"address\":\"1995 Lens Avenue, Windsor, ON N8W 1L9\",\"city\":\"Windsor\"},\n  {\"hospital_name\":\"Windsor Regional Hospital\",\"address\":\"1030 Ouellette Avenue, Windsor, ON N9A 1E1\",\"city\":\"Windsor\"},\n  {\"hospital_name\":\"Windsor Regional Hospital\",\"address\":\"3640 Wells Street, Windsor, ON N9C 1T9\",\"city\":\"Windsor\"},\n  {\"hospital_name\":\"Wingham And District Hospital\",\"address\":\"270 Carling Terrace, Wingham, ON N0G 2W0\",\"city\":\"Wingham\"},\n  {\"hospital_name\":\"Woodstock Hospital\",\"address\":\"270 Riddell Street, Woodstock, ON N4S 6N6\",\"city\":\"Woodstock\"}\n]",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1770678141,
+    "model": "gpt-5-nano-2025-08-07",
+    "object": "chat.completion",
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 2463,
+      "prompt_tokens": 592,
+      "total_tokens": 3055,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2240,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

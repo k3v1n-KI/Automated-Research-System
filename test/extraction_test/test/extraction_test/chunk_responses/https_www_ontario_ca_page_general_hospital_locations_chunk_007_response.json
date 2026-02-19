@@ -1,0 +1,46 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 7,
+  "chunk_chars": 1641,
+  "content_chars": 914,
+  "model": "gpt-5-mini",
+  "response": {
+    "id": "chatcmpl-D7UzFxJ6k1qevXBM8fw8VKkPlbcqI",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  {\n    \"hospital_name\": \"H\u00f4tel-Dieu Grace Healthcare \u2014 Tayfour Campus\",\n    \"address\": \"1453 Prince Road, Windsor, ON N9C 3Z4\",\n    \"city\": \"Windsor\"\n  },\n  {\n    \"hospital_name\": \"Windsor Regional Hospital \u2014 Metropolitan Campus\",\n    \"address\": \"1995 Lens Avenue, Windsor, ON N8W 1L9\",\n    \"city\": \"Windsor\"\n  },\n  {\n    \"hospital_name\": \"Windsor Regional Hospital \u2014 Ouellette Campus\",\n    \"address\": \"1030 Ouellette Avenue, Windsor, ON N9A 1E1\",\n    \"city\": \"Windsor\"\n  },\n  {\n    \"hospital_name\": \"Windsor Regional Hospital \u2014 Maryvale Campus\",\n    \"address\": \"3640 Wells Street, Windsor, ON N9C 1T9\",\n    \"city\": \"Windsor\"\n  },\n  {\n    \"hospital_name\": \"Wingham And District Hospital\",\n    \"address\": \"270 Carling Terrace, Wingham, ON N0G 2W0\",\n    \"city\": \"Wingham\"\n  },\n  {\n    \"hospital_name\": \"Woodstock Hospital\",\n    \"address\": \"270 Riddell Street, Woodstock, ON N4S 6N6\",\n    \"city\": \"Woodstock\"\n  }\n]",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1770679781,
+    "model": "gpt-5-mini-2025-08-07",
+    "object": "chat.completion",
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1137,
+      "prompt_tokens": 592,
+      "total_tokens": 1729,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

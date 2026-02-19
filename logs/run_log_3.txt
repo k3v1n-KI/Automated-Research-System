@@ -1,0 +1,1586 @@
+Warning: Vector store failed to initialize: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "kevin"
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: J219lwQGwpqGRCwcAAAB
+
+======================================================================
+Starting Research Session
+   Client: J219lwQGwpqGRCwcAAAB
+   Prompt: Find all hospitals, institutions, and community programs that offer mental health and addiction coun...
+   Columns: ['Name', 'Address', 'City', 'Phone Number']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: 91e513b3-5c2a-4767-96d9-a9e201896bb9
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all hospitals, institutions, and community programs that offer mental health and addiction counseling in Ontario...
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["Hospital mental health unit in Province-wide (Ontario)", "Community mental health centre in Greater Toronto Area (GTA)", "Addiction treatment centre in Eastern Ontario", "Outpatient coun
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: Hospital mental health unit in Province-wide (Ontario)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: Community mental health centre in Greater Toronto Area (GTA)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: Addiction treatment centre in Eastern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: Outpatient counselling clinic in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: Crisis stabilization service in Rural and remote communities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: Hospital mental health unit 24/7 crisis lines in Province-wide (Ontario)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: Community mental health centre Inpatient detox/rehabilitation in Greater Toronto Area (GTA)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: Addiction treatment centre Outpatient counselling in Eastern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: Outpatient counselling clinic Youth and family programs in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: Crisis stabilization service Virtual/telehealth services in Rural and remote communities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: Hospital mental health unit in Province-wide (Ontario) PDF (program guides)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: Community mental health centre in Greater Toronto Area (GTA) CSV (service directories)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: Addiction treatment centre in Eastern Ontario Government health website (ontario.ca)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: Outpatient counselling clinic in Northern Ontario Hospital/health centre websites
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: Crisis stabilization service in Rural and remote communities Community agency directories (HTML)
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 196 unique URLs across 15 queries
+   Data: {"total_urls": 196, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 196 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 196/196 URLs
+   Data: {"validated": 196, "original": 196}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 196 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[ERROR]... × https://communityfounda...esultats-NOV-2023-1.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=Co...ath=124&latitude=45.0212762&longitude=-74.730345  | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=Co...ath=124&latitude=45.0212762&longitude=-74.730345  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=Co...ath=124&latitude=45.0212762&longitude=-74.730345  | ✓ | ⏱: 1.09s 
+[FETCH]... ↓ https://canadiancentreforaddictions.org/treatment-programs/inpatient-rehab/                          | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://canadiancentreforaddictions.org/treatment-programs/inpatient-rehab/                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://canadiancentreforaddictions.org/treatment-programs/inpatient-rehab/                          | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ http://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system  | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● http://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system  | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://211north.ca/record/65275331/                                                                 | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://211north.ca/record/65275331/                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211north.ca/record/65275331/                                                                 | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ http://www.centraleasthealthline.ca/listServices.aspx?id=10095                                       | ✓ | ⏱: 1.40s 
+[SCRAPE].. ◆ http://www.centraleasthealthline.ca/listServices.aspx?id=10095                                       | ✓ | ⏱: 0.06s 
+[COMPLETE] ● http://www.centraleasthealthline.ca/listServices.aspx?id=10095                                       | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://carolinemulroneympp.ca/ontario-building-...health-and-addictions-system-in-eastern-ontario/  | ✓ | ⏱: 1.50s 
+[SCRAPE].. ◆ https://carolinemulroneympp.ca/ontario-building-...health-and-addictions-system-in-eastern-ontario/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://carolinemulroneympp.ca/ontario-building-...health-and-addictions-system-in-eastern-ontario/  | ✓ | ⏱: 1.54s 
+[ERROR]... × https://files.ontario.ca/en-2004-pssd.csv          | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/en-2004-pssd.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://data.urbandatacentre.ca/catalogue/?_extr...fiable_individual_data=No&res_format=HTML&page=8  | ✓ | ⏱: 0.70s 
+[SCRAPE].. ◆ https://data.urbandatacentre.ca/catalogue/?_extr...fiable_individual_data=No&res_format=HTML&page=8  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://data.urbandatacentre.ca/catalogue/?_extr...fiable_individual_data=No&res_format=HTML&page=8  | ✓ | ⏱: 0.71s 
+[FETCH]... ↓ https://connect.northeasthealthline.ca/Services/mhaa/List/10230/Mental_Health_for_Children_and_Youth | ✓ | ⏱: 1.94s 
+[SCRAPE].. ◆ https://connect.northeasthealthline.ca/Services/mhaa/List/10230/Mental_Health_for_Children_and_Youth | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://connect.northeasthealthline.ca/Services/mhaa/List/10230/Mental_Health_for_Children_and_Youth | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ https://canatc.ca/                                                                                   | ✓ | ⏱: 2.03s 
+[SCRAPE].. ◆ https://canatc.ca/                                                                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://canatc.ca/                                                                                   | ✓ | ⏱: 2.15s 
+[FETCH]... ↓ https://connexontario.ca/                                                                            | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://connexontario.ca/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://connexontario.ca/                                                                            | ✓ | ⏱: 2.22s 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/Category:Psychiatric_hospitals_in_Ontario                              | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/Category:Psychiatric_hospitals_in_Ontario                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/Category:Psychiatric_hospitals_in_Ontario                              | ✓ | ⏱: 1.09s 
+[FETCH]... ↓ https://algomafamilyservices.ca/our-services/                                                        | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://algomafamilyservices.ca/our-services/                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://algomafamilyservices.ca/our-services/                                                        | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://cmhato.org/                                                                                  | ✓ | ⏱: 2.44s 
+[SCRAPE].. ◆ https://cmhato.org/                                                                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://cmhato.org/                                                                                  | ✓ | ⏱: 2.49s 
+[FETCH]... ↓ https://files.gao.gov/reports/GAO-25-107586/index.html                                               | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://files.gao.gov/reports/GAO-25-107586/index.html                                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://files.gao.gov/reports/GAO-25-107586/index.html                                               | ✓ | ⏱: 1.20s 
+[FETCH]... ↓ https://canatc.ca/locations/                                                                         | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://canatc.ca/locations/                                                                         | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://canatc.ca/locations/                                                                         | ✓ | ⏱: 1.75s 
+[FETCH]... ↓ https://211north.ca/record/68977090/site/                                                            | ✓ | ⏱: 0.84s 
+[SCRAPE].. ◆ https://211north.ca/record/68977090/site/                                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211north.ca/record/68977090/site/                                                            | ✓ | ⏱: 0.85s 
+[FETCH]... ↓ https://cilt.ca/programs-and-services/peer-support/24-hour-emergency-numbers/                        | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://cilt.ca/programs-and-services/peer-support/24-hour-emergency-numbers/                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://cilt.ca/programs-and-services/peer-support/24-hour-emergency-numbers/                        | ✓ | ⏱: 3.06s 
+[FETCH]... ↓ https://faspsych.com/blog/benefits-and-drawbacks-of-telemental-health/                               | ✓ | ⏱: 1.71s 
+[SCRAPE].. ◆ https://faspsych.com/blog/benefits-and-drawbacks-of-telemental-health/                               | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://faspsych.com/blog/benefits-and-drawbacks-of-telemental-health/                               | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=So...ath=28&latitude=44.0423571&longitude=-81.1189742  | ✓ | ⏱: 0.41s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=So...ath=28&latitude=44.0423571&longitude=-81.1189742  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=So...ath=28&latitude=44.0423571&longitude=-81.1189742  | ✓ | ⏱: 0.41s 
+[FETCH]... ↓ https://findahelpline.com/countries/ca/on                                                            | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://findahelpline.com/countries/ca/on                                                            | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://findahelpline.com/countries/ca/on                                                            | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://andybhatti.com/interventions/addiction-treatment-centers-ontario/                            | ✓ | ⏱: 3.62s 
+[SCRAPE].. ◆ https://andybhatti.com/interventions/addiction-treatment-centers-ontario/                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://andybhatti.com/interventions/addiction-treatment-centers-ontario/                            | ✓ | ⏱: 3.67s 
+[FETCH]... ↓ https://greenestone.net/                                                                             | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://greenestone.net/                                                                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://greenestone.net/                                                                             | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://homewoodhealthcentre.com/                                                                    | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://homewoodhealthcentre.com/                                                                    | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://homewoodhealthcentre.com/                                                                    | ✓ | ⏱: 1.71s 
+[ERROR]... × https://files.ontario.ca/opendata/institutions.csv | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/opendata/institutions.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://connexontario.ca/?fbclid=IwZXh0bgNhZW0CM...on1JTIDWpwF-5O1rQvivU_aem_xSTkyQslHmwbC60_AxAPNA  | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://connexontario.ca/?fbclid=IwZXh0bgNhZW0CM...on1JTIDWpwF-5O1rQvivU_aem_xSTkyQslHmwbC60_AxAPNA  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://connexontario.ca/?fbclid=IwZXh0bgNhZW0CM...on1JTIDWpwF-5O1rQvivU_aem_xSTkyQslHmwbC60_AxAPNA  | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 1.69s 
+[FETCH]... ↓ https://housing-infrastructure.canada.ca/homelessness-sans-abri/communities-communautes/on-eng.html  | ✓ | ⏱: 2.07s 
+[SCRAPE].. ◆ https://housing-infrastructure.canada.ca/homelessness-sans-abri/communities-communautes/on-eng.html  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://housing-infrastructure.canada.ca/homelessness-sans-abri/communities-communautes/on-eng.html  | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions                       | ✓ | ⏱: 1.77s 
+[SCRAPE].. ◆ https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions                       | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/Toronto                                                                | ✓ | ⏱: 1.28s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/Toronto                                                                | ✓ | ⏱: 1.30s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/Toronto                                                                | ✓ | ⏱: 2.61s 
+[FETCH]... ↓ https://here247.ca/                                                                                  | ✓ | ⏱: 4.02s 
+[SCRAPE].. ◆ https://here247.ca/                                                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://here247.ca/                                                                                  | ✓ | ⏱: 4.06s 
+[FETCH]... ↓ https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions/Our-Locations         | ✓ | ⏱: 2.29s 
+[SCRAPE].. ◆ https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions/Our-Locations         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://hsnsudbury.ca/en/Services-and-Specialties/Mental-Health-and-Addictions/Our-Locations         | ✓ | ⏱: 2.31s 
+[FETCH]... ↓ https://housing-infrastructure.canada.ca/homelessness-sans-abri/directives-eng.html                  | ✓ | ⏱: 2.64s 
+[SCRAPE].. ◆ https://housing-infrastructure.canada.ca/homelessness-sans-abri/directives-eng.html                  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://housing-infrastructure.canada.ca/homelessness-sans-abri/directives-eng.html                  | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://cmhato.org/mental-health-resources-toronto/                                                  | ✓ | ⏱: 3.58s 
+[SCRAPE].. ◆ https://cmhato.org/mental-health-resources-toronto/                                                  | ✓ | ⏱: 0.56s 
+[COMPLETE] ● https://cmhato.org/mental-health-resources-toronto/                                                  | ✓ | ⏱: 4.15s 
+[FETCH]... ↓ https://cmho.org/                                                                                    | ✓ | ⏱: 7.11s 
+[SCRAPE].. ◆ https://cmho.org/                                                                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://cmho.org/                                                                                    | ✓ | ⏱: 7.14s 
+[FETCH]... ↓ https://nashp.org/crisis-care-core-components/                                                       | ✓ | ⏱: 3.54s 
+[SCRAPE].. ◆ https://nashp.org/crisis-care-core-components/                                                       | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://nashp.org/crisis-care-core-components/                                                       | ✓ | ⏱: 3.63s 
+[FETCH]... ↓ https://jacstoronto.org/jacs-resource-list/                                                          | ✓ | ⏱: 4.25s 
+[SCRAPE].. ◆ https://jacstoronto.org/jacs-resource-list/                                                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://jacstoronto.org/jacs-resource-list/                                                          | ✓ | ⏱: 4.30s 
+[FETCH]... ↓ https://newgate180.com/                                                                              | ✓ | ⏱: 2.92s 
+[SCRAPE].. ◆ https://newgate180.com/                                                                              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://newgate180.com/                                                                              | ✓ | ⏱: 3.00s 
+[FETCH]... ↓ https://journals.sagepub.com/doi/10.1177/23743735251360511                                           | ✓ | ⏱: 4.32s 
+[SCRAPE].. ◆ https://journals.sagepub.com/doi/10.1177/23743735251360511                                           | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://journals.sagepub.com/doi/10.1177/23743735251360511                                           | ✓ | ⏱: 4.47s 
+[FETCH]... ↓ https://mentalhealthmvmt.com/best-mental-health-hospitals-in-ontario/                                | ✓ | ⏱: 4.23s 
+[SCRAPE].. ◆ https://mentalhealthmvmt.com/best-mental-health-hospitals-in-ontario/                                | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://mentalhealthmvmt.com/best-mental-health-hospitals-in-ontario/                                | ✓ | ⏱: 4.30s 
+[FETCH]... ↓ https://gist.github.com/edsu/75c7951bcc75931b0fac98cf272d240f                                        | ✓ | ⏱: 5.75s 
+[SCRAPE].. ◆ https://gist.github.com/edsu/75c7951bcc75931b0fac98cf272d240f                                        | ✓ | ⏱: 1.42s 
+[COMPLETE] ● https://gist.github.com/edsu/75c7951bcc75931b0fac98cf272d240f                                        | ✓ | ⏱: 7.19s 
+[FETCH]... ↓ https://nbrhc.on.ca/programs-services/mental-health-programs-services/                               | ✓ | ⏱: 5.18s 
+[SCRAPE].. ◆ https://nbrhc.on.ca/programs-services/mental-health-programs-services/                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://nbrhc.on.ca/programs-services/mental-health-programs-services/                               | ✓ | ⏱: 5.23s 
+[FETCH]... ↓ https://kindercare.ca/toronto-services-for-children-with-special-needs/                              | ✓ | ⏱: 6.23s 
+[SCRAPE].. ◆ https://kindercare.ca/toronto-services-for-children-with-special-needs/                              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://kindercare.ca/toronto-services-for-children-with-special-needs/                              | ✓ | ⏱: 6.30s 
+[FETCH]... ↓ https://nashp.org/essential-principles-for-crisis-care/                                              | ✓ | ⏱: 3.50s 
+[SCRAPE].. ◆ https://nashp.org/essential-principles-for-crisis-care/                                              | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://nashp.org/essential-principles-for-crisis-care/                                              | ✓ | ⏱: 3.56s 
+[FETCH]... ↓ https://nashp.org/the-rural-behavioral-health-cr...um-considerations-and-emerging-state-strategies/  | ✓ | ⏱: 3.57s 
+[SCRAPE].. ◆ https://nashp.org/the-rural-behavioral-health-cr...um-considerations-and-emerging-state-strategies/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://nashp.org/the-rural-behavioral-health-cr...um-considerations-and-emerging-state-strategies/  | ✓ | ⏱: 3.62s 
+[FETCH]... ↓ https://nbrhc.on.ca/programs-services/mental-hea...ervices/child-and-adolescent-psychiatry-clinics/  | ✓ | ⏱: 3.66s 
+[SCRAPE].. ◆ https://nbrhc.on.ca/programs-services/mental-hea...ervices/child-and-adolescent-psychiatry-clinics/  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://nbrhc.on.ca/programs-services/mental-hea...ervices/child-and-adolescent-psychiatry-clinics/  | ✓ | ⏱: 3.73s 
+[FETCH]... ↓ https://nbrhc.on.ca/programs-services/mental-hea...alth-addictions/outpatient-mental-health-clinic/  | ✓ | ⏱: 3.75s 
+[SCRAPE].. ◆ https://nbrhc.on.ca/programs-services/mental-hea...alth-addictions/outpatient-mental-health-clinic/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://nbrhc.on.ca/programs-services/mental-hea...alth-addictions/outpatient-mental-health-clinic/  | ✓ | ⏱: 3.80s 
+[FETCH]... ↓ https://osp.sjcg.net/                                                                                | ✓ | ⏱: 2.60s 
+[SCRAPE].. ◆ https://osp.sjcg.net/                                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://osp.sjcg.net/                                                                                | ✓ | ⏱: 2.62s 
+[FETCH]... ↓ https://news.ontario.ca/en/backgrounder/1004956/...onnecting-more-people-to-addiction-recovery-care  | ✓ | ⏱: 3.98s 
+[SCRAPE].. ◆ https://news.ontario.ca/en/backgrounder/1004956/...onnecting-more-people-to-addiction-recovery-care  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://news.ontario.ca/en/backgrounder/1004956/...onnecting-more-people-to-addiction-recovery-care  | ✓ | ⏱: 3.99s 
+[FETCH]... ↓ https://ingeniumdigitalhealth.com/resources/rhtp                                                     | ✓ | ⏱: 7.26s 
+[SCRAPE].. ◆ https://ingeniumdigitalhealth.com/resources/rhtp                                                     | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://ingeniumdigitalhealth.com/resources/rhtp                                                     | ✓ | ⏱: 7.39s 
+[FETCH]... ↓ https://nashp.org/the-state-perspective-on-rural-behavioral-health-crisis-services/                  | ✓ | ⏱: 4.24s 
+[SCRAPE].. ◆ https://nashp.org/the-state-perspective-on-rural-behavioral-health-crisis-services/                  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://nashp.org/the-state-perspective-on-rural-behavioral-health-crisis-services/                  | ✓ | ⏱: 4.32s 
+[FETCH]... ↓ https://newpath.ca/contact/orillia/                                                                  | ✓ | ⏱: 4.32s 
+[SCRAPE].. ◆ https://newpath.ca/contact/orillia/                                                                  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://newpath.ca/contact/orillia/                                                                  | ✓ | ⏱: 4.38s 
+[FETCH]... ↓ https://news.ontario.ca/en/release/1001771/ontar...-health-and-addictions-system-in-eastern-ontario  | ✓ | ⏱: 3.16s 
+[SCRAPE].. ◆ https://news.ontario.ca/en/release/1001771/ontar...-health-and-addictions-system-in-eastern-ontario  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://news.ontario.ca/en/release/1001771/ontar...-health-and-addictions-system-in-eastern-ontario  | ✓ | ⏱: 3.18s 
+[FETCH]... ↓ https://ontariohealthathome.ca/                                                                      | ✓ | ⏱: 3.48s 
+[SCRAPE].. ◆ https://ontariohealthathome.ca/                                                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://ontariohealthathome.ca/                                                                      | ✓ | ⏱: 3.51s 
+[FETCH]... ↓ https://nocclinic.com/                                                                               | ✓ | ⏱: 4.57s 
+[SCRAPE].. ◆ https://nocclinic.com/                                                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://nocclinic.com/                                                                               | ✓ | ⏱: 4.58s 
+[FETCH]... ↓ https://ontario.cmha.ca/                                                                             | ✓ | ⏱: 3.71s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/                                                                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ontario.cmha.ca/                                                                             | ✓ | ⏱: 3.75s 
+[FETCH]... ↓ https://nygh.on.ca/areas-care/mental-health                                                          | ✓ | ⏱: 3.92s 
+[SCRAPE].. ◆ https://nygh.on.ca/areas-care/mental-health                                                          | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://nygh.on.ca/areas-care/mental-health                                                          | ✓ | ⏱: 4.00s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC10227504/                                                   | ✓ | ⏱: 3.39s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC10227504/                                                   | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC10227504/                                                   | ✓ | ⏱: 3.46s 
+[FETCH]... ↓ https://nocclinic.janeapp.com/                                                                       | ✓ | ⏱: 4.16s 
+[SCRAPE].. ◆ https://nocclinic.janeapp.com/                                                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://nocclinic.janeapp.com/                                                                       | ✓ | ⏱: 4.19s 
+[FETCH]... ↓ https://sjcg.net/services/mental-health_addictions/outpatient/mhop.aspx                              | ✓ | ⏱: 0.99s 
+[SCRAPE].. ◆ https://sjcg.net/services/mental-health_addictions/outpatient/mhop.aspx                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://sjcg.net/services/mental-health_addictions/outpatient/mhop.aspx                              | ✓ | ⏱: 1.01s 
+[FETCH]... ↓ https://serenityhouseottawa.com/                                                                     | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://serenityhouseottawa.com/                                                                     | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://serenityhouseottawa.com/                                                                     | ✓ | ⏱: 1.28s 
+[FETCH]... ↓ https://torontoservicedirectory.ca/results/?sear...opicPath=241&latitude=43.7106&longitude=-79.4565  | ✓ | ⏱: 0.48s 
+[SCRAPE].. ◆ https://torontoservicedirectory.ca/results/?sear...opicPath=241&latitude=43.7106&longitude=-79.4565  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://torontoservicedirectory.ca/results/?sear...opicPath=241&latitude=43.7106&longitude=-79.4565  | ✓ | ⏱: 0.49s 
+[FETCH]... ↓ https://renascent.ca/                                                                                | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ Error processing link: 'toll_free_tel' does not appear to be an IPv4 or IPv6 address 
+[SCRAPE].. ◆ https://renascent.ca/                                                                                | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://renascent.ca/                                                                                | ✓ | ⏱: 2.13s 
+[FETCH]... ↓ https://rmh.org/programs-and-services/mental-health-outpatient-program-community-counselling         | ✓ | ⏱: 2.09s 
+[SCRAPE].. ◆ https://rmh.org/programs-and-services/mental-health-outpatient-program-community-counselling         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://rmh.org/programs-and-services/mental-health-outpatient-program-community-counselling         | ✓ | ⏱: 2.11s 
+[FETCH]... ↓ https://sah.on.ca/programs-services/emergency-services/community-health-clinics/                     | ✓ | ⏱: 2.07s 
+[SCRAPE].. ◆ https://sah.on.ca/programs-services/emergency-services/community-health-clinics/                     | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://sah.on.ca/programs-services/emergency-services/community-health-clinics/                     | ✓ | ⏱: 2.19s 
+[FETCH]... ↓ https://svpscentre.utoronto.ca/support/24-7-crisis-support-lines/                                    | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://svpscentre.utoronto.ca/support/24-7-crisis-support-lines/                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://svpscentre.utoronto.ca/support/24-7-crisis-support-lines/                                    | ✓ | ⏱: 1.55s 
+[FETCH]... ↓ https://sherbourne.on.ca/mental-health-harm-reduction/mental-health-services/                        | ✓ | ⏱: 1.90s 
+[SCRAPE].. ◆ https://sherbourne.on.ca/mental-health-harm-reduction/mental-health-services/                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://sherbourne.on.ca/mental-health-harm-reduction/mental-health-services/                        | ✓ | ⏱: 1.94s 
+[FETCH]... ↓ https://recovery.com/ontario/depression/                                                             | ✓ | ⏱: 3.03s 
+[SCRAPE].. ◆ https://recovery.com/ontario/depression/                                                             | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://recovery.com/ontario/depression/                                                             | ✓ | ⏱: 3.19s 
+[FETCH]... ↓ https://whereto.catie.ca/listing/addiction-services-of-eastern-ontario                               | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://whereto.catie.ca/listing/addiction-services-of-eastern-ontario                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://whereto.catie.ca/listing/addiction-services-of-eastern-ontario                               | ✓ | ⏱: 1.39s 
+[FETCH]... ↓ https://www.camh.ca/                                                                                 | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.camh.ca/                                                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.camh.ca/                                                                                 | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://ontario.cmha.ca/provincial-mental-health-supports/                                           | ✓ | ⏱: 2.57s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/provincial-mental-health-supports/                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ontario.cmha.ca/provincial-mental-health-supports/                                           | ✓ | ⏱: 2.62s 
+[FETCH]... ↓ https://sharedhealthmb.ca/services/mental-health...irtual-consultation-and-crisis-response-service/  | ✓ | ⏱: 2.88s 
+[SCRAPE].. ◆ https://sharedhealthmb.ca/services/mental-health...irtual-consultation-and-crisis-response-service/  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://sharedhealthmb.ca/services/mental-health...irtual-consultation-and-crisis-response-service/  | ✓ | ⏱: 2.96s 
+[FETCH]... ↓ https://www.alphahousetoronto.ca/                                                                    | ✓ | ⏱: 1.96s 
+[SCRAPE].. ◆ https://www.alphahousetoronto.ca/                                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.alphahousetoronto.ca/                                                                    | ✓ | ⏱: 2.01s 
+[FETCH]... ↓ https://taibuchc.ca/en/                                                                              | ✓ | ⏱: 2.76s 
+[SCRAPE].. ◆ https://taibuchc.ca/en/                                                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://taibuchc.ca/en/                                                                              | ✓ | ⏱: 2.82s 
+[FETCH]... ↓ https://thefarmrehab.com/                                                                            | ✓ | ⏱: 2.43s 
+[SCRAPE].. ◆ https://thefarmrehab.com/                                                                            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://thefarmrehab.com/                                                                            | ✓ | ⏱: 2.49s 
+[FETCH]... ↓ https://www.casey.org/telehealth-child-welfare/                                                      | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://www.casey.org/telehealth-child-welfare/                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.casey.org/telehealth-child-welfare/                                                      | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/corporate...ree-early-diagnostic-policy-recommendations.html  | ✓ | ⏱: 2.18s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/corporate...ree-early-diagnostic-policy-recommendations.html  | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/corporate...ree-early-diagnostic-policy-recommendations.html  | ✓ | ⏱: 2.28s 
+[FETCH]... ↓ https://www.chs.ca/page/distress-centres-and-crisis-lines-ontario                                    | ✓ | ⏱: 1.40s 
+[SCRAPE].. ◆ https://www.chs.ca/page/distress-centres-and-crisis-lines-ontario                                    | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.chs.ca/page/distress-centres-and-crisis-lines-ontario                                    | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://recovery.com/toronto/                                                                        | ✓ | ⏱: 2.05s 
+[SCRAPE].. ◆ https://recovery.com/toronto/                                                                        | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://recovery.com/toronto/                                                                        | ✓ | ⏱: 2.21s 
+[FETCH]... ↓ https://www.canadadrugrehab.ca/ontario/ontario-locate-your-health-authority/toronto-central/         | ✓ | ⏱: 2.22s 
+[SCRAPE].. ◆ https://www.canadadrugrehab.ca/ontario/ontario-locate-your-health-authority/toronto-central/         | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.canadadrugrehab.ca/ontario/ontario-locate-your-health-authority/toronto-central/         | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://wellbeingscounselling.ca/psychotherapy/clinic-locations/yonge-davisville-ontario/            | ✓ | ⏱: 3.38s 
+[SCRAPE].. ◆ https://wellbeingscounselling.ca/psychotherapy/clinic-locations/yonge-davisville-ontario/            | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://wellbeingscounselling.ca/psychotherapy/clinic-locations/yonge-davisville-ontario/            | ✓ | ⏱: 3.50s 
+[FETCH]... ↓ https://tbrhsc.net/programs-services/mental-health-program/adult-mental-health-services/             | ✓ | ⏱: 3.89s 
+[SCRAPE].. ◆ https://tbrhsc.net/programs-services/mental-health-program/adult-mental-health-services/             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://tbrhsc.net/programs-services/mental-health-program/adult-mental-health-services/             | ✓ | ⏱: 3.93s 
+[FETCH]... ↓ https://www.dmh.ms.gov/help/crisis-services/                                                         | ✓ | ⏱: 2.03s 
+[SCRAPE].. ◆ https://www.dmh.ms.gov/help/crisis-services/                                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.dmh.ms.gov/help/crisis-services/                                                         | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://www.easternontariolocal.ca/l/on/addiction-treatment-centres                                  | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://www.easternontariolocal.ca/l/on/addiction-treatment-centres                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.easternontariolocal.ca/l/on/addiction-treatment-centres                                  | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.cheo.on.ca/en/clinics-services-programs/mental-health-services-at-cheo.aspx              | ✓ | ⏱: 2.37s 
+[SCRAPE].. ◆ https://www.cheo.on.ca/en/clinics-services-programs/mental-health-services-at-cheo.aspx              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.cheo.on.ca/en/clinics-services-programs/mental-health-services-at-cheo.aspx              | ✓ | ⏱: 2.44s 
+[FETCH]... ↓ https://www.camh.ca/en/driving-change/about-camh                                                     | ✓ | ⏱: 2.87s 
+[SCRAPE].. ◆ https://www.camh.ca/en/driving-change/about-camh                                                     | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.camh.ca/en/driving-change/about-camh                                                     | ✓ | ⏱: 2.94s 
+[FETCH]... ↓ https://www.camh.ca/en/health-info/crisis-resources                                                  | ✓ | ⏱: 2.95s 
+[SCRAPE].. ◆ https://www.camh.ca/en/health-info/crisis-resources                                                  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.camh.ca/en/health-info/crisis-resources                                                  | ✓ | ⏱: 3.04s 
+[ERROR]... × https://www.mcconnellfo...ca/download-grants-csv/  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.mcconnellfoundation.ca/download-grants-csv/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html   | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html   | ✓ | ⏱: 1.09s 
+[FETCH]... ↓ https://www.camh.ca/en/patients-and-families/pro...ices/northern-psychiatric-outreach-program-npopc  | ✓ | ⏱: 3.31s 
+[SCRAPE].. ◆ https://www.camh.ca/en/patients-and-families/pro...ices/northern-psychiatric-outreach-program-npopc  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.camh.ca/en/patients-and-families/pro...ices/northern-psychiatric-outreach-program-npopc  | ✓ | ⏱: 3.37s 
+[FETCH]... ↓ https://southlake.ca/patient-care-program/mental-health/                                             | ✓ | ⏱: 5.45s 
+[SCRAPE].. ◆ https://southlake.ca/patient-care-program/mental-health/                                             | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://southlake.ca/patient-care-program/mental-health/                                             | ✓ | ⏱: 5.59s 
+[FETCH]... ↓ https://torontoservicedirectory.ca/results/?sear...Path=241&latitude=43.7482&longitude=-79.4072&pg=  | ✓ | ⏱: 2.25s 
+[SCRAPE].. ◆ https://torontoservicedirectory.ca/results/?sear...Path=241&latitude=43.7482&longitude=-79.4072&pg=  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://torontoservicedirectory.ca/results/?sear...Path=241&latitude=43.7482&longitude=-79.4072&pg=  | ✓ | ⏱: 2.30s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/news/2025...s-program-in-support-of-ontario-communities.html  | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/news/2025...s-program-in-support-of-ontario-communities.html  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/news/2025...s-program-in-support-of-ontario-communities.html  | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://www.facebook.com/CanadianAddictionTreatmentCentres/                                          | ✓ | ⏱: 2.05s 
+[SCRAPE].. ◆ https://www.facebook.com/CanadianAddictionTreatmentCentres/                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/CanadianAddictionTreatmentCentres/                                          | ✓ | ⏱: 2.08s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/addiction-rehab-mississauga/                                   | ✓ | ⏱: 2.95s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/addiction-rehab-mississauga/                                   | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/addiction-rehab-mississauga/                                   | ✓ | ⏱: 3.02s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/locations/bellwood/                                            | ✓ | ⏱: 1.23s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/locations/bellwood/                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/locations/bellwood/                                            | ✓ | ⏱: 1.29s 
+[FETCH]... ↓ https://www.nipissingwellness.ca/partner-category/mental-health-addictions/                          | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://www.nipissingwellness.ca/partner-category/mental-health-addictions/                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.nipissingwellness.ca/partner-category/mental-health-addictions/                          | ✓ | ⏱: 1.11s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/locations/ehn-online/                                          | ✓ | ⏱: 1.42s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/locations/ehn-online/                                          | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/locations/ehn-online/                                          | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://www.freedomaddiction.ca/                                                                     | ✓ | ⏱: 2.27s 
+[SCRAPE].. ◆ https://www.freedomaddiction.ca/                                                                     | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.freedomaddiction.ca/                                                                     | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://www.hdgh.org/mhaucc                                                                          | ✓ | ⏱: 2.12s 
+[SCRAPE].. ◆ https://www.hdgh.org/mhaucc                                                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.hdgh.org/mhaucc                                                                          | ✓ | ⏱: 2.14s 
+[ERROR]... × https://www.ola.org/sit...olicy-202208-202412.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ola.org/sites/default/files/data-resources/committee-transcripts/JP-Standing-Committee-on-Justice-Policy-202208-202412.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.northwesthealthline.ca/displayservice.aspx?id=141186                                     | ✓ | ⏱: 1.23s 
+[SCRAPE].. ◆ https://www.northwesthealthline.ca/displayservice.aspx?id=141186                                     | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.northwesthealthline.ca/displayservice.aspx?id=141186                                     | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://www.northeasthealthline.ca/displayservice.aspx?id=165434                                     | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ https://www.northeasthealthline.ca/displayservice.aspx?id=165434                                     | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.northeasthealthline.ca/displayservice.aspx?id=165434                                     | ✓ | ⏱: 1.56s 
+[FETCH]... ↓ https://www.facebook.com/DistressCentresGTA/                                                         | ✓ | ⏱: 1.32s 
+[SCRAPE].. ◆ https://www.facebook.com/DistressCentresGTA/                                                         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/DistressCentresGTA/                                                         | ✓ | ⏱: 1.36s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/addiction-treatment-in-eastern-ontario/                        | ✓ | ⏱: 2.27s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/addiction-treatment-in-eastern-ontario/                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/addiction-treatment-in-eastern-ontario/                        | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2023.1030396/full         | ✓ | ⏱: 2.96s 
+[SCRAPE].. ◆ https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2023.1030396/full         | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2023.1030396/full         | ✓ | ⏱: 3.03s 
+[FETCH]... ↓ https://www.myhealthunit.ca/en/health-topics/mental-health-services.aspx                             | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://www.myhealthunit.ca/en/health-topics/mental-health-services.aspx                             | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.myhealthunit.ca/en/health-topics/mental-health-services.aspx                             | ✓ | ⏱: 2.39s 
+[FETCH]... ↓ https://www.oakvalleyhealth.ca/clinics-departmen...al-health-services-for-children-and-adolescents/  | ✓ | ⏱: 1.46s 
+[SCRAPE].. ◆ https://www.oakvalleyhealth.ca/clinics-departmen...al-health-services-for-children-and-adolescents/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.oakvalleyhealth.ca/clinics-departmen...al-health-services-for-children-and-adolescents/  | ✓ | ⏱: 1.50s 
+[ERROR]... × Error updating image dimensions: Page.evaluate: Execution context was destroyed, most likely because of a navigation 
+[FETCH]... ↓ https://www.nsmhealthline.ca/mobile/listServices.aspx?id=10230                                       | ✓ | ⏱: 1.88s 
+[SCRAPE].. ◆ https://www.nsmhealthline.ca/mobile/listServices.aspx?id=10230                                       | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.nsmhealthline.ca/mobile/listServices.aspx?id=10230                                       | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://www.ontario.ca/page/community-health-centres                                                 | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/community-health-centres                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.ontario.ca/page/community-health-centres                                                 | ✓ | ⏱: 1.53s 
+[FETCH]... ↓ https://www.kinark.on.ca/                                                                            | ✓ | ⏱: 3.13s 
+[SCRAPE].. ◆ https://www.kinark.on.ca/                                                                            | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.kinark.on.ca/                                                                            | ✓ | ⏱: 3.14s 
+[ERROR]... × https://www.psychiatric...are-to-individual-needs  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.psychiatrictimes.com/view/an-imperfect-guide-to-crisis-stabilization-units-matching-the-right-level-of-care-to-individual-needs
+Call log:
+  - navigating to "https://www.psychiatrictimes.com/view/an-imperfect-guide-to-crisis-stabilization-units-matching-the-right-level-of-care-to-individual-needs", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.hqontario.ca/system-performance/time-spent-in-emergency-departments                      | ✓ | ⏱: 3.25s 
+[SCRAPE].. ◆ https://www.hqontario.ca/system-performance/time-spent-in-emergency-departments                      | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.hqontario.ca/system-performance/time-spent-in-emergency-departments                      | ✓ | ⏱: 3.32s 
+[FETCH]... ↓ https://www.northeasthealthline.ca/displayservice.aspx?id=90450                                      | ✓ | ⏱: 0.68s 
+[SCRAPE].. ◆ https://www.northeasthealthline.ca/displayservice.aspx?id=90450                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.northeasthealthline.ca/displayservice.aspx?id=90450                                      | ✓ | ⏱: 0.70s 
+[FETCH]... ↓ https://www.ontarioshores.ca/                                                                        | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://www.ontarioshores.ca/                                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ontarioshores.ca/                                                                        | ✓ | ⏱: 1.15s 
+[FETCH]... ↓ https://www.northwesthealthline.ca/displayservice.aspx?id=218720                                     | ✓ | ⏱: 0.43s 
+[SCRAPE].. ◆ https://www.northwesthealthline.ca/displayservice.aspx?id=218720                                     | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.northwesthealthline.ca/displayservice.aspx?id=218720                                     | ✓ | ⏱: 0.45s 
+[FETCH]... ↓ https://www.reconnect.on.ca/                                                                         | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ https://www.reconnect.on.ca/                                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.reconnect.on.ca/                                                                         | ✓ | ⏱: 0.98s 
+[FETCH]... ↓ https://www.nsmhealthline.ca/printServiceList.aspx?id=10230                                          | ✓ | ⏱: 0.53s 
+[SCRAPE].. ◆ https://www.nsmhealthline.ca/printServiceList.aspx?id=10230                                          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.nsmhealthline.ca/printServiceList.aspx?id=10230                                          | ✓ | ⏱: 0.58s 
+[FETCH]... ↓ https://www.psychologytoday.com/ca/groups/northern-ontario-counselling-clinic-therapists/208396      | ✓ | ⏱: 1.21s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/ca/groups/northern-ontario-counselling-clinic-therapists/208396      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.psychologytoday.com/ca/groups/northern-ontario-counselling-clinic-therapists/208396      | ✓ | ⏱: 1.24s 
+[FETCH]... ↓ https://www.ruralhealthinfo.org/funding/5553                                                         | ✓ | ⏱: 1.06s 
+[SCRAPE].. ◆ https://www.ruralhealthinfo.org/funding/5553                                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ruralhealthinfo.org/funding/5553                                                         | ✓ | ⏱: 1.07s 
+[FETCH]... ↓ https://www.ontario.ca/page/ontario-stands-stand...decisive-actions-prevention-empowerment-supports  | ✓ | ⏱: 1.03s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/ontario-stands-stand...decisive-actions-prevention-empowerment-supports  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/ontario-stands-stand...decisive-actions-prevention-empowerment-supports  | ✓ | ⏱: 1.05s 
+[FETCH]... ↓ https://www.ontario.ca/page/mental-health-services-children-and-youth                                | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/mental-health-services-children-and-youth                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/mental-health-services-children-and-youth                                | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ontario.ca/page/roadmap-wellness-plan-build-ontarios-mental-health-and-addictions-system | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://www.ontario.ca/page/designated-psychiatric-facilities-and-hospitals                          | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/designated-psychiatric-facilities-and-hospitals                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/designated-psychiatric-facilities-and-hospitals                          | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 1.23s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 1.27s 
+[FETCH]... ↓ https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 1.27s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://www.pew.org/en/research-and-analysis/fac...o-connect-people-in-crisis-to-the-care-they-need  | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://www.pew.org/en/research-and-analysis/fac...o-connect-people-in-crisis-to-the-care-they-need  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.pew.org/en/research-and-analysis/fac...o-connect-people-in-crisis-to-the-care-they-need  | ✓ | ⏱: 2.20s 
+[FETCH]... ↓ https://www.stegh.on.ca/hospital-services/mental-health/                                             | ✓ | ⏱: 1.06s 
+[SCRAPE].. ◆ https://www.stegh.on.ca/hospital-services/mental-health/                                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.stegh.on.ca/hospital-services/mental-health/                                             | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://www.ontarioshores.ca/crisis-services-and-hotlines                                            | ✓ | ⏱: 1.71s 
+[SCRAPE].. ◆ https://www.ontarioshores.ca/crisis-services-and-hotlines                                            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.ontarioshores.ca/crisis-services-and-hotlines                                            | ✓ | ⏱: 1.78s 
+[FETCH]... ↓ https://www.ruralhealthinfo.org/toolkits/mental-health/2/access/crisis-response                      | ✓ | ⏱: 0.82s 
+[SCRAPE].. ◆ https://www.ruralhealthinfo.org/toolkits/mental-health/2/access/crisis-response                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ruralhealthinfo.org/toolkits/mental-health/2/access/crisis-response                      | ✓ | ⏱: 0.85s 
+[FETCH]... ↓ https://www.ontarioshores.ca/all-about-hospital                                                      | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://www.ontarioshores.ca/all-about-hospital                                                      | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.ontarioshores.ca/all-about-hospital                                                      | ✓ | ⏱: 1.90s 
+[FETCH]... ↓ https://www.ontarioshores.ca/what-expect/outpatient-care                                             | ✓ | ⏱: 2.08s 
+[SCRAPE].. ◆ https://www.ontarioshores.ca/what-expect/outpatient-care                                             | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.ontarioshores.ca/what-expect/outpatient-care                                             | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ https://www.reconnect.on.ca/services                                                                 | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.reconnect.on.ca/services                                                                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.reconnect.on.ca/services                                                                 | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://www.tehn.ca/programs-services/mental-hea...substance-use-and-withdrawal-management-services  | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://www.tehn.ca/programs-services/mental-hea...substance-use-and-withdrawal-management-services  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.tehn.ca/programs-services/mental-hea...substance-use-and-withdrawal-management-services  | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://www.psychologytoday.com/ca/therapists/northern-ontario-counselling-clinic-sudbury-on/291117  | ✓ | ⏱: 1.53s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/ca/therapists/northern-ontario-counselling-clinic-sudbury-on/291117  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.psychologytoday.com/ca/therapists/northern-ontario-counselling-clinic-sudbury-on/291117  | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://www.shn.ca/areas-of-care/mental-health-care/                                                 | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://www.shn.ca/areas-of-care/mental-health-care/                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.shn.ca/areas-of-care/mental-health-care/                                                 | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=intensive-outpatient-program     | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=intensive-outpatient-program     | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=intensive-outpatient-program     | ✓ | ⏱: 1.75s 
+[FETCH]... ↓ https://www.sickkids.ca/en/care-services/clinical-departments/tele-mental-health-service/            | ✓ | ⏱: 2.23s 
+[SCRAPE].. ◆ https://www.sickkids.ca/en/care-services/clinical-departments/tele-mental-health-service/            | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.sickkids.ca/en/care-services/clinical-departments/tele-mental-health-service/            | ✓ | ⏱: 2.30s 
+[FETCH]... ↓ https://www.thesupportivecare.com/blog/how-teleh...n-behavioral-health-for-rural-senior-communities  | ✓ | ⏱: 1.23s 
+[SCRAPE].. ◆ https://www.thesupportivecare.com/blog/how-teleh...n-behavioral-health-for-rural-senior-communities  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.thesupportivecare.com/blog/how-teleh...n-behavioral-health-for-rural-senior-communities  | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://www.tandfonline.com/doi/full/10.1080/02673843.2015.1061568                                   | ✓ | ⏱: 1.86s 
+[SCRAPE].. ◆ https://www.tandfonline.com/doi/full/10.1080/02673843.2015.1061568                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://www.tandfonline.com/doi/full/10.1080/02673843.2015.1061568                                   | ✓ | ⏱: 1.98s 
+[FETCH]... ↓ https://www.ontariohealth.ca/content/ontariohealth/ca/en.html                                        | ✓ | ⏱: 4.81s 
+[SCRAPE].. ◆ https://www.ontariohealth.ca/content/ontariohealth/ca/en.html                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontariohealth.ca/content/ontariohealth/ca/en.html                                        | ✓ | ⏱: 4.83s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listServices.aspx?id=10237                                   | ✓ | ⏱: 1.28s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listServices.aspx?id=10237                                   | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listServices.aspx?id=10237                                   | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://www.toronto.ca/community-people/health-w.../health-programs-advice/mental-health-resources/  | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://www.toronto.ca/community-people/health-w.../health-programs-advice/mental-health-resources/  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.toronto.ca/community-people/health-w.../health-programs-advice/mental-health-resources/  | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://www.stjoes.ca/hospital-services/mental-h...n-services/men's-addiction-service-hamilton-mash  | ✓ | ⏱: 2.55s 
+[SCRAPE].. ◆ https://www.stjoes.ca/hospital-services/mental-h...n-services/men's-addiction-service-hamilton-mash  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.stjoes.ca/hospital-services/mental-h...n-services/men's-addiction-service-hamilton-mash  | ✓ | ⏱: 2.57s 
+[FETCH]... ↓ https://www.stonegatechc.org/client-support-resources/                                               | ✓ | ⏱: 2.45s 
+[SCRAPE].. ◆ https://www.stonegatechc.org/client-support-resources/                                               | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.stonegatechc.org/client-support-resources/                                               | ✓ | ⏱: 2.51s 
+[FETCH]... ↓ https://www.stjoes.ca/mentalhealthcrisis                                                             | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://www.stjoes.ca/mentalhealthcrisis                                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.stjoes.ca/mentalhealthcrisis                                                             | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://www.unitedwaygt.org/our-work/mental-health/                                                  | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://www.unitedwaygt.org/our-work/mental-health/                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.unitedwaygt.org/our-work/mental-health/                                                  | ✓ | ⏱: 1.36s 
+[FETCH]... ↓ https://www.womenscollegehospital.ca/care-programs/mental-health/                                    | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://www.womenscollegehospital.ca/care-programs/mental-health/                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.womenscollegehospital.ca/care-programs/mental-health/                                    | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.theroyal.ca/crisis-lines/                                                                | ✓ | ⏱: 3.23s 
+[SCRAPE].. ◆ https://www.theroyal.ca/crisis-lines/                                                                | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.theroyal.ca/crisis-lines/                                                                | ✓ | ⏱: 3.28s 
+[FETCH]... ↓ https://www.trueresilience.ca/mental-health-resources                                                | ✓ | ⏱: 2.03s 
+[SCRAPE].. ◆ https://www.trueresilience.ca/mental-health-resources                                                | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.trueresilience.ca/mental-health-resources                                                | ✓ | ⏱: 2.07s 
+[FETCH]... ↓ https://www.toronto.ca/home/311-toronto-at-your-...rvice-information/article/?kb=kA06g000001cwEcCAI  | ✓ | ⏱: 1.71s 
+[SCRAPE].. ◆ https://www.toronto.ca/home/311-toronto-at-your-...rvice-information/article/?kb=kA06g000001cwEcCAI  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.toronto.ca/home/311-toronto-at-your-...rvice-information/article/?kb=kA06g000001cwEcCAI  | ✓ | ⏱: 1.75s 
+[FETCH]... ↓ https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx                   | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx                   | ✓ | ⏱: 1.69s 
+[FETCH]... ↓ https://www.uhn.ca/MentalHealth/Inpatient_Units/Mental-Health-Inpatient-Unit                         | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://www.uhn.ca/MentalHealth/Inpatient_Units/Mental-Health-Inpatient-Unit                         | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.uhn.ca/MentalHealth/Inpatient_Units/Mental-Health-Inpatient-Unit                         | ✓ | ⏱: 2.20s 
+[FETCH]... ↓ https://www.drugrehab.ca/ontario.html                                                                | ✓ | ⏱: 10.60s 
+[SCRAPE].. ◆ https://www.drugrehab.ca/ontario.html                                                                | ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://www.drugrehab.ca/ontario.html                                                                | ✓ | ⏱: 10.81s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=10095                                   | ✓ | ⏱: 0.56s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=10095                                   | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=10095                                   | ✓ | ⏱: 0.63s 
+[FETCH]... ↓ https://www.waypointcentre.ca/services/family-child-youth-mental-health-program                      | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://www.waypointcentre.ca/services/family-child-youth-mental-health-program                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.waypointcentre.ca/services/family-child-youth-mental-health-program                      | ✓ | ⏱: 2.56s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=11354                                   | ✓ | ⏱: 0.85s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=11354                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=11354                                   | ✓ | ⏱: 0.88s 
+[FETCH]... ↓ https://www.youtube.com/watch?v=a7iTDtTxGvE                                                          | ✓ | ⏱: 2.42s 
+[SCRAPE].. ◆ https://www.youtube.com/watch?v=a7iTDtTxGvE                                                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.youtube.com/watch?v=a7iTDtTxGvE                                                          | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.theroyal.ca/programs-clinics-service...tory/substance-use-concurrent-disorders-program/  | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://www.theroyal.ca/programs-clinics-service...tory/substance-use-concurrent-disorders-program/  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.theroyal.ca/programs-clinics-service...tory/substance-use-concurrent-disorders-program/  | ✓ | ⏱: 2.75s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=10237                                   | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=10237                                   | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=10237                                   | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://www.theroyal.ca/the-royal/                                                                   | ✓ | ⏱: 3.04s 
+[SCRAPE].. ◆ https://www.theroyal.ca/the-royal/                                                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.theroyal.ca/the-royal/                                                                   | ✓ | ⏱: 3.09s 
+⚠️  Crawl failed for https://www.ontario.ca/page/designated-psychiatric-facilities-and-hospitals: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://mentalhealthmvmt.com/best-mental-health-hospitals-in-ontario/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/en-2004-pssd.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.torontocentralhealthline.ca/listservices.aspx?id=10237: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/opendata/institutions.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.edgewoodhealthnetwork.com/addiction-rehab-mississauga/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.mcconnellfoundation.ca/download-grants-csv/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.ontario.ca/page/mental-health-services-children-and-youth: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ola.org/sites/default/files/data-resources/committee-transcripts/JP-Standing-Committee-on-Justice-Policy-202208-202412.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.oakvalleyhealth.ca/clinics-departments/mental-health/mental-health-services-for-children-and-adolescents/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.psychiatrictimes.com/view/an-imperfect-guide-to-crisis-stabilization-units-matching-the-right-level-of-care-to-individual-needs
+Call log:
+  - navigating to "https://www.psychiatrictimes.com/view/an-imperfect-guide-to-crisis-stabilization-units-matching-the-right-level-of-care-to-individual-needs", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://www.haltonhealthcare.on.ca/site_files/co...th/adult-mental-health/adult_inpatient_guide.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.haltonhealthcare.on.ca/site_files/content/services/pdf/mental-health/adult-mental-health/adult_inpatient_guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp0jre_53j.pdf 
+[SCRAPE].. ◆ https://www.haltonhealthcare.on.ca/site_files/co...th/adult-mental-health/adult_inpatient_guide.pdf  | ✓ | ⏱: 0.73s 
+[COMPLETE] ● https://www.haltonhealthcare.on.ca/site_files/co...th/adult-mental-health/adult_inpatient_guide.pdf  | ✓ | ⏱: 0.73s 
+[FETCH]... ↓ https://hsjcc.on.ca/wp-content/uploads/Developing-Mobile-Crisis-Response-Teams-Framework.pdf         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://hsjcc.on.ca/wp-content/uploads/Developing-Mobile-Crisis-Response-Teams-Framework.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmphx8kub7k.pdf 
+[SCRAPE].. ◆ https://hsjcc.on.ca/wp-content/uploads/Developing-Mobile-Crisis-Response-Teams-Framework.pdf         | ✓ | ⏱: 9.88s 
+[COMPLETE] ● https://hsjcc.on.ca/wp-content/uploads/Developing-Mobile-Crisis-Response-Teams-Framework.pdf         | ✓ | ⏱: 9.89s 
+[FETCH]... ↓ https://www.suicideinfo.ca/wp-content/uploads/20...ic-a-virtual-based-crisis-stabilization-unit.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.suicideinfo.ca/wp-content/uploads/2023/07/Providing-crisis-care-in-a-pandemic-a-virtual-based-crisis-stabilization-unit.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp3rd6mcih.pdf 
+[SCRAPE].. ◆ https://www.suicideinfo.ca/wp-content/uploads/20...ic-a-virtual-based-crisis-stabilization-unit.pdf  | ✓ | ⏱: 0.78s 
+[COMPLETE] ● https://www.suicideinfo.ca/wp-content/uploads/20...ic-a-virtual-based-crisis-stabilization-unit.pdf  | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ https://www.medicaid.gov/federal-policy-guidance/downloads/sho25004.pdf                              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.medicaid.gov/federal-policy-guidance/downloads/sho25004.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7sgxhtlg.pdf 
+[SCRAPE].. ◆ https://www.medicaid.gov/federal-policy-guidance/downloads/sho25004.pdf                              | ✓ | ⏱: 1.57s 
+[COMPLETE] ● https://www.medicaid.gov/federal-policy-guidance/downloads/sho25004.pdf                              | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://crh.arizona.edu/sites/default/files/2024...Virtual Care and Community Relationships (1).pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://crh.arizona.edu/sites/default/files/2024-06/2_00-2_45%20Transforming%20Rural%20Health%20Through%20Virtual%20Care%20and%20Community%20Relationships%20%281%29.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7gt5emt5.pdf 
+[SCRAPE].. ◆ https://crh.arizona.edu/sites/default/files/2024...Virtual Care and Community Relationships (1).pdf  | ✓ | ⏱: 2.62s 
+[COMPLETE] ● https://crh.arizona.edu/sites/default/files/2024...Virtual Care and Community Relationships (1).pdf  | ✓ | ⏱: 2.62s 
+[FETCH]... ↓ https://naohealthobservatory.ca/wp-content/uploads/2020/07/NAO-Rapid-Review-26_EN.pdf                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://naohealthobservatory.ca/wp-content/uploads/2020/07/NAO-Rapid-Review-26_EN.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpbxwgo0d7.pdf 
+[SCRAPE].. ◆ https://naohealthobservatory.ca/wp-content/uploads/2020/07/NAO-Rapid-Review-26_EN.pdf                | ✓ | ⏱: 2.16s 
+[COMPLETE] ● https://naohealthobservatory.ca/wp-content/uploads/2020/07/NAO-Rapid-Review-26_EN.pdf                | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ https://divisionsbc.ca/sites/default/files/Divis...a Virtual Care in Canada vFinal DEC2-2019[1].pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://divisionsbc.ca/sites/default/files/Divisions/Kootenay%20Boundary/Misc%20-%20events-imags/Digital%20Health%20Canada%20Virtual%20Care%20in%20Canada%20vFinal%20DEC2-2019%5B1%5D.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpwhrn7ct4.pdf 
+[SCRAPE].. ◆ https://divisionsbc.ca/sites/default/files/Divis...a Virtual Care in Canada vFinal DEC2-2019[1].pdf  | ✓ | ⏱: 1.49s 
+[COMPLETE] ● https://divisionsbc.ca/sites/default/files/Divis...a Virtual Care in Canada vFinal DEC2-2019[1].pdf  | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://www.oha.com/Legislative and Legal Issues...tal Health and the Law, Fourth Edition, 2023.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.oha.com/Legislative%20and%20Legal%20Issues%20Documents1/A%20Practical%20Guide%20to%20Mental%20Health%20and%20the%20Law%2C%20Fourth%20Edition%2C%202023.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp11zzwjdd.pdf 
+[SCRAPE].. ◆ https://www.oha.com/Legislative and Legal Issues...tal Health and the Law, Fourth Edition, 2023.pdf  | ✓ | ⏱: 31.84s 
+[COMPLETE] ● https://www.oha.com/Legislative and Legal Issues...tal Health and the Law, Fourth Edition, 2023.pdf  | ✓ | ⏱: 31.85s 
+[FETCH]... ↓ https://www.stjoes.ca/health-services/mental-hea...rrent-disorders-program/mhap-family-handbook.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf... 
+[ERROR]... × https://www.stjoes.ca/h...hap-family-handbook.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf, error: Failed to download PDF 
+from https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf: 403 Client Error: Forbidden for url: 
+https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf, error: Failed to download PDF from https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf: 403 Client Error: Forbidden for url: https://www.stjoes.ca/health-services/mental-health-addiction-services/addiction-services/concurrent-disorders-program/mhap-family-handbook.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://campusmentalhealth.ca/wp-content/uploads/2018/03/Mental-Health-Law.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://campusmentalhealth.ca/wp-content/uploads/2018/03/Mental-Health-Law.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpouqohivt.pdf 
+[SCRAPE].. ◆ https://campusmentalhealth.ca/wp-content/uploads/2018/03/Mental-Health-Law.pdf                       | ✓ | ⏱: 17.23s 
+[COMPLETE] ● https://campusmentalhealth.ca/wp-content/uploads/2018/03/Mental-Health-Law.pdf                       | ✓ | ⏱: 17.23s 
+[FETCH]... ↓ https://ontario.cmha.ca/wp-content/uploads/2016/08/makingithappen1999.pdf                            | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://ontario.cmha.ca/wp-content/uploads/2016/08/makingithappen1999.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7dip_1ux.pdf 
+[SCRAPE].. ◆ https://ontario.cmha.ca/wp-content/uploads/2016/08/makingithappen1999.pdf                            | ✓ | ⏱: 1.53s 
+[COMPLETE] ● https://ontario.cmha.ca/wp-content/uploads/2016/08/makingithappen1999.pdf                            | ✓ | ⏱: 1.53s 
+[FETCH]... ↓ https://psychiatry.queensu.ca/sites/psychiatry/f...aw_in_Ontario_Revised_Edition_September_2016.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://psychiatry.queensu.ca/sites/psychiatry/files/inline-files/A_Practical_Guide_to_Mental_Health_and_the_Law_in_Ontario_Revised_Edition_September_2016.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpv4qxtucy.pdf 
+[SCRAPE].. ◆ https://psychiatry.queensu.ca/sites/psychiatry/f...aw_in_Ontario_Revised_Edition_September_2016.pdf  | ✓ | ⏱: 28.39s 
+[COMPLETE] ● https://psychiatry.queensu.ca/sites/psychiatry/f...aw_in_Ontario_Revised_Edition_September_2016.pdf  | ✓ | ⏱: 28.40s 
+[FETCH]... ↓ https://www.blg.com/-/media/Legacy-News-And-Publications/Documents/Publication_4649.pdf              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.blg.com/-/media/Legacy-News-And-Publications/Documents/Publication_4649.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpdg5lnft6.pdf 
+[SCRAPE].. ◆ https://www.blg.com/-/media/Legacy-News-And-Publications/Documents/Publication_4649.pdf              | ✓ | ⏱: 24.59s 
+[COMPLETE] ● https://www.blg.com/-/media/Legacy-News-And-Publications/Documents/Publication_4649.pdf              | ✓ | ⏱: 24.59s 
+[FETCH]... ↓ https://forms.mgcs.gov.on.ca/dataset/582f554a-d0...h-cymh_service-description-schedules_2024-25.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://forms.mgcs.gov.on.ca/dataset/582f554a-d0ed-4a7e-b16b-b5554c3e5e92/resource/5657f8a9-824d-4768-be86-52382ff9944a/download/01.-moh-cymh_service-description-schedules_2024-25.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpo74yb1uo.pdf 
+[SCRAPE].. ◆ https://forms.mgcs.gov.on.ca/dataset/582f554a-d0...h-cymh_service-description-schedules_2024-25.pdf  | ✓ | ⏱: 31.38s 
+[COMPLETE] ● https://forms.mgcs.gov.on.ca/dataset/582f554a-d0...h-cymh_service-description-schedules_2024-25.pdf  | ✓ | ⏱: 31.38s 
+[FETCH]... ↓ https://amho.ca/wp-content/uploads/2025/03/Unloc...Addictions-Supportive-Housing-Needs-AMHO2025.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://amho.ca/wp-content/uploads/2025/03/Unlocking-Solutions_Understanding-and-Addressing-Ontarios-Mental-Health-and-Addictions-Supportive-Housing-Needs-AMHO2025.pdf... 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp33feb602.pdf 
+[SCRAPE].. ◆ https://amho.ca/wp-content/uploads/2025/03/Unloc...Addictions-Supportive-Housing-Needs-AMHO2025.pdf  | ✓ | ⏱: 5.50s 
+[COMPLETE] ● https://amho.ca/wp-content/uploads/2025/03/Unloc...Addictions-Supportive-Housing-Needs-AMHO2025.pdf  | ✓ | ⏱: 5.50s 
+[FETCH]... ↓ https://files.ontario.ca/moh-guidelines-mental-health-promotion-guideline-en-2018.pdf                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://files.ontario.ca/moh-guidelines-mental-health-promotion-guideline-en-2018.pdf... 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpq1_f5xto.pdf 
+[SCRAPE].. ◆ https://files.ontario.ca/moh-guidelines-mental-health-promotion-guideline-en-2018.pdf                | ✓ | ⏱: 1.73s 
+[COMPLETE] ● https://files.ontario.ca/moh-guidelines-mental-health-promotion-guideline-en-2018.pdf                | ✓ | ⏱: 1.73s 
+[FETCH]... ↓ http://pcmch.on.ca/wp-content/uploads/2022/03/ED...cal_Pathway-Tookit_Oct_29_2014_Updated-PPO-1.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://pcmch.on.ca/wp-content/uploads/2022/03/ED_Clinical_Pathway-Tookit_Oct_29_2014_Updated-PPO-1.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfojo_f8w.pdf 
+[SCRAPE].. ◆ http://pcmch.on.ca/wp-content/uploads/2022/03/ED...cal_Pathway-Tookit_Oct_29_2014_Updated-PPO-1.pdf  | ✓ | ⏱: 3.07s 
+[COMPLETE] ● http://pcmch.on.ca/wp-content/uploads/2022/03/ED...cal_Pathway-Tookit_Oct_29_2014_Updated-PPO-1.pdf  | ✓ | ⏱: 3.07s 
+[FETCH]... ↓ https://www.mentalhealthcommission.ca/wp-content...-oriented-practice-An-implementation-toolkit.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.mentalhealthcommission.ca/wp-content/uploads/2021/09/Recovery-oriented-practice-An-implementation-toolkit.pdf... 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp6qxd0p19.pdf 
+[SCRAPE].. ◆ https://www.mentalhealthcommission.ca/wp-content...-oriented-practice-An-implementation-toolkit.pdf  | ✓ | ⏱: 5.65s 
+[COMPLETE] ● https://www.mentalhealthcommission.ca/wp-content...-oriented-practice-An-implementation-toolkit.pdf  | ✓ | ⏱: 5.65s 
+[FETCH]... ↓ https://www.niagarahealth.on.ca/files/FamilyInformationHandbookMay2022VersionFinal.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.niagarahealth.on.ca/files/FamilyInformationHandbookMay2022VersionFinal.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpk_dow7fm.pdf 
+[SCRAPE].. ◆ https://www.niagarahealth.on.ca/files/FamilyInformationHandbookMay2022VersionFinal.pdf               | ✓ | ⏱: 0.89s 
+[COMPLETE] ● https://www.niagarahealth.on.ca/files/FamilyInformationHandbookMay2022VersionFinal.pdf               | ✓ | ⏱: 0.89s 
+[FETCH]... ↓ https://www.camh.ca/-/media/health-info-files/publications/tami-community-guide.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/health-info-files/publications/tami-community-guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp9wy3ak52.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/health-info-files/publications/tami-community-guide.pdf                  | ✓ | ⏱: 4.50s 
+[COMPLETE] ● https://www.camh.ca/-/media/health-info-files/publications/tami-community-guide.pdf                  | ✓ | ⏱: 4.50s 
+[FETCH]... ↓ https://cdnsm5-hosted.civiclive.com/UserFiles/Se...wood Program/2022_Georgianwood_Welcome_Guide.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf... 
+[ERROR]... × https://cdnsm5-hosted.c...nwood_Welcome_Guide.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf, error: Failed to download PDF from 
+https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf: 403 Client Error: Forbidden for url: 
+https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf, error: Failed to download PDF from https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf: 403 Client Error: Forbidden for url: https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_9960/File/Programs/Georgianwood%20Program/2022_Georgianwood_Welcome_Guide.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://kindercare.ca/wp-content/uploads/SERVICES-FOR-CHILDREN-WITH-SPECIAL-NEEDS-IN-TORONTO.pdf     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://kindercare.ca/wp-content/uploads/SERVICES-FOR-CHILDREN-WITH-SPECIAL-NEEDS-IN-TORONTO.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7c1wfqze.pdf 
+[SCRAPE].. ◆ https://kindercare.ca/wp-content/uploads/SERVICES-FOR-CHILDREN-WITH-SPECIAL-NEEDS-IN-TORONTO.pdf     | ✓ | ⏱: 0.81s 
+[COMPLETE] ● https://kindercare.ca/wp-content/uploads/SERVICES-FOR-CHILDREN-WITH-SPECIAL-NEEDS-IN-TORONTO.pdf     | ✓ | ⏱: 0.81s 
+[FETCH]... ↓ http://www5.mississauga.ca/agendas/planning/2012/02_27_12/Item02FocusMississaugaCD15MIS.pdf          | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://www5.mississauga.ca/agendas/planning/2012/02_27_12/Item02FocusMississaugaCD15MIS.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpae0lw_80.pdf 
+[SCRAPE].. ◆ http://www5.mississauga.ca/agendas/planning/2012/02_27_12/Item02FocusMississaugaCD15MIS.pdf          | ✓ | ⏱: 177.14s 
+[COMPLETE] ● http://www5.mississauga.ca/agendas/planning/2012/02_27_12/Item02FocusMississaugaCD15MIS.pdf          | ✓ | ⏱: 177.14s 
+[FETCH]... ↓ https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf                          | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpk031p313.pdf 
+[SCRAPE].. ◆ https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf                          | ✓ | ⏱: 22.28s 
+[COMPLETE] ● https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf                          | ✓ | ⏱: 22.28s 
+[FETCH]... ↓ https://www.ruralontarioinstitute.ca/uploads/use...n Homelessness in Rural and Northern Ontario.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ruralontarioinstitute.ca/uploads/userfiles/files/Hidden%20Homelessness%20in%20Rural%20and%20Northern%20Ontario.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpydy7mpfl.pdf 
+[SCRAPE].. ◆ https://www.ruralontarioinstitute.ca/uploads/use...n Homelessness in Rural and Northern Ontario.pdf  | ✓ | ⏱: 17.05s 
+[COMPLETE] ● https://www.ruralontarioinstitute.ca/uploads/use...n Homelessness in Rural and Northern Ontario.pdf  | ✓ | ⏱: 17.05s 
+[FETCH]... ↓ https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf... 
+[ERROR]... × https://www.oacas.org/w...-in-Transition_2022.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf, error: Failed to download PDF from 
+https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf: 403 Client Error: Forbidden for url: https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf, error: Failed to download PDF from https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf: 403 Client Error: Forbidden for url: https://www.oacas.org/wp-content/uploads/2022/07/ANCFSAO-Resource-Guide_Youth-in-Transition_2022.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://988crisissystemshelp.samhsa.gov/sites/de...national-guidelines-crisis-care-pep24-01-037.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://988crisissystemshelp.samhsa.gov/sites/default/files/2025-04/national-guidelines-crisis-care-pep24-01-037.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpuoy6_otf.pdf 
+[SCRAPE].. ◆ https://988crisissystemshelp.samhsa.gov/sites/de...national-guidelines-crisis-care-pep24-01-037.pdf  | ✓ | ⏱: 14.74s 
+[COMPLETE] ● https://988crisissystemshelp.samhsa.gov/sites/de...national-guidelines-crisis-care-pep24-01-037.pdf  | ✓ | ⏱: 14.74s 
+[FETCH]... ↓ https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf... 
+[ERROR]... × https://www.usda.gov/si...munity-action-guide.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf, error: Timeout downloading PDF from 
+https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf: HTTPSConnectionPool(host='www.usda.gov', port=443): Read timed out. (read timeout=600)
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf, error: Timeout downloading PDF from https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf: HTTPSConnectionPool(host='www.usda.gov', port=443): Read timed out. (read timeout=600)
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.bazelon.org/wp-content/uploads/2024/...en-Theres-a-Crisis-Call-A-Peer-full-01-03-24.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.bazelon.org/wp-content/uploads/2024/01/Bazelon-When-Theres-a-Crisis-Call-A-Peer-full-01-03-24.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpcfm02ks4.pdf 
+[SCRAPE].. ◆ https://www.bazelon.org/wp-content/uploads/2024/...en-Theres-a-Crisis-Call-A-Peer-full-01-03-24.pdf  | ✓ | ⏱: 11.96s 
+[COMPLETE] ● https://www.bazelon.org/wp-content/uploads/2024/...en-Theres-a-Crisis-Call-A-Peer-full-01-03-24.pdf  | ✓ | ⏱: 11.96s 
+[FETCH]... ↓ https://barriefht.ca/wp-content/uploads/2019/07/Adult-Mental-Health-Resources-00000002.pdf           | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://barriefht.ca/wp-content/uploads/2019/07/Adult-Mental-Health-Resources-00000002.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp49axsig8.pdf 
+[SCRAPE].. ◆ https://barriefht.ca/wp-content/uploads/2019/07/Adult-Mental-Health-Resources-00000002.pdf           | ✓ | ⏱: 1.68s 
+[COMPLETE] ● https://barriefht.ca/wp-content/uploads/2019/07/Adult-Mental-Health-Resources-00000002.pdf           | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://bipartisanpolicy.org/wp-content/uploads/2023/05/BPC_Integration-Report_RV3.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://bipartisanpolicy.org/wp-content/uploads/2023/05/BPC_Integration-Report_RV3.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp4ml_d3aj.pdf 
+[SCRAPE].. ◆ https://bipartisanpolicy.org/wp-content/uploads/2023/05/BPC_Integration-Report_RV3.pdf               | ✓ | ⏱: 7.66s 
+[COMPLETE] ● https://bipartisanpolicy.org/wp-content/uploads/2023/05/BPC_Integration-Report_RV3.pdf               | ✓ | ⏱: 7.66s 
+[FETCH]... ↓ https://ruralhealthlink.org/wp-content/uploads/2024/03/2023-2024-OAT-Directory-FINAL.pdf             | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://ruralhealthlink.org/wp-content/uploads/2024/03/2023-2024-OAT-Directory-FINAL.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp_eot1blp.pdf 
+[SCRAPE].. ◆ https://ruralhealthlink.org/wp-content/uploads/2024/03/2023-2024-OAT-Directory-FINAL.pdf             | ✓ | ⏱: 68.65s 
+[COMPLETE] ● https://ruralhealthlink.org/wp-content/uploads/2024/03/2023-2024-OAT-Directory-FINAL.pdf             | ✓ | ⏱: 68.66s 
+[FETCH]... ↓ https://legacyofhope.ca/wp-content/uploads/2022/...ous-Mental-Health-Services-Support-Directory.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://legacyofhope.ca/wp-content/uploads/2022/09/Indigenous-Mental-Health-Services-Support-Directory.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7tcricph.pdf 
+[SCRAPE].. ◆ https://legacyofhope.ca/wp-content/uploads/2022/...ous-Mental-Health-Services-Support-Directory.pdf  | ✓ | ⏱: 9.84s 
+[COMPLETE] ● https://legacyofhope.ca/wp-content/uploads/2022/...ous-Mental-Health-Services-Support-Directory.pdf  | ✓ | ⏱: 9.84s 
+[FETCH]... ↓ https://www.medicaid.gov/federal-policy-guidance/downloads/smd18011.pdf                              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.medicaid.gov/federal-policy-guidance/downloads/smd18011.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpw35fc1tg.pdf 
+[SCRAPE].. ◆ https://www.medicaid.gov/federal-policy-guidance/downloads/smd18011.pdf                              | ✓ | ⏱: 2.00s 
+[COMPLETE] ● https://www.medicaid.gov/federal-policy-guidance/downloads/smd18011.pdf                              | ✓ | ⏱: 2.00s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 186 documents from 196 URLs
+   Data: {"source_documents": 196, "scraped_documents": 186}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 186 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 100/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 105/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 110/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 115/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 120/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 125/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 130/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 135/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 140/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 145/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 150/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 155/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 160/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 165/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 170/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 175/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 180/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 185/186 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 1037 records from 186 documents
+   Data: {"extracted_count": 1037, "source_documents": 186}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 1037 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 1037 -> 595
+   Data: {"input_rows": 1037, "post_hard_rows": 595}
+======================================================================

@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-02-03T16:12:18.861016",
+  "goal": "hospitals in ontario",
+  "num_queries": 6,
+  "simple_llm": {
+    "queries": [
+      "list of hospitals in Ontario",
+      "Ontario hospital directory with addresses",
+      "academic medical centers in Ontario Canada",
+      "Ontario Health Team hospitals locations",
+      "Ontario hospital wait times and capacity data",
+      "Ontario hospital statistics CIHI"
+    ],
+    "metrics": {
+      "method": "Simple LLM",
+      "queries_used": 6,
+      "total_rows": 529,
+      "unique_rows": 529,
+      "columns_count": 95,
+      "completeness_score": 22.73,
+      "execution_time_seconds": 1849.14,
+      "sources_found": 38
+    },
+    "dataset_file": "dataset_20260203_154602.csv"
+  },
+  "qem": {
+    "queries": [
+      "General acute care hospitals in broad",
+      "List of General acute care hospitals in broad Official hospital websites (HTML)",
+      "General acute care hospitals in narrow",
+      "teaching status: teaching vs non-teaching in broad",
+      "General acute care hospitals near medium",
+      "Teaching/university-affiliated hospitals in broad"
+    ],
+    "metrics": {
+      "method": "Query Expansion Matrix",
+      "queries_used": 6,
+      "total_rows": 125,
+      "unique_rows": 125,
+      "columns_count": 81,
+      "completeness_score": 33.18,
+      "execution_time_seconds": 1527.56,
+      "sources_found": 4
+    },
+    "dataset_file": "dataset_20260203_161218.csv"
+  },
+  "comparison": {
+    "row_difference": -404,
+    "row_difference_pct": -76.37,
+    "column_difference": -14,
+    "completeness_difference": 10.45,
+    "source_difference": -34,
+    "source_difference_pct": -89.47
+  }
+}

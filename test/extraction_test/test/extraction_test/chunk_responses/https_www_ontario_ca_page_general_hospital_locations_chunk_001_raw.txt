@@ -1,0 +1,132 @@
+[
+  {
+    "hospital_name": "Stevenson Memorial Hospital",
+    "address": "200 Fletcher Crescent",
+    "city": "Alliston"
+  },
+  {
+    "hospital_name": "Royal Victoria Regional Health Centre",
+    "address": "201 Georgian Drive",
+    "city": "Barrie"
+  },
+  {
+    "hospital_name": "Brampton Civic Hospital",
+    "address": "2100 Bovaird Drive East",
+    "city": "Brampton"
+  },
+  {
+    "hospital_name": "Etobicoke General Hospital (Toronto)",
+    "address": "101 Humber College Boulevard",
+    "city": "Etobicoke"
+  },
+  {
+    "hospital_name": "Peel Memorial Centre for Integrated Health and Wellness",
+    "address": "20 Lynch Street",
+    "city": "Brampton"
+  },
+  {
+    "hospital_name": "Reactivation Care Centre – Church (Toronto)",
+    "address": "200 Church Street",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Collingwood General And Marine Hospital",
+    "address": "459 Hume Street",
+    "city": "Collingwood"
+  },
+  {
+    "hospital_name": "Huntsville District Memorial Hospital",
+    "address": "100 Frank Miller Drive",
+    "city": "Huntsville"
+  },
+  {
+    "hospital_name": "South Muskoka Memorial Hospital (Bracebridge)",
+    "address": "75 Ann Street",
+    "city": "Bracebridge"
+  },
+  {
+    "hospital_name": "Markham-Stouffville Hospital",
+    "address": "381 Church Street",
+    "city": "Markham"
+  },
+  {
+    "hospital_name": "Uxbridge Hospital",
+    "address": "4 Campbell Drive",
+    "city": "Uxbridge"
+  },
+  {
+    "hospital_name": "Reactivation Care Centre – Finch (Toronto)",
+    "address": "2111 Finch Avenue West",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Georgian Bay General Hospital — Main Site",
+    "address": "1112 St. Andrew's Drive",
+    "city": "Midland"
+  },
+  {
+    "hospital_name": "Georgian Bay General Hospital — Prospect Boulevard Site",
+    "address": "611 Prospect Boulevard",
+    "city": "Midland"
+  },
+  {
+    "hospital_name": "Credit Valley Hospital",
+    "address": "2200 Eglinton Avenue West",
+    "city": "Mississauga"
+  },
+  {
+    "hospital_name": "Mississauga Hospital",
+    "address": "100 Queensway West",
+    "city": "Mississauga"
+  },
+  {
+    "hospital_name": "Queensway Health Centre (Toronto)",
+    "address": "150 Sherway Drive",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Reactivation Care Centre – Church (Toronto)",
+    "address": "200 Church Street",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Speakman Dialysis Care Centre",
+    "address": "2180 Speakman Drive, Ground Floor",
+    "city": "Mississauga"
+  },
+  {
+    "hospital_name": "UHN Reactivation Care Centre (Toronto)",
+    "address": "82 Buttonwood Avenue",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Southlake Health — Newmarket Site",
+    "address": "596 Davis Drive",
+    "city": "Newmarket"
+  },
+  {
+    "hospital_name": "Reactivation Care Centre-Finch (Toronto)",
+    "address": "2111 Finch Avenue West",
+    "city": "Toronto"
+  },
+  {
+    "hospital_name": "Oakville Trafalgar Memorial Hospital",
+    "address": "3001 Hospital Drive",
+    "city": "Oakville"
+  },
+  {
+    "hospital_name": "Milton District Hospital",
+    "address": "725 Bronte Street South",
+    "city": "Milton"
+  },
+  {
+    "hospital_name": "Georgetown Hospital",
+    "address": "1 Princess Anne Drive",
+    "city": "Georgetown"
+  },
+  {
+    "hospital_name": "Headwaters Health Care Centre",
+    "address": "100 Rolling Hills Drive",
+    "city": "Orangeville"
+  }
+]

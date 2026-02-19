@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-02-02T23:21:59.610016",
+  "goal": "Find hospitals in Ontario",
+  "comparison": {
+    "current_method": {
+      "query_count": 5,
+      "queries": [
+        "hospitals in ontario",
+        "hospital list ontario",
+        "ontario hospital directory",
+        "healthcare facilities ontario",
+        "medical centers in ontario"
+      ],
+      "diversity": "Low",
+      "geographic_variants": 1,
+      "entity_variants": 3,
+      "format_specificity": "No"
+    },
+    "query_matrix": {
+      "query_count": 15,
+      "queries": [
+        "Ontario general acute-care hospitals publicly funded open data portal csv",
+        "Ontario academic teaching hospitals teaching affiliation bed size large CIHI provincial dataset csv",
+        "Ontario psychiatric hospitals publicly funded hospital directory json",
+        "Ontario pediatric hospitals teaching affiliation bed size medium CIHI Excel",
+        "Ontario oncology hospitals publicly funded hospital directory csv",
+        "Ontario rehabilitation hospitals teaching affiliation bed size small open data portal csv",
+        "Ontario general acute-care hospitals directory json bed size large",
+        "Ontario academic teaching hospitals directory csv teaching affiliation",
+        "Ontario specialized hospitals (psychiatric, pediatric, oncology, rehabilitation) open data portal json",
+        "Ontario general acute-care hospitals without teaching affiliation filetype:csv",
+        "Ontario publicly funded hospitals directory filetype:csv",
+        "Ontario CIHI provincial dataset hospitals filetype:xlsx",
+        "Ontario open data portal hospitals directory json filetype:json",
+        "Ontario pediatric hospitals teaching affiliation bed size small filetype:csv",
+        "Ontario rehabilitation hospitals public data filetype:pdf directory"
+      ],
+      "axes": [
+        {
+          "name": "Primary Entity Types",
+          "value_count": 5,
+          "values": [
+            "General acute-care hospitals",
+            "Academic teaching hospitals",
+            "Specialized hospitals (psychiatric, pediatric, oncology, rehabilitation)",
+            "Hospital networks / health systems (Ontario Health Teams)",
+            "Community/regional hospitals"
+          ]
+        },
+        {
+          "name": "Scope/Scale",
+          "value_count": 3,
+          "values": [
+            "broad",
+            "medium",
+            "narrow"
+          ]
+        },
+        {
+          "name": "Key Characteristics",
+          "value_count": 5,
+          "values": [
+            "Publicly funded hospital",
+            "Teaching/academic affiliation",
+            "Bed size category (small, medium, large)",
+            "Specializations available (general acute care; pediatric, mental health, oncology, rehab)",
+            "Emergency department presence and trauma designation"
+          ]
+        },
+        {
+          "name": "Data Sources",
+          "value_count": 5,
+          "values": [
+            "Ontario open data portals / government datasets (CSV/JSON)",
+            "CIHI provincial datasets (CSV/Excel)",
+            "Hospital directories / Open data portals (CSV/JSON)",
+            "Hospital websites (HTML/PDF)",
+            "Geospatial datasets (GeoJSON/Shapefiles)"
+          ]
+        }
+      ],
+      "theoretical_matrix_size": 375,
+      "diversity": "Very High"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.ontario.ca/page/general-hospital-locations",
+  "chunk_index": 4,
+  "chunk_chars": 3444,
+  "content_chars": 3812,
+  "model": "gpt-5-mini",
+  "response": {
+    "id": "chatcmpl-D7UwRG5Wr7l3VY8slEybS8yAnZZwn",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  {\n    \"hospital_name\": \"West Parry Sound Health Centre\",\n    \"address\": \"6 Albert Street, Parry Sound, ON P2A 3A4\",\n    \"city\": \"Parry Sound\"\n  },\n  {\n    \"hospital_name\": \"Sault Area Hospital\",\n    \"address\": \"750 Great Northern Road, Sault Ste. Marie, ON P6B 0A8\",\n    \"city\": \"Sault Ste. Marie\"\n  },\n  {\n    \"hospital_name\": \"Smooth Rock Falls Hospital\",\n    \"address\": \"107 Kelley Road, Smooth Rock Falls, ON P0L 2B0\",\n    \"city\": \"Smooth Rock Falls\"\n  },\n  {\n    \"hospital_name\": \"West Nipissing General Hospital\",\n    \"address\": \"725 Coursol Road, Sturgeon Falls, ON P2B 2Y6\",\n    \"city\": \"Sturgeon Falls\"\n  },\n  {\n    \"hospital_name\": \"Ramsey Lake Health Centre\",\n    \"address\": \"41 Ramsey Lake Road, Sudbury, ON P3E 5J1\",\n    \"city\": \"Sudbury\"\n  },\n  {\n    \"hospital_name\": \"Children's Treatment Centre\",\n    \"address\": \"1933 Regent Street, Sudbury, ON P3E 5R2\",\n    \"city\": \"Sudbury\"\n  },\n  {\n    \"hospital_name\": \"Kirkwood Site\",\n    \"address\": \"680 Kirkwood Drive, Sudbury, ON P3E 1X3\",\n    \"city\": \"Sudbury\"\n  },\n  {\n    \"hospital_name\": \"South Bay Road site\",\n    \"address\": \"1140 South Bay Road, Sudbury, ON P3E 0B6\",\n    \"city\": \"Sudbury\"\n  },\n  {\n    \"hospital_name\": \"Lasalle site\",\n    \"address\": \"319 Lasalle Boulevard, Sudbury, ON P3A 1W7\",\n    \"city\": \"Sudbury\"\n  },\n  {\n    \"hospital_name\": \"Timmins And District General Hospital\",\n    \"address\": \"700 Ross Avenue East, Timmins, ON P4N 8P2\",\n    \"city\": \"Timmins\"\n  },\n  {\n    \"hospital_name\": \"Lady Dunn Health Centre\",\n    \"address\": \"17 Government Road, Wawa, ON P0S 1K0\",\n    \"city\": \"Wawa\"\n  },\n  {\n    \"hospital_name\": \"Atikokan Health and Community Services\",\n    \"address\": \"120 Dorothy Street, Atikokan, ON P0T 1C0\",\n    \"city\": \"Atikokan\"\n  },\n  {\n    \"hospital_name\": \"Dryden Regional Health Centre\",\n    \"address\": \"58 Goodall Street, Dryden, ON P8N 2Z6\",\n    \"city\": \"Dryden\"\n  },\n  {\n    \"hospital_name\": \"La Verendrye Hospital\",\n    \"address\": \"110 Victoria Avenue, Fort Frances, ON P9A 2B7\",\n    \"city\": \"Fort Frances\"\n  },\n  {\n    \"hospital_name\": \"Emo Health Centre\",\n    \"address\": \"170 Front Street, Emo, ON P0W 1E0\",\n    \"city\": \"Emo\"\n  },\n  {\n    \"hospital_name\": \"Rainy River Health Centre\",\n    \"address\": \"115 Fourth Street, Rainy River, ON P0W 1L0\",\n    \"city\": \"Rainy River\"\n  },\n  {\n    \"hospital_name\": \"Geraldton District Hospital\",\n    \"address\": \"500 Hogarth Avenue West, Geraldton, ON P0T 1M0\",\n    \"city\": \"Geraldton\"\n  },\n  {\n    \"hospital_name\": \"Lake-Of-The-Woods District Hospital\",\n    \"address\": \"21 Sylvan Street, Kenora, ON P9N 3W7\",\n    \"city\": \"Kenora\"\n  },\n  {\n    \"hospital_name\": \"Sant\u00e9 Manitouwadge Health\",\n    \"address\": \"1 Health Care Crescent, Manitouwadge, ON P0T 2C0\",\n    \"city\": \"Manitouwadge\"\n  },\n  {\n    \"hospital_name\": \"Wilson Memorial General Hospital\",\n    \"address\": \"26 Peninsula Road, Marathon, ON P0T 2E0\",\n    \"city\": \"Marathon\"\n  },\n  {\n    \"hospital_name\": \"McCausland Hospital (Terrace Bay)\",\n    \"address\": \"20B Cartier Road, Terrace Bay, ON P0T 2W0\",\n    \"city\": \"Terrace Bay\"\n  },\n  {\n    \"hospital_name\": \"Nipigon District Memorial Hospital\",\n    \"address\": \"125 Hogan Road, Nipigon, ON P0T 2J0\",\n    \"city\": \"Nipigon\"\n  },\n  {\n    \"hospital_name\": \"Red Lake Margaret Cochenour Memorial Hospital (The)\",\n    \"address\": \"No. 51, Hwy 105, Red Lake, ON P0V 2M0\",\n    \"city\": \"Red Lake\"\n  },\n  {\n    \"hospital_name\": \"Sioux Lookout Meno-Ya-Win Health Centre\",\n    \"address\": \"1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4\",\n    \"city\": \"Sioux Lookout\"\n  },\n  {\n    \"hospital_name\": \"St. Joseph's Hospital\",\n    \"address\": \"35 North Algoma Street, Thunder Bay, ON P7B 5G7\",\n    \"city\": \"Thunder Bay\"\n  },\n  {\n    \"hospital_name\": \"Thunder Bay Regional Health Sciences Centre\",\n    \"address\": \"980 Oliver Road, Thunder Bay, ON P7B 6V4\",\n    \"city\": \"Thunder Bay\"\n  }\n]",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1770679607,
+    "model": "gpt-5-mini-2025-08-07",
+    "object": "chat.completion",
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 2527,
+      "prompt_tokens": 1200,
+      "total_tokens": 3727,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

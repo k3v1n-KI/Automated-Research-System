@@ -1,0 +1,143 @@
+### Ottawa
+Group | Hospital | Address  
+---|---|---  
+A,K,M,N,S,T,U | Children's Hospital Of Eastern Ontario-Ottawa Children's Treatment Centre | 401 Smyth Road, Ottawa, ON K1H 8L1  
+B,E,M,N | Queensway-Carleton Hospital | 3045 Baseline Road, Ottawa, ON K2H 8P4  
+H,N | University of Ottawa Heart Institute | 40 Ruskin Street, Ottawa, ON K1Y 4W7  
+#### Bruyère Health
+Group | Hospital | Address  
+---|---|---  
+F | Saint-Vincent Hospital | 60 Cambridge Street North, Ottawa, ON K1R 7A5  
+E | Élisabeth Bruyère Hospital | 43 Bruyere Street, Ottawa, ON K1N 5C8  
+#### Hôpital Montfort
+Group | Hospital | Address  
+---|---|---  
+A,E,M,N | Hôpital Montfort | 713 Montreal Road, Ottawa, ON K1K 0T2  
+N.V | Orleans Health Hub (OHH) /Carrefour Santé Orleans (CSO) | 2225 Mer-Bleue Road, Orleans, ON, K4A 5M3  
+#### The Ottawa Hospital / L'hopital d'Ottawa
+Group | Hospital | Address  
+---|---|---  
+A,D,M,N,O,Q | Civic Campus | 1053 Carling Avenue, Ottawa, ON K1Y 4E9  
+A,D,E,M,N,O | General Campus | 501 Smyth Road, Ottawa, ON K1H 8L6  
+M,P,V | Riverside Campus | 1967 Riverside Drive, Ottawa, ON K1H 7W9  
+J | The Rehabilitation Centre | 505 Smyth Road, Ottawa, ON K1H 8M2  
+M | Irving Greenberg Family Cancer Centre | 3045 Baseline Road, Ottawa, ON K2H 8P4  
+V | Ottawa Dialysis Clinic | Unit 1-780 Baseline Road, Ottawa, ON K2C 3V8  
+V | Cornwall Dialysis Clinic | Unit A-691 Brookdale Avenue, Cornwall, ON K2J 5C6  
+#### Royal Ottawa Health Care Group
+Group | Hospital | Address  
+---|---|---  
+H,N | Royal Ottawa Mental Health Centre | 1145 Carling Avenue, Ottawa, ON, K1Z 7K4  
+H | Brockville Mental Health Centre | 1804 Highway 2 East, Brockville, ON K6V 5V8
+### Pembroke
+#### Pembroke Regional Hospital Inc.
+Group | Hospital | Address  
+---|---|---  
+B,E,M,N | Pembroke Regional Hospital Site | 705 MacKay Street, Pembroke, ON K8A 1G8  
+G | Marianhill - Complex Continuing Care Site | Unit 2C, 600 Cecellia Street, Pembroke, ON K8A 7Z3
+### Peterborough
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | Peterborough Regional Health Centre | 1 Hospital Drive, Peterborough, ON K9J 7C6
+### Renfrew
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Renfrew Victoria Hospital | 499 Raglan Street North, Renfrew, ON K7V 1P6
+### Smith Falls
+#### Perth And Smiths Falls District Hospital
+Group | Hospital | Address  
+---|---|---  
+C,M,N | Smith Falls Site | 60 Cornelia Street West, Smith Falls, ON K7A 2H9  
+C | Great War Memorial Site (Perth) | 33 Drummond Street West, Perth, ON K7H 2K1
+### Whitby
+Group | Hospital | Address  
+---|---|---  
+H | Ontario Shores Centre for Mental Health Sciences | 700 Gordon Street, Whitby, ON, L1N 5S9
+### Winchester
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Winchester District Memorial Hospital | 566 Louise Street, Winchester, ON K0C 2K0
+## Ontario Health North East
+### Blind River
+#### North Shore Health Network
+Group | Hospital | Address  
+---|---|---  
+C,G | Blind River Site | 525 Causley Street, Blind River, ON P0R 1B0  
+C | Richards Landing Site | 180 Richards Street, Richards Landing, ON P0R 1J0  
+C | Thessalon Site | 135 Dawson Street, Thessalon, ON P0R 1L0
+### Chapleau
+Group | Hospital | Address  
+---|---|---  
+C,G | Services De Sante De Chapleau Health Services | 6 Broomhead Road, Chapleau, ON P0M 1K0
+### Cochrane
+Group | Hospital | Address  
+---|---|---  
+C,G | Lady Minto Hospital (The) | 241 Eighth Street, Cochrane, ON P0L 1C0
+### Elliot Lake
+Group | Hospital | Address  
+---|---|---  
+C,G,M |  St. Joseph's General Hospital | 70 Spine Road, Elliot Lake, ON P5A 1X2
+### Espanola
+Group | Hospital | Address  
+---|---|---  
+C,G | Espanola General Hospital | 825 McKinnon Drive, Espanola, ON P5E 1R4
+### Hearst
+Group | Hospital | Address  
+---|---|---  
+C,G,M |  Hôpital Notre-Dame Hospital (Hearst) | 1405 Edward Street, Hearst, ON P0L 1N0
+### Hornepayne
+Group | Hospital | Address  
+---|---|---  
+C | Hornepayne Community Hospital | 278 Front Street, Hornepayne, ON P0M 1Z0
+### Iroquois Falls
+Group | Hospital | Address  
+---|---|---  
+C,G | Anson General Hospital | 58 Anson Drive, Iroquois Falls, ON P0K 1E0
+### Kapuskasing
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Sensenbrenner Hospital (The) | 101 Progress Crescent, Kapuskasing, ON P5N 3H5
+### Kirkland Lake
+#### Blanche River Health
+Group | Hospital | Address  
+---|---|---  
+C,M | Kirkland Lake Site | 145 Government Road East, Kirkland Lake, ON P2N 3P4  
+C | Englehart Site | 61 Fifth Street, Englehart, ON P0J 1H0
+### Little Current
+#### Manitoulin Health Centre
+Group | Hospital | Address  
+---|---|---  
+C | Little Current Hospital | 11 Meredith Street West, Little Current, ON P0P 1K0  
+C | Mindemoya Hospital | 2120 ON-551, Mindemoya, ON P0P 1S0
+### Manitouwadge
+Group | Hospital | Address  
+---|---|---  
+C | Santé Manitouwadge Health | 1 Health Care Crescent, Manitouwadge, ON P0T 2C0
+### Matheson
+Group | Hospital | Address  
+---|---|---  
+C,G | Bingham Memorial Hospital | 507 Eighth Avenue, Matheson, ON P0K 1N0
+### Mattawa
+Group | Hospital | Address  
+---|---|---  
+C,G | Mattawa General Hospital | 217 Turcotte Park Road, Mattawa, ON P0H 1V0
+### Moose Factory
+#### Weeneebayko Area Health Authority (WAHA)
+Group | Hospital | Address  
+---|---|---  
+C,M | Weeneebayko General Hospital | 19 Hospital Drive, Moose Factory, ON P0L 1W0  
+C,G | Attawapiskat Hospital | 972 Riverside East, Attawapiskat, ON P0L 1A0  
+V | Moosonee Health Centre | 5 Percy's Way, Moosonee, ON P0L 1Y0  
+C,G | Fort Albany Hospital | 5 Airport Road, Fort Albany, ON P0L 1H0
+### New Liskeard
+Group | Hospital | Address  
+---|---|---  
+C,G,M | Temiskaming Hospital | 421 Shepherdson Road, New Liskeard, ON P0J 1P0
+### North Bay
+#### North Bay Regional Health Centre
+Group | Hospital | Address  
+---|---|---  
+B,E,G,M,N | North Bay Site | 50 College Drive, North Bay, ON P1B 5A4  
+V | Devonshire Avenue Site | 200-1164 Devonshire Avenue, North Bay, ON P1B 6X7  
+V | King Street Site | 120 King Street West, North Bay, ON P1B 5Z7  
+C | Kirkwood Place Site | 680 Kirkwood Drive, Sudbury, ON P3E 1X3

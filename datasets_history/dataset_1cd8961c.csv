@@ -1,0 +1,877 @@
+address,city,name,phone_number,source_url
+"420 Division St, Cobourg, ON K9A 3R9",Cobourg,Canadian Centre for Addictions - Woodlawn Inn,1-855-499-9446,https://www.camh.ca/en/driving-change/about-camh
+"175 Dorset St West, Port Hope, ON L1A 1G4",Port Hope,Canadian Centre for Addictions - Hillcrest Mansion,1-855-499-9446,https://www.camh.ca/en/driving-change/about-camh
+"175 Dorset St West, Port Hope, ON L1A 1G4",Port Hope,Port Hope Rehab Centre,1-855-499-9446,https://www.camh.ca/en/driving-change/about-camh
+"420 Division St, Cobourg, ON K9A 3R9",Cobourg,Cobourg Rehab Centre,1-855-499-9446,https://www.camh.ca/en/driving-change/about-camh
+"175 Commerce Valley Drive West, Suite 300, Markham, Ontario L3T 7P6",Markham,Canadian Addiction Treatment Centres,1-877-937-2282,https://www.scimagoir.com/rankings.php?sector=Health&country=CAN&area=2738
+"200 E. Third St., 5th Floor",Jamestown,Jamestown Certified Community Behavioral Health Center (CCBHC),716-661-8330,https://www.ontarioshores.ca/all-about-hospital
+60 Franklin Ave,Dunkirk,Dunkirk Certified Community Behavioral Health Center (CCBHC),716-363-3550,https://www.ontarioshores.ca/all-about-hospital
+"2 Academy Street, Suite 201",Mayville,Mental Hygiene Services,716-753-4104,https://www.ontarioshores.ca/all-about-hospital
+"200 E. Third St., 5th Floor",Jamestown,Certified Community Behavioral Health Center - Jamestown,716-661-8330,https://www.ontarioshores.ca/all-about-hospital
+60-62 Franklin Ave,Dunkirk,Certified Community Behavioral Health Center - Dunkirk,716-363-3550,https://www.ontarioshores.ca/all-about-hospital
+333 E. 5th Street,Jamestown,Children & Adult Single Point of Access (SPOA),716-661-8850,https://www.ontarioshores.ca/all-about-hospital
+"2 Academy Street, Suite 202",Mayville,Chautauqua Tapestry,716-753-4507,https://www.ontarioshores.ca/all-about-hospital
+3 N Erie Street,Mayville,Chautauqua County Offices,716-753-4000,https://www.ontarioshores.ca/all-about-hospital
+519 Church Street,Toronto,519 Church Street Community Centre,416-392-6878 ext. 4000,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+"761 Jane Street, 2nd floor",Toronto,Access Alliance,416-760-8677,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+4158 Sheppard Ave East,Toronto,Canadian Centre for Refugee & Immigrant Health Care,647-267-2176 ext. 1,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+185 Fifth Street,Etobicoke,LAMP Community Health Centre,416-252-6471,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+10 Armoury St.,Toronto,Ontario Court of Justice Toronto (10 Armoury St.),437-552-9038,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+"76 Grenville Street, 3rd floor",Toronto,Women’s College Hospital Crossroads Refugee Clinic,416-323-6031,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+"815 Danforth Avenue, Suite 100",Toronto,Woodgreen Community Services,416-645-6000,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+636 Kennedy Rd,Toronto,Youthlink,416-967-1773 x 222,https://greenestone.net/resources/blog/choosing-the-right-private-mental-health-facility-in-ontario/
+"250 Dundas St. West, Suite 401",Toronto,"Canadian Mental Health Association, National",(416) 646-5557,https://www.centralwesthealthline.ca/displayservice.aspx?id=156605
+314-7700 Hurontario Street,Brampton,Canadian Mental Health Association Peel Dufferin,(905) 451-2123,https://www.torontocentralhealthline.ca/listservices.aspx?id=10233
+"Wells St, Windsor, ON N9C 1T9",Windsor,Maryvale Adolescent and Family Services - Acute Care Mental Health Hospital Program,519-258-0484,https://torontocentral.behaviouralsupportsontario.ca/Services/Display/152668/Inpatient_Services
+"Parkwood Institute, London, ON",London,St Joseph's Health Care London - Parkwood Institute - Mental Health Care Building,519-646-6100,https://torontocentral.behaviouralsupportsontario.ca/Services/Display/152668/Inpatient_Services
+850 King,"Kitchener, ON, N2G 1G3",Waterloo Regional Health Network - Adult Inpatient Mental Health Program,519-749-4300 ext 2313,https://torontocentral.behaviouralsupportsontario.ca/Services/Display/152668/Inpatient_Services
+Queen Street West (Main),"Toronto, ON, M6J 1H4",Centre for Addiction and Mental Health - Addiction Medicine Services and Specialized Clinics,1-800-463-2338,https://torontocentral.behaviouralsupportsontario.ca/Services/Display/152668/Inpatient_Services
+314-7700 Hurontario Street,Brampton,Canadian Mental Health Association Peel Dufferin,(905) 451-2123,https://www.nygh.on.ca/care-service/mental-health/child-and-adolescent-mental-health/
+"Slater St, Ottawa, ON K1P 5H1",Ottawa,Métis Nation of Ontario - Aboriginal Healing and Wellness Program,1-800-263-4889 ext 7,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Ottawa, ON K1N 5C7",Ottawa,Geriatric Psychiatry Community Services of Ottawa,613-562-9777,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Ottawa, ON, K1R 0A1",Ottawa,"Bruyère Health Academic Family Medicine, Primrose Clinic",613-230-7788,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Nelson St, Ottawa, ON, K1N 1C7",Ottawa,Sandy Hill Community Health Centre,613-789-1500,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Civic Campus - 1053 Carling Ave, Ottawa, ON, K1Y 4E9",Ottawa,The Ottawa Hospital - Regional Geriatric Program of Eastern Ontario,613-761-4458,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Royal Ottawa Mental Health Centre, Ottawa, ON, K1Z 7K4",Ottawa,The Royal - Geriatric Program (Royal Ottawa Mental Health Centre),613-722-6521 ext 6637,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Royal Ottawa Mental Health Centre, Ottawa, ON, K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Royal Ottawa Mental Health Centre, Ottawa, ON, K1Z 7K4",Ottawa,The Royal - Geriatric Outreach Team,1-800-465-8061,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Donald St, Ottawa, ON, K1K 1L4",Ottawa,ACB Wellness Resource Centre - Seniors Program,613-749-9222,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Mer Bleue Rd, Orléans, ON, K4A 5M3",Orléans,Eastern Ottawa Resource Centre - Community Support Services (Orléans),613-741-6025 ext 300,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Renfrew, ON, K7V 1X7",Renfrew,Métis Nation of Ontario - Aboriginal Healing and Wellness Program,613-432-6499,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+850 McConnell Ave,Cornwall,Geriatric Mental Health Services,613-361-6363,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Burlington, ON, L7T 4K2",Burlington,Bartimaeus,1-866-226-2565,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"Guelph, ON, N1E 6K9",Guelph,Homewood Health Centre Program for Mature Adults,1-866-839-2594 ext 32551,https://www.uhn.ca/MentalHealth/Clinics/Mental-Health-Medicine-Clinic
+"1980 Ogilvie Road, Suite 215",Gloucester,Eastern Ottawa Resource Centre (EORC),613-741-6025,https://www.nygh.on.ca/care-service/mental-health/
+"Toronto, ON, M5B 1M4",Toronto,Aboriginal Legal Services,416-408-4041,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+"Toronto, ON, M5B 1N9",Toronto,Youthdale Treatment Centres,416-368-4896 ext 2000,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+375 University Ave,Toronto,"Ontario. Ministry of Children, Community and Social Services - Youth Justice Services Division, Toronto Region",416-325-0500,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+Toronto,Toronto,Ontario. Ministry of the Attorney General - Youth Justice Committee of Ontario,1-800-518-7901,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+"Toronto, ON",Toronto,LOFT Community Services - Mental Health and Justice Initiative,1-888-640-1934,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+145 Queen St E,Toronto,Fred Victor - Open House Drop-In and Support Services,416-364-8228,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+"Bay Street Housing and Community Support Office, Toronto, ON, M5S 3A9",Toronto,Fred Victor - Community Mental Health Services (Bay Street Housing and Community Support Office),416-482-4103,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+"Toronto, ON, M5A 1E3",Toronto,Toronto Mental Health and Addictions Access Point (The Access Point),1-888-640-1934,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+91 Bellevue Ave,Toronto,The Neighbourhood Group Community Services - Newcomer Centre - Bellevue,416-925-2103,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+10 Armoury St,Toronto,Peacebuilders International (Canada),416-960-9778,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+"100 Stokes St, 3rd Floor",Toronto,Toronto Drug Treatment Court,416-506-0064,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+323 Dundas St E,Toronto,Margaret's Toronto East Drop-In (Margaret's Housing and Community Support Services),416-463-1481,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+21 Park Rd,Toronto,Margaret's Yonge/Bloor 24-hour Respite Site (Margaret's Housing and Community Support Services),416-463-1481,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+10 Armoury St,Toronto,Elizabeth Fry Toronto (Court Support - Armoury St),416-924-3708,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+2201 Finch Ave W,Toronto,Elizabeth Fry Toronto (Court Support - Finch Ave W),416-924-3708,https://www.nygh.on.ca/news/new-nygh-program-provides-youth-and-adults-with-the-right-mental-health-care-sooner/
+"Cobourg, ON K9A 5W6",Cobourg,Northumberland Hills Hospital,1-888-294-7579,https://psychiatry.utoronto.ca/north-york-general-hospital
+L9W 4Z9,Orangeville,Support Within Housing Program (Family Transition Place),519-942-4122,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Consilium Pl, M1H 3E3",Toronto,Strides Toronto - Community Services,416-438-3697,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Consilium Pl, M1H 3E3",Toronto,"Strides Toronto - Mental Health Services, Family and Parenting Supports",416-438-3697,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Elgin St W, K9A 5J4",Cobourg,Northumberland Hills Hospital - Community Mental Health Services (Walk-in Counselling Clinic),905-377-9891,https://psychiatry.utoronto.ca/north-york-general-hospital
+L9W 7N7,Orangeville,Canadian Mental Health Association - Peel Dufferin (Orangeville Office),519-941-0465,https://psychiatry.utoronto.ca/north-york-general-hospital
+"25 Neilson Ave, M1E 5E1",Toronto,Scarborough Health Network - Mental Health Community Programs,416-208-0131,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Toronto, ON, M1E 4C1",Toronto,Shoniker Clinic (Scarborough Health Network),416-281-7301,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Toronto, ON, M2M 4E7",Toronto,Youth Assisting Youth (Youth to Youth Peer Mentoring Programs),416-932-1919,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Toronto, ON, M1H 2X1",Toronto,Progress Avenue Shelter (Toronto Shelter and Support Services),416-396-4612,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Toronto, ON, M2J 2Z1",Toronto,Centre Francophone du Grand Toronto - Health Care (North York),416-492-2672,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Ellesmere Rd, Toronto, ON, M1H 2W6",Toronto,"Homestead Addiction and Concurrent Disorder Treatment - Scarborough Satellite (Salvation Army, Greater Toronto Housing and Homelessness Supports)",416-431-4379,https://psychiatry.utoronto.ca/north-york-general-hospital
+"North American Life Tower, Toronto, ON, M2M 4K5",Toronto,Psychiatric Patient Advocate Office,416-327-7000,https://psychiatry.utoronto.ca/north-york-general-hospital
+"130 Pembroke St W, Pembroke, ON, K8A 5M8",Pembroke,The Phoenix Centre for Children and Families,613-735-2374,https://psychiatry.utoronto.ca/north-york-general-hospital
+130 Pembroke St W,"Pembroke, ON",The Phoenix Centre for Children and Families,1-800-465-1870,https://psychiatry.utoronto.ca/north-york-general-hospital
+705 Mackay St,"Pembroke, ON",Pembroke Regional Hospital - Mental Health Services of Renfrew County,1-800-991-7711,https://psychiatry.utoronto.ca/north-york-general-hospital
+315 Pembroke St E,"Pembroke, ON",Robbie Dean Family Counselling Centre (Robbie Dean Suicide Prevention and Crisis Clinics),613-629-4243,https://psychiatry.utoronto.ca/north-york-general-hospital
+"Kennedy Road, Scarborough","Toronto, ON",Reconnect Health Services (FAME Family and Caregiver Support Services),416-248-2050,https://psychiatry.utoronto.ca/north-york-general-hospital
+"500 Church St, Penetanguishene, ON L9M 1G3, Canada",Penetanguishene,Waypoint Centre for Mental Health Care,+1 705-549-3181,https://www.accessmha.ca/
+"700 Coronation Blvd., Cambridge, ON N1R 3G2, Canada",Cambridge,Cambridge Memorial Hospital,519-621-2330,https://www.accessmha.ca/
+"170 Colborne St W, Orillia, ON L3V 2Z3, Canada",Orillia,Community Mental Health Service,+1 705-327-9122,https://www.accessmha.ca/
+"1182 North Shore Blvd E, Burlington, ON L7S 1C5, Canada",Burlington,Joseph Brant Community Mental Health,+1 905-631-1939,https://www.accessmha.ca/
+"3001 Hospital Gate, Oakville, ON L6M 0L8, Canada",Oakville,Halton Healthcare (Mental Health Program),+1 905-845-2571,https://www.accessmha.ca/
+"1053 Carling Ave, Ottawa, ON K1Y 4E9, Canada",Ottawa,Ottawa Hospital Civic Campus - Mental Health Outpatient Clinic,+1 613-722-6914,https://www.accessmha.ca/
+"148 Delhi St, Guelph, ON N1E 4J8, Canada",Guelph,The Residence at Homewood,+1 877-290-3317,https://www.accessmha.ca/
+"227 Victoria St, Toronto, ON M5B 1T8, Canada",Toronto,Youthdale Treatment Centres,+1 416-368-4896,https://www.accessmha.ca/
+"3640 Wells St, Windsor, ON N9C 1T9, Canada",Windsor,Maryvale,+1 519-258-0484,https://www.accessmha.ca/
+"1 Hospital Dr, Peterborough, ON K9J 7C6, Canada",Peterborough,The Family and Youth Clinic,+1 705-876-5114,https://www.accessmha.ca/
+"3571 Muskoka District Road 169, Bala, ON, Canada",Bala,GreeneStone Centre for Recovery,1.855.821.5010,https://www.cheo.on.ca/en/clinics-services-programs/mental-health-services-at-cheo.aspx
+101 Humber College Blvd,Etobicoke,William Osler Health System - Etobicoke General Hospital (Mental Health Services for Adults - Outpatient Services),905-494-2120 ext 56709,https://www.ementalhealth.ca/
+8173 Trafalgar Rd,Hornby,Hope Place Centres,905-878-1120,https://www.centretownchc.org/
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://www.champlainhealthline.ca/listservices.aspx?id=10237
+"435 Main St E, Merrickville, ON K0G 1N0",Merrickville,Newgate 180,1-888-995-8091 / 343-353-1037 / 613-294-4357,https://www.ontario.ca/page/community-health-centres
+"4001 Leslie Street, M2K 1E1",Toronto,North York General Foundation,416-756-6944,https://ottawa.cmha.ca/our-services/
+"180 Dundas Street West, Suite 2301, Toronto, ON M5G 1Z8",Toronto,"Canadian Mental Health Association, Ontario",1-800-875-6213,https://eorc-creo.ca/
+"144 Causley Street, P.O. Box 568, P0R 1B0",Blind River,Benbowopka Treatment Centre,705-356-1681,https://www.edgewoodhealthnetwork.com/addiction-treatment-in-northern-ontario/
+"180 Dundas Street West, Suite 2301, Toronto, ON M5G 1Z8",Toronto,"Canadian Mental Health Association, Ontario",1-800-875-6213,https://connexontario.ca/organization-list/
+3571 Muskoka District Road 169,Bala,GreeneStone Recovery,1.855.821.5010,https://greenestone.net/
+967 Innisfil Beach Road (Innisfil ideaLAB & Library Lakeshore Branch),Innisfil,YouthCALL Walk-In Counselling Clinic (CFS Counselling + Wellbeing),705-790-2338,https://newgate180.com/
+"1001 Queen St W, Toronto, ON M6J 1H4",Toronto,Centre for Addiction and Mental Health (CAMH),416-535-8501,https://www.camh.ca/
+"250 College Street, M5T 1R8",Toronto,Centre for Addiction and Mental Health (CAMH),416-535-8501,https://www.camh.ca/
+"1001 Queen St W, Toronto, ON M6J 1H4",Toronto,Centre for Addiction and Mental Health (CAMH),416-535-8501,https://www.camh.ca/
+1001 Queen St W,Toronto,Centre for Addiction and Mental Health (CAMH),416-535-8501,https://www.camh.ca/
+"1001 Queen St W, M6J 1H4",Toronto,Centre for Addiction and Mental Health (CAMH),416-535-8501,https://www.camh.ca/
+1001 Queen St W,Toronto,Centre for Addiction and Mental Health (CAMH),416-535-8501,https://www.camh.ca/
+"50 College Drive, P.O. Box 2500, P1B 5A4",North Bay,North Bay Regional Health Centre - North Bay,705-474-8600,https://canatc.ca/
+"680 Kirkwood Drive, P3E 1X3",Sudbury,North Bay Regional Health Centre - Sudbury Campus,705-675-9193,https://canatc.ca/
+"14785 Yonge St, Suite 210",Aurora,Addiction Services Central Ontario (ASCO),1.800.263.2288 / 905.841.7007,https://www.northwesthealthline.ca/listservices.aspx?id=10095
+"311 McArthur Avenue, 2nd floor, Ottawa, Ontario K1L 8M3",Ottawa,"Canadian Mental Health Association, Ottawa",(613) 737-7791,https://www.ontario.ca/page/mental-health-services
+"80 Waterloo Ave., Guelph, ON, N1H 0A1",Guelph,"Here 24/7 (Addictions, Mental Health & Crisis Services Waterloo Wellington) - Waterloo",1-844-437-3247,https://www.hss.gov.nt.ca/en/services/mental-wellness-and-addictions-recovery/nwt-facility-based-treatment-options-addictions
+"67 King St. E., Kichener, ON, N2G 2K4",Kichener,"Here 24/7 (Addictions, Mental Health & Crisis Services Waterloo Wellington) - Kichener",1-844-437-3247,https://www.hss.gov.nt.ca/en/services/mental-wellness-and-addictions-recovery/nwt-facility-based-treatment-options-addictions
+"3-9 Wellington St., Cambridge, ON, N1R 3Y4",Cambridge,"Here 24/7 (Addictions, Mental Health & Crisis Services Waterloo Wellington) - Cambridge",1-844-437-3247,https://www.hss.gov.nt.ca/en/services/mental-wellness-and-addictions-recovery/nwt-facility-based-treatment-options-addictions
+"234 St. Patrick St. E., Fergus, ON, N1M 1M6",Fergus,"Here 24/7 (Addictions, Mental Health & Crisis Services Waterloo Wellington) - Fergus",1-844-437-3247,https://www.hss.gov.nt.ca/en/services/mental-wellness-and-addictions-recovery/nwt-facility-based-treatment-options-addictions
+"392 Main St. N., Mount Forest, ON, N0G 2L2",Mount Forest,"Here 24/7 (Addictions, Mental Health & Crisis Services Waterloo Wellington) - Mount Forest",1-844-437-3247,https://www.hss.gov.nt.ca/en/services/mental-wellness-and-addictions-recovery/nwt-facility-based-treatment-options-addictions
+101 Humber College Blvd,Etobicoke,William Osler Health System - Etobicoke General Hospital,416-747-3586,https://walkin.org/
+1229 Queen St. West,Toronto,Parkdale Queen West Community Health Centre (Parkdale Site),416-703-8482 ext. 6,https://www.durham.ca/en/living-here/counselling.aspx
+"168 Bathurst Street, Toronto, Ontario M5V 2R4",Toronto,Parkdale Queen West Community Health Centre — Queen West Site,416-703-8482 ext. 2100,https://www.durham.ca/en/living-here/counselling.aspx
+"1229 Queen Street West, Toronto, Ontario M6K 1L2",Toronto,Parkdale Queen West Community Health Centre — Parkdale Site,416-537-2455,https://www.durham.ca/en/living-here/counselling.aspx
+"27 Roncesvalles Avenue, Suite 301, Toronto, Ontario M6R 3B2",Toronto,Parkdale Queen West Community Health Centre — Roncesvalles Site,416-537-8222,https://www.durham.ca/en/living-here/counselling.aspx
+"750 Dundas Street West, Toronto, Ontario M6J 3S3",Toronto,Parkdale Queen West Community Health Centre — Dundas Site,416-703-8482,https://www.durham.ca/en/living-here/counselling.aspx
+"311 McArthur Avenue, 2nd floor",Ottawa,"Canadian Mental Health Association, Ottawa",(613) 737-7791,https://pqwchc.org/
+"250 College Street, 8th floor, Toronto, ON M5T 1R8",Toronto,North York General Hospital (Department of Psychiatry),416-979-6948,https://mentalhealthcommission.ca/resource/where-to-get-mental-health-care/
+"1980 Ogilvie Road, Suite 215","Gloucester, Ontario K1J 9L3",Eastern Ottawa Resource Centre (EORC),613-741-6025,https://cmhapeeldufferin.ca/
+"325 Central Parkway West, Unit 21",Mississauga,Fairview clinic (Peel Public Health),905-799-7700,https://www.merakey.org/programs/mental-health-walk-in-clinic
+"10 Peel Centre Drive, Suite A, Suite 101",Brampton,Brampton clinic (Peel Public Health),905-799-7700,https://www.merakey.org/programs/mental-health-walk-in-clinic
+"6975 Meadowvale Town Centre Circle, Suite N03",Mississauga,Meadowvale clinic (Peel Public Health),905-799-7700,https://www.merakey.org/programs/mental-health-walk-in-clinic
+"7205 Goreway Drive, Lower Level",Mississauga,Malton clinic (Peel Public Health),905-799-7700,https://www.merakey.org/programs/mental-health-walk-in-clinic
+601-7700 Hurontario Street,Brampton,Satellite clinic - Moyo Health & Community Services (Peel Public Health),905-799-7700,https://www.merakey.org/programs/mental-health-walk-in-clinic
+"6482 Bloomington Rd., Stouffville, ON L4A 2Z5",Stouffville,The Farm Rehab,(905) 203-2777,https://www.aamc.org/news/walk-clinics-tackle-urgent-mental-health-needs
+"6482 Bloomington Rd., Stouffville, ON L4A 2Z5",Stouffville,The Farm Rehab,(905) 203-2777,https://www.aamc.org/news/walk-clinics-tackle-urgent-mental-health-needs
+"1145 Carling Avenue, K1Z 7K4",Ottawa,Royal Ottawa Mental Health Centre (The Royal),613-722-6521,https://www.utm.utoronto.ca/health/resources/after-hours-walk-clinics
+"1145 Carling Avenue, K1Z 7K4",Ottawa,Dialectical Behaviour Therapy (DBT) Program,613-737-2496; 1-866-737-2496; 613-722-6521 ext. 6275,https://www.utm.utoronto.ca/health/resources/after-hours-walk-clinics
+"1145 Carling Avenue, K1R 5T5",Ottawa,Dual Diagnosis Consultation Outreach Team (DDCOT),613-722-6521,https://www.utm.utoronto.ca/health/resources/after-hours-walk-clinics
+"1145 Carling Avenue, K1Z 7K4",Ottawa,Family Court Clinic,613-722-6521 x6400,https://www.utm.utoronto.ca/health/resources/after-hours-walk-clinics
+"1145 Carling Avenue, K1Z 7K4",Ottawa,Substance Use and Concurrent Disorders Program,613-722-6521,https://www.utm.utoronto.ca/health/resources/after-hours-walk-clinics
+"2121 Carling Avenue, K2A 1H2",Ottawa,Transitional Aged Youth (TAY) Service for Concurrent Disorders,613-722-6521 x7225,https://www.utm.utoronto.ca/health/resources/after-hours-walk-clinics
+101 Humber College Blvd,Etobicoke,William Osler Health System - Etobicoke General Hospital,905-494-2120 ext 56709,https://ontario.cmha.ca/provincial-mental-health-supports/
+"101 Humber College Blvd, M9V 1R8",Etobicoke,William Osler Health System - Etobicoke General Hospital - Mental Health and Addiction Services (Outpatient Services),905-494-2120 ext 56709,https://www.chs.ca/page/distress-centres-and-crisis-lines-ontario
+1145 Carling Ave,Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html
+"420 Cooper Street, Ontario K2P 2N6",Ottawa,Centretown Community Health Centre,(613) 233-4443,https://cmhapeeldufferin.ca/programs/24-7-crisis-support-peel/
+"311 McArthur Ave, Suite 201, Ottawa, ON K1L 8M3",Ottawa,Canadian Mental Health Association Ottawa,613-737-7791,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"311 McArthur Ave, Ottawa, ON K1L 8M3",Ottawa,Canadian Mental Health Association Ottawa - Mental Health Community Support Services,613-737-7791,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"Carlington ACT, 900 Merivale Rd, Ottawa, ON K1Z 5Z8",Ottawa,Carlington Community Health Centre - Assertive Community Treatment Team,613-722-9731,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1755 Courtwood Cres, Ottawa, ON K2C 3J2",Ottawa,Crossroads Children's Mental Health Centre,613-723-1623 ext 232,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"312 Parkdale Ave, Ottawa, ON K1Y 4X5",Ottawa,Family Services Ottawa,613-725-3601 ext 0,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"312 Parkdale Ave, Ottawa, ON K1Y 4X5",Ottawa,Family Services Ottawa - Counselling,613-725-3601,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"Élisabeth Bruyère Hospital, 75 Bruyère St, Suite 127Y, Ottawa, ON K1N 5C7",Ottawa,Geriatric Psychiatry Community Services of Ottawa,613-562-9777,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"400 Cooper St, Suite 9004, Ottawa, ON K2P 2H8",Ottawa,MAX Ottawa,613-701-6555,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"162 Murray St, Ottawa, ON K1N 5M8",Ottawa,Montfort Renaissance - Housing Services,613-424-3400 ext 307,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"346 Montréal Rd, Ottawa, ON K1L 6B3",Ottawa,Montfort Renaissance - Les Ateliers de L'Élan,613-744-2244,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"338 Montreal Rd, Suite 201, Ottawa, ON K1L 6B3",Ottawa,Montfort Renaissance - Mental Health Services,613-742-0988,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"2000 Scott St, Ottawa, ON K1Z 6T2",Ottawa,Ottawa Salus Corporation,613-729-0123,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1365 Richmond Rd, 2nd Flr, Ottawa, ON K2B 6R7",Ottawa,Pinecrest-Queensway Community Health Centre - Pinecrest-Queensway Assertive Community Treatment Team,613-820-4922 ext 3369,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1365 Richmond Rd, 2nd Flr, Ottawa, ON K2B 6R7",Ottawa,Pinecrest-Queensway Community Health Centre - Social Services,Administration 613-820-4922; Medical Clinic 613-820-2001,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"The Bronson Centre, 211 Bronson Ave, Suite 313, Ottawa, ON K1R 6H5",Ottawa,Psychiatric Survivors of Ottawa,613-567-4379,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"2121 Carling Ave, Ottawa, ON K2A 1H2",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Community Mental Health Program,613-722-6521,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Substance Use and Concurrent Disorders Program,613-722-6521 ext 6508,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"100 Craig Henry Dr, Suite 204, Ottawa, ON K2G 5W3",Ottawa,Upstream Ottawa Community Mental Health Support,613-248-3330,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"299 Montreal Rd, Ottawa, ON K1L 6B8",Ottawa,Wabano Centre for Aboriginal Health,Health Clinic: 613-748-5999; Programs and Administration: 613-748-0657,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1355 Bank St, 6th Flr, Ottawa, ON K1H 8K7",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Bank St,613-737-5115; 613-755-2277,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"Jewish Family Services Ottawa, 2255 Carling Ave, Suite 301, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Carling Ave,613-722-2225; 613-755-2277,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"55 Eccles St, Ottawa, ON K2B 7Z5",Ottawa,Somerset West Community Health Centre,613-238-8210 * 613-755-2277,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"1547 Merivale Rd, Unit 240, Ottawa, ON K2B 7Z5",Ottawa,"Nepean, Rideau and Osgoode Community Resource Centre",613-596-5626,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"310 Olmstead St, Ottawa, ON K2B 7Z5",Ottawa,CFS Ottawa,613-233-8478,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"312 Parkdale Ave, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Parkdale Ave,613-725-3601,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"2675 Queensview Dr, Ottawa, ON K2B 8K2",Ottawa,Youth Services Bureau of Ottawa - Mental Health Services - Integrated Crisis Services,613-562-3004,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"180 Dundas St W, Suite 2301, Toronto, ON M5G 1Z8",Toronto,"Canadian Mental Health Association, Ontario",416-977-5580,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"600 Sanatorium Rd, London, ON N6H 3W7",London,Child and Parent Resource Institute (CPRI),519-858-2774,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"30 Simmonds Parade Square, Petawawa, ON K8H 2X3",Petawawa,Operational Stress Injury Social Support - Eastern Ontario Region,343-544-6468,https://www.psych.on.ca/Public/Getting-Help/Crisis-Resources
+"245 Dundas St. E, Belleville, ON K8N 5K5",Belleville,Crisis Intervention Centre (located at Belleville General Hospital),613-969-5511 ext. 2753 / 1-888-757-7766,https://www.camh.ca/en/driving-change/988
+"15 Victoria Ave., Belleville, ON K8N 1Z5",Belleville,Addictions and Mental Health Services Hastings Prince Edward,613-967-4734,https://www.camh.ca/en/driving-change/988
+"E Wing - 200 Terrace Hill Street, Brantford, ON N3R 1G9",Brantford,Brant Community Healthcare System,519-751-5544,https://www.camh.ca/en/driving-change/988
+"1-225 Fairview Drive, Brantford, ON",Brantford,St. Leonard's Community Services - Brantford (Fairview Drive),519-759-7188,https://www.camh.ca/en/driving-change/988
+"61 King Street East, Brockville, ON K6V 1B2",Brockville,"Lanark, Leeds & Greenville Distress Centre",1-800-465-4442,https://www.camh.ca/en/driving-change/988
+"10 Angeline Street North, Lindsay, ON K9V 4M8",Lindsay,Ross Memorial Hospital (Kawartha Lakes),705-328-6064,https://www.camh.ca/en/driving-change/988
+"400 Elliott Avenue, Unit 1 (Rockcliffe Plaza)",Kingston,Sexual Assault Kingston,613-544-6424,https://www.camh.ca/en/driving-change/988
+648 Huron Street,London,Mental Health and Addictions Crisis Centre - Walk-in,519-434-9191,https://www.camh.ca/en/driving-change/988
+"PO Box 1535, Peterborough, ON K9J 7H7",Peterborough,Telecare Distress Centre of Peterborough,705-745-2273,https://www.camh.ca/en/driving-change/988
+"1 Hospital Drive (Regional Health Centre, Emergency Department)",Peterborough,"Women’s Health Care Centre - Sexual Assault Domestic Violence Program (Regional Health Centre, Emergency Department)",705-743-4132,https://www.camh.ca/en/driving-change/988
+"150 King Street, 3rd Floor",Peterborough,Kawartha Sexual Assault Centre,705-741-0260,https://www.camh.ca/en/driving-change/988
+750 Great Northern Rd,Sault Ste. Marie,Sault Area Hospital,705-759-3434,https://www.camh.ca/en/driving-change/988
+201 Georgian Dr,Barrie,Royal Victoria Regional Health Centre,705-728-9802,https://www.camh.ca/en/driving-change/988
+680 Kirkwood Drive,Sudbury,Northeast Mental Health Centre,705-523-7100,https://www.camh.ca/en/driving-change/988
+127 Cedar St.,Sudbury,Crisis Intervention Services (Downtown),705-675-4760,https://www.camh.ca/en/driving-change/988
+"41 Ramsey Lake Road, Sudbury, Ontario P3E 5J1",Sudbury,Ramsey lake health centre,705-523-7100,https://www.camh.ca/en/driving-change/988
+"11 Meredith Street, Little Current, Ontario P0P 1K0",Little Current,Health Sciences North Manitoulin site,705-368-2300,https://www.camh.ca/en/driving-change/988
+"41 Ramsey Lake Road, Sudbury, Ontario P3E 5J1",Sudbury,Health sciences north (sudbury regional hospital),705-523-7100,https://www.camh.ca/en/driving-change/988
+"980 Oliver Road, Thunder Bay, Ontario P7B 6V4",Thunder Bay,Thunder Bay Regional Health Sciences Centre,807-684-6000,https://www.camh.ca/en/driving-change/988
+"700 Ross Ave., Timmins, Ontario",Timmins,Timmins District Hospital Mental Health Services – Crisis Intervention,705-267-2131,https://www.camh.ca/en/driving-change/988
+"1051 Queen Street West, Toronto, Ontario",Toronto,Centre for Addictions and Mental Health (CAMH),416-535-8501,https://www.camh.ca/en/driving-change/988
+"Box 243, Adelaide P.O., Toronto, Ontario M5C 2J4",Toronto,Toronto Distress Centre,416-408-4357,https://www.camh.ca/en/driving-change/988
+"100 Charles Street East, Toronto, ON M4Y 1V3",Toronto,Gerstein Centre,416-929-5200,https://www.camh.ca/en/driving-change/988
+"1045 Bloor Street West, Toronto, ON M6H 1M1",Toronto,Gerstein Centre,416-604-2337,https://www.camh.ca/en/driving-change/988
+"200 Maple Grove Rd. P.O. Box 3070, Cambridge, ON N3H 5M1",Cambridge,Victim services of waterloo region,519-585-2363,https://www.camh.ca/en/driving-change/988
+"1453 Prince Road, Windsor, Ontario N9C 3Z4",Windsor,Community crisis centre of Hôtel-Dieu Grace Healthcare,519-257-5111,https://www.camh.ca/en/driving-change/988
+"250 Louis Avenue, Windsor, Ontario N9A 1W2",Windsor,Hiatus House,519-252-7781,https://www.camh.ca/en/driving-change/988
+"1770 Langlois Ave, Windsor, ON N8X 4M5",Windsor,Family services windsor,519-966-5010,https://www.camh.ca/en/driving-change/988
+"1400 Windsor Avenue, Windsor, Ontario N8X 3L9",Windsor,CMHA Windsor-Essex county,519-255-7440,https://www.camh.ca/en/driving-change/988
+"875 Ouellette Avenue, Windsor, Ontario N9A 4J6",Windsor,Downtown mission,519-973-5573,https://www.camh.ca/en/driving-change/988
+"Cortellucci Vaughan Hospital, 3200 Major Mackenzie Dr. West, Vaughan, Ontario L6A 4Z3",Vaughan,DASA (Domestic Abuse and Sexual Assault Care Centre for York Region at Mackenzie Health),905-883-1212,https://www.camh.ca/en/driving-change/988
+"615 Davis Drive, Unit 201, Newmarket, ON L3Y 2R2",Newmarket,Ontario Shores York Region Community Clinic,905-895-4242,https://www.camh.ca/en/driving-change/988
+"4001 Leslie Street, Toronto, Ontario M2K 1E1",Toronto,North York General Hospital,416-756-6000,https://www.camh.ca/en/driving-change/988
+"4001 Leslie Street, Toronto, Ontario M2K 1E1",Toronto,"Mental Health & Addictions Clinic, Unit E8 (North York General Hospital)",416-756-6642,https://www.camh.ca/en/driving-change/988
+"700 Coronation Blvd, Cambridge, ON N1R 3G2",Cambridge,Cambridge Memorial Hospital,519-621-2330,https://www.ontarioshores.ca/crisis-services-and-hotlines
+"401 Smyth Rd, Ottawa, ON K1H 8L1",Ottawa,CHEO - In-patient Psychiatric Units,613-737-7600 ext 2505; 613-737-2505,https://www.stjoes.ca/mentalhealthcrisis
+"1661 Montreal Rd, Unit 9, Ottawa, ON K1J 9B7",Ottawa,CHEO - Mental Health Outpatient Services,613-738-6990,https://www.stjoes.ca/mentalhealthcrisis
+"401 Smyth Rd, Ottawa, ON K1H 8L1",Ottawa,CHEO - Regional Psychiatric Emergency Service for Children and Youth,613-260-2360,https://www.stjoes.ca/mentalhealthcrisis
+"401 Smyth Rd, Ottawa, ON K1H 8L1",Ottawa,CHEO - Sexual Assault/Abuse Care Program,613-737-7600 ext 2939,https://www.stjoes.ca/mentalhealthcrisis
+"214 Montreal Rd, Suite 300, Ottawa, ON K1L 8L8",Ottawa,Hôpital Montfort - Assertive Community Treatment Team - Ottawa East,613-688-1083,https://www.stjoes.ca/mentalhealthcrisis
+"713 Montreal Rd, Room 00B190, Ottawa, ON K1K 0T2",Ottawa,Hôpital Montfort - Mental Health Program,613-746-4621 ext 3579,https://www.stjoes.ca/mentalhealthcrisis
+"The Ottawa Hospital Cancer Centre, 501 Smyth Rd, Ottawa, ON K1H 8L6",Ottawa,Ottawa Hospital - Cancer Centre - Psychosocial Oncology Program,613-737-7700 ext 70516; 613-737-7700 ext 25200,https://www.stjoes.ca/mentalhealthcrisis
+"Bank Street Professional Building, 1355 Bank St, Suite 208, Ottawa, ON K1H 8K7",Ottawa,Ottawa Hospital - Champlain District Regional First Episode Psychosis Program - OnTrack,613-737-8069,https://www.stjoes.ca/mentalhealthcrisis
+"1053 Carling Ave, 6th Flr, Ottawa, ON K1Y 4E9",Ottawa,Ottawa Hospital - Civic Campus - Mental Health - Outpatient Services and Urgent Consultation Clinic,613-798-5555,https://www.stjoes.ca/mentalhealthcrisis
+"501 Smyth Rd, Rm 4428, Ottawa, ON K1H 8L6",Ottawa,Ottawa Hospital - General Campus - The Regional Centre for the Treatment of Eating Disorders,613-737-8899 ext 78010,https://www.stjoes.ca/mentalhealthcrisis
+"The Ottawa Hospital, 1053 Carling Ave, Box 400, Ottawa, ON K1Y 4E9",Ottawa,Ottawa Hospital - Psychiatric Emergency Services,613-722-7000,https://www.stjoes.ca/mentalhealthcrisis
+"3045 Baseline Rd, Ottawa, ON K2H 8P4",Ottawa,Queensway Carleton Hospital - Mental Health Outpatient Program,613-721-4708,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Integrated Forensic Program,613-722-6521; 613-341-2870,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Geriatric Program,613-722-6521 ext 6637,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Mood and Anxiety Disorders Program,613-722-6521,https://www.stjoes.ca/mentalhealthcrisis
+"Royal Ottawa Mental Health Centre, 1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Recovery Program,613-722-6521,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Schizophrenia Program,613-722-6521,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Substance Use and Concurrent Disorders Program - Short Term Intensive Residential Treatment,613-722-6521 ext 6508,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,"The Royal - Royal Ottawa Mental Health Centre - Youth Outpatient / Outreach Service - Youth Inpatient Unit - Youth Partial Hospitalization Unit, Youth Day Treatment Unit",613-737-2496,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Youth Psychiatry Program,613-737-2496; 613-722-6521 ext 6511,https://www.stjoes.ca/mentalhealthcrisis
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Youth Psychiatry Program - Youth Inpatient Unit,613-722-6521 ext 6221,https://www.stjoes.ca/mentalhealthcrisis
+"1725 Upper James St., Suite 200, Hamilton, ON L9B 1K7",Hamilton,CritiCall Ontario,(289) 396-7000,https://cmha.ca/find-help/if-you-are-in-crisis/
+"311 McArthur Ave, Suite 201, Ottawa, ON K1L 8M3",Ottawa,Canadian Mental Health Association Ottawa,613-737-7791,https://www.theroyal.ca/crisis-lines/
+"311 McArthur Ave, Ottawa, ON K1L 8M3",Ottawa,Canadian Mental Health Association Ottawa - Mental Health Community Support Services,613-737-7791,https://www.theroyal.ca/crisis-lines/
+"Carlington ACT, 900 Merivale Rd, Ottawa, ON K1Z 5Z8",Ottawa,Carlington Community Health Centre - Assertive Community Treatment Team,613-722-9731,https://www.theroyal.ca/crisis-lines/
+"1755 Courtwood Cres, Ottawa, ON K2C 3J2",Ottawa,Crossroads Children's Mental Health Centre,613-723-1623 ext 232,https://www.theroyal.ca/crisis-lines/
+"312 Parkdale Ave, Ottawa, ON K1Y 4X5",Ottawa,Family Services Ottawa,613-725-3601 ext 0,https://www.theroyal.ca/crisis-lines/
+"312 Parkdale Ave, Ottawa, ON K1Y 4X5",Ottawa,Family Services Ottawa - Counselling,613-725-3601,https://www.theroyal.ca/crisis-lines/
+"Élisabeth Bruyère Hospital, 75 Bruyère St, Suite 127Y, Ottawa, ON K1N 5C7",Ottawa,Geriatric Psychiatry Community Services of Ottawa,613-562-9777,https://www.theroyal.ca/crisis-lines/
+"400 Cooper St, Suite 9004, Ottawa, ON K2P 2H8",Ottawa,MAX Ottawa,613-701-6555,https://www.theroyal.ca/crisis-lines/
+"162 Murray St, Ottawa, ON K1N 5M8",Ottawa,Montfort Renaissance - Housing Services,613-424-3400 ext 307,https://www.theroyal.ca/crisis-lines/
+"346 Montréal Rd, Ottawa, ON K1L 6B3",Ottawa,Montfort Renaissance - Les Ateliers de L'Élan,613-744-2244,https://www.theroyal.ca/crisis-lines/
+"338 Montreal Rd, Suite 201, Ottawa, ON K1L 6B3",Ottawa,Montfort Renaissance - Mental Health Services,613-742-0988,https://www.theroyal.ca/crisis-lines/
+"2000 Scott St, Ottawa, ON K1Z 6T2",Ottawa,Ottawa Salus Corporation,613-729-0123,https://www.theroyal.ca/crisis-lines/
+"1365 Richmond Rd, 2nd Flr, Ottawa, ON K2B 6R7",Ottawa,Pinecrest-Queensway Community Health Centre - Pinecrest-Queensway Assertive Community Treatment Team,613-820-4922 ext 3369,https://www.theroyal.ca/crisis-lines/
+"1365 Richmond Rd, 2nd Flr, Ottawa, ON K2B 6R7",Ottawa,Pinecrest-Queensway Community Health Centre - Social Services,Administration 613-820-4922; Medical Clinic 613-820-2001,https://www.theroyal.ca/crisis-lines/
+"The Bronson Centre, 211 Bronson Ave, Suite 313, Ottawa, ON K1R 6H5",Ottawa,Psychiatric Survivors of Ottawa,613-567-4379,https://www.theroyal.ca/crisis-lines/
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://www.theroyal.ca/crisis-lines/
+"2121 Carling Ave, Ottawa, ON K2A 1H2",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Community Mental Health Program,613-722-6521,https://www.theroyal.ca/crisis-lines/
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Substance Use and Concurrent Disorders Program,613-722-6521 ext 6508,https://www.theroyal.ca/crisis-lines/
+"100 Craig Henry Dr, Suite 204, Ottawa, ON K2G 5W3",Ottawa,Upstream Ottawa Community Mental Health Support,613-248-3330,https://www.theroyal.ca/crisis-lines/
+"299 Montreal Rd, Ottawa, ON K1L 6B8",Ottawa,Wabano Centre for Aboriginal Health,Health Clinic: 613-748-5999 * Programs and Administration: 613-748-0657,https://www.theroyal.ca/crisis-lines/
+"1355 Bank St, 6th Flr, Ottawa, ON K1H 8K7",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Bank St,613-737-5115 * 613-755-2277,https://www.theroyal.ca/crisis-lines/
+"Jewish Family Services Ottawa, 2255 Carling Ave, Suite 301, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Carling Ave,613-722-2225 * 613-755-2277,https://www.theroyal.ca/crisis-lines/
+"Somerset West Community Health Centre, 55 Eccles St, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Eccles St,613-238-8210 * 613-755-2277,https://www.theroyal.ca/crisis-lines/
+"Nepean, Rideau and Osgoode Community Resource Centre, 1547 Merivale Rd, Unit 240, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Emerald Plaza,613-596-5626,https://www.theroyal.ca/crisis-lines/
+"CFS Ottawa, 310 Olmstead St, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Olmstead St,613-233-8478,https://www.theroyal.ca/crisis-lines/
+"312 Parkdale Ave, Ottawa, ON K2B 7Z5",Ottawa,Walk-in Counselling Clinic (The) - Ottawa - Parkdale Ave,613-725-3601,https://www.theroyal.ca/crisis-lines/
+"180 Dundas St W, Suite 2301, Toronto, ON M5G 1Z8",Toronto,Canadian Mental Health Association - Ontario Division,416-977-5580,https://www.theroyal.ca/crisis-lines/
+"1101 Nicholson Rd, Unit 5, Newmarket, ON L3Y 9C3",Newmarket,Canadian Mental Health Association - Ontario Division - BounceBack - Reclaim Your Health,1-866-345-0224,https://www.theroyal.ca/crisis-lines/
+"600 Sanatorium Rd, London, ON N6H 3W7",London,Child and Parent Resource Institute (CPRI),519-858-2774,https://www.theroyal.ca/crisis-lines/
+"P-142 Black Bear Soldier Support, 30 Simmonds Parade Square, Petawawa, ON K8H 2X3",Petawawa,Operational Stress Injury Social Support - Eastern Ontario Region,343-544-6468,https://www.theroyal.ca/crisis-lines/
+1661 Montreal Rd.,"Ottawa, Ontario","eMentalHealth.ca, CHEO",613-738-4891,https://www.camh.ca/en/health-info/crisis-resources
+"401 Smyth Road, Ottawa, ON K1H 8L1",Ottawa,CHEO (Children's Hospital of Eastern Ontario),613-737-7600,https://www.shn.ca/areas-of-care/mental-health-care/
+"401 Smyth Road, Ottawa, Ontario K1H 8L1",Ottawa,CHEO (Children's Hospital of Eastern Ontario) - Main Campus,613-737-7600,https://www.shn.ca/areas-of-care/mental-health-care/
+"1661 Montreal Road, Ottawa, Ontario K1J 9B7",Ottawa,CHEO (Children's Hospital of Eastern Ontario) - Montreal Road,613-738-6990,https://www.shn.ca/areas-of-care/mental-health-care/
+401 Smyth Road,Ottawa,"Division of Child and Youth Protection (CYP), CHEO",613-737-7600 x 2677,https://www.shn.ca/areas-of-care/mental-health-care/
+"1661 Montreal Road, K1J 9B7",Ottawa,Early Connections team (CHEO Outpatient Mental Health Clinic),(613) 738-6990,https://www.shn.ca/areas-of-care/mental-health-care/
+401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario (CHEO),613-737-7600,https://www.shn.ca/areas-of-care/mental-health-care/
+"605 Rossland Road East, Whitby, Ontario L1N 6A3",Whitby,"Durham Health Connection Line (Population Health Division, Regional Municipality of Durham)",311 / 905-668-7711,https://torontocentral.behaviouralsupportsontario.ca/services/display/156605/outpatient_services
+"Various locations, Ottawa, ON, Canada",Ottawa,The Walk In Counselling Clinic,(613) 722-2225,https://www.cheo.on.ca/en/resources-and-support/p6108.aspx
+1001 Queen Street West,Toronto,Centre for Addiction and Mental Health (CAMH),416 535-8501; Toll-free: 1 800 463-2338,https://www.southeasthealthline.ca/listservices.aspx?id=10233
+"100 Main St. East, Suite 220 (2nd floor), Commercial Entrance",Hamilton,Child & Adolescent Services,905-546-2424 ext. 3678,https://www.champlainhealthline.ca/listservices.aspx?id=10233
+107 Johnson Ave Top Floor,Thunder Bay,Adult and Teen Challenge of Central Canada - Northern Ontario - Women's Residential Drug and Alcohol Rehabilitation,1-888-822-9992,https://www.theroyal.ca/visiting-the-royal/
+221 Wilson St,Thunder Bay,Alpha Court Community Mental Health and Addiction Services,807-683-8200,https://www.theroyal.ca/visiting-the-royal/
+221 Wilson St,Thunder Bay,Alpha Court Community Mental Health and Addiction Services - Administration,807-683-8200,https://www.theroyal.ca/visiting-the-royal/
+221 Wilson St,Thunder Bay,Alpha Court Community Mental Health and Addiction Services - Walk-in Services,807-683-8200,https://www.theroyal.ca/visiting-the-royal/
+Zhaawanaabinesiik Health Centre 316 Animkii Dr,Northwest Angle 37 First Nation,Animakee Wa Zhing #37 First Nation - Zhaawanaabinesiik Health Services - National Native Alcohol and Drug Abuse Program,807-226-1077,https://www.theroyal.ca/visiting-the-royal/
+AON Administration Building,Anishinaabeg Of Naongashiing/Big Island First Nation,Anishinaabeg of Naongashiing - Band Office - National Native Alcohol and Drug Abuse Program,807-488-5602,https://www.theroyal.ca/visiting-the-royal/
+124 Rolland Rd Aroland Health Centre,Aroland First Nation,Aroland First Nation - Aroland Health Centre - National Native Alcohol and Drug Abuse Program,807-329-8787,https://www.theroyal.ca/visiting-the-royal/
+100 Main St,Atikokan,Atikokan General Hospital - Addictions and Gambling Program,807-597-2724,https://www.theroyal.ca/visiting-the-royal/
+Nursing Station,Bearskin Lake First Nation,Bearskin Lake First Nation - Nursing Station - National Native Alcohol and Drug Abuse Program,807-363-2582,https://www.theroyal.ca/visiting-the-royal/
+502 Spirit Bay Rd Rocky Bay Reserve,Biinjitiwaabik Zaaging Anishinaabek First Nation,Biinjitiwaabik Zaaging Anishinaabek - Rocky Bay First Nation Medical Centre - National Native Alcohol and Drug Abuse Program,807-885-3312,https://www.theroyal.ca/visiting-the-royal/
+Cat Lake Health Authority Lakeside Rd,Cat Lake First Nation,Cat Lake First Nation - Cat Lake Health Authority - National Native Alcohol and Drug Abuse Program,807-347-2553,https://www.theroyal.ca/visiting-the-royal/
+Cat Lake Wellness Centre,Cat Lake First Nation,Cat Lake First Nation - Cat Lake Wellness Centre,807-347-2027,https://www.theroyal.ca/visiting-the-royal/
+Youth Healing Centre,Cat Lake First Nation,Cat Lake First Nation - Oshkeemekana Residential Treatment Centre,807-347-2400,https://www.theroyal.ca/visiting-the-royal/
+1420 Eighth St N,Kenora,Changes Recovery Homes - Clarissa Manor,807-468-3667,https://www.theroyal.ca/visiting-the-royal/
+102 Government Rd,Keewatin,Changes Recovery Homes - Del-Art Manor,807-547-3444,https://www.theroyal.ca/visiting-the-royal/
+204 Frog Creek Rd,Fort Frances,Couchiching First Nation - National Native Alcohol and Drug Abuse Program,807-274-9452,https://www.theroyal.ca/visiting-the-royal/
+Deer Lake Health Centre,Deer Lake First Nation,Deer Lake First Nation - Deer Lake Health Centre - National Native Alcohol and Drug Abuse Program,807-775-2226,https://www.theroyal.ca/visiting-the-royal/
+200 Anemki Pl,Fort William First Nation,Dilico Anishinabek Family Care - Adult Residential Treatment Centre,807-623-7963,https://www.theroyal.ca/visiting-the-royal/
+200 Anemki Pl,Fort William First Nation,Dilico Anishinabek Family Care - Three C's Reintroduction Centre - Long Term Residential Recovery Facility,807-767-4172,https://www.theroyal.ca/visiting-the-royal/
+200 Anemki Pl,Fort William First Nation,Dilico Anishinabek Family Care - Thunder Bay - Anemki Pl - Main Office - Rapid Access Addictions Medicine Clinic,807-626-8478,https://www.theroyal.ca/visiting-the-royal/
+58 Goodall St,Dryden,Dryden Regional Health Centre - Mental Health and Addiction Services,807-223-6678,https://www.theroyal.ca/visiting-the-royal/
+Detox Centre,Eabametoong First Nation,Eabametoong First Nation - Detox Centre,807-242-1450,https://www.theroyal.ca/visiting-the-royal/
+Detox Centre,Eabametoong First Nation,Eabametoong First Nation - Detox Centre - Mental Health and Addictions Services,807-242-1151,https://www.theroyal.ca/visiting-the-royal/
+Detox Centre,Eabametoong First Nation,Eabametoong First Nation - Detox Centre - National Native Alcohol and Drug Abuse Program,807-242-1450,https://www.theroyal.ca/visiting-the-royal/
+122 Aspen Ave,Eagle Lake First Nation,Eagle Lake First Nation - Eagle Lake Health and Resource Centre - National Native Alcohol and Drug Abuse Program,807-755-1157,https://www.theroyal.ca/visiting-the-royal/
+Nursing Station 644 Niska Rd,Fort Severn First Nation,Fort Severn First Nation - Nursing Station - National Native Alcohol and Drug Abuse Program,807-478-2575,https://www.theroyal.ca/visiting-the-royal/
+140 Main St,"Lac La Croix First Nation, ON P9A 3N9",Gakijiwanong Anishinaabe Nation - Lac La Croix Health Centre - National Native Alcohol and Drug Abuse Program,807-485-2541,https://www.theroyal.ca/visiting-the-royal/
+Fire # 1107 Mishkiki Miikan Rd Hwy 11,"Fort Frances, ON P9A 3M9",Giishkaandago'Ikwe Health Services - Mino Ayaa Ta Win Healing Centre,807-274-2042 ext 6225,https://www.theroyal.ca/visiting-the-royal/
+203 Balsam Rd,"Ginoogaming First Nation, ON P0T 2A0",Ginoogaming First Nation - New Ginoogaming Health Centre - National Native Alcohol and Drug Abuse Program,807-876-2732,https://www.theroyal.ca/visiting-the-royal/
+Front St Gull Bay Health Clinic,"Gull Bay First Nation, ON P7B 6P9",Gull Bay First Nation - Gull Bay Health Clinic - National Native Alcohol and Drug Abuse Program,807-982-2104,https://www.theroyal.ca/visiting-the-royal/
+Isobel Pinesse Memorial Health Centre,"Iskatewizaagegan 39 First Nation, ON P0X 1E0",Iskatewizaagegan #39 Independent First Nation - Isobel Pinesse Memorial Health Centre - National Native Alcohol and Drug Abuse Program,807-733-3318,https://www.theroyal.ca/visiting-the-royal/
+153 Algoma St S Rear Suite,"Thunder Bay, ON P7B 3B7",Janzen's Pharmacy - Algoma Place - Opiate and Narcotic Addiction Management Program & Medical Cannabis,807-345-5020,https://www.theroyal.ca/visiting-the-royal/
+1700 Dease St,"Thunder Bay, ON P7J 1A5",Ka Na Chi Hih Specialized Solvent Abuse Treatment Centre,807-623-5577,https://www.theroyal.ca/visiting-the-royal/
+70 Wellington St,"Sioux Lookout, ON P7J 1A5",Ka Na Chi Hih Specialized Solvent Abuse Treatment Centre - Pelican High Peak Family Health Lodge - Solvent Abuse Treatment Centre,807-623-5577,https://www.theroyal.ca/visiting-the-royal/
+Emily Anderson Nursing Station,"Kasabonika Lake First Nation, ON P0V 1Y0",Kasabonika Lake First Nation - Emily Anderson Memorial Menoyawin Health Centre - National Native Alcohol and Drug Abuse Program,807-535-1189,https://www.theroyal.ca/visiting-the-royal/
+Emily Anderson Nursing Station,"Kasabonika Lake First Nation, ON P0V 1Y0",Kasabonika Lake First Nation - Emily Anderson Memorial Menoyawin Health Centre - Withdrawal Management,807-535-1189,https://www.theroyal.ca/visiting-the-royal/
+204 Band Office Rd,"Keewaywin First Nation, ON P0V 3G0",Keewaywin First Nation - Keewaywin Nursing Station - National Native Alcohol and Drug Abuse Program,807-771-1407,https://www.theroyal.ca/visiting-the-royal/
+Swanson Mekanak Memorial Health Centre Water St,"Kingfisher Lake First Nation, ON P0V 1Z0",Kingfisher Lake First Nation - Swanson Mekanak Memorial Health Centre - Suboxone Treatment Program,807-532-2065,https://www.theroyal.ca/visiting-the-royal/
+Minoyawin Health Services 1017 Nuhmaykoos Rd,"Kitchenuhmaykoosib Inninuwug/Big Trout Lake First Nation, ON P0V 1G0",Kitchenuhmaykoosib Inninuwug - Minoyawin Health Services - National Native Alcohol and Drug Abuse Program,807-537-2263,https://www.theroyal.ca/visiting-the-royal/
+Frenchman's Head Health Clinic 4 Lakeview Cres,"Lac Seul First Nation, ON P0V 1X0",Lac Seul First Nation - Frenchman's Head - Health Clinic - National Native Alcohol and Drug Abuse Program,807-582-3512,https://www.theroyal.ca/visiting-the-royal/
+Health Clinic,"Lac Seul First Nation, ON P0V 2A0",Lac Seul First Nation - Kejick Bay - Health Clinic - National Native Alcohol and Drug Abuse Program,807-582-9812,https://www.theroyal.ca/visiting-the-royal/
+6 Matheson St S,"Kenora, ON P9N 1T5",Lake of The Woods District Hospital - Morningstar Centre - Managed Alcohol Program,807-468-5749,https://www.theroyal.ca/visiting-the-royal/
+6 Matheson St S,"Kenora, ON P9N 1T5",Lake of The Woods District Hospital - Morningstar Centre - Medically Enhanced Coordinated Care for Addictions Program,807-468-5749,https://www.theroyal.ca/visiting-the-royal/
+6 Matheson St S,"Kenora, ON P9N 1T5",Lake of The Woods District Hospital - Morningstar Centre - Recovery Support Program,807-468-5749,https://www.theroyal.ca/visiting-the-royal/
+6 Matheson St S,"Kenora, ON P9N 1T5",Lake of The Woods District Hospital - Morningstar Centre - Withdrawal Management Clinic,807-468-5749,https://www.theroyal.ca/visiting-the-royal/
+21 Wolsley St St Joseph's Health Centre,"Kenora, ON P9N 3W7","Lake of The Woods District Hospital - St Joseph Health Centre, 2nd Fl - Adult and Youth Addictions Programs",807-467-3555,https://www.theroyal.ca/visiting-the-royal/
+21 Wolsley St St Joseph's Health Centre,"Kenora, ON P9N 3W7","Lake of The Woods District Hospital - St Joseph Health Centre, 2nd Fl - Back On Track",807-467-3555,https://www.theroyal.ca/visiting-the-royal/
+21 Wolsley St St Joseph's Health Centre,"Kenora, ON P9N 3W7","Lake of The Woods District Hospital - St Joseph Health Centre, 2nd Fl - Early Years Program",807-467-3555,https://www.theroyal.ca/visiting-the-royal/
+21 Wolsley St St Joseph's Health Centre,"Kenora, ON P9N 3W7","Lake of The Woods District Hospital - St Joseph Health Centre, 2nd Fl - Opiate Early Years Program",807-467-3555,https://www.theroyal.ca/visiting-the-royal/
+209B Otter St,"Long Lake 58 First Nation, ON P0T 2A0",Long Lake 58 First Nation - Long Lake #58 Health Centre - National Native Alcohol and Drug Abuse Program,807-876-4553,https://www.theroyal.ca/visiting-the-royal/
+59 Court St S,"Thunder Bay, ON P7B 2X1",Lucero Health Centre - Thunder Bay - Court St S - Methadone / Suboxone Maintenance,807-625-5400,https://www.theroyal.ca/visiting-the-royal/
+137 McKellar St N,"Thunder Bay, ON P7C 3Y9",Lucero Health Centre - Thunder Bay - McKellar St N - Methadone / Suboxone Maintenance,807-625-5400,https://www.theroyal.ca/visiting-the-royal/
+"Health & Social Building, Mishkeegogamang, ON P0V 2H0",Mishkeegogamang,Mishkeegogamang First Nation - Health and Social Building - National Native Alcohol and Drug Abuse Program,807-928-2529,https://www.theroyal.ca/visiting-the-royal/
+"509 Beach Rd Esiniiwab Health Centre, Mishkosiminiziibiing/Big Grassy First Nation, ON P0W 1J0",Mishkosiminiziibiing/Big Grassy First Nation,Mishkosiminiziibiing First Nation - Esiniiwab Health Centre - National Native Alcohol and Drug Abuse Program,807-488-5457,https://www.theroyal.ca/visiting-the-royal/
+"108 Main St, Mitaanjigamiing First Nation, ON P9A 3M9",Mitaanjigamiing First Nation,Mitaanjigamiing First Nation - Band Office - National Native Alcohol and Drug Awareness Program,807-274-1043,https://www.theroyal.ca/visiting-the-royal/
+"Nellie Fiddler Memorial Health Centre, Muskrat Dam First Nation, ON P0V 3B0",Muskrat Dam First Nation,Muskrat Dam First Nation - Nellie Fiddler Memorial Health Centre - National Native Alcohol and Drug Abuse Program,807-471-2567,https://www.theroyal.ca/visiting-the-royal/
+"Reverend Tommy Beardy Memorial Treatment Centre, Muskrat Dam First Nation, ON P0V 3B0",Muskrat Dam First Nation,Muskrat Dam First Nation - Reverend Tommy Beardy Memorial Treatment Centre - Residential Drug and Alcohol Treatment Program,807-471-2554,https://www.theroyal.ca/visiting-the-royal/
+"RR 1, La Vallée, ON P0W 1C0",La Vallée,Naicatchewenin First Nation - Band Office - National Native Alcohol and Drug Abuse Program,807-486-3407,https://www.theroyal.ca/visiting-the-royal/
+"326 2nd St S, Kenora, ON P9N 1G5",Kenora,Ne Chee Friendship Centre - Kenora - Main Office - Indigenous Community Justice Program,807-468-5440 Ext 245,https://www.theroyal.ca/visiting-the-royal/
+"Rachael Bessie Sakanee Memorial Health Centre, Neskantaga First Nation, ON P0T 1Z0",Neskantaga First Nation,Neskantaga First Nation - Rachael Bessie Sakanee Memorial Health Centre - National Native Alcohol and Drug Abuse Program,807-479-2570,https://www.theroyal.ca/visiting-the-royal/
+"Nibinamik Health Centre, Nibinamik First Nation, ON P0T 3B0",Nibinamik First Nation,Nibinamik First Nation - Nibinamik Health Centre - National Native Alcohol and Drug Abuse Program,807-593-2211,https://www.theroyal.ca/visiting-the-royal/
+"22 Band Office Rd, Ochiichagwe'babigo'ining First Nation, ON P9N 3W7",Ochiichagwe'babigo'ining First Nation,Niisaachewan Anishinaabe Nation - Band Office - National Native Alcohol and Drug Abuse Program,807-548-5876,https://www.theroyal.ca/visiting-the-royal/
+"125 Hogan Rd, Nipigon, ON P0T 2J0",Nipigon,Nipigon District Family Health Team - Suboxone Maintenance Program,807-887-5252 ext 2,https://www.theroyal.ca/visiting-the-royal/
+"52 King St, Sioux Lookout, ON P8T 1B8",Sioux Lookout,Nishnawbe Gamik Friendship Centre - Mental Health and Addictions Program,807-737-1903,https://www.theroyal.ca/visiting-the-royal/
+"25 Whitefish Lake Rd, North Caribou Lake First Nation, ON P0V 2Y0",North Caribou Lake First Nation,North Caribou Lake First Nation - Sena Memorial Nursing Station - National Native Alcohol and Drug Abuse Program,807-469-5211,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Thunder Bay, Unorganized, ON P0T 2J0","Thunder Bay, Unorganized","North of Superior Counselling Programs - Armstrong - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Thunder Bay, Unorganized, ON P0T 2J0","Thunder Bay, Unorganized",North of Superior Counselling Programs - Armstrong - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 1M0",Nipigon,"North of Superior Counselling Programs - Geraldton - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 1M0",Nipigon,North of Superior Counselling Programs - Geraldton - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 2A0",Nipigon,"North of Superior Counselling Programs - Longlac - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 2A0",Nipigon,North of Superior Counselling Programs - Longlac - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Manitouwadge, ON P0T 2E0",Manitouwadge,"North of Superior Counselling Programs - Manitouwadge - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Manitouwadge, ON P0T 2E0",Manitouwadge,North of Superior Counselling Programs - Manitouwadge - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 2E0",Nipigon,"North of Superior Counselling Programs - Marathon - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 2E0",Nipigon,North of Superior Counselling Programs - Marathon - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St, Nipigon, ON P0T 2J0",Nipigon,"North of Superior Counselling Programs - Nipigon - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St, Nipigon, ON P0T 2J0",Nipigon,North of Superior Counselling Programs - Nipigon - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 2S0",Nipigon,"North of Superior Counselling Programs - Schreiber - Child, Youth and Family Services",1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+"16 Front St Lower Level, Nipigon, ON P0T 2S0",Nipigon,North of Superior Counselling Programs - Schreiber - Substance Use Services for Youth,1-877-895-6677,https://www.theroyal.ca/visiting-the-royal/
+Airport Rd,North Spirit Lake First Nation,Stanley Rae Memorial Health Station,807-776-0065,https://www.theroyal.ca/visiting-the-royal/
+210 First St N,Kenora,Northwestern Health Unit - Kenora - Northwest Points Harm Reduction Program,807-468-3147,https://www.theroyal.ca/visiting-the-royal/
+99 Skinner Ave,Thunder Bay,NorWest Community Health Centres - Longlac Site - Rapid Access Addictions Medicine Clinic,807-876-2271,https://www.theroyal.ca/visiting-the-royal/
+409 George St,Thunder Bay,NorWest Community Health Centres - Thunder Bay - 409 George St - Homelessness and Addiction Recovery Treatment Hub (HART),807-695-5033,https://www.theroyal.ca/visiting-the-royal/
+525 Simpson St,Thunder Bay,NorWest Community Health Centres - Thunder Bay Office - Rapid Access Addictions Medicine Clinic,807-622-8235,https://www.theroyal.ca/visiting-the-royal/
+525 Simpson St,Thunder Bay,NorWest Community Health Centres - Thunder Bay Office - Rapid Access Addictions Medicine Clinic,807-626-8478,https://www.theroyal.ca/visiting-the-royal/
+389 Oliver Rd,Thunder Bay,Oak Medical Arts - Academy - Addiction Medicine,807-344-4540,https://www.theroyal.ca/visiting-the-royal/
+106 Cumberland St N,Thunder Bay,Oak Medical Arts - Waterfront - Addiction Medicine,807-767-7002,https://www.theroyal.ca/visiting-the-royal/
+McKenzie Portage Rd Health Office,Keewatin,Obashkaandagaang First Nation - Health Office - National Native Alcohol and Drug Abuse Program,807-543-2532,https://www.theroyal.ca/visiting-the-royal/
+Medical Building 701 Ketemiikana Dr,Ojibways Of Onigaming First Nation,Ojibways of Onigaming First Nation - Medical Building - National Native Alcohol and Drug Abuse Program,807-484-2339,https://www.theroyal.ca/visiting-the-royal/
+35 Whyte Ave Unit 2,Dryden,Ontario Addiction Treatment Centres - Northwestern Ontario - Dryden - Methadone Maintenance Program,807-223-5107,https://www.theroyal.ca/visiting-the-royal/
+404 Scott St,Fort Frances,Ontario Addiction Treatment Centres - Northwestern Ontario - Fort Frances - Methadone Maintenance Program,807-274-8305,https://www.theroyal.ca/visiting-the-royal/
+92 Nishnabe Miikena,Greenstone,Ontario Addiction Treatment Centres - Northwestern Ontario - Longlac - Methadone Maintenance Program,807-876-9666,https://www.theroyal.ca/visiting-the-royal/
+101 11th St,Pic Mobert First Nation,Ontario Addiction Treatment Centres - Northwestern Ontario - Pic Mobert - Methadone Maintenance Program,807-822-1100,https://www.theroyal.ca/visiting-the-royal/
+64 Front St,Sioux Lookout,Ontario Addiction Treatment Centres - Northwestern Ontario - Sioux Lookout - Methadone Maintenance Program,807-737-2200,https://www.theroyal.ca/visiting-the-royal/
+119 Cumberland St N,Thunder Bay,Ontario Addiction Treatment Centres - Northwestern Ontario - Thunder Bay - Cumberland St N - Methadone Maintenance Program,807-768-2910,https://www.theroyal.ca/visiting-the-royal/
+218 Frederica St W,Thunder Bay,Ontario Addiction Treatment Centres - Northwestern Ontario - Thunder Bay - Frederica St W - Methadone Maintenance Program,807-577-3540,https://www.theroyal.ca/visiting-the-royal/
+843 Red River Rd Unit 6,Thunder Bay,Ontario Addiction Treatment Centres - Northwestern Ontario - Thunder Bay - Red River Rd - Methadone Maintenance Program,807-768-4352,https://www.theroyal.ca/visiting-the-royal/
+125 Vickers St S,Thunder Bay,Ontario Addiction Treatment Centres - Northwestern Ontario - Thunder Bay - Vickers St S - Methadone Maintenance Program,807-624-2900,https://www.theroyal.ca/visiting-the-royal/
+Health Clinic 87 Central Road,Poplar Hill First Nation,Poplar Hill First Nation - Health Clinic - National Native Alcohol and Drug Abuse Program,807-772-8858,https://www.theroyal.ca/visiting-the-royal/
+6 Manitou Rapids Dr,Emo,Rainy River First Nations - Administration Centre - National Native Alcohol and Drug Awareness Program,807-482-2479,https://www.theroyal.ca/visiting-the-royal/
+146 Howey St Lower level,Red Lake,Red Lake Margaret Cochenour Memorial Hospital - Red Lake - Howey St - Addictions Services,807-727-1100,https://www.theroyal.ca/visiting-the-royal/
+146 Howey St Lower level,Red Lake,Red Lake Margaret Cochenour Memorial Hospital - Red Lake - Howey St - Case Management,807-727-1100,https://www.theroyal.ca/visiting-the-royal/
+146 Howey St Lower level,Red Lake,Red Lake Margaret Cochenour Memorial Hospital - Red Lake - Howey St - Community Counselling and Addictions Services,807-727-1100,https://www.theroyal.ca/visiting-the-royal/
+110 Victoria Ave,Fort Frances,Riverside Health Care - Fort Frances - La Verendrye Hospital - Riverside Community Counselling Services,807-274-4807 Ext 1,https://www.theroyal.ca/visiting-the-royal/
+206 Victoria Ave,Fort Frances,Riverside Health Care - Fort Frances - Riverside Community Health Services - Rapid Access Addiction Medicine Clinic,807-274-7373,https://www.theroyal.ca/visiting-the-royal/
+115 Fourth St,Rainy River,Riverside Health Care - Rainy River Health Centre - Riverside Community Counselling Services,807-274-4807 Ext 3,https://www.theroyal.ca/visiting-the-royal/
+Band Office 48 Airport Rd,Sachigo Lake First Nation,Sachigo Lake First Nation - Band Office - National Native Alcohol and Drug Abuse Program,807-595-2565,https://www.theroyal.ca/visiting-the-royal/
+"Sandy Lake First Nation, ON P0V 1V0",Sandy Lake First Nation,Sandy Lake Health Authority,807-774-3461,https://www.theroyal.ca/visiting-the-royal/
+"56 Riverside Rd E, Seine River First Nation, ON P0W 1H0",Seine River First Nation,Seine River First Nation - National Native Alcohol and Drug Abuse Program,807-599-2224,https://www.theroyal.ca/visiting-the-royal/
+"Medical Centre, Shoal Lake 40 First Nation, ON P0X 1E0",Shoal Lake 40 First Nation,Shoal Lake 40 First Nation - Shoal Lake Medical Centre - National Native Alcohol and Drug Abuse Program,807-733-3577,https://www.theroyal.ca/visiting-the-royal/
+"54 Front St, Sioux Lookout, ON P8T 1B8",Sioux Lookout,Sioux Lookout First Nations Health Authority - Approaches to Community Wellbeing,807-737-5189,https://www.theroyal.ca/visiting-the-royal/
+"54 Front St, Sioux Lookout, ON P8T 1B8",Sioux Lookout,Sioux Lookout First Nations Health Authority - Needle Distribution Service,807-737-5189,https://www.theroyal.ca/visiting-the-royal/
+"54 Front St, Sioux Lookout, ON P8T 1B8",Sioux Lookout,Sioux Lookout First Nations Health Authority - Regional Wellness Response Program,807-737-5189,https://www.theroyal.ca/visiting-the-royal/
+"1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4",Sioux Lookout,Sioux Lookout Meno Ya Win Health Centre - Mental Health and Addictions Program,807-737-1275,https://www.theroyal.ca/visiting-the-royal/
+"48 Lakeview Dr Slate Falls Clinic, Slate Falls First Nation, ON P0V 3C0",Slate Falls First Nation,Slate Falls Nation - Slate Falls Clinic - National Native Alcohol and Drug Abuse Program,807-737-5757,https://www.theroyal.ca/visiting-the-royal/
+"35 Algoma St N, Thunder Bay, ON P7B 2H1",Thunder Bay,St Joseph's Care Group - Mino Ginawenjigewin - Safe Sobering and Withdrawal Management - Withdrawal Management,807-623-6515,https://www.theroyal.ca/visiting-the-royal/
+"35 Algoma St N, Thunder Bay, ON P7C 0A6",Thunder Bay,St Joseph's Care Group - Sister Margaret Smith Centre - Adult Addictions Program,807-684-5100,https://www.theroyal.ca/visiting-the-royal/
+"35 Algoma St N, Thunder Bay, ON P7C 0A6",Thunder Bay,St Joseph's Care Group - Sister Margaret Smith Centre - Youth Addictions,807-684-5100,https://www.theroyal.ca/visiting-the-royal/
+"35 Algoma St N, Thunder Bay, ON P7C 5P7",Thunder Bay,St Joseph's Care Group - St Joseph's Health Centre North - Comprehensive Community Support,807-624-3400,https://www.theroyal.ca/visiting-the-royal/
+"69 Court St N, Thunder Bay P7A 4T7",Thunder Bay,Thunder Bay Addiction Centres - Thunder Bay Addiction Centres - North - Methadone / Suboxone Maintenance,807-346-8844 Ext 1,https://www.theroyal.ca/visiting-the-royal/
+"140 Syndicate Ave S, Thunder Bay P7E 1E6",Thunder Bay,Thunder Bay Addiction Centres - Thunder Bay Addiction Centres - South - Methadone / Suboxone Maintenance,807-623-8844 ext 1,https://www.theroyal.ca/visiting-the-royal/
+"544 Winnipeg Ave, Thunder Bay, ON P7B 3S7",Thunder Bay,Thunder Bay Counselling - Back on Track,1-888-204-2221,https://www.theroyal.ca/visiting-the-royal/
+"544 Winnipeg Ave, Thunder Bay, ON P7B 3S7",Thunder Bay,Thunder Bay Counselling - Substance Use Services,807-684-1880,https://www.theroyal.ca/visiting-the-royal/
+"401 Cumberland St N, Thunder Bay, ON P7A 4P7",Thunder Bay,Thunder Bay Indigenous Friendship Centre - Aboriginal Alcohol / Drug Worker Program,807-345-5840 Ext 9063,https://www.theroyal.ca/visiting-the-royal/
+"427 Mowat Ave, Fort Frances, ON P9A 3N1",Fort Frances,United Native Friendship Centre - Indigenous Drug and Alcohol Program,807-274-8541,https://www.theroyal.ca/visiting-the-royal/
+"283 Lisgar St, Thunder Bay, ON P7B 6G6",Thunder Bay,UTURN Thunder Bay - Children's Centre Thunder Bay,807-343-5000,https://www.theroyal.ca/visiting-the-royal/
+"301 Lillie St N, Thunder Bay, ON P7C 0A6",Thunder Bay,UTURN Thunder Bay - Sister Margaret Smith Centre,807-684-5100,https://www.theroyal.ca/visiting-the-royal/
+"544 Winnipeg Ave, Thunder Bay, ON P7B 3S7",Thunder Bay,UTURN Thunder Bay - Thunder Bay Counselling,807-684-1880,https://www.theroyal.ca/visiting-the-royal/
+"Health Centre, Wabaseemoong Independent Nations, ON P0X 1P0",Wabaseemoong Independent Nations,Wabaseemoong Independent Nation - Health Centre - National Native Alcohol and Drug Abuse Program,807-927-2440,https://www.theroyal.ca/visiting-the-royal/
+"Health Office 131 Main St, Wabauskang 21, Wabauskang First Nation, ON P0V 1T0",Wabauskang First Nation,Wabauskang First Nation - Wabauskang Health Office - National Native Alcohol and Drug Abuse Program,807-529-6329,https://www.theroyal.ca/visiting-the-royal/
+"31 Main St, Wabigoon Lake First Nation, ON P8N 2Y4",Wabigoon Lake First Nation,Wabigoon Lake Ojibway Nation - Health Centre - National Native Alcohol and Drug Abuse Program,807-938-6464,https://www.theroyal.ca/visiting-the-royal/
+"Nursing Station, Wapekeka First Nation, ON P0V 1B0",Wapekeka First Nation,Wapekeka First Nation - Nursing Station - National Native Alcohol and Drug Abuse Program,807-537-2320,https://www.theroyal.ca/visiting-the-royal/
+"Golf Course Rd, Wauzhushk Onigum/Rat Portage First Nation, ON P9N 3X8",Wauzhushk Onigum/Rat Portage First Nation,Wauzhushk Onigum Nation - Wauzhushk Onigum Medical Building - National Native Alcohol and Drug Abuse Program,807-548-6340,https://www.theroyal.ca/visiting-the-royal/
+"Nursing Station, Webequie First Nation, ON P0T 3A0",Webequie First Nation,Webequie First Nation - Nursing Station - National Native Alcohol and Drug Abuse Program,807-353-7241,https://www.theroyal.ca/visiting-the-royal/
+"125 Vickers St S, Thunder Bay, ON P7E 1J2",Thunder Bay,White Cedar Health Care Centre - Thunder Bay Office,807-475-4357,https://www.theroyal.ca/visiting-the-royal/
+"Doug's Dr, Whitesand First Nation, ON P0T 1A0",Whitesand First Nation,Whitesand First Nation - Health Office - National Native Alcohol and Drug Abuse Program,807-583-2671,https://www.theroyal.ca/visiting-the-royal/
+"Main Rd, Wunnumin Lake First Nation, ON P0V 2Z0",Wunnumin Lake First Nation,Wanapetum Memorial Health Centre,807-442-2564,https://www.theroyal.ca/visiting-the-royal/
+"8173 Trafalgar Rd, Hornby, ON L0P 1E0",Hornby,Hope Place Centres - Halton Hills - Trafalgar Rd - Women's Bed-Based Addiction Treatment Program,905-875-3214,https://www.theroyal.ca/visiting-the-royal/
+"5310 Hwy 101 W, Timmins, ON P7J 1A5",Timmins,Ka Na Chi Hih Specialized Solvent Abuse Treatment Centre - Wakenagun Youth Healing Lodge - Solvent Abuse Treatment Centre,807-623-5577,https://www.theroyal.ca/visiting-the-royal/
+310 Larch St,Sudbury,310 Larch St Clinic,(705) 669-1111,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+26 James St,Parry Sound,Addiction Outreach,(705) 645-2262,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+144 Causley St,Blind River,Anishnabie Naadmaagi Gamig Substance Abuse Treatment Centre,(705) 356-1681,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+1005 Lorne St,Sudbury,Centre For Addiction And Mental Health,(705) 675-1818,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+6033 King St,Porcupine,Centre Jubilee Centre,(705) 235-5109,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+301 E Spruce St,Sault Ste Marie,Great Lakes Centers New Hope Programs For Men,(906) 635-5542,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+44 Riverside Dr,"Kapuskasing, ON",Kap Laser Therapy,(705) 335-6966,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+813 George St,"Hearst, ON",Maison Renaissance,(705) 362-4289,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+17 Meredith St E,"Little Current, ON",Manitoulin Community Withdrawal Management Service,(705) 368-0058,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+405 Ramsey Rd,"Sudbury, ON",Monarch Recovery Services,(705) 673-2413,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+2655 Ashmun St,"Sault Ste Marie, ON",New Hope House For Women,(906) 632-2522,https://www.centraleasthealthline.ca/displayService.aspx?id=211580
+"175 Brentcliffe Road, M4G 0C5, Canada",Toronto,EHN Bellwood Toronto,1-866-927-1585,https://211ontario.ca/results/?searchLocation=Ottawa&searchTerms=&latitude=45.4215296&longitude=-75.6971931&topicPath=127
+"2225 Lansdowne St West, K9J 0G5, Canada",Peterborough,EHN Guardians Gateway,1-866-938-6138,https://211ontario.ca/results/?searchLocation=Ottawa&searchTerms=&latitude=45.4215296&longitude=-75.6971931&topicPath=127
+"175 Brentcliffe Road, Toronto, ON, M4G 0C5, Canada",Toronto,EHN Bellwood Toronto,1-866-927-1585,https://lignesantechamplain.ca/displayService.aspx?id=211580
+"2225 Lansdowne St West, Peterborough, ON K9J 0G5, Canada",Peterborough,EHN Guardians Gateway,1-866-938-6138,https://lignesantechamplain.ca/displayService.aspx?id=211580
+"175 Brentcliffe Road, Toronto, ON M4G 0C5, Canada",Toronto,EHN Bellwood Toronto,1-866-927-1585,https://lignesantechamplain.ca/displayService.aspx?id=211580
+"175 Brentcliffe Road, Toronto, ON M4G 0C5, Canada",Toronto,EHN Bellwood Toronto,1-866-927-1585,https://lignesantechamplain.ca/displayService.aspx?id=211580
+"605 Rossland Road East, L1N 6A3",Whitby,Family Services Durham (Durham Regional Headquarters - main office),311 / 1-888-721-0622,https://primarycare.ementalhealth.ca/index.php?m=record&fID=5&ID=9270
+"605 Rossland Road East, L1N 6A3",Whitby,"Family Services, The Regional Municipality of Durham",905-668-7711,https://primarycare.ementalhealth.ca/index.php?m=record&fID=5&ID=9270
+1030 Ouellette Ave.,Windsor,Mental Health and Addictions Urgent Crisis Centre (MHAUCC),519-973-4435,https://canadiancentreforaddictions.org/
+1453 Prince Rd.,Windsor,Hôtel-Dieu Grace Healthcare,519-257-5111,https://canadiancentreforaddictions.org/
+"200 Elizabeth Street, M5G 2C4",Toronto,Toronto General Hospital (TGH),416-340-3111,https://www.williamoslerhs.ca/en/areas-of-care/addictions-services-for-adults.aspx
+4001 Leslie Street,Toronto,North York General Hospital,416-756-6642,https://www.rvh.on.ca/areas-of-care/mental-health-and-addictions/adult-addiction-services/
+"2 Champagne Drive, Unit E8",Toronto,North York General Hospital - Mental Health and Addictions Clinic,416-756-6642,https://www.rvh.on.ca/areas-of-care/mental-health-and-addictions/adult-addiction-services/
+10 Buchan Court,Toronto,Phillips House (Child and Adolescent Mental Health),416-756-6933,https://www.rvh.on.ca/areas-of-care/mental-health-and-addictions/adult-addiction-services/
+401 Smyth Road,"Ottawa, ON",Children's Hospital of Eastern Ontario - Inpatient Mental Health Program,613-737-7600,http://www.ontario.ca/page/mental-health-services
+401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario (CHEO),613-737-7600,http://www.ontario.ca/page/mental-health-services
+"340 College Street, Suite 500",Toronto,Access Alliance Multicultural Health and Community Services,416-324-8677,https://cmhatv.ca/programs-services/wms/
+"761 Jane Street, 2nd Floor",Toronto,Access Alliance Multicultural Health and Community Services – Access Point on Jane,416-760-8677,https://cmhatv.ca/programs-services/wms/
+3079 Danforth Avenue,Toronto,Access Alliance Multicultural Health and Community Services – Access Point on Danforth,416-693-8677,https://cmhatv.ca/programs-services/wms/
+225 Queen Street East,Toronto,Anishnawbe Health Toronto,416-360-0486,https://cmhatv.ca/programs-services/wms/
+179 Gerrard Street East,Toronto,Anishnawbe Health Toronto – Gerrard,416-920-2605,https://cmhatv.ca/programs-services/wms/
+213 Carlton Street,Toronto,Anishnawbe Health Toronto – Carlton Street,416-657-0379,https://cmhatv.ca/programs-services/wms/
+490 Huronia Road,Barrie,Barrie Community Health Centre,705-734-9690,https://cmhatv.ca/programs-services/wms/
+161 Bridge Street West,Belleville,Belleville and Quinte West Community Health Centre,613-962-0000,https://cmhatv.ca/programs-services/wms/
+"50 Meadow Drive, Tyendinaga, Mohawk Territory",Deseronto,Belleville and Quinte West Community Health Centre – Mohawks of The Bay of Quinte,613-967-3603,https://cmhatv.ca/programs-services/wms/
+69 Catherine Street,Trenton,Belleville and Quinte West Community Health Centre – Trenton,613-965-0698,https://cmhatv.ca/programs-services/wms/
+"1 Yorkgate Boulevard, Suite 202",Toronto,Black Creek Community Health Centre (Yorkgate Mall),416-246-2388,https://cmhatv.ca/programs-services/wms/
+1485 Garrison Road,Fort Erie,Bridges Community Health Centre,905-871-7621,https://cmhatv.ca/programs-services/wms/
+380 Elm Street,Port Colborne,Bridges Community Health Centre – Port Colborne,289-479-5017,https://cmhatv.ca/programs-services/wms/
+"720 Simcoe Street, P.O. Box 279",Beaverton,Brock Community Health Centre,705-432-3322,https://cmhatv.ca/programs-services/wms/
+"64 Cameron Street East, P.O. Box 69",Cannington,Brock Community Health Centre – Primary Health Care,705-432-3388,https://cmhatv.ca/programs-services/wms/
+115 Grassmere Avenue,Oshawa,Durham Community Health Centre - Oshawa South,905-723-0036,https://cmhatv.ca/programs-services/wms/
+1320 Airport Boulevard,Oshawa,Durham Community Health Centre - Oshawa North,905-743-9960,https://cmhatv.ca/programs-services/wms/
+1450 Kingston Road,Pickering,Durham Community Health Centre - Pickering,905-420-0333,https://cmhatv.ca/programs-services/wms/
+290 Coldrey Avenue,Ottawa,Carlington Community Health Centre,613-722-4000,https://cmhatv.ca/programs-services/wms/
+359 Talbot Street,St. Thomas,Central Community Health Centre,519-633-7989,https://cmhatv.ca/programs-services/wms/
+168 Bathurst Street,Toronto,Central Toronto Community Health Centres – Queen West Site,416-703-8482,https://cmhatv.ca/programs-services/wms/
+27 Kolb Avenue,Kapuskasing,Centre de santé communautaire de Kapuskasing et région,705-337-1201,https://cmhatv.ca/programs-services/wms/
+"841 Sydney Street, Suite 6",Cornwall,Centre de santé communautaire de l'Estrie,613-937-2683,https://cmhatv.ca/programs-services/wms/
+5 Main Street South,Alexandria,Centre de santé communautaire de l'Estrie – Alexandria,613-525-5544,https://cmhatv.ca/programs-services/wms/
+2081 Laval Street,Bourget,Centre de santé communautaire de l'Estrie – Bourget,613-487-1802,https://cmhatv.ca/programs-services/wms/
+1 Nation Street,Crysler,Centre de santé communautaire de l'Estrie – Crysler,613-987-2683,https://cmhatv.ca/programs-services/wms/
+"649 Notre-Dame Street, Suite 203",Embrun,Centre de santé communautaire de l'Estrie – Embrun,613-443-3888,https://cmhatv.ca/programs-services/wms/
+"1500 Riverside Drive, Unit 58",Timmins,Centre de santé communautaire de Timmins,705-269-2728,https://cmhatv.ca/programs-services/wms/
+26 Main Street,Chelmsford,Centre de santé communautaire du Grand Sudbury – Chelmsford,705-855-8084,https://cmhatv.ca/programs-services/wms/
+Box 21 Low Street,Gogama,Centre de santé communautaire du Grand Sudbury – Centre de soins infirmiers de Gogama,705-894-2005,https://cmhatv.ca/programs-services/wms/
+344 Elgin Street,Sudbury,Centre de santé communautaire du Grand Sudbury – Clinique du Coin,705-673-3721,https://cmhatv.ca/programs-services/wms/
+668 Emily Street,Hanmer,Centre de santé communautaire du Grand Sudbury – Vallsantée-Est,705-969-5560,https://cmhatv.ca/programs-services/wms/
+"19, chemin Frood",Sudbury,Centre de santé communautaire de Sudbury,705-670-2166,https://cmhatv.ca/programs-services/wms/
+"20 May Street South, P.O. Box 38",New Liskeard,Centre de santé communautaire du Témiskaming,705-647-5775,https://cmhatv.ca/programs-services/wms/
+19th Street,Earlton,Centre de santé communautaire du Témiskaming – Earlton,705-563-8110,https://cmhatv.ca/programs-services/wms/
+"P.O. Box 40, 22 Water Street",Kirkland Lake,Centre de santé communautaire du Témiskaming – Kirkland Lake,705-567-1414,https://cmhatv.ca/programs-services/wms/
+15 Godfrey,Larder Lake,Centre de santé communautaire du Témiskaming – Larder Lake,705-643-2442,https://cmhatv.ca/programs-services/wms/
+61 Connel Street,Virginiatown,Centre de santé communautaire du Témiskaming – Virginiatown,705-634-2223,https://cmhatv.ca/programs-services/wms/
+"555 rue Richmond Ouest, Suite 303",Toronto,Centre Francophone de Toronto,416-922-2672,https://cmhatv.ca/programs-services/wms/
+420 Cooper Street,Ottawa,Centretown Community Health Centre,613-233-4443,https://cmhatv.ca/programs-services/wms/
+150 Richmond Street,Chatham,Chatham-Kent Community Health Centres,519-397-5455,https://cmhatv.ca/programs-services/wms/
+14 Notre Dame Street,Pain Court,Chatham-Kent Community Health Centres – Pain Court,519-397-5455,https://cmhatv.ca/programs-services/wms/
+808 Dufferin Avenue,Wallaceburg,Chatham-Kent Community Health Centres – Wallaceburg,519-397-5455,https://cmhatv.ca/programs-services/wms/
+"785 Tecumseh Road, Unit 2",Walpole Island,Chatham-Kent Community Health Centres – Walpole Island,519-397-5455,https://cmhatv.ca/programs-services/wms/
+287 Bayshore Drive,Midland,CHIGAMIK Community Health Centre,705-527-4154,https://cmhatv.ca/programs-services/wms/
+1400 Windsor Avenue,Windsor,CMHA Health Centre,519-971-0116,https://cmhatv.ca/programs-services/wms/
+152 Angeline Street North,Lindsay,Community Care City of Kawartha Lakes,705-324-7323,https://cmhatv.ca/programs-services/wms/
+438 Hughson Street North,Hamilton,Compass Community Health Centre,905-523-6611 ext. 2000,https://cmhatv.ca/programs-services/wms/
+20 Robertson Drive,Beachburg,ConnectWell Community Health – Beachburg Site,613-582-3685,https://cmhatv.ca/programs-services/wms/
+207 Robertson Drive,Lanark,ConnectWell Community Health – Lanark Site,613-259-2182,https://cmhatv.ca/programs-services/wms/
+"4319 Cove Road at Hwy 15, P.O. Box 58, K0G 1V0",Portland,Country Roads Community Health Centre,613-272-3302 Ext 242,https://cmhatv.ca/programs-services/wms/
+"79 Bedford Street, K0G 1X0",Westport,Country Roads Community Health Centre – Westport,613-273-3302 Ext 242,https://cmhatv.ca/programs-services/wms/
+"1900 Davenport Road, M6N 1B7",Toronto,Davenport-Perth Neighbourhood and Community Health Centre,416-656-8025,https://cmhatv.ca/programs-services/wms/
+"1619 Queen Street East, M4L 1G4",Toronto,East End Community Health Centre,416-778-5858,https://cmhatv.ca/programs-services/wms/
+"2555 Dixie Road, Unit 7, L4Y 4C4",Mississauga,East Mississauga Community Health Centre (Satellite of Lamp CHC),905-602-4082,https://cmhatv.ca/programs-services/wms/
+"10 Gateway Boulevard, Toronto (Don Mills), M3C 3A1",Toronto,Flemingdon Health Centre,416-429-4991,https://cmhatv.ca/programs-services/wms/
+"5 Fairview Mall Drive, Suite 359, M2J 2Z1",Toronto,Flemingdon Health Centre - Fairview Community Health,416-640-5298,https://cmhatv.ca/programs-services/wms/
+"41 McClellan Street, Post Box 99, K0K 3J0",Tweed,Gateway Community Health Centre,613-478-1211,https://cmhatv.ca/programs-services/wms/
+"69 Main Street East, P.O. Box 1269, N0M 1T0",Grand Bend,Grand Bend Area Community Health Centre Inc.,519-238-2362,https://cmhatv.ca/programs-services/wms/
+"122 King Street, Box 159, N0M 1X0",Hensall,Grand Bend Area Community Health Centre – Hensall,519-262-3140,https://cmhatv.ca/programs-services/wms/
+"99 Victoria Street, Box 9, N0M 2N0",Thedford,Grand Bend Area Community Health Centre – Thedford,519-296-0117,https://cmhatv.ca/programs-services/wms/
+"363 Colborne Street, N3S 3N2",Brantford,Grand River Community Health Centre,519-754-0777,https://cmhatv.ca/programs-services/wms/
+"176 Wyndham Street North, N1H 8N9",Guelph,Guelph Community Health Centre,519-821-6638,https://cmhatv.ca/programs-services/wms/
+"20 Shelldale Crescent, N1H 1C8",Guelph,Guelph Community Health Centre – Shelldale Satellite Clinic,519-821-6638,https://cmhatv.ca/programs-services/wms/
+"1320 Barton Street East, L8H 2W1",Hamilton,Hamilton-Niagara Community Health Centre – Hamilton Site,905-528-0163,https://cmhatv.ca/programs-services/wms/
+"810 East Main Street, L3B 3Y4",Welland,Hamilton-Niagara Community Health Centre – Welland Site,905-734-1141,https://cmhatv.ca/programs-services/wms/
+"181 Main Street West, L8P 4Y4",Hamilton,Hamilton Urban Core Community Health Centre,905-522-3433,https://cmhatv.ca/programs-services/wms/
+"263 Weller Avenue, Unit 4, K7K 2V4",Kingston,Kingston Community Health Centres,613-542-2949,https://cmhatv.ca/programs-services/wms/
+"26 Dundas Street West, K7R 1Z4",Napanee,Kingston Community Health Centres – Greater Napanee Health Home,613-354-8937,https://cmhatv.ca/programs-services/wms/
+"115 Barrack Street, K7K 1G2",Kingston,Kingston Community Health Centres – Street Health Centre,613-549-1440,https://cmhatv.ca/programs-services/wms/
+"791 Princess Street, Suite 201, K7L 1E9",Kingston,Kingston Community Health Centres – Midtown Kingston Health Home,613-542-6793,https://cmhatv.ca/programs-services/wms/
+"44 Francis Street South, N2G 2A2",Kitchener,Kitchener Downtown Community Health Centre,519-745-4404,https://cmhatv.ca/programs-services/wms/
+"185 – 5th Street, M8V 2Z5",Etobicoke,Lakeshore Area Multi-Service Project (LAMP),416-252-6471,https://cmhatv.ca/programs-services/wms/
+"1145 Concession Road, N3H 4L5",Cambridge,Langs,519-653-1470,https://cmhatv.ca/programs-services/wms/
+"2958 Greenfield Road, N0B 1E0",Ayr,Langs – North Dumfries Community Health Centre Satellite,519-632-1229,https://cmhatv.ca/programs-services/wms/
+"1700 Dundas Street, Unit 1, N5W 3C9",London,London Intercommunity Health Centre – Argyle Site,519-660-5853,https://cmhatv.ca/programs-services/wms/
+"659 Dundas Street East, N5W 2Z1",London,London InterCommunity Health Centre - Dundas Site,519-660-0874,https://cmhatv.ca/programs-services/wms/
+"Huron Heights Plaza, 1355 Huron Street, Unit 7, N5V 1R9",London,London Intercommunity Health Centre – Huron Site,519-659-6399,https://cmhatv.ca/programs-services/wms/
+"1100 Main Street, P.O. Box 450, P0T 1T0",Ignace,Mary Berglund Community Health Centre,807-934-2251,https://cmhatv.ca/programs-services/wms/
+"130 Wilson Avenue, P4N 2S9",Timmins,Misiway Milopemahtesewin Community Health Centre,705-264-2200,https://cmhatv.ca/programs-services/wms/
+"4790 Victoria Avenue, L2E 4C2",Niagara Falls,Niagara Falls Community Health Centre,905-356-4222,https://cmhatv.ca/programs-services/wms/
+"99 Toronto Road, L1A 3S4",Port Hope,Northumberland Community Health Centre,905-885-2626,https://cmhatv.ca/programs-services/wms/
+"P.O. Box 1120, 3-59 King Street West, N0N 1J0",Forest,North Lambton Community Health Centre,519-786-4545,https://cmhatv.ca/programs-services/wms/
+"6275 Indian Lane, RR #2, N0N 1J1",Kettle Point,North Lambton Community Health Centre – Kettle Point,519-786-7200,https://cmhatv.ca/programs-services/wms/
+"429 Exmouth Street, Suite 100, N7T 5P1",Sarnia,North Lambton Community Health Centre – West Lambton Community Health Centre,519-344-3017,https://cmhatv.ca/programs-services/wms/
+"525 Simpson Street, P7C 3J6",Thunder Bay,NorWest Community Health Centres,807-622-8235,https://cmhatv.ca/programs-services/wms/
+"P.O. Box 104, P0T 1A0",Armstrong,Norwest Community Health Centres – Armstrong,807-583-1145,https://cmhatv.ca/programs-services/wms/
+"99 Skinner Avenue, P.O. Box 910, P0T 2A0",Longlac,Norwest Community Health Centres – Longlac,807-876-2271,https://cmhatv.ca/programs-services/wms/
+"96 Tillson Avenue, N4G 3A1",Tillsonburg,Oxford County Community Health Centre – Tillsonburg Point of Access Livingston Centre,519-842-9008,https://cmhatv.ca/programs-services/wms/
+"1229 Queen Street West, M6K 1L2",Toronto,Parkdale Community Health Centre,416-537-2455,https://cmhatv.ca/programs-services/wms/
+"27 Roncesvalles Avenue, Suite 301, M6R 3B2",Toronto,Parkdale Community Health Centre – 27 Roncesvalles Avenue,416-537-8222,https://cmhatv.ca/programs-services/wms/
+"4100 Strandherd Drive, Suite 201, K2J 0V2",Nepean,Pinecrest-Queensway Community Health Centre – South Nepean Community Health Centre,613-288-2820,https://cmhatv.ca/programs-services/wms/
+"203-1365 Richmond Road, K2B 6R7",Ottawa,Pinecrest-Queensway Health and Community Services,613-820-2001,https://cmhatv.ca/programs-services/wms/
+"36B Prince Arthur Avenue, M5R 1A9",Toronto,Planned Parenthood of Toronto,416-961-0113,https://cmhatv.ca/programs-services/wms/
+"145 Queenston Street, Suite 100, L2R 2Z9",St. Catharines,Quest Community Health Centre,905-688-2558,https://cmhatv.ca/programs-services/wms/
+"49 Mill Street, K0J 2A0",Killaloe,Rainbow Valley Community Health Centre,613-757-0004,https://cmhatv.ca/programs-services/wms/
+"465 Dundas Street East, M5A 2B2",Toronto,Regent Park Community Health Centre,416-364-2261,https://cmhatv.ca/programs-services/wms/
+"8 Taber Road, M9W 3A4",Etobicoke,Rexdale Community Health Centre,416-744-0066,https://cmhatv.ca/programs-services/wms/
+"301-222 Dixon Road, M9P 3S5",Etobicoke,Rexdale Community Health Centre Satellite,416-744-0066,https://cmhatv.ca/programs-services/wms/
+"609 The East Mall, Unit 32, M9B 4A4",Etobicoke,Rexdale Community Health Centre – Burnhamthorpe 427 Community Centre,416-621-2515,https://cmhatv.ca/programs-services/wms/
+"21 Panorama Court, Unit 15, M9V 4E3",Toronto,Rexdale Community Health Centre – Jamestown Hub,647-744-0066,https://cmhatv.ca/programs-services/wms/
+"354 Read Street, P.O. Box 550, K0G 1N0",Merrickville,Rideau Community Health Services,613-269-3400,https://cmhatv.ca/programs-services/wms/
+"2 Gould Street, Unit 118, Smiths Falls, ON K7A 2S5",Smiths Falls,Rideau Community Health Services – Smith Falls CHC,613-283-1952,https://cmhatv.ca/programs-services/wms/
+"221 Nelson Street, Ottawa, ON K1N 1C7",Ottawa,Sandy Hill Community Health Centre,613-789-1500,https://cmhatv.ca/programs-services/wms/
+"629 Markham Road, Unit 2, Scarborough, ON M1H 2A4",Scarborough,Scarborough Centre for Healthy Communities,416-847-4101,https://cmhatv.ca/programs-services/wms/
+"2660 Eglinton Avenue East, Scarborough, ON M1K 2S3",Scarborough,Scarborough Centre for Healthy Communities – The Hub Mid-Scarborough,416-640-7391,https://cmhatv.ca/programs-services/wms/
+"4002 Sheppard Avenue East, Suite 401, Scarborough, ON M1S 4R5",Scarborough,Scarborough Centre for Healthy Communities – Sheppard Avenue East,416-297-7490,https://cmhatv.ca/programs-services/wms/
+"353 Pitt Street, Cornwall, ON K6J 3R1",Cornwall,Seaway Valley Community Health Centre,613-936-0306,https://cmhatv.ca/programs-services/wms/
+"55 Eccles Street, Ottawa, ON K1R 6S3",Ottawa,Somerset West Community Health Centre,613-238-8210,https://cmhatv.ca/programs-services/wms/
+"30 Rosemount Avenue, Ottawa, ON K1Y 1P4",Ottawa,Somerset West Community Health Centre – Rosemount Branch,613-688-1177,https://cmhatv.ca/programs-services/wms/
+"14 Ramblewood Road, Unit 202, Wasaga Beach, ON L9Z 0C4",Wasaga Beach,South Georgian Bay Community Health Centre,705-422-1888,https://cmhatv.ca/programs-services/wms/
+"955 Queen Street East, Toronto, ON M4M 3P3",Toronto,South Riverdale Community Health Centre,416-461-2493,https://cmhatv.ca/programs-services/wms/
+"55 Victoria Avenue, P.O. Box 360, Markdale, ON N0C 1H0",Markdale,South East Grey Community Health Centre,519-986-2222,https://cmhatv.ca/programs-services/wms/
+"1355 Bank Street, Suite 600, Ottawa, ON K1H 8K7",Ottawa,South-East Ottawa Community Health Centre,613-737-5115,https://cmhatv.ca/programs-services/wms/
+"10 Neighbourhood Lane, Unit 201, Toronto, ON M8Y 0C5",Toronto,Stonegate Community Health Centre,416-231-7070,https://cmhatv.ca/programs-services/wms/
+"27 Tapscott Road, Unit 1 (Malvern Mall), Scarborough, ON M1B 4Y7",Scarborough,TAIBU Community Health Centre,416-644-3536,https://cmhatv.ca/programs-services/wms/
+"540 Finch Avenue West, Toronto, ON M2R 1N7",Toronto,Unison Health and Community Services – Bathurst-Finch Community Office,647-436-0385,https://cmhatv.ca/programs-services/wms/
+"1541 Jane Street, Toronto, ON M9N 2R3",Toronto,Unison Health and Community Services – Jane Street Hub,416-645-7575,https://cmhatv.ca/programs-services/wms/
+"1651 Keele Street, Toronto, ON M6M 3W2",Toronto,Unison Health and Community Services – Keele-Rogers,416-653-5400,https://cmhatv.ca/programs-services/wms/
+"12 Flemington Road, Toronto, ON M6A 2N4",Toronto,Unison Health and Community Services – Lawrence Heights,416-787-1661,https://cmhatv.ca/programs-services/wms/
+"44 St-Christophe Street, Unit 3, Noelville, ON P0M 2N0",Noelville,Univi Community Health Centre - Noelville,705-898-2594,https://cmhatv.ca/programs-services/wms/
+"1 King Street, St. Charles, ON P0M 2W0",St. Charles,Univi Community Health Centre – St Charles,705-867-0095,https://cmhatv.ca/programs-services/wms/
+"39 Lafontaine Street, Unit 5, P.O. Box 38, Warren, ON P0H 2N0",Warren,Univi Community Health Centre – Warren,705-599-3004,https://cmhatv.ca/programs-services/wms/
+"9401 Jane Street, Suite 206, Vaughan, ON L6A 4H7",Vaughan,Vaughan Community Health Centre,905-303-8490,https://cmhatv.ca/programs-services/wms/
+"2398 Yonge Street, Toronto, ON M4P 2H4",Toronto,Vibrant Healthcare Alliance,416-486-8666,https://cmhatv.ca/programs-services/wms/
+"40 Finchgate Boulevard, Suite 325, Brampton, ON L6T 3J1",Brampton,WellFort Community Health Services (Bramalea Community Health Centre),905-799-8748,https://cmhatv.ca/programs-services/wms/
+"7205 Goreway Drive, Unit 75, Mississauga, ON L4T 2T9",Mississauga,Wellfort Community Health Services – Four Corners Health Centre,905-799-8748,https://cmhatv.ca/programs-services/wms/
+"P.O. Box 761, 153 Main Street, West Lorne, ON N0L 2P0",West Lorne,West Elgin Community Health Centre,519-768-1715,https://cmhatv.ca/programs-services/wms/
+"68 Michaud Street, P.O. Box 6308, Sturgeon Falls, ON P2B 1B8",Sturgeon Falls,West Nipissing Community Health Centre,705-753-0151,https://cmhatv.ca/programs-services/wms/
+"1700 Bloor Street West, Toronto, ON M6P 4C3",Toronto,West Toronto Community Health Services,416-604-3361,https://cmhatv.ca/programs-services/wms/
+"3446 Dundas Street West, Toronto, ON M6S 2S1",Toronto,West Toronto Community Health Services – Dundas Street,416-604-3362,https://cmhatv.ca/programs-services/wms/
+"2885 Lauzon Parkway, Unit 107, Windsor, ON N8T 3H5",Windsor,Windsor Essex Community Health Centre – Chronic Disease,519-997-2823,https://cmhatv.ca/programs-services/wms/
+"3320 College Avenue, Windsor, ON N9C 0E1",Windsor,Windsor Essex Community Health Centre – Sandwich Community Health Centre,519-258-6002,https://cmhatv.ca/programs-services/wms/
+"4-711 Pelissier Street, Windsor, ON N8X 1K1",Windsor,Windsor Essex Community Health Centre – Street Health,519-997-2824,https://cmhatv.ca/programs-services/wms/
+"1361 Ouellette Avenue #101, Windsor, ON N8X 1J6",Windsor,Windsor Essex Community Health Centre – Teen Health,519-253-8481,https://cmhatv.ca/programs-services/wms/
+"2 Carlton Street, Suite 500, Toronto, ON M5B 1J3",Toronto,Women's Health in Women's Hands,416-593-7655,https://cmhatv.ca/programs-services/wms/
+"35 Metcalf Street, Woodstock, ON N4S 3E6",Woodstock,Woodstock and Area Community Health Centre,519-539-1111,https://cmhatv.ca/programs-services/wms/
+"P.O. Box 370, 10 Parkside Drive, St. Jacobs, ON N0B 2N0",St. Jacobs,Woolwich Community Health Centre,519-664-3794,https://cmhatv.ca/programs-services/wms/
+"1180 Queen's Bush Road, P.O. Box 187, Wellesley, ON N0B 2T0",Wellesley,Woolwich Community Health Centre – Wellesley Township Community Health Centre,519-656-9025,https://cmhatv.ca/programs-services/wms/
+"7th floor, 4001 Leslie Street, Toronto ON M2K 1E1",Toronto,North York General Hospital — Child and Adolescent Mental Health Inpatient Unit,416-756-6642,https://www.tompkinscountyny.gov/All-Departments/Whole-Health/Mental-Health-Services/Mental-Health-Clinic
+"Phillips House, 10 Buchan Court, Toronto ON M2J 0B1",Toronto,Child and Adolescent Mental Health Outpatient Program (Phillips House),416-756-6933,https://www.tompkinscountyny.gov/All-Departments/Whole-Health/Mental-Health-Services/Mental-Health-Clinic
+"Phillips House, 10 Buchan Court, Toronto ON M2J 0B1",Toronto,Child and Adolescent Mental Health Day Hospital (Phillips House),416-756-6933,https://www.tompkinscountyny.gov/All-Departments/Whole-Health/Mental-Health-Services/Mental-Health-Clinic
+"100 Constellation Drive, Ottawa, ON K2G 6J8",Ottawa,Ottawa Public Health,613-580-6744,https://cmho.org/
+"4001 Leslie Street, Toronto ON M2K 1E1",Toronto,North York General Hospital – General site,416-756-6723,https://www.monroecounty.gov/hs-fact-far
+"4001 Leslie Street, Toronto ON M2K 1E1",Toronto,Addiction Program (Adult & Transitional Age Youth) – North York General Hospital,416-756-6642,https://www.monroecounty.gov/hs-fact-far
+"4001 Leslie Street, Toronto ON M2K 1E1",Toronto,Psychiatric Day Hospital Program – North York General Hospital (General site),416-756-6642,https://www.monroecounty.gov/hs-fact-far
+"2 Champagne Drive, Unit E8, Toronto ON M3J 2C5",Toronto,North York General Hospital - Outpatient Community Services Centre,416-756-6919,https://www.monroecounty.gov/hs-fact-far
+"4001 Leslie Street, 8th floor, Toronto ON M2K 1E1",Toronto,North York General Hospital - General Site (8th floor),416-483-3778,https://www.monroecounty.gov/hs-fact-far
+"4001 Leslie St., Toronto, ON M2K 1E1",Toronto,North York General Hospital,905-841-7007,https://www.mass.gov/locations/bay-cove-behavioral-health-and-wellness-center-cbhc
+"4001 Leslie St., Toronto, ON M2K 1E1",Toronto,Rapid Access to Addiction Medicine Clinic (RAAM) - North York General Hospital,1-800-263-2288 ext. 322,https://www.mass.gov/locations/bay-cove-behavioral-health-and-wellness-center-cbhc
+50 Charlton Avenue East,Hamilton,St. Joseph's Healthcare Hamilton,905-972-8338,https://www.unityhealthcare.org/services/teen-clinic
+"4 Charles Street East, Toronto, ON M4Y 1T1",Toronto,Anishnawbe Health Toronto,(416) 657-0379,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"100 Anemki Dr., Thunder Bay, ON P7J 1A5",Thunder Bay,Beendigen Incorporated,(807) 622-1121,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"144 Causley Street, Blind River, ON P0R 1B0",Blind River,Benbowopka Treatment Centre/Anishnabie Naadmaagi Gamig,(705) 356-1681,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"120 Carp River Road, Fort William First Nation, ON P7J 1K1",Fort William First Nation,Dilico Adult Residential Treatment Centre,(807) 623-8511,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"100 Anemki Drive, Suite 102, Fort William First Nation, Thunder Bay, ON P7C 5H1",Thunder Bay,Ka-Na-Chi-Hih Solvent Abuse Centre,(807) 623-5577,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"Box 1340, Kenora, ON P9N 3X9",Kenora,Migisi Alcohol and Drug Treatment Centre,(807) 548-5959,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"P.O. Box 608, Fort Frances, ON P9A 3M9",Fort Frances,Mino Ayaa Ta Win Healing Centre,(807) 271-0194,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"405 Ramsey Road, Sudbury, ON P3E 2Z5",Sudbury,Monarch Recovery Services,(705) 674-4193,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"130 New Credit Road, Hagersville, ON N0A 1H0",Hagersville,Native Horizons Treatment Centre,(905) 768-5144,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"Box 81, 56 Pitawanakwat St., Wikwemikong, ON P0P 2J0",Wikwemikong,Ngwaagan Gamig Recovery Centre Inc.,(705) 859-2324,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"20850 Muncey Road, P.O. Box 381, Muncey, ON N0L 1Y0",Muncey,Nimkee NupiGawagan Healing Centre,(519) 264-2277,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"Box 131, Muskrat Dam, ON P0V 3B0",Muskrat Dam,Reverend Tommy Beardy Memorial Family Wee Che He Wayo-Gamik Treatment Centre,(807) 471-2554,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"100 Quarry Road, Moosonee, ON P0L 1Y0",Moosonee,Sagashtawao Healing Lodge,(705) 336-3450,https://www.durham.ca/en/health-and-wellness/mental-health.aspx
+"1930 S Broad St., Fl. 2",Philadelphia,Health Center 1,(215) 685-6570,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+"1700 S. Broad St., Unit 201",Philadelphia,Health Center 2,(215) 685-1800,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+555 S. 43rd St.,Philadelphia,Health Center 3,(215) 685-7504,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+4400 Haverford Ave.,Philadelphia,Health Center 4,(215) 685-7601,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+1900 N 20th St.,Philadelphia,Health Center 5,(215) 685-2933,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+301 W. Girard Ave.,Philadelphia,Health Center 6,(215) 685-3803,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+131 E. Chelten Ave.,Philadelphia,Mattie L. Humphrey Health Center (formerly Health Center 9),(215) 685-5701,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+2230 Cottman Ave.,Philadelphia,Health Center 10,(215) 685-0639,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+2840 West Dauphin St.,Philadelphia,Strawberry Mansion Health Center,(215) 685-2401,https://www.criticall.org/our-systems-data/provincial-hospital-resource-system/
+"75 Charles St, Brockville, ON K6V 1S8",Brockville,Brockville General Hospital - Inpatient Mental Health Program,613-345-5645 ext 52100,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"25 Front Ave W, Brockville, ON K6V 4J2",Brockville,Brockville General Hospital - Mental Health Services - Outpatient Program,613-342-2262,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"166 Brock St, Kingston, ON K7L 5G2",Kingston,Kingston Health Sciences Centre - Hotel Dieu Hospital - Adult Mental Health Program (AMHP),613-544-3400 ext 23700,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"Brock 5, 166 Brock St, Kingston, ON K7L 5G2",Kingston,Kingston Health Sciences Centre - Hotel Dieu Hospital - Child and Youth Mental Health Program - Brock Street,613-544-3310 ext 23406 or 22554,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"Providence Care Hospital, 752 King St W, Kingston, ON K7L 4X3",Kingston,Providence Care - Providence Care Hospital,613-544-4900,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"Providence Care, 752 King St W, Postal Bag 603, Kingston, ON K7L 4X3",Kingston,Providence Care - Regional Specialty Mental Health Services - Community and Outpatient Services - Mood Disorders Research and Treatment Service,613-544-4900 ext 51196,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"15 Victoria Ave, Belleville, ON K8N 1Z5",Belleville,Quinte Health - Belleville General Hospital - Mental Health Services - Assertive Community Treatment Team - ACTT,613-962-0259,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"15 Victoria Ave, Belleville, ON K8N 1Z5",Belleville,Quinte Health - Belleville General Hospital - Mental Health Services - Assertive Community Treatment Team - ACTT - Assertive Community Treatment Team,613-962-0259,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"265 Dundas St E, Belleville, ON K8N 5A9",Belleville,Quinte Health - Belleville General Hospital - Mental Health Services - Assertive Community Treatment Team - ACTT - In-Patient Program,613-969-7400,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"146 Oliver Rd, 2nd floor, Campbellford, ON K0L 1L0",Campbellford,Campbellford Memorial Hospital - Community Mental Health Centre,705-632-2015,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"401 Smyth Rd, Ottawa, ON K1H 8L1",Ottawa,CHEO - In-patient Psychiatric Units,613-737-7600 ext 2505 East or 613-737-2505,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1661 Montreal Rd, Unit 9, Ottawa, ON K1J 9B7",Ottawa,CHEO - Mental Health Outpatient Services,613-738-6990,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"401 Smyth Rd, Ottawa, ON K1H 8L1",Ottawa,CHEO - Regional Psychiatric Emergency Service for Children and Youth,613-260-2360,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"401 Smyth Rd, Ottawa, ON K1H 8L1",Ottawa,CHEO - Sexual Assault/Abuse Care Program,613-737-7600 ext 2939,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Integrated Forensic Program,Forensic Treatment Unit 613-722-6521; Secure Treatment Unit 613-341-2870,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre,613-722-6521,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Geriatric Program,613-722-6521 ext 6637,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Mood and Anxiety Disorders Program,613-722-6521,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Schizophrenia Program,613-722-6521,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Substance Use and Concurrent Disorders Program - Short Term Intensive Residential Treatment,Referrals 613-722-6521 ext 6508,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,"The Royal - Royal Ottawa Mental Health Centre - Youth Outpatient / Outreach Service - Youth Inpatient Unit - Youth Partial Hospitalization Unit, Youth Day Treatment Unit",Central Intake 613-737-2496,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Youth Psychiatry Program,Central Intake 613-737-2496; 613-722-6521 ext 6511,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"1145 Carling Ave, Ottawa, ON K1Z 7K4",Ottawa,The Royal - Royal Ottawa Mental Health Centre - Youth Psychiatry Program - Youth Inpatient Unit,613-722-6521 ext 6221,https://ontariohealth.ca/clinical/mental-health-addictions/program.html
+"P.O. Box 638, 133 Elgin St., Brantford, ON N3T 5P9",Brantford,SOAR Community Services,(519) 759-8830,https://ontario.cmha.ca/
+"201 Georgian Drive, L4M 6M2",Barrie,Royal Victoria Regional Health Centre,705-728-9802,https://www.camh.ca/en/driving-change/building-the-mental-health-facility-of-the-future/history-of-queen-street-site
+"3050 Lawrence Avenue East, Crockford Pavillion",Scarborough,Rapid Access Addiction Medicine (RAAM) Clinic,416-431-8269,https://www.woodstockhospital.ca/
+1940 Eglinton Avenue East,Scarborough,Community Mental Health Centre,416-431-8233,https://www.woodstockhospital.ca/
+"825 Coxwell Avenue, Toronto ON M4C 3E7",Toronto,Michael Garron Hospital,416-461-8272,https://www.toronto.ca/home/311-toronto-at-your-service/find-service-information/article/?kb=kA06g000001cvj8CAA
+50 Charlton Avenue East,Hamilton,St. Joseph's Healthcare Hamilton,905-522-1155,https://www.ontario.ca/page/general-hospital-locations
+"3560 Bathurst St, Toronto, ON M6A 2E1",Toronto,Baycrest - Baycrest Hospital - Clinical Services - Geriatric Psychiatry Community Services,416-785-2500 ext 2730,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"3560 Bathurst St, Toronto, ON M6A 2E1",Toronto,Baycrest - Baycrest Hospital - Clinical Services - Inpatient Unit,416-785-2500 ext 2742,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"3560 Bathurst St, Toronto, ON M6A 2E1",Toronto,Baycrest - Baycrest Hospital - Outpatient Mental Health Program,416-785-2500 ext 2700,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1001 Queen St W, Toronto, ON M6J 1H4",Toronto,Centre For Addiction And Mental Health (CAMH),416-535-8501,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1001 Queen St W, Toronto, ON M6J 1H4",Toronto,Centre For Addiction And Mental Health (CAMH) - Adult Neurodevelopmental Service,416-535-8501 ext 2,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"250 College St, Toronto, ON M5T 1R8",Toronto,Centre For Addiction And Mental Health (CAMH) - College Street Site,416-535-8501 ext 77670,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"10 White Squirrel Way, Toronto, ON M6J 1H4",Toronto,Centre For Addiction And Mental Health (CAMH) - Downtown West Flexible Assertive Community Treatment Team (FACT),416-535-8501,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1051 Queen St W, Toronto, ON M6J 1H3",Toronto,Centre For Addiction And Mental Health (CAMH) - Emergency Services - Toronto - 1051 Queen Street West,416-535-8501,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1051 Queen St W, Toronto, ON M6J 1H3",Toronto,Centre For Addiction And Mental Health (CAMH) - Medication And Psychology Psychosis Service (MAPPS) - Toronto - 1051 Queen Street West,416-535-8501,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1051 Queen St W, Toronto, ON M6J 1H3",Toronto,Centre For Addiction And Mental Health (CAMH) - Psychosis Coordinated Care Service (PCCS) - Toronto - 1051 Queen Street West,416-535-8501 ext 33646,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"60 White Squirrel Way, Toronto, ON M6J 1H4",Toronto,Centre For Addiction And Mental Health (CAMH) - Rainbow Services,416-535-8501,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"250 College St, Toronto, ON M5T 1R8",Toronto,"Centre For Addiction And Mental Health (CAMH) - Work, Stress, And Health",416-260-4147,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Intergenerational Building, 80 Workman Way, Toronto, ON M6J 1H4",Toronto,Centre For Addiction And Mental Health (CAMH) - Youth Urgent Care Clinic,416-535-8501 ext 39100,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"555 University Ave, Toronto, ON M5G 1X8",Toronto,Hospital for Sick Children (The) - Mental Health Access Program (MHAP),416-813-7005,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1235 Wilson Ave, Toronto, ON M3M 0B2",Toronto,Humber River Health - Mental Health and Addictions Program,416-242-1000 ext 82140,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"355 Church St, Toronto, ON M4Y 2C3",Toronto,Madison Community Services - Spanish Speaking Mental Health Case Management and Peer Support Groups,416-977-1333 ext 119,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"825 Coxwell Ave, Toronto, ON M4C 3E7",Toronto,"Michael Garron Hospital - Consultation, Assessment and Time Limited Therapy (CATT)",416-469-6204,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"825 Coxwell Ave, G Wing, 7th Fl,, Toronto, ON M4C 3E7",Toronto,Michael Garron Hospital - Paediatrics - Child & Adolescent Mental Health,416-469-6130 ext 6616,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"825 Coxwell Ave, Toronto, ON M4C 3E7",Toronto,Michael Garron Hospital - Paediatrics - Child & Adolescent Mental Health - Youth Outpatient Psychiatric Consultation,416-469-6309,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"4001 Leslie St, Toronto, ON M2K 1E1",Toronto,North York General Hospital - General Site - Adult Mental Health Outpatient Services,416-756-6655,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"4001 Leslie St, Toronto, ON M2K 1E1",Toronto,North York General Hospital - General Site - Geriatric Mental Health,416-756-6642,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Unit E8-2 Champagne Dr, North York, ON M3J 0K2",North York,North York General Hospital - Outpatient and Community Services Centre - Mental Health Clinic,416-756-6642,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"1940 Eglinton Ave E, Toronto, ON M1L 4R1",Toronto,Scarborough Health Network - Birchmount Site - Mental Health Outpatient Program,416-431-8135 press 2,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"3030 Lawrence Ave E, Main floor, Toronto, ON M1P 2V5",Toronto,Scarborough Health Network - General Site - Assertive Community Treatment Program,416-640-1934,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Joseph and Wolf Lebovic Health Complex, 600 University Ave, 9th Fl, Toronto, ON M5G 1X5",Toronto,Sinai Health System - Mount Sinai Hospital - Psychiatry,416-586-4800 ext 4569,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Joseph and Wolf Lebovic Health Complex, 600 University Ave, 9th Fl, Toronto, ON M5G 1X5",Toronto,Sinai Health System - Mount Sinai Hospital - Psychiatry - Day Treatment,416-586-8654 ext 4568,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Joseph and Wolf Lebovic Health Complex, 600 University Ave, 9th Fl, Toronto, ON M5G 1X5",Toronto,Sinai Health System - Mount Sinai Hospital - Psychiatry - General Psychiatry - Interpersonal Psychotherapy (IPT) Clinic,416-586-4800 ext 4568,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"2075 Bayview Ave, Toronto, ON M4N 3M5",Toronto,Sunnybrook Health Sciences Centre - Adult Inpatient Unit,416-480-6100,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"2075 Bayview Ave, Toronto, ON M4N 3M5",Toronto,Sunnybrook Health Sciences Centre - Family Navigation Project,416-480-6100,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"825 Coxwell Ave, Toronto, ON M4C 3E7",Toronto,Toronto East Health Network,416-469-6309,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"3276 St Clair Ave E, Toronto, ON M1L 1W1",Toronto,Unity Health Toronto - Providence Healthcare - Outpatient Rehabilitation - Assess and Restore Services - Geriatric Psychiatry Clinic (Progression and Maintenance),416-285-3619,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"30 The Queensway, Toronto, ON M6R 1B5",Toronto,Unity Health Toronto - St Joseph's Health Centre - Adult Inpatient Unit,416-530-6175,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"30 The Queensway, Toronto, ON M6R 1B5",Toronto,Unity Health Toronto - St Joseph's Health Centre - Adult Inpatient Unit - Mental Health Emergency Services Unit (MHESU),416-530-6000 ext 6710,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Our Lady of Mercy, 111 Sunnyside Ave, 3rd Fl, Toronto, ON M6R 2P1",Toronto,"Unity Health Toronto - St Joseph's Health Centre - Child, Adolescent and Family Mental Health",416-530-6825,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"30 The Queensway, Toronto, ON M6R 1B5",Toronto,Unity Health Toronto - St Joseph's Health Centre - Collaborative Care Clinic,416-530-6717,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"30 The Queensway, 5th Fl, Gilgan Family Wing, Toronto, ON M6R 1B5",Toronto,Unity Health Toronto - St Joseph's Health Centre - Injection Clinic,416-530-6000 ext 3448,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Our Lady Of Mercy, 111 Sunnyside Ave, 3rd Fl, Toronto, ON M6R 2P1",Toronto,Unity Health Toronto - St Joseph's Health Centre - Mental Health and Addictions,416-530-6000,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"30 The Queensway, 7th Fl, Glendale Wing, Toronto, ON M6R 1B5",Toronto,Unity Health Toronto - St Joseph's Health Centre - Psychiatric Day Hospital,416-530-6350,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"30 Bond St, Cardinal Carter Wing, 17th Fl, Toronto, ON M5B 1W8",Toronto,Unity Health Toronto - St Michael's Hospital - Mental Health and Addictions Services,416-864-5120,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Eaton Building, 200 Elizabeth St, Eaton Bldg, 8th Fl, Toronto, ON M5G 2C4",Toronto,University Health Network - Toronto General Hospital - Outpatient Clinics - Geriatric Psychiatry Clinic (Progression),416-340-3747,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"399 Bathurst St, East Wing, 9th Fl, Toronto, ON M5T 2S8",Toronto,University Health Network - Toronto Western Hospital - Outpatient Clinics - Portuguese Mental Health And Addictions,416-603-5974,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"399 Bathurst St, 7th Fl, Toronto, ON M5T 2S8",Toronto,University Health Network - Toronto Western Hospital - Outpatient Clinics - Poul Hansen Family Centre for Depression,416-603-5106,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"399 Bathurst St, East Wing, 9th Fl, Toronto, ON M5T 2S8",Toronto,University Health Network - Toronto Western Hospital - Outpatient Clinics - Urgent Care Clinic (UCC),416-603-5809,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"101 Humber College Blvd, Etobicoke, ON M9V 1R8",Etobicoke,William Osler Health System - Etobicoke General Hospital - Mental Health and Addiction Services - Mental Health Services for Adults - Emergency/Crisis Services,416-747-3400,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"76 Grenville St, 7th Fl, Toronto, ON M5S 1B2",Toronto,Women's College Hospital - Women's Mental Health Program,416-323-6230,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"76 Grenville St, 7th Fl, Toronto, ON M5S 1B2",Toronto,Women's College Hospital - Women's Mental Health Program - General Psychiatry Program,416-323-6230,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"76 Grenville St, 7th Fl, Toronto, ON M5S 1B2",Toronto,Women's College Hospital - Women's Mental Health Program - Mental Health in Medicine,416-323-6230,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"76 Grenville St, 7th Fl, Toronto, ON M5S 1B2",Toronto,Women's College Hospital - Women's Mental Health Program - Trauma Therapy Program,416-323-6230,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"76 Grenville St, 7th Fl, 7th Fl, Toronto, ON M5S 1B2",Toronto,Women's College Hospital - Women's Mental Health Program - Trauma Therapy Program - Women Recovering from Abuse Program (WRAP),416-323-6230,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"100 Queensway W, Mississauga, ON L5B 1B8",Mississauga,Trillium Health Partners - Mississauga Hospital - Mental Health and Addiction Services,905-338-4123,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Trillium Health Partners, Mississauga Hospital, 100 Queensway W, Mississauga, ON L5B 1B8",Mississauga,Trillium Health Partners - Mississauga Hospital - Mental Health and Addiction Services - Assertive Community Treatment Program (ACT),905-338-4123,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"Trillium Health Partners, Mississauga Hospital, 100 Queensway W, Mississauga, ON L5B 1B8",Mississauga,Trillium Health Partners - Mississauga Hospital - Mental Health and Addiction Services - Early Psychosis Intervention Program,905-338-4123,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"2100 Bovaird Dr E, Brampton, ON L6R 3J7",Brampton,William Osler Health System - Brampton Civic Hospital - Mental Health and Addiction Services - Mental Health Services for Children and Adolescents - Day Hospital,905-494-2120 ext 57442,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"2100 Bovaird Dr E, Brampton, ON L6R 3J7",Brampton,William Osler Health System - Brampton Civic Hospital - Mental Health and Addiction Services - Mental Health Services for Children and Adolescents - Outpatient Services - Child Psychiatry Consultation,905-494-2120 ext 56709,https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=51&latitude=43.799017&longitude=-79.358027&pg=
+"40 College Street, M5G 2J3","Toronto, ON",Toronto Police Service,416-808-2222,https://211ontario.ca/results/?searchLocation=Toronto&topicPath=129&latitude=43.653226&longitude=-79.3831843&fpg=sm
+"2200 Eglington Ave West, Mississauga, ON",Mississauga,Credit Valley Hospital,905-813-2200,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"100 Queensway West, Mississauga, ON",Mississauga,Mississauga Hospital,905-848-7100,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"2100 Bovaird Drive East, Brampton, ON",Brampton,Brampton Civic Hospital,905-494-2120,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"3001 Hospital Gate, Oakville, ON",Oakville,Oakville Trafalgar Hospital,905-845-2571,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"150 Sherway Drive, Etobicoke, ON",Etobicoke,Queensway Urgent Care Centre,416-295-6671,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"20 Lynch Street, Brampton, ON",Brampton,Osler Urgent Care Centre,905-494-2120,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"690 Main Street, Hamilton, ON",Hamilton,Main Street West Urgent Care,905-521-2100,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"2757 King Street East, Hamilton, ON",Hamilton,King Campus Urgent Care,905-522-1155,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"2110 Burnhamthorpe Rd. West, Unit #3, Mississauga, ON",Mississauga,South Common Mall Walk-in Clinic,905-820-3209,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"4175 Confederation Parkway, Unit #2 (Confederation & Square One), Mississauga, ON",Mississauga,Square One Medical,905-848-4880,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"2500 Hurontario Street, Unit 14, Mississauga, ON",Mississauga,Hurontario Square Medical Centre,905-897-6160,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"2325 Hurontario Street (Hurontario & Queensway), Mississauga, ON",Mississauga,Queentario Medical Centre,905-270-8307,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"Gore Centre Plaza, 4525 Ebenezer Road, Unit #1, Brampton, ON L6P 2K8",Brampton,Brampton East Medical Centre,905-794-2003,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"2-123 Rexdale Blvd., Etobicoke, ON",Etobicoke,Rexdale Medical Clinic,416-743-5853,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"325 Central Parkway West, Mississauga, ON",Mississauga,Peel Public Health (Sexual Health Clinic),905-799-7700,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"3359 Mississauga Road, Mississauga, ON L5L 1C6",Mississauga,University of Toronto Mississauga,905-569-4455,https://ottawaanxietyalgorithm.ca/en/content?id=85
+"825 Coxwell Avenue, Toronto ON M4C 3E7",Toronto,Michael Garron Hospital,416-461-8272,https://www.sac-isc.gc.ca/eng/1576090254932/1576090371511
+989 Danforth Ave.,Toronto,Women’s Withdrawal Management Services,1-866-366-9513,https://www.sac-isc.gc.ca/eng/1576090254932/1576090371511
+985 Danforth Ave.,Toronto,Men’s Withdrawal Management Services,1-866-366-9513,https://www.sac-isc.gc.ca/eng/1576090254932/1576090371511
+"24 Dalhousie Street, Toronto, ON M5B 2A5",Toronto,trueNorth Medical Centre Inc.,1-888-878-3563,https://www.nygh.on.ca/care-service/mental-health/addiction-program/
+201 East Green Street,Ithaca,Mental Health Clinic,607-274-6200,https://211ontario.ca/results/?latitude=51.253775&longitude=-85.3232139&searchLocation=Ontario&searchTerms=youth-friendly+mental+health+clinics+and+centres&exct=0&sd=25&ss=Distance&topicPath=
+"Toronto General Hospital, Eaton Building – 8th Floor, Room 802",Toronto,Mental Health in Medicine Clinic,416 340 4800 ext. 7909,https://halton.cioc.ca/record/MIL0884
+135 McLaughlin Road South,Brampton,Withdrawal Management Centre,905-456-3500 or 905-494-2120 ext. 22584,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+20 Lynch Street,Brampton,Peel Memorial,905-494-2120 ext. 29385,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+101 Humber College Boulevard,Etobicoke,Etobicoke General,905-494-2120 ext. 29385,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+"2100 Bovaird Drive East, L6R 3J7",Brampton,Brampton Civic Hospital,905-494-2120,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+"101 Humber College Boulevard, M9V 1R8",Etobicoke,Etobicoke General Hospital,416-747-3400,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+"20 Lynch Street, L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,905-494-2120,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+"200 Church Street, M9N 1N8",Etobicoke,Reactivation Care Centre,416-243-4390,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+"135 McLaughlin Road South, L6Y 2C8",Brampton,Withdrawal Management Centre,905-456-3500,https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html
+"2nd Floor, 38 James Street South, Hamilton, ON L8P 4W6",Hamilton,St. Joseph’s Healthcare Hamilton - Youth Wellness Centre,905-522-1155 ext. 31725,https://data.ontario.ca/dataset/inventory
+815 Danforth Ave,Toronto,WoodGreen Community Services - Walk-In Counselling (WIC),416-645-6000 ext.1990,https://health-infobase.canada.ca/src/data/hccf/_Map%20-%20Partnerships%20and%20Strategies%20-%20master_sheet.csv
+815 Danforth Avenue,Toronto,Walk-In Counselling (WoodGreen),(416) 645-6000,https://health-infobase.canada.ca/src/data/hccf/_Map%20-%20Partnerships%20and%20Strategies%20-%20master_sheet.csv
+"2100 Bovaird Drive East, Brampton, ON L6R 3J7",Brampton,Brampton Civic Hospital,905-494-2120,https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv
+"101 Humber College Boulevard, Etobicoke, ON M9V 1R8",Etobicoke,Etobicoke General Hospital,416-747-3400,https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv
+"20 Lynch Street, Brampton, ON L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,905-494-2120,https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv
+"200 Church Street, Etobicoke, ON M9N 1N8",Etobicoke,Reactivation Care Centre,416-243-4390,https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv
+"135 McLaughlin Road South, Brampton, ON L6Y 2C8",Brampton,Withdrawal Management Centre,905-456-3500,https://communityfoundations.ca/wp-content/uploads/2019/04/Healthy-Communities-Initiative-Results-Data-Donnees-sur-lInitiative-pour-des-collectivites-en-sante-resultats-NOV-2023-1.csv
+"101 Humber College Boulevard, Etobicoke ON M9V 1R8",Etobicoke,Etobicoke General Hospital,416-747-3400,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"115 Humber College Boulevard, Etobicoke Ontario M9V 1R8",Etobicoke,Etobicoke Wellness Centre,905-494-2120,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"2100 Bovaird Drive East, L6R 3J7",Brampton,Brampton Civic Hospital,905-494-2120,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"101 Humber College Boulevard, M9V 1R8",Etobicoke,Etobicoke General Hospital,416-747-3400,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"20 Lynch Street, L6W 2Z8",Brampton,Peel Memorial Centre for Integrated Health and Wellness,905-494-2120,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"200 Church Street, M9N 1N8",Etobicoke,Reactivation Care Centre,416-243-4390,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"135 McLaughlin Road South, L6Y 2C8",Brampton,Withdrawal Management Centre,905-456-3500,https://pmc.ncbi.nlm.nih.gov/articles/PMC9005801/
+"310 Juliana Drive, N4V 0A4, Ontario, Canada",Woodstock,Woodstock Hospital,(519) 421-4211,https://catalogue.data.gov.bc.ca/dataset/42f7ca99-e7f3-40f7-93d7-f2500cccc315/resource/9ea3c62b-283f-434c-b1d6-e49e337fc459/download/cat_public_dataset_records.csv
+"1145 Carling Ave., Ottawa ON K1Z 7K4",Ottawa,The Royal (Ottawa Campus),+1 (613) 722-6521,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+"1141 Carling Ave., Ottawa ON K1Z 7K4",Ottawa,The Royal (Long-Term Care),+1 (613) 722-6521,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+"1804 Highway 2 E, P.O. Box 1050, Brockville ON K6V 5W7",Brockville,The Royal (Brockville Campus),+1 (613) 345-1461,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+"2121 Carling Ave., Ottawa ON K2A 1H2",Ottawa,The Royal (Community Mental Health),+1 (613) 722-6521,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+1145 Carling Ave.,"Ottawa, ON K1Z 7K4",The Royal — Ottawa Campus,(613) 722-6521,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+1141 Carling Ave.,"Ottawa, ON K1Z 7K4",The Royal — Long-Term Care,(613) 722-6521,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+"1804 Highway 2 E, P.O. Box 1050","Brockville, ON K6V 5W7",The Royal — Brockville Campus,(613) 345-1461,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+2121 Carling Ave.,"Ottawa, ON K2A 1H2",The Royal — Community Mental Health,(613) 722-6521,https://www.tandfonline.com/doi/full/10.1080/2156857X.2025.2593241
+"700 Gordon Street, L1N 5S9",Whitby,Ontario Shores - Centre for Mental Health Sciences,905-430-4055,https://www.onetonline.org/link/details/21-1094.00
+"Toronto Western Hospital, East Wing – 9th Floor",Toronto,Outpatient Mental Health and Addiction Services (Toronto Western Hospital),416 603 5747,https://opendataphilly.org/datasets/
+"1145 Carling Ave., Ottawa ON K1Z 7K4",Ottawa,Ottawa Campus,+1 (613) 722-6521,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"1141 Carling Ave., Ottawa ON K1Z 7K4",Ottawa,Long-Term Care,+1 (613) 722-6521,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"1804 Highway 2 E, P.O. Box 1050, Brockville ON K6V 5W7",Brockville,Brockville Campus,+1 (613) 345-1461,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"2121 Carling Ave., Ottawa ON K2A 1H2",Ottawa,Community Mental Health,+1 (613) 722-6521,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"1145 Carling Ave., Ottawa, ON K1Z 7K4",Ottawa,The Royal — Ottawa Campus,(613) 722-6521,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"1141 Carling Ave., Ottawa, ON K1Z 7K4",Ottawa,The Royal — Long-Term Care,(613) 722-6521,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"1804 Highway 2 E, P.O. Box 1050, Brockville, ON K6V 5W7",Brockville,The Royal — Brockville Campus,(613) 345-1461,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"2121 Carling Ave., Ottawa, ON K2A 1H2",Ottawa,The Royal — Community Mental Health,(613) 722-6521,https://utoronto.scholaris.ca/server/api/core/bitstreams/1e993f8d-9b23-4dc1-9753-cc8cd8dd1447/content
+"1145 Carling Ave., K1Z 7K4",Ottawa,Ottawa Campus,+1 (613) 722-6521,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"1141 Carling Ave., K1Z 7K4",Ottawa,Long-Term Care,+1 (613) 722-6521,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"1804 Highway 2 E, P.O. Box 1050, K6V 5W7",Brockville,Brockville Campus,+1 (613) 345-1461,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"2121 Carling Ave., K2A 1H2",Ottawa,Community Mental Health,+1 (613) 722-6521,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"1145 Carling Ave., K1Z 7K4",Ottawa,The Royal — Ottawa Campus,(613) 722-6521,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"1141 Carling Ave., K1Z 7K4",Ottawa,The Royal — Long-Term Care,(613) 722-6521,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"1804 Highway 2 E, P.O. Box 1050, K6V 5W7",Brockville,The Royal — Brockville Campus,(613) 345-1461,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"2121 Carling Ave., K2A 1H2",Ottawa,The Royal — Community Mental Health,(613) 722-6521,https://mgaleg.maryland.gov/2026rs/misc/billsmasterlist/BillMasterList.csv
+"Eaton Building – 8th Floor South, Toronto General Hospital",Toronto,"Mental Health Inpatient Unit, Toronto General Hospital",416 340 3020,https://github.com/zendesk/link-dane/blob/master/data/masterFeb19.csv
+"1145 Carling Ave., Ottawa ON K1Z 7K4",Ottawa,The Royal — Ottawa Campus,+1 (613) 722-6521,https://clinicaltrials.gov/study/NCT05163314
+"1141 Carling Ave., Ottawa ON K1Z 7K4",Ottawa,The Royal — Long-Term Care,+1 (613) 722-6521,https://clinicaltrials.gov/study/NCT05163314
+"1804 Highway 2 E, P.O. Box 1050, Brockville ON K6V 5W7",Brockville,The Royal — Brockville Campus,+1 (613) 345-1461,https://clinicaltrials.gov/study/NCT05163314
+"2121 Carling Ave., Ottawa ON K2A 1H2",Ottawa,The Royal — Community Mental Health,+1 (613) 722-6521,https://clinicaltrials.gov/study/NCT05163314
+"1145 Carling Ave., Ottawa, ON K1Z 7K4",Ottawa,The Royal — Ottawa Campus,(613) 722-6521,https://clinicaltrials.gov/study/NCT05163314
+"1141 Carling Ave., Ottawa, ON K1Z 7K4",Ottawa,The Royal — Long-Term Care,(613) 722-6521,https://clinicaltrials.gov/study/NCT05163314
+"1804 Highway 2 E, P.O. Box 1050, Brockville, ON K6V 5W7",Brockville,The Royal — Brockville Campus,(613) 345-1461,https://clinicaltrials.gov/study/NCT05163314
+"2121 Carling Ave., Ottawa, ON K2A 1H2",Ottawa,The Royal — Community Mental Health,(613) 722-6521,https://clinicaltrials.gov/study/NCT05163314
+Booth St.,Ottawa,Cornerstone Housing for Women,(613) 254-6584,https://www.ottawapublichealth.ca/en/public-health-topics/resources/Documents/mental_health_resource_guide_en.pdf
+Maclaren St.,Ottawa,Cornerstone Housing for Women,(613) 233-2243,https://www.ottawapublichealth.ca/en/public-health-topics/resources/Documents/mental_health_resource_guide_en.pdf
+McPhail House,Ottawa,Cornerstone Housing for Women,(613) 233-2243,https://www.ottawapublichealth.ca/en/public-health-topics/resources/Documents/mental_health_resource_guide_en.pdf
+O'Connor St.,Ottawa,Cornerstone Housing for Women,(613) 237-4669,https://www.ottawapublichealth.ca/en/public-health-topics/resources/Documents/mental_health_resource_guide_en.pdf
+"180 Dundas Street West, Suite 2301",Toronto,Canadian Mental Health Association Ontario - Administration Office,416-977-5580,https://ontario.cmha.ca/wp-content/uploads/2025/09/AR-2025-Ontario-FINAL-digital.pdf
+"141 Laurier Avenue W., Suite 702, Ottawa, ON K1P 5J3",Ottawa,"Centre for Psychological Services and Research (CPSR), University of Ottawa",1-613-237-2144,https://www.uottawa.ca/faculty-social-sciences/sites/g/files/bhrskd371/files/2023-02/2023-2024_cpsr_internship_brochure_information_eng_july_4_2022_lc.pdf
+"Vanier Hall, Room 4031, Ottawa, Ontario, Canada K1N 6N5",Ottawa,CPSR (Centre for Psychological Services and Research) - University of Ottawa,613-562-5289,https://www.uottawa.ca/faculty-social-sciences/sites/g/files/bhrskd371/files/2023-02/2023-2024_cpsr_internship_brochure_information_eng_july_4_2022_lc.pdf
+2675 Queensview Drive,Ottawa,Youth Services Bureau of Ottawa - Head Office,613-729-1000,https://www.ysb.ca/wp-content/uploads/2021/09/ysb-services-booklet-english-2019.pdf
+147 Besserer St.,Ottawa,YSB Youth Health Clinic (walk-in),613-241-7913 x 222,https://www.ysb.ca/wp-content/uploads/2021/09/ysb-services-booklet-english-2019.pdf
+147 Besserer St.,Ottawa,YSB Downtown Drop-In,613-241-7788,https://www.ysb.ca/wp-content/uploads/2021/09/ysb-services-booklet-english-2019.pdf
+"2675 Queensview Drive, Ottawa, ON K2B 8K2",Ottawa,Youth Services Bureau (YSB) of Ottawa,613-729-1000,https://www.ysb.ca/wp-content/uploads/2021/09/ysb-services-booklet-english-2019.pdf
+"1355 Bank St., Suite 703",Ottawa,YSB Employment Services (Bank St.),613-236-8244,https://www.ysb.ca/wp-content/uploads/2021/09/ysb-services-booklet-english-2019.pdf
+"301 Moodie Dr., Suite 203",Ottawa,YSB Employment Services (Moodie Dr.),613-688-0440,https://www.ysb.ca/wp-content/uploads/2021/09/ysb-services-booklet-english-2019.pdf
+"1804 Highway 2 East, Brockville ON K6V 5V8",Brockville,Brockville Mental Health Centre,+1 (613) 345-1461,https://www.theroyal.ca/wp-content/uploads/2025/10/39154.Family_Friends_Information_Guide.pdf
+"25 Front Ave. W., Brockville ON",Brockville,"Lanark, Leeds and Grenville Addictions and Mental Health",+1 (613) 342-2262,https://www.theroyal.ca/wp-content/uploads/2025/10/39154.Family_Friends_Information_Guide.pdf
+"61 King Street E., Brockville ON",Brockville,Developmental Services of Leeds and Grenville,+1 (613) 345-1290,https://www.theroyal.ca/wp-content/uploads/2025/10/39154.Family_Friends_Information_Guide.pdf
+"75 Charles St., Brockville ON",Brockville,Brockville General Hospital,+1 (613) 345-5649,https://www.theroyal.ca/wp-content/uploads/2025/10/39154.Family_Friends_Information_Guide.pdf
+"225 Donald Street, Suite 120",Ottawa,East Ottawa Community Family Health Team – Overbrook-Forbes Clinic,613-745-2228,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+815 St. Laurent Blvd,Ottawa,Rideau-Rockcliffe Community Resource Centre,613-745-0073,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"24 Selkirk St, Suite 300",Ottawa,Akausivik Inuit Family Health Team – Mental Health Services,613-740-0999,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"292 Montreal Rd, Suite 302",Ottawa,Canadian Centre for Men and Families Ottawa,613-518-1065,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"311 McArthur Ave, Suite 301",Ottawa,Canadian Mental Health Association Ottawa – Mental Health Community Support Service,613-737-7791,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+310 Olmstead St,Ottawa,Counselling and Family Service Ottawa,613-233-8478,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+404 McArthur Ave,Ottawa,Hopewell Eating Disorders Support,613-241-3428,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"214 Montreal Rd, Suite 400",Ottawa,Metis Nation of Ontario – Willow’s Drop-In,613-748-1880,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+388 Montreal Rd,Ottawa,Montfort Renaissance – Intensive Community Support Program,613-742-0988 ext. 933,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+338 Montreal Rd,Ottawa,Montfort Renaissance – Court Assistance and Diversion Program,613-742-0988 ext. 633,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+346 Montreal Rd,Ottawa,Montfort Renaissance – Ateliers de L’Elan,613-744-2244 ext. 600,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+45 Montreal Road,Ottawa,Recovery Care,613-697-8123,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+221 Nelson St,Ottawa,Sandy Hill Community Health Centre,613-789-1500,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+404 McArthur Avenue,Ottawa,Serenity Renewal for Families,613-523-5143,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+780 de L’Église St.,Ottawa,St. Mary’s Home – Young Parent Outreach Centre,613-749-2491,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+71 Montreal Rd,Ottawa,Sunrise Medical,613-680-7444,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+299 Montreal Rd,Ottawa,Wabano Centre for Aboriginal Health,613-748-0657,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+2277 Riverside Drive,Ottawa,The Ottawa Anxiety and Trauma Clinic,613-737-1194,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1800 Bank Street,Ottawa,Recovery Care,613-425-9525,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1355 Bank St., Suite 600",Ottawa,South-East Ottawa Community Health Centre,613-737-5115,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1355 Bank St, 6th floor",Ottawa,The Walk-In Counselling Clinic,613-737-5115,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+2576 Carling Ave,Ottawa,Carefor Health & Community Services – Let’s Get Together Club,613-721-6496,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1150 Morrison Drive, Suite 400C",Ottawa,Ottawa Centre for Cognitive Therapy,613-729-0801,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+2 Macneil Court,Kanata,Western Ottawa Community Resource Centre,613-591-3686,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+19 Main St,Ottawa,AIDS Committee of Ottawa – Harm Reduction Program – The Tool Shed,613-238-5014 ext 239,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1385 Woodroffe Ave,Ottawa,Algonquin College – Counselling Services,613-727-4723 ext 7200,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+488 Rue Wilbrod St,Ottawa,Amethyst Women’s Addiction Centre,613-563-0363,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+30 Cleary Avenue,Ottawa,Ancoura,613-233-8130,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"The Bronson Centre, 211 Bronson Ave, Suite 209",Ottawa,The Pastoral Counselling Centre (Anglican Diocese of Ottawa),613-235-2516,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1541 Merivale Rd, Suite C",Ottawa,Canadian Hearing Services – Connect Mental Health Counselling,1-886-518-0000,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1125 University Dr, Ottawa, ON K1S 5B6",Ottawa,Carleton University – Counselling Services,613-520-6674 ext 2,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1465 Caldwell Ave, Unit 102",Ottawa,Carlington Community Chaplaincy – Pastoral Care,613-728-9933,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"11 Rosemount Ave, Suite 302",Ottawa,Centre for Treatment of Sexual Abuse and Childhood Trauma,613-233-4929,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+420 Cooper St.,Ottawa,Centretown CHC,613-233-4443,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+804 Greenbank Rd,Nepean,Christian Counselling Ottawa,613-729-8454,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"2211 Riverside Dr, Suite B-4",Ottawa,Crocus Care Solutions,613-686-5818,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1755 Courtwood Crescent,Ottawa,Crossroads Children’s Mental Health Centre,613-723-1623 ext 259,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1895 Bradley Side Rd,Carp,Dave Smith Youth Treatment Centre,613-594-8333,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1390 Prince of Wales Dr, Suite 200",Ottawa,Elim Counselling Service,613-699-1677,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+312 Parkdale Ave,Ottawa,Family Services Ottawa,613-725-3601,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"75 Bruyère St, Suite 127Y",Ottawa,Geriatric Psychiatry Community Services of Ottawa,613-562-9777 ext 0,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+3435 Ramsayville Rd,Ottawa,Harvest House Ministries of Ottawa-Carleton,613-521-9114,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"211 Bronson Ave, Room 215",Ottawa,Jaku Konbit – Provincial Youth Outreach Worker Program,613-252-4368; 613-567-0600,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+2089 Walkley Road,Ottawa,Jericho Road,613-567-5134,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+400 Cooper St,Ottawa,Kind Space (Be Kind to Your Mind),613-563-4818,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+37 Irving Ave,Ottawa,Maison Decision House,613-728-5013,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1139 Mill St,Manotick,Manotick Counselling,613-265-7664,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"400 Cooper St, Suite 9004",Ottawa,Max Ottawa,613-701-6555,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+2323 St. Laurent Blvd,Ottawa,Miwaashin Lodge Indigenous Women’s Support Centre,613-741-5590,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"309 Cooper St, Suite 503",Ottawa,Muslim Family Services,613-562-2273,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+401 Somerset St W,Ottawa,Ontario Addiction Treatment Centres (Somerset St W),613-686-0400,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1318 Carling Ave,Ottawa,Ontario Addiction Treatment Centres (Carling Ave),613-627-0856,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"356 Woodroffe Ave, Entrance G/H, Suite 201",Ottawa,Ontario Counselling and Psychotherapy Centre,613-699-0060,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+959 Wellington St W,Ottawa,Ottawa Community Immigrant Services Organization – Clinical counselling,613-725-5671 ext. 337,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+179 Clarence St,Ottawa,Ottawa Public Health – Harm Reduction Program,613-580-2424 ext 29047 / 613-232-3232,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+183 McLeod St,Ottawa,Ontario Native Women's Association – Babaamendam (Trauma-Informed Care),1-800-667-0816,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+2000 Scott St,Ottawa,Ottawa Salus Corporation,613-729-0123,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1365 Richmond Rd,Ottawa,Pinecrest Queensway Community Health Centre,613-820-4922 ext 3369,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+211 Bronson Ave #313,Ottawa,Psychiatric Survivors of Ottawa,613-567-4379,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+312 Parkdale Avenue,Ottawa,Rideauwood Addiction and Family Services,613-724-4881,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1737 Woodward Dr, Suite 104",Ottawa,Roberts Smart Centre,613-728-1946,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1145 Carling Ave,Ottawa,The Royal Ottawa Mental Health Centre – ACT Teams,613-722-6521 ext 7325,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1145 Carling Ave,Ottawa,The Royal Ottawa Mental Health Centre – Operational Stress Injury Clinic,613-722-6521 ext 6270,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1145 Carling Ave,Ottawa,The Royal Ottawa Mental Health Centre – Substance Use and Concurrent Disorders,613-722-6521 ext 6508,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+171 George St,Ottawa,The Salvation Army – Booth Centre Ottawa Stabilization,613-241-1573,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+103 Leopolds Dr.,Ottawa,Serenity House – Addiction Treatment Services,613-733-3663,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+256 King Edward,Ottawa,Shepherds of Good Hope – The Trailer (Supervised Consumption Site),613-789-8210,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+90 First Ave W,Ottawa,Sobriety House Inc,613-233-0828 ext. 7,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+30 Rosemount Ave,Ottawa,Somerset West Community Health Centre – Black Community Counselling,613-571-0097,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+55 Eccles St,Ottawa,Somerset West Community Health Centre – Chinese Community Counselling,613-402-2159,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+1071 Richmond Road,Ottawa,Tungasuvvingat Inuit – Urban Inuit Community Centre,613-565-5885 ext. 201,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"136 Jean-Jacques Lussier St, Room 4031",Ottawa,University of Ottawa – Centre for Psychological Services and Research,613-562-5289,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"100 Craig Henry Dr, Suite 204",Ottawa,Upstream Ottawa Community Mental Health Support,613-248-3330,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+101 James St,Ottawa,Vesta Recovery Program for Women,613-233-0353,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1 Nicholas St, Unit 604B",Ottawa,Voice Found – The Clinic,613-686-1818,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"1355 Bank St, Unit 300",Ottawa,Youth Services Bureau of Ottawa – Mental Health Services (Walk-in/Office),613-562-3004,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+150 Mann Ave,Ottawa,Youville Centre,613-231-5150,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+595 Montreal Rd,Ottawa,"Inuuqatigiit: Centre for Inuit Children, Youth and Families – Sivumut Alluqatigiit Program",343-550-4676,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"2305 St. Laurent Blvd., Unit 300B",Ottawa,YouthNet,613-286-0019,https://www.ottawapolice.ca/Guiding-Coucil-Resource-Guide_Final-EN.pdf
+"780 rue de L'Eglise, Ottawa, Ontario K1K 3K7",Ottawa,St. Mary's Home,613-749-2491,https://stmaryshome.com/wp-content/uploads/2017/11/SMH-Programs-and-Services-Delivery-Model.pdf
+"460 Main Street East, Suite 201",Hamilton,Thrive Child and Youth Trauma Services,905-523-1020,https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+140 King St. E Unit 101,Hamilton,Rainbow Mentors,289-389-2061,https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+20 Education Court,Hamilton,Transcend,289-237-8336,https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+10 Pearl Street N.,Hamilton,Good Shepherd’s Seniors Support Services - Assisted Living Program,905-777-8801,https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+196 Wentworth St N,Hamilton,Willow’s Place (Mission Services),905-528-5100 ext. 1200,https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+"785 Britannia Ave, Hamilton, ON L8H 2B5",Hamilton,Niwasa Kendaaswin Teg Foodbank,(905) 549-4884 (option 1),https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+"605 Highway #8, Stoney Creek, ON L8G 5G2",Stoney Creek,Stoney Creek Food Bank,(905) 643-2090,https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf
+"227 Second Street South, Second Floor",Kenora,CMHAK,(807) 468-1838,https://www.cmhak.on.ca/images/PDFS/MentalHealthAddictionServicesinFirstNationsInventoryFINAL.pdf
