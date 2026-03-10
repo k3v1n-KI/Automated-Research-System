@@ -62,14 +62,3 @@ To evaluate the system without relying on brittle UI automation or unscalable ma
 * **Domain Adaptation:** Prove the algorithm is domain-agnostic by adapting the extraction logic to entirely new taxonomies of social services (e.g., Food Banks, Disability Services).
 * **Semantic Web Verification:** Pivot from reliance on Google Places tags (which struggle with ontological classification like `point_of_interest`) to an **LLM-driven Search Snippet Classifier**. This will analyze open-web meta descriptions to accurately verify domain alignment (e.g., distinguishing a clinical health service from a commercial retail store).
 
-## Installation & Setup
-
-*(Add specific instructions for setting up the Python environment, `.env` API keys for the LLM, Crawl4AI requirements, and the SearXNG docker container here).*
-
-```bash
-# Clone the repository
-git clone [https://github.com/yourusername/automated-research-system.git](https://github.com/yourusername/automated-research-system.git)
-cd automated-research-system
-
-# Install dependencies
-pip install -r requirements.txt
