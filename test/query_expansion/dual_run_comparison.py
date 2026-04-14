@@ -46,7 +46,7 @@ class QueryMetrics:
 SIMPLE_QUERY_EXPANSION_PROMPT = """
 You are a search query generation expert. Generate diverse search queries to find information about: {goal}
 
-Create 15 natural, varied search queries that would find different relevant sources.
+Create 30 natural, varied search queries that would find different relevant sources.
 Vary the wording, terminology, and specificity to explore different angles.
 
 Return ONLY a JSON array of strings, like:
@@ -197,7 +197,7 @@ async def run_simple_llm_generation(
     goal: str,
     iteration: int
 ) -> Tuple[QueryMetrics, List[str]]:
-    """Generate 15 queries using simple LLM prompt (Current Method replacement)"""
+    """Generate 30 queries using simple LLM prompt (Current Method replacement)"""
     print(f"      ⏳ Generating queries with simple LLM prompt...")
     
     import time
@@ -263,9 +263,9 @@ async def run_dual_comparison(goal: str = "hospitals in ontario") -> None:
     all_axes = {}
     
     # =========================================================================
-    # METHOD 1: Simple LLM Query Expansion (15 queries)
+    # METHOD 1: Simple LLM Query Expansion (30 queries)
     # =========================================================================
-    print("📊 METHOD 1: Simple LLM Query Expansion (15 queries via basic prompt)")
+    print("📊 METHOD 1: Simple LLM Query Expansion (30 queries via basic prompt)")
     print("-" * 80)
     
     # Run simple LLM method twice

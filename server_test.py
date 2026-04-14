@@ -7,6 +7,8 @@ from uuid import uuid4
 from flask import Flask, request, render_template
 from flask_socketio import SocketIO, emit, disconnect
 from openai import AsyncOpenAI
+# GEMINI - Temporarily commented out
+# import google.generativeai as genai
 from dotenv import find_dotenv, load_dotenv
 
 # Load environment
@@ -14,9 +16,16 @@ dotenv_path = find_dotenv()
 if dotenv_path:
     load_dotenv(dotenv_path)
 
-# Initialize clients
 openai_client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 openai_model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
+
+# GEMINI - Temporarily commented out
+# api_key = os.getenv("GEMINI_API_KEY")
+# if not api_key:
+#     raise ValueError("GEMINI_API_KEY not set in environment")
+# genai.configure(api_key=api_key)
+# gemini_model = genai.GenerativeModel(os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp"))
+
 # Flask app with template support
 app = Flask(__name__, template_folder='templates')
 app.config['SECRET_KEY'] = os.getenv("SECRET_KEY", "test-secret")
@@ -145,19 +154,31 @@ async def _chat_task(user_message: str, client_id: str, session_id: str):
         stream = await openai_client.chat.completions.create(
             model=openai_model,
             messages=messages,
-            stream=True,
+            stream=True
         )
-        
+
         async for chunk in stream:
             if chunk.choices[0].delta.content:
                 token = chunk.choices[0].delta.content
                 full_response += token
-                
+
                 # Emit token to client
                 socketio.emit("token", {
                     "token": token,
                     "timestamp": datetime.now().isoformat()
                 }, room=client_id)
+
+        # GEMINI - Temporarily commented out
+        # full_prompt = "\n\n".join([f"{msg['role']}: {msg['content']}" for msg in messages])
+        # response = await gemini_model.generate_content_async(full_prompt, stream=True)
+        # async for chunk in response:
+        #     if chunk.text:
+        #         token = chunk.text
+        #         full_response += token
+        #         socketio.emit("token", {
+        #             "token": token,
+        #             "timestamp": datetime.now().isoformat()
+        #         }, room=client_id)
         
         # Add assistant response to history
         messages.append({"role": "assistant", "content": full_response})

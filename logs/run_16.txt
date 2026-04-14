@@ -1,0 +1,1239 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: zlpHP4w-Lasvzr5BAAAB
+
+======================================================================
+Starting Research Session
+   Client: zlpHP4w-Lasvzr5BAAAB
+   Prompt: I want to compile a comprehensive dataset of community organizations and support services in Ontario that assist adults with developmental and physical disabilities. Specifically, extract programs focused on vocational training, job coaching, resume development, and supported employment...
+   Columns: ['Name', 'Address', 'Phone', 'City']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'validated_results', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: cda75b6b-197f-4564-9444-c02d4209b2d0
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'validated_results', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: I want to compile a comprehensive dataset of community organizations and support services in Ontario that assist adults with developmental and physical disabilities. Specifically, extract programs focused on vocational training, job coaching, resume development, and supported employment...
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Phone', 'isPriority': False, 'dedupeRole': 'hard'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 30 formula-based queries
+   Data: {"queries": ["Supported Employment Agency in Province-wide Ontario", "Vocational Rehabilitation Provider in Greater Toronto Area (GTA)", "Job Coaching Service in Eastern Ontario", "Workplace Accommoda
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 30 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/30: Supported Employment Agency in Province-wide Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/30: Vocational Rehabilitation Provider in Greater Toronto Area (GTA)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/30: Job Coaching Service in Eastern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/30: Workplace Accommodation Specialist in Western Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/30: Community Living Organization in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/30: Day Program with Employment Focus in Municipal social services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/30: Transitional Employment Program in Regional health/rehab networks
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/30: Sheltered Workshop in School-to-work transition zone
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/30: Employment Ontario Partner in Post-secondary campus services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/30: Disability Employment Network in Rural and remote communities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/30: Supported Employment Agency Program name in Province-wide Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/30: Vocational Rehabilitation Provider Eligibility criteria in Greater Toronto Area (GTA)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/30: Job Coaching Service Disability type served in Eastern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/30: Workplace Accommodation Specialist Age range in Western Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/30: Community Living Organization Service description in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 16/30: Day Program with Employment Focus Employment outcomes in Municipal social services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 17/30: Transitional Employment Program Referral process in Regional health/rehab networks
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 18/30: Sheltered Workshop Funding source in School-to-work transition zone
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 19/30: Employment Ontario Partner Contact information in Post-secondary campus services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 20/30: Disability Employment Network Application form or link in Rural and remote communities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 21/30: Supported Employment Agency in Province-wide Ontario Agency PDF brochure
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 22/30: Vocational Rehabilitation Provider in Greater Toronto Area (GTA) Government PDF guide
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 23/30: Job Coaching Service in Eastern Ontario CSV service directory
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 24/30: Workplace Accommodation Specialist in Western Ontario Municipal website page
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 25/30: Community Living Organization in Northern Ontario Employment Ontario portal
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 26/30: Day Program with Employment Focus in Municipal social services Annual report PDF
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 27/30: Transitional Employment Program in Regional health/rehab networks Community directory listing
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 28/30: Sheltered Workshop in School-to-work transition zone News article
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 29/30: Employment Ontario Partner in Post-secondary campus services Academic or sector report PDF
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 30/30: Disability Employment Network in Rural and remote communities Service provider web page
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 351 unique URLs across 30 queries
+   Data: {"total_urls": 351, "queries": 30, "techniques": ["artifact_hunter", "broad_net", "deep_dive"]}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 351 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 351/351 URLs
+   Data: {"validated": 351, "original": 351}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 351 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://211ontario.ca/results/?topicPath=18&lati....2557206&longitude=-79.8711024&sd=25&ss=Distance  | ✓ | ⏱: 0.80s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?topicPath=18&lati....2557206&longitude=-79.8711024&sd=25&ss=Distance  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/results/?topicPath=18&lati....2557206&longitude=-79.8711024&sd=25&ss=Distance  | ✓ | ⏱: 0.81s 
+[FETCH]... ↓ http://meridianhealthassessments.ca/assessments/work-hardening.php                                   | ✓ | ⏱: 0.84s 
+[SCRAPE].. ◆ http://meridianhealthassessments.ca/assessments/work-hardening.php                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● http://meridianhealthassessments.ca/assessments/work-hardening.php                                   | ✓ | ⏱: 0.85s 
+[FETCH]... ↓ http://onwin.ca/en/employment/accessing_community_support_services/                                  | ✓ | ⏱: 0.98s 
+[SCRAPE].. ◆ http://onwin.ca/en/employment/accessing_community_support_services/                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://onwin.ca/en/employment/accessing_community_support_services/                                  | ✓ | ⏱: 1.00s 
+[FETCH]... ↓ https://211ontario.ca/service/74231918/north-eas...ion-for-community-living-adult-supported-living/  | ✓ | ⏱: 0.24s 
+[SCRAPE].. ◆ https://211ontario.ca/service/74231918/north-eas...ion-for-community-living-adult-supported-living/  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/service/74231918/north-eas...ion-for-community-living-adult-supported-living/  | ✓ | ⏱: 0.25s 
+[FETCH]... ↓ https://211north.ca/record/65276197/                                                                 | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://211north.ca/record/65276197/                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211north.ca/record/65276197/                                                                 | ✓ | ⏱: 1.09s 
+[FETCH]... ↓ http://www.uwo.ca/hr/safety/well_being/index.html                                                    | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ http://www.uwo.ca/hr/safety/well_being/index.html                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● http://www.uwo.ca/hr/safety/well_being/index.html                                                    | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ http://acl.gov/news-and-events/acl-blog/workshop...ps-providers-transitioning-integrated-employment  | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ http://acl.gov/news-and-events/acl-blog/workshop...ps-providers-transitioning-integrated-employment  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://acl.gov/news-and-events/acl-blog/workshop...ps-providers-transitioning-integrated-employment  | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ http://www.ontario.ca/document/mccss-service-obj...ices/services-delivered-developmental-services-2  | ✓ | ⏱: 1.78s 
+[SCRAPE].. ◆ http://www.ontario.ca/document/mccss-service-obj...ices/services-delivered-developmental-services-2  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.ontario.ca/document/mccss-service-obj...ices/services-delivered-developmental-services-2  | ✓ | ⏱: 1.82s 
+[FETCH]... ↓ https://accessiblework.ca/job-seekers/                                                               | ✓ | ⏱: 0.90s 
+[SCRAPE].. ◆ https://accessiblework.ca/job-seekers/                                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://accessiblework.ca/job-seekers/                                                               | ✓ | ⏱: 0.91s 
+[FETCH]... ↓ http://www.ontario.ca/page/employment-ontario                                                        | ✓ | ⏱: 0.83s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/employment-ontario                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.ontario.ca/page/employment-ontario                                                        | ✓ | ⏱: 0.86s 
+[FETCH]... ↓ http://www.ontario.ca/document/ontario-works-policy-directives/38-post-secondary-students            | ✓ | ⏱: 0.88s 
+[SCRAPE].. ◆ http://www.ontario.ca/document/ontario-works-policy-directives/38-post-secondary-students            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● http://www.ontario.ca/document/ontario-works-policy-directives/38-post-secondary-students            | ✓ | ⏱: 0.93s 
+[FETCH]... ↓ http://www.ontario.ca/page/micro-credentials-ontarios-postsecondary-schools                          | ✓ | ⏱: 0.95s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/micro-credentials-ontarios-postsecondary-schools                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.ontario.ca/page/micro-credentials-ontarios-postsecondary-schools                          | ✓ | ⏱: 0.98s 
+[FETCH]... ↓ https://211north.ca/record/69795849/                                                                 | ✓ | ⏱: 0.76s 
+[SCRAPE].. ◆ https://211north.ca/record/69795849/                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211north.ca/record/69795849/                                                                 | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ https://211north.ca/record/79838515/?searchLocat...cPath=101&latitude=42.834264&longitude=-80.29881  | ✓ | ⏱: 0.82s 
+[SCRAPE].. ◆ https://211north.ca/record/79838515/?searchLocat...cPath=101&latitude=42.834264&longitude=-80.29881  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211north.ca/record/79838515/?searchLocat...cPath=101&latitude=42.834264&longitude=-80.29881  | ✓ | ⏱: 0.83s 
+[FETCH]... ↓ https://ahminc.ca/clinical-referral-program                                                          | ✓ | ⏱: 0.96s 
+[SCRAPE].. ◆ https://ahminc.ca/clinical-referral-program                                                          | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://ahminc.ca/clinical-referral-program                                                          | ✓ | ⏱: 0.98s 
+[FETCH]... ↓ http://www.ontario.ca/page/information-public-postsecondary-education-partners                       | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/information-public-postsecondary-education-partners                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/information-public-postsecondary-education-partners                       | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ http://www.ontario.ca/page/work-occupational-health-and-safety-inspector                             | ✓ | ⏱: 1.22s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/work-occupational-health-and-safety-inspector                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● http://www.ontario.ca/page/work-occupational-health-and-safety-inspector                             | ✓ | ⏱: 1.27s 
+[FETCH]... ↓ http://www.ontario.ca/page/recovery-renewal-ontarios-vision-social-assistance-transformation         | ✓ | ⏱: 1.27s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/recovery-renewal-ontarios-vision-social-assistance-transformation         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.ontario.ca/page/recovery-renewal-ontarios-vision-social-assistance-transformation         | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://1to1rehab.ca/                                                                                | ✓ | ⏱: 3.38s 
+[SCRAPE].. ◆ https://1to1rehab.ca/                                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://1to1rehab.ca/                                                                                | ✓ | ⏱: 3.40s 
+[FETCH]... ↓ https://agilec.ca/professional-services/career-transition-services/                                  | ✓ | ⏱: 1.77s 
+[SCRAPE].. ◆ https://agilec.ca/professional-services/career-transition-services/                                  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://agilec.ca/professional-services/career-transition-services/                                  | ✓ | ⏱: 1.82s 
+[ERROR]... × https://211ontario.ca/s...unity-living-north-bay/  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[ERROR]... × https://211ontario.ca/s...brampton-east-location/  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[ERROR]... × https://211ontario.ca/r...4&sd=25&ss=Distance&pg=  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ http://onwin.ca/en/employment/jobs/student_jobs/                                                     | ✓ | ⏱: 0.74s 
+[SCRAPE].. ◆ http://onwin.ca/en/employment/jobs/student_jobs/                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://onwin.ca/en/employment/jobs/student_jobs/                                                     | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ https://amapceo.on.ca/ops/workplaceaccommodation                                                     | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://amapceo.on.ca/ops/workplaceaccommodation                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://amapceo.on.ca/ops/workplaceaccommodation                                                     | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://aidecanada.ca/resources/learn/asd-id-cor...ividuals-with-asd-in-rural-or-remote-communities  | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://aidecanada.ca/resources/learn/asd-id-cor...ividuals-with-asd-in-rural-or-remote-communities  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://aidecanada.ca/resources/learn/asd-id-cor...ividuals-with-asd-in-rural-or-remote-communities  | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://askjan.org/                                                                                  | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://askjan.org/                                                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://askjan.org/                                                                                  | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://blocalontario.com/ontario-b-corps                                                            | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://blocalontario.com/ontario-b-corps                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://blocalontario.com/ontario-b-corps                                                            | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://ca.bebee.com/job/ce18d029e4c6e2059c22cff8d03f817e                                            | ✓ | ⏱: 0.67s 
+[SCRAPE].. ◆ https://ca.bebee.com/job/ce18d029e4c6e2059c22cff8d03f817e                                            | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://ca.bebee.com/job/ce18d029e4c6e2059c22cff8d03f817e                                            | ✓ | ⏱: 0.68s 
+[FETCH]... ↓ https://bellomachre.org/services-supports/meaningful-day/                                            | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://bellomachre.org/services-supports/meaningful-day/                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://bellomachre.org/services-supports/meaningful-day/                                            | ✓ | ⏱: 1.34s 
+[FETCH]... ↓ https://behavioralhealthnews.org/redefining-supp...ansitional-employment-as-key-tools-for-recovery/  | ✓ | ⏱: 1.46s 
+[SCRAPE].. ◆ https://behavioralhealthnews.org/redefining-supp...ansitional-employment-as-key-tools-for-recovery/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://behavioralhealthnews.org/redefining-supp...ansitional-employment-as-key-tools-for-recovery/  | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://archdisabilitylaw.ca/resource/guide-attendant-services-in-ontario/                           | ✓ | ⏱: 1.86s 
+[SCRAPE].. ◆ https://archdisabilitylaw.ca/resource/guide-attendant-services-in-ontario/                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://archdisabilitylaw.ca/resource/guide-attendant-services-in-ontario/                           | ✓ | ⏱: 1.89s 
+[FETCH]... ↓ https://builtin.com/job/bilingual-workplace-accommodation-specialist/3920826                         | ✓ | ⏱: 1.40s 
+[SCRAPE].. ◆ https://builtin.com/job/bilingual-workplace-accommodation-specialist/3920826                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://builtin.com/job/bilingual-workplace-accommodation-specialist/3920826                         | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://ca.linkedin.com/company/community-living-durham-north                                        | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://ca.linkedin.com/company/community-living-durham-north                                        | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://ca.linkedin.com/company/community-living-durham-north                                        | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://ca.indeed.com/Vocational-Rehabilitation-jobs-in-GTA,-ON                                      | ✓ | ⏱: 1.46s 
+[SCRAPE].. ◆ https://ca.indeed.com/Vocational-Rehabilitation-jobs-in-GTA,-ON                                      | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://ca.indeed.com/Vocational-Rehabilitation-jobs-in-GTA,-ON                                      | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://achev.ca/                                                                                    | ✓ | ⏱: 4.21s 
+[SCRAPE].. ◆ https://achev.ca/                                                                                    | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://achev.ca/                                                                                    | ✓ | ⏱: 4.28s 
+[FETCH]... ↓ https://business.ottawabot.ca/list/ql/professional-services-8                                        | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://business.ottawabot.ca/list/ql/professional-services-8                                        | ✓ | ⏱: 0.27s 
+[COMPLETE] ● https://business.ottawabot.ca/list/ql/professional-services-8                                        | ✓ | ⏱: 2.22s 
+[FETCH]... ↓ https://annecarbert.ca/                                                                              | ✓ | ⏱: 3.23s 
+[SCRAPE].. ◆ https://annecarbert.ca/                                                                              | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://annecarbert.ca/                                                                              | ✓ | ⏱: 3.25s 
+[FETCH]... ↓ https://careercollegesontario.ca/affiliates/                                                         | ✓ | ⏱: 1.72s 
+[SCRAPE].. ◆ https://careercollegesontario.ca/affiliates/                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://careercollegesontario.ca/affiliates/                                                         | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ https://careers.citywindsor.ca/Jobs/Details/qNjQyy9Sfr                                               | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://careers.citywindsor.ca/Jobs/Details/qNjQyy9Sfr                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://careers.citywindsor.ca/Jobs/Details/qNjQyy9Sfr                                               | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://civeo.com/                                                                                   | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://civeo.com/                                                                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://civeo.com/                                                                                   | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://careerfoundation.com/                                                                        | ✓ | ⏱: 1.77s 
+[SCRAPE].. ◆ https://careerfoundation.com/                                                                        | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://careerfoundation.com/                                                                        | ✓ | ⏱: 1.84s 
+[FETCH]... ↓ https://causes.benevity.org/causes/124-811724756RR0001                                               | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://causes.benevity.org/causes/124-811724756RR0001                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://causes.benevity.org/causes/124-811724756RR0001                                               | ✓ | ⏱: 1.56s 
+[FETCH]... ↓ https://aspe.hhs.gov/reports/regulatory-review-adult-day-services-final-report-section-2-0           | ✓ | ⏱: 3.45s 
+[SCRAPE].. ◆ https://aspe.hhs.gov/reports/regulatory-review-adult-day-services-final-report-section-2-0           | ✓ | ⏱: 0.43s 
+[COMPLETE] ● https://aspe.hhs.gov/reports/regulatory-review-adult-day-services-final-report-section-2-0           | ✓ | ⏱: 3.89s 
+[FETCH]... ↓ https://cleoconnect.ca/organization/community-living-ontario/                                        | ✓ | ⏱: 1.75s 
+[SCRAPE].. ◆ https://cleoconnect.ca/organization/community-living-ontario/                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cleoconnect.ca/organization/community-living-ontario/                                        | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ https://clinictocommunity.ca/epilepsy-and-employment/                                                | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://clinictocommunity.ca/epilepsy-and-employment/                                                | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://clinictocommunity.ca/epilepsy-and-employment/                                                | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://clnf.ca/                                                                                     | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ https://clnf.ca/                                                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://clnf.ca/                                                                                     | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://canadeximmigration.com/leading-employment-agencies-in-ontario/                               | ✓ | ⏱: 2.72s 
+[SCRAPE].. ◆ https://canadeximmigration.com/leading-employment-agencies-in-ontario/                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://canadeximmigration.com/leading-employment-agencies-in-ontario/                               | ✓ | ⏱: 2.75s 
+[FETCH]... ↓ https://ca.linkedin.com/company/community-living-ontario                                             | ✓ | ⏱: 1.25s 
+[SCRAPE].. ◆ https://ca.linkedin.com/company/community-living-ontario                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://ca.linkedin.com/company/community-living-ontario                                             | ✓ | ⏱: 1.27s 
+[FETCH]... ↓ https://clnh.on.ca/                                                                                  | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://clnh.on.ca/                                                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://clnh.on.ca/                                                                                  | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://communitylivingfortfrances.com/                                                              | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://communitylivingfortfrances.com/                                                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://communitylivingfortfrances.com/                                                              | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://cltoronto.ca/                                                                                | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://cltoronto.ca/                                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cltoronto.ca/                                                                                | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://alzheimer.ca/en/about-dementia/other-types-dementia/young-onset-dementia/work                | ✓ | ⏱: 4.99s 
+[SCRAPE].. ◆ https://alzheimer.ca/en/about-dementia/other-types-dementia/young-onset-dementia/work                | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://alzheimer.ca/en/about-dementia/other-types-dementia/young-onset-dementia/work                | ✓ | ⏱: 5.03s 
+[FETCH]... ↓ https://depts.washington.edu/dbpeds/TransitionToEmployment.htm                                       | ✓ | ⏱: 0.85s 
+[SCRAPE].. ◆ https://depts.washington.edu/dbpeds/TransitionToEmployment.htm                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://depts.washington.edu/dbpeds/TransitionToEmployment.htm                                       | ✓ | ⏱: 0.88s 
+[FETCH]... ↓ https://dor.ca.gov/home/UpdatesForCRP                                                                | ✓ | ⏱: 0.76s 
+[SCRAPE].. ◆ https://dor.ca.gov/home/UpdatesForCRP                                                                | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://dor.ca.gov/home/UpdatesForCRP                                                                | ✓ | ⏱: 0.76s 
+[FETCH]... ↓ https://directory.work-self.com/en-ca/ontario                                                        | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://directory.work-self.com/en-ca/ontario                                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://directory.work-self.com/en-ca/ontario                                                        | ✓ | ⏱: 0.94s 
+[FETCH]... ↓ https://cltoronto.ca/supports-and-services/employment-services/                                      | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://cltoronto.ca/supports-and-services/employment-services/                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://cltoronto.ca/supports-and-services/employment-services/                                      | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://earn-paire.ca/service-providers/                                                             | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://earn-paire.ca/service-providers/                                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://earn-paire.ca/service-providers/                                                             | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://ca.indeed.com/Workplace-Accommodation-Specialist-jobs-in-Ontario                             | ✓ | ⏱: 2.02s 
+[SCRAPE].. ◆ https://ca.indeed.com/Workplace-Accommodation-Specialist-jobs-in-Ontario                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://ca.indeed.com/Workplace-Accommodation-Specialist-jobs-in-Ontario                             | ✓ | ⏱: 2.06s 
+[FETCH]... ↓ https://communityconnectionsinc.org/                                                                 | ✓ | ⏱: 2.63s 
+[SCRAPE].. ◆ https://communityconnectionsinc.org/                                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://communityconnectionsinc.org/                                                                 | ✓ | ⏱: 2.68s 
+[FETCH]... ↓ https://clnorthperth.ca/                                                                             | ✓ | ⏱: 2.93s 
+[SCRAPE].. ◆ https://clnorthperth.ca/                                                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://clnorthperth.ca/                                                                             | ✓ | ⏱: 2.96s 
+[FETCH]... ↓ https://ca.indeed.com/q-workplace-accommodation-specialist-jobs.html                                 | ✓ | ⏱: 2.29s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-workplace-accommodation-specialist-jobs.html                                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://ca.indeed.com/q-workplace-accommodation-specialist-jobs.html                                 | ✓ | ⏱: 2.36s 
+[FETCH]... ↓ https://collegeboreal.ca/en/service/service-system-manager/                                          | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://collegeboreal.ca/en/service/service-system-manager/                                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://collegeboreal.ca/en/service/service-system-manager/                                          | ✓ | ⏱: 3.06s 
+[FETCH]... ↓ https://achkarlaw.com/how-to-request-accommodation-at-work/                                          | ✓ | ⏱: 7.64s 
+[SCRAPE].. ◆ https://achkarlaw.com/how-to-request-accommodation-at-work/                                          | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://achkarlaw.com/how-to-request-accommodation-at-work/                                          | ✓ | ⏱: 7.73s 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/Community_Living_Ontario                                               | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/Community_Living_Ontario                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/Community_Living_Ontario                                               | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://communitylivingontario.ca/                                                                   | ✓ | ⏱: 2.48s 
+[SCRAPE].. ◆ https://communitylivingontario.ca/                                                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://communitylivingontario.ca/                                                                   | ✓ | ⏱: 2.52s 
+[FETCH]... ↓ https://dsq-sds.org/article/id/281/                                                                  | ✓ | ⏱: 2.37s 
+[SCRAPE].. ◆ https://dsq-sds.org/article/id/281/                                                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://dsq-sds.org/article/id/281/                                                                  | ✓ | ⏱: 2.41s 
+[FETCH]... ↓ https://communitylivingnorthbay.org/                                                                 | ✓ | ⏱: 2.84s 
+[SCRAPE].. ◆ https://communitylivingnorthbay.org/                                                                 | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://communitylivingnorthbay.org/                                                                 | ✓ | ⏱: 2.86s 
+[FETCH]... ↓ https://communitylivingnorthbay.org/get-involved/our-partners/                                       | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://communitylivingnorthbay.org/get-involved/our-partners/                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://communitylivingnorthbay.org/get-involved/our-partners/                                       | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://ca.indeed.com/q-accommodation-human-rights-management-l-ontario-jobs.html                    | ✓ | ⏱: 2.99s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-accommodation-human-rights-management-l-ontario-jobs.html                    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://ca.indeed.com/q-accommodation-human-rights-management-l-ontario-jobs.html                    | ✓ | ⏱: 3.08s 
+[FETCH]... ↓ https://employmentoptions.ca/                                                                        | ✓ | ⏱: 2.05s 
+[SCRAPE].. ◆ https://employmentoptions.ca/                                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://employmentoptions.ca/                                                                        | ✓ | ⏱: 2.09s 
+[FETCH]... ↓ https://education.illinois.edu/about/news-events...ccessfully-transition-students-with-disabilities  | ✓ | ⏱: 2.49s 
+[SCRAPE].. ◆ https://education.illinois.edu/about/news-events...ccessfully-transition-students-with-disabilities  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://education.illinois.edu/about/news-events...ccessfully-transition-students-with-disabilities  | ✓ | ⏱: 2.52s 
+[ERROR]... × https://files.ontario.c...-en-utf8-2022-08-26.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/mccss-odsp-employment-supports-provider-list-en-utf8-2022-08-26.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://eecentre.com/ready-to-land-your-next-job-lets-move-your-career-forward/                      | ✓ | ⏱: 2.37s 
+[SCRAPE].. ◆ https://eecentre.com/ready-to-land-your-next-job-lets-move-your-career-forward/                      | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://eecentre.com/ready-to-land-your-next-job-lets-move-your-career-forward/                      | ✓ | ⏱: 2.42s 
+[FETCH]... ↓ https://employmentnorth.com/about-us/what-we-do/                                                     | ✓ | ⏱: 2.44s 
+[SCRAPE].. ◆ https://employmentnorth.com/about-us/what-we-do/                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://employmentnorth.com/about-us/what-we-do/                                                     | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://eotb-cfeo.on.ca/learners-job-seekers/                                                        | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://eotb-cfeo.on.ca/learners-job-seekers/                                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://eotb-cfeo.on.ca/learners-job-seekers/                                                        | ✓ | ⏱: 1.11s 
+[FETCH]... ↓ https://feat.findhelp.ca/                                                                            | ✓ | ⏱: 0.96s 
+[SCRAPE].. ◆ https://feat.findhelp.ca/                                                                            | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://feat.findhelp.ca/                                                                            | ✓ | ⏱: 0.96s 
+[FETCH]... ↓ https://fintrac-canafe.canada.ca/msb-esm/reg-eng                                                     | ✓ | ⏱: 0.84s 
+[SCRAPE].. ◆ https://fintrac-canafe.canada.ca/msb-esm/reg-eng                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://fintrac-canafe.canada.ca/msb-esm/reg-eng                                                     | ✓ | ⏱: 0.87s 
+[FETCH]... ↓ https://gtarehabfinder.ca/14/About_Rehab_Finder                                                      | ✓ | ⏱: 0.58s 
+[SCRAPE].. ◆ https://gtarehabfinder.ca/14/About_Rehab_Finder                                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://gtarehabfinder.ca/14/About_Rehab_Finder                                                      | ✓ | ⏱: 0.59s 
+[FETCH]... ↓ https://fasdontario.ca/service-areas/intervention-and-support/assisted-employment/                   | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ https://fasdontario.ca/service-areas/intervention-and-support/assisted-employment/                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://fasdontario.ca/service-areas/intervention-and-support/assisted-employment/                   | ✓ | ⏱: 1.44s 
+[FETCH]... ↓ https://eoworks.ca/about-us/service-providers/                                                       | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://eoworks.ca/about-us/service-providers/                                                       | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://eoworks.ca/about-us/service-providers/                                                       | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://guides.lib.de.us/dhsslibrary/sg_About_DHSS                                                   | ✓ | ⏱: 0.88s 
+[SCRAPE].. ◆ https://guides.lib.de.us/dhsslibrary/sg_About_DHSS                                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://guides.lib.de.us/dhsslibrary/sg_About_DHSS                                                   | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ https://gtarehabnetwork.ca/members/                                                                  | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://gtarehabnetwork.ca/members/                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://gtarehabnetwork.ca/members/                                                                  | ✓ | ⏱: 1.13s 
+[FETCH]... ↓ https://getintocommunityliving.com/affiliations/                                                     | ✓ | ⏱: 1.68s 
+[SCRAPE].. ◆ https://getintocommunityliving.com/affiliations/                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://getintocommunityliving.com/affiliations/                                                     | ✓ | ⏱: 1.70s 
+[FETCH]... ↓ https://host8.viethwebhosting.com/~omss/2024-policy-conference.php                                   | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://host8.viethwebhosting.com/~omss/2024-policy-conference.php                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://host8.viethwebhosting.com/~omss/2024-policy-conference.php                                   | ✓ | ⏱: 1.14s 
+[FETCH]... ↓ https://healthpointe.net/occupational-medicine/transitional-work-program/                            | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://healthpointe.net/occupational-medicine/transitional-work-program/                            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://healthpointe.net/occupational-medicine/transitional-work-program/                            | ✓ | ⏱: 1.28s 
+[FETCH]... ↓ https://accesemployment.ca/                                                                          | ✓ | ⏱: 10.69s 
+[SCRAPE].. ◆ https://accesemployment.ca/                                                                          | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://accesemployment.ca/                                                                          | ✓ | ⏱: 10.78s 
+[FETCH]... ↓ https://accesemployment.ca/programs/employment-services/employment-services-2                        | ✓ | ⏱: 7.94s 
+[SCRAPE].. ◆ https://accesemployment.ca/programs/employment-services/employment-services-2                        | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://accesemployment.ca/programs/employment-services/employment-services-2                        | ✓ | ⏱: 8.02s 
+[FETCH]... ↓ https://ilaging.illinois.gov/programs/employ.html                                                    | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://ilaging.illinois.gov/programs/employ.html                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ilaging.illinois.gov/programs/employ.html                                                    | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://jobs.communityhealthsystem.org/                                                              | ✓ | ⏱: 0.90s 
+[SCRAPE].. ◆ https://jobs.communityhealthsystem.org/                                                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://jobs.communityhealthsystem.org/                                                              | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ https://ivyrehab.com/careers/why-work-at-ivy/                                                        | ✓ | ⏱: 1.00s 
+[SCRAPE].. ◆ https://ivyrehab.com/careers/why-work-at-ivy/                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://ivyrehab.com/careers/why-work-at-ivy/                                                        | ✓ | ⏱: 1.05s 
+[FETCH]... ↓ https://journals.openedition.org/alterjdr/13882                                                      | ✓ | ⏱: 0.73s 
+[SCRAPE].. ◆ https://journals.openedition.org/alterjdr/13882                                                      | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://journals.openedition.org/alterjdr/13882                                                      | ✓ | ⏱: 0.73s 
+[FETCH]... ↓ https://hr.mcmaster.ca/employees/health_safety_well-being/my-health/                                 | ✓ | ⏱: 1.76s 
+[SCRAPE].. ◆ https://hr.mcmaster.ca/employees/health_safety_well-being/my-health/                                 | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://hr.mcmaster.ca/employees/health_safety_well-being/my-health/                                 | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://journals.sagepub.com/doi/10.1177/10522263251394328                                           | ✓ | ⏱: 0.87s 
+[SCRAPE].. ◆ https://journals.sagepub.com/doi/10.1177/10522263251394328                                           | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://journals.sagepub.com/doi/10.1177/10522263251394328                                           | ✓ | ⏱: 0.88s 
+[FETCH]... ↓ https://immigrationnewscanada.ca/top-10-ontario-employment-agencies-2024/                            | ✓ | ⏱: 1.85s 
+[SCRAPE].. ◆ https://immigrationnewscanada.ca/top-10-ontario-employment-agencies-2024/                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://immigrationnewscanada.ca/top-10-ontario-employment-agencies-2024/                            | ✓ | ⏱: 1.89s 
+[FETCH]... ↓ https://gme.mylrh.org/ty/                                                                            | ✓ | ⏱: 2.79s 
+[SCRAPE].. ◆ https://gme.mylrh.org/ty/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://gme.mylrh.org/ty/                                                                            | ✓ | ⏱: 2.84s 
+[FETCH]... ↓ https://jobs.scotiabank.com/job/Toronto-Workplace-Accommodation-Specialist-ON-M5H1H1/596894917/      | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://jobs.scotiabank.com/job/Toronto-Workplace-Accommodation-Specialist-ON-M5H1H1/596894917/      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://jobs.scotiabank.com/job/Toronto-Workplace-Accommodation-Specialist-ON-M5H1H1/596894917/      | ✓ | ⏱: 1.36s 
+[FETCH]... ↓ https://labourmarketgroup.ca/employment-ontario-services/                                            | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://labourmarketgroup.ca/employment-ontario-services/                                            | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://labourmarketgroup.ca/employment-ontario-services/                                            | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://insightglobal.com/locations/ontario/staffing-agency-toronto-on/                              | ✓ | ⏱: 1.91s 
+[SCRAPE].. ◆ https://insightglobal.com/locations/ontario/staffing-agency-toronto-on/                              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://insightglobal.com/locations/ontario/staffing-agency-toronto-on/                              | ✓ | ⏱: 1.99s 
+[FETCH]... ↓ https://gtarehabfinder.ca/RehabFinder/List                                                           | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://gtarehabfinder.ca/RehabFinder/List                                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://gtarehabfinder.ca/RehabFinder/List                                                           | ✓ | ⏱: 1.06s 
+[FETCH]... ↓ https://maprehab.ca/                                                                                 | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://maprehab.ca/                                                                                 | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://maprehab.ca/                                                                                 | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://mindfulcareer.ca/career-coach-toronto                                                        | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://mindfulcareer.ca/career-coach-toronto                                                        | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://mindfulcareer.ca/career-coach-toronto                                                        | ✓ | ⏱: 1.50s 
+[FETCH]... ↓ https://globalnews.ca/news/4180496/sheltered-workshops-ontario/                                      | ✓ | ⏱: 3.98s 
+[SCRAPE].. ◆ https://globalnews.ca/news/4180496/sheltered-workshops-ontario/                                      | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://globalnews.ca/news/4180496/sheltered-workshops-ontario/                                      | ✓ | ⏱: 4.06s 
+[FETCH]... ↓ https://mhanational.org/position-statements/deve...from-mental-health-and-substance-use-conditions/  | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://mhanational.org/position-statements/deve...from-mental-health-and-substance-use-conditions/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://mhanational.org/position-statements/deve...from-mental-health-and-substance-use-conditions/  | ✓ | ⏱: 1.90s 
+[FETCH]... ↓ https://news.mit.edu/2022/summer-youth-employment-programs-research-0524                             | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://news.mit.edu/2022/summer-youth-employment-programs-research-0524                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://news.mit.edu/2022/summer-youth-employment-programs-research-0524                             | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://labor.delaware.gov/divisions/dvr/rehab-process/                                              | ✓ | ⏱: 2.51s 
+[SCRAPE].. ◆ https://labor.delaware.gov/divisions/dvr/rehab-process/                                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://labor.delaware.gov/divisions/dvr/rehab-process/                                              | ✓ | ⏱: 2.55s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/apprenticeship/...hip-program/school-college-work-initiative-scwi/  | ✓ | ⏱: 5.51s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/apprenticeship/...hip-program/school-college-work-initiative-scwi/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/apprenticeship/...hip-program/school-college-work-initiative-scwi/  | ✓ | ⏱: 5.54s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/youth-...nnection/questions-and-answers/program-overview/  | ✓ | ⏱: 4.02s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/youth-...nnection/questions-and-answers/program-overview/  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/youth-...nnection/questions-and-answers/program-overview/  | ✓ | ⏱: 4.08s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/supported-employment/                                      | ✓ | ⏱: 4.11s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/supported-employment/                                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/supported-employment/                                      | ✓ | ⏱: 4.13s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/better...-ontario/questions-and-answers/program-overview/  | ✓ | ⏱: 4.21s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/better...-ontario/questions-and-answers/program-overview/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/better...-ontario/questions-and-answers/program-overview/  | ✓ | ⏱: 4.25s 
+[FETCH]... ↓ https://news.ontario.ca/en/release/60316/ontario...-municipal-partners-to-improve-social-assistance  | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://news.ontario.ca/en/release/60316/ontario...-municipal-partners-to-improve-social-assistance  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://news.ontario.ca/en/release/60316/ontario...-municipal-partners-to-improve-social-assistance  | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/get-set-skills-education-and-training/                     | ✓ | ⏱: 4.26s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/get-set-skills-education-and-training/                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/get-set-skills-education-and-training/                     | ✓ | ⏱: 4.30s 
+[FETCH]... ↓ https://mn.gov/mnddc/parallels2/four/006.html                                                        | ✓ | ⏱: 2.16s 
+[SCRAPE].. ◆ https://mn.gov/mnddc/parallels2/four/006.html                                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://mn.gov/mnddc/parallels2/four/006.html                                                        | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/get-se...training/questions-and-answers/program-overview/  | ✓ | ⏱: 4.35s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/get-se...training/questions-and-answers/program-overview/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/get-se...training/questions-and-answers/program-overview/  | ✓ | ⏱: 4.41s 
+[FETCH]... ↓ https://onlinemsw.fsu.edu/blog/social-worker-role                                                    | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://onlinemsw.fsu.edu/blog/social-worker-role                                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://onlinemsw.fsu.edu/blog/social-worker-role                                                    | ✓ | ⏱: 1.40s 
+[FETCH]... ↓ https://networkofcare.org/                                                                           | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://networkofcare.org/                                                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://networkofcare.org/                                                                           | ✓ | ⏱: 2.22s 
+[FETCH]... ↓ https://loyalistcollege.com/program/social-service-worker/                                           | ✓ | ⏱: 3.17s 
+[SCRAPE].. ◆ https://loyalistcollege.com/program/social-service-worker/                                           | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://loyalistcollege.com/program/social-service-worker/                                           | ✓ | ⏱: 3.22s 
+[FETCH]... ↓ https://ontariotrainingcentre.com/                                                                   | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://ontariotrainingcentre.com/                                                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://ontariotrainingcentre.com/                                                                   | ✓ | ⏱: 1.39s 
+[FETCH]... ↓ https://plasticsrecycling.org/tools-and-resources/buyers-sellers-directory/                          | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://plasticsrecycling.org/tools-and-resources/buyers-sellers-directory/                          | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://plasticsrecycling.org/tools-and-resources/buyers-sellers-directory/                          | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://mrrh.ernesthealth.com/                                                                       | ✓ | ⏱: 2.76s 
+[SCRAPE].. ◆ https://mrrh.ernesthealth.com/                                                                       | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://mrrh.ernesthealth.com/                                                                       | ✓ | ⏱: 2.80s 
+[FETCH]... ↓ https://monarchnc.org/sub-topic/day-programs/                                                        | ✓ | ⏱: 2.95s 
+[SCRAPE].. ◆ https://monarchnc.org/sub-topic/day-programs/                                                        | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://monarchnc.org/sub-topic/day-programs/                                                        | ✓ | ⏱: 3.02s 
+[FETCH]... ↓ https://pathwaystowork.acf.gov/intervention-detail/461                                               | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://pathwaystowork.acf.gov/intervention-detail/461                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://pathwaystowork.acf.gov/intervention-detail/461                                               | ✓ | ⏱: 1.61s 
+[FETCH]... ↓ https://pubmed.ncbi.nlm.nih.gov/36201807/                                                            | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://pubmed.ncbi.nlm.nih.gov/36201807/                                                            | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://pubmed.ncbi.nlm.nih.gov/36201807/                                                            | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ https://progressiverehabclinic.ca/                                                                   | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://progressiverehabclinic.ca/                                                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://progressiverehabclinic.ca/                                                                   | ✓ | ⏱: 1.40s 
+[FETCH]... ↓ https://occ.ca/talent-opportunities-program/                                                         | ✓ | ⏱: 2.79s 
+[SCRAPE].. ◆ https://occ.ca/talent-opportunities-program/                                                         | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://occ.ca/talent-opportunities-program/                                                         | ✓ | ⏱: 2.86s 
+[FETCH]... ↓ https://restartnow.ca/                                                                               | ✓ | ⏱: 1.25s 
+[SCRAPE].. ◆ https://restartnow.ca/                                                                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://restartnow.ca/                                                                               | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC10684709/                                                   | ✓ | ⏱: 2.22s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC10684709/                                                   | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC10684709/                                                   | ✓ | ⏱: 2.39s 
+[FETCH]... ↓ https://portal.ct.gov/DMHAS/Initiatives/Evidence-Based/Supported-Employment-Services                 | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://portal.ct.gov/DMHAS/Initiatives/Evidence-Based/Supported-Employment-Services                 | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://portal.ct.gov/DMHAS/Initiatives/Evidence-Based/Supported-Employment-Services                 | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://rncemploymentservices.ca/                                                                    | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://rncemploymentservices.ca/                                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://rncemploymentservices.ca/                                                                    | ✓ | ⏱: 1.73s 
+[FETCH]... ↓ https://manifold.counseling.org/read/supports-an...t-among-disabled-and-nondisabled-rural-residents  | ✓ | ⏱: 4.76s 
+[SCRAPE].. ◆ https://manifold.counseling.org/read/supports-an...t-among-disabled-and-nondisabled-rural-residents  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://manifold.counseling.org/read/supports-an...t-among-disabled-and-nondisabled-rural-residents  | ✓ | ⏱: 4.86s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC12805453/                                                   | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC12805453/                                                   | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC12805453/                                                   | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://rula.disabilityrightsca.org/rula-book/ch...ay-and-leisure-activities/what-are-day-programs/  | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://rula.disabilityrightsca.org/rula-book/ch...ay-and-leisure-activities/what-are-day-programs/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://rula.disabilityrightsca.org/rula-book/ch...ay-and-leisure-activities/what-are-day-programs/  | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://possibilitiesclinic.com/neuroaffirmative-leadership-and-career-coaching/                     | ✓ | ⏱: 2.64s 
+[SCRAPE].. ◆ https://possibilitiesclinic.com/neuroaffirmative-leadership-and-career-coaching/                     | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://possibilitiesclinic.com/neuroaffirmative-leadership-and-career-coaching/                     | ✓ | ⏱: 2.72s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC11245426/                                                   | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC11245426/                                                   | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC11245426/                                                   | ✓ | ⏱: 1.98s 
+[FETCH]... ↓ https://psychiatryonline.org/doi/10.1176/appi.ps.56.11.1436                                          | ✓ | ⏱: 2.86s 
+[SCRAPE].. ◆ https://psychiatryonline.org/doi/10.1176/appi.ps.56.11.1436                                          | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://psychiatryonline.org/doi/10.1176/appi.ps.56.11.1436                                          | ✓ | ⏱: 2.97s 
+[FETCH]... ↓ https://rsa.ed.gov/about/programs/disability-inn...e-of-youth-and-adults-with-disabilities/grantees  | ✓ | ⏱: 2.51s 
+[SCRAPE].. ◆ https://rsa.ed.gov/about/programs/disability-inn...e-of-youth-and-adults-with-disabilities/grantees  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://rsa.ed.gov/about/programs/disability-inn...e-of-youth-and-adults-with-disabilities/grantees  | ✓ | ⏱: 2.55s 
+[FETCH]... ↓ https://ontariotrainingcentre.com/inclusivity-resources/disability-resources/                        | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://ontariotrainingcentre.com/inclusivity-resources/disability-resources/                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ontariotrainingcentre.com/inclusivity-resources/disability-resources/                        | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC11257371/                                                   | ✓ | ⏱: 2.28s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC11257371/                                                   | ✓ | ⏱: 0.56s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC11257371/                                                   | ✓ | ⏱: 2.84s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC6483771/                                                    | ✓ | ⏱: 2.86s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC6483771/                                                    | ✓ | ⏱: 1.12s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC6483771/                                                    | ✓ | ⏱: 3.99s 
+[FETCH]... ↓ https://springboardservices.ca/springboard-employment-services-es/                                   | ✓ | ⏱: 3.74s 
+[SCRAPE].. ◆ https://springboardservices.ca/springboard-employment-services-es/                                   | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://springboardservices.ca/springboard-employment-services-es/                                   | ✓ | ⏱: 3.80s 
+[ERROR]... × https://unsworks.unsw.e...5-f75167dc7c51/download  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://unsworks.unsw.edu.au/bitstreams/71f148e0-b9d0-4b6d-b4d5-f75167dc7c51/download", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://torontocentral.rehabcareontario.ca/services/display/120968/toronto_abi_network               | ✓ | ⏱: 2.99s 
+[SCRAPE].. ◆ https://torontocentral.rehabcareontario.ca/services/display/120968/toronto_abi_network               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://torontocentral.rehabcareontario.ca/services/display/120968/toronto_abi_network               | ✓ | ⏱: 3.01s 
+[FETCH]... ↓ https://thebeaconnews.org/stories/2022/11/15/missouri-sheltered-workshops-low-graduation-rate/       | ✓ | ⏱: 3.12s 
+[SCRAPE].. ◆ https://thebeaconnews.org/stories/2022/11/15/missouri-sheltered-workshops-low-graduation-rate/       | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://thebeaconnews.org/stories/2022/11/15/missouri-sheltered-workshops-low-graduation-rate/       | ✓ | ⏱: 3.18s 
+[FETCH]... ↓ https://vra-rehab.ca/                                                                                | ✓ | ⏱: 2.68s 
+[SCRAPE].. ◆ https://vra-rehab.ca/                                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://vra-rehab.ca/                                                                                | ✓ | ⏱: 2.70s 
+[FETCH]... ↓ https://ruralresources.org/staff-spotlights-the-...nd-rural-resources-employment-training-programs/  | ✓ | ⏱: 4.33s 
+[SCRAPE].. ◆ https://ruralresources.org/staff-spotlights-the-...nd-rural-resources-employment-training-programs/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://ruralresources.org/staff-spotlights-the-...nd-rural-resources-employment-training-programs/  | ✓ | ⏱: 4.36s 
+[FETCH]... ↓ https://rsa.ed.gov/about/states                                                                      | ✓ | ⏱: 3.67s 
+[SCRAPE].. ◆ https://rsa.ed.gov/about/states                                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://rsa.ed.gov/about/states                                                                      | ✓ | ⏱: 3.71s 
+[FETCH]... ↓ https://www.70x7wm.com/transitional-living-for-people-leaving-rehab/                                 | ✓ | ⏱: 2.43s 
+[SCRAPE].. ◆ https://www.70x7wm.com/transitional-living-for-people-leaving-rehab/                                 | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.70x7wm.com/transitional-living-for-people-leaving-rehab/                                 | ✓ | ⏱: 2.48s 
+[FETCH]... ↓ https://stride.on.ca/                                                                                | ✓ | ⏱: 4.12s 
+[SCRAPE].. ◆ https://stride.on.ca/                                                                                | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://stride.on.ca/                                                                                | ✓ | ⏱: 4.18s 
+[FETCH]... ↓ https://torontopainreliefclinic.com/occupational-therapy/                                            | ✓ | ⏱: 3.49s 
+[SCRAPE].. ◆ https://torontopainreliefclinic.com/occupational-therapy/                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://torontopainreliefclinic.com/occupational-therapy/                                            | ✓ | ⏱: 3.54s 
+[FETCH]... ↓ https://www.211ct.org/search?term=Vocational Reh...page=1&location=Waterbury&service_area=waterbury  | ✓ | ⏱: 2.79s 
+[SCRAPE].. ◆ https://www.211ct.org/search?term=Vocational Reh...page=1&location=Waterbury&service_area=waterbury  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.211ct.org/search?term=Vocational Reh...page=1&location=Waterbury&service_area=waterbury  | ✓ | ⏱: 2.88s 
+[FETCH]... ↓ https://samhsa.gov/criminal-juvenile-justice/gra...rming-lives-through-supported-employment-program  | ✓ | ⏱: 4.66s 
+[SCRAPE].. ◆ https://samhsa.gov/criminal-juvenile-justice/gra...rming-lives-through-supported-employment-program  | ✓ | ⏱: 0.32s 
+[COMPLETE] ● https://samhsa.gov/criminal-juvenile-justice/gra...rming-lives-through-supported-employment-program  | ✓ | ⏱: 5.00s 
+[FETCH]... ↓ https://studentservices.ontariotechu.ca/employer...opportunities/student-work-placement-program.php  | ✓ | ⏱: 4.59s 
+[SCRAPE].. ◆ https://studentservices.ontariotechu.ca/employer...opportunities/student-work-placement-program.php  | ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://studentservices.ontariotechu.ca/employer...opportunities/student-work-placement-program.php  | ✓ | ⏱: 4.79s 
+[FETCH]... ↓ https://tsflaw.ca/long-term-disability-lawyer/accommodating-disabilities-in-the-workplace/           | ✓ | ⏱: 3.98s 
+[SCRAPE].. ◆ https://tsflaw.ca/long-term-disability-lawyer/accommodating-disabilities-in-the-workplace/           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://tsflaw.ca/long-term-disability-lawyer/accommodating-disabilities-in-the-workplace/           | ✓ | ⏱: 4.02s 
+[ERROR]... × https://www.canada.ca/e...nd-skills-strategy.html  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_CONNECTION_CLOSED at https://www.canada.ca/en/employment-social-development/corporate/reports/evaluations/youth-employment-and-skills-strategy.html
+Call log:
+  - navigating to "https://www.canada.ca/en/employment-social-development/corporate/reports/evaluations/youth-employment-and-skills-strategy.html", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.acces.nysed.gov/vr/new-services-meet-wioa-requirements-vocational-rehabilitation         | ✓ | ⏱: 3.39s 
+[SCRAPE].. ◆ https://www.acces.nysed.gov/vr/new-services-meet-wioa-requirements-vocational-rehabilitation         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.acces.nysed.gov/vr/new-services-meet-wioa-requirements-vocational-rehabilitation         | ✓ | ⏱: 3.41s 
+[FETCH]... ↓ https://www.bls.gov/ooh/management/social-and-community-service-managers.htm                         | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://www.bls.gov/ooh/management/social-and-community-service-managers.htm                         | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.bls.gov/ooh/management/social-and-community-service-managers.htm                         | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://vocrehab.vermont.gov/about-us/partners                                                       | ✓ | ⏱: 4.09s 
+[SCRAPE].. ◆ https://vocrehab.vermont.gov/about-us/partners                                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://vocrehab.vermont.gov/about-us/partners                                                       | ✓ | ⏱: 4.11s 
+[FETCH]... ↓ https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx    | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx    | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx    | ✓ | ⏱: 1.14s 
+[FETCH]... ↓ https://www.bachmannvrs.com/                                                                         | ✓ | ⏱: 1.73s 
+[SCRAPE].. ◆ https://www.bachmannvrs.com/                                                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.bachmannvrs.com/                                                                         | ✓ | ⏱: 1.74s 
+[FETCH]... ↓ https://www.acclaimability.com/workability                                                           | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://www.acclaimability.com/workability                                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.acclaimability.com/workability                                                           | ✓ | ⏱: 3.06s 
+[FETCH]... ↓ https://www.bryantstratton.edu/careers/community-and-social-services-specialist/                     | ✓ | ⏱: 1.71s 
+[SCRAPE].. ◆ https://www.bryantstratton.edu/careers/community-and-social-services-specialist/                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.bryantstratton.edu/careers/community-and-social-services-specialist/                     | ✓ | ⏱: 1.75s 
+[FETCH]... ↓ https://www.aarp.org/aarp-foundation/our-work/income/scsep/                                          | ✓ | ⏱: 3.77s 
+[SCRAPE].. ◆ https://www.aarp.org/aarp-foundation/our-work/income/scsep/                                          | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.aarp.org/aarp-foundation/our-work/income/scsep/                                          | ✓ | ⏱: 3.84s 
+[FETCH]... ↓ https://www.c-q-l.org/resources/articles/communi...organizational-transformation-in-ontario-canada/  | ✓ | ⏱: 1.79s 
+[SCRAPE].. ◆ https://www.c-q-l.org/resources/articles/communi...organizational-transformation-in-ontario-canada/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.c-q-l.org/resources/articles/communi...organizational-transformation-in-ontario-canada/  | ✓ | ⏱: 1.84s 
+[FETCH]... ↓ https://sus.org/redefining-supported-and-transitional-employment-as-key-tools-for-recovery/          | ✓ | ⏱: 5.52s 
+[SCRAPE].. ◆ https://sus.org/redefining-supported-and-transitional-employment-as-key-tools-for-recovery/          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://sus.org/redefining-supported-and-transitional-employment-as-key-tools-for-recovery/          | ✓ | ⏱: 5.54s 
+[ERROR]... × https://www.dentons.com...b9b661ebd2805daf6c.ashx  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.dentons.com/en/pdf-pages/-/media/3822f9b803a743b9b661ebd2805daf6c.ashx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.apaonline.org/page/nonacademic                                                           | ✓ | ⏱: 2.47s 
+[SCRAPE].. ◆ https://www.apaonline.org/page/nonacademic                                                           | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.apaonline.org/page/nonacademic                                                           | ✓ | ⏱: 2.56s 
+[FETCH]... ↓ https://www.careerjoy.com/                                                                           | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://www.careerjoy.com/                                                                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.careerjoy.com/                                                                           | ✓ | ⏱: 2.00s 
+[FETCH]... ↓ https://www.cldn.ca/                                                                                 | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://www.cldn.ca/                                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.cldn.ca/                                                                                 | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://www.clwindsor.org/                                                                           | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.clwindsor.org/                                                                           | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.clwindsor.org/                                                                           | ✓ | ⏱: 1.21s 
+[ERROR]... × https://www.durhamimmig...-With-Disabilities.xlsx  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.durhamimmigration.ca/en/resources/Durham-Scarborough-GTA_Organizations-Serving-People-With-Disabilities.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.careersbydesign.ca/services/career-coach-toronto/                                        | ✓ | ⏱: 2.27s 
+[SCRAPE].. ◆ https://www.careersbydesign.ca/services/career-coach-toronto/                                        | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.careersbydesign.ca/services/career-coach-toronto/                                        | ✓ | ⏱: 2.36s 
+[FETCH]... ↓ https://www.countyhealthrankings.org/strategies-...alth/strategies/transitional-and-subsidized-jobs  | ✓ | ⏱: 1.22s 
+[SCRAPE].. ◆ https://www.countyhealthrankings.org/strategies-...alth/strategies/transitional-and-subsidized-jobs  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.countyhealthrankings.org/strategies-...alth/strategies/transitional-and-subsidized-jobs  | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://www.duncanok.gov/DocumentCenter/View/1162/12-Social-Services                                 | ✓ | ⏱: 0.83s 
+[SCRAPE].. ◆ https://www.duncanok.gov/DocumentCenter/View/1162/12-Social-Services                                 | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.duncanok.gov/DocumentCenter/View/1162/12-Social-Services                                 | ✓ | ⏱: 0.83s 
+[FETCH]... ↓ https://www.canada.ca/en/employment-social-development/programs/student-work-placement-program.html  | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.canada.ca/en/employment-social-development/programs/student-work-placement-program.html  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.canada.ca/en/employment-social-development/programs/student-work-placement-program.html  | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://www.cornwallchamber.com/member-directory?691135b9_page=3                                     | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://www.cornwallchamber.com/member-directory?691135b9_page=3                                     | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.cornwallchamber.com/member-directory?691135b9_page=3                                     | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.canada.ca/en/employment-social-devel...y-inclusion-action-plan/employment-strategy.html  | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://www.canada.ca/en/employment-social-devel...y-inclusion-action-plan/employment-strategy.html  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.canada.ca/en/employment-social-devel...y-inclusion-action-plan/employment-strategy.html  | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.careersbydesign.ca/services/career-counselling-ottawa/                                   | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://www.careersbydesign.ca/services/career-counselling-ottawa/                                   | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.careersbydesign.ca/services/career-counselling-ottawa/                                   | ✓ | ⏱: 1.43s 
+[FETCH]... ↓ https://www.easternontariolocal.ca/biz/20679/careerjoy-ottawa-west-outplacement-career-coaching      | ✓ | ⏱: 1.30s 
+[SCRAPE].. ◆ https://www.easternontariolocal.ca/biz/20679/careerjoy-ottawa-west-outplacement-career-coaching      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.easternontariolocal.ca/biz/20679/careerjoy-ottawa-west-outplacement-career-coaching      | ✓ | ⏱: 1.32s 
+[FETCH]... ↓ https://www.columbiamissourian.com/news/state_ne...rticle_10c7c63e-7ad3-11ec-8c6f-7b207ba99e4a.html  | ✓ | ⏱: 2.44s 
+[SCRAPE].. ◆ https://www.columbiamissourian.com/news/state_ne...rticle_10c7c63e-7ad3-11ec-8c6f-7b207ba99e4a.html  | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.columbiamissourian.com/news/state_ne...rticle_10c7c63e-7ad3-11ec-8c6f-7b207ba99e4a.html  | ✓ | ⏱: 2.57s 
+[FETCH]... ↓ https://www.facebook.com/CLToronto/                                                                  | ✓ | ⏱: 1.34s 
+[SCRAPE].. ◆ https://www.facebook.com/CLToronto/                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/CLToronto/                                                                  | ✓ | ⏱: 1.36s 
+[FETCH]... ↓ https://www.clsm.on.ca/                                                                              | ✓ | ⏱: 2.97s 
+[SCRAPE].. ◆ https://www.clsm.on.ca/                                                                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.clsm.on.ca/                                                                              | ✓ | ⏱: 2.99s 
+[FETCH]... ↓ https://www.communitybenefits.ca/employment_ontario_services                                         | ✓ | ⏱: 2.89s 
+[SCRAPE].. ◆ https://www.communitybenefits.ca/employment_ontario_services                                         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.communitybenefits.ca/employment_ontario_services                                         | ✓ | ⏱: 2.92s 
+[FETCH]... ↓ https://www.communitylivingtimmins.com/                                                              | ✓ | ⏱: 2.89s 
+[SCRAPE].. ◆ https://www.communitylivingtimmins.com/                                                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.communitylivingtimmins.com/                                                              | ✓ | ⏱: 2.92s 
+[FETCH]... ↓ https://www.cccoe.k12.ca.us/Departments--Schools...---Transition-Partnership-Program-TPP/index.html  | ✓ | ⏱: 3.57s 
+[SCRAPE].. ◆ https://www.cccoe.k12.ca.us/Departments--Schools...---Transition-Partnership-Program-TPP/index.html  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.cccoe.k12.ca.us/Departments--Schools...---Transition-Partnership-Program-TPP/index.html  | ✓ | ⏱: 3.67s 
+[FETCH]... ↓ https://www.dol.gov/agencies/eta/seniors                                                             | ✓ | ⏱: 3.05s 
+[SCRAPE].. ◆ https://www.dol.gov/agencies/eta/seniors                                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.dol.gov/agencies/eta/seniors                                                             | ✓ | ⏱: 3.08s 
+[FETCH]... ↓ https://www.facebook.com/newsandtribune/posts/th...lities-participating-in-a-sub/10159762455351136/  | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://www.facebook.com/newsandtribune/posts/th...lities-participating-in-a-sub/10159762455351136/  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.facebook.com/newsandtribune/posts/th...lities-participating-in-a-sub/10159762455351136/  | ✓ | ⏱: 1.02s 
+[FETCH]... ↓ https://www.facebook.com/PhilaOHR/posts/-ready-t...areerthe-city-of-philadelphia-/1199263109046748/  | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://www.facebook.com/PhilaOHR/posts/-ready-t...areerthe-city-of-philadelphia-/1199263109046748/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/PhilaOHR/posts/-ready-t...areerthe-city-of-philadelphia-/1199263109046748/  | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://www.ergodynamic.ca/                                                                          | ✓ | ⏱: 2.55s 
+[SCRAPE].. ◆ https://www.ergodynamic.ca/                                                                          | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.ergodynamic.ca/                                                                          | ✓ | ⏱: 2.62s 
+[FETCH]... ↓ https://www.glassdoor.com/Salaries/workplace-accommodation-specialist-salary-SRCH_IS4080_KO0,34.htm  | ✓ | ⏱: 0.90s 
+[SCRAPE].. ◆ https://www.glassdoor.com/Salaries/workplace-accommodation-specialist-salary-SRCH_IS4080_KO0,34.htm  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.glassdoor.com/Salaries/workplace-accommodation-specialist-salary-SRCH_IS4080_KO0,34.htm  | ✓ | ⏱: 0.91s 
+[FETCH]... ↓ https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-361                                | ✓ | ⏱: 3.12s 
+[SCRAPE].. ◆ https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-361                                | ✓ | ⏱: 0.76s 
+[COMPLETE] ● https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-361                                | ✓ | ⏱: 3.89s 
+[ERROR]... × https://www.ilo.org/media/349306/download          | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ilo.org/media/349306/download", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.function-ability.com/                                                                    | ✓ | ⏱: 2.70s 
+[SCRAPE].. ◆ https://www.function-ability.com/                                                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.function-ability.com/                                                                    | ✓ | ⏱: 2.73s 
+[FETCH]... ↓ https://www.gojobs.gov.on.ca/PDR.aspx?Language=English&JobID=174779                                  | ✓ | ⏱: 2.34s 
+[SCRAPE].. ◆ https://www.gojobs.gov.on.ca/PDR.aspx?Language=English&JobID=174779                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.gojobs.gov.on.ca/PDR.aspx?Language=English&JobID=174779                                  | ✓ | ⏱: 2.35s 
+[FETCH]... ↓ https://www.freereinassociates.ca/diversity-disconnect                                               | ✓ | ⏱: 3.18s 
+[SCRAPE].. ◆ https://www.freereinassociates.ca/diversity-disconnect                                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.freereinassociates.ca/diversity-disconnect                                               | ✓ | ⏱: 3.23s 
+[FETCH]... ↓ https://www.findmyprofession.com/career-advice/coaching-services-toronto/                            | ✓ | ⏱: 3.27s 
+[SCRAPE].. ◆ https://www.findmyprofession.com/career-advice/coaching-services-toronto/                            | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.findmyprofession.com/career-advice/coaching-services-toronto/                            | ✓ | ⏱: 3.35s 
+[FETCH]... ↓ https://www.georgebrown.ca/programs/types/better-jobs-ontario/contact-information                    | ✓ | ⏱: 2.84s 
+[SCRAPE].. ◆ https://www.georgebrown.ca/programs/types/better-jobs-ontario/contact-information                    | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://www.georgebrown.ca/programs/types/better-jobs-ontario/contact-information                    | ✓ | ⏱: 3.01s 
+[FETCH]... ↓ https://www.facebook.com/communitylivingontario/                                                     | ✓ | ⏱: 3.17s 
+[SCRAPE].. ◆ https://www.facebook.com/communitylivingontario/                                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.facebook.com/communitylivingontario/                                                     | ✓ | ⏱: 3.22s 
+[FETCH]... ↓ https://www.iidc.indiana.edu/cclc/employment/com...ed-employment/individual-employment-stories.html  | ✓ | ⏱: 1.96s 
+[SCRAPE].. ◆ https://www.iidc.indiana.edu/cclc/employment/com...ed-employment/individual-employment-stories.html  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.iidc.indiana.edu/cclc/employment/com...ed-employment/individual-employment-stories.html  | ✓ | ⏱: 2.01s 
+[FETCH]... ↓ https://www.hipinfo.ca/record/MET7750                                                                | ✓ | ⏱: 2.23s 
+[SCRAPE].. ◆ https://www.hipinfo.ca/record/MET7750                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.hipinfo.ca/record/MET7750                                                                | ✓ | ⏱: 2.25s 
+[FETCH]... ↓ https://www.glassdoor.ca/Job/workplace-accommodation-specialist-jobs-SRCH_KO0,34.htm                 | ✓ | ⏱: 3.14s 
+[SCRAPE].. ◆ https://www.glassdoor.ca/Job/workplace-accommodation-specialist-jobs-SRCH_KO0,34.htm                 | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.glassdoor.ca/Job/workplace-accommodation-specialist-jobs-SRCH_KO0,34.htm                 | ✓ | ⏱: 3.24s 
+[FETCH]... ↓ https://www.dol.gov/agencies/odep/program-areas/individuals/youth/transition/federal-partners        | ✓ | ⏱: 3.57s 
+[SCRAPE].. ◆ https://www.dol.gov/agencies/odep/program-areas/individuals/youth/transition/federal-partners        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.dol.gov/agencies/odep/program-areas/individuals/youth/transition/federal-partners        | ✓ | ⏱: 3.61s 
+[FETCH]... ↓ https://www.dol.gov/agencies/odep/program-areas/individuals/youth/federal-partners                   | ✓ | ⏱: 3.68s 
+[SCRAPE].. ◆ https://www.dol.gov/agencies/odep/program-areas/individuals/youth/federal-partners                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.dol.gov/agencies/odep/program-areas/individuals/youth/federal-partners                   | ✓ | ⏱: 3.71s 
+[FETCH]... ↓ https://www.fanshawec.ca/admission-finance/matur...pplicants/better-jobs-ontario/assessment-centres  | ✓ | ⏱: 4.52s 
+[SCRAPE].. ◆ https://www.fanshawec.ca/admission-finance/matur...pplicants/better-jobs-ontario/assessment-centres  | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.fanshawec.ca/admission-finance/matur...pplicants/better-jobs-ontario/assessment-centres  | ✓ | ⏱: 4.65s 
+[FETCH]... ↓ https://www.instagram.com/clontario/?hl=en                                                           | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://www.instagram.com/clontario/?hl=en                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.instagram.com/clontario/?hl=en                                                           | ✓ | ⏱: 1.44s 
+[FETCH]... ↓ https://www.hhs.nd.gov/vr/crp                                                                        | ✓ | ⏱: 2.99s 
+[SCRAPE].. ◆ https://www.hhs.nd.gov/vr/crp                                                                        | ✓ | ⏱: 0.23s 
+[COMPLETE] ● https://www.hhs.nd.gov/vr/crp                                                                        | ✓ | ⏱: 3.23s 
+[FETCH]... ↓ https://www.clmiss.ca/                                                                               | ✓ | ⏱: 7.12s 
+[SCRAPE].. ◆ https://www.clmiss.ca/                                                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.clmiss.ca/                                                                               | ✓ | ⏱: 7.16s 
+[FETCH]... ↓ https://www.fanshawec.ca/students/support/employment/community-employment-services/simcoe-norfolk    | ✓ | ⏱: 3.35s 
+[SCRAPE].. ◆ https://www.fanshawec.ca/students/support/employment/community-employment-services/simcoe-norfolk    | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.fanshawec.ca/students/support/employment/community-employment-services/simcoe-norfolk    | ✓ | ⏱: 3.47s 
+[FETCH]... ↓ https://www.innovativeot.com/                                                                        | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://www.innovativeot.com/                                                                        | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.innovativeot.com/                                                                        | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ https://www.gojobs.gov.on.ca/Preview.aspx?Language=English&JobID=213903                              | ✓ | ⏱: 2.03s 
+[SCRAPE].. ◆ https://www.gojobs.gov.on.ca/Preview.aspx?Language=English&JobID=213903                              | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.gojobs.gov.on.ca/Preview.aspx?Language=English&JobID=213903                              | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://www.justice.gov/ovw/media/1411606/dl?inline                                                  | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://www.justice.gov/ovw/media/1411606/dl?inline                                                  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.justice.gov/ovw/media/1411606/dl?inline                                                  | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://www.cldsl.ca/                                                                                | ✓ | ⏱: 7.60s 
+[SCRAPE].. ◆ https://www.cldsl.ca/                                                                                | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.cldsl.ca/                                                                                | ✓ | ⏱: 7.66s 
+[FETCH]... ↓ https://www.gojobs.gov.on.ca/Preview.aspx?JobID=171606                                               | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://www.gojobs.gov.on.ca/Preview.aspx?JobID=171606                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.gojobs.gov.on.ca/Preview.aspx?JobID=171606                                               | ✓ | ⏱: 2.28s 
+[FETCH]... ↓ https://www.linkedin.com/pulse/five-employment-challenges-facing-people-disabilities-kristin-corash  | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://www.linkedin.com/pulse/five-employment-challenges-facing-people-disabilities-kristin-corash  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.linkedin.com/pulse/five-employment-challenges-facing-people-disabilities-kristin-corash  | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://www.instagram.com/reel/DMtog7AOmVx/                                                          | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://www.instagram.com/reel/DMtog7AOmVx/                                                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.instagram.com/reel/DMtog7AOmVx/                                                          | ✓ | ⏱: 1.39s 
+[FETCH]... ↓ https://www.mentalhealthworks.ca/workshop/ontario-guide-for-workplace-accomodation/                  | ✓ | ⏱: 1.70s 
+[SCRAPE].. ◆ https://www.mentalhealthworks.ca/workshop/ontario-guide-for-workplace-accomodation/                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.mentalhealthworks.ca/workshop/ontario-guide-for-workplace-accomodation/                  | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.odenetwork.com/                                                                          | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ https://www.odenetwork.com/                                                                          | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.odenetwork.com/                                                                          | ✓ | ⏱: 0.96s 
+[FETCH]... ↓ https://www.jobskills.org/employment-ontario-employment-services/                                    | ✓ | ⏱: 2.74s 
+[SCRAPE].. ◆ https://www.jobskills.org/employment-ontario-employment-services/                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.jobskills.org/employment-ontario-employment-services/                                    | ✓ | ⏱: 2.77s 
+[FETCH]... ↓ https://www.northernontariolocal.ca/biz/22072/community-living-timmins                               | ✓ | ⏱: 1.32s 
+[SCRAPE].. ◆ https://www.northernontariolocal.ca/biz/22072/community-living-timmins                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.northernontariolocal.ca/biz/22072/community-living-timmins                               | ✓ | ⏱: 1.33s 
+[FETCH]... ↓ https://www.jvstoronto.org/find-a-job/disability-employment-services/                                | ✓ | ⏱: 2.58s 
+[SCRAPE].. ◆ https://www.jvstoronto.org/find-a-job/disability-employment-services/                                | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.jvstoronto.org/find-a-job/disability-employment-services/                                | ✓ | ⏱: 2.65s 
+[FETCH]... ↓ https://www.lr.labour.gov.on.ca/Collective-Agreements                                                | ✓ | ⏱: 2.23s 
+[SCRAPE].. ◆ https://www.lr.labour.gov.on.ca/Collective-Agreements                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.lr.labour.gov.on.ca/Collective-Agreements                                                | ✓ | ⏱: 2.25s 
+[FETCH]... ↓ https://www.oaksrevitalization.com/STDP                                                              | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://www.oaksrevitalization.com/STDP                                                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.oaksrevitalization.com/STDP                                                              | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://www.noomii.com/career-coach-canada                                                           | ✓ | ⏱: 2.50s 
+[SCRAPE].. ◆ https://www.noomii.com/career-coach-canada                                                           | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.noomii.com/career-coach-canada                                                           | ✓ | ⏱: 2.61s 
+[FETCH]... ↓ https://www.ola.org/en/members/current/contact-information                                           | ✓ | ⏱: 1.61s 
+[SCRAPE].. ◆ https://www.ola.org/en/members/current/contact-information                                           | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://www.ola.org/en/members/current/contact-information                                           | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ https://www.newamerica.org/insights/the-road-to-...tegrated-employment/perspectives-from-the-field/  | ✓ | ⏱: 2.91s 
+[SCRAPE].. ◆ https://www.newamerica.org/insights/the-road-to-...tegrated-employment/perspectives-from-the-field/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.newamerica.org/insights/the-road-to-...tegrated-employment/perspectives-from-the-field/  | ✓ | ⏱: 2.96s 
+[FETCH]... ↓ https://www.kidcentraltn.com/support/full-family-support/vocational-rehabilitation.html              | ✓ | ⏱: 3.50s 
+[SCRAPE].. ◆ https://www.kidcentraltn.com/support/full-family-support/vocational-rehabilitation.html              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.kidcentraltn.com/support/full-family-support/vocational-rehabilitation.html              | ✓ | ⏱: 3.54s 
+[FETCH]... ↓ https://www.omssa.com/                                                                               | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ https://www.omssa.com/                                                                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.omssa.com/                                                                               | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://www.odenetwork.com/member/community-living-ontario/                                          | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://www.odenetwork.com/member/community-living-ontario/                                          | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.odenetwork.com/member/community-living-ontario/                                          | ✓ | ⏱: 1.10s 
+[FETCH]... ↓ https://www.odenetwork.com/membership/find-a-member/                                                 | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://www.odenetwork.com/membership/find-a-member/                                                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.odenetwork.com/membership/find-a-member/                                                 | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://www.ontarioshores.ca/services/vocational-rehabilitation-services                             | ✓ | ⏱: 2.05s 
+[SCRAPE].. ◆ https://www.ontarioshores.ca/services/vocational-rehabilitation-services                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ontarioshores.ca/services/vocational-rehabilitation-services                             | ✓ | ⏱: 2.11s 
+[FETCH]... ↓ https://www.ontario.ca/page/employment-ontario                                                       | ✓ | ⏱: 2.28s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/employment-ontario                                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/employment-ontario                                                       | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://www.reddit.com/r/ontario/comments/1qvv76r/the_canadian_hearing_society_is_closing_all/       | ✓ | ⏱: 0.83s 
+[SCRAPE].. ◆ https://www.reddit.com/r/ontario/comments/1qvv76r/the_canadian_hearing_society_is_closing_all/       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.reddit.com/r/ontario/comments/1qvv76r/the_canadian_hearing_society_is_closing_all/       | ✓ | ⏱: 0.84s 
+[FETCH]... ↓ https://www.researchgate.net/publication/364443595_Supported_Employment                              | ✓ | ⏱: 0.69s 
+[SCRAPE].. ◆ https://www.researchgate.net/publication/364443595_Supported_Employment                              | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.researchgate.net/publication/364443595_Supported_Employment                              | ✓ | ⏱: 0.69s 
+[FETCH]... ↓ https://www.rd.usda.gov/about-rd/careers-rural-development                                           | ✓ | ⏱: 1.72s 
+[SCRAPE].. ◆ https://www.rd.usda.gov/about-rd/careers-rural-development                                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.rd.usda.gov/about-rd/careers-rural-development                                           | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://www.noomii.com/career-coach-ontario                                                          | ✓ | ⏱: 2.33s 
+[SCRAPE].. ◆ https://www.noomii.com/career-coach-ontario                                                          | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://www.noomii.com/career-coach-ontario                                                          | ✓ | ⏱: 2.44s 
+[FETCH]... ↓ https://www.perkins.org/resource/no-more-confusion-about-transition-adult-services/                  | ✓ | ⏱: 2.37s 
+[SCRAPE].. ◆ https://www.perkins.org/resource/no-more-confusion-about-transition-adult-services/                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.perkins.org/resource/no-more-confusion-about-transition-adult-services/                  | ✓ | ⏱: 2.41s 
+[FETCH]... ↓ https://www.projectrenewal.org/our_work/social-services-training-programs/                           | ✓ | ⏱: 2.32s 
+[SCRAPE].. ◆ https://www.projectrenewal.org/our_work/social-services-training-programs/                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.projectrenewal.org/our_work/social-services-training-programs/                           | ✓ | ⏱: 2.35s 
+[FETCH]... ↓ https://www.parentcenterhub.org/young-adults-in-transition-vr-services-1/                            | ✓ | ⏱: 2.72s 
+[SCRAPE].. ◆ https://www.parentcenterhub.org/young-adults-in-transition-vr-services-1/                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.parentcenterhub.org/young-adults-in-transition-vr-services-1/                            | ✓ | ⏱: 2.75s 
+[FETCH]... ↓ https://www.noomii.com/career-coach-toronto-ontario                                                  | ✓ | ⏱: 2.80s 
+[SCRAPE].. ◆ https://www.noomii.com/career-coach-toronto-ontario                                                  | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.noomii.com/career-coach-toronto-ontario                                                  | ✓ | ⏱: 2.93s 
+[FETCH]... ↓ https://www.randstad.ca/employment-agency/ontario/                                                   | ✓ | ⏱: 2.54s 
+[SCRAPE].. ◆ https://www.randstad.ca/employment-agency/ontario/                                                   | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.randstad.ca/employment-agency/ontario/                                                   | ✓ | ⏱: 2.61s 
+[FETCH]... ↓ https://www.oakville.ca/town-hall/policies-proce.../accommodation-for-employees-with-disabilities​/  | ✓ | ⏱: 3.90s 
+[SCRAPE].. ◆ https://www.oakville.ca/town-hall/policies-proce.../accommodation-for-employees-with-disabilities​/  | ✓ | ⏱: 0.21s 
+[COMPLETE] ● https://www.oakville.ca/town-hall/policies-proce.../accommodation-for-employees-with-disabilities​/  | ✓ | ⏱: 4.12s 
+[FETCH]... ↓ https://www.ruralhealthinfo.org/podcast/disabilities-jan-2024                                        | ✓ | ⏱: 1.85s 
+[SCRAPE].. ◆ https://www.ruralhealthinfo.org/podcast/disabilities-jan-2024                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ruralhealthinfo.org/podcast/disabilities-jan-2024                                        | ✓ | ⏱: 1.87s 
+[FETCH]... ↓ https://www.jvstoronto.org/home/                                                                     | ✓ | ⏱: 3.04s 
+[SCRAPE].. ◆ https://www.jvstoronto.org/home/                                                                     | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.jvstoronto.org/home/                                                                     | ✓ | ⏱: 3.11s 
+[FETCH]... ↓ https://www.readclinic.ca/                                                                           | ✓ | ⏱: 2.45s 
+[SCRAPE].. ◆ https://www.readclinic.ca/                                                                           | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.readclinic.ca/                                                                           | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.salvationarmyusa.org/recovery/                                                           | ✓ | ⏱: 1.98s 
+[SCRAPE].. ◆ https://www.salvationarmyusa.org/recovery/                                                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.salvationarmyusa.org/recovery/                                                           | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://www.parentcenterhub.org/young-adults-in-transition-vr-services-glossary/                     | ✓ | ⏱: 2.13s 
+[SCRAPE].. ◆ https://www.parentcenterhub.org/young-adults-in-transition-vr-services-glossary/                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.parentcenterhub.org/young-adults-in-transition-vr-services-glossary/                     | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ https://www.sciencedirect.com/science/article/pii/S266732152300077X                                  | ✓ | ⏱: 1.79s 
+[SCRAPE].. ◆ https://www.sciencedirect.com/science/article/pii/S266732152300077X                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.sciencedirect.com/science/article/pii/S266732152300077X                                  | ✓ | ⏱: 1.82s 
+[FETCH]... ↓ https://www.soarcs.ca/employment                                                                     | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://www.soarcs.ca/employment                                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.soarcs.ca/employment                                                                     | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://www.sudbury.com/directory/charity-and-not-for-profit/community-living-greater-sudbury-17482  | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://www.sudbury.com/directory/charity-and-not-for-profit/community-living-greater-sudbury-17482  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.sudbury.com/directory/charity-and-not-for-profit/community-living-greater-sudbury-17482  | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://www.southeasthealthline.ca/displayService.aspx?id=211292                                     | ✓ | ⏱: 1.23s 
+[SCRAPE].. ◆ https://www.southeasthealthline.ca/displayService.aspx?id=211292                                     | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.southeasthealthline.ca/displayService.aspx?id=211292                                     | ✓ | ⏱: 1.24s 
+[FETCH]... ↓ https://www.socialworkportal.com/example-of-social-service/                                          | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.socialworkportal.com/example-of-social-service/                                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.socialworkportal.com/example-of-social-service/                                          | ✓ | ⏱: 1.70s 
+[FETCH]... ↓ https://www.rehabfirst.ca/vocational_rehab                                                           | ✓ | ⏱: 2.83s 
+[SCRAPE].. ◆ https://www.rehabfirst.ca/vocational_rehab                                                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.rehabfirst.ca/vocational_rehab                                                           | ✓ | ⏱: 2.86s 
+[FETCH]... ↓ https://www.polytrauma.va.gov/system-of-care/car.../transitional-rehabilitation-program-centers.asp  | ✓ | ⏱: 4.00s 
+[SCRAPE].. ◆ https://www.polytrauma.va.gov/system-of-care/car.../transitional-rehabilitation-program-centers.asp  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.polytrauma.va.gov/system-of-care/car.../transitional-rehabilitation-program-centers.asp  | ✓ | ⏱: 4.06s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/displayservice.aspx?id=120292                                | ✓ | ⏱: 0.97s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/displayservice.aspx?id=120292                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/displayservice.aspx?id=120292                                | ✓ | ⏱: 0.99s 
+[FETCH]... ↓ https://www.uwo.ca/hr/safety/well_being/accommodation/contacts.html                                  | ✓ | ⏱: 0.93s 
+[SCRAPE].. ◆ https://www.uwo.ca/hr/safety/well_being/accommodation/contacts.html                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.uwo.ca/hr/safety/well_being/accommodation/contacts.html                                  | ✓ | ⏱: 0.96s 
+[FETCH]... ↓ https://www.samhsa.gov/communities/criminal-juvenile-justice/grants-grantees/supported-employment    | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://www.samhsa.gov/communities/criminal-juvenile-justice/grants-grantees/supported-employment    | ✓ | ⏱: 0.38s 
+[COMPLETE] ● https://www.samhsa.gov/communities/criminal-juvenile-justice/grants-grantees/supported-employment    | ✓ | ⏱: 3.41s 
+[FETCH]... ↓ https://www.simplyhired.ca/search?q=accommodation+specialist                                         | ✓ | ⏱: 3.14s 
+[SCRAPE].. ◆ https://www.simplyhired.ca/search?q=accommodation+specialist                                         | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.simplyhired.ca/search?q=accommodation+specialist                                         | ✓ | ⏱: 3.20s 
+[FETCH]... ↓ https://www.trsinc.org/services/vocational/pre-employment-transition-berks-county                    | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://www.trsinc.org/services/vocational/pre-employment-transition-berks-county                    | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.trsinc.org/services/vocational/pre-employment-transition-berks-county                    | ✓ | ⏱: 1.53s 
+[FETCH]... ↓ https://www.socialworkportal.com/government-social-work/                                             | ✓ | ⏱: 1.53s 
+[SCRAPE].. ◆ https://www.socialworkportal.com/government-social-work/                                             | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.socialworkportal.com/government-social-work/                                             | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://www.socialimpactservices.org/day-program                                                     | ✓ | ⏱: 3.04s 
+[SCRAPE].. ◆ https://www.socialimpactservices.org/day-program                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.socialimpactservices.org/day-program                                                     | ✓ | ⏱: 3.08s 
+[FETCH]... ↓ https://www.tn.gov/disability-and-aging/disabili...unity-inclusion/employment-and-day-services.html  | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://www.tn.gov/disability-and-aging/disabili...unity-inclusion/employment-and-day-services.html  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.tn.gov/disability-and-aging/disabili...unity-inclusion/employment-and-day-services.html  | ✓ | ⏱: 2.21s 
+[ERROR]... × https://www.workforcepl...-services-and-programs/  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_CONNECTION_CLOSED at https://www.workforceplanningontario.ca/community-connections/employment-services-and-programs/
+Call log:
+  - navigating to "https://www.workforceplanningontario.ca/community-connections/employment-services-and-programs/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.vha.ca/                                                                                  | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://www.vha.ca/                                                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.vha.ca/                                                                                  | ✓ | ⏱: 1.50s 
+[FETCH]... ↓ https://www.transitionsky.org/employment                                                             | ✓ | ⏱: 2.08s 
+[SCRAPE].. ◆ https://www.transitionsky.org/employment                                                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.transitionsky.org/employment                                                             | ✓ | ⏱: 2.10s 
+[FETCH]... ↓ https://www.somersetcountynj.gov/government/human-services/resources-publications/resource-guide     | ✓ | ⏱: 3.13s 
+[SCRAPE].. ◆ https://www.somersetcountynj.gov/government/human-services/resources-publications/resource-guide     | ✓ | ⏱: 0.53s 
+[COMPLETE] ● https://www.somersetcountynj.gov/government/human-services/resources-publications/resource-guide     | ✓ | ⏱: 3.66s 
+[FETCH]... ↓ https://www.tandfonline.com/doi/abs/10.1080/09638288.2021.1948115                                    | ✓ | ⏱: 3.39s 
+[SCRAPE].. ◆ https://www.tandfonline.com/doi/abs/10.1080/09638288.2021.1948115                                    | ✓ | ⏱: 0.18s 
+[COMPLETE] ● https://www.tandfonline.com/doi/abs/10.1080/09638288.2021.1948115                                    | ✓ | ⏱: 3.58s 
+[FETCH]... ↓ https://www.vpi-inc.com/                                                                             | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://www.vpi-inc.com/                                                                             | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.vpi-inc.com/                                                                             | ✓ | ⏱: 2.59s 
+[FETCH]... ↓ https://www.yelp.ca/search?find_desc=Career+Coach&find_loc=Toronto,+ON                               | ✓ | ⏱: 1.27s 
+[SCRAPE].. ◆ https://www.yelp.ca/search?find_desc=Career+Coach&find_loc=Toronto,+ON                               | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.ca/search?find_desc=Career+Coach&find_loc=Toronto,+ON                               | ✓ | ⏱: 1.28s 
+[FETCH]... ↓ https://www.yelp.com/search?cflt=employmentagencies&find_loc=Ontario,+CA                             | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://www.yelp.com/search?cflt=employmentagencies&find_loc=Ontario,+CA                             | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.com/search?cflt=employmentagencies&find_loc=Ontario,+CA                             | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://www.tsiny.org/rehabilitation-and-recovery/                                                   | ✓ | ⏱: 3.17s 
+[SCRAPE].. ◆ https://www.tsiny.org/rehabilitation-and-recovery/                                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.tsiny.org/rehabilitation-and-recovery/                                                   | ✓ | ⏱: 3.20s 
+[FETCH]... ↓ https://www.yellowpages.ca/search/si/1/Vocational-Rehabilitation/Toronto+ON                          | ✓ | ⏱: 1.44s 
+[SCRAPE].. ◆ https://www.yellowpages.ca/search/si/1/Vocational-Rehabilitation/Toronto+ON                          | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.yellowpages.ca/search/si/1/Vocational-Rehabilitation/Toronto+ON                          | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://www.uwo.ca/hr/safety/well_being/accommodation/index.html                                     | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://www.uwo.ca/hr/safety/well_being/accommodation/index.html                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.uwo.ca/hr/safety/well_being/accommodation/index.html                                     | ✓ | ⏱: 1.50s 
+[FETCH]... ↓ https://www.woodgreen.org/services/employment                                                        | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://www.woodgreen.org/services/employment                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.woodgreen.org/services/employment                                                        | ✓ | ⏱: 1.98s 
+[FETCH]... ↓ https://www.torontopubliclibrary.ca/programs-and-classes/featured/career-coaches-in-residence/       | ✓ | ⏱: 3.61s 
+[SCRAPE].. ◆ https://www.torontopubliclibrary.ca/programs-and-classes/featured/career-coaches-in-residence/       | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.torontopubliclibrary.ca/programs-and-classes/featured/career-coaches-in-residence/       | ✓ | ⏱: 3.66s 
+[FETCH]... ↓ https://www.workinc.org/community-based-day-support                                                  | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://www.workinc.org/community-based-day-support                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.workinc.org/community-based-day-support                                                  | ✓ | ⏱: 2.00s 
+[FETCH]... ↓ https://www.zoominfo.com/pic/gta-rehab-network/16859636                                              | ✓ | ⏱: 0.59s 
+[SCRAPE].. ◆ https://www.zoominfo.com/pic/gta-rehab-network/16859636                                              | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.zoominfo.com/pic/gta-rehab-network/16859636                                              | ✓ | ⏱: 0.60s 
+[FETCH]... ↓ https://www.ziprecruiter.com/Jobs/Career-Coach/-in-Ottawa,ON                                         | ✓ | ⏱: 0.86s 
+[SCRAPE].. ◆ https://www.ziprecruiter.com/Jobs/Career-Coach/-in-Ottawa,ON                                         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ziprecruiter.com/Jobs/Career-Coach/-in-Ottawa,ON                                         | ✓ | ⏱: 0.89s 
+[FETCH]... ↓ https://www.workopolis.com/search?q=workplace+accommodation+specialist&l=canada                      | ✓ | ⏱: 2.12s 
+[SCRAPE].. ◆ https://www.workopolis.com/search?q=workplace+accommodation+specialist&l=canada                      | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.workopolis.com/search?q=workplace+accommodation+specialist&l=canada                      | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://www.tandfonline.com/doi/full/10.1080/09638288.2021.1948115                                   | ✓ | ⏱: 2.70s 
+[SCRAPE].. ◆ https://www.tandfonline.com/doi/full/10.1080/09638288.2021.1948115                                   | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://www.tandfonline.com/doi/full/10.1080/09638288.2021.1948115                                   | ✓ | ⏱: 2.85s 
+[FETCH]... ↓ https://www.vpi-inc.com/vocational-assessments/                                                      | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://www.vpi-inc.com/vocational-assessments/                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.vpi-inc.com/vocational-assessments/                                                      | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://www.vpi-inc.com/canada-ontario-job-grant/                                                    | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.vpi-inc.com/canada-ontario-job-grant/                                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.vpi-inc.com/canada-ontario-job-grant/                                                    | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://www.va.gov/portland-health-care/programs/vocational-rehabilitation-services-at-va-portland/  | ✓ | ⏱: 1.80s 
+[SCRAPE].. ◆ https://www.va.gov/portland-health-care/programs/vocational-rehabilitation-services-at-va-portland/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.va.gov/portland-health-care/programs/vocational-rehabilitation-services-at-va-portland/  | ✓ | ⏱: 1.83s 
+[FETCH]... ↓ https://www3.ohrc.on.ca/en/policy-preventing-dis...ental-health-disabilities-and-addictions/13-duty  | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://www3.ohrc.on.ca/en/policy-preventing-dis...ental-health-disabilities-and-addictions/13-duty  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www3.ohrc.on.ca/en/policy-preventing-dis...ental-health-disabilities-and-addictions/13-duty  | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://www.ywcatoronto.org/ourprograms/employme...aining/ineedajob/ywca-toronto-employment-centres  | ✓ | ⏱: 2.09s 
+[SCRAPE].. ◆ https://www.ywcatoronto.org/ourprograms/employme...aining/ineedajob/ywca-toronto-employment-centres  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.ywcatoronto.org/ourprograms/employme...aining/ineedajob/ywca-toronto-employment-centres  | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://www.whittierhealth.com/careers-at-whittier-health-network/                                   | ✓ | ⏱: 4.06s 
+[SCRAPE].. ◆ https://www.whittierhealth.com/careers-at-whittier-health-network/                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.whittierhealth.com/careers-at-whittier-health-network/                                   | ✓ | ⏱: 4.10s 
+[FETCH]... ↓ https://ymcaofceo.ca/employment-services/                                                            | ✓ | ⏱: 2.36s 
+[SCRAPE].. ◆ https://ymcaofceo.ca/employment-services/                                                            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ymcaofceo.ca/employment-services/                                                            | ✓ | ⏱: 2.40s 
+[FETCH]... ↓ https://www.whittierhealth.com/project/work-at-whittier/                                             | ✓ | ⏱: 1.87s 
+[SCRAPE].. ◆ https://www.whittierhealth.com/project/work-at-whittier/                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.whittierhealth.com/project/work-at-whittier/                                             | ✓ | ⏱: 1.90s 
+[FETCH]... ↓ https://www.va.gov/COMMUNITYCARE/                                                                    | ✓ | ⏱: 6.21s 
+[SCRAPE].. ◆ https://www.va.gov/COMMUNITYCARE/                                                                    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.va.gov/COMMUNITYCARE/                                                                    | ✓ | ⏱: 6.27s 

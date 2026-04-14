@@ -21,6 +21,7 @@ class ValidateNode(BaseNode):
     
     Output State Keys:
         - validated_urls: Filtered list of URLs
+        - validated_results: Filtered list of URL metadata rows
     """
     
     def __init__(self, threshold: float = 0.5):
@@ -37,10 +38,12 @@ class ValidateNode(BaseNode):
             f"Preparing to visit {len(urls_data)} URLs..."
         )
         
-        # For now, just collect all URLs without filtering
-        validated = [url_data.get('url') for url_data in urls_data if url_data.get('url')]
+        # For now, just collect all URLs without filtering.
+        validated_results = [url_data for url_data in urls_data if url_data.get('url')]
+        validated = [url_data.get('url') for url_data in validated_results]
         
         state['validated_urls'] = validated
+        state['validated_results'] = validated_results
         
         progress.update(
             "URL Validation Complete",

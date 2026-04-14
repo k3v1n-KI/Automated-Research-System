@@ -178,7 +178,7 @@ class FormulaQueryStrategy:
     async def generate_formula_queries(
         self,
         goal: str,
-        limit_per_formula: int = 5
+        limit_per_formula: int = 10
     ) -> List[str]:
         """
         Generate queries using three formulas:
@@ -194,14 +194,14 @@ You are a query generation assistant.
 
 Goal: {goal}
 
-Generate 5 items for each list below. Keep each item short and search-friendly.
+Generate 10 items for each list below. Keep each item short and search-friendly.
 
 Return ONLY valid JSON with this structure:
 {{
-  "entities": ["...", "...", "...", "...", "..."],
-  "scopes": ["...", "...", "...", "...", "..."],
-  "attributes": ["...", "...", "...", "...", "..."],
-  "sources": ["...", "...", "...", "...", "..."]
+    "entities": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."],
+    "scopes": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."],
+    "attributes": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."],
+    "sources": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."]
 }}
 
 Guidance:
@@ -268,7 +268,7 @@ class QueryExpansionMatrix:
         
         Args:
             goal: Research goal (e.g., "Find hospitals in Ontario")
-            strategy: "formula" (15 queries total: 5 per formula)
+            strategy: "formula" (30 queries total: 10 per formula)
             column_specs: Optional list of column definitions to use for axis guidance
         
         Returns:
@@ -283,7 +283,7 @@ class QueryExpansionMatrix:
             }
         
         # Step 2: Generate queries using formula strategy
-        queries = await self.formula_strategy.generate_formula_queries(goal, limit_per_formula=5)
+        queries = await self.formula_strategy.generate_formula_queries(goal, limit_per_formula=10)
         
         # Calculate theoretical matrix size
         total_axes = 1

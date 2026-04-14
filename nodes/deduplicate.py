@@ -13,6 +13,8 @@ from typing import TYPE_CHECKING, Optional
 import numpy as np
 import pandas as pd
 from openai import AsyncOpenAI
+# GEMINI - Temporarily commented out
+# import google.generativeai as genai
 from rapidfuzz import fuzz
 from rapidfuzz.distance import JaroWinkler
 from sentence_transformers import SentenceTransformer
@@ -25,6 +27,9 @@ if TYPE_CHECKING:
 _openai_client = None
 _openai_model = None
 
+# GEMINI - Temporarily commented out
+# _gemini_model = None
+
 
 def get_openai_client():
     global _openai_client, _openai_model
@@ -35,6 +40,48 @@ def get_openai_client():
         _openai_client = AsyncOpenAI(api_key=api_key)
         _openai_model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
     return _openai_client, _openai_model
+
+# GEMINI - Temporarily commented out
+# def get_gemini_model():
+#     global _gemini_model
+#     if _gemini_model is None:
+#         api_key = os.getenv("GEMINI_API_KEY")
+#         if not api_key:
+#             raise ValueError("GEMINI_API_KEY not set in environment")
+#         genai.configure(api_key=api_key)
+#         model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp")
+#         _gemini_model = genai.GenerativeModel(model_name)
+#     return _gemini_model
+
+# GEMINI - Temporarily commented out
+# async def _call_gemini_with_retry(model, prompt: str, max_retries: int = 3) -> str:
+#     """Call Gemini API with automatic retry on 429 rate limit errors"""
+#     for attempt in range(max_retries):
+#         try:
+#             response = await model.generate_content_async(prompt)
+#             return response.text
+#         except Exception as e:
+#             error_code = getattr(e, 'status_code', None)
+#             if error_code == 429 or "429" in str(e) or "quota" in str(e).lower():
+#                 if attempt < max_retries - 1:
+#                     retry_delay = 15
+#                     try:
+#                         if hasattr(e, 'retry_delay') and hasattr(e.retry_delay, 'seconds'):
+#                             retry_delay = e.retry_delay.seconds + 2
+#                         elif "Please retry in" in str(e):
+#                             match = re.search(r'Please retry in ([0-9.]+)s', str(e))
+#                             if match:
+#                                 retry_delay = float(match.group(1)) + 2
+#                     except:
+#                         retry_delay = (2 ** attempt) + 15
+#                     
+#                     print(f"⏳ Rate limit hit (429). Retrying in {retry_delay:.1f}s... (Attempt {attempt + 1}/{max_retries})")
+#                     await asyncio.sleep(retry_delay)
+#                     continue
+#                 else:
+#                     print(f"✗ Rate limit exceeded. Max retries ({max_retries}) reached.")
+#                     raise
+#             raise
 
 
 def _normalize_text(value: object) -> str:
@@ -96,21 +143,24 @@ def _build_candidate_pairs(embeddings: np.ndarray, threshold: float) -> set[tupl
 async def _llm_judge(
     client: AsyncOpenAI,
     model: str,
+    # GEMINI - Temporarily commented out
+    # gemini_model,
     pairs: list[dict],
     batch_size: int = 10,
 ) -> list[bool]:
     decisions: list[bool] = []
-    system_prompt = (
-        "You are a deduplication judge. Decide if two records describe the same physical facility. "
-        "Return JSON only."
-    )
-
+    
     for start in range(0, len(pairs), batch_size):
         batch = pairs[start:start + batch_size]
         payload = [
             {"left": item["left"], "right": item["right"]}
             for item in batch
         ]
+        
+        system_prompt = (
+            "You are a deduplication judge. Decide if two records describe the same physical facility. "
+            "Return JSON only."
+        )
         user_prompt = (
             "For each pair, decide if they refer to the same physical facility. "
             "If either side has missing values, use best judgment. "
@@ -125,8 +175,10 @@ async def _llm_judge(
                 {"role": "user", "content": user_prompt},
             ],
         )
-
         content = (response.choices[0].message.content or "").strip()
+
+        # GEMINI - Temporarily commented out
+        # content = (await _call_gemini_with_retry(gemini_model, prompt)).strip()
         try:
             parsed = json.loads(content)
             batch_decisions = parsed.get("decisions", [])
@@ -159,6 +211,8 @@ class DeduplicateNode(BaseNode):
         hard_id_cols = state.get("hard_identifier_columns", []) or []
         soft_id_cols = state.get("soft_identifier_columns", []) or []
         openai_client, openai_model = get_openai_client()
+        # GEMINI - Temporarily commented out
+        # gemini_model = get_gemini_model()
 
         progress.update(
             "🗑️  Deduplication Starting",
@@ -292,6 +346,8 @@ class DeduplicateNode(BaseNode):
                 })
             try:
                 decisions = await _llm_judge(openai_client, openai_model, pair_payload)
+                # GEMINI - Temporarily commented out
+                # decisions = await _llm_judge(gemini_model, pair_payload)
                 for payload, is_dup in zip(pair_payload, decisions):
                     if is_dup:
                         duplicates.add(payload["index_pair"])

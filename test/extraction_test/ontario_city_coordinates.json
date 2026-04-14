@@ -1,0 +1,650 @@
+{
+    "Akwesasne": {
+        "lat": 45.0047,
+        "lon": -74.733
+    },
+    "Alexandria": {
+        "lat": 45.3179,
+        "lon": -74.6398
+    },
+    "Alliston": {
+        "lat": 44.1539,
+        "lon": -79.8692
+    },
+    "Armstrong": {
+        "lat": 50.3021,
+        "lon": -89.0374
+    },
+    "Atikokan": {
+        "lat": 48.7625,
+        "lon": -91.6246
+    },
+    "Ayr": {
+        "lat": 43.2855,
+        "lon": -80.4507
+    },
+    "Bala": {
+        "lat": 45.0177,
+        "lon": -79.617
+    },
+    "Barrie": {
+        "lat": 44.3893,
+        "lon": -79.6901
+    },
+    "Batchewana": {
+        "lat": 47.1749,
+        "lon": -84.2883
+    },
+    "Beachburg": {
+        "lat": 45.7329,
+        "lon": -76.8559
+    },
+    "Beaverton": {
+        "lat": 44.4296,
+        "lon": -79.155
+    },
+    "Belleville": {
+        "lat": 44.2436,
+        "lon": -77.3608
+    },
+    "Blind River": {
+        "lat": 46.1884,
+        "lon": -82.9564
+    },
+    "Blyth": {
+        "lat": 43.7366,
+        "lon": -81.4294
+    },
+    "Bourget": {
+        "lat": 45.4349,
+        "lon": -75.1579
+    },
+    "Bracebridge": {
+        "lat": 45.0415,
+        "lon": -79.311
+    },
+    "Brampton": {
+        "lat": 43.6858,
+        "lon": -79.7599
+    },
+    "Brantford": {
+        "lat": 43.1408,
+        "lon": -80.2632
+    },
+    "Brockville": {
+        "lat": 44.6039,
+        "lon": -75.7017
+    },
+    "Brooklin": {
+        "lat": 43.9587,
+        "lon": -78.9601
+    },
+    "Calstock": {
+        "lat": 49.7884,
+        "lon": -84.14
+    },
+    "Cambridge": {
+        "lat": 43.3601,
+        "lon": -80.3123
+    },
+    "Campbellford": {
+        "lat": 44.3086,
+        "lon": -77.7981
+    },
+    "Cannington": {
+        "lat": 44.3502,
+        "lon": -79.0386
+    },
+    "Cat Lake": {
+        "lat": 51.7246,
+        "lon": -91.826
+    },
+    "Chatham": {
+        "lat": 42.4057,
+        "lon": -82.1854
+    },
+    "Chatham-Kent": {
+        "lat": 42.4183,
+        "lon": -82.0898
+    },
+    "Chelmsford": {
+        "lat": 46.5856,
+        "lon": -81.1965
+    },
+    "Cobourg": {
+        "lat": 43.9596,
+        "lon": -78.1678
+    },
+    "Cochrane": {
+        "lat": 50.6309,
+        "lon": -82.1914
+    },
+    "Collingwood": {
+        "lat": 44.5027,
+        "lon": -80.2172
+    },
+    "Cornwall": {
+        "lat": 45.0184,
+        "lon": -74.7287
+    },
+    "Crysler": {
+        "lat": 45.2185,
+        "lon": -75.1527
+    },
+    "Cutler": {
+        "lat": 46.2018,
+        "lon": -82.468
+    },
+    "Deseronto": {
+        "lat": 44.195,
+        "lon": -77.0499
+    },
+    "Don Mills": {
+        "lat": 43.7753,
+        "lon": -79.3459
+    },
+    "Dryden": {
+        "lat": 49.7857,
+        "lon": -92.8358
+    },
+    "Earlton": {
+        "lat": 47.711,
+        "lon": -79.8244
+    },
+    "East York": {
+        "lat": 43.7,
+        "lon": -79.3325
+    },
+    "Elliot Lake": {
+        "lat": 46.3735,
+        "lon": -82.6529
+    },
+    "Embrun": {
+        "lat": 45.2751,
+        "lon": -75.2765
+    },
+    "Espanola": {
+        "lat": 46.2653,
+        "lon": -81.7699
+    },
+    "Etobicoke": {
+        "lat": 43.6436,
+        "lon": -79.5656
+    },
+    "Forest": {
+        "lat": 43.1008,
+        "lon": -82.0003
+    },
+    "Fort Erie": {
+        "lat": 42.9131,
+        "lon": -78.9186
+    },
+    "Fort Frances": {
+        "lat": 48.6114,
+        "lon": -93.3968
+    },
+    "Garden River": {
+        "lat": 46.5974,
+        "lon": -84.044
+    },
+    "Georgetown": {
+        "lat": 43.6554,
+        "lon": -79.919
+    },
+    "Gogama": {
+        "lat": 47.6737,
+        "lon": -81.7251
+    },
+    "Grand Bend": {
+        "lat": 43.3127,
+        "lon": -81.7578
+    },
+    "Grassy Narrows": {
+        "lat": 50.149,
+        "lon": -94.0035
+    },
+    "Guelph": {
+        "lat": 43.5461,
+        "lon": -80.2493
+    },
+    "Hagersville": {
+        "lat": 42.962,
+        "lon": -80.0517
+    },
+    "Hamilton": {
+        "lat": 43.2561,
+        "lon": -79.8729
+    },
+    "Hanmer": {
+        "lat": 46.6531,
+        "lon": -80.9448
+    },
+    "Hensall": {
+        "lat": 43.4339,
+        "lon": -81.5056
+    },
+    "Heron Bay": {
+        "lat": 48.6628,
+        "lon": -86.2817
+    },
+    "Hiawatha": {
+        "lat": 46.586,
+        "lon": -84.2766
+    },
+    "Hornby": {
+        "lat": 43.5685,
+        "lon": -79.8414
+    },
+    "Huntsville": {
+        "lat": 45.3264,
+        "lon": -79.2184
+    },
+    "Ignace": {
+        "lat": 49.4128,
+        "lon": -91.6548
+    },
+    "Kapuskasing": {
+        "lat": 49.4167,
+        "lon": -82.4333
+    },
+    "Kashechewan": {
+        "lat": 52.2874,
+        "lon": -81.6564
+    },
+    "Kenora": {
+        "lat": 54.0246,
+        "lon": -89.1618
+    },
+    "Kettle Point": {
+        "lat": 43.2153,
+        "lon": -82.017
+    },
+    "Kettle and Stoney Point": {
+        "lat": null,
+        "lon": null
+    },
+    "Killaloe": {
+        "lat": 45.5564,
+        "lon": -77.4181
+    },
+    "Kingston": {
+        "lat": 44.3054,
+        "lon": -76.4284
+    },
+    "Kirkland Lake": {
+        "lat": 48.1542,
+        "lon": -80.0313
+    },
+    "Kitchener": {
+        "lat": 43.4513,
+        "lon": -80.4928
+    },
+    "Larder Lake": {
+        "lat": 48.0858,
+        "lon": -79.6431
+    },
+    "Leamington": {
+        "lat": 42.0531,
+        "lon": -82.5998
+    },
+    "Lindsay": {
+        "lat": 44.3551,
+        "lon": -78.737
+    },
+    "Little Current": {
+        "lat": 45.98,
+        "lon": -81.9268
+    },
+    "London": {
+        "lat": 42.9837,
+        "lon": -81.2496
+    },
+    "Longlac": {
+        "lat": 49.7782,
+        "lon": -86.5394
+    },
+    "M'Chigeeng": {
+        "lat": 45.8276,
+        "lon": -82.1612
+    },
+    "Marathon": {
+        "lat": 48.7209,
+        "lon": -86.3716
+    },
+    "Markdale": {
+        "lat": 44.3187,
+        "lon": -80.6486
+    },
+    "Markham": {
+        "lat": 43.8564,
+        "lon": -79.3377
+    },
+    "Massey": {
+        "lat": 46.2126,
+        "lon": -82.0772
+    },
+    "Mattawa": {
+        "lat": 46.3173,
+        "lon": -78.7033
+    },
+    "Merrickville": {
+        "lat": 44.9161,
+        "lon": -75.8369
+    },
+    "Midland": {
+        "lat": 44.7501,
+        "lon": -79.8857
+    },
+    "Migisi Sahgaigan": {
+        "lat": 49.7368,
+        "lon": -93.0559
+    },
+    "Minden": {
+        "lat": 44.9254,
+        "lon": -78.7249
+    },
+    "Mississauga": {
+        "lat": 43.5896,
+        "lon": -79.6444
+    },
+    "Mississauga First Nation": {
+        "lat": 46.2864,
+        "lon": -83.0774
+    },
+    "Moose Factory": {
+        "lat": 51.2602,
+        "lon": -80.6033
+    },
+    "Moosonee": {
+        "lat": 51.2671,
+        "lon": -80.6506
+    },
+    "Muncey": {
+        "lat": 42.7878,
+        "lon": -81.4749
+    },
+    "Muskrat Dam": {
+        "lat": 53.4028,
+        "lon": -91.7781
+    },
+    "Napanee": {
+        "lat": 44.2474,
+        "lon": -76.9506
+    },
+    "Naughton": {
+        "lat": 46.4033,
+        "lon": -81.1878
+    },
+    "Nepean": {
+        "lat": 45.3447,
+        "lon": -75.7639
+    },
+    "New Liskeard": {
+        "lat": 47.5087,
+        "lon": -79.6789
+    },
+    "Newmarket": {
+        "lat": 44.0563,
+        "lon": -79.4617
+    },
+    "Neyaashiinigmiing": {
+        "lat": 44.9094,
+        "lon": -81.111
+    },
+    "Niagara Falls": {
+        "lat": 43.1066,
+        "lon": -79.0639
+    },
+    "Nipigon": {
+        "lat": 49.015,
+        "lon": -88.2662
+    },
+    "Noelville": {
+        "lat": 46.1339,
+        "lon": -80.4317
+    },
+    "North Bay": {
+        "lat": 46.3092,
+        "lon": -79.4608
+    },
+    "North York": {
+        "lat": 43.7543,
+        "lon": -79.4491
+    },
+    "Oakville": {
+        "lat": 43.4474,
+        "lon": -79.6667
+    },
+    "Ohsweken": {
+        "lat": 43.0687,
+        "lon": -80.118
+    },
+    "Orillia": {
+        "lat": 44.6066,
+        "lon": -79.4169
+    },
+    "Oshawa": {
+        "lat": 43.8976,
+        "lon": -78.8635
+    },
+    "Ottawa": {
+        "lat": 45.4209,
+        "lon": -75.6901
+    },
+    "Owen Sound": {
+        "lat": 44.5678,
+        "lon": -80.943
+    },
+    "Parry Sound": {
+        "lat": 45.6675,
+        "lon": -80.1055
+    },
+    "Penetanguishene": {
+        "lat": 44.7688,
+        "lon": -79.9339
+    },
+    "Perth": {
+        "lat": 43.4936,
+        "lon": -81.0164
+    },
+    "Peterborough": {
+        "lat": 44.3048,
+        "lon": -78.3199
+    },
+    "Pickering": {
+        "lat": 43.8358,
+        "lon": -79.0906
+    },
+    "Picton": {
+        "lat": 44.0077,
+        "lon": -77.1412
+    },
+    "Port Colborne": {
+        "lat": 42.8862,
+        "lon": -79.2514
+    },
+    "Port Hope": {
+        "lat": 43.9516,
+        "lon": -78.294
+    },
+    "Port Perry": {
+        "lat": 44.1054,
+        "lon": -78.9425
+    },
+    "Portland": {
+        "lat": 44.699,
+        "lon": -76.1887
+    },
+    "Sarnia": {
+        "lat": 42.9744,
+        "lon": -82.4035
+    },
+    "Sault Ste. Marie": {
+        "lat": 46.5127,
+        "lon": -84.333
+    },
+    "Scarborough": {
+        "lat": 43.773,
+        "lon": -79.2576
+    },
+    "Sharon": {
+        "lat": 44.1023,
+        "lon": -79.432
+    },
+    "Sioux Lookout": {
+        "lat": 50.1001,
+        "lon": -91.919
+    },
+    "Smiths Falls": {
+        "lat": 44.9013,
+        "lon": -76.0212
+    },
+    "Southampton": {
+        "lat": 44.4957,
+        "lon": -81.3716
+    },
+    "Southwold": {
+        "lat": 42.7416,
+        "lon": -81.3319
+    },
+    "St. Catharines": {
+        "lat": 43.158,
+        "lon": -79.2441
+    },
+    "St. Charles": {
+        "lat": 46.363,
+        "lon": -80.4172
+    },
+    "St. Jacobs": {
+        "lat": 43.533,
+        "lon": -80.5546
+    },
+    "St. Thomas": {
+        "lat": 42.779,
+        "lon": -81.193
+    },
+    "Stouffville": {
+        "lat": 43.9718,
+        "lon": -79.2454
+    },
+    "Sturgeon Falls": {
+        "lat": 46.3653,
+        "lon": -79.9322
+    },
+    "Sudbury": {
+        "lat": 46.4927,
+        "lon": -80.9912
+    },
+    "Temagami": {
+        "lat": 47.0626,
+        "lon": -79.7896
+    },
+    "Thamesville": {
+        "lat": 42.5518,
+        "lon": -81.9771
+    },
+    "Thedford": {
+        "lat": 43.1639,
+        "lon": -81.8529
+    },
+    "Thessalon": {
+        "lat": 46.2648,
+        "lon": -83.5492
+    },
+    "Thunder Bay": {
+        "lat": 48.4064,
+        "lon": -89.2598
+    },
+    "Tillsonburg": {
+        "lat": 42.8595,
+        "lon": -80.7265
+    },
+    "Timmins": {
+        "lat": 48.4775,
+        "lon": -81.3304
+    },
+    "Toronto": {
+        "lat": 43.6535,
+        "lon": -79.3839
+    },
+    "Trenton": {
+        "lat": 44.1019,
+        "lon": -77.5754
+    },
+    "Tweed": {
+        "lat": 44.4765,
+        "lon": -77.312
+    },
+    "Tyendinaga Mohawk Territory": {
+        "lat": 44.188,
+        "lon": -77.1482
+    },
+    "Uxbridge": {
+        "lat": 44.1089,
+        "lon": -79.1227
+    },
+    "Vaughan": {
+        "lat": 43.7942,
+        "lon": -79.5268
+    },
+    "Victoria Harbour": {
+        "lat": 44.751,
+        "lon": -79.7752
+    },
+    "Virginiatown": {
+        "lat": 48.1322,
+        "lon": -79.5847
+    },
+    "Walkerton": {
+        "lat": 44.1332,
+        "lon": -81.1486
+    },
+    "Wallaceburg": {
+        "lat": 42.5929,
+        "lon": -82.3874
+    },
+    "Warren": {
+        "lat": 46.443,
+        "lon": -80.3103
+    },
+    "Wasaga Beach": {
+        "lat": 44.5225,
+        "lon": -80.0203
+    },
+    "Welland": {
+        "lat": 42.9922,
+        "lon": -79.2484
+    },
+    "Wellesley": {
+        "lat": 43.6655,
+        "lon": -79.3838
+    },
+    "West Lorne": {
+        "lat": 42.6038,
+        "lon": -81.6067
+    },
+    "West Nipissing": {
+        "lat": 46.3265,
+        "lon": -80.1702
+    },
+    "Westport": {
+        "lat": 44.6785,
+        "lon": -76.3975
+    },
+    "Whitby": {
+        "lat": 43.8798,
+        "lon": -78.9422
+    },
+    "Wikwemikong": {
+        "lat": 45.808,
+        "lon": -81.7122
+    },
+    "Windsor": {
+        "lat": 42.2859,
+        "lon": -82.9781
+    },
+    "Woodstock": {
+        "lat": 43.1301,
+        "lon": -80.7563
+    }
+}

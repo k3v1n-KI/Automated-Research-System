@@ -7,10 +7,14 @@ import os
 import json
 from typing import List, Dict, Optional
 from openai import OpenAI
+# GEMINI - Temporarily commented out
+# import google.generativeai as genai
 
-# Initialize OpenAI client lazily
 _openai_client = None
 _embedding_model = None
+
+# GEMINI - Temporarily commented out
+# _gemini_configured = False
 
 def get_openai_client():
     """Get or create OpenAI client"""
@@ -23,20 +27,45 @@ def get_openai_client():
         _embedding_model = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
     return _openai_client, _embedding_model
 
+# GEMINI - Temporarily commented out
+# def configure_gemini():
+#     """Configure Gemini API"""
+#     global _gemini_configured
+#     if not _gemini_configured:
+#         api_key = os.getenv("GEMINI_API_KEY")
+#         if not api_key:
+#             raise ValueError("GEMINI_API_KEY not set in environment")
+#         genai.configure(api_key=api_key)
+#         _gemini_configured = True
+
 
 def get_embedding(text: str) -> List[float]:
     """Get embedding for text"""
     client, model = get_openai_client()
-    
+
     # Truncate long text
     if len(text) > 8000:
         text = text[:8000]
-    
+
     response = client.embeddings.create(
         model=model,
         input=text
     )
     return response.data[0].embedding
+
+    # GEMINI - Temporarily commented out
+    # configure_gemini()
+    # 
+    # # Truncate long text
+    # if len(text) > 8000:
+    #     text = text[:8000]
+    # 
+    # result = genai.embed_content(
+    #     model="models/text-embedding-004",
+    #     content=text,
+    #     task_type="retrieval_document"
+    # )
+    # return result['embedding']
 
 
 def cosine_similarity(vec1: List[float], vec2: List[float]) -> float:

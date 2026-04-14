@@ -19,14 +19,33 @@ dotenv_path = find_dotenv()
 if dotenv_path:
     load_dotenv(dotenv_path)
 
-db_url = os.getenv("DATABASE_URL", "postgresql://kevin:kevin@localhost:5432/agent_memory")
+db_url = os.getenv("DB_CONNECTION_STRING", "postgresql://kevin:kevin@localhost:5432/agent_memory")
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# GEMINI - Temporarily commented out
+# import google.generativeai as genai
+#
+# _gemini_configured = False
+#
+# def configure_gemini():
+#     """Configure Gemini API"""
+#     global _gemini_configured
+#     if not _gemini_configured:
+#         api_key = os.getenv("GEMINI_API_KEY")
+#         if not api_key:
+#             raise ValueError("GEMINI_API_KEY not set in environment")
+#         genai.configure(api_key=api_key)
+#         _gemini_configured = True
 
 
 class VectorStore:
     """Manage embeddings in Postgres with pgvector"""
     
     def __init__(self, db_url: str = db_url):
+        # Clean up SQLAlchemy-style connection strings for psycopg3
+        # Convert postgresql+asyncpg:// to postgresql://
+        if "+asyncpg://" in db_url:
+            db_url = db_url.replace("+asyncpg://", "://")
         self.db_url = db_url
         self.conn = None
     
@@ -235,13 +254,24 @@ class VectorStore:
     
     def _embed(self, text: str) -> np.ndarray:
         """Generate embedding for text using OpenAI"""
-        
+
         response = openai_client.embeddings.create(
             model="text-embedding-3-small",
             input=text
         )
-        
+
         return np.array(response.data[0].embedding, dtype=np.float32)
+
+        # GEMINI - Temporarily commented out
+        # configure_gemini()
+        #
+        # result = genai.embed_content(
+        #     model="models/text-embedding-004",
+        #     content=text,
+        #     task_type="retrieval_document"
+        # )
+        #
+        # return np.array(result['embedding'], dtype=np.float32)
 
 
 # ============================================================================

@@ -1,0 +1,1357 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: RYDJxV1_vvXYRNzPAAAB
+
+======================================================================
+Starting Research Session
+   Client: RYDJxV1_vvXYRNzPAAAB
+   Prompt: Find all pharmacies in Ontario....
+   Columns: ['Name', 'Address', 'Website', 'City', 'Phone Number', 'Zip Code']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: 4ff54558-a6c4-4fb4-bc12-52453bca4635
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all pharmacies in Ontario....
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Website', 'isPriority': False, 'dedupeRole': 'none'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}, {'name': 'Zip Code', 'isPriority': False, 'dedupeRole': 'none'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["community pharmacy in Toronto, ON", "hospital pharmacy in Ottawa, ON", "retail chain pharmacy in Peel Region, ON", "compounding pharmacy in Northern Ontario", "long-term care pharmacy in
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: community pharmacy in Toronto, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: hospital pharmacy in Ottawa, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: retail chain pharmacy in Peel Region, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: compounding pharmacy in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: long-term care pharmacy in Eastern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: community pharmacy address in Toronto, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: hospital pharmacy phone number in Ottawa, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: retail chain pharmacy business hours in Peel Region, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: compounding pharmacy license/registration number in Northern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: long-term care pharmacy services offered in Eastern Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: community pharmacy in Toronto, ON Ontario College of Pharmacists registry
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: hospital pharmacy in Ottawa, ON Ontario Ministry of Health directory
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: retail chain pharmacy in Peel Region, ON municipal business directory
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: compounding pharmacy in Northern Ontario CSV file export
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: long-term care pharmacy in Eastern Ontario Google Maps listing
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 190 unique URLs across 15 queries
+   Data: {"total_urls": 190, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 190 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 190/190 URLs
+   Data: {"validated": 190, "original": 190}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 190 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[ERROR]... × https://app2.kitchener....on_Status_Site_Plan.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://app2.kitchener.ca/appdocs/opendata/AMANDADataSets/Application_Status_Site_Plan.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://compoundmap.com/                                                                             | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://compoundmap.com/                                                                             | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://compoundmap.com/                                                                             | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ http://www.centralwesthealthline.ca/displayService.aspx?id=220204                                    | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ http://www.centralwesthealthline.ca/displayService.aspx?id=220204                                    | ✓ | ⏱: 0.24s 
+[COMPLETE] ● http://www.centralwesthealthline.ca/displayService.aspx?id=220204                                    | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305676/                              | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305676/                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305676/                              | ✓ | ⏱: 1.53s 
+[ERROR]... × https://211ontario.ca/r...75.6971931&topicPath=96  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ https://communityreach.cioc.ca/record/CWD0069                                                        | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://communityreach.cioc.ca/record/CWD0069                                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://communityreach.cioc.ca/record/CWD0069                                                        | ✓ | ⏱: 1.63s 
+[ERROR]... × https://files.ontario.c...-en-utf8-2022-08-25.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/moh-paxlovid-pharmacy-master-list-en-utf8-2022-08-25.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://algonquinpharmasave.com/compounding/                                                         | ✓ | ⏱: 1.79s 
+[SCRAPE].. ◆ https://algonquinpharmasave.com/compounding/                                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://algonquinpharmasave.com/compounding/                                                         | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://bradfordmedical.ca/pharmacy_services.html                                                    | ✓ | ⏱: 1.81s 
+[SCRAPE].. ◆ https://bradfordmedical.ca/pharmacy_services.html                                                    | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://bradfordmedical.ca/pharmacy_services.html                                                    | ✓ | ⏱: 1.82s 
+[FETCH]... ↓ https://auroracompoundingrx.ca/                                                                      | ✓ | ⏱: 1.83s 
+[SCRAPE].. ◆ https://auroracompoundingrx.ca/                                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://auroracompoundingrx.ca/                                                                      | ✓ | ⏱: 1.87s 
+[FETCH]... ↓ https://cshp-scph.ca/ottawa-hospital-and-hopital-montfort                                            | ✓ | ⏱: 1.88s 
+[SCRAPE].. ◆ https://cshp-scph.ca/ottawa-hospital-and-hopital-montfort                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://cshp-scph.ca/ottawa-hospital-and-hopital-montfort                                            | ✓ | ⏱: 1.91s 
+[FETCH]... ↓ https://davisvilleguardianpharmacy.ca/                                                               | ✓ | ⏱: 1.93s 
+[SCRAPE].. ◆ https://davisvilleguardianpharmacy.ca/                                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://davisvilleguardianpharmacy.ca/                                                               | ✓ | ⏱: 1.96s 
+[FETCH]... ↓ http://www.mississaugahaltonhealthline.ca/listServices.aspx?id=10345                                 | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ http://www.mississaugahaltonhealthline.ca/listServices.aspx?id=10345                                 | ✓ | ⏱: 0.33s 
+[COMPLETE] ● http://www.mississaugahaltonhealthline.ca/listServices.aspx?id=10345                                 | ✓ | ⏱: 2.31s 
+[FETCH]... ↓ https://deptmed.queensu.ca/dept-blog/sunshine-sk...houghts-health-care-reform-south-eastern-ontario  | ✓ | ⏱: 1.74s 
+[SCRAPE].. ◆ https://deptmed.queensu.ca/dept-blog/sunshine-sk...houghts-health-care-reform-south-eastern-ontario  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://deptmed.queensu.ca/dept-blog/sunshine-sk...houghts-health-care-reform-south-eastern-ontario  | ✓ | ⏱: 1.75s 
+[FETCH]... ↓ https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305677/                              | ✓ | ⏱: 1.46s 
+[SCRAPE].. ◆ https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305677/                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305677/                              | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ http://www.ontario.ca/page/where-get-free-naloxone-kit                                               | ✓ | ⏱: 2.53s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/where-get-free-naloxone-kit                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/where-get-free-naloxone-kit                                               | ✓ | ⏱: 2.55s 
+[FETCH]... ↓ https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305678/                              | ✓ | ⏱: 1.53s 
+[SCRAPE].. ◆ https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305678/                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cortico.health/pharmacies/ottawa-on/the-ottawa-hospital-305678/                              | ✓ | ⏱: 1.55s 
+[FETCH]... ↓ https://explorer.natureserve.org/api-docs/                                                           | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://explorer.natureserve.org/api-docs/                                                           | ✓ | ⏱: 0.52s 
+[COMPLETE] ● https://explorer.natureserve.org/api-docs/                                                           | ✓ | ⏱: 2.20s 
+[FETCH]... ↓ https://algonquinpharmasave.com/compoundsforprescribers/                                             | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://algonquinpharmasave.com/compoundsforprescribers/                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://algonquinpharmasave.com/compoundsforprescribers/                                             | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://211ontario.ca/service/71114015/peterboro...alth-centre-peterborough-regional-health-centre/  | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://211ontario.ca/service/71114015/peterboro...alth-centre-peterborough-regional-health-centre/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://211ontario.ca/service/71114015/peterboro...alth-centre-peterborough-regional-health-centre/  | ✓ | ⏱: 1.72s 
+[ERROR]... × https://ised-isde.canad...orImporterByCountry.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://ised-isde.canada.ca/site/canadian-importers-database/sites/default/files/attachments/cidMajorImporterByCountry.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://acpcrx.org/find-a-pharmacy/                                                                  | ✓ | ⏱: 3.50s 
+[SCRAPE].. ◆ https://acpcrx.org/find-a-pharmacy/                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://acpcrx.org/find-a-pharmacy/                                                                  | ✓ | ⏱: 3.52s 
+[FETCH]... ↓ https://greenfieldpharmacy.ca/                                                                       | ✓ | ⏱: 1.75s 
+[SCRAPE].. ◆ https://greenfieldpharmacy.ca/                                                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://greenfieldpharmacy.ca/                                                                       | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ https://extendpharmacy.com/                                                                          | ✓ | ⏱: 2.12s 
+[SCRAPE].. ◆ https://extendpharmacy.com/                                                                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://extendpharmacy.com/                                                                          | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ https://halton.cioc.ca/record/ONT00047                                                               | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://halton.cioc.ca/record/ONT00047                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://halton.cioc.ca/record/ONT00047                                                               | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ http://www.centralwesthealthline.ca/listServices.aspx?id=10345                                       | ✓ | ⏱: 1.22s 
+[SCRAPE].. ◆ http://www.centralwesthealthline.ca/listServices.aspx?id=10345                                       | ✓ | ⏱: 0.21s 
+[COMPLETE] ● http://www.centralwesthealthline.ca/listServices.aspx?id=10345                                       | ✓ | ⏱: 1.44s 
+[FETCH]... ↓ https://geohub.brampton.ca/datasets/brampton-business-directory                                      | ✓ | ⏱: 2.29s 
+[SCRAPE].. ◆ https://geohub.brampton.ca/datasets/brampton-business-directory                                      | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://geohub.brampton.ca/datasets/brampton-business-directory                                      | ✓ | ⏱: 2.30s 
+[FETCH]... ↓ https://happyvalleyfht.ca/community-resources/                                                       | ✓ | ⏱: 2.07s 
+[SCRAPE].. ◆ https://happyvalleyfht.ca/community-resources/                                                       | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://happyvalleyfht.ca/community-resources/                                                       | ✓ | ⏱: 2.17s 
+[FETCH]... ↓ https://healthone.ca/toronto/pharmacy-to/                                                            | ✓ | ⏱: 2.18s 
+[TABLE_EXTRACT] ℹ Error extracting table data: invalid literal for int() with base 10: '' 
+[TABLE_EXTRACT] ℹ Error extracting table data: invalid literal for int() with base 10: '' 
+[SCRAPE].. ◆ https://healthone.ca/toronto/pharmacy-to/                                                            | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://healthone.ca/toronto/pharmacy-to/                                                            | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://healthsciences.humber.ca/programs/pharmacy-technician.html                                   | ✓ | ⏱: 2.34s 
+[TABLE_EXTRACT] ℹ Error extracting table data: invalid literal for int() with base 10: '100%' 
+[SCRAPE].. ◆ https://healthsciences.humber.ca/programs/pharmacy-technician.html                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://healthsciences.humber.ca/programs/pharmacy-technician.html                                   | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://gazette.gc.ca/rp-pr/p1/2024/2024-06-01/html/reg2-eng.html                                    | ✓ | ⏱: 2.90s 
+[SCRAPE].. ◆ https://gazette.gc.ca/rp-pr/p1/2024/2024-06-01/html/reg2-eng.html                                    | ✓ | ⏱: 0.27s 
+[COMPLETE] ● https://gazette.gc.ca/rp-pr/p1/2024/2024-06-01/html/reg2-eng.html                                    | ✓ | ⏱: 3.18s 
+[FETCH]... ↓ https://m.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                      | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://m.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                      | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://m.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                      | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://local.safeway.com/search.html                                                                | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://local.safeway.com/search.html                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://local.safeway.com/search.html                                                                | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://japsonline.com/abstract.php?article_id=4611&sts=2                                            | ✓ | ⏱: 2.21s 
+[SCRAPE].. ◆ https://japsonline.com/abstract.php?article_id=4611&sts=2                                            | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://japsonline.com/abstract.php?article_id=4611&sts=2                                            | ✓ | ⏱: 2.33s 
+[FETCH]... ↓ https://github.com/freemed/freemed/blob/master/data/drugs/ndc_firms.csv                              | ✓ | ⏱: 3.19s 
+[SCRAPE].. ◆ https://github.com/freemed/freemed/blob/master/data/drugs/ndc_firms.csv                              | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://github.com/freemed/freemed/blob/master/data/drugs/ndc_firms.csv                              | ✓ | ⏱: 3.38s 
+[FETCH]... ↓ https://heartlandtown.com/stores/                                                                    | ✓ | ⏱: 2.79s 
+[SCRAPE].. ◆ https://heartlandtown.com/stores/                                                                    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://heartlandtown.com/stores/                                                                    | ✓ | ⏱: 2.86s 
+[ERROR]... × https://ised-isde.canad...dMajorImporterByHS6.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://ised-isde.canada.ca/site/canadian-importers-database/sites/default/files/attachments/cidMajorImporterByHS6.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://members.ocpinfo.com/tcpr/public/pr/en/                                                       | ✓ | ⏱: 2.04s 
+[SCRAPE].. ◆ https://members.ocpinfo.com/tcpr/public/pr/en/                                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://members.ocpinfo.com/tcpr/public/pr/en/                                                       | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://ocpinfo.com/                                                                                 | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://ocpinfo.com/                                                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ocpinfo.com/                                                                                 | ✓ | ⏱: 1.37s 
+[FETCH]... ↓ https://mapleleafmedicalpharmacy.com/                                                                | ✓ | ⏱: 2.22s 
+[SCRAPE].. ◆ https://mapleleafmedicalpharmacy.com/                                                                | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://mapleleafmedicalpharmacy.com/                                                                | ✓ | ⏱: 2.24s 
+[FETCH]... ↓ https://neighbourlypharmacy.ca/                                                                      | ✓ | ⏱: 1.75s 
+[SCRAPE].. ◆ https://neighbourlypharmacy.ca/                                                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://neighbourlypharmacy.ca/                                                                      | ✓ | ⏱: 1.76s 
+[FETCH]... ↓ https://nabp.pharmacy/about/boards-of-pharmacy/                                                      | ✓ | ⏱: 1.89s 
+[SCRAPE].. ◆ https://nabp.pharmacy/about/boards-of-pharmacy/                                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://nabp.pharmacy/about/boards-of-pharmacy/                                                      | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://nlmpharmacy.com/                                                                             | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://nlmpharmacy.com/                                                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://nlmpharmacy.com/                                                                             | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://nationalpharmacy.ca/                                                                         | ✓ | ⏱: 1.89s 
+[SCRAPE].. ◆ https://nationalpharmacy.ca/                                                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://nationalpharmacy.ca/                                                                         | ✓ | ⏱: 1.92s 
+[FETCH]... ↓ https://news.ontario.ca/en/release/61029/ontario-enacts-provincial-emergency-and-stay-at-home-order  | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://news.ontario.ca/en/release/61029/ontario-enacts-provincial-emergency-and-stay-at-home-order  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://news.ontario.ca/en/release/61029/ontario-enacts-provincial-emergency-and-stay-at-home-order  | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://ocpinfo.com/pharmacies/opening-a-community-pharmacy/                                         | ✓ | ⏱: 0.69s 
+[SCRAPE].. ◆ https://ocpinfo.com/pharmacies/opening-a-community-pharmacy/                                         | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ocpinfo.com/pharmacies/opening-a-community-pharmacy/                                         | ✓ | ⏱: 0.74s 
+[FETCH]... ↓ https://ocpinfo.com/public/how-to-use-find-a-pharmacy-or-pharmacy-professional/                      | ✓ | ⏱: 0.76s 
+[SCRAPE].. ◆ https://ocpinfo.com/public/how-to-use-find-a-pharmacy-or-pharmacy-professional/                      | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ocpinfo.com/public/how-to-use-find-a-pharmacy-or-pharmacy-professional/                      | ✓ | ⏱: 0.82s 
+[FETCH]... ↓ https://ocpinfo.com/public/you-your-pharmacy/                                                        | ✓ | ⏱: 0.82s 
+[SCRAPE].. ◆ https://ocpinfo.com/public/you-your-pharmacy/                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ocpinfo.com/public/you-your-pharmacy/                                                        | ✓ | ⏱: 0.87s 
+[FETCH]... ↓ https://oms.ca/contact/                                                                              | ✓ | ⏱: 1.44s 
+[SCRAPE].. ◆ https://oms.ca/contact/                                                                              | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://oms.ca/contact/                                                                              | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://pebc.ca/                                                                                     | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://pebc.ca/                                                                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://pebc.ca/                                                                                     | ✓ | ⏱: 1.05s 
+[FETCH]... ↓ https://peel.cioc.ca/record/CWL0454                                                                  | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://peel.cioc.ca/record/CWL0454                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://peel.cioc.ca/record/CWL0454                                                                  | ✓ | ⏱: 1.39s 
+[FETCH]... ↓ https://hqtoronto.ca/toronto-pharmacy-services-directory/                                            | ✓ | ⏱: 4.24s 
+[SCRAPE].. ◆ https://hqtoronto.ca/toronto-pharmacy-services-directory/                                            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://hqtoronto.ca/toronto-pharmacy-services-directory/                                            | ✓ | ⏱: 4.28s 
+[ERROR]... × https://peelstreetpharmacy.co.uk/                  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://peelstreetpharmacy.co.uk/
+Call log:
+  - navigating to "https://peelstreetpharmacy.co.uk/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://pharmaco.ca/                                                                                 | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://pharmaco.ca/                                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://pharmaco.ca/                                                                                 | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://ontariohealthathome.ca/community-care/specialized-services/                                  | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://ontariohealthathome.ca/community-care/specialized-services/                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://ontariohealthathome.ca/community-care/specialized-services/                                  | ✓ | ⏱: 2.20s 
+[FETCH]... ↓ https://onecommunitypharmacy.square.site/                                                            | ✓ | ⏱: 2.55s 
+[SCRAPE].. ◆ https://onecommunitypharmacy.square.site/                                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://onecommunitypharmacy.square.site/                                                            | ✓ | ⏱: 2.56s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC3082386/                                                    | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC3082386/                                                    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC3082386/                                                    | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://mrcheckout.net/distributors-in-brampton/                                                     | ✓ | ⏱: 3.95s 
+[SCRAPE].. ◆ https://mrcheckout.net/distributors-in-brampton/                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://mrcheckout.net/distributors-in-brampton/                                                     | ✓ | ⏱: 3.98s 
+[FETCH]... ↓ https://qhrtech.my.site.com/community/s/article/Accuro-Release-Notes                                 | ✓ | ⏱: 1.38s 
+[SCRAPE].. ◆ https://qhrtech.my.site.com/community/s/article/Accuro-Release-Notes                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://qhrtech.my.site.com/community/s/article/Accuro-Release-Notes                                 | ✓ | ⏱: 1.40s 
+[FETCH]... ↓ https://pacepharmacy.com/                                                                            | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://pacepharmacy.com/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://pacepharmacy.com/                                                                            | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://robinsonspharmasave.ca/services/compounding/                                                 | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://robinsonspharmasave.ca/services/compounding/                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://robinsonspharmasave.ca/services/compounding/                                                 | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://peelregion.ca/by-laws/by-law-number-34-2018                                                  | ✓ | ⏱: 2.58s 
+[SCRAPE].. ◆ https://peelregion.ca/by-laws/by-law-number-34-2018                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://peelregion.ca/by-laws/by-law-number-34-2018                                                  | ✓ | ⏱: 2.61s 
+[FETCH]... ↓ https://thebhive.ca/brampton-business-101/                                                           | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://thebhive.ca/brampton-business-101/                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://thebhive.ca/brampton-business-101/                                                           | ✓ | ⏱: 1.28s 
+[FETCH]... ↓ https://quintehealth.ca/care-service/pharmacy-services/                                              | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://quintehealth.ca/care-service/pharmacy-services/                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://quintehealth.ca/care-service/pharmacy-services/                                              | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://ontariohealthathome.ca/region/champlain/                                                     | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://ontariohealthathome.ca/region/champlain/                                                     | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://ontariohealthathome.ca/region/champlain/                                                     | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://peel.cioc.ca/record/MHL0335                                                                  | ✓ | ⏱: 0.91s 
+[SCRAPE].. ◆ https://peel.cioc.ca/record/MHL0335                                                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://peel.cioc.ca/record/MHL0335                                                                  | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ https://peelregion.ca/health/healthy-living/harm-reduction                                           | ✓ | ⏱: 2.12s 
+[SCRAPE].. ◆ https://peelregion.ca/health/healthy-living/harm-reduction                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://peelregion.ca/health/healthy-living/harm-reduction                                           | ✓ | ⏱: 2.17s 
+[FETCH]... ↓ https://www.barrietoday.com/local-news/then-and-...re-became-cornerstone-of-barrie-history-11883094  | ✓ | ⏱: 1.21s 
+[SCRAPE].. ◆ https://www.barrietoday.com/local-news/then-and-...re-became-cornerstone-of-barrie-history-11883094  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.barrietoday.com/local-news/then-and-...re-became-cornerstone-of-barrie-history-11883094  | ✓ | ⏱: 1.26s 
+[FETCH]... ↓ https://www.boggios.com/                                                                             | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://www.boggios.com/                                                                             | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.boggios.com/                                                                             | ✓ | ⏱: 1.15s 
+[FETCH]... ↓ https://www.broadviewnorthpharmacy.com/                                                              | ✓ | ⏱: 1.19s 
+[SCRAPE].. ◆ https://www.broadviewnorthpharmacy.com/                                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.broadviewnorthpharmacy.com/                                                              | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://pharmaco.ca/about-us/                                                                        | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://pharmaco.ca/about-us/                                                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://pharmaco.ca/about-us/                                                                        | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://thecompoundingspecialty.com/                                                                 | ✓ | ⏱: 2.29s 
+[SCRAPE].. ◆ https://thecompoundingspecialty.com/                                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://thecompoundingspecialty.com/                                                                 | ✓ | ⏱: 2.33s 
+[FETCH]... ↓ https://www.canada.ca/en/department-national-def...alth-services-centre-ottawa/clinic-contacts.html  | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ https://www.canada.ca/en/department-national-def...alth-services-centre-ottawa/clinic-contacts.html  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.canada.ca/en/department-national-def...alth-services-centre-ottawa/clinic-contacts.html  | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://unityhealth.to/areas-of-care/services/pharmacy/                                              | ✓ | ⏱: 2.35s 
+[SCRAPE].. ◆ https://unityhealth.to/areas-of-care/services/pharmacy/                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://unityhealth.to/areas-of-care/services/pharmacy/                                              | ✓ | ⏱: 2.41s 
+[FETCH]... ↓ https://www.centralwesthealthline.ca/displayservice.aspx?id=61039                                    | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ https://www.centralwesthealthline.ca/displayservice.aspx?id=61039                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.centralwesthealthline.ca/displayservice.aspx?id=61039                                    | ✓ | ⏱: 0.96s 
+[FETCH]... ↓ https://www.andersoncollege.com/expert-insights-on-becoming-a-pharmacy-technician/                   | ✓ | ⏱: 2.42s 
+[SCRAPE].. ◆ https://www.andersoncollege.com/expert-insights-on-becoming-a-pharmacy-technician/                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.andersoncollege.com/expert-insights-on-becoming-a-pharmacy-technician/                   | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.centraleasthealthline.ca/displayservice.aspx?id=13979                                    | ✓ | ⏱: 1.25s 
+[SCRAPE].. ◆ https://www.centraleasthealthline.ca/displayservice.aspx?id=13979                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.centraleasthealthline.ca/displayservice.aspx?id=13979                                    | ✓ | ⏱: 1.27s 
+[FETCH]... ↓ https://pharmasave.com/palgrave/?srsltid=AfmBOorsvP6iW-uR-RNap157biYpcxmgCRJHoGtefruMMMwdsVEZDZ7B    | ✓ | ⏱: 4.67s 
+[SCRAPE].. ◆ https://pharmasave.com/palgrave/?srsltid=AfmBOorsvP6iW-uR-RNap157biYpcxmgCRJHoGtefruMMMwdsVEZDZ7B    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://pharmasave.com/palgrave/?srsltid=AfmBOorsvP6iW-uR-RNap157biYpcxmgCRJHoGtefruMMMwdsVEZDZ7B    | ✓ | ⏱: 4.70s 
+[FETCH]... ↓ https://www.cbc.ca/news/canada/hamilton/pharmacy-testing-brantford-niagara-st-catharines-1.5744788   | ✓ | ⏱: 1.76s 
+[SCRAPE].. ◆ https://www.cbc.ca/news/canada/hamilton/pharmacy-testing-brantford-niagara-st-catharines-1.5744788   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.cbc.ca/news/canada/hamilton/pharmacy-testing-brantford-niagara-st-catharines-1.5744788   | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://www.boggios.com/pharmacy-services/                                                           | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://www.boggios.com/pharmacy-services/                                                           | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.boggios.com/pharmacy-services/                                                           | ✓ | ⏱: 1.32s 
+[FETCH]... ↓ http://healthfirstwpc.ca/                                                                            | ✓ | ⏱: 10.70s 
+[SCRAPE].. ◆ http://healthfirstwpc.ca/                                                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://healthfirstwpc.ca/                                                                            | ✓ | ⏱: 10.73s 
+[FETCH]... ↓ https://www.champlainhealthline.ca/alphalisting.aspx?filter=C&region=Ottawa                          | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://www.champlainhealthline.ca/alphalisting.aspx?filter=C&region=Ottawa                          | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://www.champlainhealthline.ca/alphalisting.aspx?filter=C&region=Ottawa                          | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://www.canada.ca/en/department-national-def...alth-services-centre-ottawa/clinic-services.html  | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.canada.ca/en/department-national-def...alth-services-centre-ottawa/clinic-services.html  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.canada.ca/en/department-national-def...alth-services-centre-ottawa/clinic-services.html  | ✓ | ⏱: 1.44s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/...icy-manufacturing-compounding-drug-products.html  | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/...icy-manufacturing-compounding-drug-products.html  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/...icy-manufacturing-compounding-drug-products.html  | ✓ | ⏱: 1.53s 
+[ERROR]... × https://www.epa.gov/sit...veestablishmentlist.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.epa.gov/sites/default/files/2016-02/activeestablishmentlist.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://pharmasave.com/toronto-community-choice/location/                                            | ✓ | ⏱: 3.40s 
+[SCRAPE].. ◆ https://pharmasave.com/toronto-community-choice/location/                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://pharmasave.com/toronto-community-choice/location/                                            | ✓ | ⏱: 3.41s 
+[FETCH]... ↓ https://www.citylifepharmacy.com/                                                                    | ✓ | ⏱: 1.61s 
+[SCRAPE].. ◆ https://www.citylifepharmacy.com/                                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.citylifepharmacy.com/                                                                    | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://www.carerx.ca/                                                                               | ✓ | ⏱: 2.99s 
+[SCRAPE].. ◆ https://www.carerx.ca/                                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.carerx.ca/                                                                               | ✓ | ⏱: 3.02s 
+[FETCH]... ↓ https://www.champlainhealthline.ca/displayService.aspx?id=209049                                     | ✓ | ⏱: 0.95s 
+[SCRAPE].. ◆ https://www.champlainhealthline.ca/displayService.aspx?id=209049                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.champlainhealthline.ca/displayService.aspx?id=209049                                     | ✓ | ⏱: 0.97s 
+[FETCH]... ↓ https://www.cliffsnotes.com/study-notes/19688697                                                     | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.cliffsnotes.com/study-notes/19688697                                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.cliffsnotes.com/study-notes/19688697                                                     | ✓ | ⏱: 1.69s 
+[FETCH]... ↓ https://www.cicic.ca/938/pharmacists.canada?id=50                                                    | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ https://www.cicic.ca/938/pharmacists.canada?id=50                                                    | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://www.cicic.ca/938/pharmacists.canada?id=50                                                    | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ https://www.cheo.on.ca/en/visiting-cheo/pharmacy-kidcare.aspx                                        | ✓ | ⏱: 2.49s 
+[SCRAPE].. ◆ https://www.cheo.on.ca/en/visiting-cheo/pharmacy-kidcare.aspx                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.cheo.on.ca/en/visiting-cheo/pharmacy-kidcare.aspx                                        | ✓ | ⏱: 2.52s 
+[FETCH]... ↓ https://www.chironcompounding.com/                                                                   | ✓ | ⏱: 2.32s 
+[SCRAPE].. ◆ https://www.chironcompounding.com/                                                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.chironcompounding.com/                                                                   | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://pharmasave.com/toronto-community-choice/...KT7mF0fyCb3rhu17DL1pyzgbwrxmMvcYgb4HPLge5RpBcwkc  | ✓ | ⏱: 4.16s 
+[SCRAPE].. ◆ https://pharmasave.com/toronto-community-choice/...KT7mF0fyCb3rhu17DL1pyzgbwrxmMvcYgb4HPLge5RpBcwkc  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://pharmasave.com/toronto-community-choice/...KT7mF0fyCb3rhu17DL1pyzgbwrxmMvcYgb4HPLge5RpBcwkc  | ✓ | ⏱: 4.19s 
+[FETCH]... ↓ https://pharmasave.com/toronto-community-choice/...Un6JEJ3iGlhAg6gc2P_pcD2YLnCQklrsvk2Pg5YgyjlHqu0i  | ✓ | ⏱: 4.19s 
+[SCRAPE].. ◆ https://pharmasave.com/toronto-community-choice/...Un6JEJ3iGlhAg6gc2P_pcD2YLnCQklrsvk2Pg5YgyjlHqu0i  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://pharmasave.com/toronto-community-choice/...Un6JEJ3iGlhAg6gc2P_pcD2YLnCQklrsvk2Pg5YgyjlHqu0i  | ✓ | ⏱: 4.21s 
+[FETCH]... ↓ https://www.centraleasthealthline.ca/displayservice.aspx?id=150274                                   | ✓ | ⏱: 0.73s 
+[SCRAPE].. ◆ https://www.centraleasthealthline.ca/displayservice.aspx?id=150274                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.centraleasthealthline.ca/displayservice.aspx?id=150274                                   | ✓ | ⏱: 0.75s 
+[FETCH]... ↓ https://www.cshp.ca/Site/website/Content/About/CSHP-Staff.aspx                                       | ✓ | ⏱: 2.42s 
+[SCRAPE].. ◆ https://www.cshp.ca/Site/website/Content/About/CSHP-Staff.aspx                                       | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.cshp.ca/Site/website/Content/About/CSHP-Staff.aspx                                       | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.facebook.com/ODPRNResearch/posts/sti...bout-pharmacist-prescribing-fo/1358956469571582/  | ✓ | ⏱: 1.89s 
+[SCRAPE].. ◆ https://www.facebook.com/ODPRNResearch/posts/sti...bout-pharmacist-prescribing-fo/1358956469571582/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/ODPRNResearch/posts/sti...bout-pharmacist-prescribing-fo/1358956469571582/  | ✓ | ⏱: 1.92s 
+[FETCH]... ↓ https://www.fda.gov/drugs/human-drug-compounding/compounding-inspections-recalls-and-other-actions   | ✓ | ⏱: 1.34s 
+[SCRAPE].. ◆ https://www.fda.gov/drugs/human-drug-compounding/compounding-inspections-recalls-and-other-actions   | ✓ | ⏱: 0.24s 
+[COMPLETE] ● https://www.fda.gov/drugs/human-drug-compounding/compounding-inspections-recalls-and-other-actions   | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://www.hqontario.ca/                                                                            | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://www.hqontario.ca/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.hqontario.ca/                                                                            | ✓ | ⏱: 1.20s 
+[FETCH]... ↓ https://www.instagram.com/p/DRvDkpAjZy1/                                                             | ✓ | ⏱: 1.19s 
+[SCRAPE].. ◆ https://www.instagram.com/p/DRvDkpAjZy1/                                                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.instagram.com/p/DRvDkpAjZy1/                                                             | ✓ | ⏱: 1.24s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/find-a-pharmacy                                             | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/find-a-pharmacy                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/find-a-pharmacy                                             | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://www.janzens.ca/long-term-care                                                                | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://www.janzens.ca/long-term-care                                                                | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.janzens.ca/long-term-care                                                                | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.dukepharmacy.ca/blogs/Toronto-Indepe...-in-your-community-a-guide-for-toronto-residents  | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://www.dukepharmacy.ca/blogs/Toronto-Indepe...-in-your-community-a-guide-for-toronto-residents  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.dukepharmacy.ca/blogs/Toronto-Indepe...-in-your-community-a-guide-for-toronto-residents  | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://www.dukepharmacy.ca/                                                                         | ✓ | ⏱: 3.40s 
+[SCRAPE].. ◆ https://www.dukepharmacy.ca/                                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.dukepharmacy.ca/                                                                         | ✓ | ⏱: 3.44s 
+[FETCH]... ↓ https://www.lignesantecentre-toronto.ca/printService.aspx?id=151562                                  | ✓ | ⏱: 0.46s 
+[SCRAPE].. ◆ https://www.lignesantecentre-toronto.ca/printService.aspx?id=151562                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.lignesantecentre-toronto.ca/printService.aspx?id=151562                                  | ✓ | ⏱: 0.47s 
+[FETCH]... ↓ https://www.medisystempharmacy.com/                                                                  | ✓ | ⏱: 0.64s 
+[SCRAPE].. ◆ https://www.medisystempharmacy.com/                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.medisystempharmacy.com/                                                                  | ✓ | ⏱: 0.66s 
+[FETCH]... ↓ https://www.napra.ca/resources/pharmacy-regulatory-authorities/                                      | ✓ | ⏱: 0.62s 
+[SCRAPE].. ◆ https://www.napra.ca/resources/pharmacy-regulatory-authorities/                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.napra.ca/resources/pharmacy-regulatory-authorities/                                      | ✓ | ⏱: 0.65s 
+[ERROR]... × https://www.fda.gov/media/183957/download          | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.fda.gov/media/183957/download", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[ERROR]... × https://www.fda.gov/media/191039/download          | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.fda.gov/media/191039/download", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.northeasthealthline.ca/displayservice.aspx?id=90343                                      | ✓ | ⏱: 0.85s 
+[SCRAPE].. ◆ https://www.northeasthealthline.ca/displayservice.aspx?id=90343                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.northeasthealthline.ca/displayservice.aspx?id=90343                                      | ✓ | ⏱: 0.89s 
+[FETCH]... ↓ https://www.facebook.com/groups/516794710820015/posts/908218998344249/                               | ✓ | ⏱: 1.28s 
+[SCRAPE].. ◆ https://www.facebook.com/groups/516794710820015/posts/908218998344249/                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.facebook.com/groups/516794710820015/posts/908218998344249/                               | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://www.facebook.com/islandhospitalpenang/po...-sale-enjoy-exclusive-discounts/894041272819122/  | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.facebook.com/islandhospitalpenang/po...-sale-enjoy-exclusive-discounts/894041272819122/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/islandhospitalpenang/po...-sale-enjoy-exclusive-discounts/894041272819122/  | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://www.facebook.com/p/Ottawa-Medical-Pharmacy-100057196580354/                                  | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ https://www.facebook.com/p/Ottawa-Medical-Pharmacy-100057196580354/                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/p/Ottawa-Medical-Pharmacy-100057196580354/                                  | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://www.mohawkmedbuy.ca/news_blog/2025/4/7/p...ransitioning-to-mohawk-medbuys-pharmacy-services  | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://www.mohawkmedbuy.ca/news_blog/2025/4/7/p...ransitioning-to-mohawk-medbuys-pharmacy-services  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.mohawkmedbuy.ca/news_blog/2025/4/7/p...ransitioning-to-mohawk-medbuys-pharmacy-services  | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://silverfoxrx.ca/                                                                              | ✓ | ⏱: 8.41s 
+[SCRAPE].. ◆ https://silverfoxrx.ca/                                                                              | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://silverfoxrx.ca/                                                                              | ✓ | ⏱: 8.49s 
+[FETCH]... ↓ https://www.newcomersbrucegrey.ca/record/ONT00058                                                    | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://www.newcomersbrucegrey.ca/record/ONT00058                                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.newcomersbrucegrey.ca/record/ONT00058                                                    | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://www.metro.ca/en/find-a-grocery/322                                                           | ✓ | ⏱: 1.88s 
+[SCRAPE].. ◆ https://www.metro.ca/en/find-a-grocery/322                                                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.metro.ca/en/find-a-grocery/322                                                           | ✓ | ⏱: 1.95s 
+[FETCH]... ↓ https://www.northernontariolocal.ca/l/on/pharmacies                                                  | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://www.northernontariolocal.ca/l/on/pharmacies                                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.northernontariolocal.ca/l/on/pharmacies                                                  | ✓ | ⏱: 1.51s 
+[FETCH]... ↓ https://www.jonespharmacystore.com/                                                                  | ✓ | ⏱: 2.55s 
+[SCRAPE].. ◆ https://www.jonespharmacystore.com/                                                                  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.jonespharmacystore.com/                                                                  | ✓ | ⏱: 2.56s 
+[FETCH]... ↓ https://www.facebook.com/TheVillagePharm/                                                            | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://www.facebook.com/TheVillagePharm/                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.facebook.com/TheVillagePharm/                                                            | ✓ | ⏱: 2.22s 
+[FETCH]... ↓ https://www.facebook.com/p/Leaside-Community-Pharmacy-61556675521742/                                | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://www.facebook.com/p/Leaside-Community-Pharmacy-61556675521742/                                | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.facebook.com/p/Leaside-Community-Pharmacy-61556675521742/                                | ✓ | ⏱: 2.31s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/ontario/east-gwillimbury/elite-care-pharmacy-7006033        | ✓ | ⏱: 2.88s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/ontario/east-gwillimbury/elite-care-pharmacy-7006033        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/ontario/east-gwillimbury/elite-care-pharmacy-7006033        | ✓ | ⏱: 2.92s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377               | ✓ | ⏱: 2.97s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377               | ✓ | ⏱: 3.02s 
+[FETCH]... ↓ https://www.janzens.ca/specialty-compounding                                                         | ✓ | ⏱: 0.85s 
+[SCRAPE].. ◆ https://www.janzens.ca/specialty-compounding                                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.janzens.ca/specialty-compounding                                                         | ✓ | ⏱: 0.86s 
+[FETCH]... ↓ https://www.ontario.ca/document/guide-programs-and-services-seniors/health-and-well-being            | ✓ | ⏱: 1.98s 
+[SCRAPE].. ◆ https://www.ontario.ca/document/guide-programs-and-services-seniors/health-and-well-being            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.ontario.ca/document/guide-programs-and-services-seniors/health-and-well-being            | ✓ | ⏱: 2.04s 
+[FETCH]... ↓ https://www.nygh.on.ca/                                                                              | ✓ | ⏱: 2.09s 
+[SCRAPE].. ◆ https://www.nygh.on.ca/                                                                              | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.nygh.on.ca/                                                                              | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/sheppard-gdn-community-phcy-7042280         | ✓ | ⏱: 3.57s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/sheppard-gdn-community-phcy-7042280         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/sheppard-gdn-community-phcy-7042280         | ✓ | ⏱: 3.59s 
+[FETCH]... ↓ https://www.ottawapublichealth.ca/en/Index.aspx                                                      | ✓ | ⏱: 1.21s 
+[SCRAPE].. ◆ https://www.ottawapublichealth.ca/en/Index.aspx                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ottawapublichealth.ca/en/Index.aspx                                                      | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/clinical-services/deptpgrmcs/departments/pharmacy/               | ✓ | ⏱: 1.80s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/clinical-services/deptpgrmcs/departments/pharmacy/               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/clinical-services/deptpgrmcs/departments/pharmacy/               | ✓ | ⏱: 1.82s 
+[FETCH]... ↓ https://www.pharmacy.utoronto.ca/how-become-pharmacist                                               | ✓ | ⏱: 0.95s 
+[SCRAPE].. ◆ https://www.pharmacy.utoronto.ca/how-become-pharmacist                                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.pharmacy.utoronto.ca/how-become-pharmacist                                               | ✓ | ⏱: 1.01s 
+[FETCH]... ↓ https://www.pharmacists.ca/pharmacy-in-canada/di...rganizations/provincial-regulatory-authorities1/  | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.pharmacists.ca/pharmacy-in-canada/di...rganizations/provincial-regulatory-authorities1/  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.pharmacists.ca/pharmacy-in-canada/di...rganizations/provincial-regulatory-authorities1/  | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://www.ontariocolleges.ca/en/programs/fields-of-interest/pharmaceutical                         | ✓ | ⏱: 2.28s 
+[SCRAPE].. ◆ https://www.ontariocolleges.ca/en/programs/fields-of-interest/pharmaceutical                         | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.ontariocolleges.ca/en/programs/fields-of-interest/pharmaceutical                         | ✓ | ⏱: 2.38s 
+[FETCH]... ↓ https://www.ontario.ca/page/pharmacies                                                               | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/pharmacies                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/pharmacies                                                               | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://www.ontario.ca/page/regulated-health-professions                                             | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/regulated-health-professions                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/regulated-health-professions                                             | ✓ | ⏱: 1.40s 
+[FETCH]... ↓ https://www.ontario.ca/page/ministry-health                                                          | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/ministry-health                                                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ontario.ca/page/ministry-health                                                          | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://www.ottawapublichealth.ca/en/public-health-topics/harm-reduction-services-in-ottawa.aspx     | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://www.ottawapublichealth.ca/en/public-health-topics/harm-reduction-services-in-ottawa.aspx     | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.ottawapublichealth.ca/en/public-health-topics/harm-reduction-services-in-ottawa.aspx     | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://www.pocketpills.com/pharmacy-near-me/nearby/the-ottawa-hospital                              | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://www.pocketpills.com/pharmacy-near-me/nearby/the-ottawa-hospital                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.pocketpills.com/pharmacy-near-me/nearby/the-ottawa-hospital                              | ✓ | ⏱: 1.62s 
+[FETCH]... ↓ https://www.procare-pharmacy.ca/                                                                     | ✓ | ⏱: 1.42s 
+[SCRAPE].. ◆ https://www.procare-pharmacy.ca/                                                                     | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.procare-pharmacy.ca/                                                                     | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://www.publichealthontario.ca/                                                                  | ✓ | ⏱: 1.61s 
+[SCRAPE].. ◆ https://www.publichealthontario.ca/                                                                  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.publichealthontario.ca/                                                                  | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://www.pccarx.com/                                                                              | ✓ | ⏱: 2.80s 
+[SCRAPE].. ◆ https://www.pccarx.com/                                                                              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.pccarx.com/                                                                              | ✓ | ⏱: 2.87s 
+[FETCH]... ↓ https://www.rexall.ca/                                                                               | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://www.rexall.ca/                                                                               | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.rexall.ca/                                                                               | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://www.procare-pharmacy.ca/locations/sutton                                                     | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://www.procare-pharmacy.ca/locations/sutton                                                     | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.procare-pharmacy.ca/locations/sutton                                                     | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://www.facebook.com/ocpinfo/mentions/                                                           | ✓ | ⏱: 5.43s 
+[SCRAPE].. ◆ https://www.facebook.com/ocpinfo/mentions/                                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.facebook.com/ocpinfo/mentions/                                                           | ✓ | ⏱: 5.47s 
+[FETCH]... ↓ https://www.qch.on.ca/Pharmacy                                                                       | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ https://www.qch.on.ca/Pharmacy                                                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.qch.on.ca/Pharmacy                                                                       | ✓ | ⏱: 2.03s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/clinical-ser...rmcs/departments/pharmacy/services-and-programs/  | ✓ | ⏱: 1.76s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/clinical-ser...rmcs/departments/pharmacy/services-and-programs/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/clinical-ser...rmcs/departments/pharmacy/services-and-programs/  | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/clinical-ser...s/departments/pharmacy/drug-information-service/  | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/clinical-ser...s/departments/pharmacy/drug-information-service/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/clinical-ser...s/departments/pharmacy/drug-information-service/  | ✓ | ⏱: 1.87s 
+[FETCH]... ↓ https://www.skycarepharmacy.com/                                                                     | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://www.skycarepharmacy.com/                                                                     | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.skycarepharmacy.com/                                                                     | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/uncategorize...swers-to-drug-questions-drug-information-centre/  | ✓ | ⏱: 2.08s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/uncategorize...swers-to-drug-questions-drug-information-centre/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/uncategorize...swers-to-drug-questions-drug-information-centre/  | ✓ | ⏱: 2.11s 
+[FETCH]... ↓ https://www.sinaihealth.ca/our-hospitals/hennick-bridgepoint-hospital                                | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://www.sinaihealth.ca/our-hospitals/hennick-bridgepoint-hospital                                | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.sinaihealth.ca/our-hospitals/hennick-bridgepoint-hospital                                | ✓ | ⏱: 1.92s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/patients-visitors/campus-services/general-campus-shops/          | ✓ | ⏱: 2.28s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/patients-visitors/campus-services/general-campus-shops/          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/patients-visitors/campus-services/general-campus-shops/          | ✓ | ⏱: 2.32s 
+[ERROR]... × https://www.uscis.gov/s...ons-FY2016-12.27.17.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.uscis.gov/sites/default/files/document/data/L1-Approved-Petitions-FY2016-12.27.17.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.tandfonline.com/doi/full/10.1080/24740527.2019.1614880                                   | ✓ | ⏱: 1.70s 
+[SCRAPE].. ◆ https://www.tandfonline.com/doi/full/10.1080/24740527.2019.1614880                                   | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://www.tandfonline.com/doi/full/10.1080/24740527.2019.1614880                                   | ✓ | ⏱: 1.85s 
+[FETCH]... ↓ https://www.statcan.gc.ca/en/node?URL=0&wbdisable=true&page=151                                      | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://www.statcan.gc.ca/en/node?URL=0&wbdisable=true&page=151                                      | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://www.statcan.gc.ca/en/node?URL=0&wbdisable=true&page=151                                      | ✓ | ⏱: 2.35s 
+[FETCH]... ↓ https://www.pharmacy.utoronto.ca/programs/international-pharmacy-graduate-program                    | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ https://www.pharmacy.utoronto.ca/programs/international-pharmacy-graduate-program                    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.pharmacy.utoronto.ca/programs/international-pharmacy-graduate-program                    | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://www.ottawahospital.on.ca/en/healthy-tomo...xpedite-the-covid-19-vaccine-roll-out-in-ottawa/  | ✓ | ⏱: 2.94s 
+[SCRAPE].. ◆ https://www.ottawahospital.on.ca/en/healthy-tomo...xpedite-the-covid-19-vaccine-roll-out-in-ottawa/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ottawahospital.on.ca/en/healthy-tomo...xpedite-the-covid-19-vaccine-roll-out-in-ottawa/  | ✓ | ⏱: 2.99s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/displayservice.aspx?id=151405                                | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/displayservice.aspx?id=151405                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/displayservice.aspx?id=151405                                | ✓ | ⏱: 1.50s 
+[FETCH]... ↓ https://www.tohfamilyhealthteam.ca/faq                                                               | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://www.tohfamilyhealthteam.ca/faq                                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.tohfamilyhealthteam.ca/faq                                                               | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://www.pharmacy.utoronto.ca/job-postings/ph...ist-ft-ottawa-general-campus-ottawa-hospital-toh  | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://www.pharmacy.utoronto.ca/job-postings/ph...ist-ft-ottawa-general-campus-ottawa-hospital-toh  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.pharmacy.utoronto.ca/job-postings/ph...ist-ft-ottawa-general-campus-ottawa-hospital-toh  | ✓ | ⏱: 1.72s 
+[FETCH]... ↓ https://www.torontotoday.ca/directory/pharmacy-and-drug-stores                                       | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.torontotoday.ca/directory/pharmacy-and-drug-stores                                       | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.torontotoday.ca/directory/pharmacy-and-drug-stores                                       | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://www.vec.ca/english/11/pharmacies-toronto.cfm                                                 | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://www.vec.ca/english/11/pharmacies-toronto.cfm                                                 | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.vec.ca/english/11/pharmacies-toronto.cfm                                                 | ✓ | ⏱: 1.28s 
+[FETCH]... ↓ https://www.thp.ca/ineed/visitorinformation/Pages/Pharmacies.aspx                                    | ✓ | ⏱: 2.10s 
+[SCRAPE].. ◆ https://www.thp.ca/ineed/visitorinformation/Pages/Pharmacies.aspx                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.thp.ca/ineed/visitorinformation/Pages/Pharmacies.aspx                                    | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://www.waze.com/live-map/directions/ca/on/t...black-creek?to=place.ChIJL-8P5QMxK4gRDqa-bgkODVY  | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://www.waze.com/live-map/directions/ca/on/t...black-creek?to=place.ChIJL-8P5QMxK4gRDqa-bgkODVY  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.waze.com/live-map/directions/ca/on/t...black-creek?to=place.ChIJL-8P5QMxK4gRDqa-bgkODVY  | ✓ | ⏱: 1.37s 
+[FETCH]... ↓ https://www.rexall.ca/storelocator/store/6938                                                        | ✓ | ⏱: 2.11s 
+[SCRAPE].. ◆ https://www.rexall.ca/storelocator/store/6938                                                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.rexall.ca/storelocator/store/6938                                                        | ✓ | ⏱: 2.14s 
+[FETCH]... ↓ https://www.yelp.com/search?find_desc=Pharmacy&find_loc=Brampton,+ON                                 | ✓ | ⏱: 0.63s 
+[SCRAPE].. ◆ https://www.yelp.com/search?find_desc=Pharmacy&find_loc=Brampton,+ON                                 | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.com/search?find_desc=Pharmacy&find_loc=Brampton,+ON                                 | ✓ | ⏱: 0.63s 
+[FETCH]... ↓ https://www.yelp.ca/search?cflt=pharmacy&find_loc=Regional+Municipality+of+Peel,+ON                  | ✓ | ⏱: 0.72s 
+[SCRAPE].. ◆ https://www.yelp.ca/search?cflt=pharmacy&find_loc=Regional+Municipality+of+Peel,+ON                  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.ca/search?cflt=pharmacy&find_loc=Regional+Municipality+of+Peel,+ON                  | ✓ | ⏱: 0.72s 
+[FETCH]... ↓ https://www.thevillagepharmacy.ca/                                                                   | ✓ | ⏱: 2.66s 
+[SCRAPE].. ◆ https://www.thevillagepharmacy.ca/                                                                   | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.thevillagepharmacy.ca/                                                                   | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/printService.aspx?id=151405                                  | ✓ | ⏱: 0.87s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/printService.aspx?id=151405                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/printService.aspx?id=151405                                  | ✓ | ⏱: 0.88s 
+[FETCH]... ↓ https://www.yellowpages.ca/bus/Ontario/Brampton/Metro-Bramalea-City-Centre/6132474.html              | ✓ | ⏱: 1.22s 
+[SCRAPE].. ◆ https://www.yellowpages.ca/bus/Ontario/Brampton/Metro-Bramalea-City-Centre/6132474.html              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.yellowpages.ca/bus/Ontario/Brampton/Metro-Bramalea-City-Centre/6132474.html              | ✓ | ⏱: 1.26s 
+[FETCH]... ↓ https://www.williamoslerhs.ca/en/visiting-us/hospital-amenities.aspx                                 | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.williamoslerhs.ca/en/visiting-us/hospital-amenities.aspx                                 | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.williamoslerhs.ca/en/visiting-us/hospital-amenities.aspx                                 | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=10345                                   | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=10345                                   | ✓ | ⏱: 0.39s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=10345                                   | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://www.yumpu.com/en/document/view/55752276/brampton-board-of-trade-business-directory-2016-17   | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.yumpu.com/en/document/view/55752276/brampton-board-of-trade-business-directory-2016-17   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.yumpu.com/en/document/view/55752276/brampton-board-of-trade-business-directory-2016-17   | ✓ | ⏱: 1.43s 
+[FETCH]... ↓ https://www.theroyal.ca/visiting-the-royal/                                                          | ✓ | ⏱: 4.05s 
+[SCRAPE].. ◆ https://www.theroyal.ca/visiting-the-royal/                                                          | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.theroyal.ca/visiting-the-royal/                                                          | ✓ | ⏱: 4.13s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/mobile/displayservice.aspx?id=151562                         | ✓ | ⏱: 1.92s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/mobile/displayservice.aspx?id=151562                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/mobile/displayservice.aspx?id=151562                         | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://www.tandfonline.com/doi/full/10.1186/s40545-023-00626-0                                      | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://www.tandfonline.com/doi/full/10.1186/s40545-023-00626-0                                      | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://www.tandfonline.com/doi/full/10.1186/s40545-023-00626-0                                      | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://www.yellowpages.ca/bus/Ontario/Brampton/Shoppers-Drug-Mart/100932959.html                    | ✓ | ⏱: 0.80s 
+[SCRAPE].. ◆ https://www.yellowpages.ca/bus/Ontario/Brampton/Shoppers-Drug-Mart/100932959.html                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.yellowpages.ca/bus/Ontario/Brampton/Shoppers-Drug-Mart/100932959.html                    | ✓ | ⏱: 0.84s 
+[FETCH]... ↓ https://www.yellowpages.ca/bus/Ontario/Ottawa/Medical-Pharmacies/6956433.html                        | ✓ | ⏱: 0.87s 
+[SCRAPE].. ◆ https://www.yellowpages.ca/bus/Ontario/Ottawa/Medical-Pharmacies/6956433.html                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.yellowpages.ca/bus/Ontario/Ottawa/Medical-Pharmacies/6956433.html                        | ✓ | ⏱: 0.89s 
+[FETCH]... ↓ https://www150.statcan.gc.ca/n1/pub/82-003-x/2022002/article/00001-eng.htm                           | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://www150.statcan.gc.ca/n1/pub/82-003-x/2022002/article/00001-eng.htm                           | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www150.statcan.gc.ca/n1/pub/82-003-x/2022002/article/00001-eng.htm                           | ✓ | ⏱: 2.26s 
+[FETCH]... ↓ https://www.yellowpages.ca/search/si/1/Pharmacies/Peel+Regional+Municipality+ON                      | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://www.yellowpages.ca/search/si/1/Pharmacies/Peel+Regional+Municipality+ON                      | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.yellowpages.ca/search/si/1/Pharmacies/Peel+Regional+Municipality+ON                      | ✓ | ⏱: 1.26s 
+[FETCH]... ↓ https://www.waze.com/live-map/directions/leaside...-toronto?to=place.w.183894453.1839141139.6359756  | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://www.waze.com/live-map/directions/leaside...-toronto?to=place.w.183894453.1839141139.6359756  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.waze.com/live-map/directions/leaside...-toronto?to=place.w.183894453.1839141139.6359756  | ✓ | ⏱: 1.13s 
+[FETCH]... ↓ https://www.westmountmedicalpharmacy.ca/pharmacy-long-term-care                                      | ✓ | ⏱: 5.28s 
+[SCRAPE].. ◆ https://www.westmountmedicalpharmacy.ca/pharmacy-long-term-care                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.westmountmedicalpharmacy.ca/pharmacy-long-term-care                                      | ✓ | ⏱: 5.30s 
+⚠️  Crawl failed for https://www.torontocentralhealthline.ca/displayservice.aspx?id=151405: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://app2.kitchener.ca/appdocs/opendata/AMANDADataSets/Application_Status_Site_Plan.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.dukepharmacy.ca/: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for https://davisvilleguardianpharmacy.ca/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/moh-paxlovid-pharmacy-master-list-en-utf8-2022-08-25.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://cshp-scph.ca/ottawa-hospital-and-hopital-montfort: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://ised-isde.canada.ca/site/canadian-importers-database/sites/default/files/attachments/cidMajorImporterByCountry.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.jonespharmacystore.com/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://ised-isde.canada.ca/site/canadian-importers-database/sites/default/files/attachments/cidMajorImporterByHS6.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://acpcrx.org/find-a-pharmacy/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://peelstreetpharmacy.co.uk/
+Call log:
+  - navigating to "https://peelstreetpharmacy.co.uk/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.lignesantecentre-toronto.ca/printService.aspx?id=151562: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.epa.gov/sites/default/files/2016-02/activeestablishmentlist.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.ontario.ca/page/regulated-health-professions: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.fda.gov/media/183957/download", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://nabp.pharmacy/about/boards-of-pharmacy/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.fda.gov/media/191039/download", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.yumpu.com/en/document/view/55752276/brampton-board-of-trade-business-directory-2016-17: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.uscis.gov/sites/default/files/document/data/L1-Approved-Petitions-FY2016-12.27.17.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://files.ontario.ca/moh-ontario-drug-programs-reference-manual-2023-07-06.pdf                   | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://files.ontario.ca/moh-ontario-drug-programs-reference-manual-2023-07-06.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpdqtsh4qs.pdf 
+[SCRAPE].. ◆ https://files.ontario.ca/moh-ontario-drug-programs-reference-manual-2023-07-06.pdf                   | ✓ | ⏱: 95.69s 
+[COMPLETE] ● https://files.ontario.ca/moh-ontario-drug-programs-reference-manual-2023-07-06.pdf                   | ✓ | ⏱: 95.69s 
+[FETCH]... ↓ https://www.ontario.ca/files/moh-odp-reference-manual-en.pdf                                         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ontario.ca/files/moh-odp-reference-manual-en.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpkahm59r4.pdf 
+[SCRAPE].. ◆ https://www.ontario.ca/files/moh-odp-reference-manual-en.pdf                                         | ✓ | ⏱: 114.68s 
+[COMPLETE] ● https://www.ontario.ca/files/moh-odp-reference-manual-en.pdf                                         | ✓ | ⏱: 114.68s 
+[FETCH]... ↓ https://www.cda-amc.ca/sites/default/files/pdf/pharm-thera _com_es-23_e.pdf                          | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cda-amc.ca/sites/default/files/pdf/pharm-thera%20_com_es-23_e.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp79iyernc.pdf 
+[SCRAPE].. ◆ https://www.cda-amc.ca/sites/default/files/pdf/pharm-thera _com_es-23_e.pdf                          | ✓ | ⏱: 1.08s 
+[COMPLETE] ● https://www.cda-amc.ca/sites/default/files/pdf/pharm-thera _com_es-23_e.pdf                          | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://cshp-scph.ca/sites/default/files/ontario/HPO/HPO Fall 2023.pdf                               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cshp-scph.ca/sites/default/files/ontario/HPO/HPO%20Fall%202023.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpazntpx0m.pdf 
+[SCRAPE].. ◆ https://cshp-scph.ca/sites/default/files/ontario/HPO/HPO Fall 2023.pdf                               | ✓ | ⏱: 1.34s 
+[COMPLETE] ● https://cshp-scph.ca/sites/default/files/ontario/HPO/HPO Fall 2023.pdf                               | ✓ | ⏱: 1.35s 
+[FETCH]... ↓ http://www7.mississauga.ca/documents/pb/opendata/2020/2020_Office_Directory_Report_Final.pdf         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://www7.mississauga.ca/documents/pb/opendata/2020/2020_Office_Directory_Report_Final.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpxkn4xsvk.pdf 
+[SCRAPE].. ◆ http://www7.mississauga.ca/documents/pb/opendata/2020/2020_Office_Directory_Report_Final.pdf         | ✓ | ⏱: 195.71s 
+[COMPLETE] ● http://www7.mississauga.ca/documents/pb/opendata/2020/2020_Office_Directory_Report_Final.pdf         | ✓ | ⏱: 195.71s 
+[FETCH]... ↓ https://peelregion.ca/sites/default/files/2024-08/phase-1-esa-draft.pdf                              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://peelregion.ca/sites/default/files/2024-08/phase-1-esa-draft.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpww2p11kb.pdf 
+[SCRAPE].. ◆ https://peelregion.ca/sites/default/files/2024-08/phase-1-esa-draft.pdf                              | ✓ | ⏱: 241.39s 
+[COMPLETE] ● https://peelregion.ca/sites/default/files/2024-08/phase-1-esa-draft.pdf                              | ✓ | ⏱: 241.39s 
+[FETCH]... ↓ https://www.canada.ca/content/dam/hc-sc/document...g/list-site-licence-holders/list-holders-eng.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.canada.ca/content/dam/hc-sc/documents/services/drugs-health-products/natural-non-prescription/applications-submissions/site-licensing/list-site-licence-holders/list-holders-eng.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp6im3vh_g.pdf 
+[SCRAPE].. ◆ https://www.canada.ca/content/dam/hc-sc/document...g/list-site-licence-holders/list-holders-eng.pdf  | ✓ | ⏱: 4.73s 
+[COMPLETE] ● https://www.canada.ca/content/dam/hc-sc/document...g/list-site-licence-holders/list-holders-eng.pdf  | ✓ | ⏱: 4.73s 
+[FETCH]... ↓ https://healthsteward.ca/wp-content/uploads/2020/05/2019_HPSA_OMRP_OSCP_Annual_Report_FINAL.v2.pdf   | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://healthsteward.ca/wp-content/uploads/2020/05/2019_HPSA_OMRP_OSCP_Annual_Report_FINAL.v2.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpi3swa6st.pdf 
+[SCRAPE].. ◆ https://healthsteward.ca/wp-content/uploads/2020/05/2019_HPSA_OMRP_OSCP_Annual_Report_FINAL.v2.pdf   | ✓ | ⏱: 8.50s 
+[COMPLETE] ● https://healthsteward.ca/wp-content/uploads/2020/05/2019_HPSA_OMRP_OSCP_Annual_Report_FINAL.v2.pdf   | ✓ | ⏱: 8.50s 
+[FETCH]... ↓ https://www.ontario.ca/files/2024-10/msaa-guide-...rams-services-for-seniors-fall-en-2024-10-14.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ontario.ca/files/2024-10/msaa-guide-to-programs-services-for-seniors-fall-en-2024-10-14.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpzctzsshu.pdf 
+[SCRAPE].. ◆ https://www.ontario.ca/files/2024-10/msaa-guide-...rams-services-for-seniors-fall-en-2024-10-14.pdf  | ✓ | ⏱: 23.44s 
+[COMPLETE] ● https://www.ontario.ca/files/2024-10/msaa-guide-...rams-services-for-seniors-fall-en-2024-10-14.pdf  | ✓ | ⏱: 23.44s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 180 documents from 190 URLs
+   Data: {"source_documents": 190, "scraped_documents": 180}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 180 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 100/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 105/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 110/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 115/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 120/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 125/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 130/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 135/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 140/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 145/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 150/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 155/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 160/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 165/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 170/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 175/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 180/180 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 1153 records from 180 documents
+   Data: {"extracted_count": 1153, "source_documents": 180}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 1153 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 1153 -> 1012
+   Data: {"input_rows": 1153, "post_hard_rows": 1012}
+======================================================================

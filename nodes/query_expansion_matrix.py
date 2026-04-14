@@ -1,6 +1,6 @@
 """
 Node 1 (Alt): Query Expansion Matrix
-Generates 15 queries using three formulas (5 each):
+Generates 30 queries using three formulas (10 each):
 - Broad Net: Entity + Scope
 - Deep Dive: Entity + Attribute + Scope
 - Artifact Hunter: Entity + Scope + Source
@@ -12,6 +12,8 @@ import os
 from typing import TYPE_CHECKING, List, Dict
 
 from openai import AsyncOpenAI
+# GEMINI - Temporarily commented out
+# import google.generativeai as genai
 from nodes.base import BaseNode
 
 if TYPE_CHECKING:
@@ -20,6 +22,9 @@ if TYPE_CHECKING:
 
 _openai_client = None
 _openai_model = None
+
+# GEMINI - Temporarily commented out
+# _gemini_model = None
 
 
 def get_openai_client():
@@ -32,10 +37,53 @@ def get_openai_client():
         _openai_model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
     return _openai_client, _openai_model
 
+# GEMINI - Temporarily commented out
+# def get_gemini_model():
+#     global _gemini_model
+#     if _gemini_model is None:
+#         api_key = os.getenv("GEMINI_API_KEY")
+#         if not api_key:
+#             raise ValueError("GEMINI_API_KEY not set in environment")
+#         genai.configure(api_key=api_key)
+#         model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp")
+#         _gemini_model = genai.GenerativeModel(model_name)
+#     return _gemini_model
+
+# GEMINI - Temporarily commented out
+# async def _call_gemini_with_retry(model, prompt: str, max_retries: int = 3) -> str:
+#     """Call Gemini API with automatic retry on 429 rate limit errors"""
+#     for attempt in range(max_retries):
+#         try:
+#             response = await model.generate_content_async(prompt)
+#             return response.text
+#         except Exception as e:
+#             error_code = getattr(e, 'status_code', None)
+#             if error_code == 429 or "429" in str(e) or "quota" in str(e).lower():
+#                 if attempt < max_retries - 1:
+#                     retry_delay = 15
+#                     try:
+#                         if hasattr(e, 'retry_delay') and hasattr(e.retry_delay, 'seconds'):
+#                             retry_delay = e.retry_delay.seconds + 2
+#                         elif "Please retry in" in str(e):
+#                             import re as re_module
+#                             match = re_module.search(r'Please retry in ([0-9.]+)s', str(e))
+#                             if match:
+#                                 retry_delay = float(match.group(1)) + 2
+#                     except:
+#                         retry_delay = (2 ** attempt) + 15
+#                     
+#                     print(f"⏳ Rate limit hit (429). Retrying in {retry_delay:.1f}s... (Attempt {attempt + 1}/{max_retries})")
+#                     await asyncio.sleep(retry_delay)
+#                     continue
+#                 else:
+#                     print(f"✗ Rate limit exceeded. Max retries ({max_retries}) reached.")
+#                     raise
+#             raise
+
 
 class QueryExpansionMatrixNode(BaseNode):
     """
-    Generates 15 queries using formula strategy.
+    Generates 30 queries using formula strategy.
 
     Input State Keys:
         - initial_prompt: User's dataset description
@@ -44,7 +92,7 @@ class QueryExpansionMatrixNode(BaseNode):
         - tweak_instructions: Optional user instructions
 
     Output State Keys:
-        - queries: List of 15 search queries
+        - queries: List of 30 query dicts with query text and technique metadata
     """
 
     async def execute(self, state: "ResearchState", progress: "ProgressTracker") -> "ResearchState":
@@ -58,6 +106,8 @@ class QueryExpansionMatrixNode(BaseNode):
         previous_queries = state.get("previous_queries", [])
         tweak_instructions = state.get("tweak_instructions", "")
         openai_client, openai_model = get_openai_client()
+        # GEMINI - Temporarily commented out
+        # gemini_model = get_gemini_model()
 
         columns_text = ""
         if column_specs:
@@ -84,15 +134,15 @@ You are a query generation assistant.
 
 Goal: {prompt}
 
-Generate exactly 5 items for each list below. Keep each item short and search-friendly.
+Generate exactly 10 items for each list below. Keep each item short and search-friendly.
 {('Desired fields:\n' + columns_text) if columns_text else ''}
 
 Return ONLY valid JSON with this structure:
 {{
-  "entities": ["...", "...", "...", "...", "..."],
-  "scopes": ["...", "...", "...", "...", "..."],
-  "attributes": ["...", "...", "...", "...", "..."],
-  "sources": ["...", "...", "...", "...", "..."]
+    "entities": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."],
+    "scopes": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."],
+    "attributes": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."],
+    "sources": ["...", "...", "...", "...", "...", "...", "...", "...", "...", "..."]
 }}
 
 Guidance:
@@ -110,6 +160,9 @@ Guidance:
                 messages=[{"role": "user", "content": schema_prompt}],
             )
             content = response.choices[0].message.content
+
+            # GEMINI - Temporarily commented out
+            # content = await _call_gemini_with_retry(gemini_model, schema_prompt)
             json_match = re.search(r"\{.*\}", content, re.DOTALL)
             if not json_match:
                 raise ValueError("No JSON found in LLM response")
@@ -122,24 +175,55 @@ Guidance:
 
             queries = []
             for entity, scope in zip(entities, scopes):
-                queries.append(f"{entity} in {scope}")
+                queries.append({
+                    "query": f"{entity} in {scope}",
+                    "query_technique": "broad_net",
+                })
             for entity, attribute, scope in zip(entities, attributes, scopes):
-                queries.append(f"{entity} {attribute} in {scope}")
+                queries.append({
+                    "query": f"{entity} {attribute} in {scope}",
+                    "query_technique": "deep_dive",
+                })
             for entity, scope, source in zip(entities, scopes, sources):
-                queries.append(f"{entity} in {scope} {source}")
+                queries.append({
+                    "query": f"{entity} in {scope} {source}",
+                    "query_technique": "artifact_hunter",
+                })
 
             if previous_queries:
-                queries = previous_queries + queries
+                previous_query_rows = []
+                for q in previous_queries:
+                    if isinstance(q, dict):
+                        query_text = str(q.get("query", "")).strip()
+                        if not query_text:
+                            continue
+                        previous_query_rows.append({
+                            "query": query_text,
+                            "query_technique": str(q.get("query_technique") or "previous_session"),
+                        })
+                    else:
+                        query_text = str(q).strip()
+                        if not query_text:
+                            continue
+                        previous_query_rows.append({
+                            "query": query_text,
+                            "query_technique": "previous_session",
+                        })
+
+                queries = previous_query_rows + queries
                 progress.update(
                     "Query Generation Complete",
                     f"Generated {len(queries) - len(previous_queries)} new queries (plus {len(previous_queries)} previous)",
-                    {"new_queries": queries[len(previous_queries):], "total_queries": queries}
+                    {
+                        "new_queries": [q["query"] for q in queries[len(previous_query_rows):]],
+                        "total_queries": [q["query"] for q in queries],
+                    }
                 )
             else:
                 progress.update(
                     "Query Generation Complete",
                     f"Generated {len(queries)} formula-based queries",
-                    {"queries": queries}
+                    {"queries": [q["query"] for q in queries]}
                 )
 
             state["queries"] = queries
@@ -155,12 +239,13 @@ Guidance:
         items: List[str],
         kind: str,
         prompt: str,
-        column_specs: List[Dict] = None
+        column_specs: List[Dict] = None,
+        target_count: int = 10,
     ) -> List[str]:
         cleaned = [str(item).strip() for item in items if str(item).strip()]
-        while len(cleaned) < 5:
+        while len(cleaned) < target_count:
             cleaned.append(self._fallback_item(kind, len(cleaned), prompt, column_specs))
-        return cleaned[:5]
+        return cleaned[:target_count]
 
     def _fallback_item(self, kind: str, index: int, prompt: str, column_specs: List[Dict] = None) -> str:
         if kind == "entity":

@@ -9,14 +9,18 @@ import os
 from typing import TYPE_CHECKING
 
 from openai import AsyncOpenAI
+# GEMINI - Temporarily commented out
+# import google.generativeai as genai
 from nodes.base import BaseNode
 
 if TYPE_CHECKING:
     from algorithm import ResearchState, ProgressTracker
 
-# Initialize OpenAI client lazily
 _openai_client = None
 _openai_model = None
+
+# GEMINI - Temporarily commented out
+# _gemini_model = None
 
 def get_openai_client():
     global _openai_client, _openai_model
@@ -27,6 +31,49 @@ def get_openai_client():
         _openai_client = AsyncOpenAI(api_key=api_key)
         _openai_model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
     return _openai_client, _openai_model
+
+# GEMINI - Temporarily commented out
+# def get_gemini_model():
+#     global _gemini_model
+#     if _gemini_model is None:
+#         api_key = os.getenv("GEMINI_API_KEY")
+#         if not api_key:
+#             raise ValueError("GEMINI_API_KEY not set in environment")
+#         genai.configure(api_key=api_key)
+#         model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp")
+#         _gemini_model = genai.GenerativeModel(model_name)
+#     return _gemini_model
+
+# GEMINI - Temporarily commented out
+# async def _call_gemini_with_retry(model, prompt: str, max_retries: int = 3) -> str:
+#     """Call Gemini API with automatic retry on 429 rate limit errors"""
+#     for attempt in range(max_retries):
+#         try:
+#             response = await model.generate_content_async(prompt)
+#             return response.text
+#         except Exception as e:
+#             error_code = getattr(e, 'status_code', None)
+#             if error_code == 429 or "429" in str(e) or "quota" in str(e).lower():
+#                 if attempt < max_retries - 1:
+#                     retry_delay = 15
+#                     try:
+#                         if hasattr(e, 'retry_delay') and hasattr(e.retry_delay, 'seconds'):
+#                             retry_delay = e.retry_delay.seconds + 2
+#                         elif "Please retry in" in str(e):
+#                             import re as re_module
+#                             match = re_module.search(r'Please retry in ([0-9.]+)s', str(e))
+#                             if match:
+#                                 retry_delay = float(match.group(1)) + 2
+#                     except:
+#                         retry_delay = (2 ** attempt) + 15
+#                     
+#                     print(f"⏳ Rate limit hit (429). Retrying in {retry_delay:.1f}s... (Attempt {attempt + 1}/{max_retries})")
+#                     await asyncio.sleep(retry_delay)
+#                     continue
+#                 else:
+#                     print(f"✗ Rate limit exceeded. Max retries ({max_retries}) reached.")
+#                     raise
+#             raise
 
 
 class ExtractNode(BaseNode):
@@ -52,6 +99,8 @@ class ExtractNode(BaseNode):
         initial_prompt = state['initial_prompt']
         columns = state.get('columns', [])
         openai_client, openai_model = get_openai_client()
+        # GEMINI - Temporarily commented out
+        # gemini_model = get_gemini_model()
         
         # Get column names for constraint
         column_names = [col['name'] for col in columns if isinstance(col, dict)] if columns else []
@@ -112,8 +161,24 @@ Extract only valid, complete entries. Return a JSON array of objects."""
                         ],
                         max_completion_tokens=6000
                     )
-
                     content = response.choices[0].message.content
+
+                    # GEMINI - Temporarily commented out
+                    # prompt = f"""You are a High-Precision Data Extraction Engine. 
+                    # Your goal is to filter and extract data that **strictly aligns** with the Following constraints:
+                    # 
+                    # Task: {initial_prompt}
+                    # Data extraction constraints: {column_constraint}
+                    # 
+                    # Extract only valid, complete entries. Return a JSON array of objects.
+                    # 
+                    # Extract data from this content chunk ({chunk_index}/{total_chunks}):
+                    # 
+                    # {chunk}
+                    # 
+                    # URL: {url}"""
+                    # 
+                    # content = await _call_gemini_with_retry(gemini_model, prompt)
 
                     # Parse extracted data
                     json_match = re.search(r'\[.*\]', content, re.DOTALL)

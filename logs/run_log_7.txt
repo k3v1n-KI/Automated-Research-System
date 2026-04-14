@@ -1,0 +1,2125 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: kWUoYTf0KBbXHiZDAAAB
+
+======================================================================
+Starting Research Session
+   Client: kWUoYTf0KBbXHiZDAAAB
+   Prompt: Find all institutions, organizations, hospitals, and programs that offer addiction counseling and me...
+   Columns: ['Name', 'Address', 'City', 'Phone Number']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: 2fa6c894-0181-461d-8280-44c43eaa912a
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all institutions, organizations, hospitals, and programs that offer addiction counseling and mental health services. Do not just extract the name of a massive hospital. You MUST look for the specific addiction program within it.. Prioritize OHIP-funded, community, or non-profit resources....
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["Addiction Treatment Program (Opioid Agonist Therapy / OAT) in City: Toronto, ON", "Concurrent Disorders (Dual Diagnosis) Program in Region: Peel / Halton", "Withdrawal Management (Detox)
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: Addiction Treatment Program (Opioid Agonist Therapy / OAT) in City: Toronto, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: Concurrent Disorders (Dual Diagnosis) Program in Region: Peel / Halton
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: Withdrawal Management (Detox) Service / Medically Supervised Withdrawal in Region: Ottawa (Champlain)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: Community Addiction Counselling (non-profit / CHC-based) in Ontario-wide OHIP-funded services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: Hospital-based Addiction Consultation & Outreach Program in Community Health Centre catchment areas
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: Addiction Treatment Program (Opioid Agonist Therapy / OAT) OHIP-covered / insured services in City: Toronto, ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: Concurrent Disorders (Dual Diagnosis) Program Walk-in / same-day access in Region: Peel / Halton
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: Withdrawal Management (Detox) Service / Medically Supervised Withdrawal Virtual / telehealth appointments in Region: Ottawa (Champlain)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: Community Addiction Counselling (non-profit / CHC-based) Age groups served: youth (12–17) / adult in Ontario-wide OHIP-funded services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: Hospital-based Addiction Consultation & Outreach Program Bilingual (English / French) or multilingual support in Community Health Centre catchment areas
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: Addiction Treatment Program (Opioid Agonist Therapy / OAT) in City: Toronto, ON Hospital addiction program webpage (HTML)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: Concurrent Disorders (Dual Diagnosis) Program in Region: Peel / Halton Community Health Centre service brochure (PDF)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: Withdrawal Management (Detox) Service / Medically Supervised Withdrawal in Region: Ottawa (Champlain) Regional mental health & addiction directory (CSV)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: Community Addiction Counselling (non-profit / CHC-based) in Ontario-wide OHIP-funded services Non-profit agency annual report (PDF)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: Hospital-based Addiction Consultation & Outreach Program in Community Health Centre catchment areas Provincial OHIP-funded program listing (web directory)
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 197 unique URLs across 15 queries
+   Data: {"total_urls": 197, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 197 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 197/197 URLs
+   Data: {"validated": 197, "original": 197}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 197 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[ERROR]... × ftp://ftp.cs.princeton....6/autocomplete/bing.txt  | Error: Unexpected error in _crawl_web at line 500 in crawl (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: URL must start with 'http://', 'https://', 'file://', or 'raw:'
+
+Code context:
+ 495                   pdf_data=None,
+ 496                   mhtml_data=None,
+ 497                   get_delayed_content=None,
+ 498               )
+ 499           else:
+ 500 →             raise ValueError(
+ 501                   "URL must start with 'http://', 'https://', 'file://', or 'raw:'"
+ 502               )
+ 503   
+ 504       async def _crawl_web(
+ 505           self, url: str, config: CrawlerRunConfig 
+[FETCH]... ↓ http://home.camh.net/About_CAMH/Guide_to_CAMH/Mental_Health_Programs/Dual_Diagnosis_Program/         | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ http://home.camh.net/About_CAMH/Guide_to_CAMH/Mental_Health_Programs/Dual_Diagnosis_Program/         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://home.camh.net/About_CAMH/Guide_to_CAMH/Mental_Health_Programs/Dual_Diagnosis_Program/         | ✓ | ⏱: 0.96s 
+[FETCH]... ↓ https://canatc.ca/                                                                                   | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://canatc.ca/                                                                                   | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://canatc.ca/                                                                                   | ✓ | ⏱: 1.58s 
+[ERROR]... × https://211ontario.ca/r...9.9036236&topicPath=125  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ https://cgjonline.ca/index.php/cgj/article/view/415/488                                              | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://cgjonline.ca/index.php/cgj/article/view/415/488                                              | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://cgjonline.ca/index.php/cgj/article/view/415/488                                              | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ http://www.ottawadetox.com/sample-page-2/                                                            | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ http://www.ottawadetox.com/sample-page-2/                                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● http://www.ottawadetox.com/sample-page-2/                                                            | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://amho.ca/                                                                                     | ✓ | ⏱: 1.82s 
+[SCRAPE].. ◆ https://amho.ca/                                                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://amho.ca/                                                                                     | ✓ | ⏱: 1.87s 
+[FETCH]... ↓ https://centralwestcdn.ca/how-get-help-yourself                                                      | ✓ | ⏱: 1.87s 
+[SCRAPE].. ◆ https://centralwestcdn.ca/how-get-help-yourself                                                      | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://centralwestcdn.ca/how-get-help-yourself                                                      | ✓ | ⏱: 1.97s 
+[FETCH]... ↓ https://boston.lti.cs.cmu.edu/appendices/WSDM2018-ConvKNRM/K-NRM/bing/vocab                          | ✓ | ⏱: 2.04s 
+[SCRAPE].. ◆ https://boston.lti.cs.cmu.edu/appendices/WSDM2018-ConvKNRM/K-NRM/bing/vocab                          | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://boston.lti.cs.cmu.edu/appendices/WSDM2018-ConvKNRM/K-NRM/bing/vocab                          | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ http://www.bcmhsus.ca/health-professionals/clinical-professional-resources/opioid-agonist-treatment  | ✓ | ⏱: 2.20s 
+[SCRAPE].. ◆ http://www.bcmhsus.ca/health-professionals/clinical-professional-resources/opioid-agonist-treatment  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.bcmhsus.ca/health-professionals/clinical-professional-resources/opioid-agonist-treatment  | ✓ | ⏱: 2.23s 
+[FETCH]... ↓ https://addictionrehabcenters.ca/ottawa-withdrawal-management-centre/                                | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://addictionrehabcenters.ca/ottawa-withdrawal-management-centre/                                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://addictionrehabcenters.ca/ottawa-withdrawal-management-centre/                                | ✓ | ⏱: 2.35s 
+[FETCH]... ↓ https://cmhatv.ca/                                                                                   | ✓ | ⏱: 0.78s 
+[SCRAPE].. ◆ https://cmhatv.ca/                                                                                   | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://cmhatv.ca/                                                                                   | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ http://www.archive.org/stream/nationalcatholic027929mbp/nationalcatholic027929mbp_djvu.txt           | ✓ | ⏱: 2.47s 
+[SCRAPE].. ◆ http://www.archive.org/stream/nationalcatholic027929mbp/nationalcatholic027929mbp_djvu.txt           | ✓ | ⏱: 0.27s 
+[COMPLETE] ● http://www.archive.org/stream/nationalcatholic027929mbp/nationalcatholic027929mbp_djvu.txt           | ✓ | ⏱: 2.77s 
+[ERROR]... × https://efry.com/wp-con...ity-Resource-Guide.xlsx  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://efry.com/wp-content/uploads/2021/10/Community-Resource-Guide.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://canatc.ca/company/locations/brampton/                                                        | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://canatc.ca/company/locations/brampton/                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://canatc.ca/company/locations/brampton/                                                        | ✓ | ⏱: 1.36s 
+[FETCH]... ↓ https://canatc.ca/company/locations/queen-street-treatment-clinic/                                   | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://canatc.ca/company/locations/queen-street-treatment-clinic/                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://canatc.ca/company/locations/queen-street-treatment-clinic/                                   | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://cmhahpe.ca/programs-and-services/addictions-treatment-services/                              | ✓ | ⏱: 3.00s 
+[SCRAPE].. ◆ https://cmhahpe.ca/programs-and-services/addictions-treatment-services/                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://cmhahpe.ca/programs-and-services/addictions-treatment-services/                              | ✓ | ⏱: 3.03s 
+[FETCH]... ↓ https://connexontario.ca/                                                                            | ✓ | ⏱: 1.42s 
+[SCRAPE].. ◆ https://connexontario.ca/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://connexontario.ca/                                                                            | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://211ontario.ca/results/?topicPath=123&latitude=44.754335&longitude=-78.086096&pg=12           | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?topicPath=123&latitude=44.754335&longitude=-78.086096&pg=12           | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://211ontario.ca/results/?topicPath=123&latitude=44.754335&longitude=-78.086096&pg=12           | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=St...latitude=43.1593745&longitude=-79.2468626&fpg=sm  | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=St...latitude=43.1593745&longitude=-79.2468626&fpg=sm  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=St...latitude=43.1593745&longitude=-79.2468626&fpg=sm  | ✓ | ⏱: 1.55s 
+[FETCH]... ↓ https://211ontario.ca/results/?topicPath=125&latitude=43.653226&longitude=-79.383184&pg=8            | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?topicPath=125&latitude=43.653226&longitude=-79.383184&pg=8            | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://211ontario.ca/results/?topicPath=125&latitude=43.653226&longitude=-79.383184&pg=8            | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=To...=43.639286252837&longitude=-79.425379860935&pg=3  | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=To...=43.639286252837&longitude=-79.425379860935&pg=3  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=To...=43.639286252837&longitude=-79.425379860935&pg=3  | ✓ | ⏱: 1.72s 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=Ge...de=43.6502046&longitude=-79.9036236&topicPath=28  | ✓ | ⏱: 1.73s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=Ge...de=43.6502046&longitude=-79.9036236&topicPath=28  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=Ge...de=43.6502046&longitude=-79.9036236&topicPath=28  | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://cmhapeeldufferin.ca/programs-services/                                                       | ✓ | ⏱: 2.98s 
+[SCRAPE].. ◆ https://cmhapeeldufferin.ca/programs-services/                                                       | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://cmhapeeldufferin.ca/programs-services/                                                       | ✓ | ⏱: 3.03s 
+[FETCH]... ↓ https://empower.ca/fr/static/ontario-health-overview                                                 | ✓ | ⏱: 1.22s 
+[SCRAPE].. ◆ https://empower.ca/fr/static/ontario-health-overview                                                 | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://empower.ca/fr/static/ontario-health-overview                                                 | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://haltonadapt.org/programs-services/concurrent-disorders/                                      | ✓ | ⏱: 1.03s 
+[SCRAPE].. ◆ https://haltonadapt.org/programs-services/concurrent-disorders/                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://haltonadapt.org/programs-services/concurrent-disorders/                                      | ✓ | ⏱: 1.05s 
+[FETCH]... ↓ https://connexontario.ca/our-services/                                                               | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://connexontario.ca/our-services/                                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://connexontario.ca/our-services/                                                               | ✓ | ⏱: 1.15s 
+[FETCH]... ↓ https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://connexontario.ca/organization-list/                                                          | ✓ | ⏱: 1.29s 
+[FETCH]... ↓ https://cmhastarttalking.ca/adult-services/adult-addiction-services/community-withdrawal-management/ | ✓ | ⏱: 2.68s 
+[SCRAPE].. ◆ https://cmhastarttalking.ca/adult-services/adult-addiction-services/community-withdrawal-management/ | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cmhastarttalking.ca/adult-services/adult-addiction-services/community-withdrawal-management/ | ✓ | ⏱: 2.71s 
+[FETCH]... ↓ https://helpwithaddictions.ca/                                                                       | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://helpwithaddictions.ca/                                                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://helpwithaddictions.ca/                                                                       | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://emottawablog.com/2020/08/distilling-it-down-part-ii-optimizing-discharge-from-the-ed/        | ✓ | ⏱: 2.10s 
+[SCRAPE].. ◆ https://emottawablog.com/2020/08/distilling-it-down-part-ii-optimizing-discharge-from-the-ed/        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://emottawablog.com/2020/08/distilling-it-down-part-ii-optimizing-discharge-from-the-ed/        | ✓ | ⏱: 2.13s 
+[FETCH]... ↓ https://lignesantechamplain.ca/printArticle.aspx?id=28851                                            | ✓ | ⏱: 0.59s 
+[SCRAPE].. ◆ https://lignesantechamplain.ca/printArticle.aspx?id=28851                                            | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://lignesantechamplain.ca/printArticle.aspx?id=28851                                            | ✓ | ⏱: 0.60s 
+[FETCH]... ↓ https://connexontario.ca/north-york-addiction-services/                                              | ✓ | ⏱: 1.72s 
+[SCRAPE].. ◆ https://connexontario.ca/north-york-addiction-services/                                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://connexontario.ca/north-york-addiction-services/                                              | ✓ | ⏱: 1.76s 
+[FETCH]... ↓ https://dokumen.pub/sharing-the-past-the-reinven...in-canadian-poetry-since-1960-9781487512323.html  | ✓ | ⏱: 2.83s 
+[SCRAPE].. ◆ https://dokumen.pub/sharing-the-past-the-reinven...in-canadian-poetry-since-1960-9781487512323.html  | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://dokumen.pub/sharing-the-past-the-reinven...in-canadian-poetry-since-1960-9781487512323.html  | ✓ | ⏱: 2.97s 
+[FETCH]... ↓ https://github.com/stacks-network/pybitcoin/blob/master/pybitcoin/passphrases/english_words.py       | ✓ | ⏱: 2.41s 
+[SCRAPE].. ◆ https://github.com/stacks-network/pybitcoin/blob/master/pybitcoin/passphrases/english_words.py       | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://github.com/stacks-network/pybitcoin/blob/master/pybitcoin/passphrases/english_words.py       | ✓ | ⏱: 2.53s 
+[FETCH]... ↓ https://cmhahkpr.ca/programs/dual-diagnosis-case-management/                                         | ✓ | ⏱: 5.31s 
+[SCRAPE].. ◆ https://cmhahkpr.ca/programs/dual-diagnosis-case-management/                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://cmhahkpr.ca/programs/dual-diagnosis-case-management/                                         | ✓ | ⏱: 5.32s 
+[FETCH]... ↓ https://journals.sagepub.com/doi/10.1177/00914509251413849                                           | ✓ | ⏱: 1.88s 
+[SCRAPE].. ◆ https://journals.sagepub.com/doi/10.1177/00914509251413849                                           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://journals.sagepub.com/doi/10.1177/00914509251413849                                           | ✓ | ⏱: 1.95s 
+[FETCH]... ↓ https://hybrid-analysis.com/sample/b4d29b3071efd...256c6bb1104b09fc824abbc/5c42a4997ca3e1343d2f905b  | ✓ | ⏱: 7.77s 
+[SCRAPE].. ◆ https://hybrid-analysis.com/sample/b4d29b3071efd...256c6bb1104b09fc824abbc/5c42a4997ca3e1343d2f905b  | ✓ | ⏱: 0.64s 
+[COMPLETE] ● https://hybrid-analysis.com/sample/b4d29b3071efd...256c6bb1104b09fc824abbc/5c42a4997ca3e1343d2f905b  | ✓ | ⏱: 8.45s 
+[FETCH]... ↓ https://halton.cmha.ca/our-programs-and-services/                                                    | ✓ | ⏱: 8.74s 
+[SCRAPE].. ◆ https://halton.cmha.ca/our-programs-and-services/                                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://halton.cmha.ca/our-programs-and-services/                                                    | ✓ | ⏱: 8.77s 
+[FETCH]... ↓ https://peel.cioc.ca/record/CMH0219?Ln=fr-CA&UseCICVw=39                                             | ✓ | ⏱: 7.30s 
+[SCRAPE].. ◆ https://peel.cioc.ca/record/CMH0219?Ln=fr-CA&UseCICVw=39                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://peel.cioc.ca/record/CMH0219?Ln=fr-CA&UseCICVw=39                                             | ✓ | ⏱: 7.31s 
+[FETCH]... ↓ https://infopeel.ca/dd/                                                                              | ✓ | ⏱: 8.34s 
+[SCRAPE].. ◆ https://infopeel.ca/dd/                                                                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://infopeel.ca/dd/                                                                              | ✓ | ⏱: 8.37s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC10330495/                                                   | ✓ | ⏱: 7.32s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC10330495/                                                   | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC10330495/                                                   | ✓ | ⏱: 7.41s 
+[FETCH]... ↓ https://mre.no/httpdocs/js/zxcvbn/data/english_wikipedia.txt                                         | ✓ | ⏱: 7.70s 
+[SCRAPE].. ◆ https://mre.no/httpdocs/js/zxcvbn/data/english_wikipedia.txt                                         | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://mre.no/httpdocs/js/zxcvbn/data/english_wikipedia.txt                                         | ✓ | ⏱: 7.79s 
+[FETCH]... ↓ https://link.springer.com/article/10.1186/s13011-017-0130-5                                          | ✓ | ⏱: 8.02s 
+[SCRAPE].. ◆ https://link.springer.com/article/10.1186/s13011-017-0130-5                                          | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://link.springer.com/article/10.1186/s13011-017-0130-5                                          | ✓ | ⏱: 8.14s 
+[FETCH]... ↓ https://link.springer.com/article/10.1186/s13011-023-00578-3                                         | ✓ | ⏱: 6.59s 
+[SCRAPE].. ◆ https://link.springer.com/article/10.1186/s13011-023-00578-3                                         | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://link.springer.com/article/10.1186/s13011-023-00578-3                                         | ✓ | ⏱: 6.69s 
+[FETCH]... ↓ https://journals.sagepub.com/doi/10.1177/0706743717711167                                            | ✓ | ⏱: 7.23s 
+[SCRAPE].. ◆ https://journals.sagepub.com/doi/10.1177/0706743717711167                                            | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://journals.sagepub.com/doi/10.1177/0706743717711167                                            | ✓ | ⏱: 7.36s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC10394629/                                                   | ✓ | ⏱: 5.68s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC10394629/                                                   | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC10394629/                                                   | ✓ | ⏱: 5.73s 
+[FETCH]... ↓ https://embracecaregivers.com/en/local-resources-addiction-and-mental-health/                        | ✓ | ⏱: 10.37s 
+[SCRAPE].. ◆ https://embracecaregivers.com/en/local-resources-addiction-and-mental-health/                        | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://embracecaregivers.com/en/local-resources-addiction-and-mental-health/                        | ✓ | ⏱: 10.48s 
+[FETCH]... ↓ https://torontoservicedirectory.ca/results/?sear...icPath=92&latitude=43.718284&longitude=-79.63741  | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://torontoservicedirectory.ca/results/?sear...icPath=92&latitude=43.718284&longitude=-79.63741  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://torontoservicedirectory.ca/results/?sear...icPath=92&latitude=43.718284&longitude=-79.63741  | ✓ | ⏱: 0.92s 
+[FETCH]... ↓ https://nlp.stanford.edu/~lmthang/morphoNLM/cwCsmRNN.words                                           | ✓ | ⏱: 8.56s 
+[SCRAPE].. ◆ https://nlp.stanford.edu/~lmthang/morphoNLM/cwCsmRNN.words                                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://nlp.stanford.edu/~lmthang/morphoNLM/cwCsmRNN.words                                           | ✓ | ⏱: 8.63s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC9411356/                                                    | ✓ | ⏱: 5.99s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC9411356/                                                    | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC9411356/                                                    | ✓ | ⏱: 6.11s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC9005368/                                                    | ✓ | ⏱: 6.12s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC9005368/                                                    | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC9005368/                                                    | ✓ | ⏱: 6.19s 
+[FETCH]... ↓ https://pqwchc.org/                                                                                  | ✓ | ⏱: 7.86s 
+[SCRAPE].. ◆ https://pqwchc.org/                                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://pqwchc.org/                                                                                  | ✓ | ⏱: 7.88s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC7748134/                                                    | ✓ | ⏱: 6.27s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC7748134/                                                    | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC7748134/                                                    | ✓ | ⏱: 6.37s 
+[FETCH]... ↓ https://roadtorecovery.clinic/locations/toronto/                                                     | ✓ | ⏱: 1.78s 
+[SCRAPE].. ◆ https://roadtorecovery.clinic/locations/toronto/                                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://roadtorecovery.clinic/locations/toronto/                                                     | ✓ | ⏱: 1.83s 
+[FETCH]... ↓ https://snap.berkeley.edu/project/10053261                                                           | ✓ | ⏱: 1.70s 
+[SCRAPE].. ◆ https://snap.berkeley.edu/project/10053261                                                           | ✓ | ⏱: 0.27s 
+[COMPLETE] ● https://snap.berkeley.edu/project/10053261                                                           | ✓ | ⏱: 1.97s 
+[FETCH]... ↓ https://theaccesspoint.ca/resources/                                                                 | ✓ | ⏱: 1.92s 
+[SCRAPE].. ◆ https://theaccesspoint.ca/resources/                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://theaccesspoint.ca/resources/                                                                 | ✓ | ⏱: 1.94s 
+[FETCH]... ↓ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0243317                            | ✓ | ⏱: 10.23s 
+[SCRAPE].. ◆ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0243317                            | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0243317                            | ✓ | ⏱: 10.35s 
+[FETCH]... ↓ https://scopehub.ca/resources/provider-resources-downtown-toronto/                                   | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://scopehub.ca/resources/provider-resources-downtown-toronto/                                   | ✓ | ⏱: 0.21s 
+[COMPLETE] ● https://scopehub.ca/resources/provider-resources-downtown-toronto/                                   | ✓ | ⏱: 2.39s 
+[FETCH]... ↓ https://mps.cmha.ca/                                                                                 | ✓ | ⏱: 10.07s 
+[SCRAPE].. ◆ https://mps.cmha.ca/                                                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://mps.cmha.ca/                                                                                 | ✓ | ⏱: 10.12s 
+[ERROR]... × https://www.cancercareo...download?token=I5bPaIgX  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.cancercareontario.ca/en/file/72026/download?token=I5bPaIgX", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://utoronto.scholaris.ca/bitstreams/91de667b-0b5b-4b38-96ef-f952f35f4a6f/download               | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://utoronto.scholaris.ca/bitstreams/91de667b-0b5b-4b38-96ef-f952f35f4a6f/download               | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://utoronto.scholaris.ca/bitstreams/91de667b-0b5b-4b38-96ef-f952f35f4a6f/download               | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://unityhealth.to/areas-of-care/programs-and-clinics/mental-health-and-addictions/              | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://unityhealth.to/areas-of-care/programs-and-clinics/mental-health-and-addictions/              | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://unityhealth.to/areas-of-care/programs-and-clinics/mental-health-and-addictions/              | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://www.camh.ca                                                                                  | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://www.camh.ca                                                                                  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.camh.ca                                                                                  | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://torontoservicedirectory.ca/results/?sear...Path=243&latitude=43.660661&longitude=-79.373882  | ✓ | ⏱: 0.53s 
+[SCRAPE].. ◆ https://torontoservicedirectory.ca/results/?sear...Path=243&latitude=43.660661&longitude=-79.373882  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://torontoservicedirectory.ca/results/?sear...Path=243&latitude=43.660661&longitude=-79.373882  | ✓ | ⏱: 0.53s 
+[FETCH]... ↓ https://torontoservicedirectory.ca/results/?sear...topicPath=51&latitude=43.6135&longitude=-79.4889  | ✓ | ⏱: 0.53s 
+[SCRAPE].. ◆ https://torontoservicedirectory.ca/results/?sear...topicPath=51&latitude=43.6135&longitude=-79.4889  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://torontoservicedirectory.ca/results/?sear...topicPath=51&latitude=43.6135&longitude=-79.4889  | ✓ | ⏱: 0.54s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/opioids/opioids-use-disorder-treatment.html          | ✓ | ⏱: 1.40s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/opioids/opioids-use-disorder-treatment.html          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/opioids/opioids-use-disorder-treatment.html          | ✓ | ⏱: 1.44s 
+[FETCH]... ↓ https://www.centralwestcdn.ca/how-get-help-yourself                                                  | ✓ | ⏱: 0.95s 
+[SCRAPE].. ◆ https://www.centralwestcdn.ca/how-get-help-yourself                                                  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.centralwestcdn.ca/how-get-help-yourself                                                  | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://www.ait-journal.com/The-opioid-crisis-in...ts-and-future-lessons-for-Europe,119296,0,2.html  | ✓ | ⏱: 1.89s 
+[SCRAPE].. ◆ https://www.ait-journal.com/The-opioid-crisis-in...ts-and-future-lessons-for-Europe,119296,0,2.html  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.ait-journal.com/The-opioid-crisis-in...ts-and-future-lessons-for-Europe,119296,0,2.html  | ✓ | ⏱: 1.95s 
+[FETCH]... ↓ https://www.centralwesthealthline.ca/displayService.aspx?id=216957                                   | ✓ | ⏱: 0.79s 
+[SCRAPE].. ◆ https://www.centralwesthealthline.ca/displayService.aspx?id=216957                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.centralwesthealthline.ca/displayService.aspx?id=216957                                   | ✓ | ⏱: 0.81s 
+[ERROR]... × https://www.durhamimmig...-With-Disabilities.xlsx  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.durhamimmigration.ca/en/resources/Durham-Scarborough-GTA_Organizations-Serving-People-With-Disabilities.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.champlainhealthline.ca/listservices.aspx?id=10095                                        | ✓ | ⏱: 0.97s 
+[SCRAPE].. ◆ https://www.champlainhealthline.ca/listservices.aspx?id=10095                                        | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.champlainhealthline.ca/listservices.aspx?id=10095                                        | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/ohip-covered-services/                                         | ✓ | ⏱: 0.86s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/ohip-covered-services/                                         | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/ohip-covered-services/                                         | ✓ | ⏱: 0.91s 
+[FETCH]... ↓ https://www.camh.ca/                                                                                 | ✓ | ⏱: 0.89s 
+[SCRAPE].. ◆ https://www.camh.ca/                                                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.camh.ca/                                                                                 | ✓ | ⏱: 0.97s 
+[ERROR]... × https://torontoserviced...716&longitude=-79.41497  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ https://torontoservicedirectory.ca/results/?sear...cPath=50&latitude=43.750333&longitude=-79.470125  | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://torontoservicedirectory.ca/results/?sear...cPath=50&latitude=43.750333&longitude=-79.470125  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://torontoservicedirectory.ca/results/?sear...cPath=50&latitude=43.750333&longitude=-79.470125  | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html       | ✓ | ⏱: 0.81s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html       | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/substance-use/get-help-with-substance-use.html       | ✓ | ⏱: 0.90s 
+[FETCH]... ↓ https://windsoressex.cmha.ca/programs/dual-diagnosis/                                                | ✓ | ⏱: 2.94s 
+[SCRAPE].. ◆ https://windsoressex.cmha.ca/programs/dual-diagnosis/                                                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://windsoressex.cmha.ca/programs/dual-diagnosis/                                                | ✓ | ⏱: 2.97s 
+[ERROR]... × https://torontoserviced...74&longitude=-78.862106  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ https://www.cmajopen.ca/content/9/1/E115                                                             | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://www.cmajopen.ca/content/9/1/E115                                                             | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://www.cmajopen.ca/content/9/1/E115                                                             | ✓ | ⏱: 1.69s 
+[FETCH]... ↓ https://lawfoundation.on.ca/grants-made/                                                             | ✓ | ⏱: 12.47s 
+[SCRAPE].. ◆ https://lawfoundation.on.ca/grants-made/                                                             | ✓ | ⏱: 0.83s 
+[COMPLETE] ● https://lawfoundation.on.ca/grants-made/                                                             | ✓ | ⏱: 13.31s 
+[FETCH]... ↓ https://www.drugrehabottawa.com/treatments/drug-detox-and-alcohol-detox-program                      | ✓ | ⏱: 2.51s 
+[SCRAPE].. ◆ https://www.drugrehabottawa.com/treatments/drug-detox-and-alcohol-detox-program                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.drugrehabottawa.com/treatments/drug-detox-and-alcohol-detox-program                      | ✓ | ⏱: 2.54s 
+[FETCH]... ↓ https://www.centralwestcdn.ca/peel-addiction-assessment-and-referral-centre-paarc                    | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.centralwestcdn.ca/peel-addiction-assessment-and-referral-centre-paarc                    | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.centralwestcdn.ca/peel-addiction-assessment-and-referral-centre-paarc                    | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://www.facebook.com/RegionofDurham/posts/me...s-to-healthier-relationships-c/1311683420998800/  | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://www.facebook.com/RegionofDurham/posts/me...s-to-healthier-relationships-c/1311683420998800/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/RegionofDurham/posts/me...s-to-healthier-relationships-c/1311683420998800/  | ✓ | ⏱: 2.22s 
+[FETCH]... ↓ https://www.camh.ca/en/patients-and-families/programs-and-services                                   | ✓ | ⏱: 2.64s 
+[SCRAPE].. ◆ https://www.camh.ca/en/patients-and-families/programs-and-services                                   | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.camh.ca/en/patients-and-families/programs-and-services                                   | ✓ | ⏱: 2.73s 
+[FETCH]... ↓ https://www.ementalhealth.ca/index.php?ID=9618&m=record                                              | ✓ | ⏱: 2.55s 
+[SCRAPE].. ◆ https://www.ementalhealth.ca/index.php?ID=9618&m=record                                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ementalhealth.ca/index.php?ID=9618&m=record                                              | ✓ | ⏱: 2.57s 
+[FETCH]... ↓ https://www.hrh.ca/programs/mental-health-addictions/                                                | ✓ | ⏱: 1.65s 
+[SCRAPE].. ◆ https://www.hrh.ca/programs/mental-health-addictions/                                                | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.hrh.ca/programs/mental-health-addictions/                                                | ✓ | ⏱: 1.72s 
+[FETCH]... ↓ https://www.cmaj.ca/content/195/49/E1709                                                             | ✓ | ⏱: 3.21s 
+[SCRAPE].. ◆ https://www.cmaj.ca/content/195/49/E1709                                                             | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.cmaj.ca/content/195/49/E1709                                                             | ✓ | ⏱: 3.33s 
+[FETCH]... ↓ https://www.facebook.com/ontarioprovincialpolice...unity-support-211-ontario-is-y/1334451685385456/  | ✓ | ⏱: 0.93s 
+[SCRAPE].. ◆ https://www.facebook.com/ontarioprovincialpolice...unity-support-211-ontario-is-y/1334451685385456/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/ontarioprovincialpolice...unity-support-211-ontario-is-y/1334451685385456/  | ✓ | ⏱: 0.97s 
+[FETCH]... ↓ https://www.mississaugahaltonhealthline.ca/listservices.aspx?id=10095                                | ✓ | ⏱: 0.97s 
+[SCRAPE].. ◆ https://www.mississaugahaltonhealthline.ca/listservices.aspx?id=10095                                | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.mississaugahaltonhealthline.ca/listservices.aspx?id=10095                                | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://www.facebook.com/siloam.mission/posts/ne...ce-a-meaningful-new-service-at/1044902214456929/  | ✓ | ⏱: 1.05s 
+[SCRAPE].. ◆ https://www.facebook.com/siloam.mission/posts/ne...ce-a-meaningful-new-service-at/1044902214456929/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/siloam.mission/posts/ne...ce-a-meaningful-new-service-at/1044902214456929/  | ✓ | ⏱: 1.09s 
+[FETCH]... ↓ https://www.hwdsb.on.ca/secondary/supports/mental-health-and-well-being/                             | ✓ | ⏱: 2.33s 
+[SCRAPE].. ◆ https://www.hwdsb.on.ca/secondary/supports/mental-health-and-well-being/                             | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.hwdsb.on.ca/secondary/supports/mental-health-and-well-being/                             | ✓ | ⏱: 2.43s 
+[FETCH]... ↓ https://www.mit.edu/~ecprice/wordlist.100000                                                         | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://www.mit.edu/~ecprice/wordlist.100000                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.mit.edu/~ecprice/wordlist.100000                                                         | ✓ | ⏱: 1.22s 
+[FETCH]... ↓ https://www.fraserhealth.ca/Service-Directory/Se...tance-use/substance-use/opioid-agonist-treatment  | ✓ | ⏱: 2.79s 
+[SCRAPE].. ◆ https://www.fraserhealth.ca/Service-Directory/Se...tance-use/substance-use/opioid-agonist-treatment  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.fraserhealth.ca/Service-Directory/Se...tance-use/substance-use/opioid-agonist-treatment  | ✓ | ⏱: 2.82s 
+[ERROR]... × https://www.rizema.org/.../LinC-2024.final-1.docx  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.rizema.org/wp-content/uploads/2024/03/LinC-2024.final-1.docx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.ontario.ca/page/community-health-centres                                                 | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/community-health-centres                                                 | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.ontario.ca/page/community-health-centres                                                 | ✓ | ⏱: 1.56s 
+[FETCH]... ↓ https://www.facebook.com/groups/336421063935440/posts/1859993208244877/                              | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://www.facebook.com/groups/336421063935440/posts/1859993208244877/                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.facebook.com/groups/336421063935440/posts/1859993208244877/                              | ✓ | ⏱: 1.68s 
+[FETCH]... ↓ https://www.firstsession.com/resources/therapy-provincial-healthcare-canada                          | ✓ | ⏱: 3.51s 
+[SCRAPE].. ◆ https://www.firstsession.com/resources/therapy-provincial-healthcare-canada                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.firstsession.com/resources/therapy-provincial-healthcare-canada                          | ✓ | ⏱: 3.54s 
+[FETCH]... ↓ https://www.pharmacy.utoronto.ca/news-announceme...ospitalization-toxicity-halves-risk-repeat-event  | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ https://www.pharmacy.utoronto.ca/news-announceme...ospitalization-toxicity-halves-risk-repeat-event  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.pharmacy.utoronto.ca/news-announceme...ospitalization-toxicity-halves-risk-repeat-event  | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://www.facebook.com/covenanthousetoronto/po...makes-a-big-difference-for-the/1170889588407590/  | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://www.facebook.com/covenanthousetoronto/po...makes-a-big-difference-for-the/1170889588407590/  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.facebook.com/covenanthousetoronto/po...makes-a-big-difference-for-the/1170889588407590/  | ✓ | ⏱: 2.35s 
+[FETCH]... ↓ https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1074691/full             | ✓ | ⏱: 3.71s 
+[SCRAPE].. ◆ https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1074691/full             | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1074691/full             | ✓ | ⏱: 3.85s 
+[FETCH]... ↓ https://www.sciencedirect.com/science/article/pii/S2949875924000894                                  | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://www.sciencedirect.com/science/article/pii/S2949875924000894                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.sciencedirect.com/science/article/pii/S2949875924000894                                  | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://www.tehn.ca/programs-services/mental-health-addiction/community-outreach-services            | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.tehn.ca/programs-services/mental-health-addiction/community-outreach-services            | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.tehn.ca/programs-services/mental-health-addiction/community-outreach-services            | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://www.toronto.ca/community-people/health-w...programs-advice/substance-use-clinical-services/  | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://www.toronto.ca/community-people/health-w...programs-advice/substance-use-clinical-services/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.toronto.ca/community-people/health-w...programs-advice/substance-use-clinical-services/  | ✓ | ⏱: 1.14s 
+[FETCH]... ↓ https://www.jsatjournal.com/article/S2949-8759(23)00236-9/fulltext                                   | ✓ | ⏱: 3.69s 
+[SCRAPE].. ◆ https://www.jsatjournal.com/article/S2949-8759(23)00236-9/fulltext                                   | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://www.jsatjournal.com/article/S2949-8759(23)00236-9/fulltext                                   | ✓ | ⏱: 3.87s 
+[FETCH]... ↓ https://www.edgewoodhealthnetwork.com/ottawa-addiction-treatment/                                    | ✓ | ⏱: 4.17s 
+[SCRAPE].. ◆ https://www.edgewoodhealthnetwork.com/ottawa-addiction-treatment/                                    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.edgewoodhealthnetwork.com/ottawa-addiction-treatment/                                    | ✓ | ⏱: 4.22s 
+[FETCH]... ↓ https://www.icha-toronto.ca/shelter-health-services-map                                              | ✓ | ⏱: 4.29s 
+[SCRAPE].. ◆ https://www.icha-toronto.ca/shelter-health-services-map                                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.icha-toronto.ca/shelter-health-services-map                                              | ✓ | ⏱: 4.31s 
+[ERROR]... × https://www.womeninmana...l-health-resources.xlsx  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.womeninmanagement.org/assets/files/canada/extensive-list-of-mental-health-resources.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listServices.aspx?id=11339&region=Toronto                    | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listServices.aspx?id=11339&region=Toronto                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listServices.aspx?id=11339&region=Toronto                    | ✓ | ⏱: 1.10s 
+[FETCH]... ↓ https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/mental-health-services                                                   | ✓ | ⏱: 1.55s 
+[FETCH]... ↓ https://www.stjoes.ca/health-services/mental-hea...s-mental-health-outpatient-and-outreach-programs  | ✓ | ⏱: 2.08s 
+[SCRAPE].. ◆ https://www.stjoes.ca/health-services/mental-hea...s-mental-health-outpatient-and-outreach-programs  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.stjoes.ca/health-services/mental-hea...s-mental-health-outpatient-and-outreach-programs  | ✓ | ⏱: 2.11s 
+[FETCH]... ↓ https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 1.61s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/homeless-and-addicti...t-hubs-hart-hubs-reference-document-january-2025  | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://www.ontario.ca/page/published-plans-and-annual-reports-2020-2021-ministry-health             | ✓ | ⏱: 1.66s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/published-plans-and-annual-reports-2020-2021-ministry-health             | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.ontario.ca/page/published-plans-and-annual-reports-2020-2021-ministry-health             | ✓ | ⏱: 1.72s 
+[FETCH]... ↓ https://www.truenorthmedical.com/                                                                    | ✓ | ⏱: 1.30s 
+[SCRAPE].. ◆ https://www.truenorthmedical.com/                                                                    | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.truenorthmedical.com/                                                                    | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=11339                                   | ✓ | ⏱: 0.35s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=11339                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=11339                                   | ✓ | ⏱: 0.38s 
+[FETCH]... ↓ https://www.wtoht.ca/mha-asset-map                                                                   | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://www.wtoht.ca/mha-asset-map                                                                   | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.wtoht.ca/mha-asset-map                                                                   | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://www.ontariondp.ca/news/counselling-and-therapy-under-ohip-means-about-200-visit-saved        | ✓ | ⏱: 4.50s 
+[SCRAPE].. ◆ https://www.ontariondp.ca/news/counselling-and-therapy-under-ohip-means-about-200-visit-saved        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ontariondp.ca/news/counselling-and-therapy-under-ohip-means-about-200-visit-saved        | ✓ | ⏱: 4.52s 
+[FETCH]... ↓ https://www.toronto.ca/community-people/health-w...ces/injectable-opioid-agonist-treatment-program/  | ✓ | ⏱: 0.51s 
+[SCRAPE].. ◆ https://www.toronto.ca/community-people/health-w...ces/injectable-opioid-agonist-treatment-program/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.toronto.ca/community-people/health-w...ces/injectable-opioid-agonist-treatment-program/  | ✓ | ⏱: 0.53s 
+[FETCH]... ↓ https://www.theroyal.ca/media-releases/rapid-access-alcohol-withdrawal                               | ✓ | ⏱: 3.84s 
+[SCRAPE].. ◆ https://www.theroyal.ca/media-releases/rapid-access-alcohol-withdrawal                               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.theroyal.ca/media-releases/rapid-access-alcohol-withdrawal                               | ✓ | ⏱: 3.89s 
+[FETCH]... ↓ https://www.rehab.ca/ottawa-withdrawal-management-centre/1102187-r                                   | ✓ | ⏱: 4.99s 
+[SCRAPE].. ◆ https://www.rehab.ca/ottawa-withdrawal-management-centre/1102187-r                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.rehab.ca/ottawa-withdrawal-management-centre/1102187-r                                   | ✓ | ⏱: 5.00s 
+[FETCH]... ↓ https://www.theroyal.ca/patient-care-information...-programs/substance-use-and-concurrent-disorders  | ✓ | ⏱: 4.32s 
+[SCRAPE].. ◆ https://www.theroyal.ca/patient-care-information...-programs/substance-use-and-concurrent-disorders  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.theroyal.ca/patient-care-information...-programs/substance-use-and-concurrent-disorders  | ✓ | ⏱: 4.37s 
+[ERROR]... × https://public.ukp.info...dia_doc_frequencies.txt  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://public.ukp.informatik.tu-darmstadt.de/reimers/embeddings/wikipedia_doc_frequencies.txt", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+⚠️  Crawl failed for https://www.toronto.ca/community-people/health-wellness-care/health-programs-advice/substance-use-clinical-services/injectable-opioid-agonist-treatment-program/: Unexpected error in _crawl_web at line 500 in crawl (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: URL must start with 'http://', 'https://', 'file://', or 'raw:'
+
+Code context:
+ 495                   pdf_data=None,
+ 496                   mhtml_data=None,
+ 497                   get_delayed_content=None,
+ 498               )
+ 499           else:
+ 500 →             raise ValueError(
+ 501                   "URL must start with 'http://', 'https://', 'file://', or 'raw:'"
+ 502               )
+ 503   
+ 504       async def _crawl_web(
+ 505           self, url: str, config: CrawlerRunConfig
+⚠️  Crawl failed for https://pmc.ncbi.nlm.nih.gov/articles/PMC9005368/: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for https://halton.cmha.ca/our-programs-and-services/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://efry.com/wp-content/uploads/2021/10/Community-Resource-Guide.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://pmc.ncbi.nlm.nih.gov/articles/PMC9411356/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.cancercareontario.ca/en/file/72026/download?token=I5bPaIgX", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.facebook.com/siloam.mission/posts/new-health-support-at-siloamwere-excited-to-announce-a-meaningful-new-service-at/1044902214456929/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.durhamimmigration.ca/en/resources/Durham-Scarborough-GTA_Organizations-Serving-People-With-Disabilities.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://211ontario.ca/results/?searchLocation=Georgetown&searchTerms=&latitude=43.6502046&longitude=-79.9036236&topicPath=125: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for https://torontoservicedirectory.ca/results/?searchLocation=Toronto&topicPath=50&latitude=43.78716&longitude=-79.41497: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for https://efry.com/wp-content/uploads/2021/10/Community-Resource-Guide.xlsx: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.rizema.org/wp-content/uploads/2024/03/LinC-2024.final-1.docx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://public.ukp.informatik.tu-darmstadt.de/reimers/embeddings/wikipedia_doc_frequencies.txt: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.womeninmanagement.org/assets/files/canada/extensive-list-of-mental-health-resources.xlsx", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.wtoht.ca/mha-asset-map: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://public.ukp.informatik.tu-darmstadt.de/reimers/embeddings/wikipedia_doc_frequencies.txt", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://www.camh.ca/-/media/files/oat-info-for-clients.pdf                                           | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/files/oat-info-for-clients.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpk_u30anc.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/files/oat-info-for-clients.pdf                                           | ✓ | ⏱: 0.56s 
+[COMPLETE] ● https://www.camh.ca/-/media/files/oat-info-for-clients.pdf                                           | ✓ | ⏱: 0.57s 
+[FETCH]... ↓ https://cdpe.org/wp-content/uploads/2022/04/Inte...ntario-during-COVID-19-pandemic-restrictions.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from 
+https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf.
+.. 
+[ERROR]... × https://cdpe.org/wp-con...ndemic-restrictions.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: 
+https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf,
+error: Failed to download PDF from 
+https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf:
+403 Client Error: Forbidden for url: 
+https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf, error: Failed to download PDF from https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf: 403 Client Error: Forbidden for url: https://cdpe.org/wp-content/uploads/2022/04/International-Journal-of-Drug-Policy-2022-Bouck-Evaluating-interventions-to-facilitate-opioid-agonist-treatment-access-among-people-who-inject-drugs-in-Toronto-Ontario-during-COVID-19-pandemic-restrictions.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.caledon.ca/en/town-services/resources/take-care/PEEL-DUFFERIN-CMHA-Quick-Guide.pdf       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.caledon.ca/en/town-services/resources/take-care/PEEL-DUFFERIN-CMHA-Quick-Guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpxjuor3_l.pdf 
+[SCRAPE].. ◆ https://www.caledon.ca/en/town-services/resources/take-care/PEEL-DUFFERIN-CMHA-Quick-Guide.pdf       | ✓ | ⏱: 3.57s 
+[COMPLETE] ● https://www.caledon.ca/en/town-services/resources/take-care/PEEL-DUFFERIN-CMHA-Quick-Guide.pdf       | ✓ | ⏱: 3.57s 
+[FETCH]... ↓ https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpqmmee5l0.pdf 
+[SCRAPE].. ◆ https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf                     | ✓ | ⏱: 6.28s 
+[COMPLETE] ● https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_302en19.pdf                     | ✓ | ⏱: 6.28s 
+[FETCH]... ↓ https://scopehub.ca/wp-content/uploads/2021/05/e.-EtobicokeMississaugaPeel.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://scopehub.ca/wp-content/uploads/2021/05/e.-EtobicokeMississaugaPeel.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpb1oyf8x2.pdf 
+[SCRAPE].. ◆ https://scopehub.ca/wp-content/uploads/2021/05/e.-EtobicokeMississaugaPeel.pdf                       | ✓ | ⏱: 0.77s 
+[COMPLETE] ● https://scopehub.ca/wp-content/uploads/2021/05/e.-EtobicokeMississaugaPeel.pdf                       | ✓ | ⏱: 0.77s 
+[FETCH]... ↓ https://chfht.ca/wp-content/uploads/2022/01/Mental-Health-Resources.pdf                              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://chfht.ca/wp-content/uploads/2022/01/Mental-Health-Resources.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp36x48m7h.pdf 
+[SCRAPE].. ◆ https://chfht.ca/wp-content/uploads/2022/01/Mental-Health-Resources.pdf                              | ✓ | ⏱: 0.45s 
+[COMPLETE] ● https://chfht.ca/wp-content/uploads/2022/01/Mental-Health-Resources.pdf                              | ✓ | ⏱: 0.45s 
+[FETCH]... ↓ https://www.medicaid.gov/state-resource-center/i...ram/iap-downloads/program-areas/fued-webinar.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.medicaid.gov/state-resource-center/innovation-accelerator-program/iap-downloads/program-areas/fued-webinar.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpq8i85eol.pdf 
+[SCRAPE].. ◆ https://www.medicaid.gov/state-resource-center/i...ram/iap-downloads/program-areas/fued-webinar.pdf  | ✓ | ⏱: 3.93s 
+[COMPLETE] ● https://www.medicaid.gov/state-resource-center/i...ram/iap-downloads/program-areas/fued-webinar.pdf  | ✓ | ⏱: 3.93s 
+[FETCH]... ↓ https://torontocentral.behaviouralsupportsontari...ontentDocuments/CPOTs and Specialty Outreach.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://torontocentral.behaviouralsupportsontario.ca/Uploads/ContentDocuments/CPOTs%20and%20Specialty%20Outreach.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmple7sj1g0.pdf 
+[SCRAPE].. ◆ https://torontocentral.behaviouralsupportsontari...ontentDocuments/CPOTs and Specialty Outreach.pdf  | ✓ | ⏱: 1.04s 
+[COMPLETE] ● https://torontocentral.behaviouralsupportsontari...ontentDocuments/CPOTs and Specialty Outreach.pdf  | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://www.camh.ca/-/media/health-info-files/co...e-addiction-services-pfls-comm-resources-pdf.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/health-info-files/community-resource-sheets/substance-use-addiction-services-pfls-comm-resources-pdf.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfusn2_0e.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/health-info-files/co...e-addiction-services-pfls-comm-resources-pdf.pdf  | ✓ | ⏱: 2.78s 
+[COMPLETE] ● https://www.camh.ca/-/media/health-info-files/co...e-addiction-services-pfls-comm-resources-pdf.pdf  | ✓ | ⏱: 2.78s 
+[FETCH]... ↓ https://www.auditor.on.ca/en/content/annualreports/arreports/en24/pa_ONopioid_en24.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.auditor.on.ca/en/content/annualreports/arreports/en24/pa_ONopioid_en24.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp0t6hfmns.pdf 
+[SCRAPE].. ◆ https://www.auditor.on.ca/en/content/annualreports/arreports/en24/pa_ONopioid_en24.pdf               | ✓ | ⏱: 10.86s 
+[COMPLETE] ● https://www.auditor.on.ca/en/content/annualreports/arreports/en24/pa_ONopioid_en24.pdf               | ✓ | ⏱: 10.86s 
+[FETCH]... ↓ https://www.kerrstreet.com/wp-content/uploads/2019/09/Addiction-Mental-Health-and-Counselling.pdf    | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.kerrstreet.com/wp-content/uploads/2019/09/Addiction-Mental-Health-and-Counselling.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp2rvjifhq.pdf 
+[SCRAPE].. ◆ https://www.kerrstreet.com/wp-content/uploads/2019/09/Addiction-Mental-Health-and-Counselling.pdf    | ✓ | ⏱: 1.05s 
+[COMPLETE] ● https://www.kerrstreet.com/wp-content/uploads/2019/09/Addiction-Mental-Health-and-Counselling.pdf    | ✓ | ⏱: 1.05s 
+[FETCH]... ↓ http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf... 
+[ERROR]... × http://www.sikhfamilyhe.../05/CMHA-QuickGuide.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf, error: Failed to download PDF from 
+http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf: 406 Client Error: Not Acceptable for url: http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf, error: Failed to download PDF from http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf: 406 Client Error: Not Acceptable for url: http://www.sikhfamilyhelpline.com/wp-content/uploads/2016/05/CMHA-QuickGuide.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://cmhapeeldufferin.ca/wp-content/uploads/2016/07/017_CMHA_QuickGuide_Brochure_0618_INT.pdf     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cmhapeeldufferin.ca/wp-content/uploads/2016/07/017_CMHA_QuickGuide_Brochure_0618_INT.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfokzzgcs.pdf 
+[SCRAPE].. ◆ https://cmhapeeldufferin.ca/wp-content/uploads/2016/07/017_CMHA_QuickGuide_Brochure_0618_INT.pdf     | ✓ | ⏱: 3.55s 
+[COMPLETE] ● https://cmhapeeldufferin.ca/wp-content/uploads/2016/07/017_CMHA_QuickGuide_Brochure_0618_INT.pdf     | ✓ | ⏱: 3.55s 
+[FETCH]... ↓ https://cmhapeeldufferin.ca/wp-content/uploads/2021/12/PD-Quick-Guide-digital-final_Dec_16_21_1.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cmhapeeldufferin.ca/wp-content/uploads/2021/12/PD-Quick-Guide-digital-final_Dec_16_21_1.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp_qr4kdxq.pdf 
+[SCRAPE].. ◆ https://cmhapeeldufferin.ca/wp-content/uploads/2021/12/PD-Quick-Guide-digital-final_Dec_16_21_1.pdf  | ✓ | ⏱: 5.46s 
+[COMPLETE] ● https://cmhapeeldufferin.ca/wp-content/uploads/2021/12/PD-Quick-Guide-digital-final_Dec_16_21_1.pdf  | ✓ | ⏱: 5.46s 
+[FETCH]... ↓ https://needsbasedplanning.ca/wp-content/uploads...National-Core-Services-Framework-Version-1.0.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf... 
+[ERROR]... × https://needsbasedplann...amework-Version-1.0.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf, error: Failed to download PDF from 
+https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf: 406 Client Error: Not Acceptable for url: https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf, error: Failed to download PDF from https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf: 406 Client Error: Not Acceptable for url: https://needsbasedplanning.ca/wp-content/uploads/2023/04/National-Core-Services-Framework-Version-1.0.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://mentalhealthcommission.ca/wp-content/upl...021/09/out_of_the_shadows_at_last_-_full_0_0.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://mentalhealthcommission.ca/wp-content/uploads/2021/09/out_of_the_shadows_at_last_-_full_0_0.pdf... 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpvz47q6ga.pdf 
+[SCRAPE].. ◆ https://mentalhealthcommission.ca/wp-content/upl...021/09/out_of_the_shadows_at_last_-_full_0_0.pdf  | ✓ | ⏱: 24.23s 
+[COMPLETE] ● https://mentalhealthcommission.ca/wp-content/upl...021/09/out_of_the_shadows_at_last_-_full_0_0.pdf  | ✓ | ⏱: 24.23s 
+[FETCH]... ↓ https://www.cheo.on.ca/en/news/resources/THRIVE-Report-2017.pdf                                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cheo.on.ca/en/news/resources/THRIVE-Report-2017.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpiu5v1av3.pdf 
+[SCRAPE].. ◆ https://www.cheo.on.ca/en/news/resources/THRIVE-Report-2017.pdf                                      | ✓ | ⏱: 50.16s 
+[COMPLETE] ● https://www.cheo.on.ca/en/news/resources/THRIVE-Report-2017.pdf                                      | ✓ | ⏱: 50.17s 
+[FETCH]... ↓ https://www.ottawaheart.ca/sites/default/files/legacy/files/TheBeat-v2i1-Eng.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ottawaheart.ca/sites/default/files/legacy/files/TheBeat-v2i1-Eng.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp94bq7n4k.pdf 
+[SCRAPE].. ◆ https://www.ottawaheart.ca/sites/default/files/legacy/files/TheBeat-v2i1-Eng.pdf                     | ✓ | ⏱: 0.54s 
+[COMPLETE] ● https://www.ottawaheart.ca/sites/default/files/legacy/files/TheBeat-v2i1-Eng.pdf                     | ✓ | ⏱: 0.54s 
+[FETCH]... ↓ https://www.islandhealth.ca/sites/default/files/2018-05/review-substance-use-services-system.pdf     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.islandhealth.ca/sites/default/files/2018-05/review-substance-use-services-system.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpi20lhwbx.pdf 
+[SCRAPE].. ◆ https://www.islandhealth.ca/sites/default/files/2018-05/review-substance-use-services-system.pdf     | ✓ | ⏱: 4.39s 
+[COMPLETE] ● https://www.islandhealth.ca/sites/default/files/2018-05/review-substance-use-services-system.pdf     | ✓ | ⏱: 4.39s 
+[FETCH]... ↓ https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf... 
+[ERROR]... × https://effectivehealth...54-rural-telehealth.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf, error: Failed to download PDF from 
+https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf: 403 Client Error: Forbidden for url: https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf, error: Failed to download PDF from https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf: 403 Client Error: Forbidden for url: https://effectivehealthcare.ahrq.gov/sites/default/files/related_files/cer-254-rural-telehealth.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://toronto.cmha.ca/wp-content/uploads/2017/03/services4seniors_reduced.pdf                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://toronto.cmha.ca/wp-content/uploads/2017/03/services4seniors_reduced.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpcqm2gpsm.pdf 
+[SCRAPE].. ◆ https://toronto.cmha.ca/wp-content/uploads/2017/03/services4seniors_reduced.pdf                      | ✓ | ⏱: 15.57s 
+[COMPLETE] ● https://toronto.cmha.ca/wp-content/uploads/2017/03/services4seniors_reduced.pdf                      | ✓ | ⏱: 15.58s 
+[FETCH]... ↓ https://www.oha.com/Documents/SRN Success Stories.pdf                                                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.oha.com/Documents/SRN%20Success%20Stories.pdf... 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpkemsx0xr.pdf 
+[SCRAPE].. ◆ https://www.oha.com/Documents/SRN Success Stories.pdf                                                | ✓ | ⏱: 2.79s 
+[COMPLETE] ● https://www.oha.com/Documents/SRN Success Stories.pdf                                                | ✓ | ⏱: 2.79s 
+[FETCH]... ↓ https://www.canada.ca/content/dam/hc-sc/document...canadian-pain-task-force-June-2019-report-en.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.canada.ca/content/dam/hc-sc/documents/corporate/about-health-canada/public-engagement/external-advisory-bodies/canadian-pain-task-force/report-2019/canadian-pain-task-force-June-2019-report-en.pdf... 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp6tzfwjpr.pdf 
+[SCRAPE].. ◆ https://www.canada.ca/content/dam/hc-sc/document...canadian-pain-task-force-June-2019-report-en.pdf  | ✓ | ⏱: 4.57s 
+[COMPLETE] ● https://www.canada.ca/content/dam/hc-sc/document...canadian-pain-task-force-June-2019-report-en.pdf  | ✓ | ⏱: 4.57s 
+[FETCH]... ↓ https://www.oma.org/siteassets/oma/media/pagetre.../oma-reply-book-of-documents-vol-1_may302024.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.oma.org/siteassets/oma/media/pagetree/news-and-events/oma-reply-book-of-documents-vol-1_may302024.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpyt1b8e7s.pdf 
+[SCRAPE].. ◆ https://www.oma.org/siteassets/oma/media/pagetre.../oma-reply-book-of-documents-vol-1_may302024.pdf  | ✓ | ⏱: 281.34s 
+[COMPLETE] ● https://www.oma.org/siteassets/oma/media/pagetre.../oma-reply-book-of-documents-vol-1_may302024.pdf  | ✓ | ⏱: 281.34s 
+[FETCH]... ↓ https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf... 
+[ERROR]... × https://www.cmaj.ca/con...DC1/stroke-e-online.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf, error: Failed to download PDF from 
+https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf: 403 Client Error: Forbidden for url: https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf, error: Failed to download PDF from https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf: 403 Client Error: Forbidden for url: https://www.cmaj.ca/content/suppl/2008/11/25/179.12.S1.DC1/stroke-e-online.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://covidcareathome.ca/files/SCOPE_PatientMentalHealthCompleteGuide_Jul2020.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://covidcareathome.ca/files/SCOPE_PatientMentalHealthCompleteGuide_Jul2020.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp18ehx59t.pdf 
+[SCRAPE].. ◆ https://covidcareathome.ca/files/SCOPE_PatientMentalHealthCompleteGuide_Jul2020.pdf                  | ✓ | ⏱: 2.51s 
+[COMPLETE] ● https://covidcareathome.ca/files/SCOPE_PatientMentalHealthCompleteGuide_Jul2020.pdf                  | ✓ | ⏱: 2.51s 
+[FETCH]... ↓ https://www.peelhaltonworkforce.com/wp-content/uploads/2023/10/Peel-Youth-Booklet.pdf                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.peelhaltonworkforce.com/wp-content/uploads/2023/10/Peel-Youth-Booklet.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpo9d6r2l6.pdf 
+[SCRAPE].. ◆ https://www.peelhaltonworkforce.com/wp-content/uploads/2023/10/Peel-Youth-Booklet.pdf                | ✓ | ⏱: 25.79s 
+[COMPLETE] ● https://www.peelhaltonworkforce.com/wp-content/uploads/2023/10/Peel-Youth-Booklet.pdf                | ✓ | ⏱: 25.79s 
+[FETCH]... ↓ https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf    | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp9ipisxsn.pdf 
+[SCRAPE].. ◆ https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf    | ✓ | ⏱: 3.11s 
+[COMPLETE] ● https://odprn.ca/wp-content/uploads/2023/06/Opioids-among-Adolescents-and-Young-Adults-Report.pdf    | ✓ | ⏱: 3.11s 
+[FETCH]... ↓ https://regentparkchc.org/wp-content/uploads/2020/10/YHAP-Final-layout.pdf                           | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://regentparkchc.org/wp-content/uploads/2020/10/YHAP-Final-layout.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp9d17l1r9.pdf 
+[SCRAPE].. ◆ https://regentparkchc.org/wp-content/uploads/2020/10/YHAP-Final-layout.pdf                           | ✓ | ⏱: 2.73s 
+[COMPLETE] ● https://regentparkchc.org/wp-content/uploads/2020/10/YHAP-Final-layout.pdf                           | ✓ | ⏱: 2.73s 
+[FETCH]... ↓ https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf... 
+[ERROR]... × https://www.childcarese...York-Resources-2022.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf, error: Failed to download PDF from 
+https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf: 403 Client Error: Forbidden for url: https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf, error: Failed to download PDF from https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf: 403 Client Error: Forbidden for url: https://www.childcaresec.com/wp-content/uploads/2022/05/York-Resources-2022.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://typsnetwork.files.wordpress.com/2016/11/youthservicesandsupports.pdf                         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://typsnetwork.files.wordpress.com/2016/11/youthservicesandsupports.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpkj1lnjpx.pdf 
+[SCRAPE].. ◆ https://typsnetwork.files.wordpress.com/2016/11/youthservicesandsupports.pdf                         | ✓ | ⏱: 154.17s 
+[COMPLETE] ● https://typsnetwork.files.wordpress.com/2016/11/youthservicesandsupports.pdf                         | ✓ | ⏱: 154.17s 
+[FETCH]... ↓ https://www.osgoode.yorku.ca/wp-content/uploads/...E_Patient-Mental-Health-Complete-Guide_May22.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.osgoode.yorku.ca/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf... 
+[ERROR]... × https://www.osgoode.yor...omplete-Guide_May22.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.osgoode.yorku.ca/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf, error: Failed to download PDF from 
+https://www.osgoode.yorku.ca/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf: HTTPSConnectionPool(host='www.osgoode.yorku.ca', port=443): Max retries exceeded with url: 
+/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.osgoode.yorku.ca/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.osgoode.yorku.ca/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf, error: Failed to download PDF from https://www.osgoode.yorku.ca/wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf: HTTPSConnectionPool(host='www.osgoode.yorku.ca', port=443): Max retries exceeded with url: /wp-content/uploads/2022/08/SCOPE_Patient-Mental-Health-Complete-Guide_May22.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.rainbowhealthontario.ca/wp-content/u...6/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf... 
+[ERROR]... × https://www.rainbowheal...th-2019-RHO-final-2.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf, error: Failed to download PDF from 
+https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf: 403 Client Error: Forbidden for url: https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf, error: Failed to download PDF from https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf: 403 Client Error: Forbidden for url: https://www.rainbowhealthontario.ca/wp-content/uploads/2016/07/Trans-NB-ChildrenYouth-2019-RHO-final-2.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.uhn.ca/corporate/AboutUHN/Health_Equity/Documents/HealthEquity_OpenDoorsUHN.pdf          | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.uhn.ca/corporate/AboutUHN/Health_Equity/Documents/HealthEquity_OpenDoorsUHN.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmptgljyp_m.pdf 
+[SCRAPE].. ◆ https://www.uhn.ca/corporate/AboutUHN/Health_Equity/Documents/HealthEquity_OpenDoorsUHN.pdf          | ✓ | ⏱: 0.98s 
+[COMPLETE] ● https://www.uhn.ca/corporate/AboutUHN/Health_Equity/Documents/HealthEquity_OpenDoorsUHN.pdf          | ✓ | ⏱: 0.98s 
+[FETCH]... ↓ https://library.samhsa.gov/sites/default/files/tip-46-administrative-issues-treatment-sma12-4151.pdf | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://library.samhsa.gov/sites/default/files/tip-46-administrative-issues-treatment-sma12-4151.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpc8co6zcp.pdf 
+[SCRAPE].. ◆ https://library.samhsa.gov/sites/default/files/tip-46-administrative-issues-treatment-sma12-4151.pdf | ✓ | ⏱: 22.53s 
+[COMPLETE] ● https://library.samhsa.gov/sites/default/files/tip-46-administrative-issues-treatment-sma12-4151.pdf | ✓ | ⏱: 22.53s 
+[FETCH]... ↓ https://www.ckoht.ca/wp-content/uploads/2021/08/...ication-Form-2019-10-08-For-Submission-Final.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ckoht.ca/wp-content/uploads/2021/08/CKOHT-Full-Application-Form-2019-10-08-For-Submission-Final.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7ajavg79.pdf 
+[SCRAPE].. ◆ https://www.ckoht.ca/wp-content/uploads/2021/08/...ication-Form-2019-10-08-For-Submission-Final.pdf  | ✓ | ⏱: 9.73s 
+[COMPLETE] ● https://www.ckoht.ca/wp-content/uploads/2021/08/...ication-Form-2019-10-08-For-Submission-Final.pdf  | ✓ | ⏱: 9.74s 
+[FETCH]... ↓ https://whmcny.org/wp-content/uploads/2026/01/CHA-and-CSP_Wyckoff_2025-2027_FINAL.pdf                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://whmcny.org/wp-content/uploads/2026/01/CHA-and-CSP_Wyckoff_2025-2027_FINAL.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpowba2dob.pdf 
+[SCRAPE].. ◆ https://whmcny.org/wp-content/uploads/2026/01/CHA-and-CSP_Wyckoff_2025-2027_FINAL.pdf                | ✓ | ⏱: 13.41s 
+[COMPLETE] ● https://whmcny.org/wp-content/uploads/2026/01/CHA-and-CSP_Wyckoff_2025-2027_FINAL.pdf                | ✓ | ⏱: 13.41s 
+[FETCH]... ↓ https://cahspr.ca/wp-content/uploads/2025/06/Book-of-Abstracts-Orals-CAHSPR-2025.pdf                 | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cahspr.ca/wp-content/uploads/2025/06/Book-of-Abstracts-Orals-CAHSPR-2025.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmplv9yfmol.pdf 
+[SCRAPE].. ◆ https://cahspr.ca/wp-content/uploads/2025/06/Book-of-Abstracts-Orals-CAHSPR-2025.pdf                 | ✓ | ⏱: 43.37s 
+[COMPLETE] ● https://cahspr.ca/wp-content/uploads/2025/06/Book-of-Abstracts-Orals-CAHSPR-2025.pdf                 | ✓ | ⏱: 43.37s 
+[FETCH]... ↓ http://peelseniorlink.com/_content/uploads/2019/...Application-Completed-Form-5-final-submitted.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://peelseniorlink.com/_content/uploads/2019/10/2.-M-OHT-Full-Application-Completed-Form-5-final-submitted.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp640t02f2.pdf 
+[SCRAPE].. ◆ http://peelseniorlink.com/_content/uploads/2019/...Application-Completed-Form-5-final-submitted.pdf  | ✓ | ⏱: 11.06s 
+[COMPLETE] ● http://peelseniorlink.com/_content/uploads/2019/...Application-Completed-Form-5-final-submitted.pdf  | ✓ | ⏱: 11.06s 
+[FETCH]... ↓ http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf                 | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf... 
+[ERROR]... × http://amho.ca/wp-conte...Resources_ENG-Final.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf, error: Failed to download PDF from 
+http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf: 403 Client Error: Forbidden for url: http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf, error: Failed to download PDF from http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf: 403 Client Error: Forbidden for url: http://amho.ca/wp-content/uploads/2024/05/iOAT-Compendium-of-Resources_ENG-Final.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://cdpe.org/wp-content/uploads/2025/04/A-qu...al-and-smaller-urban-British-Columbia-Canada.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf... 
+[ERROR]... × https://cdpe.org/wp-con...ish-Columbia-Canada.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf, error: Failed 
+to download PDF from https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf: 403 Client Error: Forbidden for url: 
+https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf, error: Failed to download PDF from https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf: 403 Client Error: Forbidden for url: https://cdpe.org/wp-content/uploads/2025/04/A-qualitative-assessment-of-tablet-injectable-opioid-agonist-therapy-TiOAT-in-rural-and-smaller-urban-British-Columbia-Canada.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://crism.ca/wp-content/uploads/2018/03/CRISM_NationalGuideline_OUD-ENG.pdf                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://crism.ca/wp-content/uploads/2018/03/CRISM_NationalGuideline_OUD-ENG.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpuvk7l5n5.pdf 
+[SCRAPE].. ◆ https://crism.ca/wp-content/uploads/2018/03/CRISM_NationalGuideline_OUD-ENG.pdf                      | ✓ | ⏱: 17.29s 
+[COMPLETE] ● https://crism.ca/wp-content/uploads/2018/03/CRISM_NationalGuideline_OUD-ENG.pdf                      | ✓ | ⏱: 17.29s 
+[FETCH]... ↓ https://www.bccsu.ca/wp-content/uploads/2023/12/BC-OUD-Treatment-Guideline_2023-Update.pdf           | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.bccsu.ca/wp-content/uploads/2023/12/BC-OUD-Treatment-Guideline_2023-Update.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmps6pgpdbi.pdf 
+[SCRAPE].. ◆ https://www.bccsu.ca/wp-content/uploads/2023/12/BC-OUD-Treatment-Guideline_2023-Update.pdf           | ✓ | ⏱: 45.66s 
+[COMPLETE] ● https://www.bccsu.ca/wp-content/uploads/2023/12/BC-OUD-Treatment-Guideline_2023-Update.pdf           | ✓ | ⏱: 45.66s 
+[FETCH]... ↓ https://www.drugsandalcohol.ie/34536/1/canadian-opioid-use-disorder-guideline-2021.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.drugsandalcohol.ie/34536/1/canadian-opioid-use-disorder-guideline-2021.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp04zoa3rj.pdf 
+[SCRAPE].. ◆ https://www.drugsandalcohol.ie/34536/1/canadian-opioid-use-disorder-guideline-2021.pdf               | ✓ | ⏱: 5.43s 
+[COMPLETE] ● https://www.drugsandalcohol.ie/34536/1/canadian-opioid-use-disorder-guideline-2021.pdf               | ✓ | ⏱: 5.43s 
+[FETCH]... ↓ https://nceta.flinders.edu.au/application/files/6316/5456/3757/Final_version_OAT_History_Report.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://nceta.flinders.edu.au/application/files/6316/5456/3757/Final_version_OAT_History_Report.pdf... 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfn5xnsd6.pdf 
+[SCRAPE].. ◆ https://nceta.flinders.edu.au/application/files/6316/5456/3757/Final_version_OAT_History_Report.pdf  | ✓ | ⏱: 18.07s 
+[COMPLETE] ● https://nceta.flinders.edu.au/application/files/6316/5456/3757/Final_version_OAT_History_Report.pdf  | ✓ | ⏱: 18.08s 
+[FETCH]... ↓ https://www.ices.on.ca/wp-content/uploads/2023/06/Full-report-42.pdf                                 | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ices.on.ca/wp-content/uploads/2023/06/Full-report-42.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpa7c_h8ss.pdf 
+[SCRAPE].. ◆ https://www.ices.on.ca/wp-content/uploads/2023/06/Full-report-42.pdf                                 | ✓ | ⏱: 0.68s 
+[COMPLETE] ● https://www.ices.on.ca/wp-content/uploads/2023/06/Full-report-42.pdf                                 | ✓ | ⏱: 0.68s 
+[FETCH]... ↓ https://www.camh.ca/-/media/files/pdfs---camh-monitor/2019-camh-monitor-metadata-eguide-pdf.pdf      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/files/pdfs---camh-monitor/2019-camh-monitor-metadata-eguide-pdf.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpmsiiscjd.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/files/pdfs---camh-monitor/2019-camh-monitor-metadata-eguide-pdf.pdf      | ✓ | ⏱: 28.58s 
+[COMPLETE] ● https://www.camh.ca/-/media/files/pdfs---camh-monitor/2019-camh-monitor-metadata-eguide-pdf.pdf      | ✓ | ⏱: 28.58s 
+[FETCH]... ↓ http://www.community-networks.ca/wp-content/uplo...5/10/Development-Disabilities-Toolkit-6Nov17.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from http://www.community-networks.ca/wp-content/uploads/2015/10/Development-Disabilities-Toolkit-6Nov17.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpu10cncce.pdf 
+[SCRAPE].. ◆ http://www.community-networks.ca/wp-content/uplo...5/10/Development-Disabilities-Toolkit-6Nov17.pdf  | ✓ | ⏱: 15.25s 
+[COMPLETE] ● http://www.community-networks.ca/wp-content/uplo...5/10/Development-Disabilities-Toolkit-6Nov17.pdf  | ✓ | ⏱: 15.25s 
+[FETCH]... ↓ https://www.durham.ca/en/regional-government/res...---LURA-What-We-Heard-Accessible---Aug-30-22.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.durham.ca/en/regional-government/resources/CSWB-Plan/GTHA-CSWB---LURA-What-We-Heard-Accessible---Aug-30-22.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp1zkyhq3w.pdf 
+[SCRAPE].. ◆ https://www.durham.ca/en/regional-government/res...---LURA-What-We-Heard-Accessible---Aug-30-22.pdf  | ✓ | ⏱: 42.68s 
+[COMPLETE] ● https://www.durham.ca/en/regional-government/res...---LURA-What-We-Heard-Accessible---Aug-30-22.pdf  | ✓ | ⏱: 42.69s 
+[FETCH]... ↓ https://peelregion.ca/sites/default/files/2024-09/2018-07-12-revised-rc-agenda.pdf                   | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://peelregion.ca/sites/default/files/2024-09/2018-07-12-revised-rc-agenda.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpje_tm7pv.pdf 
+[SCRAPE].. ◆ https://peelregion.ca/sites/default/files/2024-09/2018-07-12-revised-rc-agenda.pdf                   | ✓ | ⏱: 102.28s 
+[COMPLETE] ● https://peelregion.ca/sites/default/files/2024-09/2018-07-12-revised-rc-agenda.pdf                   | ✓ | ⏱: 102.28s 
+[FETCH]... ↓ https://abinetwork.ca/wp-content/uploads/2020/06/TNC_SR_FINAL_REPORT_May_2015.pdf                    | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://abinetwork.ca/wp-content/uploads/2020/06/TNC_SR_FINAL_REPORT_May_2015.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp3e__rqn0.pdf 
+[SCRAPE].. ◆ https://abinetwork.ca/wp-content/uploads/2020/06/TNC_SR_FINAL_REPORT_May_2015.pdf                    | ✓ | ⏱: 4.97s 
+[COMPLETE] ● https://abinetwork.ca/wp-content/uploads/2020/06/TNC_SR_FINAL_REPORT_May_2015.pdf                    | ✓ | ⏱: 4.97s 
+[FETCH]... ↓ https://www.camh.ca/-/media/files/pdf---osduhs/mental-health-report_2017osduhs-pdf.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/files/pdf---osduhs/mental-health-report_2017osduhs-pdf.pdf... 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp9itlrbwm.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/files/pdf---osduhs/mental-health-report_2017osduhs-pdf.pdf               | ✓ | ⏱: 34.91s 
+[COMPLETE] ● https://www.camh.ca/-/media/files/pdf---osduhs/mental-health-report_2017osduhs-pdf.pdf               | ✓ | ⏱: 34.91s 
+[FETCH]... ↓ https://hsjcc.on.ca/wp-content/uploads/PHSJCC-Annual-Report-2013-2014.pdf                            | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://hsjcc.on.ca/wp-content/uploads/PHSJCC-Annual-Report-2013-2014.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpibyea5ss.pdf 
+[SCRAPE].. ◆ https://hsjcc.on.ca/wp-content/uploads/PHSJCC-Annual-Report-2013-2014.pdf                            | ✓ | ⏱: 3.34s 
+[COMPLETE] ● https://hsjcc.on.ca/wp-content/uploads/PHSJCC-Annual-Report-2013-2014.pdf                            | ✓ | ⏱: 3.35s 
+[FETCH]... ↓ https://cahspr.ca/wp-content/uploads/2020/11/Book-of-Abstracts-CAHSPR-2018.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cahspr.ca/wp-content/uploads/2020/11/Book-of-Abstracts-CAHSPR-2018.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpxk65oxwf.pdf 
+[SCRAPE].. ◆ https://cahspr.ca/wp-content/uploads/2020/11/Book-of-Abstracts-CAHSPR-2018.pdf                       | ✓ | ⏱: 77.18s 
+[COMPLETE] ● https://cahspr.ca/wp-content/uploads/2020/11/Book-of-Abstracts-CAHSPR-2018.pdf                       | ✓ | ⏱: 77.18s 
+[FETCH]... ↓ https://www.srchc.ca/wp-content/uploads/2017/06/SRCHC-2014AR-English-web.pdf                         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.srchc.ca/wp-content/uploads/2017/06/SRCHC-2014AR-English-web.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpj7hgv3i5.pdf 
+[SCRAPE].. ◆ https://www.srchc.ca/wp-content/uploads/2017/06/SRCHC-2014AR-English-web.pdf                         | ✓ | ⏱: 1.49s 
+[COMPLETE] ● https://www.srchc.ca/wp-content/uploads/2017/06/SRCHC-2014AR-English-web.pdf                         | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2014-15.pdf                 | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2014-15.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpl_60emaq.pdf 
+[SCRAPE].. ◆ https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2014-15.pdf                 | ✓ | ⏱: 1.26s 
+[COMPLETE] ● https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2014-15.pdf                 | ✓ | ⏱: 1.26s 
+[FETCH]... ↓ https://pqwchc.org/wp-content/uploads/PQW_Annual-Report-2019-2020.pdf                                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://pqwchc.org/wp-content/uploads/PQW_Annual-Report-2019-2020.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpo05_cp6j.pdf 
+[SCRAPE].. ◆ https://pqwchc.org/wp-content/uploads/PQW_Annual-Report-2019-2020.pdf                                | ✓ | ⏱: 3.13s 
+[COMPLETE] ● https://pqwchc.org/wp-content/uploads/PQW_Annual-Report-2019-2020.pdf                                | ✓ | ⏱: 3.13s 
+[FETCH]... ↓ https://chiefs-of-ontario.org/wp-content/uploads...ystem-performance-final-report-April-25-2023.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://chiefs-of-ontario.org/wp-content/uploads/2023/05/Mental-Health-and-addictions-System-performance-final-report-April-25-2023.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp21jtubek.pdf 
+[SCRAPE].. ◆ https://chiefs-of-ontario.org/wp-content/uploads...ystem-performance-final-report-April-25-2023.pdf  | ✓ | ⏱: 5.77s 
+[COMPLETE] ● https://chiefs-of-ontario.org/wp-content/uploads...ystem-performance-final-report-April-25-2023.pdf  | ✓ | ⏱: 5.77s 
+[FETCH]... ↓ https://seawayvalleychc.ca/wp-content/uploads/2019/06/AnnualReport_Design_2019.pdf                   | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://seawayvalleychc.ca/wp-content/uploads/2019/06/AnnualReport_Design_2019.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpp5rakyct.pdf 
+[SCRAPE].. ◆ https://seawayvalleychc.ca/wp-content/uploads/2019/06/AnnualReport_Design_2019.pdf                   | ✓ | ⏱: 3.78s 
+[COMPLETE] ● https://seawayvalleychc.ca/wp-content/uploads/2019/06/AnnualReport_Design_2019.pdf                   | ✓ | ⏱: 3.78s 
+[FETCH]... ↓ https://www.ontariohealthathome.ca/blobohahprod4...tent/uploads/2022/11/07-2017-18-TCLHIN-AR-EN.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ontariohealthathome.ca/blobohahprod4cd80afe1b/wp-content/uploads/2022/11/07-2017-18-TCLHIN-AR-EN.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpw258cldl.pdf 
+[SCRAPE].. ◆ https://www.ontariohealthathome.ca/blobohahprod4...tent/uploads/2022/11/07-2017-18-TCLHIN-AR-EN.pdf  | ✓ | ⏱: 5.18s 
+[COMPLETE] ● https://www.ontariohealthathome.ca/blobohahprod4...tent/uploads/2022/11/07-2017-18-TCLHIN-AR-EN.pdf  | ✓ | ⏱: 5.18s 
+[FETCH]... ↓ https://greybrucecswbp.ca/wp-content/uploads/2023/08/Rural-Health-Wellness.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://greybrucecswbp.ca/wp-content/uploads/2023/08/Rural-Health-Wellness.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpmych1nt9.pdf 
+[SCRAPE].. ◆ https://greybrucecswbp.ca/wp-content/uploads/2023/08/Rural-Health-Wellness.pdf                       | ✓ | ⏱: 4.89s 
+[COMPLETE] ● https://greybrucecswbp.ca/wp-content/uploads/2023/08/Rural-Health-Wellness.pdf                       | ✓ | ⏱: 4.89s 
+[FETCH]... ↓ https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf                                | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf... 
+[ERROR]... × https://gbachc.ca/wp-co...erviceDirectory2021.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf, error: Failed to download PDF from https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf: 403 Client 
+Error: Forbidden for url: https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf, error: Failed to download PDF from https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf: 403 Client Error: Forbidden for url: https://gbachc.ca/wp-content/uploads/2022/03/ServiceDirectory2021.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://peelregion.ca/sites/default/files/2024-06/2018-05-17-hsic-agenda.pdf                         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://peelregion.ca/sites/default/files/2024-06/2018-05-17-hsic-agenda.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpoedh_dca.pdf 
+[SCRAPE].. ◆ https://peelregion.ca/sites/default/files/2024-06/2018-05-17-hsic-agenda.pdf                         | ✓ | ⏱: 6.06s 
+[COMPLETE] ● https://peelregion.ca/sites/default/files/2024-06/2018-05-17-hsic-agenda.pdf                         | ✓ | ⏱: 6.06s 
+[FETCH]... ↓ https://fao-on.org/wp-content/uploads/2024/08/Ontario-Health-Sector-ReportEN.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://fao-on.org/wp-content/uploads/2024/08/Ontario-Health-Sector-ReportEN.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmphxgld5nz.pdf 
+[SCRAPE].. ◆ https://fao-on.org/wp-content/uploads/2024/08/Ontario-Health-Sector-ReportEN.pdf                     | ✓ | ⏱: 4.22s 
+[COMPLETE] ● https://fao-on.org/wp-content/uploads/2024/08/Ontario-Health-Sector-ReportEN.pdf                     | ✓ | ⏱: 4.22s 
+[FETCH]... ↓ https://www.ices.on.ca/wp-content/uploads/2021/02/Technical-Appendix.pdf                             | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ices.on.ca/wp-content/uploads/2021/02/Technical-Appendix.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpca84dt5s.pdf 
+[SCRAPE].. ◆ https://www.ices.on.ca/wp-content/uploads/2021/02/Technical-Appendix.pdf                             | ✓ | ⏱: 4.32s 
+[COMPLETE] ● https://www.ices.on.ca/wp-content/uploads/2021/02/Technical-Appendix.pdf                             | ✓ | ⏱: 4.32s 
+[FETCH]... ↓ https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2008-09.pdf                 | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2008-09.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp_lj9v1cc.pdf 
+[SCRAPE].. ◆ https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2008-09.pdf                 | ✓ | ⏱: 0.66s 
+[COMPLETE] ● https://regentparkchc.org/wp-content/uploads/2020/07/rpchc-annual-report-2008-09.pdf                 | ✓ | ⏱: 0.66s 
+[FETCH]... ↓ https://www.allianceon.org/sites/default/files/i...cator_Technical_Specifications_UPDATED_1_002.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.allianceon.org/sites/default/files/inline-files/2023-24_MSAA_Indicator_Technical_Specifications_UPDATED_1_002.pdf... 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpmfmnwueo.pdf 
+[SCRAPE].. ◆ https://www.allianceon.org/sites/default/files/i...cator_Technical_Specifications_UPDATED_1_002.pdf  | ✓ | ⏱: 4.14s 
+[COMPLETE] ● https://www.allianceon.org/sites/default/files/i...cator_Technical_Specifications_UPDATED_1_002.pdf  | ✓ | ⏱: 4.14s 
+[FETCH]... ↓ https://ontario.cmha.ca/wp-content/files/2013/04/spring_2011.pdf                                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://ontario.cmha.ca/wp-content/files/2013/04/spring_2011.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp8l2bjsos.pdf 
+[SCRAPE].. ◆ https://ontario.cmha.ca/wp-content/files/2013/04/spring_2011.pdf                                     | ✓ | ⏱: 1.96s 
+[COMPLETE] ● https://ontario.cmha.ca/wp-content/files/2013/04/spring_2011.pdf                                     | ✓ | ⏱: 1.96s 
+[FETCH]... ↓ https://www.cdcd.org/wp-content/uploads/2023/10/2022-CDCD-Annual-Report-Digital_d2023-10-11.pdf      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cdcd.org/wp-content/uploads/2023/10/2022-CDCD-Annual-Report-Digital_d2023-10-11.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp5k5qe1yj.pdf 
+[SCRAPE].. ◆ https://www.cdcd.org/wp-content/uploads/2023/10/2022-CDCD-Annual-Report-Digital_d2023-10-11.pdf      | ✓ | ⏱: 2.60s 
+[COMPLETE] ● https://www.cdcd.org/wp-content/uploads/2023/10/2022-CDCD-Annual-Report-Digital_d2023-10-11.pdf      | ✓ | ⏱: 2.60s 
+[FETCH]... ↓ https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf                          | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpaa8hhsbm.pdf 
+[SCRAPE].. ◆ https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf                          | ✓ | ⏱: 20.63s 
+[COMPLETE] ● https://www.surreyplace.ca/media/Community-Resource-Directory-2023_Full.pdf                          | ✓ | ⏱: 20.63s 
+[FETCH]... ↓ https://www.camh.ca/-/media/health-info-files/co...y-resource-sheets/older-adults-resources-pdf.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.camh.ca/-/media/health-info-files/community-resource-sheets/older-adults-resources-pdf.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpekv93uff.pdf 
+[SCRAPE].. ◆ https://www.camh.ca/-/media/health-info-files/co...y-resource-sheets/older-adults-resources-pdf.pdf  | ✓ | ⏱: 0.81s 
+[COMPLETE] ● https://www.camh.ca/-/media/health-info-files/co...y-resource-sheets/older-adults-resources-pdf.pdf  | ✓ | ⏱: 0.81s 
+[FETCH]... ↓ https://www.hrh.ca/wp-content/uploads/2023/06/DV-Community-Resources.pdf                             | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.hrh.ca/wp-content/uploads/2023/06/DV-Community-Resources.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpj5q0yd5g.pdf 
+[SCRAPE].. ◆ https://www.hrh.ca/wp-content/uploads/2023/06/DV-Community-Resources.pdf                             | ✓ | ⏱: 2.07s 
+[COMPLETE] ● https://www.hrh.ca/wp-content/uploads/2023/06/DV-Community-Resources.pdf                             | ✓ | ⏱: 2.07s 
+[FETCH]... ↓ https://www.stjoes.ca/hospital-services/mental-h...hamilton-directory-of-resources-pes-may-2022.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf... 
+[ERROR]... × https://www.stjoes.ca/h...ources-pes-may-2022.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf, error: Failed to
+download PDF from https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf: 403 Client Error: Forbidden for url: 
+https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf, error: Failed to download PDF from https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf: 403 Client Error: Forbidden for url: https://www.stjoes.ca/hospital-services/mental-health-addiction-services/patient-and-family-collaborative-support-services/hamilton-directory-of-resources-pes-may-2022.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpiif4jd1p.pdf 
+[SCRAPE].. ◆ https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf                  | ✓ | ⏱: 1.18s 
+[COMPLETE] ● https://cmhahamilton.ca/wp-content/uploads/2021/05/Community-directory-May-2021.pdf                  | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://www.cornwall.ca/en/live-here/resources/PDF-Directory-EN.pdf                                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cornwall.ca/en/live-here/resources/PDF-Directory-EN.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpa06834fr.pdf 
+[SCRAPE].. ◆ https://www.cornwall.ca/en/live-here/resources/PDF-Directory-EN.pdf                                  | ✓ | ⏱: 2.17s 
+[COMPLETE] ● https://www.cornwall.ca/en/live-here/resources/PDF-Directory-EN.pdf                                  | ✓ | ⏱: 2.17s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 175 documents from 197 URLs
+   Data: {"source_documents": 197, "scraped_documents": 175}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 175 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 100/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 105/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 110/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 115/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 120/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 125/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 130/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 135/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 140/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 145/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 150/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 155/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 160/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 165/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 170/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 175/175 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 1148 records from 175 documents
+   Data: {"extracted_count": 1148, "source_documents": 175}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 1148 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 1148 -> 570
+   Data: {"input_rows": 1148, "post_hard_rows": 570}
+======================================================================

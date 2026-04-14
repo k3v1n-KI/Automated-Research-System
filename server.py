@@ -115,7 +115,7 @@ def handle_start_research(data):
     print(f"\n{'='*70}")
     print(f"Starting Research Session")
     print(f"   Client: {client_id}")
-    print(f"   Prompt: {prompt[:100]}...")
+    print(f"   Prompt: {prompt}...")
     print(f"   Columns: {[c['name'] for c in columns]}")
     print(f"   Priority Columns: {priority_columns}")
     print(f"   Hard IDs: {hard_identifier_columns}")
@@ -142,6 +142,7 @@ def handle_start_research(data):
         'queries': [],
         'search_results': [],
         'validated_urls': [],
+        'validated_results': [],
         'scraped_content': [],
         'extracted_items': [],
         'final_dataset': [],
@@ -238,10 +239,15 @@ def _run_algorithm_task(session_id: str, client_id: str, state: dict, algorithm_
         # Filter dataset to only include specified columns
         if columns and dataset:
             column_names = [col['name'] for col in columns if isinstance(col, dict)]
+            passthrough_fields = {"query_technique"}
             filtered_dataset = []
             for record in dataset:
                 if isinstance(record, dict):
-                    filtered_record = {k: v for k, v in record.items() if k in column_names}
+                    filtered_record = {
+                        k: v
+                        for k, v in record.items()
+                        if k in column_names or k in passthrough_fields
+                    }
                     filtered_dataset.append(filtered_record)
             dataset = filtered_dataset
             print(f"Filtered dataset to {len(column_names)} columns: {column_names}")

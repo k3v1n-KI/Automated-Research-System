@@ -1,0 +1,604 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: rEfDm8jBk117thitAAAB
+Client disconnected: rEfDm8jBk117thitAAAB
+Client connected: xh8I4g1dBpe7LSVwAAAD
+
+======================================================================
+Starting Research Session
+   Client: xh8I4g1dBpe7LSVwAAAD
+   Prompt: Find all places that offer services or programs related to learning disabilities in Ontario...
+   Columns: ['Name', 'Address', 'Phone Number', 'City']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: a0bd2dc0-d8de-431e-81d1-6bc826437102
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all places that offer services or programs related to learning disabilities in Ontario...
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["Learning disability assessment clinic in Ontario provincial services", "Special education resource teacher in Toronto District School Board", "Adult learning & literacy program in Ontari
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: Learning disability assessment clinic in Ontario provincial services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: Special education resource teacher in Toronto District School Board
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: Adult learning & literacy program in Ontario college/university disability services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: Educational therapist (private) in Local community health centres
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: Community support & advocacy group in Northern/rural Ontario services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: Learning disability assessment clinic eligibility age range in Ontario provincial services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: Special education resource teacher diagnostic report required in Toronto District School Board
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: Adult learning & literacy program publicly funded vs fee-for-service in Ontario college/university disability services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: Educational therapist (private) waitlist duration in Local community health centres
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: Community support & advocacy group virtual/remote support available in Northern/rural Ontario services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: Learning disability assessment clinic in Ontario provincial services government PDF
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: Special education resource teacher in Toronto District School Board school board website
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: Adult learning & literacy program in Ontario college/university disability services college/university accessibility office page
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: Educational therapist (private) in Local community health centres community agency directory (CSV)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: Community support & advocacy group in Northern/rural Ontario services clinic intake form (PDF/online)
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 96 unique URLs across 15 queries
+   Data: {"total_urls": 96, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 96 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 96/96 URLs
+   Data: {"validated": 96, "original": 96}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 96 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://possibilitiesclinic.com/assessment/                                                          | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://possibilitiesclinic.com/assessment/                                                          | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://possibilitiesclinic.com/assessment/                                                          | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ http://www.autism-path.com/education.html                                                            | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ http://www.autism-path.com/education.html                                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● http://www.autism-path.com/education.html                                                            | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://assessmentclinic.ca/learning-disability-assessment-ontario                                   | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://assessmentclinic.ca/learning-disability-assessment-ontario                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://assessmentclinic.ca/learning-disability-assessment-ontario                                   | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://ocsc-ontario.ca/                                                                             | ✓ | ⏱: 1.80s 
+[SCRAPE].. ◆ https://ocsc-ontario.ca/                                                                             | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://ocsc-ontario.ca/                                                                             | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://foca.on.ca/rural-services/                                                                   | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://foca.on.ca/rural-services/                                                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://foca.on.ca/rural-services/                                                                   | ✓ | ⏱: 1.88s 
+[FETCH]... ↓ https://ca.linkedin.com/company/ocsa                                                                 | ✓ | ⏱: 2.02s 
+[SCRAPE].. ◆ https://ca.linkedin.com/company/ocsa                                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://ca.linkedin.com/company/ocsa                                                                 | ✓ | ⏱: 2.10s 
+[FETCH]... ↓ https://blueridgewilderness.com/blog/what-is-an-educational-or-therapeutic-consultant                | ✓ | ⏱: 2.17s 
+[SCRAPE].. ◆ https://blueridgewilderness.com/blog/what-is-an-educational-or-therapeutic-consultant                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://blueridgewilderness.com/blog/what-is-an-educational-or-therapeutic-consultant                | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://jobsineducation.com/company/14/toronto-district-school-board/                                | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://jobsineducation.com/company/14/toronto-district-school-board/                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://jobsineducation.com/company/14/toronto-district-school-board/                                | ✓ | ⏱: 2.21s 
+[FETCH]... ↓ https://ontario.cmha.ca/documents/rural-and-northern-community-issues-in-mental-health/              | ✓ | ⏱: 2.22s 
+[SCRAPE].. ◆ https://ontario.cmha.ca/documents/rural-and-northern-community-issues-in-mental-health/              | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://ontario.cmha.ca/documents/rural-and-northern-community-issues-in-mental-health/              | ✓ | ⏱: 2.28s 
+[FETCH]... ↓ https://bewellclinics.ca/                                                                            | ✓ | ⏱: 2.44s 
+[SCRAPE].. ◆ https://bewellclinics.ca/                                                                            | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://bewellclinics.ca/                                                                            | ✓ | ⏱: 2.58s 
+[FETCH]... ↓ https://cps.ca/en/documents/position/learning-disorder                                               | ✓ | ⏱: 2.64s 
+[SCRAPE].. ◆ https://cps.ca/en/documents/position/learning-disorder                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://cps.ca/en/documents/position/learning-disorder                                               | ✓ | ⏱: 2.69s 
+[FETCH]... ↓ https://pub-tdsb.escribemeetings.com/filestream.ashx?DocumentId=17277                                | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://pub-tdsb.escribemeetings.com/filestream.ashx?DocumentId=17277                                | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://pub-tdsb.escribemeetings.com/filestream.ashx?DocumentId=17277                                | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://ca.indeed.com/q-special-education-teacher-l-toronto,-on-jobs.html?vjk=c77011871214c5c5       | ✓ | ⏱: 2.70s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-special-education-teacher-l-toronto,-on-jobs.html?vjk=c77011871214c5c5       | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://ca.indeed.com/q-special-education-teacher-l-toronto,-on-jobs.html?vjk=c77011871214c5c5       | ✓ | ⏱: 2.80s 
+[FETCH]... ↓ https://possibilitiesclinic.com/psychoeducational-testing/                                           | ✓ | ⏱: 0.83s 
+[SCRAPE].. ◆ https://possibilitiesclinic.com/psychoeducational-testing/                                           | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://possibilitiesclinic.com/psychoeducational-testing/                                           | ✓ | ⏱: 0.83s 
+[FETCH]... ↓ https://ca.linkedin.com/jobs/view/long-term-occa...oronto-catholic-district-school-board-4386281336  | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://ca.linkedin.com/jobs/view/long-term-occa...oronto-catholic-district-school-board-4386281336  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://ca.linkedin.com/jobs/view/long-term-occa...oronto-catholic-district-school-board-4386281336  | ✓ | ⏱: 1.56s 
+[FETCH]... ↓ https://possibilitiesclinic.com/signature-psycho...sessment-signature-psychoeducational-assessment/  | ✓ | ⏱: 0.93s 
+[SCRAPE].. ◆ https://possibilitiesclinic.com/signature-psycho...sessment-signature-psychoeducational-assessment/  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://possibilitiesclinic.com/signature-psycho...sessment-signature-psychoeducational-assessment/  | ✓ | ⏱: 0.93s 
+[FETCH]... ↓ https://diverselearners.ca/for-adults/                                                               | ✓ | ⏱: 3.24s 
+[SCRAPE].. ◆ https://diverselearners.ca/for-adults/                                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://diverselearners.ca/for-adults/                                                               | ✓ | ⏱: 3.29s 
+[FETCH]... ↓ https://pub-tdsb.escribemeetings.com/filestream.ashx?DocumentId=17558                                | ✓ | ⏱: 0.72s 
+[SCRAPE].. ◆ https://pub-tdsb.escribemeetings.com/filestream.ashx?DocumentId=17558                                | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://pub-tdsb.escribemeetings.com/filestream.ashx?DocumentId=17558                                | ✓ | ⏱: 0.72s 
+[FETCH]... ↓ https://welcome2school.ca/for-parents/children-w...ducation-programs-toronto-district-school-board/  | ✓ | ⏱: 1.06s 
+[SCRAPE].. ◆ https://welcome2school.ca/for-parents/children-w...ducation-programs-toronto-district-school-board/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://welcome2school.ca/for-parents/children-w...ducation-programs-toronto-district-school-board/  | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://bayridgecounsellingcentres.ca/counselling-clinic-mississauga/                                | ✓ | ⏱: 3.60s 
+[SCRAPE].. ◆ https://bayridgecounsellingcentres.ca/counselling-clinic-mississauga/                                | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://bayridgecounsellingcentres.ca/counselling-clinic-mississauga/                                | ✓ | ⏱: 3.73s 
+[FETCH]... ↓ https://moht.ca/                                                                                     | ✓ | ⏱: 3.73s 
+[SCRAPE].. ◆ https://moht.ca/                                                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://moht.ca/                                                                                     | ✓ | ⏱: 3.77s 
+[FETCH]... ↓ https://durhamcollege.ca/programs-and-courses/academic-upgrading-college-preparation                 | ✓ | ⏱: 3.93s 
+[SCRAPE].. ◆ https://durhamcollege.ca/programs-and-courses/academic-upgrading-college-preparation                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://durhamcollege.ca/programs-and-courses/academic-upgrading-college-preparation                 | ✓ | ⏱: 3.99s 
+[FETCH]... ↓ https://smarts-ef.org/blog/educational-therapy-tutor-or-special-education-teacher/                   | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://smarts-ef.org/blog/educational-therapy-tutor-or-special-education-teacher/                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://smarts-ef.org/blog/educational-therapy-tutor-or-special-education-teacher/                   | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://chiefs-of-ontario.org/priorities/social/                                                     | ✓ | ⏱: 4.08s 
+[SCRAPE].. ◆ https://chiefs-of-ontario.org/priorities/social/                                                     | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://chiefs-of-ontario.org/priorities/social/                                                     | ✓ | ⏱: 4.21s 
+[FETCH]... ↓ https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/Special-Education                      | ✓ | ⏱: 2.90s 
+[SCRAPE].. ◆ https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/Special-Education                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/Special-Education                      | ✓ | ⏱: 2.94s 
+[FETCH]... ↓ https://torontopsychologycentre.com/assessment-services/learning-disabilities/                       | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://torontopsychologycentre.com/assessment-services/learning-disabilities/                       | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://torontopsychologycentre.com/assessment-services/learning-disabilities/                       | ✓ | ⏱: 2.38s 
+[FETCH]... ↓ https://www.allianceon.org/Rural-Remote-and-Northern-Advocacy                                        | ✓ | ⏱: 1.87s 
+[SCRAPE].. ◆ https://www.allianceon.org/Rural-Remote-and-Northern-Advocacy                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.allianceon.org/Rural-Remote-and-Northern-Advocacy                                        | ✓ | ⏱: 1.89s 
+[FETCH]... ↓ https://sites.google.com/student.tdsb.on.ca/special-education                                        | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://sites.google.com/student.tdsb.on.ca/special-education                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://sites.google.com/student.tdsb.on.ca/special-education                                        | ✓ | ⏱: 3.03s 
+[FETCH]... ↓ https://www.belleisleclinic.com/psychoeducational-assessment                                         | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://www.belleisleclinic.com/psychoeducational-assessment                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.belleisleclinic.com/psychoeducational-assessment                                         | ✓ | ⏱: 1.89s 
+[FETCH]... ↓ https://www.aetonline.org/allied-professionals/a-career-in-et                                        | ✓ | ⏱: 2.40s 
+[SCRAPE].. ◆ https://www.aetonline.org/allied-professionals/a-career-in-et                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.aetonline.org/allied-professionals/a-career-in-et                                        | ✓ | ⏱: 2.41s 
+[FETCH]... ↓ https://www.citcassociates.com/blog/learning-disability-assessment-in-toronto-in-2026/               | ✓ | ⏱: 1.47s 
+[SCRAPE].. ◆ https://www.citcassociates.com/blog/learning-disability-assessment-in-toronto-in-2026/               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.citcassociates.com/blog/learning-disability-assessment-in-toronto-in-2026/               | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://www.carepointhealth.ca/                                                                      | ✓ | ⏱: 1.92s 
+[SCRAPE].. ◆ https://www.carepointhealth.ca/                                                                      | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.carepointhealth.ca/                                                                      | ✓ | ⏱: 2.01s 
+[FETCH]... ↓ https://torontopsychologicalservices.com/assessment/psychoeducational/learning-disabilities/         | ✓ | ⏱: 3.48s 
+[SCRAPE].. ◆ https://torontopsychologicalservices.com/assessment/psychoeducational/learning-disabilities/         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://torontopsychologicalservices.com/assessment/psychoeducational/learning-disabilities/         | ✓ | ⏱: 3.51s 
+[FETCH]... ↓ https://www.artemisassessment.ca/                                                                    | ✓ | ⏱: 2.63s 
+[SCRAPE].. ◆ https://www.artemisassessment.ca/                                                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.artemisassessment.ca/                                                                    | ✓ | ⏱: 2.67s 
+[FETCH]... ↓ https://www.canada.ca/en/public-service-commissi...ssment-accommodations-learning-disabilities.html  | ✓ | ⏱: 2.48s 
+[SCRAPE].. ◆ https://www.canada.ca/en/public-service-commissi...ssment-accommodations-learning-disabilities.html  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.canada.ca/en/public-service-commissi...ssment-accommodations-learning-disabilities.html  | ✓ | ⏱: 2.53s 
+[FETCH]... ↓ https://www.cscau.com/ace-distance                                                                   | ✓ | ⏱: 1.78s 
+[SCRAPE].. ◆ https://www.cscau.com/ace-distance                                                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.cscau.com/ace-distance                                                                   | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://waystone.ca/dyslexia-assessment/                                                             | ✓ | ⏱: 3.65s 
+[SCRAPE].. ◆ https://waystone.ca/dyslexia-assessment/                                                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://waystone.ca/dyslexia-assessment/                                                             | ✓ | ⏱: 3.69s 
+[FETCH]... ↓ https://www.allianceon.org/aboriginal-health-access-centres                                          | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://www.allianceon.org/aboriginal-health-access-centres                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.allianceon.org/aboriginal-health-access-centres                                          | ✓ | ⏱: 1.26s 
+[FETCH]... ↓ https://www.comfortlife.ca/retirement-communities/ontario-community-support-association              | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://www.comfortlife.ca/retirement-communities/ontario-community-support-association              | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.comfortlife.ca/retirement-communities/ontario-community-support-association              | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://www.ementalhealth.ca/Ontario/Learning-Disabilities/index.php?m=article&ID=16737              | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ https://www.ementalhealth.ca/Ontario/Learning-Disabilities/index.php?m=article&ID=16737              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ementalhealth.ca/Ontario/Learning-Disabilities/index.php?m=article&ID=16737              | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://www.aetonline.org/index.php/professionals/a-career-in-et                                     | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.aetonline.org/index.php/professionals/a-career-in-et                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.aetonline.org/index.php/professionals/a-career-in-et                                     | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://www.dsontario.ca/how-to-access-services                                                      | ✓ | ⏱: 2.28s 
+[SCRAPE].. ◆ https://www.dsontario.ca/how-to-access-services                                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.dsontario.ca/how-to-access-services                                                      | ✓ | ⏱: 2.29s 
+[FETCH]... ↓ https://www.healthschoolguide.net/health-careers/how-to-become-an-educational-therapist/             | ✓ | ⏱: 1.53s 
+[SCRAPE].. ◆ https://www.healthschoolguide.net/health-careers/how-to-become-an-educational-therapist/             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.healthschoolguide.net/health-careers/how-to-become-an-educational-therapist/             | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://www.glassdoor.com/Jobs/Toronto-District-...cation-Teacher-Jobs-EI_IE113899.0,29_KO30,55.htm  | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://www.glassdoor.com/Jobs/Toronto-District-...cation-Teacher-Jobs-EI_IE113899.0,29_KO30,55.htm  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.glassdoor.com/Jobs/Toronto-District-...cation-Teacher-Jobs-EI_IE113899.0,29_KO30,55.htm  | ✓ | ⏱: 1.69s 
+[FETCH]... ↓ https://www.cheo.on.ca/en/resources-and-support/learning-disabilities-and-dyslexia.aspx              | ✓ | ⏱: 3.29s 
+[SCRAPE].. ◆ https://www.cheo.on.ca/en/resources-and-support/learning-disabilities-and-dyslexia.aspx              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.cheo.on.ca/en/resources-and-support/learning-disabilities-and-dyslexia.aspx              | ✓ | ⏱: 3.35s 
+[FETCH]... ↓ https://www.facebook.com/OntarioCommunitySupportAssociation/                                         | ✓ | ⏱: 2.13s 
+[SCRAPE].. ◆ https://www.facebook.com/OntarioCommunitySupportAssociation/                                         | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.facebook.com/OntarioCommunitySupportAssociation/                                         | ✓ | ⏱: 2.16s 
+[FETCH]... ↓ https://www.communitybenefits.ca/directory_community_members                                         | ✓ | ⏱: 2.91s 
+[SCRAPE].. ◆ https://www.communitybenefits.ca/directory_community_members                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.communitybenefits.ca/directory_community_members                                         | ✓ | ⏱: 2.95s 
+[FETCH]... ↓ https://www.glassdoor.ca/Job/toronto-special-edu...ce-teacher-jobs-SRCH_IL.0,7_IC2281069_KO8,42.htm  | ✓ | ⏱: 2.23s 
+[SCRAPE].. ◆ https://www.glassdoor.ca/Job/toronto-special-edu...ce-teacher-jobs-SRCH_IL.0,7_IC2281069_KO8,42.htm  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.glassdoor.ca/Job/toronto-special-edu...ce-teacher-jobs-SRCH_IL.0,7_IC2281069_KO8,42.htm  | ✓ | ⏱: 2.33s 
+[FETCH]... ↓ https://www.mississaugahaltonhealthline.ca/listServices.aspx?id=10652                                | ✓ | ⏱: 1.27s 
+[SCRAPE].. ◆ https://www.mississaugahaltonhealthline.ca/listServices.aspx?id=10652                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.mississaugahaltonhealthline.ca/listServices.aspx?id=10652                                | ✓ | ⏱: 1.29s 
+[FETCH]... ↓ https://www.neuroed.com/                                                                             | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.neuroed.com/                                                                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.neuroed.com/                                                                             | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://www.allpsychologyschools.com/how-to-become-an-educational-therapist/                         | ✓ | ⏱: 4.36s 
+[SCRAPE].. ◆ https://www.allpsychologyschools.com/how-to-become-an-educational-therapist/                         | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.allpsychologyschools.com/how-to-become-an-educational-therapist/                         | ✓ | ⏱: 4.42s 
+[FETCH]... ↓ https://www.ocsa.on.ca/                                                                              | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://www.ocsa.on.ca/                                                                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ocsa.on.ca/                                                                              | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.linkedin.com/in/c-alexander-oct/                                                         | ✓ | ⏱: 1.71s 
+[SCRAPE].. ◆ https://www.linkedin.com/in/c-alexander-oct/                                                         | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.linkedin.com/in/c-alexander-oct/                                                         | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://www.emergingminds.ca/                                                                        | ✓ | ⏱: 3.12s 
+[SCRAPE].. ◆ https://www.emergingminds.ca/                                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.emergingminds.ca/                                                                        | ✓ | ⏱: 3.15s 
+[FETCH]... ↓ https://www.metisnation.org/programs-and-service...ing-wellness/community-support-services-program/  | ✓ | ⏱: 1.86s 
+[SCRAPE].. ◆ https://www.metisnation.org/programs-and-service...ing-wellness/community-support-services-program/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.metisnation.org/programs-and-service...ing-wellness/community-support-services-program/  | ✓ | ⏱: 1.91s 
+[FETCH]... ↓ https://www.ohrc.on.ca/en/opportunity-succeed-ac...n-students-disabilities/post-secondary-education  | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://www.ohrc.on.ca/en/opportunity-succeed-ac...n-students-disabilities/post-secondary-education  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.ohrc.on.ca/en/opportunity-succeed-ac...n-students-disabilities/post-secondary-education  | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://www.ontario.ca/page/adult-learning                                                           | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/adult-learning                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/adult-learning                                                           | ✓ | ⏱: 1.53s 
+[FETCH]... ↓ https://www.ottawa-psychologists.com/learning-disabilities                                           | ✓ | ⏱: 0.95s 
+[SCRAPE].. ◆ https://www.ottawa-psychologists.com/learning-disabilities                                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ottawa-psychologists.com/learning-disabilities                                           | ✓ | ⏱: 0.98s 
+[FETCH]... ↓ https://www.ldao.ca/                                                                                 | ✓ | ⏱: 2.78s 
+[SCRAPE].. ◆ https://www.ldao.ca/                                                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ldao.ca/                                                                                 | ✓ | ⏱: 2.82s 
+[FETCH]... ↓ https://www.jobbank.gc.ca/marketreport/jobs/15908/geo9219                                            | ✓ | ⏱: 3.22s 
+[SCRAPE].. ◆ https://www.jobbank.gc.ca/marketreport/jobs/15908/geo9219                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.jobbank.gc.ca/marketreport/jobs/15908/geo9219                                            | ✓ | ⏱: 3.25s 
+[FETCH]... ↓ https://www.pcom.edu/academics/programs-and-degr...ogy/news/what-does-a-school-psychologist-do.html  | ✓ | ⏱: 1.06s 
+[SCRAPE].. ◆ https://www.pcom.edu/academics/programs-and-degr...ogy/news/what-does-a-school-psychologist-do.html  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.pcom.edu/academics/programs-and-degr...ogy/news/what-does-a-school-psychologist-do.html  | ✓ | ⏱: 1.09s 
+[FETCH]... ↓ https://www.phoenix.edu/articles/counseling/how-to-become-a-mental-health-counselor.html             | ✓ | ⏱: 0.99s 
+[SCRAPE].. ◆ https://www.phoenix.edu/articles/counseling/how-to-become-a-mental-health-counselor.html             | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.phoenix.edu/articles/counseling/how-to-become-a-mental-health-counselor.html             | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://www.tcu.gov.on.ca/eng/eopg/programs/lbs.html                                                 | ✓ | ⏱: 0.66s 
+[SCRAPE].. ◆ https://www.tcu.gov.on.ca/eng/eopg/programs/lbs.html                                                 | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.tcu.gov.on.ca/eng/eopg/programs/lbs.html                                                 | ✓ | ⏱: 0.66s 
+[FETCH]... ↓ https://www.publicboard.ca/en/programs-and-learning/alternative-adult-and-continuing-education.aspx  | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://www.publicboard.ca/en/programs-and-learning/alternative-adult-and-continuing-education.aspx  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.publicboard.ca/en/programs-and-learning/alternative-adult-and-continuing-education.aspx  | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://www.ontariocolleges.ca/en/programs/educa...ommunity-and-social-services/inclusive-education  | ✓ | ⏱: 2.07s 
+[SCRAPE].. ◆ https://www.ontariocolleges.ca/en/programs/educa...ommunity-and-social-services/inclusive-education  | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.ontariocolleges.ca/en/programs/educa...ommunity-and-social-services/inclusive-education  | ✓ | ⏱: 2.17s 
+[FETCH]... ↓ https://www.neuroed.com/our-team                                                                     | ✓ | ⏱: 0.73s 
+[SCRAPE].. ◆ https://www.neuroed.com/our-team                                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.neuroed.com/our-team                                                                     | ✓ | ⏱: 0.75s 
+[FETCH]... ↓ https://www.ldac-acta.ca/get-involved/qa/                                                            | ✓ | ⏱: 4.24s 
+[SCRAPE].. ◆ https://www.ldac-acta.ca/get-involved/qa/                                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ldac-acta.ca/get-involved/qa/                                                            | ✓ | ⏱: 4.27s 
+[FETCH]... ↓ https://www.ldao.ca/introduction-to-ldsadhd/articles/about-assessment/                               | ✓ | ⏱: 2.81s 
+[SCRAPE].. ◆ https://www.ldao.ca/introduction-to-ldsadhd/articles/about-assessment/                               | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.ldao.ca/introduction-to-ldsadhd/articles/about-assessment/                               | ✓ | ⏱: 2.90s 
+[FETCH]... ↓ https://www.ocsa.on.ca/membership                                                                    | ✓ | ⏱: 0.98s 
+[SCRAPE].. ◆ https://www.ocsa.on.ca/membership                                                                    | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.ocsa.on.ca/membership                                                                    | ✓ | ⏱: 1.06s 
+[FETCH]... ↓ https://www.thetrillium.ca/news/education-and-tr...dsb-plans-expand-special-ed-class-sizes-10817162  | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.thetrillium.ca/news/education-and-tr...dsb-plans-expand-special-ed-class-sizes-10817162  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.thetrillium.ca/news/education-and-tr...dsb-plans-expand-special-ed-class-sizes-10817162  | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listServices.aspx?id=10883                                   | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listServices.aspx?id=10883                                   | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listServices.aspx?id=10883                                   | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://www.ldao.ca/programs-services/                                                               | ✓ | ⏱: 3.39s 
+[SCRAPE].. ◆ https://www.ldao.ca/programs-services/                                                               | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.ldao.ca/programs-services/                                                               | ✓ | ⏱: 3.47s 
+[FETCH]... ↓ https://www.torontotoday.ca/local/education/pare...-disability-accommodations-tdsb-said-no-10139136  | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ https://www.torontotoday.ca/local/education/pare...-disability-accommodations-tdsb-said-no-10139136  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.torontotoday.ca/local/education/pare...-disability-accommodations-tdsb-said-no-10139136  | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://www.ourkids.net/learning-disability-schools.php                                              | ✓ | ⏱: 3.42s 
+[SCRAPE].. ◆ https://www.ourkids.net/learning-disability-schools.php                                              | ✓ | ⏱: 0.62s 
+[COMPLETE] ● https://www.ourkids.net/learning-disability-schools.php                                              | ✓ | ⏱: 4.05s 
+[FETCH]... ↓ https://www.ontario.ca/page/programs-and-services-adults-developmental-disabilities-ontario          | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/programs-and-services-adults-developmental-disabilities-ontario          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/programs-and-services-adults-developmental-disabilities-ontario          | ✓ | ⏱: 2.72s 
+[FETCH]... ↓ https://www.tdsb.on.ca/About-Us/employment                                                           | ✓ | ⏱: 3.21s 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/About-Us/employment                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.tdsb.on.ca/About-Us/employment                                                           | ✓ | ⏱: 3.24s 
+[FETCH]... ↓ https://www.torontomu.ca/disability-studies/program/                                                 | ✓ | ⏱: 2.42s 
+[SCRAPE].. ◆ https://www.torontomu.ca/disability-studies/program/                                                 | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.torontomu.ca/disability-studies/program/                                                 | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.ontariocolleges.ca/en/programs/fields-of-interest/inclusive-education                    | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://www.ontariocolleges.ca/en/programs/fields-of-interest/inclusive-education                    | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.ontariocolleges.ca/en/programs/fields-of-interest/inclusive-education                    | ✓ | ⏱: 2.08s 
+[FETCH]... ↓ https://www.understood.org/en/articles/what-you-need-to-know-about-educational-therapy               | ✓ | ⏱: 2.38s 
+[SCRAPE].. ◆ https://www.understood.org/en/articles/what-you-need-to-know-about-educational-therapy               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.understood.org/en/articles/what-you-need-to-know-about-educational-therapy               | ✓ | ⏱: 2.42s 
+[FETCH]... ↓ https://www.unitedforliteracy.ca/Programs/Learning-Disability-Program-Adults                         | ✓ | ⏱: 2.34s 
+[SCRAPE].. ◆ https://www.unitedforliteracy.ca/Programs/Learning-Disability-Program-Adults                         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.unitedforliteracy.ca/Programs/Learning-Disability-Program-Adults                         | ✓ | ⏱: 2.37s 
+[FETCH]... ↓ https://www.ontario.ca/page/adult-learning-literacy-program                                          | ✓ | ⏱: 3.30s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/adult-learning-literacy-program                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/adult-learning-literacy-program                                          | ✓ | ⏱: 3.32s 
+[FETCH]... ↓ https://www.ontario.ca/page/adult-learning-literacy-and-basic-skills                                 | ✓ | ⏱: 3.32s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/adult-learning-literacy-and-basic-skills                                 | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/adult-learning-literacy-and-basic-skills                                 | ✓ | ⏱: 3.34s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Leadership-Learning-and-School-Improvement/Special-Education/Programs         | ✓ | ⏱: 2.33s 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Leadership-Learning-and-School-Improvement/Special-Education/Programs         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.tdsb.on.ca/Leadership-Learning-and-School-Improvement/Special-Education/Programs         | ✓ | ⏱: 2.36s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Learning-Equity-and-Well-...l-Education-and-Inclusion/Special-Education-Plan  | ✓ | ⏱: 2.38s 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Learning-Equity-and-Well-...l-Education-and-Inclusion/Special-Education-Plan  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.tdsb.on.ca/Learning-Equity-and-Well-...l-Education-and-Inclusion/Special-Education-Plan  | ✓ | ⏱: 2.41s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Learning-Equity-and-Well-Being/Special-Education-and-Inclusion                | ✓ | ⏱: 2.42s 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Learning-Equity-and-Well-Being/Special-Education-and-Inclusion                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.tdsb.on.ca/Learning-Equity-and-Well-Being/Special-Education-and-Inclusion                | ✓ | ⏱: 2.45s 
+[FETCH]... ↓ https://www.workopolis.com/search?q=special+education+resource+teacher&l=Toronto,+ON                 | ✓ | ⏱: 2.42s 
+[SCRAPE].. ◆ https://www.workopolis.com/search?q=special+education+resource+teacher&l=Toronto,+ON                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.workopolis.com/search?q=special+education+resource+teacher&l=Toronto,+ON                 | ✓ | ⏱: 2.47s 
+[FETCH]... ↓ https://www.unitedwaygt.org/ileo-in-action/10-community-organizations-that-offer-free-support/       | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://www.unitedwaygt.org/ileo-in-action/10-community-organizations-that-offer-free-support/       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.unitedwaygt.org/ileo-in-action/10-community-organizations-that-offer-free-support/       | ✓ | ⏱: 2.72s 
+[FETCH]... ↓ https://www.tcdsb.org/o/specialservices/page/special-education-plan                                  | ✓ | ⏱: 4.82s 
+[SCRAPE].. ◆ https://www.tcdsb.org/o/specialservices/page/special-education-plan                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.tcdsb.org/o/specialservices/page/special-education-plan                                  | ✓ | ⏱: 4.87s 
+[FETCH]... ↓ https://www.slideshare.net/slideshow/toronto-school-district-special-educationplan/55479090          | ✓ | ⏱: 5.43s 
+[SCRAPE].. ◆ https://www.slideshare.net/slideshow/toronto-school-district-special-educationplan/55479090          | ✓ | ⏱: 0.25s 
+[COMPLETE] ● https://www.slideshare.net/slideshow/toronto-school-district-special-educationplan/55479090          | ✓ | ⏱: 5.71s 
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://www.tdsb.on.ca/Portals/0/docs/Special_Ed...l Education Placements Provided by the Board.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.tdsb.on.ca/Portals/0/docs/Special_Education/Section%20J%20-%20Special%20Education%20Placements%20Provided%20by%20the%20Board.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpk50uqpo0.pdf 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Portals/0/docs/Special_Ed...l Education Placements Provided by the Board.pdf  | ✓ | ⏱: 3.47s 
+[COMPLETE] ● https://www.tdsb.on.ca/Portals/0/docs/Special_Ed...l Education Placements Provided by the Board.pdf  | ✓ | ⏱: 3.47s 
+[FETCH]... ↓ https://cou.ca/wp-content/uploads/2015/07/Academ...isabilities-A-Guide-for-Ontario-Universities.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://cou.ca/wp-content/uploads/2015/07/Academic-Colleagues-Learning-Disabilities-A-Guide-for-Ontario-Universities.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpbt7kytaz.pdf 
+[SCRAPE].. ◆ https://cou.ca/wp-content/uploads/2015/07/Academ...isabilities-A-Guide-for-Ontario-Universities.pdf  | ✓ | ⏱: 0.74s 
+[COMPLETE] ● https://cou.ca/wp-content/uploads/2015/07/Academ...isabilities-A-Guide-for-Ontario-Universities.pdf  | ✓ | ⏱: 0.75s 
+[FETCH]... ↓ https://www.ldatschool.ca/wp-content/uploads/2018/08/E.4.1-Kokai-Wiener-Cunningham.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ldatschool.ca/wp-content/uploads/2018/08/E.4.1-Kokai-Wiener-Cunningham.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpalsc0frf.pdf 
+[SCRAPE].. ◆ https://www.ldatschool.ca/wp-content/uploads/2018/08/E.4.1-Kokai-Wiener-Cunningham.pdf               | ✓ | ⏱: 2.30s 
+[COMPLETE] ● https://www.ldatschool.ca/wp-content/uploads/2018/08/E.4.1-Kokai-Wiener-Cunningham.pdf               | ✓ | ⏱: 2.30s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Portals/0/docs/TDSB Special Education Plan 2025-2026.pdf                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.tdsb.on.ca/Portals/0/docs/TDSB%20Special%20Education%20Plan%202025-2026.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp2w1wkggu.pdf 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Portals/0/docs/TDSB Special Education Plan 2025-2026.pdf                      | ✓ | ⏱: 37.23s 
+[COMPLETE] ● https://www.tdsb.on.ca/Portals/0/docs/TDSB Special Education Plan 2025-2026.pdf                      | ✓ | ⏱: 37.23s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Portals/0/docs/Section J ...l Education Placements Provided by the Board.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.tdsb.on.ca/Portals/0/docs/Section%20J%20-%20Special%20Education%20Placements%20Provided%20by%20the%20Board.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpwf44jf1_.pdf 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Portals/0/docs/Section J ...l Education Placements Provided by the Board.pdf  | ✓ | ⏱: 3.85s 
+[COMPLETE] ● https://www.tdsb.on.ca/Portals/0/docs/Section J ...l Education Placements Provided by the Board.pdf  | ✓ | ⏱: 3.85s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Portals/0/docs/Special_Education/Special-Education-Plan-Parent-Guide.pdf      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.tdsb.on.ca/Portals/0/docs/Special_Education/Special-Education-Plan-Parent-Guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpbjd66r4u.pdf 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Portals/0/docs/Special_Education/Special-Education-Plan-Parent-Guide.pdf      | ✓ | ⏱: 0.65s 
+[COMPLETE] ● https://www.tdsb.on.ca/Portals/0/docs/Special_Education/Special-Education-Plan-Parent-Guide.pdf      | ✓ | ⏱: 0.65s 
+[FETCH]... ↓ https://www.tdsb.on.ca/Portals/0/aboutus/Special...d School Board Roles and Responsibilities[1].pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.tdsb.on.ca/Portals/0/aboutus/Special%20Education%20Plan_Section%20B_Ministry%20of%20Education%20and%20School%20Board%20Roles%20and%20Responsibilities%5B1%5D.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpsd7uyldx.pdf 
+[SCRAPE].. ◆ https://www.tdsb.on.ca/Portals/0/aboutus/Special...d School Board Roles and Responsibilities[1].pdf  | ✓ | ⏱: 0.69s 
+[COMPLETE] ● https://www.tdsb.on.ca/Portals/0/aboutus/Special...d School Board Roles and Responsibilities[1].pdf  | ✓ | ⏱: 0.69s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 96 documents from 96 URLs
+   Data: {"source_documents": 96, "scraped_documents": 96}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 96 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/96 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 71 records from 96 documents
+   Data: {"extracted_count": 71, "source_documents": 96}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 71 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 71 -> 55
+   Data: {"input_rows": 71, "post_hard_rows": 55}
+======================================================================

@@ -18,9 +18,10 @@ class Crawl4AIScrapeNode(BaseNode):
 
     Input State Keys:
         - validated_urls: List[str]
+        - validated_results: Optional list of URL metadata dicts
 
     Output State Keys:
-        - scraped_content: List[Dict] with keys: url, text
+        - scraped_content: List[Dict] with keys: url, text, source_query, query_technique
     """
 
     def __init__(self, timeout_ms: int = 15000):
@@ -32,7 +33,20 @@ class Crawl4AIScrapeNode(BaseNode):
         from crawl4ai.async_configs import BrowserConfig, CrawlerRunConfig, CacheMode
         from crawl4ai.processors.pdf import PDFCrawlerStrategy, PDFContentScrapingStrategy
 
-        urls = state.get("validated_urls") or state.get("urls") or []
+        validated_results = state.get("validated_results") or []
+        url_to_meta = {}
+        for row in validated_results:
+            if not isinstance(row, dict):
+                continue
+            url = row.get("url")
+            if not url:
+                continue
+            url_to_meta[url] = {
+                "source_query": row.get("source_query", ""),
+                "query_technique": row.get("query_technique", "unspecified"),
+            }
+
+        urls = state.get("validated_urls") or state.get("urls") or list(url_to_meta.keys())
         if not urls:
             state["scraped_content"] = []
             progress.update("📄 Scraping Complete", "No URLs to scrape")
@@ -58,7 +72,13 @@ class Crawl4AIScrapeNode(BaseNode):
                     url = html_urls[i]
                     if result.success:
                         markdown = result.markdown or ""
-                        scraped.append({"url": url, "text": markdown})
+                        meta = url_to_meta.get(url, {})
+                        scraped.append({
+                            "url": url,
+                            "text": markdown,
+                            "source_query": meta.get("source_query", ""),
+                            "query_technique": meta.get("query_technique", "unspecified"),
+                        })
                     else:
                         print(f"⚠️  Crawl failed for {url}: {result.error_message}")
 
@@ -74,7 +94,13 @@ class Crawl4AIScrapeNode(BaseNode):
                             markdown = result.markdown.raw_markdown
                         else:
                             markdown = str(result.markdown or "")
-                        scraped.append({"url": url, "text": markdown})
+                        meta = url_to_meta.get(url, {})
+                        scraped.append({
+                            "url": url,
+                            "text": markdown,
+                            "source_query": meta.get("source_query", ""),
+                            "query_technique": meta.get("query_technique", "unspecified"),
+                        })
                     else:
                         print(f"⚠️  PDF crawl failed for {url}: {result.error_message}")
 

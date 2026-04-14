@@ -1,0 +1,1294 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: _zP8FXGEA_RmxomHAAAB
+
+======================================================================
+Starting Research Session
+   Client: _zP8FXGEA_RmxomHAAAB
+   Prompt: Find all institutions that offer services, programs, or associations for people with disabilities....
+   Columns: ['Name', 'Address', 'Phone Number', 'City']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: 236c479f-9b3c-4555-9e31-1e95a2108534
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all institutions that offer services, programs, or associations for people with disabilities....
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["Rehabilitation centers in National government agencies", "Disability support organizations in State / provincial services", "Vocational rehabilitation agencies in Local municipal program
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: Rehabilitation centers in National government agencies
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: Disability support organizations in State / provincial services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: Vocational rehabilitation agencies in Local municipal programs
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: Special education schools in Healthcare systems & hospitals
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: Assisted living & residential programs in Nonprofit / NGO networks
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: Rehabilitation centers Eligibility criteria & documentation in National government agencies
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: Disability support organizations Services offered (therapy, employment, housing) in State / provincial services
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: Vocational rehabilitation agencies Accessibility features & accommodations in Local municipal programs
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: Special education schools Cost, funding & insurance coverage in Healthcare systems & hospitals
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: Assisted living & residential programs Application process & waitlist times in Nonprofit / NGO networks
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: Rehabilitation centers in National government agencies PDF brochures & program guides
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: Disability support organizations in State / provincial services CSV / Excel provider registries
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: Vocational rehabilitation agencies in Local municipal programs Official government websites (HTML)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: Special education schools in Healthcare systems & hospitals Nonprofit directories & portals
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: Assisted living & residential programs in Nonprofit / NGO networks Local health system or hospital sites
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 167 unique URLs across 15 queries
+   Data: {"total_urls": 167, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 167 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 167/167 URLs
+   Data: {"validated": 167, "original": 167}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 167 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://211ontario.ca/211-topics/disabilities/                                                       | ✓ | ⏱: 1.19s 
+[SCRAPE].. ◆ https://211ontario.ca/211-topics/disabilities/                                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211ontario.ca/211-topics/disabilities/                                                       | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://12oaks.net/organizations-that-help-senior-citizens/                                          | ✓ | ⏱: 1.31s 
+[SCRAPE].. ◆ https://12oaks.net/organizations-that-help-senior-citizens/                                          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://12oaks.net/organizations-that-help-senior-citizens/                                          | ✓ | ⏱: 1.36s 
+[ERROR]... × https://datadiscovery.n...csv?accessType=DOWNLOAD  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://datadiscovery.nlm.nih.gov/api/views/9jbh-ypax/rows.csv?accessType=DOWNLOAD", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://dbhdd.georgia.gov/dd-community-based-services                                                | ✓ | ⏱: 1.68s 
+[SCRAPE].. ◆ https://dbhdd.georgia.gov/dd-community-based-services                                                | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://dbhdd.georgia.gov/dd-community-based-services                                                | ✓ | ⏱: 1.73s 
+[FETCH]... ↓ https://askearn.org/page/state-vocational-rehabilitation-agencies                                    | ✓ | ⏱: 1.85s 
+[SCRAPE].. ◆ https://askearn.org/page/state-vocational-rehabilitation-agencies                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://askearn.org/page/state-vocational-rehabilitation-agencies                                    | ✓ | ⏱: 1.87s 
+[FETCH]... ↓ https://americanaddictioncenters.org/rehab-guide/public-assistance                                   | ✓ | ⏱: 1.91s 
+[SCRAPE].. ◆ https://americanaddictioncenters.org/rehab-guide/public-assistance                                   | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://americanaddictioncenters.org/rehab-guide/public-assistance                                   | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ http://acl.gov/programs/aging-and-disability-networks/centers-independent-living                     | ✓ | ⏱: 2.06s 
+[SCRAPE].. ◆ http://acl.gov/programs/aging-and-disability-networks/centers-independent-living                     | ✓ | ⏱: 0.06s 
+[COMPLETE] ● http://acl.gov/programs/aging-and-disability-networks/centers-independent-living                     | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://drugrehabus.org/rehabs/treatment/government-funded/                                          | ✓ | ⏱: 2.55s 
+[SCRAPE].. ◆ https://drugrehabus.org/rehabs/treatment/government-funded/                                          | ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://drugrehabus.org/rehabs/treatment/government-funded/                                          | ✓ | ⏱: 2.75s 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/Rehabilitation_Services_Administration                                 | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/Rehabilitation_Services_Administration                                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/Rehabilitation_Services_Administration                                 | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ http://www.ed.gov/about/ed-offices/osers/osep                                                        | ✓ | ⏱: 2.87s 
+[SCRAPE].. ◆ http://www.ed.gov/about/ed-offices/osers/osep                                                        | ✓ | ⏱: 0.09s 
+[COMPLETE] ● http://www.ed.gov/about/ed-offices/osers/osep                                                        | ✓ | ⏱: 2.97s 
+[FETCH]... ↓ https://continuityineducation.org/articles/10.5334/cie.110                                           | ✓ | ⏱: 3.14s 
+[SCRAPE].. ◆ https://continuityineducation.org/articles/10.5334/cie.110                                           | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://continuityineducation.org/articles/10.5334/cie.110                                           | ✓ | ⏱: 3.28s 
+[FETCH]... ↓ https://comfortcaresl.com/non-profit-assisted-living-facilities/                                     | ✓ | ⏱: 3.29s 
+[SCRAPE].. ◆ https://comfortcaresl.com/non-profit-assisted-living-facilities/                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://comfortcaresl.com/non-profit-assisted-living-facilities/                                     | ✓ | ⏱: 3.34s 
+[FETCH]... ↓ https://aspe.hhs.gov/reports/who-will-care-us-addressing-long-term-care-workforce-crisis-1           | ✓ | ⏱: 3.36s 
+[SCRAPE].. ◆ https://aspe.hhs.gov/reports/who-will-care-us-addressing-long-term-care-workforce-crisis-1           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://aspe.hhs.gov/reports/who-will-care-us-addressing-long-term-care-workforce-crisis-1           | ✓ | ⏱: 3.43s 
+[FETCH]... ↓ https://askjan.org/concerns/State-Vocational-Rehabilitation-Agencies.cfm                             | ✓ | ⏱: 3.44s 
+[SCRAPE].. ◆ https://askjan.org/concerns/State-Vocational-Rehabilitation-Agencies.cfm                             | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://askjan.org/concerns/State-Vocational-Rehabilitation-Agencies.cfm                             | ✓ | ⏱: 3.50s 
+[FETCH]... ↓ https://christianlivingcommunities.org/blog/for-profit-vs-nonprofit-senior-living/                   | ✓ | ⏱: 3.51s 
+[SCRAPE].. ◆ https://christianlivingcommunities.org/blog/for-profit-vs-nonprofit-senior-living/                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://christianlivingcommunities.org/blog/for-profit-vs-nonprofit-senior-living/                   | ✓ | ⏱: 3.54s 
+[FETCH]... ↓ https://carf.org/accreditation/programs/employme.../employment-and-community-services-program-list/  | ✓ | ⏱: 3.55s 
+[SCRAPE].. ◆ https://carf.org/accreditation/programs/employme.../employment-and-community-services-program-list/  | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://carf.org/accreditation/programs/employme.../employment-and-community-services-program-list/  | ✓ | ⏱: 3.74s 
+[FETCH]... ↓ https://catalog.data.gov/dataset/2023-national-directory-of-mental-health-treatment-facilities       | ✓ | ⏱: 3.90s 
+[SCRAPE].. ◆ https://catalog.data.gov/dataset/2023-national-directory-of-mental-health-treatment-facilities       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://catalog.data.gov/dataset/2023-national-directory-of-mental-health-treatment-facilities       | ✓ | ⏱: 3.92s 
+[FETCH]... ↓ https://eldercarealliance.org/non-profit-difference/                                                 | ✓ | ⏱: 3.92s 
+[SCRAPE].. ◆ https://eldercarealliance.org/non-profit-difference/                                                 | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://eldercarealliance.org/non-profit-difference/                                                 | ✓ | ⏱: 3.98s 
+[FETCH]... ↓ https://americanaddictioncenters.org/rehab-guide/state-funded                                        | ✓ | ⏱: 1.89s 
+[SCRAPE].. ◆ https://americanaddictioncenters.org/rehab-guide/state-funded                                        | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://americanaddictioncenters.org/rehab-guide/state-funded                                        | ✓ | ⏱: 1.99s 
+[FETCH]... ↓ https://acl.gov/programs/aging-and-disability-networks                                               | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://acl.gov/programs/aging-and-disability-networks                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://acl.gov/programs/aging-and-disability-networks                                               | ✓ | ⏱: 1.99s 
+[FETCH]... ↓ https://acl.gov/programs/research-and-development/rehabilitation-research-and-training               | ✓ | ⏱: 2.01s 
+[SCRAPE].. ◆ https://acl.gov/programs/research-and-development/rehabilitation-research-and-training               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://acl.gov/programs/research-and-development/rehabilitation-research-and-training               | ✓ | ⏱: 2.07s 
+[ERROR]... × https://opendatabaromet...imary_data_datasets.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://opendatabarometer.org/assets/data/primary_data_datasets.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://frontporch.net/                                                                              | ✓ | ⏱: 2.41s 
+[SCRAPE].. ◆ https://frontporch.net/                                                                              | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://frontporch.net/                                                                              | ✓ | ⏱: 2.50s 
+[FETCH]... ↓ https://medlineplus.gov/rehabilitation.html                                                          | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://medlineplus.gov/rehabilitation.html                                                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://medlineplus.gov/rehabilitation.html                                                          | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://iacc.hhs.gov/publications/report-to-congress/2022/services.shtml                             | ✓ | ⏱: 2.03s 
+[SCRAPE].. ◆ https://iacc.hhs.gov/publications/report-to-congress/2022/services.shtml                             | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://iacc.hhs.gov/publications/report-to-congress/2022/services.shtml                             | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://otsimo.com/en/special-education-insurance-guide-us/                                          | ✓ | ⏱: 1.34s 
+[SCRAPE].. ◆ https://otsimo.com/en/special-education-insurance-guide-us/                                          | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://otsimo.com/en/special-education-insurance-guide-us/                                          | ✓ | ⏱: 1.39s 
+[FETCH]... ↓ https://fcsn.org/                                                                                    | ✓ | ⏱: 3.31s 
+[SCRAPE].. ◆ https://fcsn.org/                                                                                    | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://fcsn.org/                                                                                    | ✓ | ⏱: 3.38s 
+[FETCH]... ↓ https://rehabs.com/rehab-options/government-and-state-funded-addiction-treatment-programs/           | ✓ | ⏱: 0.93s 
+[SCRAPE].. ◆ https://rehabs.com/rehab-options/government-and-state-funded-addiction-treatment-programs/           | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://rehabs.com/rehab-options/government-and-state-funded-addiction-treatment-programs/           | ✓ | ⏱: 0.94s 
+[FETCH]... ↓ https://phoenixchildrens.org/patient-visitor-information/support-programs/school-resources           | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://phoenixchildrens.org/patient-visitor-information/support-programs/school-resources           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://phoenixchildrens.org/patient-visitor-information/support-programs/school-resources           | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://familyvoices.org/                                                                            | ✓ | ⏱: 4.02s 
+[SCRAPE].. ◆ https://familyvoices.org/                                                                            | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://familyvoices.org/                                                                            | ✓ | ⏱: 4.11s 
+[FETCH]... ↓ https://healthystudentspromisingfutures.org/map-school-medicaid-programs/                            | ✓ | ⏱: 3.60s 
+[SCRAPE].. ◆ https://healthystudentspromisingfutures.org/map-school-medicaid-programs/                            | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://healthystudentspromisingfutures.org/map-school-medicaid-programs/                            | ✓ | ⏱: 3.62s 
+[FETCH]... ↓ https://findtreatment.gov/                                                                           | ✓ | ⏱: 4.03s 
+[SCRAPE].. ◆ https://findtreatment.gov/                                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://findtreatment.gov/                                                                           | ✓ | ⏱: 4.06s 
+[FETCH]... ↓ https://miusa.org/resource/tip-sheets/organizations/                                                 | ✓ | ⏱: 2.88s 
+[SCRAPE].. ◆ https://miusa.org/resource/tip-sheets/organizations/                                                 | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://miusa.org/resource/tip-sheets/organizations/                                                 | ✓ | ⏱: 2.95s 
+[ERROR]... × https://transformingage.org/                       | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://transformingage.org/
+Call log:
+  - navigating to "https://transformingage.org/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://helpmeconnect.web.health.state.mn.us/HelpMeConnect/Topics/DisabilityServicesandResources     | ✓ | ⏱: 3.84s 
+[SCRAPE].. ◆ https://helpmeconnect.web.health.state.mn.us/HelpMeConnect/Topics/DisabilityServicesandResources     | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://helpmeconnect.web.health.state.mn.us/HelpMeConnect/Topics/DisabilityServicesandResources     | ✓ | ⏱: 3.89s 
+[FETCH]... ↓ https://services.easterseals.org/family-information-resources/disability-support-organizations/      | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://services.easterseals.org/family-information-resources/disability-support-organizations/      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://services.easterseals.org/family-information-resources/disability-support-organizations/      | ✓ | ⏱: 1.10s 
+[FETCH]... ↓ https://nashp.org/policy/womens-and-childrens-he...ildren-and-youth-with-special-health-care-needs/  | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://nashp.org/policy/womens-and-childrens-he...ildren-and-youth-with-special-health-care-needs/  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://nashp.org/policy/womens-and-childrens-he...ildren-and-youth-with-special-health-care-needs/  | ✓ | ⏱: 3.09s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC11104305/                                                   | ✓ | ⏱: 2.53s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC11104305/                                                   | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC11104305/                                                   | ✓ | ⏱: 2.65s 
+[FETCH]... ↓ https://practicegreenhealth.org/healthierhospitals                                                   | ✓ | ⏱: 2.35s 
+[SCRAPE].. ◆ https://practicegreenhealth.org/healthierhospitals                                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://practicegreenhealth.org/healthierhospitals                                                   | ✓ | ⏱: 2.38s 
+[FETCH]... ↓ https://mn.gov/deed/job-seekers/disabilities/                                                        | ✓ | ⏱: 3.46s 
+[SCRAPE].. ◆ https://mn.gov/deed/job-seekers/disabilities/                                                        | ✓ | ⏱: 1.01s 
+[COMPLETE] ● https://mn.gov/deed/job-seekers/disabilities/                                                        | ✓ | ⏱: 4.49s 
+[FETCH]... ↓ https://www.acces.nysed.gov/vr/vocational-rehabilitation-services                                    | ✓ | ⏱: 2.01s 
+[SCRAPE].. ◆ https://www.acces.nysed.gov/vr/vocational-rehabilitation-services                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.acces.nysed.gov/vr/vocational-rehabilitation-services                                    | ✓ | ⏱: 2.03s 
+[FETCH]... ↓ https://uknow.uky.edu/uk-healthcare/uk-healthcar...-disabilities-immersive-job-education-experience  | ✓ | ⏱: 2.27s 
+[SCRAPE].. ◆ https://uknow.uky.edu/uk-healthcare/uk-healthcar...-disabilities-immersive-job-education-experience  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://uknow.uky.edu/uk-healthcare/uk-healthcar...-disabilities-immersive-job-education-experience  | ✓ | ⏱: 2.30s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC2238740/                                                    | ✓ | ⏱: 1.99s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC2238740/                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC2238740/                                                    | ✓ | ⏱: 2.03s 
+[FETCH]... ↓ https://www.accesscommunity.org/                                                                     | ✓ | ⏱: 1.72s 
+[SCRAPE].. ◆ https://www.accesscommunity.org/                                                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.accesscommunity.org/                                                                     | ✓ | ⏱: 1.74s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC11180759/                                                   | ✓ | ⏱: 2.06s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC11180759/                                                   | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC11180759/                                                   | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://workforce.iowa.gov/vr                                                                        | ✓ | ⏱: 2.30s 
+[SCRAPE].. ◆ https://workforce.iowa.gov/vr                                                                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://workforce.iowa.gov/vr                                                                        | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://news.va.gov/145323/va-homeless-programs-more-than-just-housing/                              | ✓ | ⏱: 4.86s 
+[SCRAPE].. ◆ https://news.va.gov/145323/va-homeless-programs-more-than-just-housing/                              | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://news.va.gov/145323/va-homeless-programs-more-than-just-housing/                              | ✓ | ⏱: 4.93s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC6941887/                                                    | ✓ | ⏱: 2.25s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC6941887/                                                    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC6941887/                                                    | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://rsa.ed.gov/statute-legislation-and-policy/sub-regulatory-guidance                            | ✓ | ⏱: 2.85s 
+[SCRAPE].. ◆ https://rsa.ed.gov/statute-legislation-and-policy/sub-regulatory-guidance                            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://rsa.ed.gov/statute-legislation-and-policy/sub-regulatory-guidance                            | ✓ | ⏱: 2.91s 
+[FETCH]... ↓ https://www.adagreatlakes.org/Resources/Default.asp?category=40                                      | ✓ | ⏱: 2.54s 
+[SCRAPE].. ◆ https://www.adagreatlakes.org/Resources/Default.asp?category=40                                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.adagreatlakes.org/Resources/Default.asp?category=40                                      | ✓ | ⏱: 2.56s 
+[FETCH]... ↓ https://www.ahead.org/about-ahead/professional-standards                                             | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.ahead.org/about-ahead/professional-standards                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ahead.org/about-ahead/professional-standards                                             | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://rsa.ed.gov/about/states                                                                      | ✓ | ⏱: 3.22s 
+[SCRAPE].. ◆ https://rsa.ed.gov/about/states                                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://rsa.ed.gov/about/states                                                                      | ✓ | ⏱: 3.26s 
+[FETCH]... ↓ https://www.aplaceformom.com/caregiver-resources/articles/non-and-for-profit-assisted-living         | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://www.aplaceformom.com/caregiver-resources/articles/non-and-for-profit-assisted-living         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.aplaceformom.com/caregiver-resources/articles/non-and-for-profit-assisted-living         | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://www.bridgespan.org/insights/nonprofit-strategy/nonprofit-program-strategy-map                | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://www.bridgespan.org/insights/nonprofit-strategy/nonprofit-program-strategy-map                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.bridgespan.org/insights/nonprofit-strategy/nonprofit-program-strategy-map                | ✓ | ⏱: 1.51s 
+[FETCH]... ↓ https://www.benefits.va.gov/vocrehab/                                                                | ✓ | ⏱: 1.80s 
+[SCRAPE].. ◆ https://www.benefits.va.gov/vocrehab/                                                                | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.benefits.va.gov/vocrehab/                                                                | ✓ | ⏱: 1.85s 
+[FETCH]... ↓ https://www.butler.edu/student-life/volunteer/nonprofit-agency-directory/alphabetical-listing/       | ✓ | ⏱: 1.70s 
+[SCRAPE].. ◆ https://www.butler.edu/student-life/volunteer/nonprofit-agency-directory/alphabetical-listing/       | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.butler.edu/student-life/volunteer/nonprofit-agency-directory/alphabetical-listing/       | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://rsa.ed.gov/about/programs/vocational-rehabilitation-state-grants                             | ✓ | ⏱: 6.31s 
+[SCRAPE].. ◆ https://rsa.ed.gov/about/programs/vocational-rehabilitation-state-grants                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://rsa.ed.gov/about/programs/vocational-rehabilitation-state-grants                             | ✓ | ⏱: 6.34s 
+[FETCH]... ↓ https://seniorhousingnews.com/2022/10/27/10-larg...onprofit-senior-living-operators-in-2021-ranked/  | ✓ | ⏱: 7.41s 
+[SCRAPE].. ◆ https://seniorhousingnews.com/2022/10/27/10-larg...onprofit-senior-living-operators-in-2021-ranked/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://seniorhousingnews.com/2022/10/27/10-larg...onprofit-senior-living-operators-in-2021-ranked/  | ✓ | ⏱: 7.45s 
+[FETCH]... ↓ https://www.canada.ca/en/employment-social-devel...lity-inclusion-action-plan/action-plan-2022.html  | ✓ | ⏱: 4.34s 
+[SCRAPE].. ◆ https://www.canada.ca/en/employment-social-devel...lity-inclusion-action-plan/action-plan-2022.html  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.canada.ca/en/employment-social-devel...lity-inclusion-action-plan/action-plan-2022.html  | ✓ | ⏱: 4.39s 
+[FETCH]... ↓ https://www.access-board.gov/about/law/ra.html                                                       | ✓ | ⏱: 6.40s 
+[SCRAPE].. ◆ https://www.access-board.gov/about/law/ra.html                                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.access-board.gov/about/law/ra.html                                                       | ✓ | ⏱: 6.43s 
+[FETCH]... ↓ https://rsa.ed.gov/                                                                                  | ✓ | ⏱: 8.36s 
+[SCRAPE].. ◆ https://rsa.ed.gov/                                                                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://rsa.ed.gov/                                                                                  | ✓ | ⏱: 8.37s 
+[FETCH]... ↓ https://silc.idaho.gov/resources-for-individuals-with-disabilities/                                  | ✓ | ⏱: 7.42s 
+[SCRAPE].. ◆ https://silc.idaho.gov/resources-for-individuals-with-disabilities/                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://silc.idaho.gov/resources-for-individuals-with-disabilities/                                  | ✓ | ⏱: 7.46s 
+[FETCH]... ↓ https://wellspring.org/about                                                                         | ✓ | ⏱: 6.88s 
+[SCRAPE].. ◆ https://wellspring.org/about                                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://wellspring.org/about                                                                         | ✓ | ⏱: 6.93s 
+[FETCH]... ↓ https://www.berkeleyschools.net/departments/special-education/                                       | ✓ | ⏱: 4.72s 
+[SCRAPE].. ◆ https://www.berkeleyschools.net/departments/special-education/                                       | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.berkeleyschools.net/departments/special-education/                                       | ✓ | ⏱: 4.81s 
+[ERROR]... × https://www.censusofsur...a/basic_survey_data.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.censusofsurveys.com/data/basic_survey_data.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.ada.gov/law-and-regs/regulations/title-ii-2010-regulations/                              | ✓ | ⏱: 6.51s 
+[SCRAPE].. ◆ https://www.ada.gov/law-and-regs/regulations/title-ii-2010-regulations/                              | ✓ | ⏱: 0.93s 
+[COMPLETE] ● https://www.ada.gov/law-and-regs/regulations/title-ii-2010-regulations/                              | ✓ | ⏱: 7.47s 
+[FETCH]... ↓ https://www.canada.ca/en/employment-social-devel...erships/disabilities/organizations-benefits.html  | ✓ | ⏱: 4.74s 
+[SCRAPE].. ◆ https://www.canada.ca/en/employment-social-devel...erships/disabilities/organizations-benefits.html  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.canada.ca/en/employment-social-devel...erships/disabilities/organizations-benefits.html  | ✓ | ⏱: 4.82s 
+[FETCH]... ↓ https://thearc.org/                                                                                  | ✓ | ⏱: 8.77s 
+[SCRAPE].. ◆ https://thearc.org/                                                                                  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://thearc.org/                                                                                  | ✓ | ⏱: 8.85s 
+[FETCH]... ↓ https://www.casas.org/training-and-support/testing-guidelines/prior-Assessment-Accommodations        | ✓ | ⏱: 5.05s 
+[SCRAPE].. ◆ https://www.casas.org/training-and-support/testing-guidelines/prior-Assessment-Accommodations        | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.casas.org/training-and-support/testing-guidelines/prior-Assessment-Accommodations        | ✓ | ⏱: 5.05s 
+[FETCH]... ↓ https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx    | ✓ | ⏱: 3.60s 
+[SCRAPE].. ◆ https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx    | ✓ | ⏱: 3.62s 
+[FETCH]... ↓ https://www.choa.org/patients/during-your-stay/school-program                                        | ✓ | ⏱: 2.01s 
+[SCRAPE].. ◆ https://www.choa.org/patients/during-your-stay/school-program                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.choa.org/patients/during-your-stay/school-program                                        | ✓ | ⏱: 2.07s 
+[FETCH]... ↓ https://www.careeronestop.org/LocalHelp/service-locator.aspx                                         | ✓ | ⏱: 5.50s 
+[SCRAPE].. ◆ https://www.careeronestop.org/LocalHelp/service-locator.aspx                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.careeronestop.org/LocalHelp/service-locator.aspx                                         | ✓ | ⏱: 5.53s 
+[FETCH]... ↓ https://www.communitywellnesspartners.org/                                                           | ✓ | ⏱: 1.83s 
+[SCRAPE].. ◆ https://www.communitywellnesspartners.org/                                                           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.communitywellnesspartners.org/                                                           | ✓ | ⏱: 1.90s 
+[FETCH]... ↓ https://www.cms.gov/medicare/health-safety-stand...n-compliance/inpatient-rehabilitation-facilities  | ✓ | ⏱: 2.11s 
+[SCRAPE].. ◆ https://www.cms.gov/medicare/health-safety-stand...n-compliance/inpatient-rehabilitation-facilities  | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.cms.gov/medicare/health-safety-stand...n-compliance/inpatient-rehabilitation-facilities  | ✓ | ⏱: 2.21s 
+[FETCH]... ↓ https://www.canada.ca/en/financial-consumer-agency/services/living-disability.html                   | ✓ | ⏱: 5.33s 
+[SCRAPE].. ◆ https://www.canada.ca/en/financial-consumer-agency/services/living-disability.html                   | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.canada.ca/en/financial-consumer-agency/services/living-disability.html                   | ✓ | ⏱: 5.39s 
+[FETCH]... ↓ https://www.csavr.org/stateagencydirectory                                                           | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://www.csavr.org/stateagencydirectory                                                           | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.csavr.org/stateagencydirectory                                                           | ✓ | ⏱: 2.06s 
+[FETCH]... ↓ https://www.dhs.gov/xlibrary/assets/training/xus...employmentdisabilities/Common/html/resources.htm  | ✓ | ⏱: 1.93s 
+[SCRAPE].. ◆ https://www.dhs.gov/xlibrary/assets/training/xus...employmentdisabilities/Common/html/resources.htm  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.dhs.gov/xlibrary/assets/training/xus...employmentdisabilities/Common/html/resources.htm  | ✓ | ⏱: 1.95s 
+[FETCH]... ↓ https://www.delawarenation-nsn.gov/vocational-rehabilitation-2/                                      | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://www.delawarenation-nsn.gov/vocational-rehabilitation-2/                                      | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.delawarenation-nsn.gov/vocational-rehabilitation-2/                                      | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://www.congress.gov/crs-product/R43855                                                          | ✓ | ⏱: 2.46s 
+[SCRAPE].. ◆ https://www.congress.gov/crs-product/R43855                                                          | ✓ | ⏱: 0.23s 
+[COMPLETE] ● https://www.congress.gov/crs-product/R43855                                                          | ✓ | ⏱: 2.69s 
+[FETCH]... ↓ https://www.disabilityresources.org/colorado.html                                                    | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://www.disabilityresources.org/colorado.html                                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.disabilityresources.org/colorado.html                                                    | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://www.childrensnational.org/in-the-communi...-institute/community-affairs/school-partnerships  | ✓ | ⏱: 5.64s 
+[SCRAPE].. ◆ https://www.childrensnational.org/in-the-communi...-institute/community-affairs/school-partnerships  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.childrensnational.org/in-the-communi...-institute/community-affairs/school-partnerships  | ✓ | ⏱: 5.71s 
+[FETCH]... ↓ https://www.caregiveraction.org/agencies-and-organizations/                                          | ✓ | ⏱: 6.58s 
+[SCRAPE].. ◆ https://www.caregiveraction.org/agencies-and-organizations/                                          | ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://www.caregiveraction.org/agencies-and-organizations/                                          | ✓ | ⏱: 6.79s 
+[FETCH]... ↓ https://www.dor.ca.gov/Home/VocationalRehabilitation                                                 | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://www.dor.ca.gov/Home/VocationalRehabilitation                                                 | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.dor.ca.gov/Home/VocationalRehabilitation                                                 | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://www.fcps.edu/services/families-and-careg...ce-center/community-guide-special-needs-families  | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://www.fcps.edu/services/families-and-careg...ce-center/community-guide-special-needs-families  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.fcps.edu/services/families-and-careg...ce-center/community-guide-special-needs-families  | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://www.disabilityrightsohio.org/employment-...vices-programs-available-ohio-rehabilitation-act  | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://www.disabilityrightsohio.org/employment-...vices-programs-available-ohio-rehabilitation-act  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.disabilityrightsohio.org/employment-...vices-programs-available-ohio-rehabilitation-act  | ✓ | ⏱: 1.71s 
+[ERROR]... × https://www.ftb.ca.gov/...voked-list-combined.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ftb.ca.gov/file/business/types/charities-nonprofits/Revoked-list-combined.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.facebook.com/groups/azresidentialfacilities/posts/1635203393832304/                      | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://www.facebook.com/groups/azresidentialfacilities/posts/1635203393832304/                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.facebook.com/groups/azresidentialfacilities/posts/1635203393832304/                      | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://www.disability.state.mn.us/additional-resources/                                             | ✓ | ⏱: 3.18s 
+[SCRAPE].. ◆ https://www.disability.state.mn.us/additional-resources/                                             | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.disability.state.mn.us/additional-resources/                                             | ✓ | ⏱: 3.25s 
+[FETCH]... ↓ https://www.childrenshospitals.org/news/children...9/supporting-education-in-hospitals-for-children  | ✓ | ⏱: 6.30s 
+[SCRAPE].. ◆ https://www.childrenshospitals.org/news/children...9/supporting-education-in-hospitals-for-children  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.childrenshospitals.org/news/children...9/supporting-education-in-hospitals-for-children  | ✓ | ⏱: 6.34s 
+[FETCH]... ↓ https://www.cdc.gov/nhsn/inpatient-rehab/index.html                                                  | ✓ | ⏱: 6.67s 
+[SCRAPE].. ◆ https://www.cdc.gov/nhsn/inpatient-rehab/index.html                                                  | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.cdc.gov/nhsn/inpatient-rehab/index.html                                                  | ✓ | ⏱: 6.78s 
+[FETCH]... ↓ https://www.dsontario.ca/                                                                            | ✓ | ⏱: 1.96s 
+[SCRAPE].. ◆ https://www.dsontario.ca/                                                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.dsontario.ca/                                                                            | ✓ | ⏱: 1.98s 
+[ERROR]... × https://www.irs.gov/pub...mber-2019-990-index.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.irs.gov/pub/irs-tege/december-2019-990-index.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.eeoc.gov/rehabilitation-act-1973-original-text                                           | ✓ | ⏱: 1.78s 
+[SCRAPE].. ◆ https://www.eeoc.gov/rehabilitation-act-1973-original-text                                           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.eeoc.gov/rehabilitation-act-1973-original-text                                           | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://www.federalregister.gov/documents/2002/0...titute-on-disability-and-rehabilitation-research  | ✓ | ⏱: 1.78s 
+[SCRAPE].. ◆ https://www.federalregister.gov/documents/2002/0...titute-on-disability-and-rehabilitation-research  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.federalregister.gov/documents/2002/0...titute-on-disability-and-rehabilitation-research  | ✓ | ⏱: 1.83s 
+[FETCH]... ↓ https://www.communitywellnesspartners.org/foundations/                                               | ✓ | ⏱: 2.60s 
+[SCRAPE].. ◆ https://www.communitywellnesspartners.org/foundations/                                               | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.communitywellnesspartners.org/foundations/                                               | ✓ | ⏱: 2.67s 
+[FETCH]... ↓ https://www.hhs.gov/civil-rights/for-individuals...t-of-1973/ocr-detailed-504-fact-sheet/index.html  | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://www.hhs.gov/civil-rights/for-individuals...t-of-1973/ocr-detailed-504-fact-sheet/index.html  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.hhs.gov/civil-rights/for-individuals...t-of-1973/ocr-detailed-504-fact-sheet/index.html  | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://www.kff.org/medicaid/medicaid-and-childr...h-5-issues-to-watch-amid-recent-federal-changes/  | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://www.kff.org/medicaid/medicaid-and-childr...h-5-issues-to-watch-amid-recent-federal-changes/  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.kff.org/medicaid/medicaid-and-childr...h-5-issues-to-watch-amid-recent-federal-changes/  | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://www.federalregister.gov/documents/2022/0...s-for-title-vii-part-c-of-the-rehabilitation-act  | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://www.federalregister.gov/documents/2022/0...s-for-title-vii-part-c-of-the-rehabilitation-act  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.federalregister.gov/documents/2022/0...s-for-title-vii-part-c-of-the-rehabilitation-act  | ✓ | ⏱: 1.22s 
+[FETCH]... ↓ https://www.mass.gov/career-programs-and-services                                                    | ✓ | ⏱: 1.26s 
+[SCRAPE].. ◆ https://www.mass.gov/career-programs-and-services                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.mass.gov/career-programs-and-services                                                    | ✓ | ⏱: 1.30s 
+[FETCH]... ↓ https://www.humangood.org/                                                                           | ✓ | ⏱: 1.44s 
+[SCRAPE].. ◆ https://www.humangood.org/                                                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.humangood.org/                                                                           | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://www.disabilityresources.org/michigan.html                                                    | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://www.disabilityresources.org/michigan.html                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.disabilityresources.org/michigan.html                                                    | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://www.disabilityresources.org/voc-rehab.html                                                   | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ https://www.disabilityresources.org/voc-rehab.html                                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.disabilityresources.org/voc-rehab.html                                                   | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://www.mda.org/young-adults/independent-living                                                  | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://www.mda.org/young-adults/independent-living                                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.mda.org/young-adults/independent-living                                                  | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-373                                | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-373                                | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-373                                | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://www.medicaid.gov/medicaid/long-term-serv.../institutional-long-term-care/nursing-facilities  | ✓ | ⏱: 1.73s 
+[SCRAPE].. ◆ https://www.medicaid.gov/medicaid/long-term-serv.../institutional-long-term-care/nursing-facilities  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.medicaid.gov/medicaid/long-term-serv.../institutional-long-term-care/nursing-facilities  | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://www.hopkinsmedicine.org/all-childrens-hospital/academics/education                           | ✓ | ⏱: 2.46s 
+[SCRAPE].. ◆ https://www.hopkinsmedicine.org/all-childrens-hospital/academics/education                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.hopkinsmedicine.org/all-childrens-hospital/academics/education                           | ✓ | ⏱: 2.49s 
+[FETCH]... ↓ https://www.nysed.gov/book/export/html/2343                                                          | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ https://www.nysed.gov/book/export/html/2343                                                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.nysed.gov/book/export/html/2343                                                          | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.medicaid.gov/resources-for-states/me...al-assistance/medicaid-and-school-based-services  | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ https://www.medicaid.gov/resources-for-states/me...al-assistance/medicaid-and-school-based-services  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.medicaid.gov/resources-for-states/me...al-assistance/medicaid-and-school-based-services  | ✓ | ⏱: 1.01s 
+[FETCH]... ↓ https://www.necc.org/                                                                                | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ https://www.necc.org/                                                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.necc.org/                                                                                | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://www.nea.org/nea-today/all-news-articles/...caid-cuts-will-devastate-schools-and-communities  | ✓ | ⏱: 1.92s 
+[SCRAPE].. ◆ https://www.nea.org/nea-today/all-news-articles/...caid-cuts-will-devastate-schools-and-communities  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.nea.org/nea-today/all-news-articles/...caid-cuts-will-devastate-schools-and-communities  | ✓ | ⏱: 1.96s 
+[FETCH]... ↓ https://www.naquitline.org/page/topresources                                                         | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://www.naquitline.org/page/topresources                                                         | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.naquitline.org/page/topresources                                                         | ✓ | ⏱: 2.31s 
+[FETCH]... ↓ https://www.olmsteadrights.org/self-helptools/ad..._Disability_Resources_and_Advocacy_Organizations  | ✓ | ⏱: 1.43s 
+[SCRAPE].. ◆ https://www.olmsteadrights.org/self-helptools/ad..._Disability_Resources_and_Advocacy_Organizations  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.olmsteadrights.org/self-helptools/ad..._Disability_Resources_and_Advocacy_Organizations  | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://www.niaaa.nih.gov/publications/brochures...atment-alcohol-problems-finding-and-getting-help  | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://www.niaaa.nih.gov/publications/brochures...atment-alcohol-problems-finding-and-getting-help  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.niaaa.nih.gov/publications/brochures...atment-alcohol-problems-finding-and-getting-help  | ✓ | ⏱: 1.74s 
+[FETCH]... ↓ https://www.quora.com/How-should-I-start-a-nonpr...able-to-get-out-and-are-still-at-home-with-meals  | ✓ | ⏱: 0.50s 
+[SCRAPE].. ◆ https://www.quora.com/How-should-I-start-a-nonpr...able-to-get-out-and-are-still-at-home-with-meals  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.quora.com/How-should-I-start-a-nonpr...able-to-get-out-and-are-still-at-home-with-meals  | ✓ | ⏱: 0.50s 
+[FETCH]... ↓ https://www.medicare.gov/care-compare/?guidedSearch=InpatientRehabilitation                          | ✓ | ⏱: 2.60s 
+[SCRAPE].. ◆ https://www.medicare.gov/care-compare/?guidedSearch=InpatientRehabilitation                          | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.medicare.gov/care-compare/?guidedSearch=InpatientRehabilitation                          | ✓ | ⏱: 2.60s 
+[FETCH]... ↓ https://www.ontario.ca/page/ontario-disability-support-program                                       | ✓ | ⏱: 1.62s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/ontario-disability-support-program                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/ontario-disability-support-program                                       | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://www.masters-in-special-education.com/faq...tal-setting-with-a-masters-in-special-education/  | ✓ | ⏱: 3.19s 
+[SCRAPE].. ◆ https://www.masters-in-special-education.com/faq...tal-setting-with-a-masters-in-special-education/  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.masters-in-special-education.com/faq...tal-setting-with-a-masters-in-special-education/  | ✓ | ⏱: 3.22s 
+[FETCH]... ↓ https://www.pa.gov/agencies/dli/programs-service...ability-and-vocational-rehabilitation/employment  | ✓ | ⏱: 1.63s 
+[SCRAPE].. ◆ https://www.pa.gov/agencies/dli/programs-service...ability-and-vocational-rehabilitation/employment  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.pa.gov/agencies/dli/programs-service...ability-and-vocational-rehabilitation/employment  | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.reddit.com/r/specialed/comments/1acudln/special_education_teacher_job_listings_for/      | ✓ | ⏱: 1.06s 
+[SCRAPE].. ◆ https://www.reddit.com/r/specialed/comments/1acudln/special_education_teacher_job_listings_for/      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.reddit.com/r/specialed/comments/1acudln/special_education_teacher_job_listings_for/      | ✓ | ⏱: 1.07s 
+[FETCH]... ↓ https://www.payingforseniorcare.com/non-profit-vs-for-profit-assisted-living                         | ✓ | ⏱: 1.77s 
+[SCRAPE].. ◆ https://www.payingforseniorcare.com/non-profit-vs-for-profit-assisted-living                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.payingforseniorcare.com/non-profit-vs-for-profit-assisted-living                         | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://www.osfhealthcare.org/hospitals/childrens/programs-services/inpatient-services/school        | ✓ | ⏱: 2.30s 
+[SCRAPE].. ◆ https://www.osfhealthcare.org/hospitals/childrens/programs-services/inpatient-services/school        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.osfhealthcare.org/hospitals/childrens/programs-services/inpatient-services/school        | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://www.oecd.org/en/publications/the-economi...continuum-of-care-in-the-community_3ccd04bd.html  | ✓ | ⏱: 2.63s 
+[SCRAPE].. ◆ https://www.oecd.org/en/publications/the-economi...continuum-of-care-in-the-community_3ccd04bd.html  | ✓ | ⏱: 1.43s 
+[COMPLETE] ● https://www.oecd.org/en/publications/the-economi...continuum-of-care-in-the-community_3ccd04bd.html  | ✓ | ⏱: 4.08s 
+[FETCH]... ↓ https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-361                                | ✓ | ⏱: 7.10s 
+[SCRAPE].. ◆ https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-361                                | ✓ | ⏱: 0.92s 
+[COMPLETE] ● https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-361                                | ✓ | ⏱: 8.03s 
+[FETCH]... ↓ https://www.portland.gov/officeofequity/disability/disability-resources                              | ✓ | ⏱: 4.56s 
+[SCRAPE].. ◆ https://www.portland.gov/officeofequity/disability/disability-resources                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.portland.gov/officeofequity/disability/disability-resources                              | ✓ | ⏱: 4.62s 
+[FETCH]... ↓ https://www.presbyterianseniorliving.org/blog/the-nonprofit-difference-mission-driven-senior-living  | ✓ | ⏱: 3.39s 
+[SCRAPE].. ◆ https://www.presbyterianseniorliving.org/blog/the-nonprofit-difference-mission-driven-senior-living  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.presbyterianseniorliving.org/blog/the-nonprofit-difference-mission-driven-senior-living  | ✓ | ⏱: 3.43s 
+[FETCH]... ↓ https://www.nasddds.org/                                                                             | ✓ | ⏱: 6.38s 
+[SCRAPE].. ◆ https://www.nasddds.org/                                                                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.nasddds.org/                                                                             | ✓ | ⏱: 6.43s 
+[FETCH]... ↓ https://www.presbyterianseniorliving.org/                                                            | ✓ | ⏱: 4.62s 
+[SCRAPE].. ◆ https://www.presbyterianseniorliving.org/                                                            | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.presbyterianseniorliving.org/                                                            | ✓ | ⏱: 4.69s 
+[FETCH]... ↓ https://www.overlakehospital.org/services/overlake-specialty-school                                  | ✓ | ⏱: 5.36s 
+[SCRAPE].. ◆ https://www.overlakehospital.org/services/overlake-specialty-school                                  | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.overlakehospital.org/services/overlake-specialty-school                                  | ✓ | ⏱: 5.47s 
+[FETCH]... ↓ https://www.scrmemorycare.com/25-non-profit-organizations/                                           | ✓ | ⏱: 4.11s 
+[SCRAPE].. ◆ https://www.scrmemorycare.com/25-non-profit-organizations/                                           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.scrmemorycare.com/25-non-profit-organizations/                                           | ✓ | ⏱: 4.19s 
+[FETCH]... ↓ https://www.twc.texas.gov/programs/vocational-rehabilitation                                         | ✓ | ⏱: 3.28s 
+[SCRAPE].. ◆ https://www.twc.texas.gov/programs/vocational-rehabilitation                                         | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.twc.texas.gov/programs/vocational-rehabilitation                                         | ✓ | ⏱: 3.28s 
+[FETCH]... ↓ https://www.tn.gov/humanservices/ds/vocational-rehabilitation.html                                   | ✓ | ⏱: 3.35s 
+[SCRAPE].. ◆ https://www.tn.gov/humanservices/ds/vocational-rehabilitation.html                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.tn.gov/humanservices/ds/vocational-rehabilitation.html                                   | ✓ | ⏱: 3.40s 
+[FETCH]... ↓ https://www.jpeds.com/article/S0022-3476(24)00061-1/fulltext                                         | ✓ | ⏱: 7.26s 
+[SCRAPE].. ◆ https://www.jpeds.com/article/S0022-3476(24)00061-1/fulltext                                         | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.jpeds.com/article/S0022-3476(24)00061-1/fulltext                                         | ✓ | ⏱: 7.36s 
+[FETCH]... ↓ https://www.sciencedirect.com/science/article/pii/S2667009724000721                                  | ✓ | ⏱: 4.36s 
+[SCRAPE].. ◆ https://www.sciencedirect.com/science/article/pii/S2667009724000721                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.sciencedirect.com/science/article/pii/S2667009724000721                                  | ✓ | ⏱: 4.40s 
+[FETCH]... ↓ https://www.samhsa.gov/data/report/2023-national...ory-of-drug-and-alcohol-use-treatment-facilities  | ✓ | ⏱: 4.66s 
+[SCRAPE].. ◆ https://www.samhsa.gov/data/report/2023-national...ory-of-drug-and-alcohol-use-treatment-facilities  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.samhsa.gov/data/report/2023-national...ory-of-drug-and-alcohol-use-treatment-facilities  | ✓ | ⏱: 4.74s 
+[FETCH]... ↓ https://www.pa.gov/agencies/dli/resources/forms-and-documents/office-of-vocational-rehabilitation    | ✓ | ⏱: 2.25s 
+[SCRAPE].. ◆ https://www.pa.gov/agencies/dli/resources/forms-and-documents/office-of-vocational-rehabilitation    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.pa.gov/agencies/dli/resources/forms-and-documents/office-of-vocational-rehabilitation    | ✓ | ⏱: 2.33s 
+[FETCH]... ↓ https://www.stroke.org/en/life-after-stroke/recovery/return-to-work/state-vocational-rehab-agencies  | ✓ | ⏱: 4.16s 
+[SCRAPE].. ◆ https://www.stroke.org/en/life-after-stroke/recovery/return-to-work/state-vocational-rehab-agencies  | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://www.stroke.org/en/life-after-stroke/recovery/return-to-work/state-vocational-rehab-agencies  | ✓ | ⏱: 4.29s 
+[FETCH]... ↓ https://www.urmc.rochester.edu/childrens-hospita...tal-disabilities/resources/directory-search.aspx  | ✓ | ⏱: 2.48s 
+[SCRAPE].. ◆ https://www.urmc.rochester.edu/childrens-hospita...tal-disabilities/resources/directory-search.aspx  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.urmc.rochester.edu/childrens-hospita...tal-disabilities/resources/directory-search.aspx  | ✓ | ⏱: 2.55s 
+[FETCH]... ↓ https://www.tandfonline.com/doi/full/10.1080/10400435.2025.2499621?af=R                              | ✓ | ⏱: 4.21s 
+[SCRAPE].. ◆ https://www.tandfonline.com/doi/full/10.1080/10400435.2025.2499621?af=R                              | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.tandfonline.com/doi/full/10.1080/10400435.2025.2499621?af=R                              | ✓ | ⏱: 4.27s 
+[FETCH]... ↓ https://www.usa.gov/agencies/rehabilitation-services-administration                                  | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://www.usa.gov/agencies/rehabilitation-services-administration                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.usa.gov/agencies/rehabilitation-services-administration                                  | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://www.samhsa.gov/find-help/helplines/national-helpline                                         | ✓ | ⏱: 3.00s 
+[SCRAPE].. ◆ https://www.samhsa.gov/find-help/helplines/national-helpline                                         | ✓ | ⏱: 0.34s 
+[COMPLETE] ● https://www.samhsa.gov/find-help/helplines/national-helpline                                         | ✓ | ⏱: 3.35s 
+[FETCH]... ↓ https://www.seniorliving.org/assisted-living/non-profit/                                             | ✓ | ⏱: 5.73s 
+[SCRAPE].. ◆ https://www.seniorliving.org/assisted-living/non-profit/                                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.seniorliving.org/assisted-living/non-profit/                                             | ✓ | ⏱: 5.78s 
+[FETCH]... ↓ https://www.samhsa.gov/libraries/evidence-based-practices-resource-center                            | ✓ | ⏱: 3.56s 
+[SCRAPE].. ◆ https://www.samhsa.gov/libraries/evidence-based-practices-resource-center                            | ✓ | ⏱: 0.35s 
+[COMPLETE] ● https://www.samhsa.gov/libraries/evidence-based-practices-resource-center                            | ✓ | ⏱: 3.93s 
+[FETCH]... ↓ https://www.voa.org/services/affordable-housing/                                                     | ✓ | ⏱: 2.58s 
+[SCRAPE].. ◆ https://www.voa.org/services/affordable-housing/                                                     | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.voa.org/services/affordable-housing/                                                     | ✓ | ⏱: 2.65s 
+[FETCH]... ↓ https://www.specialneedsalliance.org/blog/government-programs-for-children-with-disabilities/        | ✓ | ⏱: 6.35s 
+[SCRAPE].. ◆ https://www.specialneedsalliance.org/blog/government-programs-for-children-with-disabilities/        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.specialneedsalliance.org/blog/government-programs-for-children-with-disabilities/        | ✓ | ⏱: 6.38s 
+[FETCH]... ↓ https://www.voa.org/services/special-needs-services/                                                 | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://www.voa.org/services/special-needs-services/                                                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.voa.org/services/special-needs-services/                                                 | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://www.usa.gov/disability-services                                                              | ✓ | ⏱: 0.53s 
+[SCRAPE].. ◆ https://www.usa.gov/disability-services                                                              | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.usa.gov/disability-services                                                              | ✓ | ⏱: 0.54s 
+⚠️  Crawl failed for https://findtreatment.gov/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://datadiscovery.nlm.nih.gov/api/views/9jbh-ypax/rows.csv?accessType=DOWNLOAD", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.canada.ca/en/financial-consumer-agency/services/living-disability.html: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://opendatabarometer.org/assets/data/primary_data_datasets.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.careeronestop.org/ResourcesFor/WorkersWithDisabilities/vocational-rehabilitation.aspx: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://transformingage.org/
+Call log:
+  - navigating to "https://transformingage.org/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.scrmemorycare.com/25-non-profit-organizations/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.censusofsurveys.com/data/basic_survey_data.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.disabilityresources.org/michigan.html: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ftb.ca.gov/file/business/types/charities-nonprofits/Revoked-list-combined.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://dbhdd.georgia.gov/dd-community-based-services: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.irs.gov/pub/irs-tege/december-2019-990-index.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://infohub.nyced.org/docs/default-source/de...cument-library/hospital-instruction-guidance.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://infohub.nyced.org/docs/default-source/default-document-library/hospital-instruction-guidance.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpngzv057p.pdf 
+[SCRAPE].. ◆ https://infohub.nyced.org/docs/default-source/de...cument-library/hospital-instruction-guidance.pdf  | ✓ | ⏱: 0.52s 
+[COMPLETE] ● https://infohub.nyced.org/docs/default-source/de...cument-library/hospital-instruction-guidance.pdf  | ✓ | ⏱: 0.52s 
+[FETCH]... ↓ https://www.cms.gov/Medicare/Medicare-Fee-for-Se...t/InpatientRehabFacPPS/downloads/fs1classreq.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/InpatientRehabFacPPS/downloads/fs1classreq.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpaokkh5vf.pdf 
+[SCRAPE].. ◆ https://www.cms.gov/Medicare/Medicare-Fee-for-Se...t/InpatientRehabFacPPS/downloads/fs1classreq.pdf  | ✓ | ⏱: 0.47s 
+[COMPLETE] ● https://www.cms.gov/Medicare/Medicare-Fee-for-Se...t/InpatientRehabFacPPS/downloads/fs1classreq.pdf  | ✓ | ⏱: 0.47s 
+[FETCH]... ↓ https://files.ontario.ca/seniors_guide_english_web_0.pdf                                             | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://files.ontario.ca/seniors_guide_english_web_0.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7i4gyg0u.pdf 
+[SCRAPE].. ◆ https://files.ontario.ca/seniors_guide_english_web_0.pdf                                             | ✓ | ⏱: 7.76s 
+[COMPLETE] ● https://files.ontario.ca/seniors_guide_english_web_0.pdf                                             | ✓ | ⏱: 7.76s 
+[FETCH]... ↓ https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpny14e4d6.pdf 
+[SCRAPE].. ◆ https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf                  | ✓ | ⏱: 25.18s 
+[COMPLETE] ● https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf                  | ✓ | ⏱: 25.18s 
+[FETCH]... ↓ https://rsa.ed.gov/sites/default/files/subregulatory/TAC-24-01.pdf                                   | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://rsa.ed.gov/sites/default/files/subregulatory/TAC-24-01.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp5x80h7vr.pdf 
+[SCRAPE].. ◆ https://rsa.ed.gov/sites/default/files/subregulatory/TAC-24-01.pdf                                   | ✓ | ⏱: 1.88s 
+[COMPLETE] ● https://rsa.ed.gov/sites/default/files/subregulatory/TAC-24-01.pdf                                   | ✓ | ⏱: 1.88s 
+[FETCH]... ↓ https://disability-hub.com/wp-content/uploads/20...eeds-of-One-Stop-Customers-with-Disabilities.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf... 
+[ERROR]... × https://disability-hub....s-with-Disabilities.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf, error: 
+Failed to download PDF from https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf: 406 Client Error: Not Acceptable for url: 
+https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf, error: Failed to download PDF from https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf: 406 Client Error: Not Acceptable for url: https://disability-hub.com/wp-content/uploads/2020/06/Access-for-All_A-Resource-Manual-for-Meeting-the-Needs-of-One-Stop-Customers-with-Disabilities.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://supportservices.jobcorps.gov/Program Instruction Notices/pi_12_18a.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://supportservices.jobcorps.gov/Program%20Instruction%20Notices/pi_12_18a.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmps445_8zb.pdf 
+[SCRAPE].. ◆ https://supportservices.jobcorps.gov/Program Instruction Notices/pi_12_18a.pdf                       | ✓ | ⏱: 4.28s 
+[COMPLETE] ● https://supportservices.jobcorps.gov/Program Instruction Notices/pi_12_18a.pdf                       | ✓ | ⏱: 4.28s 
+[FETCH]... ↓ https://www.ed.gov/sites/ed/files/about/offices/...funding-for-school-based-services-03-08-2024.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ed.gov/sites/ed/files/about/offices/list/osers/docs/medicaid-funding-for-school-based-services-03-08-2024.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfx4tv43b.pdf 
+[SCRAPE].. ◆ https://www.ed.gov/sites/ed/files/about/offices/...funding-for-school-based-services-03-08-2024.pdf  | ✓ | ⏱: 0.76s 
+[COMPLETE] ● https://www.ed.gov/sites/ed/files/about/offices/...funding-for-school-based-services-03-08-2024.pdf  | ✓ | ⏱: 0.76s 
+[FETCH]... ↓ https://www.councilofnonprofits.org/files/media/...2023/2023-nonprofit-workforce-survey-results.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf... 
+[ERROR]... × https://www.councilofno...orce-survey-results.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf, error: Failed to download PDF from 
+https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf: 403 Client Error: Forbidden for url: 
+https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf, error: Failed to download PDF from https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf: 403 Client Error: Forbidden for url: https://www.councilofnonprofits.org/files/media/documents/2023/2023-nonprofit-workforce-survey-results.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf... 
+[ERROR]... × https://nhsc.hrsa.gov/s...ite-reference-guide.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf, error: Failed to download PDF from 
+https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf: 403 Client Error: Forbidden for url: https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf, error: Failed to download PDF from https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf: 403 Client Error: Forbidden for url: https://nhsc.hrsa.gov/sites/default/files/nhsc/nhsc-sites/nhsc-site-reference-guide.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.unodc.org/docs/treatment/Guide_E.pdf                                                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.unodc.org/docs/treatment/Guide_E.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpux01745a.pdf 
+[SCRAPE].. ◆ https://www.unodc.org/docs/treatment/Guide_E.pdf                                                     | ✓ | ⏱: 13.00s 
+[COMPLETE] ● https://www.unodc.org/docs/treatment/Guide_E.pdf                                                     | ✓ | ⏱: 13.00s 
+[FETCH]... ↓ https://www.bop.gov/inmates/fsa/docs/2021_fsa_program_guide.pdf                                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.bop.gov/inmates/fsa/docs/2021_fsa_program_guide.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp7qtt8pzy.pdf 
+[SCRAPE].. ◆ https://www.bop.gov/inmates/fsa/docs/2021_fsa_program_guide.pdf                                      | ✓ | ⏱: 3.29s 
+[COMPLETE] ● https://www.bop.gov/inmates/fsa/docs/2021_fsa_program_guide.pdf                                      | ✓ | ⏱: 3.30s 
+[FETCH]... ↓ https://www.hca.wa.gov/assets/program/reentry-initiative-policy-and-operations-guide.pdf             | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.hca.wa.gov/assets/program/reentry-initiative-policy-and-operations-guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp5yixz53s.pdf 
+[SCRAPE].. ◆ https://www.hca.wa.gov/assets/program/reentry-initiative-policy-and-operations-guide.pdf             | ✓ | ⏱: 4.68s 
+[COMPLETE] ● https://www.hca.wa.gov/assets/program/reentry-initiative-policy-and-operations-guide.pdf             | ✓ | ⏱: 4.68s 
+[FETCH]... ↓ https://www.deadiversion.usdoj.gov/GDP/(DEA-DC-056)(EO-DEA169)_NTP_manual_Final.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.deadiversion.usdoj.gov/GDP/(DEA-DC-056)(EO-DEA169)_NTP_manual_Final.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp804euuzo.pdf 
+[SCRAPE].. ◆ https://www.deadiversion.usdoj.gov/GDP/(DEA-DC-056)(EO-DEA169)_NTP_manual_Final.pdf                  | ✓ | ⏱: 3.92s 
+[COMPLETE] ● https://www.deadiversion.usdoj.gov/GDP/(DEA-DC-056)(EO-DEA169)_NTP_manual_Final.pdf                  | ✓ | ⏱: 3.92s 
+[FETCH]... ↓ https://www.caloes.ca.gov/wp-content/uploads/Rec...-Center-Guide-for-Local-Government-July-2021.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.caloes.ca.gov/wp-content/uploads/Recovery/Documents/Local-Assistance-Center-Guide-for-Local-Government-July-2021.pdf... 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmph6zcwirs.pdf 
+[SCRAPE].. ◆ https://www.caloes.ca.gov/wp-content/uploads/Rec...-Center-Guide-for-Local-Government-July-2021.pdf  | ✓ | ⏱: 2.15s 
+[COMPLETE] ● https://www.caloes.ca.gov/wp-content/uploads/Rec...-Center-Guide-for-Local-Government-July-2021.pdf  | ✓ | ⏱: 2.15s 
+[FETCH]... ↓ https://www.nysed.gov/sites/default/files/progra...s/rfp-25-009-21st-cclc-data-reporting-system.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.nysed.gov/sites/default/files/programs/funding-opportunities-procurements/rfp-25-009-21st-cclc-data-reporting-system.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp71kzosmq.pdf 
+[SCRAPE].. ◆ https://www.nysed.gov/sites/default/files/progra...s/rfp-25-009-21st-cclc-data-reporting-system.pdf  | ✓ | ⏱: 3.24s 
+[COMPLETE] ● https://www.nysed.gov/sites/default/files/progra...s/rfp-25-009-21st-cclc-data-reporting-system.pdf  | ✓ | ⏱: 3.24s 
+[FETCH]... ↓ https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf... 
+[ERROR]... × https://crccertificatio.../CE-Provider-Manual.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf, error: Failed to download PDF from 
+https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf: 403 Client Error: Forbidden for url: https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf, error: Failed to download PDF from https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf: 403 Client Error: Forbidden for url: https://crccertification.com/wp-content/uploads/2021/10/CE-Provider-Manual.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://docs.oracle.com/en/industries/health/hea...le-health-quality-management-reference-guide.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://docs.oracle.com/en/industries/health/health-quality-management/hqmrg/oracle-health-quality-management-reference-guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp6b_lsqb6.pdf 
+[SCRAPE].. ◆ https://docs.oracle.com/en/industries/health/hea...le-health-quality-management-reference-guide.pdf  | ✓ | ⏱: 6.12s 
+[COMPLETE] ● https://docs.oracle.com/en/industries/health/hea...le-health-quality-management-reference-guide.pdf  | ✓ | ⏱: 6.13s 
+[FETCH]... ↓ https://www.pa.gov/content/dam/copapwp-pagov/en/...egulations-handbooks-guides-manuals/s_002302.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/docs/for-providers/documents/regulations-handbooks-guides-manuals/s_002302.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpwh6egkx6.pdf 
+[SCRAPE].. ◆ https://www.pa.gov/content/dam/copapwp-pagov/en/...egulations-handbooks-guides-manuals/s_002302.pdf  | ✓ | ⏱: 61.60s 
+[COMPLETE] ● https://www.pa.gov/content/dam/copapwp-pagov/en/...egulations-handbooks-guides-manuals/s_002302.pdf  | ✓ | ⏱: 61.60s 
+[FETCH]... ↓ https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf... 
+[ERROR]... × https://www.christopher...habilitation-3-24-A.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf, error: Failed to download PDF from 
+https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf: 403 Client Error: Forbidden for url: 
+https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf, error: Failed to download PDF from https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf: 403 Client Error: Forbidden for url: https://www.christopherreeve.org/wp-content/uploads/2025/01/Vocational-Rehabilitation-3-24-A.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.downstate.edu/education-training/sch...ial-needs-and-other-developmental-conditions.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from 
+https://www.downstate.edu/education-training/school-of-health-professions/brooklyn-lend/_documents/resource-guide-for-families-of-children-with-special-needs-and-other-developmental-conditions.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp1_aoe_mw.pdf 
+[SCRAPE].. ◆ https://www.downstate.edu/education-training/sch...ial-needs-and-other-developmental-conditions.pdf  | ✓ | ⏱: 0.71s 
+[COMPLETE] ● https://www.downstate.edu/education-training/sch...ial-needs-and-other-developmental-conditions.pdf  | ✓ | ⏱: 0.71s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 156 documents from 167 URLs
+   Data: {"source_documents": 167, "scraped_documents": 156}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 156 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 100/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 105/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 110/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 115/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 120/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 125/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 130/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 135/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 140/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 145/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 150/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 155/156 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 246 records from 156 documents
+   Data: {"extracted_count": 246, "source_documents": 156}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 246 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 246 -> 195
+   Data: {"input_rows": 246, "post_hard_rows": 195}
+======================================================================

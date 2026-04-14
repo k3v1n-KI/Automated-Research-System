@@ -34,9 +34,10 @@ class ResearchState(TypedDict):
     """Algorithm state - tracks progress through pipeline"""
     initial_prompt: str
     column_specs: List[str]
-    queries: List[str]
+    queries: List[Dict | str]
     search_results: List[Dict]
     validated_urls: List[str]
+    validated_results: List[Dict]
     scraped_content: List[Dict]
     extracted_items: List[Dict]
     final_dataset: List[Dict]
@@ -45,7 +46,7 @@ class ResearchState(TypedDict):
     error: Optional[str]
     previous_session_id: Optional[str]
     tweak_instructions: Optional[str]
-    previous_queries: List[str]
+    previous_queries: List[Dict | str]
     previous_items: List[Dict]
     columns: List[Dict]
     priority_columns: List[str]

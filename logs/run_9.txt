@@ -1,0 +1,1435 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: hthm5wAEe_vEn7kMAAAB
+
+======================================================================
+Starting Research Session
+   Client: hthm5wAEe_vEn7kMAAAB
+   Prompt: Find all places, programs, associations, or services in Ontario that have to do with catering or off...
+   Columns: ['Name', 'Address', 'Phone Number', 'City']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: e99f3793-b241-4345-b742-c481c952f476
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all places, programs, associations, or services in Ontario that have to do with catering or offering support to all sorts of disabilities in People....
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["Disability support services in Province-wide (Ontario)", "Accessible catering services in City: Toronto & GTA", "Supported employment programs in Northern Ontario region", "Community liv
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: Disability support services in Province-wide (Ontario)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: Accessible catering services in City: Toronto & GTA
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: Supported employment programs in Northern Ontario region
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: Community living agencies in Rural municipalities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: Assistive technology providers in Indigenous & First Nations communities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: Disability support services Accessibility accommodations (wheelchair, sensory) in Province-wide (Ontario)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: Accessible catering services Dietary requirements & allergy-safe menus in City: Toronto & GTA
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: Supported employment programs Eligibility (age, diagnosis, residency) in Northern Ontario region
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: Community living agencies Funding & subsidies (ODSP, grants, vouchers) in Rural municipalities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: Assistive technology providers Service hours, waitlist & emergency availability in Indigenous & First Nations communities
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: Disability support services in Province-wide (Ontario) Ontario government PDF (Ontario.ca)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: Accessible catering services in City: Toronto & GTA Agency directory CSV / online listings
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: Supported employment programs in Northern Ontario region Non-profit agency websites (HTML)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: Community living agencies in Rural municipalities Municipal accessibility pages & reports (PDF/HTML)
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: Assistive technology providers in Indigenous & First Nations communities Local health & community centre newsletters (PDF/HTML)
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 174 unique URLs across 15 queries
+   Data: {"total_urls": 174, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 174 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 174/174 URLs
+   Data: {"validated": 174, "original": 174}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 174 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://211ontario.ca/211-topics/disabilities/                                                       | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://211ontario.ca/211-topics/disabilities/                                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://211ontario.ca/211-topics/disabilities/                                                       | ✓ | ⏱: 0.93s 
+[FETCH]... ↓ http://www.officelocator.mcss.gov.on.ca/                                                             | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ http://www.officelocator.mcss.gov.on.ca/                                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● http://www.officelocator.mcss.gov.on.ca/                                                             | ✓ | ⏱: 0.95s 
+[FETCH]... ↓ http://www.northwesthealthline.ca/listServices.aspx?id=10707                                         | ✓ | ⏱: 1.00s 
+[SCRAPE].. ◆ http://www.northwesthealthline.ca/listServices.aspx?id=10707                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.northwesthealthline.ca/listServices.aspx?id=10707                                         | ✓ | ⏱: 1.03s 
+[FETCH]... ↓ https://180drinks.ca/catering-delivery/                                                              | ✓ | ⏱: 1.32s 
+[SCRAPE].. ◆ https://180drinks.ca/catering-delivery/                                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://180drinks.ca/catering-delivery/                                                              | ✓ | ⏱: 1.37s 
+[FETCH]... ↓ https://211north.ca/results/?searchLocation=Thun...808951&longitude=-89.24768230000001&topicPath=59  | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://211north.ca/results/?searchLocation=Thun...808951&longitude=-89.24768230000001&topicPath=59  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://211north.ca/results/?searchLocation=Thun...808951&longitude=-89.24768230000001&topicPath=59  | ✓ | ⏱: 1.64s 
+[FETCH]... ↓ https://acl.gov/                                                                                     | ✓ | ⏱: 1.82s 
+[SCRAPE].. ◆ https://acl.gov/                                                                                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://acl.gov/                                                                                     | ✓ | ⏱: 1.85s 
+[FETCH]... ↓ http://www.ontario.ca/document/ontario-disabilit...-directives-income-support/912-mandatory-special  | ✓ | ⏱: 1.87s 
+[SCRAPE].. ◆ http://www.ontario.ca/document/ontario-disabilit...-directives-income-support/912-mandatory-special  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● http://www.ontario.ca/document/ontario-disabilit...-directives-income-support/912-mandatory-special  | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://albertabusinessgrants.ca/small-business-grants-ontario/                                      | ✓ | ⏱: 0.74s 
+[SCRAPE].. ◆ https://albertabusinessgrants.ca/small-business-grants-ontario/                                      | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://albertabusinessgrants.ca/small-business-grants-ontario/                                      | ✓ | ⏱: 0.75s 
+[FETCH]... ↓ http://www.ontario.ca/page/special-services-home                                                     | ✓ | ⏱: 0.98s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/special-services-home                                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● http://www.ontario.ca/page/special-services-home                                                     | ✓ | ⏱: 1.03s 
+[FETCH]... ↓ http://www.ontario.ca/page/social-assistance                                                         | ✓ | ⏱: 1.04s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/social-assistance                                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/social-assistance                                                         | ✓ | ⏱: 1.07s 
+[FETCH]... ↓ http://www.ontario.ca/page/ontario-disability-support-program-eligibility-income-support             | ✓ | ⏱: 1.08s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/ontario-disability-support-program-eligibility-income-support             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.ontario.ca/page/ontario-disability-support-program-eligibility-income-support             | ✓ | ⏱: 1.11s 
+[FETCH]... ↓ http://www.ontario.ca/page/journey-belonging-choice-and-inclusion                                    | ✓ | ⏱: 1.30s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/journey-belonging-choice-and-inclusion                                    | ✓ | ⏱: 0.03s 
+[COMPLETE] ● http://www.ontario.ca/page/journey-belonging-choice-and-inclusion                                    | ✓ | ⏱: 1.34s 
+[FETCH]... ↓ http://www.ontario.ca/page/apply-emergency-assistance                                                | ✓ | ⏱: 1.34s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/apply-emergency-assistance                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/apply-emergency-assistance                                                | ✓ | ⏱: 1.36s 
+[FETCH]... ↓ http://www.ontario.ca/page/published-plans-and-annual-reports-2024-2025-ministry-health              | ✓ | ⏱: 1.53s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/published-plans-and-annual-reports-2024-2025-ministry-health              | ✓ | ⏱: 0.10s 
+[COMPLETE] ● http://www.ontario.ca/page/published-plans-and-annual-reports-2024-2025-ministry-health              | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://211ontario.ca/service/69818391/developme...for-individuals-with-a-developmental-disability/  | ✓ | ⏱: 0.60s 
+[SCRAPE].. ◆ https://211ontario.ca/service/69818391/developme...for-individuals-with-a-developmental-disability/  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/service/69818391/developme...for-individuals-with-a-developmental-disability/  | ✓ | ⏱: 0.60s 
+[FETCH]... ↓ https://211ontario.ca/service/71115571/ontario-m...ial-services-ontario-disability-support-program/  | ✓ | ⏱: 0.61s 
+[SCRAPE].. ◆ https://211ontario.ca/service/71115571/ontario-m...ial-services-ontario-disability-support-program/  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/service/71115571/ontario-m...ial-services-ontario-disability-support-program/  | ✓ | ⏱: 0.61s 
+[FETCH]... ↓ https://bigcitycatering.ca/                                                                          | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://bigcitycatering.ca/                                                                          | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://bigcitycatering.ca/                                                                          | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://acf.gov/ocs                                                                                  | ✓ | ⏱: 3.21s 
+[SCRAPE].. ◆ https://acf.gov/ocs                                                                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://acf.gov/ocs                                                                                  | ✓ | ⏱: 3.25s 
+[FETCH]... ↓ http://www.ontario.ca/page/creating-more-inclusi...nity-planning-guide-municipalities-and-community  | ✓ | ⏱: 2.03s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/creating-more-inclusi...nity-planning-guide-municipalities-and-community  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/creating-more-inclusi...nity-planning-guide-municipalities-and-community  | ✓ | ⏱: 2.06s 
+[FETCH]... ↓ http://www.ontario.ca/page/accessibility-ontarians-disabilities-act-annual-report-2024               | ✓ | ⏱: 2.06s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/accessibility-ontarians-disabilities-act-annual-report-2024               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● http://www.ontario.ca/page/accessibility-ontarians-disabilities-act-annual-report-2024               | ✓ | ⏱: 2.10s 
+[FETCH]... ↓ https://acl.gov/about-community-living                                                               | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://acl.gov/about-community-living                                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://acl.gov/about-community-living                                                               | ✓ | ⏱: 1.55s 
+[ERROR]... × Error updating image dimensions: Page.evaluate: Execution context was destroyed, most likely because of a navigation 
+[FETCH]... ↓ https://employnext.ca/                                                                               | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://employnext.ca/                                                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://employnext.ca/                                                                               | ✓ | ⏱: 0.93s 
+[FETCH]... ↓ https://211ontario.ca/results/?searchLocation=Gr...Path=18&latitude=46.4917317&longitude=-80.993029  | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?searchLocation=Gr...Path=18&latitude=46.4917317&longitude=-80.993029  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://211ontario.ca/results/?searchLocation=Gr...Path=18&latitude=46.4917317&longitude=-80.993029  | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://budget.ontario.ca/2020/chapter-1b.html                                                       | ✓ | ⏱: 1.81s 
+[SCRAPE].. ◆ https://budget.ontario.ca/2020/chapter-1b.html                                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://budget.ontario.ca/2020/chapter-1b.html                                                       | ✓ | ⏱: 1.84s 
+[FETCH]... ↓ https://communitylivingontario.ca/                                                                   | ✓ | ⏱: 1.75s 
+[SCRAPE].. ◆ https://communitylivingontario.ca/                                                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://communitylivingontario.ca/                                                                   | ✓ | ⏱: 1.79s 
+[FETCH]... ↓ https://connectability.ca/resource-directories/                                                      | ✓ | ⏱: 1.90s 
+[SCRAPE].. ◆ https://connectability.ca/resource-directories/                                                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://connectability.ca/resource-directories/                                                      | ✓ | ⏱: 1.92s 
+[FETCH]... ↓ https://211ontario.ca/results/?topicPath=64&latitude=44.5913&longitude=-75.681                       | ✓ | ⏱: 1.83s 
+[SCRAPE].. ◆ https://211ontario.ca/results/?topicPath=64&latitude=44.5913&longitude=-75.681                       | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://211ontario.ca/results/?topicPath=64&latitude=44.5913&longitude=-75.681                       | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://encorecatering.com/toronto-event-catering/                                                   | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://encorecatering.com/toronto-event-catering/                                                   | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://encorecatering.com/toronto-event-catering/                                                   | ✓ | ⏱: 1.56s 
+[FETCH]... ↓ https://agilec.ca/government-services/employment-ontario/                                            | ✓ | ⏱: 3.42s 
+[SCRAPE].. ◆ https://agilec.ca/government-services/employment-ontario/                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://agilec.ca/government-services/employment-ontario/                                            | ✓ | ⏱: 3.47s 
+[FETCH]... ↓ https://crazycatering.ca/contract-catering/                                                          | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://crazycatering.ca/contract-catering/                                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://crazycatering.ca/contract-catering/                                                          | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://bigcitycatering.ca/the-power-of-corporate-catering-toronto/                                  | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://bigcitycatering.ca/the-power-of-corporate-catering-toronto/                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://bigcitycatering.ca/the-power-of-corporate-catering-toronto/                                  | ✓ | ⏱: 1.20s 
+[FETCH]... ↓ https://dsq-sds.org/article/ojs_id/544/                                                              | ✓ | ⏱: 2.18s 
+[SCRAPE].. ◆ https://dsq-sds.org/article/ojs_id/544/                                                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://dsq-sds.org/article/ojs_id/544/                                                              | ✓ | ⏱: 2.20s 
+[FETCH]... ↓ https://gologistics.net/multi-year-accessibility-plan-policy/                                        | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://gologistics.net/multi-year-accessibility-plan-policy/                                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://gologistics.net/multi-year-accessibility-plan-policy/                                        | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://eoworks.ca/about-us/service-providers/                                                       | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://eoworks.ca/about-us/service-providers/                                                       | ✓ | ⏱: 0.18s 
+[COMPLETE] ● https://eoworks.ca/about-us/service-providers/                                                       | ✓ | ⏱: 1.82s 
+[ERROR]... × https://ero.ontario.ca/...omments.csv?_format=csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://ero.ontario.ca/notice/019-8205/comments/comments.csv?_format=csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://acl.gov/HousingAndServices/rural-housing-and-services                                        | ✓ | ⏱: 3.20s 
+[SCRAPE].. ◆ https://acl.gov/HousingAndServices/rural-housing-and-services                                        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://acl.gov/HousingAndServices/rural-housing-and-services                                        | ✓ | ⏱: 3.22s 
+[FETCH]... ↓ https://gyrocity.ca/catering/same-day-catering-toronto                                               | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://gyrocity.ca/catering/same-day-catering-toronto                                               | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://gyrocity.ca/catering/same-day-catering-toronto                                               | ✓ | ⏱: 1.10s 
+[FETCH]... ↓ https://gtacaterer.ca/                                                                               | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://gtacaterer.ca/                                                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://gtacaterer.ca/                                                                               | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/                     | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/                     | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://hongshing.com/catering                                                                       | ✓ | ⏱: 1.09s 
+[SCRAPE].. ◆ https://hongshing.com/catering                                                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://hongshing.com/catering                                                                       | ✓ | ⏱: 1.11s 
+[FETCH]... ↓ https://fednor.canada.ca/en/federal-economic-development-agency-northern-ontario                     | ✓ | ⏱: 2.35s 
+[SCRAPE].. ◆ https://fednor.canada.ca/en/federal-economic-development-agency-northern-ontario                     | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://fednor.canada.ca/en/federal-economic-development-agency-northern-ontario                     | ✓ | ⏱: 2.41s 
+[FETCH]... ↓ https://honeybeemeals.com/                                                                           | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://honeybeemeals.com/                                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://honeybeemeals.com/                                                                           | ✓ | ⏱: 1.40s 
+[FETCH]... ↓ https://olt.gov.on.ca/wp-content/uploads/Accessibility-Plan.html                                     | ✓ | ⏱: 1.02s 
+[SCRAPE].. ◆ https://olt.gov.on.ca/wp-content/uploads/Accessibility-Plan.html                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://olt.gov.on.ca/wp-content/uploads/Accessibility-Plan.html                                     | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://housing-infrastructure.canada.ca/accessi...rapports-etape/2024-prog-rep-rapp-etape-eng.html  | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://housing-infrastructure.canada.ca/accessi...rapports-etape/2024-prog-rep-rapp-etape-eng.html  | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://housing-infrastructure.canada.ca/accessi...rapports-etape/2024-prog-rep-rapp-etape-eng.html  | ✓ | ⏱: 1.69s 
+[FETCH]... ↓ https://brightfuturesplan.com/odsp/                                                                  | ✓ | ⏱: 4.40s 
+[SCRAPE].. ◆ https://brightfuturesplan.com/odsp/                                                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://brightfuturesplan.com/odsp/                                                                  | ✓ | ⏱: 4.42s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/integr...services/questions-and-answers/program-overview/  | ✓ | ⏱: 3.36s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/integr...services/questions-and-answers/program-overview/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/integr...services/questions-and-answers/program-overview/  | ✓ | ⏱: 3.41s 
+[FETCH]... ↓ https://marchofdimes.ca/en-ca/programs/ddlsp/warehouse                                               | ✓ | ⏱: 1.68s 
+[SCRAPE].. ◆ https://marchofdimes.ca/en-ca/programs/ddlsp/warehouse                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://marchofdimes.ca/en-ca/programs/ddlsp/warehouse                                               | ✓ | ⏱: 1.72s 
+[FETCH]... ↓ https://hungerhub.com/city/toronto                                                                   | ✓ | ⏱: 1.87s 
+[SCRAPE].. ◆ https://hungerhub.com/city/toronto                                                                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://hungerhub.com/city/toronto                                                                   | ✓ | ⏱: 1.91s 
+[FETCH]... ↓ https://github.com/neurosynth/neurosynth-data/bl.../data-neurosynth_version-7_vocab-LDA400_keys.tsv  | ✓ | ⏱: 3.14s 
+[SCRAPE].. ◆ https://github.com/neurosynth/neurosynth-data/bl.../data-neurosynth_version-7_vocab-LDA400_keys.tsv  | ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://github.com/neurosynth/neurosynth-data/bl.../data-neurosynth_version-7_vocab-LDA400_keys.tsv  | ✓ | ⏱: 3.35s 
+[FETCH]... ↓ https://ontariohealthathome.ca/aoda/                                                                 | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://ontariohealthathome.ca/aoda/                                                                 | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://ontariohealthathome.ca/aoda/                                                                 | ✓ | ⏱: 1.98s 
+[FETCH]... ↓ https://hungerhub.com/city/toronto/healthy                                                           | ✓ | ⏱: 1.46s 
+[SCRAPE].. ◆ https://hungerhub.com/city/toronto/healthy                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://hungerhub.com/city/toronto/healthy                                                           | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://pubmed.ncbi.nlm.nih.gov/28729237/?dopt=Abstract                                              | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://pubmed.ncbi.nlm.nih.gov/28729237/?dopt=Abstract                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://pubmed.ncbi.nlm.nih.gov/28729237/?dopt=Abstract                                              | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://services.easterseals.org/family-information-resources/disability-support-organizations/      | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://services.easterseals.org/family-information-resources/disability-support-organizations/      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://services.easterseals.org/family-information-resources/disability-support-organizations/      | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://eopg.labour.gov.on.ca/en/programs/supported-employment/                                      | ✓ | ⏱: 1.72s 
+[SCRAPE].. ◆ https://eopg.labour.gov.on.ca/en/programs/supported-employment/                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://eopg.labour.gov.on.ca/en/programs/supported-employment/                                      | ✓ | ⏱: 1.75s 
+[ERROR]... × https://treecanada.ca/w...m9ybS0yLWFsbC1zdWJz.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://treecanada.ca/wp-content/uploads/ninja-forms-tmp/1738616622Zm9ybS0yLWFsbC1zdWJz.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://gezhtoojig.ca/                                                                               | ✓ | ⏱: 4.14s 
+[SCRAPE].. ◆ https://gezhtoojig.ca/                                                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://gezhtoojig.ca/                                                                               | ✓ | ⏱: 4.17s 
+[FETCH]... ↓ https://fednor.canada.ca/en/our-programs                                                             | ✓ | ⏱: 1.61s 
+[SCRAPE].. ◆ https://fednor.canada.ca/en/our-programs                                                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://fednor.canada.ca/en/our-programs                                                             | ✓ | ⏱: 1.66s 
+[FETCH]... ↓ https://nohfc.ca/ontario-investing-over-15-6-mil...ers-in-northeastern-ontario-start-their-careers/  | ✓ | ⏱: 2.91s 
+[SCRAPE].. ◆ https://nohfc.ca/ontario-investing-over-15-6-mil...ers-in-northeastern-ontario-start-their-careers/  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://nohfc.ca/ontario-investing-over-15-6-mil...ers-in-northeastern-ontario-start-their-careers/  | ✓ | ⏱: 2.92s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC10164231/                                                   | ✓ | ⏱: 2.29s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC10164231/                                                   | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC10164231/                                                   | ✓ | ⏱: 2.37s 
+[FETCH]... ↓ https://ontariobusinessgrants.com/purpose-of-funding/employment-grants/                              | ✓ | ⏱: 2.80s 
+[SCRAPE].. ◆ https://ontariobusinessgrants.com/purpose-of-funding/employment-grants/                              | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://ontariobusinessgrants.com/purpose-of-funding/employment-grants/                              | ✓ | ⏱: 2.94s 
+[FETCH]... ↓ https://settlement.org/ontario/health/disability/disability-services-and-supports/                   | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://settlement.org/ontario/health/disability/disability-services-and-supports/                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://settlement.org/ontario/health/disability/disability-services-and-supports/                   | ✓ | ⏱: 1.53s 
+[FETCH]... ↓ https://specialneedsplanning.ca/provincial-disability-support-programs-comparison/                   | ✓ | ⏱: 1.52s 
+[SCRAPE].. ◆ https://specialneedsplanning.ca/provincial-disability-support-programs-comparison/                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://specialneedsplanning.ca/provincial-disability-support-programs-comparison/                   | ✓ | ⏱: 1.54s 
+[FETCH]... ↓ https://peelregion.ca/about/peel-region-2024-accessibility-status-report                             | ✓ | ⏱: 2.89s 
+[SCRAPE].. ◆ https://peelregion.ca/about/peel-region-2024-accessibility-status-report                             | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://peelregion.ca/about/peel-region-2024-accessibility-status-report                             | ✓ | ⏱: 2.94s 
+[FETCH]... ↓ https://services.easterseals.org/family-informat...ources/ontario-government-programs-and-services/  | ✓ | ⏱: 0.65s 
+[SCRAPE].. ◆ https://services.easterseals.org/family-informat...ources/ontario-government-programs-and-services/  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://services.easterseals.org/family-informat...ources/ontario-government-programs-and-services/  | ✓ | ⏱: 0.67s 
+[FETCH]... ↓ https://torontoseo.ai/                                                                               | ✓ | ⏱: 1.16s 
+[SCRAPE].. ◆ https://torontoseo.ai/                                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://torontoseo.ai/                                                                               | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://www.berettakitchen.com/catering                                                              | ✓ | ⏱: 0.89s 
+[SCRAPE].. ◆ https://www.berettakitchen.com/catering                                                              | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.berettakitchen.com/catering                                                              | ✓ | ⏱: 1.00s 
+[ERROR]... × https://torontoserviced...7106&longitude=-79.4565  | Error: Unexpected error in _crawl_web at line 559 in wrap_api_call 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC9980157/                                                    | ✓ | ⏱: 0.92s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC9980157/                                                    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC9980157/                                                    | ✓ | ⏱: 1.00s 
+[FETCH]... ↓ https://www.cityofkingston.ca/community-supports/municipal-fee-assistance-program/                   | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.cityofkingston.ca/community-supports/municipal-fee-assistance-program/                   | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.cityofkingston.ca/community-supports/municipal-fee-assistance-program/                   | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC9425719/                                                    | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC9425719/                                                    | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC9425719/                                                    | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC5544891/                                                    | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC5544891/                                                    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC5544891/                                                    | ✓ | ⏱: 1.25s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC4232317/                                                    | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC4232317/                                                    | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC4232317/                                                    | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC12558463/                                                   | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC12558463/                                                   | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC12558463/                                                   | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ https://www.dsontario.ca/funded-services                                                             | ✓ | ⏱: 1.27s 
+[SCRAPE].. ◆ https://www.dsontario.ca/funded-services                                                             | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.dsontario.ca/funded-services                                                             | ✓ | ⏱: 1.33s 
+[FETCH]... ↓ https://www.canada.ca/en/employment-social-devel...vincial-territorial/core-community-supports.html  | ✓ | ⏱: 2.14s 
+[SCRAPE].. ◆ https://www.canada.ca/en/employment-social-devel...vincial-territorial/core-community-supports.html  | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.canada.ca/en/employment-social-devel...vincial-territorial/core-community-supports.html  | ✓ | ⏱: 2.28s 
+[FETCH]... ↓ https://www.clmiss.ca/                                                                               | ✓ | ⏱: 2.35s 
+[SCRAPE].. ◆ https://www.clmiss.ca/                                                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.clmiss.ca/                                                                               | ✓ | ⏱: 2.40s 
+[FETCH]... ↓ https://www.congress.gov/crs-product/R48462                                                          | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://www.congress.gov/crs-product/R48462                                                          | ✓ | ⏱: 0.22s 
+[COMPLETE] ● https://www.congress.gov/crs-product/R48462                                                          | ✓ | ⏱: 2.38s 
+[FETCH]... ↓ https://www.dfontario.ca/                                                                            | ✓ | ⏱: 1.95s 
+[SCRAPE].. ◆ https://www.dfontario.ca/                                                                            | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.dfontario.ca/                                                                            | ✓ | ⏱: 1.97s 
+[FETCH]... ↓ https://www.destinationontario.com/en-ca/article...lusive-and-accessible-family-experiences-ontario  | ✓ | ⏱: 2.12s 
+[SCRAPE].. ◆ https://www.destinationontario.com/en-ca/article...lusive-and-accessible-family-experiences-ontario  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.destinationontario.com/en-ca/article...lusive-and-accessible-family-experiences-ontario  | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://www.communitylivingbc.ca/resources/aging.../communication-alternative-assistive-technology/  | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://www.communitylivingbc.ca/resources/aging.../communication-alternative-assistive-technology/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.communitylivingbc.ca/resources/aging.../communication-alternative-assistive-technology/  | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://www.danieletdaniel.ca/                                                                       | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://www.danieletdaniel.ca/                                                                       | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.danieletdaniel.ca/                                                                       | ✓ | ⏱: 2.55s 
+[FETCH]... ↓ https://www.eventsource.ca/caterers                                                                  | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://www.eventsource.ca/caterers                                                                  | ✓ | ⏱: 0.31s 
+[COMPLETE] ● https://www.eventsource.ca/caterers                                                                  | ✓ | ⏱: 2.00s 
+[FETCH]... ↓ https://www.eventective.com/toronto-on/caterers/                                                     | ✓ | ⏱: 2.35s 
+[SCRAPE].. ◆ https://www.eventective.com/toronto-on/caterers/                                                     | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://www.eventective.com/toronto-on/caterers/                                                     | ✓ | ⏱: 2.47s 
+[FETCH]... ↓ https://www.hamilton.ca/people-programs/financia...pports/support-programs/special-supports-program  | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.hamilton.ca/people-programs/financia...pports/support-programs/special-supports-program  | ✓ | ⏱: 0.49s 
+[COMPLETE] ● https://www.hamilton.ca/people-programs/financia...pports/support-programs/special-supports-program  | ✓ | ⏱: 1.90s 
+[FETCH]... ↓ https://www.bia.gov/bia/ots/ict                                                                      | ✓ | ⏱: 4.81s 
+[SCRAPE].. ◆ https://www.bia.gov/bia/ots/ict                                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.bia.gov/bia/ots/ict                                                                      | ✓ | ⏱: 4.85s 
+[FETCH]... ↓ https://www.elwoodcatering.ca/toronto/                                                               | ✓ | ⏱: 3.32s 
+[SCRAPE].. ◆ https://www.elwoodcatering.ca/toronto/                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.elwoodcatering.ca/toronto/                                                               | ✓ | ⏱: 3.34s 
+[FETCH]... ↓ https://www.croakey.org/new-resource-supports-fi...to-stay-strong-and-connected-as-they-grow-older/  | ✓ | ⏱: 4.52s 
+[SCRAPE].. ◆ https://www.croakey.org/new-resource-supports-fi...to-stay-strong-and-connected-as-they-grow-older/  | ✓ | ⏱: 0.44s 
+[COMPLETE] ● https://www.croakey.org/new-resource-supports-fi...to-stay-strong-and-connected-as-they-grow-older/  | ✓ | ⏱: 4.97s 
+[FETCH]... ↓ https://www.facebook.com/OntarioSocialServices/p...rough-local-employment-support/1223142266659408/  | ✓ | ⏱: 3.32s 
+[SCRAPE].. ◆ https://www.facebook.com/OntarioSocialServices/p...rough-local-employment-support/1223142266659408/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/OntarioSocialServices/p...rough-local-employment-support/1223142266659408/  | ✓ | ⏱: 3.35s 
+[FETCH]... ↓ https://www.eventsource.ca/caterers/full-service-caterers                                            | ✓ | ⏱: 2.45s 
+[SCRAPE].. ◆ https://www.eventsource.ca/caterers/full-service-caterers                                            | ✓ | ⏱: 0.24s 
+[COMPLETE] ● https://www.eventsource.ca/caterers/full-service-caterers                                            | ✓ | ⏱: 2.71s 
+[FETCH]... ↓ https://www.framegroup.com.au/strengthening-ict-for-indigenous-community-elders-services/            | ✓ | ⏱: 3.47s 
+[SCRAPE].. ◆ https://www.framegroup.com.au/strengthening-ict-for-indigenous-community-elders-services/            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.framegroup.com.au/strengthening-ict-for-indigenous-community-elders-services/            | ✓ | ⏱: 3.52s 
+[FETCH]... ↓ https://www.huroncounty.ca/social-services/housing-and-homelessness/                                 | ✓ | ⏱: 2.96s 
+[SCRAPE].. ◆ https://www.huroncounty.ca/social-services/housing-and-homelessness/                                 | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.huroncounty.ca/social-services/housing-and-homelessness/                                 | ✓ | ⏱: 3.06s 
+[FETCH]... ↓ https://www.eventsource.ca/venues/social-venues/social-venues-that-allow-outside-catering?page=4     | ✓ | ⏱: 3.13s 
+[SCRAPE].. ◆ https://www.eventsource.ca/venues/social-venues/social-venues-that-allow-outside-catering?page=4     | ✓ | ⏱: 0.26s 
+[COMPLETE] ● https://www.eventsource.ca/venues/social-venues/social-venues-that-allow-outside-catering?page=4     | ✓ | ⏱: 3.41s 
+[FETCH]... ↓ https://www.greekandco.com/corporate-catering-toronto                                                | ✓ | ⏱: 3.72s 
+[SCRAPE].. ◆ https://www.greekandco.com/corporate-catering-toronto                                                | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.greekandco.com/corporate-catering-toronto                                                | ✓ | ⏱: 3.81s 
+[FETCH]... ↓ https://www.datacaptive.com/canada-email-lists/toronto-business-email-list/                          | ✓ | ⏱: 5.94s 
+[TABLE_EXTRACT] ℹ Error extracting table data: invalid literal for int() with base 10: '' 
+[SCRAPE].. ◆ https://www.datacaptive.com/canada-email-lists/toronto-business-email-list/                          | ✓ | ⏱: 0.51s 
+[COMPLETE] ● https://www.datacaptive.com/canada-email-lists/toronto-business-email-list/                          | ✓ | ⏱: 6.48s 
+[FETCH]... ↓ https://www.easterseals.com/                                                                         | ✓ | ⏱: 5.84s 
+[SCRAPE].. ◆ https://www.easterseals.com/                                                                         | ✓ | ⏱: 0.32s 
+[COMPLETE] ● https://www.easterseals.com/                                                                         | ✓ | ⏱: 6.27s 
+[FETCH]... ↓ https://woodview.ca/aoda-plan/                                                                       | ✓ | ⏱: 8.24s 
+[SCRAPE].. ◆ https://woodview.ca/aoda-plan/                                                                       | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://woodview.ca/aoda-plan/                                                                       | ✓ | ⏱: 8.34s 
+[FETCH]... ↓ https://www.makersmakingchange.com/                                                                  | ✓ | ⏱: 3.42s 
+[SCRAPE].. ◆ https://www.makersmakingchange.com/                                                                  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.makersmakingchange.com/                                                                  | ✓ | ⏱: 3.43s 
+[FETCH]... ↓ https://www.jvstoronto.org/find-a-job/disability-employment-services/                                | ✓ | ⏱: 4.43s 
+[SCRAPE].. ◆ https://www.jvstoronto.org/find-a-job/disability-employment-services/                                | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://www.jvstoronto.org/find-a-job/disability-employment-services/                                | ✓ | ⏱: 4.57s 
+[FETCH]... ↓ https://www.jmir.org/2017/7/e256/                                                                    | ✓ | ⏱: 5.17s 
+[SCRAPE].. ◆ https://www.jmir.org/2017/7/e256/                                                                    | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.jmir.org/2017/7/e256/                                                                    | ✓ | ⏱: 5.33s 
+[ERROR]... × https://www.ola.org/sit...nsard-201807-201812.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ola.org/sites/default/files/data-resources/structured-hansard/Hansard-201807-201812.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.mdpi.com/1660-4601/19/23/16061                                                           | ✓ | ⏱: 3.70s 
+[SCRAPE].. ◆ https://www.mdpi.com/1660-4601/19/23/16061                                                           | ✓ | ⏱: 0.24s 
+[COMPLETE] ● https://www.mdpi.com/1660-4601/19/23/16061                                                           | ✓ | ⏱: 3.95s 
+[FETCH]... ↓ https://www.neilsquire.ca/                                                                           | ✓ | ⏱: 3.41s 
+[SCRAPE].. ◆ https://www.neilsquire.ca/                                                                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.neilsquire.ca/                                                                           | ✓ | ⏱: 3.44s 
+[FETCH]... ↓ https://www.odenetwork.com/                                                                          | ✓ | ⏱: 2.85s 
+[SCRAPE].. ◆ https://www.odenetwork.com/                                                                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.odenetwork.com/                                                                          | ✓ | ⏱: 2.87s 
+[FETCH]... ↓ https://www.healthforceontario.ca/en/Home/All_Programs/PSW_Initiatives                               | ✓ | ⏱: 6.19s 
+[SCRAPE].. ◆ https://www.healthforceontario.ca/en/Home/All_Programs/PSW_Initiatives                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.healthforceontario.ca/en/Home/All_Programs/PSW_Initiatives                               | ✓ | ⏱: 6.22s 
+[FETCH]... ↓ https://www.facebook.com/detroitcrimedaily/posts...fake-id-and-credit-card-scheme/1973968523447338/  | ✓ | ⏱: 3.62s 
+[SCRAPE].. ◆ https://www.facebook.com/detroitcrimedaily/posts...fake-id-and-credit-card-scheme/1973968523447338/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.facebook.com/detroitcrimedaily/posts...fake-id-and-credit-card-scheme/1973968523447338/  | ✓ | ⏱: 3.66s 
+[FETCH]... ↓ https://www.kissthecookcatering.com/                                                                 | ✓ | ⏱: 4.98s 
+[SCRAPE].. ◆ https://www.kissthecookcatering.com/                                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.kissthecookcatering.com/                                                                 | ✓ | ⏱: 5.03s 
+[FETCH]... ↓ https://www.municipalworld.com/feature-story/new-life-community-facilities/                          | ✓ | ⏱: 4.25s 
+[SCRAPE].. ◆ https://www.municipalworld.com/feature-story/new-life-community-facilities/                          | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.municipalworld.com/feature-story/new-life-community-facilities/                          | ✓ | ⏱: 4.30s 
+[FETCH]... ↓ https://www.northerncollege.ca/employment-services/                                                  | ✓ | ⏱: 3.21s 
+[SCRAPE].. ◆ https://www.northerncollege.ca/employment-services/                                                  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.northerncollege.ca/employment-services/                                                  | ✓ | ⏱: 3.26s 
+[FETCH]... ↓ https://www.ontariopresents.ca/resource/ontario-accessibility-standards                              | ✓ | ⏱: 1.10s 
+[SCRAPE].. ◆ https://www.ontariopresents.ca/resource/ontario-accessibility-standards                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontariopresents.ca/resource/ontario-accessibility-standards                              | ✓ | ⏱: 1.12s 
+[FETCH]... ↓ https://www.ontario.ca/indigenous-programs-and-s...genous-programs-and-services-keyword-search.html  | ✓ | ⏱: 2.88s 
+[SCRAPE].. ◆ https://www.ontario.ca/indigenous-programs-and-s...genous-programs-and-services-keyword-search.html  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ontario.ca/indigenous-programs-and-s...genous-programs-and-services-keyword-search.html  | ✓ | ⏱: 2.89s 
+[FETCH]... ↓ https://www.otm.ca/corporate                                                                         | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://www.otm.ca/corporate                                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.otm.ca/corporate                                                                         | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://www.reddit.com/r/askTO/comments/1gs6d1y/office_lunch_catering_ideas_in_downtown_core/        | ✓ | ⏱: 0.72s 
+[SCRAPE].. ◆ https://www.reddit.com/r/askTO/comments/1gs6d1y/office_lunch_catering_ideas_in_downtown_core/        | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.reddit.com/r/askTO/comments/1gs6d1y/office_lunch_catering_ideas_in_downtown_core/        | ✓ | ⏱: 0.73s 
+[FETCH]... ↓ https://www.pace-il.ca/links                                                                         | ✓ | ⏱: 1.42s 
+[SCRAPE].. ◆ https://www.pace-il.ca/links                                                                         | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.pace-il.ca/links                                                                         | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://www.rdspcanada.ca/disability-benefits-programs-ontario                                       | ✓ | ⏱: 1.02s 
+[SCRAPE].. ◆ https://www.rdspcanada.ca/disability-benefits-programs-ontario                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.rdspcanada.ca/disability-benefits-programs-ontario                                       | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://www.nicoa.org/programs/technical-assistance-and-resource-center/disabilities/                | ✓ | ⏱: 4.47s 
+[SCRAPE].. ◆ https://www.nicoa.org/programs/technical-assistance-and-resource-center/disabilities/                | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.nicoa.org/programs/technical-assistance-and-resource-center/disabilities/                | ✓ | ⏱: 4.53s 
+[FETCH]... ↓ https://www.ndisreview.gov.au/resources/fact-sheet/first-nations-communities                         | ✓ | ⏱: 4.88s 
+[SCRAPE].. ◆ https://www.ndisreview.gov.au/resources/fact-sheet/first-nations-communities                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ndisreview.gov.au/resources/fact-sheet/first-nations-communities                         | ✓ | ⏱: 4.90s 
+[FETCH]... ↓ https://www.ruralhealthinfo.org/funding/91                                                           | ✓ | ⏱: 1.56s 
+[SCRAPE].. ◆ https://www.ruralhealthinfo.org/funding/91                                                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ruralhealthinfo.org/funding/91                                                           | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://www.ontario.ca/page/ontario-disability-support-program                                       | ✓ | ⏱: 2.24s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/ontario-disability-support-program                                       | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ontario.ca/page/ontario-disability-support-program                                       | ✓ | ⏱: 2.29s 
+[FETCH]... ↓ https://www.ontario.ca/page/people-disabilities                                                      | ✓ | ⏱: 2.30s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/people-disabilities                                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ontario.ca/page/people-disabilities                                                      | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://www.ontario.ca/page/accessibility-in-ontario                                                 | ✓ | ⏱: 2.41s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/accessibility-in-ontario                                                 | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.ontario.ca/page/accessibility-in-ontario                                                 | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.ontario.ca/page/employment-ontario                                                       | ✓ | ⏱: 2.46s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/employment-ontario                                                       | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/employment-ontario                                                       | ✓ | ⏱: 2.50s 
+[FETCH]... ↓ https://www.rd.usda.gov/programs-services/community-facilities                                       | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://www.rd.usda.gov/programs-services/community-facilities                                       | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.rd.usda.gov/programs-services/community-facilities                                       | ✓ | ⏱: 2.62s 
+[FETCH]... ↓ https://www.tetratech.com/about/indigenous-peoples/                                                  | ✓ | ⏱: 1.67s 
+[SCRAPE].. ◆ https://www.tetratech.com/about/indigenous-peoples/                                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.tetratech.com/about/indigenous-peoples/                                                  | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.sac-isc.gc.ca/eng/1100100033627/1533125289674                                            | ✓ | ⏱: 2.44s 
+[SCRAPE].. ◆ https://www.sac-isc.gc.ca/eng/1100100033627/1533125289674                                            | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.sac-isc.gc.ca/eng/1100100033627/1533125289674                                            | ✓ | ⏱: 2.47s 
+[FETCH]... ↓ https://www.sciencedirect.com/science/article/pii/S0277953622002040                                  | ✓ | ⏱: 2.26s 
+[SCRAPE].. ◆ https://www.sciencedirect.com/science/article/pii/S0277953622002040                                  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.sciencedirect.com/science/article/pii/S0277953622002040                                  | ✓ | ⏱: 2.29s 
+[FETCH]... ↓ https://www.yelp.ca/search?cflt=catering&find_loc=Toronto,+ON                                        | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://www.yelp.ca/search?cflt=catering&find_loc=Toronto,+ON                                        | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.ca/search?cflt=catering&find_loc=Toronto,+ON                                        | ✓ | ⏱: 1.18s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/displayservice.aspx?id=171987                                | ✓ | ⏱: 1.57s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/displayservice.aspx?id=171987                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/displayservice.aspx?id=171987                                | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://www.usa.gov/agencies/administration-for-community-living                                     | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ https://www.usa.gov/agencies/administration-for-community-living                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.usa.gov/agencies/administration-for-community-living                                     | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ https://www.ruralhealthinfo.org/topics/community-living/organizations                                | ✓ | ⏱: 0.91s 
+[SCRAPE].. ◆ https://www.ruralhealthinfo.org/topics/community-living/organizations                                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ruralhealthinfo.org/topics/community-living/organizations                                | ✓ | ⏱: 0.94s 
+[FETCH]... ↓ https://www.ruralhealthinfo.org/topics/community-living                                              | ✓ | ⏱: 0.95s 
+[SCRAPE].. ◆ https://www.ruralhealthinfo.org/topics/community-living                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ruralhealthinfo.org/topics/community-living                                              | ✓ | ⏱: 1.00s 
+[FETCH]... ↓ https://www.sac-isc.gc.ca/eng/1669992796447/1669992819201                                            | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://www.sac-isc.gc.ca/eng/1669992796447/1669992819201                                            | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.sac-isc.gc.ca/eng/1669992796447/1669992819201                                            | ✓ | ⏱: 1.74s 
+[FETCH]... ↓ https://www.sac-isc.gc.ca/eng/1565786653117/1565786690869                                            | ✓ | ⏱: 1.76s 
+[SCRAPE].. ◆ https://www.sac-isc.gc.ca/eng/1565786653117/1565786690869                                            | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.sac-isc.gc.ca/eng/1565786653117/1565786690869                                            | ✓ | ⏱: 1.90s 
+[FETCH]... ↓ https://www.sciencedirect.com/science/article/pii/S1936657425000743                                  | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://www.sciencedirect.com/science/article/pii/S1936657425000743                                  | ✓ | ⏱: 0.12s 
+[COMPLETE] ● https://www.sciencedirect.com/science/article/pii/S1936657425000743                                  | ✓ | ⏱: 1.27s 
+[FETCH]... ↓ https://www.thearcontario.org/career-services                                                        | ✓ | ⏱: 3.05s 
+[SCRAPE].. ◆ https://www.thearcontario.org/career-services                                                        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.thearcontario.org/career-services                                                        | ✓ | ⏱: 3.08s 
+[FETCH]... ↓ https://zottmann.org/archive/                                                                        | ✓ | ⏱: 2.07s 
+[SCRAPE].. ◆ https://zottmann.org/archive/                                                                        | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://zottmann.org/archive/                                                                        | ✓ | ⏱: 2.20s 
+[FETCH]... ↓ https://www.sciencedirect.com/science/article/pii/S2666558123000532                                  | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://www.sciencedirect.com/science/article/pii/S2666558123000532                                  | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://www.sciencedirect.com/science/article/pii/S2666558123000532                                  | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://supportpoint.au/ndis-services-for-first-nations-people/                                      | ✓ | ⏱: 14.33s 
+[SCRAPE].. ◆ https://supportpoint.au/ndis-services-for-first-nations-people/                                      | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://supportpoint.au/ndis-services-for-first-nations-people/                                      | ✓ | ⏱: 14.39s 
+[FETCH]... ↓ https://www.ymcaneo.ca/employment-programs/                                                          | ✓ | ⏱: 2.83s 
+[SCRAPE].. ◆ https://www.ymcaneo.ca/employment-programs/                                                          | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ymcaneo.ca/employment-programs/                                                          | ✓ | ⏱: 2.85s 
+[ERROR]... × https://www.cocucatering.com/                      | Error: Unexpected error in _crawl_web at line 718 in _crawl_web 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.cocucatering.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+⚠️  Crawl failed for https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=18&latitude=46.4917317&longitude=-80.993029: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://ero.ontario.ca/notice/019-8205/comments/comments.csv?_format=csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://acl.gov/about-community-living: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://treecanada.ca/wp-content/uploads/ninja-forms-tmp/1738616622Zm9ybS0yLWFsbC1zdWJz.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.bia.gov/bia/ots/ict: Unexpected error in _crawl_web at line 559 in wrap_api_call (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/playwright/_impl/_connection.py):
+Error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+Code context:
+ 554           parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+ 555           self._api_zone.set(parsed_st)
+ 556           try:
+ 557               return await cb()
+ 558           except Exception as error:
+ 559 →             raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+ 560           finally:
+ 561               self._api_zone.set(None)
+ 562   
+ 563       def wrap_api_call_sync(
+ 564           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+⚠️  Crawl failed for http://www.ontario.ca/page/social-assistance: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://www.ola.org/sites/default/files/data-resources/structured-hansard/Hansard-201807-201812.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.mdpi.com/1660-4601/19/23/16061: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.cocucatering.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://acf.gov/sites/default/files/documents/opre/housing_supports_special_topic_brief_jan2023.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://acf.gov/sites/default/files/documents/opre/housing_supports_special_topic_brief_jan2023.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmptfpl_j7l.pdf 
+[SCRAPE].. ◆ https://acf.gov/sites/default/files/documents/opre/housing_supports_special_topic_brief_jan2023.pdf  | ✓ | ⏱: 0.84s 
+[COMPLETE] ● https://acf.gov/sites/default/files/documents/opre/housing_supports_special_topic_brief_jan2023.pdf  | ✓ | ⏱: 0.84s 
+[FETCH]... ↓ https://amp.ca/wp-content/uploads/2025/02/Digital-Toolkit_-AODA-Compliance.pdf                       | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://amp.ca/wp-content/uploads/2025/02/Digital-Toolkit_-AODA-Compliance.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpqhv7f1ak.pdf 
+[SCRAPE].. ◆ https://amp.ca/wp-content/uploads/2025/02/Digital-Toolkit_-AODA-Compliance.pdf                       | ✓ | ⏱: 0.81s 
+[COMPLETE] ● https://amp.ca/wp-content/uploads/2025/02/Digital-Toolkit_-AODA-Compliance.pdf                       | ✓ | ⏱: 0.81s 
+[FETCH]... ↓ https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmplhhkoqsf.pdf 
+[SCRAPE].. ◆ https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf                  | ✓ | ⏱: 27.89s 
+[COMPLETE] ● https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301161.pdf                  | ✓ | ⏱: 27.89s 
+[FETCH]... ↓ https://www.leedsgrenville.com/en/long-term-care...programs-services-for-seniors-WEB-2022-03-24.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.leedsgrenville.com/en/long-term-care/resources/Documents/A-guide-to-programs-services-for-seniors-WEB-2022-03-24.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpwb_kmfjq.pdf 
+[SCRAPE].. ◆ https://www.leedsgrenville.com/en/long-term-care...programs-services-for-seniors-WEB-2022-03-24.pdf  | ✓ | ⏱: 20.95s 
+[COMPLETE] ● https://www.leedsgrenville.com/en/long-term-care...programs-services-for-seniors-WEB-2022-03-24.pdf  | ✓ | ⏱: 20.95s 
+[FETCH]... ↓ https://saultstemarie.ca/wp-content/uploads/2025...utism-Neurodiversity-Resource-Directory-2025.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://saultstemarie.ca/wp-content/uploads/2025/09/Autism-Neurodiversity-Resource-Directory-2025.pdf... 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpcmr306v_.pdf 
+[SCRAPE].. ◆ https://saultstemarie.ca/wp-content/uploads/2025...utism-Neurodiversity-Resource-Directory-2025.pdf  | ✓ | ⏱: 1.31s 
+[COMPLETE] ● https://saultstemarie.ca/wp-content/uploads/2025...utism-Neurodiversity-Resource-Directory-2025.pdf  | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://thefamilyhelpnetwork.ca/wp-content/uploa...24/03/DSO-Welcome-Package-ENGLISH-R-09.21.23.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://thefamilyhelpnetwork.ca/wp-content/uploads/2024/03/DSO-Welcome-Package-ENGLISH-R-09.21.23.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp0vkh2heg.pdf 
+[SCRAPE].. ◆ https://thefamilyhelpnetwork.ca/wp-content/uploa...24/03/DSO-Welcome-Package-ENGLISH-R-09.21.23.pdf  | ✓ | ⏱: 0.80s 
+[COMPLETE] ● https://thefamilyhelpnetwork.ca/wp-content/uploa...24/03/DSO-Welcome-Package-ENGLISH-R-09.21.23.pdf  | ✓ | ⏱: 0.80s 
+[FETCH]... ↓ https://onpha.on.ca/wp-content/uploads/2024/07/A...ousing-Subsidy-Summary-July-2015-Full-Report.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf... 
+[ERROR]... × https://onpha.on.ca/wp-...ly-2015-Full-Report.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf, error: Failed to download PDF from 
+https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf: 403 Client Error: Forbidden for url: 
+https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf, error: Failed to download PDF from https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf: 403 Client Error: Forbidden for url: https://onpha.on.ca/wp-content/uploads/2024/07/A-Simpler-Cheaper-Housing-Subsidy-Summary-July-2015-Full-Report.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://hollandbloorview.ca/sites/default/files/...21-01 Funding and Financial Supports Guide_0.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://hollandbloorview.ca/sites/default/files/2021-01/2021-01%20Funding%20and%20Financial%20Supports%20Guide_0.pdf... 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpu6p5im45.pdf 
+[SCRAPE].. ◆ https://hollandbloorview.ca/sites/default/files/...21-01 Funding and Financial Supports Guide_0.pdf  | ✓ | ⏱: 11.25s 
+[COMPLETE] ● https://hollandbloorview.ca/sites/default/files/...21-01 Funding and Financial Supports Guide_0.pdf  | ✓ | ⏱: 11.25s 
+[FETCH]... ↓ https://www.ncd.gov/assets/uploads/docs/understa...-and-alaska-native-communities-toolkit-guide.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ncd.gov/assets/uploads/docs/understanding-disabilities-in-american-indian-and-alaska-native-communities-toolkit-guide.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp9ylphbfl.pdf 
+[SCRAPE].. ◆ https://www.ncd.gov/assets/uploads/docs/understa...-and-alaska-native-communities-toolkit-guide.pdf  | ✓ | ⏱: 40.90s 
+[COMPLETE] ● https://www.ncd.gov/assets/uploads/docs/understa...-and-alaska-native-communities-toolkit-guide.pdf  | ✓ | ⏱: 40.90s 
+[FETCH]... ↓ https://agewell-nce.ca/wp-content/uploads/2019/0...-well_jurisdictional-scan_2017_June-30_FINAL.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://agewell-nce.ca/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf... 
+[ERROR]... × https://agewell-nce.ca/..._2017_June-30_FINAL.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://agewell-nce.ca/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf, error: Failed to download PDF from 
+https://agewell-nce.ca/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf: HTTPSConnectionPool(host='agewell-nce.ca', port=443): Max retries exceeded with url: 
+/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate
+(_ssl.c:1010)')))
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://agewell-nce.ca/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://agewell-nce.ca/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf, error: Failed to download PDF from https://agewell-nce.ca/wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf: HTTPSConnectionPool(host='agewell-nce.ca', port=443): Max retries exceeded with url: /wp-content/uploads/2019/01/age-well_jurisdictional-scan_2017_June-30_FINAL.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.ispoint.org/wp-content/uploads/2022/02/a.global_developments_in_ass.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ispoint.org/wp-content/uploads/2022/02/a.global_developments_in_ass.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp_zqbyf0v.pdf 
+[SCRAPE].. ◆ https://www.ispoint.org/wp-content/uploads/2022/02/a.global_developments_in_ass.pdf                  | ✓ | ⏱: 193.79s 
+[COMPLETE] ● https://www.ispoint.org/wp-content/uploads/2022/02/a.global_developments_in_ass.pdf                  | ✓ | ⏱: 193.79s 
+[FETCH]... ↓ https://www.cvcda.ca/wp-content/uploads/2023/05/4_cysn_framework_-_provincialservices.pdf            | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.cvcda.ca/wp-content/uploads/2023/05/4_cysn_framework_-_provincialservices.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpwu9kk96x.pdf 
+[SCRAPE].. ◆ https://www.cvcda.ca/wp-content/uploads/2023/05/4_cysn_framework_-_provincialservices.pdf            | ✓ | ⏱: 2.36s 
+[COMPLETE] ● https://www.cvcda.ca/wp-content/uploads/2023/05/4_cysn_framework_-_provincialservices.pdf            | ✓ | ⏱: 2.36s 
+[FETCH]... ↓ https://chiefs-of-ontario.org/wp-content/uploads...8_16_RP_Data_Landscape_Paper_BW_PJ_final_Ack.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://chiefs-of-ontario.org/wp-content/uploads/2024/05/2024_08_16_RP_Data_Landscape_Paper_BW_PJ_final_Ack.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp_h45w17q.pdf 
+[SCRAPE].. ◆ https://chiefs-of-ontario.org/wp-content/uploads...8_16_RP_Data_Landscape_Paper_BW_PJ_final_Ack.pdf  | ✓ | ⏱: 18.27s 
+[COMPLETE] ● https://chiefs-of-ontario.org/wp-content/uploads...8_16_RP_Data_Landscape_Paper_BW_PJ_final_Ack.pdf  | ✓ | ⏱: 18.27s 
+[FETCH]... ↓ https://files.eric.ed.gov/fulltext/ED620415.pdf                                                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://files.eric.ed.gov/fulltext/ED620415.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp1dl8tiiq.pdf 
+[SCRAPE].. ◆ https://files.eric.ed.gov/fulltext/ED620415.pdf                                                      | ✓ | ⏱: 2.46s 
+[COMPLETE] ● https://files.eric.ed.gov/fulltext/ED620415.pdf                                                      | ✓ | ⏱: 2.46s 
+[FETCH]... ↓ https://www.ontario.ca/files/2025-12/msaa-aoda-annual-report-2024-en-2025-12-10.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ontario.ca/files/2025-12/msaa-aoda-annual-report-2024-en-2025-12-10.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpuhm2l83s.pdf 
+[SCRAPE].. ◆ https://www.ontario.ca/files/2025-12/msaa-aoda-annual-report-2024-en-2025-12-10.pdf                  | ✓ | ⏱: 4.70s 
+[COMPLETE] ● https://www.ontario.ca/files/2025-12/msaa-aoda-annual-report-2024-en-2025-12-10.pdf                  | ✓ | ⏱: 4.70s 
+[FETCH]... ↓ https://www.ontario.ca/files/2025-04/2014-mgs-accessibility-report-2014-11-03-en.pdf                 | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.ontario.ca/files/2025-04/2014-mgs-accessibility-report-2014-11-03-en.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpxazi5nzf.pdf 
+[SCRAPE].. ◆ https://www.ontario.ca/files/2025-04/2014-mgs-accessibility-report-2014-11-03-en.pdf                 | ✓ | ⏱: 1.80s 
+[COMPLETE] ● https://www.ontario.ca/files/2025-04/2014-mgs-accessibility-report-2014-11-03-en.pdf                 | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://www.mcss.gov.on.ca/documents/en/mcss/developmental/LifeShare_Booklet_En.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.mcss.gov.on.ca/documents/en/mcss/developmental/LifeShare_Booklet_En.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpauzgmg_i.pdf 
+[SCRAPE].. ◆ https://www.mcss.gov.on.ca/documents/en/mcss/developmental/LifeShare_Booklet_En.pdf                  | ✓ | ⏱: 1.52s 
+[COMPLETE] ● https://www.mcss.gov.on.ca/documents/en/mcss/developmental/LifeShare_Booklet_En.pdf                  | ✓ | ⏱: 1.53s 
+[FETCH]... ↓ https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_309en19.pdf                     | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_309en19.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpjxszxa3t.pdf 
+[SCRAPE].. ◆ https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_309en19.pdf                     | ✓ | ⏱: 6.68s 
+[COMPLETE] ● https://www.auditor.on.ca/en/content/annualreports/arreports/en19/v1_309en19.pdf                     | ✓ | ⏱: 6.68s 
+[FETCH]... ↓ https://communitylivingontario.ca/wp-content/uploads/2022/04/CLO_DirectFunding_EbookFinal.pdf        | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://communitylivingontario.ca/wp-content/uploads/2022/04/CLO_DirectFunding_EbookFinal.pdf... 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfardplt7.pdf 
+[SCRAPE].. ◆ https://communitylivingontario.ca/wp-content/uploads/2022/04/CLO_DirectFunding_EbookFinal.pdf        | ✓ | ⏱: 1.04s 
+[COMPLETE] ● https://communitylivingontario.ca/wp-content/uploads/2022/04/CLO_DirectFunding_EbookFinal.pdf        | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://files.ontario.ca/mccss-passport-guidelines-april-2023-en-2023-03-06.pdf                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://files.ontario.ca/mccss-passport-guidelines-april-2023-en-2023-03-06.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpxkr94yoq.pdf 
+[SCRAPE].. ◆ https://files.ontario.ca/mccss-passport-guidelines-april-2023-en-2023-03-06.pdf                      | ✓ | ⏱: 2.37s 
+[COMPLETE] ● https://files.ontario.ca/mccss-passport-guidelines-april-2023-en-2023-03-06.pdf                      | ✓ | ⏱: 2.37s 
+[FETCH]... ↓ https://liveworkplay.ca/wp-content/uploads/2022/04/Opportunities-and-Action.pdf                      | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://liveworkplay.ca/wp-content/uploads/2022/04/Opportunities-and-Action.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp1zm0qo6n.pdf 
+[SCRAPE].. ◆ https://liveworkplay.ca/wp-content/uploads/2022/04/Opportunities-and-Action.pdf                      | ✓ | ⏱: 8.98s 
+[COMPLETE] ● https://liveworkplay.ca/wp-content/uploads/2022/04/Opportunities-and-Action.pdf                      | ✓ | ⏱: 8.98s 
+[FETCH]... ↓ https://files.ontario.ca/msaa-guide-to-programs-services-for-seniors-fall-en-2023-01-26.pdf          | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://files.ontario.ca/msaa-guide-to-programs-services-for-seniors-fall-en-2023-01-26.pdf... 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpfm_3zjww.pdf 
+[SCRAPE].. ◆ https://files.ontario.ca/msaa-guide-to-programs-services-for-seniors-fall-en-2023-01-26.pdf          | ✓ | ⏱: 42.31s 
+[COMPLETE] ● https://files.ontario.ca/msaa-guide-to-programs-services-for-seniors-fall-en-2023-01-26.pdf          | ✓ | ⏱: 42.31s 
+[FETCH]... ↓ https://dlcp.dc.gov/sites/default/files/dc/sites... Entities Required to File Biennial Report_1.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://dlcp.dc.gov/sites/default/files/dc/sites/DLCP/publication/attachments/2018%20List%20of%20All%20Entities%20Required%20to%20File%20Biennial%20Report_1.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpasv3zp39.pdf 
+[SCRAPE].. ◆ https://dlcp.dc.gov/sites/default/files/dc/sites... Entities Required to File Biennial Report_1.pdf  | ✓ | ⏱: 510.38s 
+[COMPLETE] ● https://dlcp.dc.gov/sites/default/files/dc/sites... Entities Required to File Biennial Report_1.pdf  | ✓ | ⏱: 510.39s 
+[FETCH]... ↓ https://communitylivingontario.ca/wp-content/upl...021/12/CLO-AFullLifeReport-FULL-ENG-FINAL-ua.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://communitylivingontario.ca/wp-content/uploads/2021/12/CLO-AFullLifeReport-FULL-ENG-FINAL-ua.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpduq_j_lo.pdf 
+[SCRAPE].. ◆ https://communitylivingontario.ca/wp-content/upl...021/12/CLO-AFullLifeReport-FULL-ENG-FINAL-ua.pdf  | ✓ | ⏱: 11.75s 
+[COMPLETE] ● https://communitylivingontario.ca/wp-content/upl...021/12/CLO-AFullLifeReport-FULL-ENG-FINAL-ua.pdf  | ✓ | ⏱: 11.75s 
+[FETCH]... ↓ https://www.hrsa.gov/sites/default/files/hrsa/ad...acrhhs-disability-independence-rural-america.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf... 
+[ERROR]... × https://www.hrsa.gov/si...dence-rural-america.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf, error: Failed to download 
+PDF from https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf: 403 Client Error: Forbidden for url: 
+https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf, error: Failed to download PDF from https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf: 403 Client Error: Forbidden for url: https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/rural/white-paper-nacrhhs-disability-independence-rural-america.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://itdp.org/wp-content/uploads/2022/02/Full-Report-jun21.pdf                                    | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://itdp.org/wp-content/uploads/2022/02/Full-Report-jun21.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpn47noxp6.pdf 
+[SCRAPE].. ◆ https://itdp.org/wp-content/uploads/2022/02/Full-Report-jun21.pdf                                    | ✓ | ⏱: 15.89s 
+[COMPLETE] ● https://itdp.org/wp-content/uploads/2022/02/Full-Report-jun21.pdf                                    | ✓ | ⏱: 15.89s 
+[FETCH]... ↓ https://publications.iadb.org/publications/engli...People-with-Disabilities-Children-and-Elders.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf... 
+[ERROR]... × https://publications.ia...Children-and-Elders.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: 
+https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf, error: Failed to download PDF from 
+https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf: 403 Client Error: Forbidden for url: 
+https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf, error: Failed to download PDF from https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf: 403 Client Error: Forbidden for url: https://publications.iadb.org/publications/english/document/Cities-as-Spaces-for-Opportunities-for-All-Building-Public-Spaces-for-People-with-Disabilities-Children-and-Elders.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf                  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf... 
+[ERROR]... × https://www.usda.gov/si...munity-action-guide.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf, error: Timeout downloading PDF from 
+https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf: HTTPSConnectionPool(host='www.usda.gov', port=443): Read timed out. (read timeout=600)
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf, error: Timeout downloading PDF from https://www.usda.gov/sites/default/files/documents/rural-community-action-guide.pdf: HTTPSConnectionPool(host='www.usda.gov', port=443): Read timed out. (read timeout=600)
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf           | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf... 
+[ERROR]... × https://desapublication...22-03/Accessibility.pdf  | Error: Unexpected error in _crawl_web at line 586 in aprocess_html 
+(../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf, error: Failed to download PDF from 
+https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf: 403 Client Error: Forbidden for url: https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict): 
+⚠️  PDF crawl failed for https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf: Unexpected error in _crawl_web at line 586 in aprocess_html (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_webcrawler.py):
+Error: Process HTML, Failed to extract content from the website: https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf, error: Failed to download PDF from https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf: 403 Client Error: Forbidden for url: https://desapublications.un.org/sites/default/files/publications/2022-03/Accessibility.pdf
+
+Code context:
+ 581                   )
+ 582   
+ 583           except InvalidCSSSelectorError as e:
+ 584               raise ValueError(str(e))
+ 585           except Exception as e:
+ 586 →             raise ValueError(
+ 587                   f"Process HTML, Failed to extract content from the website: {url}, error: {str(e)}"
+ 588               )
+ 589   
+ 590           # Extract results - handle both dict and ScrapingResult
+ 591           if isinstance(result, dict):
+[FETCH]... ↓ https://www.communitylivingbc.ca/wp-content/uploads/NoPlaceLikeHome.pdf                              | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.communitylivingbc.ca/wp-content/uploads/NoPlaceLikeHome.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpuki80c49.pdf 
+[SCRAPE].. ◆ https://www.communitylivingbc.ca/wp-content/uploads/NoPlaceLikeHome.pdf                              | ✓ | ⏱: 2.12s 
+[COMPLETE] ● https://www.communitylivingbc.ca/wp-content/uploads/NoPlaceLikeHome.pdf                              | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://www.archdisabilitylaw.ca/sites/all/files...RT (incl. exec summary) - June 29 2007 - PDF.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.archdisabilitylaw.ca/sites/all/files/ASSISTIVE%20DEVICES%20FINAL%20REPORT%20(incl.%20exec%20summary)%20-%20June%2029%202007%20-%20PDF.pdf... 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpbkj4r6dc.pdf 
+[SCRAPE].. ◆ https://www.archdisabilitylaw.ca/sites/all/files...RT (incl. exec summary) - June 29 2007 - PDF.pdf  | ✓ | ⏱: 4.49s 
+[COMPLETE] ● https://www.archdisabilitylaw.ca/sites/all/files...RT (incl. exec summary) - June 29 2007 - PDF.pdf  | ✓ | ⏱: 4.49s 
+[FETCH]... ↓ https://aiatsis.gov.au/sites/default/files/resea...on-technology-indigenous-communities-ebook_3.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://aiatsis.gov.au/sites/default/files/research_pub/information-technology-indigenous-communities-ebook_3.pdf... 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmph188bf7b.pdf 
+[SCRAPE].. ◆ https://aiatsis.gov.au/sites/default/files/resea...on-technology-indigenous-communities-ebook_3.pdf  | ✓ | ⏱: 57.37s 
+[COMPLETE] ● https://aiatsis.gov.au/sites/default/files/resea...on-technology-indigenous-communities-ebook_3.pdf  | ✓ | ⏱: 57.37s 
+[FETCH]... ↓ https://scoinc.mb.ca/wp-content/uploads/2016/05/First-Nations-Toolkit-for-Health-System-Change.pdf   | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://scoinc.mb.ca/wp-content/uploads/2016/05/First-Nations-Toolkit-for-Health-System-Change.pdf... 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpdyrq2znt.pdf 
+[SCRAPE].. ◆ https://scoinc.mb.ca/wp-content/uploads/2016/05/First-Nations-Toolkit-for-Health-System-Change.pdf   | ✓ | ⏱: 10.58s 
+[COMPLETE] ● https://scoinc.mb.ca/wp-content/uploads/2016/05/First-Nations-Toolkit-for-Health-System-Change.pdf   | ✓ | ⏱: 10.58s 
+[FETCH]... ↓ https://www.dlsph.utoronto.ca/wp-content/uploads/2024/05/ON-NEIHR-Year-1-Annual-Report-2.pdf         | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.dlsph.utoronto.ca/wp-content/uploads/2024/05/ON-NEIHR-Year-1-Annual-Report-2.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmp9ymp0lpl.pdf 
+[SCRAPE].. ◆ https://www.dlsph.utoronto.ca/wp-content/uploads/2024/05/ON-NEIHR-Year-1-Annual-Report-2.pdf         | ✓ | ⏱: 9.40s 
+[COMPLETE] ● https://www.dlsph.utoronto.ca/wp-content/uploads/2024/05/ON-NEIHR-Year-1-Annual-Report-2.pdf         | ✓ | ⏱: 9.40s 
+[FETCH]... ↓ https://www.nccih.ca/Publications/Lists/Publicat...8/KnowledgeTranslationApproachesAndPractices.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.nccih.ca/Publications/Lists/Publications/Attachments/10368/KnowledgeTranslationApproachesAndPractices.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpd2t82k5a.pdf 
+[SCRAPE].. ◆ https://www.nccih.ca/Publications/Lists/Publicat...8/KnowledgeTranslationApproachesAndPractices.pdf  | ✓ | ⏱: 2.66s 
+[COMPLETE] ● https://www.nccih.ca/Publications/Lists/Publicat...8/KnowledgeTranslationApproachesAndPractices.pdf  | ✓ | ⏱: 2.66s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 163 documents from 174 URLs
+   Data: {"source_documents": 174, "scraped_documents": 163}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 163 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 100/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 105/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 110/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 115/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 120/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 125/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 130/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 135/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 140/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 145/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 150/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 155/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 160/163 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 238 records from 163 documents
+   Data: {"extracted_count": 238, "source_documents": 163}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 238 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 238 -> 182
+   Data: {"input_rows": 238, "post_hard_rows": 182}
+======================================================================

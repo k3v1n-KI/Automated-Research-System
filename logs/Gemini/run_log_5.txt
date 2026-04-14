@@ -1,0 +1,1097 @@
+✓ Connected to vector store
+✓ Vector store tables created
+Vector store initialized for context persistence
+
+======================================================================
+Automated Research System - Dataset Builder
+======================================================================
+Server: http://0.0.0.0:5000
+Debug Mode: False
+OpenAI Model: gpt-5-mini
+SEARXNG URL: http://localhost:8080/
+======================================================================
+Open browser to the server URL above to get started.
+======================================================================
+
+ * Serving Flask app 'server'
+ * Debug mode: off
+Client connected: X8k7VeOmDva8FEkcAAAB
+
+======================================================================
+Starting Research Session
+   Client: X8k7VeOmDva8FEkcAAAB
+   Prompt: Find all pharmacies in Ontario...
+   Columns: ['Name', 'Address', 'Website', 'City', 'Phone Number', 'Zip Code']
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+   State initialized with keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+
+======================================================================
+🔧 Running Algorithm Task
+   Session: e3762fbe-bee6-4c29-b89b-92a0c3a35b08
+   State keys: ['initial_prompt', 'column_specs', 'queries', 'search_results', 'validated_urls', 'scraped_content', 'extracted_items', 'final_dataset', 'session_id', 'round', 'error', 'previous_session_id', 'tweak_instructions', 'previous_queries', 'previous_items', 'columns', 'priority_columns', 'hard_identifier_columns', 'soft_identifier_columns']
+   Prompt: Find all pharmacies in Ontario...
+   Columns: [{'name': 'Name', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Address', 'isPriority': False, 'dedupeRole': 'soft'}, {'name': 'Website', 'isPriority': False, 'dedupeRole': 'none'}, {'name': 'City', 'isPriority': True, 'dedupeRole': 'none'}, {'name': 'Phone Number', 'isPriority': False, 'dedupeRole': 'hard'}, {'name': 'Zip Code', 'isPriority': False, 'dedupeRole': 'none'}]
+   Priority Columns: ['City']
+   Hard IDs: ['Phone Number']
+   Soft IDs: ['Name', 'Address']
+======================================================================
+
+
+======================================================================
+📍 Query Generation
+   Generating formula-based queries (Broad Net / Deep Dive / Artifact Hunter)...
+======================================================================
+
+======================================================================
+📍 Query Generation Complete
+   Generated 15 formula-based queries
+   Data: {"queries": ["pharmacy in Ontario", "drugstore in ON", "chemist in Province of Ontario", "dispensary in Ontario health", "apothecary in Ontario region", "pharmacy address in Ontario", "drugstore locat
+======================================================================
+
+======================================================================
+📍 🔎 Search Starting
+   Searching 15 queries across search engines...
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 1/15: pharmacy in Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 2/15: drugstore in ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 3/15: chemist in Province of Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 4/15: dispensary in Ontario health
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 5/15: apothecary in Ontario region
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 6/15: pharmacy address in Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 7/15: drugstore location in ON
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 8/15: chemist license in Province of Ontario
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 9/15: dispensary business name in Ontario health
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 10/15: apothecary contact info in Ontario region
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 11/15: pharmacy in Ontario directory
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 12/15: drugstore in ON database
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 13/15: chemist in Province of Ontario registry
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 14/15: dispensary in Ontario health open data
+======================================================================
+
+======================================================================
+📍 🔎 Searching
+   Query 15/15: apothecary in Ontario region website
+======================================================================
+
+======================================================================
+📍 🔎 Search Complete
+   Found 188 unique URLs across 15 queries
+   Data: {"total_urls": 188, "queries": 15}
+======================================================================
+
+======================================================================
+📍 URL Validation
+   Preparing to visit 188 URLs...
+======================================================================
+
+======================================================================
+📍 URL Validation Complete
+   Ready to scrape 188/188 URLs
+   Data: {"validated": 188, "original": 188}
+======================================================================
+
+======================================================================
+📍 📄 Scraping Starting
+   Scraping 188 URLs with Crawl4AI...
+======================================================================
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://canapo.ca/about-us                                                                           | ✓ | ⏱: 1.12s 
+[SCRAPE].. ◆ https://canapo.ca/about-us                                                                           | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://canapo.ca/about-us                                                                           | ✓ | ⏱: 1.16s 
+[FETCH]... ↓ https://cannawayclinic.com/medical-cannabis-ontario/                                                 | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ https://cannawayclinic.com/medical-cannabis-ontario/                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://cannawayclinic.com/medical-cannabis-ontario/                                                 | ✓ | ⏱: 1.22s 
+[FETCH]... ↓ https://cortico.health/pharmacies/toronto-on/the-station-apothecary-305022/                          | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://cortico.health/pharmacies/toronto-on/the-station-apothecary-305022/                          | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://cortico.health/pharmacies/toronto-on/the-station-apothecary-305022/                          | ✓ | ⏱: 1.31s 
+[FETCH]... ↓ https://apollocannabis.ca/locations/on/                                                              | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://apollocannabis.ca/locations/on/                                                              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://apollocannabis.ca/locations/on/                                                              | ✓ | ⏱: 1.43s 
+[FETCH]... ↓ http://www.southwesthealthline.ca/listServices.aspx?id=10345                                         | ✓ | ⏱: 1.54s 
+[SCRAPE].. ◆ http://www.southwesthealthline.ca/listServices.aspx?id=10345                                         | ✓ | ⏱: 0.26s 
+[COMPLETE] ● http://www.southwesthealthline.ca/listServices.aspx?id=10345                                         | ✓ | ⏱: 1.81s 
+[FETCH]... ↓ https://caregivershuronperth.ca/Services/Providers/Display/12546/Canadian_Apothecary                 | ✓ | ⏱: 1.85s 
+[SCRAPE].. ◆ https://caregivershuronperth.ca/Services/Providers/Display/12546/Canadian_Apothecary                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://caregivershuronperth.ca/Services/Providers/Display/12546/Canadian_Apothecary                 | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://dba.stackexchange.com/questions/146735/database-design-for-for-drug-store                    | ✓ | ⏱: 1.88s 
+[SCRAPE].. ◆ https://dba.stackexchange.com/questions/146735/database-design-for-for-drug-store                    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://dba.stackexchange.com/questions/146735/database-design-for-for-drug-store                    | ✓ | ⏱: 1.93s 
+[FETCH]... ↓ https://databasesample.com/database/pharmacy-database                                                | ✓ | ⏱: 2.04s 
+[SCRAPE].. ◆ https://databasesample.com/database/pharmacy-database                                                | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://databasesample.com/database/pharmacy-database                                                | ✓ | ⏱: 2.05s 
+[FETCH]... ↓ https://canndelta.com/ca/ontario-cannabis-retail-licence/                                            | ✓ | ⏱: 2.13s 
+[SCRAPE].. ◆ https://canndelta.com/ca/ontario-cannabis-retail-licence/                                            | ✓ | ⏱: 0.18s 
+[COMPLETE] ● https://canndelta.com/ca/ontario-cannabis-retail-licence/                                            | ✓ | ⏱: 2.32s 
+[FETCH]... ↓ https://apothecapharmacy.ca/contact-us/                                                              | ✓ | ⏱: 2.33s 
+[SCRAPE].. ◆ https://apothecapharmacy.ca/contact-us/                                                              | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://apothecapharmacy.ca/contact-us/                                                              | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://cocoonapothecary.com/?srsltid=AfmBOopYk-U5vlC6LS4qK_RXrUKV3xeLNFOm0KR-DQ2QSClCdD2L1m7M       | ✓ | ⏱: 2.35s 
+[SCRAPE].. ◆ https://cocoonapothecary.com/?srsltid=AfmBOopYk-U5vlC6LS4qK_RXrUKV3xeLNFOm0KR-DQ2QSClCdD2L1m7M       | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://cocoonapothecary.com/?srsltid=AfmBOopYk-U5vlC6LS4qK_RXrUKV3xeLNFOm0KR-DQ2QSClCdD2L1m7M       | ✓ | ⏱: 2.44s 
+[ERROR]... × https://files.ontario.c...-en-utf8-2022-08-25.csv  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/moh-paxlovid-pharmacy-master-list-en-utf8-2022-08-25.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://ca.indeed.com/q-chemist-l-ontario-jobs.html                                                  | ✓ | ⏱: 2.49s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-chemist-l-ontario-jobs.html                                                  | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://ca.indeed.com/q-chemist-l-ontario-jobs.html                                                  | ✓ | ⏱: 2.64s 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/Niagara_Apothecary                                                     | ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/Niagara_Apothecary                                                     | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/Niagara_Apothecary                                                     | ✓ | ⏱: 1.58s 
+[FETCH]... ↓ http://www.ontario.ca/page/cannabis                                                                  | ✓ | ⏱: 2.90s 
+[SCRAPE].. ◆ http://www.ontario.ca/page/cannabis                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● http://www.ontario.ca/page/cannabis                                                                  | ✓ | ⏱: 2.92s 
+[FETCH]... ↓ https://discount-drugmart.com/our-store/store-locator/                                               | ✓ | ⏱: 1.83s 
+[SCRAPE].. ◆ https://discount-drugmart.com/our-store/store-locator/                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://discount-drugmart.com/our-store/store-locator/                                               | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://cocoonapothecary.com/?srsltid=AfmBOorPCSVxNu_9S9OOzaYQuQOkL7G0awz8U849PHAm_gHHrCKFFnY7       | ✓ | ⏱: 2.02s 
+[SCRAPE].. ◆ https://cocoonapothecary.com/?srsltid=AfmBOorPCSVxNu_9S9OOzaYQuQOkL7G0awz8U849PHAm_gHHrCKFFnY7       | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://cocoonapothecary.com/?srsltid=AfmBOorPCSVxNu_9S9OOzaYQuQOkL7G0awz8U849PHAm_gHHrCKFFnY7       | ✓ | ⏱: 2.10s 
+[FETCH]... ↓ https://acpo.on.ca/                                                                                  | ✓ | ⏱: 3.29s 
+[SCRAPE].. ◆ https://acpo.on.ca/                                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://acpo.on.ca/                                                                                  | ✓ | ⏱: 3.32s 
+[FETCH]... ↓ https://cocoonapothecary.com/pages/contact-us?sr...o3sCo0A0YOH_RGGpFCtXsUO1_9aplUY0zJtSvjTrVYLkhTwN  | ✓ | ⏱: 2.16s 
+[SCRAPE].. ◆ https://cocoonapothecary.com/pages/contact-us?sr...o3sCo0A0YOH_RGGpFCtXsUO1_9aplUY0zJtSvjTrVYLkhTwN  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://cocoonapothecary.com/pages/contact-us?sr...o3sCo0A0YOH_RGGpFCtXsUO1_9aplUY0zJtSvjTrVYLkhTwN  | ✓ | ⏱: 2.24s 
+[FETCH]... ↓ https://acpo.on.ca/membership-benefits/                                                              | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://acpo.on.ca/membership-benefits/                                                              | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://acpo.on.ca/membership-benefits/                                                              | ✓ | ⏱: 1.62s 
+[FETCH]... ↓ https://bi.wdgpublichealth.ca/reports/cannabis/                                                      | ✓ | ⏱: 3.61s 
+[SCRAPE].. ◆ https://bi.wdgpublichealth.ca/reports/cannabis/                                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://bi.wdgpublichealth.ca/reports/cannabis/                                                      | ✓ | ⏱: 3.62s 
+[FETCH]... ↓ https://goldencarepharmacy.ca/locations/                                                             | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://goldencarepharmacy.ca/locations/                                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://goldencarepharmacy.ca/locations/                                                             | ✓ | ⏱: 1.43s 
+[FETCH]... ↓ https://m.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                      | ✓ | ⏱: 0.77s 
+[SCRAPE].. ◆ https://m.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                      | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://m.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                      | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ https://guides.lib.umich.edu/c.php?g=282760&p=1884070                                                | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://guides.lib.umich.edu/c.php?g=282760&p=1884070                                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://guides.lib.umich.edu/c.php?g=282760&p=1884070                                                | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://ehealthontario.on.ca/en/health-care-professionals/provincial-provider-registry               | ✓ | ⏱: 2.71s 
+[SCRAPE].. ◆ https://ehealthontario.on.ca/en/health-care-professionals/provincial-provider-registry               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ehealthontario.on.ca/en/health-care-professionals/provincial-provider-registry               | ✓ | ⏱: 2.76s 
+[FETCH]... ↓ https://halton.cioc.ca/record/ONT00047                                                               | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://halton.cioc.ca/record/ONT00047                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://halton.cioc.ca/record/ONT00047                                                               | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://go.drugbank.com/                                                                             | ✓ | ⏱: 2.01s 
+[SCRAPE].. ◆ https://go.drugbank.com/                                                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://go.drugbank.com/                                                                             | ✓ | ⏱: 2.04s 
+[FETCH]... ↓ https://flodega.com/medical-cannabis-ontario/                                                        | ✓ | ⏱: 2.54s 
+[SCRAPE].. ◆ https://flodega.com/medical-cannabis-ontario/                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://flodega.com/medical-cannabis-ontario/                                                        | ✓ | ⏱: 2.60s 
+[FETCH]... ↓ https://ca.indeed.com/q-chemistry-l-ontario-jobs.html                                                | ✓ | ⏱: 2.40s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-chemistry-l-ontario-jobs.html                                                | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://ca.indeed.com/q-chemistry-l-ontario-jobs.html                                                | ✓ | ⏱: 2.51s 
+[FETCH]... ↓ https://ca.indeed.com/q-chemistry,-government-l-ontario-jobs.html                                    | ✓ | ⏱: 2.52s 
+[SCRAPE].. ◆ https://ca.indeed.com/q-chemistry,-government-l-ontario-jobs.html                                    | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://ca.indeed.com/q-chemistry,-government-l-ontario-jobs.html                                    | ✓ | ⏱: 2.62s 
+[FETCH]... ↓ https://ocpinfo.com/                                                                                 | ✓ | ⏱: 1.40s 
+[SCRAPE].. ◆ https://ocpinfo.com/                                                                                 | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ocpinfo.com/                                                                                 | ✓ | ⏱: 1.45s 
+[FETCH]... ↓ https://medicineshoppe.com/find-a-pharmacy                                                           | ✓ | ⏱: 1.64s 
+[SCRAPE].. ◆ https://medicineshoppe.com/find-a-pharmacy                                                           | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://medicineshoppe.com/find-a-pharmacy                                                           | ✓ | ⏱: 1.65s 
+[FETCH]... ↓ https://huroncounty.cioc.ca/record/GBA1831                                                           | ✓ | ⏱: 2.00s 
+[SCRAPE].. ◆ https://huroncounty.cioc.ca/record/GBA1831                                                           | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://huroncounty.cioc.ca/record/GBA1831                                                           | ✓ | ⏱: 2.01s 
+[FETCH]... ↓ https://en.wikipedia.org/wiki/Pharmacies_in_the_United_States                                        | ✓ | ⏱: 0.96s 
+[SCRAPE].. ◆ https://en.wikipedia.org/wiki/Pharmacies_in_the_United_States                                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://en.wikipedia.org/wiki/Pharmacies_in_the_United_States                                        | ✓ | ⏱: 1.00s 
+[FETCH]... ↓ https://neighbourlypharmacy.ca/                                                                      | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://neighbourlypharmacy.ca/                                                                      | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://neighbourlypharmacy.ca/                                                                      | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://github.com/renanmarcos/drug-store/blob/master/database.sql                                   | ✓ | ⏱: 3.07s 
+[SCRAPE].. ◆ https://github.com/renanmarcos/drug-store/blob/master/database.sql                                   | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://github.com/renanmarcos/drug-store/blob/master/database.sql                                   | ✓ | ⏱: 3.13s 
+[FETCH]... ↓ https://open-pharmacy-research.ca/                                                                   | ✓ | ⏱: 1.03s 
+[SCRAPE].. ◆ https://open-pharmacy-research.ca/                                                                   | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://open-pharmacy-research.ca/                                                                   | ✓ | ⏱: 1.04s 
+[FETCH]... ↓ https://historicplacesdays.ca/places/niagara-apothecary/                                             | ✓ | ⏱: 2.48s 
+[SCRAPE].. ◆ https://historicplacesdays.ca/places/niagara-apothecary/                                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://historicplacesdays.ca/places/niagara-apothecary/                                             | ✓ | ⏱: 2.51s 
+[FETCH]... ↓ https://pebc.ca/                                                                                     | ✓ | ⏱: 1.00s 
+[SCRAPE].. ◆ https://pebc.ca/                                                                                     | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://pebc.ca/                                                                                     | ✓ | ⏱: 1.05s 
+[FETCH]... ↓ https://ocs.ca/                                                                                      | ✓ | ⏱: 1.88s 
+[SCRAPE].. ◆ https://ocs.ca/                                                                                      | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://ocs.ca/                                                                                      | ✓ | ⏱: 2.02s 
+[FETCH]... ↓ https://members.ocpinfo.com/tcpr/public/pr/en/                                                       | ✓ | ⏱: 2.62s 
+[SCRAPE].. ◆ https://members.ocpinfo.com/tcpr/public/pr/en/                                                       | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://members.ocpinfo.com/tcpr/public/pr/en/                                                       | ✓ | ⏱: 2.63s 
+[FETCH]... ↓ https://ontariohealthregulators.ca/find-health-care-professional-3/                                  | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://ontariohealthregulators.ca/find-health-care-professional-3/                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://ontariohealthregulators.ca/find-health-care-professional-3/                                  | ✓ | ⏱: 1.99s 
+[FETCH]... ↓ https://ottawacitizen.com/news/local-news/name-t...-what-should-ontarios-marijuana-stores-be-called  | ✓ | ⏱: 2.28s 
+[SCRAPE].. ◆ https://ottawacitizen.com/news/local-news/name-t...-what-should-ontarios-marijuana-stores-be-called  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://ottawacitizen.com/news/local-news/name-t...-what-should-ontarios-marijuana-stores-be-called  | ✓ | ⏱: 2.36s 
+[FETCH]... ↓ https://ocpinfo.com/public/you-your-pharmacy/                                                        | ✓ | ⏱: 1.07s 
+[SCRAPE].. ◆ https://ocpinfo.com/public/you-your-pharmacy/                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ocpinfo.com/public/you-your-pharmacy/                                                        | ✓ | ⏱: 1.13s 
+[FETCH]... ↓ https://prettypotions.ca/?srsltid=AfmBOopttya02mMEE9w6e9DrYLwC3kunw63bP9Z48A8tmsmK5bDniS_n           | ✓ | ⏱: 1.76s 
+[SCRAPE].. ◆ https://prettypotions.ca/?srsltid=AfmBOopttya02mMEE9w6e9DrYLwC3kunw63bP9Z48A8tmsmK5bDniS_n           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://prettypotions.ca/?srsltid=AfmBOopttya02mMEE9w6e9DrYLwC3kunw63bP9Z48A8tmsmK5bDniS_n           | ✓ | ⏱: 1.84s 
+[FETCH]... ↓ https://ocpinfo.com/applicants/register-as-a-pharmacist/                                             | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://ocpinfo.com/applicants/register-as-a-pharmacist/                                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://ocpinfo.com/applicants/register-as-a-pharmacist/                                             | ✓ | ⏱: 1.29s 
+[FETCH]... ↓ https://ocpinfo.com/public/how-to-use-find-a-pharmacy-or-pharmacy-professional/                      | ✓ | ⏱: 1.37s 
+[SCRAPE].. ◆ https://ocpinfo.com/public/how-to-use-find-a-pharmacy-or-pharmacy-professional/                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://ocpinfo.com/public/how-to-use-find-a-pharmacy-or-pharmacy-professional/                      | ✓ | ⏱: 1.42s 
+[FETCH]... ↓ https://hqtoronto.ca/toronto-pharmacy-services-directory/                                            | ✓ | ⏱: 4.10s 
+[SCRAPE].. ◆ https://hqtoronto.ca/toronto-pharmacy-services-directory/                                            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://hqtoronto.ca/toronto-pharmacy-services-directory/                                            | ✓ | ⏱: 4.15s 
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC9720479/                                                    | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC9720479/                                                    | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC9720479/                                                    | ✓ | ⏱: 2.23s 
+[FETCH]... ↓ https://pacepharmacy.com/                                                                            | ✓ | ⏱: 2.88s 
+[SCRAPE].. ◆ https://pacepharmacy.com/                                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://pacepharmacy.com/                                                                            | ✓ | ⏱: 2.93s 
+[FETCH]... ↓ https://substancelaw.ca/dispensary-licence/                                                          | ✓ | ⏱: 0.94s 
+[SCRAPE].. ◆ https://substancelaw.ca/dispensary-licence/                                                          | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://substancelaw.ca/dispensary-licence/                                                          | ✓ | ⏱: 1.01s 
+[FETCH]... ↓ https://southwesthealthline.ca/displayService.aspx?id=222388                                         | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://southwesthealthline.ca/displayService.aspx?id=222388                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://southwesthealthline.ca/displayService.aspx?id=222388                                         | ✓ | ⏱: 1.44s 
+[FETCH]... ↓ https://shopcannabuds.ca/which-document-must-be-available-in-all-cannabis-retail-store/              | ✓ | ⏱: 1.94s 
+[SCRAPE].. ◆ https://shopcannabuds.ca/which-document-must-be-available-in-all-cannabis-retail-store/              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://shopcannabuds.ca/which-document-must-be-available-in-all-cannabis-retail-store/              | ✓ | ⏱: 1.98s 
+[FETCH]... ↓ https://swhealthyaging.ca/Services/dailytasks/Display/12546/Canadian_Apothecary                      | ✓ | ⏱: 1.55s 
+[SCRAPE].. ◆ https://swhealthyaging.ca/Services/dailytasks/Display/12546/Canadian_Apothecary                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://swhealthyaging.ca/Services/dailytasks/Display/12546/Canadian_Apothecary                      | ✓ | ⏱: 1.57s 
+[FETCH]... ↓ https://thebotanicalsage.ca/?srsltid=AfmBOoo4jhh-RLKISbGblL0_0HduIIAZDFOjL0ISkarL9744NNZGpn6S        | ✓ | ⏱: 1.59s 
+[SCRAPE].. ◆ https://thebotanicalsage.ca/?srsltid=AfmBOoo4jhh-RLKISbGblL0_0HduIIAZDFOjL0ISkarL9744NNZGpn6S        | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://thebotanicalsage.ca/?srsltid=AfmBOoo4jhh-RLKISbGblL0_0HduIIAZDFOjL0ISkarL9744NNZGpn6S        | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://tremblingaspens.ca/                                                                          | ✓ | ⏱: 1.70s 
+[SCRAPE].. ◆ https://tremblingaspens.ca/                                                                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://tremblingaspens.ca/                                                                          | ✓ | ⏱: 1.74s 
+[FETCH]... ↓ https://prettypotions.ca/?srsltid=AfmBOoqZAf3LPIfWGf1286Zoa3dVWIXQFFfEouNqsnyabovYPgq2d_Qi           | ✓ | ⏱: 1.33s 
+[SCRAPE].. ◆ https://prettypotions.ca/?srsltid=AfmBOoqZAf3LPIfWGf1286Zoa3dVWIXQFFfEouNqsnyabovYPgq2d_Qi           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://prettypotions.ca/?srsltid=AfmBOoqZAf3LPIfWGf1286Zoa3dVWIXQFFfEouNqsnyabovYPgq2d_Qi           | ✓ | ⏱: 1.40s 
+[FETCH]... ↓ https://prettypotions.ca/?srsltid=AfmBOoqZVxUMgDLA-R20RXLfVCSVTpeqFwomqCOggqrM7Vgw9ziVgN6g           | ✓ | ⏱: 1.42s 
+[SCRAPE].. ◆ https://prettypotions.ca/?srsltid=AfmBOoqZVxUMgDLA-R20RXLfVCSVTpeqFwomqCOggqrM7Vgw9ziVgN6g           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://prettypotions.ca/?srsltid=AfmBOoqZVxUMgDLA-R20RXLfVCSVTpeqFwomqCOggqrM7Vgw9ziVgN6g           | ✓ | ⏱: 1.50s 
+[FETCH]... ↓ https://pharmasave.com/caledon-east/?srsltid=Afm...MKZr1FaGz3SCWOE_0H8MgEeJTJsa3T3XEdYk4SQW6S96YJUY  | ✓ | ⏱: 4.58s 
+[SCRAPE].. ◆ https://pharmasave.com/caledon-east/?srsltid=Afm...MKZr1FaGz3SCWOE_0H8MgEeJTJsa3T3XEdYk4SQW6S96YJUY  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://pharmasave.com/caledon-east/?srsltid=Afm...MKZr1FaGz3SCWOE_0H8MgEeJTJsa3T3XEdYk4SQW6S96YJUY  | ✓ | ⏱: 4.61s 
+[FETCH]... ↓ https://prettypotions.ca/?srsltid=AfmBOorr1p2w_qj1R-nhP5U2fr_BE9TFJGpG-SZVXoNUqGFNtRjAyLXS           | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://prettypotions.ca/?srsltid=AfmBOorr1p2w_qj1R-nhP5U2fr_BE9TFJGpG-SZVXoNUqGFNtRjAyLXS           | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://prettypotions.ca/?srsltid=AfmBOorr1p2w_qj1R-nhP5U2fr_BE9TFJGpG-SZVXoNUqGFNtRjAyLXS           | ✓ | ⏱: 1.77s 
+[FETCH]... ↓ https://wilkes.libguides.com/pharmacy/pharmacydatabases                                              | ✓ | ⏱: 1.49s 
+[SCRAPE].. ◆ https://wilkes.libguides.com/pharmacy/pharmacydatabases                                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://wilkes.libguides.com/pharmacy/pharmacydatabases                                              | ✓ | ⏱: 1.52s 
+[FETCH]... ↓ https://purelywicked.ca/?srsltid=AfmBOooJuXh-C7EgJYyhzSSK3fRryQ3JsoMW3p3UTsOID-ttU_FG3I56            | ✓ | ⏱: 4.57s 
+[SCRAPE].. ◆ https://purelywicked.ca/?srsltid=AfmBOooJuXh-C7EgJYyhzSSK3fRryQ3JsoMW3p3UTsOID-ttU_FG3I56            | ✓ | ⏱: 0.16s 
+[COMPLETE] ● https://purelywicked.ca/?srsltid=AfmBOooJuXh-C7EgJYyhzSSK3fRryQ3JsoMW3p3UTsOID-ttU_FG3I56            | ✓ | ⏱: 4.75s 
+[FETCH]... ↓ https://weedology.com/                                                                               | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://weedology.com/                                                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://weedology.com/                                                                               | ✓ | ⏱: 2.00s 
+[FETCH]... ↓ https://purelywicked.ca/?srsltid=AfmBOoox4rasv4904ncjlmIHLxYp6VQIM5HqHTIxRPCjBbh9neoX6PsV            | ✓ | ⏱: 3.57s 
+[SCRAPE].. ◆ https://purelywicked.ca/?srsltid=AfmBOoox4rasv4904ncjlmIHLxYp6VQIM5HqHTIxRPCjBbh9neoX6PsV            | ✓ | ⏱: 0.49s 
+[COMPLETE] ● https://purelywicked.ca/?srsltid=AfmBOoox4rasv4904ncjlmIHLxYp6VQIM5HqHTIxRPCjBbh9neoX6PsV            | ✓ | ⏱: 4.07s 
+[FETCH]... ↓ https://wdgpublichealth.ca/dashboards/cannabis-reporting-outcomes-patterns-crop                      | ✓ | ⏱: 3.30s 
+[SCRAPE].. ◆ https://wdgpublichealth.ca/dashboards/cannabis-reporting-outcomes-patterns-crop                      | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://wdgpublichealth.ca/dashboards/cannabis-reporting-outcomes-patterns-crop                      | ✓ | ⏱: 3.37s 
+[FETCH]... ↓ https://purelywicked.ca/?srsltid=AfmBOooW8waiu0aP6jk0aBQ7g0KbjR3pKf7i6TBLqVLNm2j5i8FHphHg            | ✓ | ⏱: 4.16s 
+[SCRAPE].. ◆ https://purelywicked.ca/?srsltid=AfmBOooW8waiu0aP6jk0aBQ7g0KbjR3pKf7i6TBLqVLNm2j5i8FHphHg            | ✓ | ⏱: 0.17s 
+[COMPLETE] ● https://purelywicked.ca/?srsltid=AfmBOooW8waiu0aP6jk0aBQ7g0KbjR3pKf7i6TBLqVLNm2j5i8FHphHg            | ✓ | ⏱: 4.34s 
+[FETCH]... ↓ https://purelywicked.ca/?srsltid=AfmBOoqo-YLQiZIFSkHHceXtwEFn6fER1z1FgVnIXyW4JJLBCLDPhnu6            | ✓ | ⏱: 4.35s 
+[SCRAPE].. ◆ https://purelywicked.ca/?srsltid=AfmBOoqo-YLQiZIFSkHHceXtwEFn6fER1z1FgVnIXyW4JJLBCLDPhnu6            | ✓ | ⏱: 0.18s 
+[COMPLETE] ● https://purelywicked.ca/?srsltid=AfmBOoqo-YLQiZIFSkHHceXtwEFn6fER1z1FgVnIXyW4JJLBCLDPhnu6            | ✓ | ⏱: 4.53s 
+[FETCH]... ↓ https://www.acpo.on.ca/                                                                              | ✓ | ⏱: 2.66s 
+[SCRAPE].. ◆ https://www.acpo.on.ca/                                                                              | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.acpo.on.ca/                                                                              | ✓ | ⏱: 2.70s 
+[FETCH]... ↓ https://supportontariomade.ca/manufacturer/kitchener/cocoon-apothecary-1                             | ✓ | ⏱: 4.33s 
+[SCRAPE].. ◆ https://supportontariomade.ca/manufacturer/kitchener/cocoon-apothecary-1                             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://supportontariomade.ca/manufacturer/kitchener/cocoon-apothecary-1                             | ✓ | ⏱: 4.38s 
+[FETCH]... ↓ https://purehealthpharmacy.com/                                                                      | ✓ | ⏱: 6.07s 
+[SCRAPE].. ◆ https://purehealthpharmacy.com/                                                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://purehealthpharmacy.com/                                                                      | ✓ | ⏱: 6.11s 
+[FETCH]... ↓ https://www.agco.ca/en/cannabis/cannabis-retail-...sing/cannabis-retail-licences-and-authorizations  | ✓ | ⏱: 2.39s 
+[SCRAPE].. ◆ https://www.agco.ca/en/cannabis/cannabis-retail-...sing/cannabis-retail-licences-and-authorizations  | ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://www.agco.ca/en/cannabis/cannabis-retail-...sing/cannabis-retail-licences-and-authorizations  | ✓ | ⏱: 2.58s 
+[FETCH]... ↓ https://www.auroramedical.com/                                                                       | ✓ | ⏱: 1.96s 
+[SCRAPE].. ◆ https://www.auroramedical.com/                                                                       | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.auroramedical.com/                                                                       | ✓ | ⏱: 2.12s 
+[FETCH]... ↓ https://weedmaps.com/dispensaries/in/canada/ontario/mississauga                                      | ✓ | ⏱: 4.37s 
+[SCRAPE].. ◆ https://weedmaps.com/dispensaries/in/canada/ontario/mississauga                                      | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://weedmaps.com/dispensaries/in/canada/ontario/mississauga                                      | ✓ | ⏱: 4.45s 
+[ERROR]... × https://www.cheminst.ca...on-for-the-public-good/  | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.cheminst.ca/magazine/article/chemists-need-professional-designation-for-the-public-good/
+Call log:
+  - navigating to "https://www.cheminst.ca/magazine/article/chemists-need-professional-designation-for-the-public-good/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[ERROR]... × https://www.cicic.ca/938/chemists.canada?id=18     | Error: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.cicic.ca/938/chemists.canada?id=18
+Call log:
+  - navigating to "https://www.cicic.ca/938/chemists.canada?id=18", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its 
+[FETCH]... ↓ https://www.boggios.com/                                                                             | ✓ | ⏱: 2.02s 
+[SCRAPE].. ◆ https://www.boggios.com/                                                                             | ✓ | ⏱: 0.11s 
+[COMPLETE] ● https://www.boggios.com/                                                                             | ✓ | ⏱: 2.13s 
+[FETCH]... ↓ https://www.bcpharmacists.org/list-community-pharmacies                                              | ✓ | ⏱: 2.19s 
+[SCRAPE].. ◆ https://www.bcpharmacists.org/list-community-pharmacies                                              | ✓ | ⏱: 0.39s 
+[COMPLETE] ● https://www.bcpharmacists.org/list-community-pharmacies                                              | ✓ | ⏱: 2.59s 
+[FETCH]... ↓ https://www.agco.ca/en/general/open-data-and-disclosure                                              | ✓ | ⏱: 2.02s 
+[SCRAPE].. ◆ https://www.agco.ca/en/general/open-data-and-disclosure                                              | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://www.agco.ca/en/general/open-data-and-disclosure                                              | ✓ | ⏱: 2.18s 
+[FETCH]... ↓ https://www.burlingtontoday.com/directory/pharmacy-and-drug-stores                                   | ✓ | ⏱: 2.23s 
+[SCRAPE].. ◆ https://www.burlingtontoday.com/directory/pharmacy-and-drug-stores                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.burlingtontoday.com/directory/pharmacy-and-drug-stores                                   | ✓ | ⏱: 2.27s 
+[FETCH]... ↓ https://healthy.kaiserpermanente.org/southern-ca...al-center-300511/departments/pharmacy-dlp-109153  | ✓ | ⏱: 10.32s 
+[SCRAPE].. ◆ https://healthy.kaiserpermanente.org/southern-ca...al-center-300511/departments/pharmacy-dlp-109153  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://healthy.kaiserpermanente.org/southern-ca...al-center-300511/departments/pharmacy-dlp-109153  | ✓ | ⏱: 10.38s 
+[FETCH]... ↓ https://www.applehillapothecary.com/                                                                 | ✓ | ⏱: 3.47s 
+[SCRAPE].. ◆ https://www.applehillapothecary.com/                                                                 | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.applehillapothecary.com/                                                                 | ✓ | ⏱: 3.48s 
+[FETCH]... ↓ https://savondrugmart.ca/                                                                            | ✓ | ⏱: 6.97s 
+[SCRAPE].. ◆ https://savondrugmart.ca/                                                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://savondrugmart.ca/                                                                            | ✓ | ⏱: 7.00s 
+[FETCH]... ↓ https://www.acpo.on.ca/membership-benefits/application-process/                                      | ✓ | ⏱: 1.58s 
+[SCRAPE].. ◆ https://www.acpo.on.ca/membership-benefits/application-process/                                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.acpo.on.ca/membership-benefits/application-process/                                      | ✓ | ⏱: 1.60s 
+[FETCH]... ↓ https://www.agco.ca/en/cannabis/retail-reporting...uirements-and-point-sale-data-reporting-platform  | ✓ | ⏱: 2.57s 
+[SCRAPE].. ◆ https://www.agco.ca/en/cannabis/retail-reporting...uirements-and-point-sale-data-reporting-platform  | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.agco.ca/en/cannabis/retail-reporting...uirements-and-point-sale-data-reporting-platform  | ✓ | ⏱: 2.72s 
+[FETCH]... ↓ https://www.agco.ca/en/cannabis/status-current-cannabis-retail-store-applications                    | ✓ | ⏱: 2.72s 
+[SCRAPE].. ◆ https://www.agco.ca/en/cannabis/status-current-cannabis-retail-store-applications                    | ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://www.agco.ca/en/cannabis/status-current-cannabis-retail-store-applications                    | ✓ | ⏱: 2.93s 
+[FETCH]... ↓ https://www.exploringniagara.com/niagara_on_the_lake/the_apothecary.html                             | ✓ | ⏱: 0.79s 
+[SCRAPE].. ◆ https://www.exploringniagara.com/niagara_on_the_lake/the_apothecary.html                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.exploringniagara.com/niagara_on_the_lake/the_apothecary.html                             | ✓ | ⏱: 0.80s 
+[FETCH]... ↓ https://www.drugs.com/drug_information.html                                                          | ✓ | ⏱: 1.14s 
+[SCRAPE].. ◆ https://www.drugs.com/drug_information.html                                                          | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.drugs.com/drug_information.html                                                          | ✓ | ⏱: 1.17s 
+[FETCH]... ↓ https://weedmaps.com/dispensaries/in/canada/ontario/toronto                                          | ✓ | ⏱: 3.78s 
+[SCRAPE].. ◆ https://weedmaps.com/dispensaries/in/canada/ontario/toronto                                          | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://weedmaps.com/dispensaries/in/canada/ontario/toronto                                          | ✓ | ⏱: 3.86s 
+[FETCH]... ↓ https://www.cdc.gov/overdose-prevention/hcp/clin...dance/prescription-drug-monitoring-programs.html  | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://www.cdc.gov/overdose-prevention/hcp/clin...dance/prescription-drug-monitoring-programs.html  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.cdc.gov/overdose-prevention/hcp/clin...dance/prescription-drug-monitoring-programs.html  | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/...nts/licensed-cultivators-processors-sellers.html  | ✓ | ⏱: 3.33s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/...nts/licensed-cultivators-processors-sellers.html  | ✓ | ⏱: 0.70s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/...nts/licensed-cultivators-processors-sellers.html  | ✓ | ⏱: 4.05s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/...ering-produce-cannabis-own-medical-purposes.html  | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/...ering-produce-cannabis-own-medical-purposes.html  | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/...ering-produce-cannabis-own-medical-purposes.html  | ✓ | ⏱: 2.38s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/research-data.html         | ✓ | ⏱: 2.46s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/research-data.html         | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/research-data.html         | ✓ | ⏱: 2.53s 
+[FETCH]... ↓ https://www.covasoftware.com/canada-dispensary-laws/ontario                                          | ✓ | ⏱: 3.11s 
+[SCRAPE].. ◆ https://www.covasoftware.com/canada-dispensary-laws/ontario                                          | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.covasoftware.com/canada-dispensary-laws/ontario                                          | ✓ | ⏱: 3.17s 
+[FETCH]... ↓ https://www.canada.ca/en/health-canada/services/...tion/cannabis/research-data/medical-purpose.html  | ✓ | ⏱: 2.65s 
+[SCRAPE].. ◆ https://www.canada.ca/en/health-canada/services/...tion/cannabis/research-data/medical-purpose.html  | ✓ | ⏱: 0.43s 
+[COMPLETE] ● https://www.canada.ca/en/health-canada/services/...tion/cannabis/research-data/medical-purpose.html  | ✓ | ⏱: 3.08s 
+[FETCH]... ↓ https://www.eluta.ca/Chemist-jobs-in-Ontario                                                         | ✓ | ⏱: 2.95s 
+[SCRAPE].. ◆ https://www.eluta.ca/Chemist-jobs-in-Ontario                                                         | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.eluta.ca/Chemist-jobs-in-Ontario                                                         | ✓ | ⏱: 2.98s 
+[FETCH]... ↓ https://www.foggyriverfarm.com/                                                                      | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://www.foggyriverfarm.com/                                                                      | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.foggyriverfarm.com/                                                                      | ✓ | ⏱: 2.38s 
+[FETCH]... ↓ https://www.commongoodandco.com/a/locations/loca...-0uFBUPrJLvLlkqq_lLTTCIMFTLq7ewtSa4WHn-D79B154FH  | ✓ | ⏱: 3.88s 
+[SCRAPE].. ◆ https://www.commongoodandco.com/a/locations/loca...-0uFBUPrJLvLlkqq_lLTTCIMFTLq7ewtSa4WHn-D79B154FH  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.commongoodandco.com/a/locations/loca...-0uFBUPrJLvLlkqq_lLTTCIMFTLq7ewtSa4WHn-D79B154FH  | ✓ | ⏱: 3.92s 
+[FETCH]... ↓ https://www.fda.gov/drugs/development-approval-process-drugs/drug-approvals-and-databases            | ✓ | ⏱: 2.81s 
+[SCRAPE].. ◆ https://www.fda.gov/drugs/development-approval-process-drugs/drug-approvals-and-databases            | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.fda.gov/drugs/development-approval-process-drugs/drug-approvals-and-databases            | ✓ | ⏱: 2.87s 
+[FETCH]... ↓ https://www.google.com/maps/search/pharmacies+near+me/                                               | ✓ | ⏱: 2.30s 
+[SCRAPE].. ◆ https://www.google.com/maps/search/pharmacies+near+me/                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.google.com/maps/search/pharmacies+near+me/                                               | ✓ | ⏱: 2.34s 
+[FETCH]... ↓ https://www.facebook.com/DrakeApothecary/                                                            | ✓ | ⏱: 3.12s 
+[SCRAPE].. ◆ https://www.facebook.com/DrakeApothecary/                                                            | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.facebook.com/DrakeApothecary/                                                            | ✓ | ⏱: 3.18s 
+[FETCH]... ↓ https://www.boggios.com/contact/                                                                     | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.boggios.com/contact/                                                                     | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.boggios.com/contact/                                                                     | ✓ | ⏱: 1.55s 
+[FETCH]... ↓ https://www.cvs.com/store-locator/landing                                                            | ✓ | ⏱: 4.40s 
+[SCRAPE].. ◆ https://www.cvs.com/store-locator/landing                                                            | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.cvs.com/store-locator/landing                                                            | ✓ | ⏱: 4.55s 
+[FETCH]... ↓ https://www.facebook.com/ocpinfo/posts/have-you-...hentic-museum-restoration-of-a/3093437410696879/  | ✓ | ⏱: 1.71s 
+[SCRAPE].. ◆ https://www.facebook.com/ocpinfo/posts/have-you-...hentic-museum-restoration-of-a/3093437410696879/  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.facebook.com/ocpinfo/posts/have-you-...hentic-museum-restoration-of-a/3093437410696879/  | ✓ | ⏱: 1.76s 
+[FETCH]... ↓ https://www.kroger.com/health/pharmacy                                                               | ✓ | ⏱: 1.15s 
+[SCRAPE].. ◆ https://www.kroger.com/health/pharmacy                                                               | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.kroger.com/health/pharmacy                                                               | ✓ | ⏱: 1.15s 
+[FETCH]... ↓ https://www.fdbhealth.com/                                                                           | ✓ | ⏱: 3.66s 
+[SCRAPE].. ◆ https://www.fdbhealth.com/                                                                           | ✓ | ⏱: 0.09s 
+[COMPLETE] ● https://www.fdbhealth.com/                                                                           | ✓ | ⏱: 3.75s 
+[FETCH]... ↓ https://www.facebook.com/ocpinfo/videos/find-a-pharmacy-or-pharmacy-professional/419317978627097/    | ✓ | ⏱: 2.15s 
+[SCRAPE].. ◆ https://www.facebook.com/ocpinfo/videos/find-a-pharmacy-or-pharmacy-professional/419317978627097/    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.facebook.com/ocpinfo/videos/find-a-pharmacy-or-pharmacy-professional/419317978627097/    | ✓ | ⏱: 2.21s 
+[FETCH]... ↓ https://www.lignesantemississaugahalton.ca/listServices.aspx?id=10345                                | ✓ | ⏱: 1.24s 
+[SCRAPE].. ◆ https://www.lignesantemississaugahalton.ca/listServices.aspx?id=10345                                | ✓ | ⏱: 0.35s 
+[COMPLETE] ● https://www.lignesantemississaugahalton.ca/listServices.aspx?id=10345                                | ✓ | ⏱: 1.59s 
+[FETCH]... ↓ https://www.lhsc.on.ca/pharmacy/service-directory                                                    | ✓ | ⏱: 1.68s 
+[SCRAPE].. ◆ https://www.lhsc.on.ca/pharmacy/service-directory                                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.lhsc.on.ca/pharmacy/service-directory                                                    | ✓ | ⏱: 1.70s 
+[FETCH]... ↓ https://www.loc8nearme.com/ontario/mississauga/pharmacies/                                           | ✓ | ⏱: 1.41s 
+[SCRAPE].. ◆ https://www.loc8nearme.com/ontario/mississauga/pharmacies/                                           | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.loc8nearme.com/ontario/mississauga/pharmacies/                                           | ✓ | ⏱: 1.47s 
+[FETCH]... ↓ https://www.leafly.ca/dispensaries/ontario                                                           | ✓ | ⏱: 2.04s 
+[SCRAPE].. ◆ https://www.leafly.ca/dispensaries/ontario                                                           | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.leafly.ca/dispensaries/ontario                                                           | ✓ | ⏱: 2.08s 
+[FETCH]... ↓ https://www.lilitbotanicals.com/                                                                     | ✓ | ⏱: 1.97s 
+[SCRAPE].. ◆ https://www.lilitbotanicals.com/                                                                     | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.lilitbotanicals.com/                                                                     | ✓ | ⏱: 2.04s 
+[FETCH]... ↓ https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=195692                             | ✓ | ⏱: 1.17s 
+[SCRAPE].. ◆ https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=195692                             | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=195692                             | ✓ | ⏱: 1.19s 
+[FETCH]... ↓ https://www.mdselect.ca/pharmacist-directories/                                                      | ✓ | ⏱: 1.82s 
+[SCRAPE].. ◆ https://www.mdselect.ca/pharmacist-directories/                                                      | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.mdselect.ca/pharmacist-directories/                                                      | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://www.jobbank.gc.ca/marketreport/jobs/2004...nid=A49FD98D3A6E350F093E18AB82343B80.jobsearch75  | ✓ | ⏱: 3.61s 
+[SCRAPE].. ◆ https://www.jobbank.gc.ca/marketreport/jobs/2004...nid=A49FD98D3A6E350F093E18AB82343B80.jobsearch75  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.jobbank.gc.ca/marketreport/jobs/2004...nid=A49FD98D3A6E350F093E18AB82343B80.jobsearch75  | ✓ | ⏱: 3.62s 
+[FETCH]... ↓ https://www.metro.ca/en/services/pharmacy                                                            | ✓ | ⏱: 1.82s 
+[SCRAPE].. ◆ https://www.metro.ca/en/services/pharmacy                                                            | ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://www.metro.ca/en/services/pharmacy                                                            | ✓ | ⏱: 1.97s 
+[FETCH]... ↓ https://www.napra.ca/resources/pharmacy-regulatory-authorities/                                      | ✓ | ⏱: 0.73s 
+[SCRAPE].. ◆ https://www.napra.ca/resources/pharmacy-regulatory-authorities/                                      | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.napra.ca/resources/pharmacy-regulatory-authorities/                                      | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/ontario/brampton/downtown-brampton-pharmacy-7029020         | ✓ | ⏱: 5.30s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/ontario/brampton/downtown-brampton-pharmacy-7029020         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/ontario/brampton/downtown-brampton-pharmacy-7029020         | ✓ | ⏱: 5.33s 
+[FETCH]... ↓ https://www.jobbank.gc.ca/marketreport/requireme...nid=DAD60B4807EC192900B714E6640038CE.jobsearch75  | ✓ | ⏱: 3.05s 
+[SCRAPE].. ◆ https://www.jobbank.gc.ca/marketreport/requireme...nid=DAD60B4807EC192900B714E6640038CE.jobsearch75  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.jobbank.gc.ca/marketreport/requireme...nid=DAD60B4807EC192900B714E6640038CE.jobsearch75  | ✓ | ⏱: 3.07s 
+[FETCH]... ↓ https://www.leafly.ca/dispensaries/ontario?filter=medical                           | ✓ | ⏱: 1.36s 
+[SCRAPE].. ◆ https://www.leafly.ca/dispensaries/ontario?filter=medical                           | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.leafly.ca/dispensaries/ontario?filter=medical                           | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://www.mygnp.com/pharmacies/harris-pharmacy-doylestown-pa-18901/                                | ✓ | ⏱: 1.35s 
+[SCRAPE].. ◆ https://www.mygnp.com/pharmacies/harris-pharmacy-doylestown-pa-18901/                                | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.mygnp.com/pharmacies/harris-pharmacy-doylestown-pa-18901/                                | ✓ | ⏱: 1.38s 
+[FETCH]... ↓ https://www.jobbank.gc.ca/marketreport/requireme...nid=94DCBA97930CBB165D4E9E29E88913BC.jobsearch74  | ✓ | ⏱: 3.31s 
+[SCRAPE].. ◆ https://www.jobbank.gc.ca/marketreport/requireme...nid=94DCBA97930CBB165D4E9E29E88913BC.jobsearch74  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.jobbank.gc.ca/marketreport/requireme...nid=94DCBA97930CBB165D4E9E29E88913BC.jobsearch74  | ✓ | ⏱: 3.33s 
+[FETCH]... ↓ https://www.jobbank.gc.ca/marketreport/outlook-occupation/20049/ON                                   | ✓ | ⏱: 3.60s 
+[SCRAPE].. ◆ https://www.jobbank.gc.ca/marketreport/outlook-occupation/20049/ON                                   | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.jobbank.gc.ca/marketreport/outlook-occupation/20049/ON                                   | ✓ | ⏱: 3.63s 
+[FETCH]... ↓ https://www.medspharmacy.ca/junction-pharmacy                                                        | ✓ | ⏱: 2.95s 
+[SCRAPE].. ◆ https://www.medspharmacy.ca/junction-pharmacy                                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.medspharmacy.ca/junction-pharmacy                                                        | ✓ | ⏱: 2.97s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/ontario/richmond-hill/uptown-apothecary-7014296             | ✓ | ⏱: 3.95s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/ontario/richmond-hill/uptown-apothecary-7014296             | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/ontario/richmond-hill/uptown-apothecary-7014296             | ✓ | ⏱: 4.00s 
+[FETCH]... ↓ https://www.millsandmills.ca/blog/business-law/w...ming-an-authorized-cannabis-retailer-in-ontario/  | ✓ | ⏱: 3.01s 
+[SCRAPE].. ◆ https://www.millsandmills.ca/blog/business-law/w...ming-an-authorized-cannabis-retailer-in-ontario/  | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.millsandmills.ca/blog/business-law/w...ming-an-authorized-cannabis-retailer-in-ontario/  | ✓ | ⏱: 3.04s 
+[FETCH]... ↓ https://www.mississaugahaltonhealthline.ca/listServices.aspx?id=11363                                | ✓ | ⏱: 0.79s 
+[SCRAPE].. ◆ https://www.mississaugahaltonhealthline.ca/listServices.aspx?id=11363                                | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.mississaugahaltonhealthline.ca/listServices.aspx?id=11363                                | ✓ | ⏱: 0.81s 
+[FETCH]... ↓ https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377               | ✓ | ⏱: 4.24s 
+[SCRAPE].. ◆ https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377               | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377               | ✓ | ⏱: 4.29s 
+[FETCH]... ↓ https://www.cvs.com/store-locator/ontario-ca-pha...s/2456-s-grove-ave-ontario-ca-91761/storeid=9727  | ✓ | ⏱: 6.85s 
+[SCRAPE].. ◆ https://www.cvs.com/store-locator/ontario-ca-pha...s/2456-s-grove-ave-ontario-ca-91761/storeid=9727  | ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://www.cvs.com/store-locator/ontario-ca-pha...s/2456-s-grove-ave-ontario-ca-91761/storeid=9727  | ✓ | ⏱: 6.98s 
+[FETCH]... ↓ https://www.kroger.com/stores/pharmacy                                                               | ✓ | ⏱: 3.21s 
+[SCRAPE].. ◆ https://www.kroger.com/stores/pharmacy                                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.kroger.com/stores/pharmacy                                                               | ✓ | ⏱: 3.24s 
+[FETCH]... ↓ https://www.mississaugahaltonhealthline.ca/displayservice.aspx?id=218387                             | ✓ | ⏱: 1.60s 
+[SCRAPE].. ◆ https://www.mississaugahaltonhealthline.ca/displayservice.aspx?id=218387                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.mississaugahaltonhealthline.ca/displayservice.aspx?id=218387                             | ✓ | ⏱: 1.63s 
+[FETCH]... ↓ https://www.pchembc.ca/white-paper/pchem-in-canada/                                                  | ✓ | ⏱: 1.45s 
+[SCRAPE].. ◆ https://www.pchembc.ca/white-paper/pchem-in-canada/                                                  | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.pchembc.ca/white-paper/pchem-in-canada/                                                  | ✓ | ⏱: 1.46s 
+[FETCH]... ↓ https://www.pharmacistsgatewaycanada.ca/before-you-start/application-to-the-pra/                     | ✓ | ⏱: 1.19s 
+[SCRAPE].. ◆ https://www.pharmacistsgatewaycanada.ca/before-you-start/application-to-the-pra/                     | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.pharmacistsgatewaycanada.ca/before-you-start/application-to-the-pra/                     | ✓ | ⏱: 1.22s 
+[FETCH]... ↓ https://www.pas.gov.on.ca/Home/Agency/288                                                            | ✓ | ⏱: 1.84s 
+[SCRAPE].. ◆ https://www.pas.gov.on.ca/Home/Agency/288                                                            | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.pas.gov.on.ca/Home/Agency/288                                                            | ✓ | ⏱: 1.86s 
+[FETCH]... ↓ https://www.ottawapublichealth.ca/en/reports-research-and-statistics/cannabisstats.aspx              | ✓ | ⏱: 1.94s 
+[SCRAPE].. ◆ https://www.ottawapublichealth.ca/en/reports-research-and-statistics/cannabisstats.aspx              | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ottawapublichealth.ca/en/reports-research-and-statistics/cannabisstats.aspx              | ✓ | ⏱: 1.99s 
+[FETCH]... ↓ https://www.mississaugahaltonhealthline.ca/displayservice.aspx?id=147722                             | ✓ | ⏱: 2.05s 
+[SCRAPE].. ◆ https://www.mississaugahaltonhealthline.ca/displayservice.aspx?id=147722                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.mississaugahaltonhealthline.ca/displayservice.aspx?id=147722                             | ✓ | ⏱: 2.08s 
+[FETCH]... ↓ https://www.ontario.ca/healthcareoptions                                                             | ✓ | ⏱: 3.16s 
+[SCRAPE].. ◆ https://www.ontario.ca/healthcareoptions                                                             | ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://www.ontario.ca/healthcareoptions                                                             | ✓ | ⏱: 3.17s 
+[FETCH]... ↓ https://www.opatoday.com/become-a-pharmacist/                                                        | ✓ | ⏱: 1.18s 
+[SCRAPE].. ◆ https://www.opatoday.com/become-a-pharmacist/                                                        | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.opatoday.com/become-a-pharmacist/                                                        | ✓ | ⏱: 1.21s 
+[FETCH]... ↓ https://www.pharmacy.utoronto.ca/how-become-pharmacist                                               | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://www.pharmacy.utoronto.ca/how-become-pharmacist                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.pharmacy.utoronto.ca/how-become-pharmacist                                               | ✓ | ⏱: 1.56s 
+[FETCH]... ↓ https://www.opatoday.com/about-us/                                                                   | ✓ | ⏱: 2.70s 
+[SCRAPE].. ◆ https://www.opatoday.com/about-us/                                                                   | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.opatoday.com/about-us/                                                                   | ✓ | ⏱: 2.81s 
+[FETCH]... ↓ https://www.reddit.com/r/pharmacy/comments/1qs7ji0/how_to_become_a_registered_pharmacist_in_canada/  | ✓ | ⏱: 0.87s 
+[SCRAPE].. ◆ https://www.reddit.com/r/pharmacy/comments/1qs7ji0/how_to_become_a_registered_pharmacist_in_canada/  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.reddit.com/r/pharmacy/comments/1qs7ji0/how_to_become_a_registered_pharmacist_in_canada/  | ✓ | ⏱: 0.88s 
+[FETCH]... ↓ https://www.osc.ca/en/about-us/open-data                                                             | ✓ | ⏱: 2.91s 
+[SCRAPE].. ◆ https://www.osc.ca/en/about-us/open-data                                                             | ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://www.osc.ca/en/about-us/open-data                                                             | ✓ | ⏱: 3.06s 
+[FETCH]... ↓ https://www.pharmachoice.com/locator/                                                                | ✓ | ⏱: 2.69s 
+[SCRAPE].. ◆ https://www.pharmachoice.com/locator/                                                                | ✓ | ⏱: 0.13s 
+[COMPLETE] ● https://www.pharmachoice.com/locator/                                                                | ✓ | ⏱: 2.83s 
+[FETCH]... ↓ https://www.ontario.ca/laws/regulation/180468                                                        | ✓ | ⏱: 2.74s 
+[SCRAPE].. ◆ https://www.ontario.ca/laws/regulation/180468                                                        | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.ontario.ca/laws/regulation/180468                                                        | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://www.ontario.ca/page/guidelines-registration-specialty-vape-store                             | ✓ | ⏱: 2.76s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/guidelines-registration-specialty-vape-store                             | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.ontario.ca/page/guidelines-registration-specialty-vape-store                             | ✓ | ⏱: 2.79s 
+[FETCH]... ↓ https://www.ontario.ca/page/cannabis-laws                                                            | ✓ | ⏱: 2.79s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/cannabis-laws                                                            | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/cannabis-laws                                                            | ✓ | ⏱: 2.82s 
+[FETCH]... ↓ https://www.ontario.ca/page/pharmacies                                                               | ✓ | ⏱: 2.86s 
+[SCRAPE].. ◆ https://www.ontario.ca/page/pharmacies                                                               | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.ontario.ca/page/pharmacies                                                               | ✓ | ⏱: 2.88s 
+[FETCH]... ↓ https://www.piinpoint.com/resources/find-location-cannabis-retail-business                           | ✓ | ⏱: 2.53s 
+[SCRAPE].. ◆ https://www.piinpoint.com/resources/find-location-cannabis-retail-business                           | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.piinpoint.com/resources/find-location-cannabis-retail-business                           | ✓ | ⏱: 2.59s 
+[FETCH]... ↓ https://www.quora.com/How-do-I-get-a-pharmacy-license-in-Ontario                                     | ✓ | ⏱: 2.16s 
+[SCRAPE].. ◆ https://www.quora.com/How-do-I-get-a-pharmacy-license-in-Ontario                                     | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.quora.com/How-do-I-get-a-pharmacy-license-in-Ontario                                     | ✓ | ⏱: 2.24s 
+[FETCH]... ↓ https://www.rexall.ca/                                                                               | ✓ | ⏱: 2.02s 
+[SCRAPE].. ◆ https://www.rexall.ca/                                                                               | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.rexall.ca/                                                                               | ✓ | ⏱: 2.08s 
+[FETCH]... ↓ https://www.rxlist.com/                                                                              | ✓ | ⏱: 1.68s 
+[SCRAPE].. ◆ https://www.rxlist.com/                                                                              | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.rxlist.com/                                                                              | ✓ | ⏱: 1.71s 
+[FETCH]... ↓ https://www.pharmacistsgatewaycanada.ca/how-to-apply/ontario/                                        | ✓ | ⏱: 1.29s 
+[SCRAPE].. ◆ https://www.pharmacistsgatewaycanada.ca/how-to-apply/ontario/                                        | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.pharmacistsgatewaycanada.ca/how-to-apply/ontario/                                        | ✓ | ⏱: 1.33s 
+[FETCH]... ↓ https://www.southwesthealthline.ca/displayservice.aspx?id=13979                                      | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://www.southwesthealthline.ca/displayservice.aspx?id=13979                                      | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.southwesthealthline.ca/displayservice.aspx?id=13979                                      | ✓ | ⏱: 1.14s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/displayservice.aspx?id=120838                                | ✓ | ⏱: 0.80s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/displayservice.aspx?id=120838                                | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/displayservice.aspx?id=120838                                | ✓ | ⏱: 0.83s 
+[FETCH]... ↓ https://www.tripadvisor.com/Attraction_Review-g1...othecary_Museum-Niagara_on_the_Lake_Ontario.html  | ✓ | ⏱: 0.70s 
+[SCRAPE].. ◆ https://www.tripadvisor.com/Attraction_Review-g1...othecary_Museum-Niagara_on_the_Lake_Ontario.html  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.tripadvisor.com/Attraction_Review-g1...othecary_Museum-Niagara_on_the_Lake_Ontario.html  | ✓ | ⏱: 0.70s 
+[FETCH]... ↓ https://www.themedicalpharmacy.com/                                                                  | ✓ | ⏱: 1.46s 
+[SCRAPE].. ◆ https://www.themedicalpharmacy.com/                                                                  | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.themedicalpharmacy.com/                                                                  | ✓ | ⏱: 1.48s 
+[FETCH]... ↓ https://www.reddit.com/r/pharmacy/comments/bc5uhk/weird_question_how_much_can_you_guys_find_out/     | ✓ | ⏱: 1.01s 
+[SCRAPE].. ◆ https://www.reddit.com/r/pharmacy/comments/bc5uhk/weird_question_how_much_can_you_guys_find_out/     | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.reddit.com/r/pharmacy/comments/bc5uhk/weird_question_how_much_can_you_guys_find_out/     | ✓ | ⏱: 1.08s 
+[FETCH]... ↓ https://www.suttonapothecary.com/contact-us/                                                         | ✓ | ⏱: 1.85s 
+[SCRAPE].. ◆ https://www.suttonapothecary.com/contact-us/                                                         | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.suttonapothecary.com/contact-us/                                                         | ✓ | ⏱: 1.88s 
+[FETCH]... ↓ https://www.thp.ca/ineed/visitorinformation/Pages/Pharmacies.aspx                                    | ✓ | ⏱: 1.69s 
+[SCRAPE].. ◆ https://www.thp.ca/ineed/visitorinformation/Pages/Pharmacies.aspx                                    | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.thp.ca/ineed/visitorinformation/Pages/Pharmacies.aspx                                    | ✓ | ⏱: 1.72s 
+[FETCH]... ↓ https://www.thevillagepharmacy.ca/locations                                                          | ✓ | ⏱: 2.10s 
+[SCRAPE].. ◆ https://www.thevillagepharmacy.ca/locations                                                          | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.thevillagepharmacy.ca/locations                                                          | ✓ | ⏱: 2.17s 
+[FETCH]... ↓ https://www.universaldrugstore.com/                                                                  | ✓ | ⏱: 1.51s 
+[SCRAPE].. ◆ https://www.universaldrugstore.com/                                                                  | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.universaldrugstore.com/                                                                  | ✓ | ⏱: 1.55s 
+[FETCH]... ↓ https://www.vec.ca/english/11/pharmacies-toronto.cfm                                                 | ✓ | ⏱: 1.39s 
+[SCRAPE].. ◆ https://www.vec.ca/english/11/pharmacies-toronto.cfm                                                 | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.vec.ca/english/11/pharmacies-toronto.cfm                                                 | ✓ | ⏱: 1.41s 
+[FETCH]... ↓ https://www.visitniagaracanada.com/do/niagara-apothecary/                                            | ✓ | ⏱: 1.20s 
+[SCRAPE].. ◆ https://www.visitniagaracanada.com/do/niagara-apothecary/                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.visitniagaracanada.com/do/niagara-apothecary/                                            | ✓ | ⏱: 1.23s 
+[FETCH]... ↓ https://www.vigilance.ca/                                                                            | ✓ | ⏱: 1.31s 
+[SCRAPE].. ◆ https://www.vigilance.ca/                                                                            | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.vigilance.ca/                                                                            | ✓ | ⏱: 1.34s 
+[FETCH]... ↓ https://www.yelp.ca/search?cflt=drugstores&find_loc=Mississauga,+ON                                  | ✓ | ⏱: 0.73s 
+[SCRAPE].. ◆ https://www.yelp.ca/search?cflt=drugstores&find_loc=Mississauga,+ON                                  | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.ca/search?cflt=drugstores&find_loc=Mississauga,+ON                                  | ✓ | ⏱: 0.73s 
+[FETCH]... ↓ https://www.wwhealthline.ca/(X(1))/displayService.aspx?id=208815                                     | ✓ | ⏱: 1.11s 
+[SCRAPE].. ◆ https://www.wwhealthline.ca/(X(1))/displayService.aspx?id=208815                                     | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.wwhealthline.ca/(X(1))/displayService.aspx?id=208815                                     | ✓ | ⏱: 1.13s 
+[FETCH]... ↓ https://www.yelp.com/search?cflt=pharmacy&find_loc=Ontario,+CA                                       | ✓ | ⏱: 0.84s 
+[SCRAPE].. ◆ https://www.yelp.com/search?cflt=pharmacy&find_loc=Ontario,+CA                                       | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.com/search?cflt=pharmacy&find_loc=Ontario,+CA                                       | ✓ | ⏱: 0.84s 
+[FETCH]... ↓ https://youdrugstore.com/                                                                            | ✓ | ⏱: 0.75s 
+[SCRAPE].. ◆ https://youdrugstore.com/                                                                            | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://youdrugstore.com/                                                                            | ✓ | ⏱: 0.75s 
+[FETCH]... ↓ https://www.torontocentralhealthline.ca/listservices.aspx?id=11363                                   | ✓ | ⏱: 0.78s 
+[SCRAPE].. ◆ https://www.torontocentralhealthline.ca/listservices.aspx?id=11363                                   | ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://www.torontocentralhealthline.ca/listservices.aspx?id=11363                                   | ✓ | ⏱: 0.80s 
+[FETCH]... ↓ https://www.rexall.ca/storelocator/results/?long...6441198&latitude=43.5890452&location=mississauga  | ✓ | ⏱: 2.75s 
+[SCRAPE].. ◆ https://www.rexall.ca/storelocator/results/?long...6441198&latitude=43.5890452&location=mississauga  | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.rexall.ca/storelocator/results/?long...6441198&latitude=43.5890452&location=mississauga  | ✓ | ⏱: 2.81s 
+[FETCH]... ↓ https://www.rexall.ca/storelocator/results/?long...999&location=Rexall     545,Ave+Steeles,Brampton,L6Y  | ✓ | ⏱: 2.86s 
+[SCRAPE].. ◆ https://www.rexall.ca/storelocator/results/?long...999&location=Rexall     545,Ave+Steeles,Brampton,L6Y  | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.rexall.ca/storelocator/results/?long...999&location=Rexall     545,Ave+Steeles,Brampton,L6Y  | ✓ | ⏱: 2.91s 
+[FETCH]... ↓ https://www.walgreens.com/                                                                           | ✓ | ⏱: 2.93s 
+[SCRAPE].. ◆ https://www.walgreens.com/                                                                           | ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://www.walgreens.com/                                                                           | ✓ | ⏱: 3.01s 
+[FETCH]... ↓ https://www.workopolis.com/search?q=chemist&l=ontario                                                | ✓ | ⏱: 2.68s 
+[SCRAPE].. ◆ https://www.workopolis.com/search?q=chemist&l=ontario                                                | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.workopolis.com/search?q=chemist&l=ontario                                                | ✓ | ⏱: 2.74s 
+[FETCH]... ↓ https://www.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                    | ✓ | ⏱: 0.53s 
+[SCRAPE].. ◆ https://www.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                    | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.yelp.ca/search?cflt=pharmacy&find_loc=Mississauga,+ON                                    | ✓ | ⏱: 0.53s 
+[FETCH]... ↓ https://www.ziprecruiter.com/Jobs/Chemist/--in-Ontario                                               | ✓ | ⏱: 2.31s 
+[SCRAPE].. ◆ https://www.ziprecruiter.com/Jobs/Chemist/--in-Ontario                                               | ✓ | ⏱: 0.10s 
+[COMPLETE] ● https://www.ziprecruiter.com/Jobs/Chemist/--in-Ontario                                               | ✓ | ⏱: 2.43s 
+[FETCH]... ↓ https://www.publichealthontario.ca/en/Data-and-Analysis/Substance-Use/Cannabis-Harms                 | ✓ | ⏱: 7.02s 
+[SCRAPE].. ◆ https://www.publichealthontario.ca/en/Data-and-Analysis/Substance-Use/Cannabis-Harms                 | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.publichealthontario.ca/en/Data-and-Analysis/Substance-Use/Cannabis-Harms                 | ✓ | ⏱: 7.09s 
+[FETCH]... ↓ https://www.rexall.ca/storelocator/store/745/                                                        | ✓ | ⏱: 3.97s 
+[SCRAPE].. ◆ https://www.rexall.ca/storelocator/store/745/                                                        | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.rexall.ca/storelocator/store/745/                                                        | ✓ | ⏱: 4.02s 
+[FETCH]... ↓ https://www.publichealthontario.ca/en/Data-and-Analysis/Using-Data/Open-Data                         | ✓ | ⏱: 4.46s 
+[SCRAPE].. ◆ https://www.publichealthontario.ca/en/Data-and-Analysis/Using-Data/Open-Data                         | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www.publichealthontario.ca/en/Data-and-Analysis/Using-Data/Open-Data                         | ✓ | ⏱: 4.53s 
+[FETCH]... ↓ https://www.scribd.com/document/498205797/FINAL-List-of-Pharmacies                                   | ✓ | ⏱: 6.17s 
+[SCRAPE].. ◆ https://www.scribd.com/document/498205797/FINAL-List-of-Pharmacies                                   | ✓ | ⏱: 0.25s 
+[COMPLETE] ● https://www.scribd.com/document/498205797/FINAL-List-of-Pharmacies                                   | ✓ | ⏱: 6.45s 
+[FETCH]... ↓ https://www3.ohrc.on.ca/en/questions-and-answers-cannabis-and-human-rights-code                      | ✓ | ⏱: 2.83s 
+[SCRAPE].. ◆ https://www3.ohrc.on.ca/en/questions-and-answers-cannabis-and-human-rights-code                      | ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://www3.ohrc.on.ca/en/questions-and-answers-cannabis-and-human-rights-code                      | ✓ | ⏱: 2.89s 
+[FETCH]... ↓ https://www.walmart.com/store/3796-ontario-ca/pharmacy                                               | ✓ | ⏱: 4.20s 
+[SCRAPE].. ◆ https://www.walmart.com/store/3796-ontario-ca/pharmacy                                               | ✓ | ⏱: 0.04s 
+[COMPLETE] ● https://www.walmart.com/store/3796-ontario-ca/pharmacy                                               | ✓ | ⏱: 4.24s 
+[FETCH]... ↓ https://www.shoppersdrugmart.ca/store-locator/store/776?lang=en&tab=pharmacy                         | ✓ | ⏱: 6.03s 
+[SCRAPE].. ◆ https://www.shoppersdrugmart.ca/store-locator/store/776?lang=en&tab=pharmacy                         | ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://www.shoppersdrugmart.ca/store-locator/store/776?lang=en&tab=pharmacy                         | ✓ | ⏱: 6.03s 
+[FETCH]... ↓ https://www.ziprecruiter.com/Jobs/Government-Chemist/--in-Ontario                                    | ✓ | ⏱: 1.44s 
+[SCRAPE].. ◆ https://www.ziprecruiter.com/Jobs/Government-Chemist/--in-Ontario                                    | ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://www.ziprecruiter.com/Jobs/Government-Chemist/--in-Ontario                                    | ✓ | ⏱: 1.49s 
+[FETCH]... ↓ https://www.scribd.com/document/501197783/Ontario-pharmacies-offering-the-AstraZeneca-vaccine        | ✓ | ⏱: 5.34s 
+[SCRAPE].. ◆ https://www.scribd.com/document/501197783/Ontario-pharmacies-offering-the-AstraZeneca-vaccine        | ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://www.scribd.com/document/501197783/Ontario-pharmacies-offering-the-AstraZeneca-vaccine        | ✓ | ⏱: 5.55s 
+[FETCH]... ↓ https://www.scottsdirectories.com/list-of-pharmacists/                                               | ✓ | ⏱: 13.85s 
+[SCRAPE].. ◆ https://www.scottsdirectories.com/list-of-pharmacists/                                               | ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://www.scottsdirectories.com/list-of-pharmacists/                                               | ✓ | ⏱: 13.89s 
+[FETCH]... ↓ https://www.scottsdirectories.com/list-of-pharmacy/                                                  | ✓ | ⏱: 16.52s 
+[SCRAPE].. ◆ https://www.scottsdirectories.com/list-of-pharmacy/                                                  | ✓ | ⏱: 0.29s 
+[COMPLETE] ● https://www.scottsdirectories.com/list-of-pharmacy/                                                  | ✓ | ⏱: 16.82s 
+⚠️  Crawl failed for https://www.opatoday.com/about-us/: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Download is starting
+Call log:
+  - navigating to "https://files.ontario.ca/moh-paxlovid-pharmacy-master-list-en-utf8-2022-08-25.csv", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.guardian-ida-remedysrx.ca/en/ontario/caledon/caledon-east-pharmacy-7065377: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.cheminst.ca/magazine/article/chemists-need-professional-designation-for-the-public-good/
+Call log:
+  - navigating to "https://www.cheminst.ca/magazine/article/chemists-need-professional-designation-for-the-public-good/", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+⚠️  Crawl failed for https://www.guardian-ida-remedysrx.ca/en/ontario/brampton/downtown-brampton-pharmacy-7029020: Unexpected error in _crawl_web at line 718 in _crawl_web (../../anaconda3/envs/auto_research/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.cicic.ca/938/chemists.canada?id=18
+Call log:
+  - navigating to "https://www.cicic.ca/938/chemists.canada?id=18", waiting until "domcontentloaded"
+
+
+Code context:
+ 713                                   tag="GOTO",
+ 714                                   params={"url": url},
+ 715                               )
+ 716                               response = None
+ 717                           else:
+ 718 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 719   
+ 720                       # ──────────────────────────────────────────────────────────────
+ 721                       # Walk the redirect chain.  Playwright returns only the last
+ 722                       # hop, so we trace the `request.redirected_from` links until the
+ 723                       # first response that differs from the final one and surface its
+[INIT].... → Crawl4AI 0.8.0 
+[FETCH]... ↓ https://www.providerconnect.ca/Carriers/GreenShi...en_CA/SmokingCessationProviderListONTApr2011.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.providerconnect.ca/Carriers/GreenShield/SmokeCessationPdf/en_CA/SmokingCessationProviderListONTApr2011.pdf... 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpoo14jy76.pdf 
+[SCRAPE].. ◆ https://www.providerconnect.ca/Carriers/GreenShi...en_CA/SmokingCessationProviderListONTApr2011.pdf  | ✓ | ⏱: 0.78s 
+[COMPLETE] ● https://www.providerconnect.ca/Carriers/GreenShi...en_CA/SmokingCessationProviderListONTApr2011.pdf  | ✓ | ⏱: 0.78s 
+[FETCH]... ↓ https://www.doingbusinesswithocs.ca/wp-content/u.../2024/05/OCS-By-the-Numbers-Data-Report-2023.pdf  | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://www.doingbusinesswithocs.ca/wp-content/uploads/2024/05/OCS-By-the-Numbers-Data-Report-2023.pdf... 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 0% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 10% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 20% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 30% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 40% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 60% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 70% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 80% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 90% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpftxeklby.pdf 
+[SCRAPE].. ◆ https://www.doingbusinesswithocs.ca/wp-content/u.../2024/05/OCS-By-the-Numbers-Data-Report-2023.pdf  | ✓ | ⏱: 1.80s 
+[COMPLETE] ● https://www.doingbusinesswithocs.ca/wp-content/u.../2024/05/OCS-By-the-Numbers-Data-Report-2023.pdf  | ✓ | ⏱: 1.80s 
+[FETCH]... ↓ https://peelregion.ca/sites/default/files/2025-02/cannabis-data-overview-2013-2022.pdf               | ✓ | ⏱: 0.00s 
+[INFO].... ℹ Downloading PDF from https://peelregion.ca/sites/default/files/2025-02/cannabis-data-overview-2013-2022.pdf... 
+[DEBUG]... ⋯ PDF download progress: 50% 
+[DEBUG]... ⋯ PDF download progress: 100% 
+[INFO].... ℹ PDF downloaded successfully: /tmp/tmpnzlnt4ne.pdf 
+[SCRAPE].. ◆ https://peelregion.ca/sites/default/files/2025-02/cannabis-data-overview-2013-2022.pdf               | ✓ | ⏱: 0.70s 
+[COMPLETE] ● https://peelregion.ca/sites/default/files/2025-02/cannabis-data-overview-2013-2022.pdf               | ✓ | ⏱: 0.70s 
+
+======================================================================
+📍 📄 Scraping Complete
+   Scraped 185 documents from 188 URLs
+   Data: {"source_documents": 188, "scraped_documents": 185}
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Starting
+   Extracting data from 185 documents...
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 5/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 10/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 15/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 20/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 25/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 30/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 35/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 40/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 45/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 50/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 55/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 60/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 65/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 70/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 75/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 80/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 85/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 90/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 95/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 100/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 105/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 110/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 115/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 120/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 125/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 130/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 135/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 140/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 145/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 150/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 155/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 160/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 165/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 170/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 175/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 180/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extracting
+   Extracted from 185/185 documents
+======================================================================
+
+======================================================================
+📍 🎯 Extraction Complete
+   Extracted 1478 records from 185 documents
+   Data: {"extracted_count": 1478, "source_documents": 185}
+======================================================================
+
+======================================================================
+📍 🗑️  Deduplication Starting
+   Removing duplicates from 1478 records...
+======================================================================
+
+======================================================================
+📍 🧹 Hard-ID Dedupe
+   Rows: 1478 -> 1379
+   Data: {"input_rows": 1478, "post_hard_rows": 1379}
+======================================================================

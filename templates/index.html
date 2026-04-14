@@ -326,13 +326,13 @@
                         >
                         <div class="column-controls">
                             <label class="priority-checkbox-label">
-                                <input type="checkbox" class="priority-checkbox" checked>
+                                <input type="checkbox" class="priority-checkbox">
                                 Priority
                             </label>
                             <select class="identifier-select">
                                 <option value="none">No ID</option>
                                 <option value="hard">Hard ID</option>
-                                <option value="soft">Soft ID</option>
+                                <option selected value="soft">Soft ID</option>
                             </select>
                             <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
                         </div>
@@ -354,6 +354,28 @@
                             <select class="identifier-select">
                                 <option value="none">No ID</option>
                                 <option value="hard">Hard ID</option>
+                                <option selected value="soft">Soft ID</option>
+                            </select>
+                            <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="column-input-group">
+                        <input
+                            type="text"
+                            class="column-input"
+                            placeholder="Column name"
+                            value="Phone"
+                            required
+                        >
+                        <div class="column-controls">
+                            <label class="priority-checkbox-label">
+                                <input type="checkbox" class="priority-checkbox">
+                                Priority
+                            </label>
+                            <select class="identifier-select">
+                                <option value="none">No ID</option>
+                                <option selected value="hard">Hard ID</option>
                                 <option value="soft">Soft ID</option>
                             </select>
                             <button type="button" class="remove-column-btn" onclick="removeColumn(event)">Remove</button>
@@ -365,12 +387,12 @@
                             type="text"
                             class="column-input"
                             placeholder="Column name"
-                            value="Website"
+                            value="City"
                             required
                         >
                         <div class="column-controls">
                             <label class="priority-checkbox-label">
-                                <input type="checkbox" class="priority-checkbox">
+                                <input type="checkbox" class="priority-checkbox" checked>
                                 Priority
                             </label>
                             <select class="identifier-select">
