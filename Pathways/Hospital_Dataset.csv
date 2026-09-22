@@ -1,0 +1,802 @@
+Address,City,Name,source_url
+"145 Government Rd E, Kirkland Lake, ON P2N 3P4",Kirkland Lake,Blanche River Health,https://www.ontario.ca/page/ontarios-public-hospitals
+"61 Fifth St, Englehart, ON P0J 1H0",Englehart,Blanche River Health - Englehart Site,https://www.ontario.ca/page/ontarios-public-hospitals
+"145 Government Rd E, Kirkland Lake, ON P2N 3P4",Kirkland Lake,Blanche River Health - Kirkland Lake Site,https://www.ontario.ca/page/ontarios-public-hospitals
+"825 McKinnon Dr, Espanola, ON P5E 1R4",Espanola,Espanola Regional Hospital and Health Centre,https://www.ontario.ca/page/ontarios-public-hospitals
+"41 Ramsey Lake Rd, Sudbury, ON P3E 5J1",Sudbury,Health Sciences North,https://www.ontario.ca/page/ontarios-public-hospitals
+"865 Regent St S, Sudbury, ON P3E 3Y9",Sudbury,Health Sciences North - Sudbury Outpatient Centre - Regent St,https://www.ontario.ca/page/ontarios-public-hospitals
+"1405 Edward St, Hearst, ON P0L 1N0",Hearst,Hôpital Notre-Dame Hospital - Hearst,https://www.ontario.ca/page/ontarios-public-hospitals
+"278 Front St, Hornepayne, ON P0M 1Z0",Hornepayne,Hornepayne Community Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"17 Government Rd, Wawa, ON P0S 1K0",Wawa,Lady Dunn Health Centre - Wawa,https://www.ontario.ca/page/ontarios-public-hospitals
+"11 Meredith St E, Little Current, ON P0P 1K0",Little Current,Manitoulin Health Centre - Little Current,https://www.ontario.ca/page/ontarios-public-hospitals
+"2120B Hwy 551, Mindemoya, ON P0P 1S0",Mindemoya,Manitoulin Health Centre - Mindemoya,https://www.ontario.ca/page/ontarios-public-hospitals
+"217 Turcotte Park Rd, Mattawa, ON P0H 1V0",Mattawa,Mattawa Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"241 Eighth St, Cochrane, ON P0L 1C0",Cochrane,MICs Group of Health Services,https://www.ontario.ca/page/ontarios-public-hospitals
+"58 Anson Dr, Iroquois Falls, ON P0K 1E0",Iroquois Falls,MICs Group of Health Services - Anson General Hospital - Iroquois Falls,https://www.ontario.ca/page/ontarios-public-hospitals
+"507 8th Ave, Matheson, ON P0K 1N0",Matheson,MICs Group of Health Services - Bingham Memorial Hospital - Matheson,https://www.ontario.ca/page/ontarios-public-hospitals
+"241 Eighth St, Cochrane, ON P0L 1C0",Cochrane,MICs Group of Health Services - Lady Minto Hospital - Cochrane,https://www.ontario.ca/page/ontarios-public-hospitals
+"50 College Dr, North Bay, ON P1B 5A4",North Bay,North Bay Regional Health Centre,https://www.ontario.ca/page/ontarios-public-hospitals
+"525 Causley St, Blind River, ON P0R 1B0",Blind River,North Shore Health Network,https://www.ontario.ca/page/ontarios-public-hospitals
+"1180 Richards St, Richards Landing, ON P0R 1J0",Richards Landing,North Shore Health Network - Richards Landing - Matthews Site,https://www.ontario.ca/page/ontarios-public-hospitals
+"135 Dawson St, Thessalon, ON P0R 1L0",Thessalon,North Shore Health Network - Thessalon Site,https://www.ontario.ca/page/ontarios-public-hospitals
+"750 Great Northern Rd, Sault Ste Marie, ON P6B 0A8",Sault Ste Marie,Sault Area Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"101 Progress Cres, Kapuskasing, ON P5N 3H5",Kapuskasing,Sensenbrenner Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"6 Broomhead Rd, Chapleau, ON P0M 1K0",Chapleau,Services de santé de Chapleau Health Services - Chapleau General Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"107 Kelly Rd, Smooth Rock Falls, ON P0L 2B0",Smooth Rock Falls,Smooth Rock Falls Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"1140 South Bay Rd, Sudbury, ON P3E 0B6",Sudbury,St Joseph's Continuing Care Centre - Sudbury,https://www.ontario.ca/page/ontarios-public-hospitals
+"70 Spine Rd, Elliot Lake, ON P5A 1X2",Elliot Lake,St Joseph's General Hospital Elliot Lake,https://www.ontario.ca/page/ontarios-public-hospitals
+"421 Shepherdson Rd, New Liskeard, ON P0J 1P0",New Liskeard,Temiskaming Hospital - New Liskeard,https://www.ontario.ca/page/ontarios-public-hospitals
+"19 Hospital Dr, Moose Factory, ON P0L 1W0",Moose Factory,Weeneebayko Area Health Authority (WAHA),https://www.ontario.ca/page/ontarios-public-hospitals
+"972 Riverside E, Attawapiskat, ON P0L 1A0",Attawapiskat,Weeneebayko Area Health Authority (WAHA) - Attawapiskat Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"5 Airport Rd, Fort Albany, ON P0L 1H0",Fort Albany,Weeneebayko Area Health Authority (WAHA) - Fort Albany Hospital,https://www.ontario.ca/page/ontarios-public-hospitals
+"5 Percy's Way, Moosonee, ON P0L 1Y0",Moosonee,Weeneebayko Area Health Authority (WAHA) - Moosonee Health Centre,https://www.ontario.ca/page/ontarios-public-hospitals
+"19 Hospital Dr, Moose Factory, ON P0L 1W0",Moose Factory,Weeneebayko Area Health Authority (WAHA) - Weeneebayko General Hospital (WGH),https://www.ontario.ca/page/ontarios-public-hospitals
+"725 Coursol Rd, Sturgeon Falls, ON P2B 2Y6",Sturgeon Falls,West Nipissing General Hospital (The) - Sturgeon Falls,https://www.ontario.ca/page/ontarios-public-hospitals
+"6 Albert St, Parry Sound, ON P2A 3A4",Parry Sound,West Parry Sound Health Centre,https://www.ontario.ca/page/ontarios-public-hospitals
+"555 University Ave, Toronto, ON M5G 1X8",Toronto,Hospital for Sick Children (The),https://www.ontario.ca/page/ontarios-public-hospitals
+"201 Georgian Dr, Barrie, ON L4M 6M2",Barrie,Royal Victoria Regional Health Centre,https://www.ontario.ca/page/ontarios-public-hospitals
+200 Fletcher Crescent,Alliston,Stevenson Memorial Hospital,https://trilliumhealthpartners.ca/
+201 Georgian Drive,Barrie,Royal Victoria Regional Health Centre,https://trilliumhealthpartners.ca/
+2100 Bovaird Drive East,Brampton,Brampton Civic Hospital,https://trilliumhealthpartners.ca/
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://trilliumhealthpartners.ca/
+20 Lynch Street,Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://trilliumhealthpartners.ca/
+200 Church Street,Toronto,Reactivation Care Centre – Church,https://trilliumhealthpartners.ca/
+459 Hume Street,Collingwood,Collingwood General And Marine Hospital,https://trilliumhealthpartners.ca/
+100 Frank Miller Drive,Huntsville,Huntsville District Memorial Hospital,https://trilliumhealthpartners.ca/
+75 Ann Street,Bracebridge,South Muskoka Memorial Hospital,https://trilliumhealthpartners.ca/
+381 Church Street,Markham,Markham-Stouffville Hospital,https://trilliumhealthpartners.ca/
+4 Campbell Drive,Uxbridge,Uxbridge Hospital,https://trilliumhealthpartners.ca/
+2111 Finch Avenue West,Toronto,Reactivation Care Centre – Finch,https://trilliumhealthpartners.ca/
+1112 St. Andrew's Drive,Midland,Georgian Bay General Hospital - Main Site,https://trilliumhealthpartners.ca/
+611 Prospect Boulevard,Midland,Georgian Bay General Hospital - Prospect Boulevard Site,https://trilliumhealthpartners.ca/
+2200 Eglinton Avenue West,Mississauga,Credit Valley Hospital,https://trilliumhealthpartners.ca/
+100 Queensway West,Mississauga,Mississauga Hospital,https://trilliumhealthpartners.ca/
+150 Sherway Drive,Toronto,Queensway Health Centre,https://trilliumhealthpartners.ca/
+"2180 Speakman Drive, Ground Floor",Mississauga,Speakman Dialysis Care Centre,https://trilliumhealthpartners.ca/
+82 Buttonwood Avenue,Toronto,UHN Reactivation Care Centre,https://trilliumhealthpartners.ca/
+596 Davis Drive,Newmarket,Southlake Health - Newmarket Site,https://trilliumhealthpartners.ca/
+3001 Hospital Drive,Oakville,Oakville Trafalgar Memorial Hospital,https://trilliumhealthpartners.ca/
+725 Bronte Street South,Milton,Milton District Hospital,https://trilliumhealthpartners.ca/
+1 Princess Anne Drive,Georgetown,Georgetown Hospital,https://trilliumhealthpartners.ca/
+100 Rolling Hills Drive,Orangeville,Headwaters Health Care Centre,https://trilliumhealthpartners.ca/
+170 Colborne Street West,Orillia,Orillia Soldiers' Memorial Hospital,https://trilliumhealthpartners.ca/
+500 Church Street,Penetanguishene,Waypoint Centre for Mental Health Care (Main Site),https://trilliumhealthpartners.ca/
+287 Bayshore Drive,Midland,Waypoint Centre for Mental Health Care - Bayshore Drive Site,https://trilliumhealthpartners.ca/
+10 Trench Street,Richmond Hill,Mackenzie Richmond Hill Hospital,https://trilliumhealthpartners.ca/
+3200 Major Mackenzie Drive West,Vaughan,Cortellucci Vaughan Hospital,https://trilliumhealthpartners.ca/
+"9401 Jane Street, Suite 101",Vaughan,Jane Street Site (Vaughan),https://trilliumhealthpartners.ca/
+20260 County Road 43,Alexandria,Glengarry Memorial Hospital,https://trilliumhealthpartners.ca/
+75 Spring Street,Almonte,Almonte General Hospital,https://trilliumhealthpartners.ca/
+350 John Street North,Arnprior,Arnprior And District Memorial Hospital,https://trilliumhealthpartners.ca/
+7 St. Francis Memorial Drive,Barry's Bay,St Francis Memorial Hospital,https://trilliumhealthpartners.ca/
+265 Dundas Street East,Belleville,Belleville General Hospital,https://trilliumhealthpartners.ca/
+1-H Manor Lane,Bancroft,North Hastings Hospital (Bancroft),https://trilliumhealthpartners.ca/
+403 Main Street East,Picton,Prince Edward County Memorial Hospital,https://trilliumhealthpartners.ca/
+242 King Street,Trenton,Trenton Memorial Hospital,https://trilliumhealthpartners.ca/
+75 Charles Street,Brockville,Brockville General Hospital,https://trilliumhealthpartners.ca/
+146 Oliver Road,Campbellford,Campbellford Memorial Hospital,https://trilliumhealthpartners.ca/
+211 Lake Avenue East,Carleton Place,Carleton Place And District Memorial Hospital,https://trilliumhealthpartners.ca/
+1000 DePalma Drive,Cobourg,Northumberland Hills Hospital,https://trilliumhealthpartners.ca/
+14 York Street,Cornwall,St. Joseph's Continuing Care Centre,https://trilliumhealthpartners.ca/
+840 McConnell Avenue,Cornwall,Cornwall Community Hospital,https://trilliumhealthpartners.ca/
+117 Banting Drive,Deep River,Deep River And District Health,https://trilliumhealthpartners.ca/
+"7199 Gelert Road, P.O. Box 115",Haliburton,Haliburton Site,https://trilliumhealthpartners.ca/
+4575 Deep Bay Road,Minden,Minden Site,https://trilliumhealthpartners.ca/
+1111 Ghislain Street,Hawkesbury,Hawkesbury And District General Hospital,https://trilliumhealthpartners.ca/
+2675 Concession Road,Kemptville,Kemptville District Hospital,https://trilliumhealthpartners.ca/
+166 Brock Street,Kingston,Hotel Dieu Hospital,https://trilliumhealthpartners.ca/
+76 Stuart Street,Kingston,Kingston General Hospital,https://trilliumhealthpartners.ca/
+820 John Marks Avenue,Kingston,Breast Imaging Kingston Centre,https://trilliumhealthpartners.ca/
+"555 California Avenue, Unit 7 & 8",Brockville,Brockville Dialysis Clinic,https://trilliumhealthpartners.ca/
+115 Barrack Street,Kingston,Street Health Centre,https://trilliumhealthpartners.ca/
+752 King Street West,Kingston,Providence Care Hospital,https://trilliumhealthpartners.ca/
+340 Union Street,Kingston,Transitional Care Centre,https://trilliumhealthpartners.ca/
+10 Angeline Street North,Lindsay,Ross Memorial Hospital,https://trilliumhealthpartners.ca/
+8 Richmond Park Drive,Napanee,Lennox And Addington County General Hospital,https://trilliumhealthpartners.ca/
+1 Hospital Court,Oshawa,Oshawa Hospital,https://trilliumhealthpartners.ca/
+47 Liberty Street South,Bowmanville,Bowmanville Hospital,https://trilliumhealthpartners.ca/
+580 Harwood Avenue South,Ajax,Ajax and Pickering Health Centre,https://trilliumhealthpartners.ca/
+451 Paxton Street,Port Perry,Port Perry Hospital,https://trilliumhealthpartners.ca/
+300 Gordon Street,Whitby,Whitby Hospital,https://trilliumhealthpartners.ca/
+1690 Dersan Street,Pickering,Jerry Coughlan Health and Wellness Centre,https://trilliumhealthpartners.ca/
+401 Smyth Road,Ottawa,Children's Hospital Of Eastern Ontario-Ottawa Children's Treatment Centre,https://trilliumhealthpartners.ca/
+3045 Baseline Road,Ottawa,Queensway-Carleton Hospital,https://trilliumhealthpartners.ca/
+40 Ruskin Street,Ottawa,University of Ottawa Heart Institute,https://trilliumhealthpartners.ca/
+60 Cambridge Street North,Ottawa,Saint-Vincent Hospital,https://trilliumhealthpartners.ca/
+43 Bruyere Street,Ottawa,Élisabeth Bruyère Hospital,https://trilliumhealthpartners.ca/
+713 Montreal Road,Ottawa,Hôpital Montfort,https://trilliumhealthpartners.ca/
+2225 Mer-Bleue Road,Orleans,Orleans Health Hub (OHH) /Carrefour Santé Orleans (CSO),https://trilliumhealthpartners.ca/
+1053 Carling Avenue,Ottawa,Civic Campus,https://trilliumhealthpartners.ca/
+501 Smyth Road,Ottawa,General Campus,https://trilliumhealthpartners.ca/
+1967 Riverside Drive,Ottawa,Riverside Campus,https://trilliumhealthpartners.ca/
+505 Smyth Road,Ottawa,The Rehabilitation Centre,https://trilliumhealthpartners.ca/
+3045 Baseline Road,Ottawa,Irving Greenberg Family Cancer Centre,https://trilliumhealthpartners.ca/
+Unit 1-780 Baseline Road,Ottawa,Ottawa Dialysis Clinic,https://trilliumhealthpartners.ca/
+Unit A-691 Brookdale Avenue,Cornwall,Cornwall Dialysis Clinic,https://trilliumhealthpartners.ca/
+1145 Carling Avenue,Ottawa,Royal Ottawa Mental Health Centre,https://trilliumhealthpartners.ca/
+1804 Highway 2 East,Brockville,Brockville Mental Health Centre,https://trilliumhealthpartners.ca/
+705 MacKay Street,Pembroke,Pembroke Regional Hospital Site,https://trilliumhealthpartners.ca/
+"Unit 2C, 600 Cecellia Street",Pembroke,Marianhill - Complex Continuing Care Site,https://trilliumhealthpartners.ca/
+1 Hospital Drive,Peterborough,Peterborough Regional Health Centre,https://trilliumhealthpartners.ca/
+499 Raglan Street North,Renfrew,Renfrew Victoria Hospital,https://trilliumhealthpartners.ca/
+60 Cornelia Street West,Smith Falls,Smith Falls Site,https://trilliumhealthpartners.ca/
+33 Drummond Street West,Perth,Great War Memorial Site (Perth),https://trilliumhealthpartners.ca/
+700 Gordon Street,Whitby,Ontario Shores Centre for Mental Health Sciences,https://trilliumhealthpartners.ca/
+566 Louise Street,Winchester,Winchester District Memorial Hospital,https://trilliumhealthpartners.ca/
+525 Causley Street,Blind River,Blind River Site,https://trilliumhealthpartners.ca/
+180 Richards Street,Richards Landing,Richards Landing Site,https://trilliumhealthpartners.ca/
+135 Dawson Street,Thessalon,Thessalon Site,https://trilliumhealthpartners.ca/
+6 Broomhead Road,Chapleau,Services De Sante De Chapleau Health Services,https://trilliumhealthpartners.ca/
+241 Eighth Street,Cochrane,Lady Minto Hospital (The),https://trilliumhealthpartners.ca/
+70 Spine Road,Elliot Lake,St. Joseph's General Hospital,https://trilliumhealthpartners.ca/
+825 McKinnon Drive,Espanola,Espanola General Hospital,https://trilliumhealthpartners.ca/
+1405 Edward Street,Hearst,Hôpital Notre-Dame Hospital (Hearst),https://trilliumhealthpartners.ca/
+278 Front Street,Hornepayne,Hornepayne Community Hospital,https://trilliumhealthpartners.ca/
+58 Anson Drive,Iroquois Falls,Anson General Hospital,https://trilliumhealthpartners.ca/
+101 Progress Crescent,Kapuskasing,Sensenbrenner Hospital (The),https://trilliumhealthpartners.ca/
+145 Government Road East,Kirkland Lake,Kirkland Lake Site,https://trilliumhealthpartners.ca/
+61 Fifth Street,Englehart,Englehart Site,https://trilliumhealthpartners.ca/
+11 Meredith Street West,Little Current,Little Current Hospital,https://trilliumhealthpartners.ca/
+2120 ON-551,Mindemoya,Mindemoya Hospital,https://trilliumhealthpartners.ca/
+1 Health Care Crescent,Manitouwadge,Santé Manitouwadge Health,https://trilliumhealthpartners.ca/
+507 Eighth Avenue,Matheson,Bingham Memorial Hospital,https://trilliumhealthpartners.ca/
+217 Turcotte Park Road,Mattawa,Mattawa General Hospital,https://trilliumhealthpartners.ca/
+19 Hospital Drive,Moose Factory,Weeneebayko General Hospital,https://trilliumhealthpartners.ca/
+972 Riverside East,Attawapiskat,Attawapiskat Hospital,https://trilliumhealthpartners.ca/
+5 Percy's Way,Moosonee,Moosonee Health Centre,https://trilliumhealthpartners.ca/
+5 Airport Road,Fort Albany,Fort Albany Hospital,https://trilliumhealthpartners.ca/
+421 Shepherdson Road,New Liskeard,Temiskaming Hospital,https://trilliumhealthpartners.ca/
+50 College Drive,North Bay,North Bay Site,https://trilliumhealthpartners.ca/
+200-1164 Devonshire Avenue,North Bay,Devonshire Avenue Site,https://trilliumhealthpartners.ca/
+120 King Street West,North Bay,King Street Site,https://trilliumhealthpartners.ca/
+680 Kirkwood Drive,Sudbury,Kirkwood Place Site,https://trilliumhealthpartners.ca/
+6 Albert Street,Parry Sound,West Parry Sound Health Centre,https://trilliumhealthpartners.ca/
+750 Great Northern Road,Sault Ste. Marie,Sault Area Hospital,https://trilliumhealthpartners.ca/
+107 Kelley Road,Smooth Rock Falls,Smooth Rock Falls Hospital,https://trilliumhealthpartners.ca/
+725 Coursol Road,Sturgeon Falls,West Nipissing General Hospital,https://trilliumhealthpartners.ca/
+41 Ramsey Lake Road,Sudbury,Ramsey Lake Health Centre,https://trilliumhealthpartners.ca/
+1933 Regent Street,Sudbury,Children’s Treatment Centre,https://trilliumhealthpartners.ca/
+680 Kirkwood Drive,Sudbury,Kirkwood Site,https://trilliumhealthpartners.ca/
+1140 South Bay Road,Sudbury,South Bay Road site,https://trilliumhealthpartners.ca/
+319 Lasalle Boulevard,Sudbury,Lasalle site,https://trilliumhealthpartners.ca/
+700 Ross Avenue East,Timmins,Timmins And District General Hospital,https://trilliumhealthpartners.ca/
+17 Government Road,Wawa,Lady Dunn Health Centre,https://trilliumhealthpartners.ca/
+120 Dorothy Street,Atikokan,Atikokan Health and Community Services,https://trilliumhealthpartners.ca/
+58 Goodall Street,Dryden,Dryden Regional Health Centre,https://trilliumhealthpartners.ca/
+110 Victoria Avenue,Fort Frances,La Verendrye Hospital,https://trilliumhealthpartners.ca/
+170 Front Street,Emo,Emo Health Centre,https://trilliumhealthpartners.ca/
+115 Fourth Street,Rainy River,Rainy River Health Centre,https://trilliumhealthpartners.ca/
+500 Hogarth Avenue West,Geraldton,Geraldton District Hospital,https://trilliumhealthpartners.ca/
+21 Sylvan Street,Kenora,Lake-Of-The-Woods District Hospital,https://trilliumhealthpartners.ca/
+1 Health Care Crescent,Manitouwadge,Santé Manitouwadge Health,https://trilliumhealthpartners.ca/
+26 Peninsula Road,Marathon,Wilson Memorial General Hospital,https://trilliumhealthpartners.ca/
+20B Cartier Road,Terrace Bay,McCausland Hospital (Terrace Bay),https://trilliumhealthpartners.ca/
+125 Hogan Road,Nipigon,Nipigon District Memorial Hospital,https://trilliumhealthpartners.ca/
+"No. 51, Hwy 105",Red Lake,Red Lake Margaret Cochenour Memorial Hospital (The),https://trilliumhealthpartners.ca/
+1 Meno Ya Win Way,Sioux Lookout,Sioux Lookout Meno-Ya-Win Health Centre,https://trilliumhealthpartners.ca/
+35 North Algoma Street,Thunder Bay,St. Joseph's Hospital,https://trilliumhealthpartners.ca/
+980 Oliver Road,Thunder Bay,Thunder Bay Regional Health Sciences Centre,https://trilliumhealthpartners.ca/
+"1453 Prince Road, Windsor, ON N9C 3Z4",Windsor,Hôtel-Dieu Grace Healthcare (Tayfour Campus),https://trilliumhealthpartners.ca/
+"1995 Lens Avenue, Windsor, ON N8W 1L9",Windsor,Windsor Regional Hospital (Metropolitan Campus),https://trilliumhealthpartners.ca/
+"1030 Ouellette Avenue, Windsor, ON N9A 1E1",Windsor,Windsor Regional Hospital (Ouellette Campus),https://trilliumhealthpartners.ca/
+"3640 Wells Street, Windsor, ON N9C 1T9",Windsor,Windsor Regional Hospital (Maryvale Campus),https://trilliumhealthpartners.ca/
+"270 Carling Terrace, Wingham, ON N0G 2W0",Wingham,Wingham And District Hospital,https://trilliumhealthpartners.ca/
+"270 Riddell Street, Woodstock, ON N4S 6N6",Woodstock,Woodstock Hospital,https://trilliumhealthpartners.ca/
+"600 University Avenue, Toronto, ON M5G 1X5",Toronto,Mount Sinai Hospital,https://www.sinaihealth.ca/our-hospitals/mount-sinai-hospital
+501 Smyth Road,Ottawa,The Ottawa Hospital,https://www.ottawahospital.on.ca/en/
+"399 Bathurst St, Toronto, ON, M5T 2S8, Canada",Toronto,"University Health Network, Toronto Western Hospital",https://www.saintalphonsus.org/location/saint-alphonsus-medical-center-ontario
+131 Frederick Campbell Street,Fergus,Groves Memorial Community Hospital,https://premierehealthclinic.ca/
+34A Commissioner St,Killarney,Killarney Health Centre,https://infinityhealthcentre.com/
+"41 Ramsey Lake Road, Sudbury, Ontario, P3E 5J1",Sudbury,Health Sciences North,https://infinityhealthcentre.com/
+"41 Ramsey Lake Road, Sudbury, Ontario, P3E 5J1",Sudbury,Ramsey Lake Health Centre,https://infinityhealthcentre.com/
+"30 The Queensway, Ground Floor, East Wing, M6R 1B5",Toronto,St. Joseph’s Health Centre,https://www.ontario.ca/page/community-health-centres
+"1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4",Sioux Lookout,Sioux Lookout Meno Ya Win Health Centre,https://coalitionottawa.ca/map/
+"120 Dorothy St, Atikokan, ON P0T 1C0",Atikokan,Atikokan General Hospital,https://coalitionottawa.ca/map/
+"58 Goodall St, Dryden, ON P8N 2Z6",Dryden,Dryden Regional Health Centre,https://coalitionottawa.ca/map/
+"555 University Ave, Toronto, ON M5G 1X8",Toronto,Hospital for Sick Children (The),https://coalitionottawa.ca/map/
+"21 Sylvan St W, Kenora, ON P9N 3W7",Kenora,Lake of The Woods District Hospital,https://coalitionottawa.ca/map/
+"125 Hogan Rd, Nipigon, ON P0T 2J0",Nipigon,Nipigon District Memorial Hospital,https://coalitionottawa.ca/map/
+"51 Hwy 105, Red Lake, ON P0V 2M0",Red Lake,Red Lake Margaret Cochenour Memorial Hospital,https://coalitionottawa.ca/map/
+"110 Victoria Ave, Fort Frances, ON P9A 2B7",Fort Frances,Riverside Health Care,https://coalitionottawa.ca/map/
+"35 Algoma St N, Thunder Bay, ON P7B 5G7",Thunder Bay,St Joseph's Care Group,https://coalitionottawa.ca/map/
+"980 Oliver Rd, Thunder Bay, ON P7B 6V4",Thunder Bay,Thunder Bay Regional Health Sciences Centre - Hospital,https://coalitionottawa.ca/map/
+"20B Cartier Rd, Box 370, Terrace Bay, ON P0T 2W0",Terrace Bay,McCausland Hospital (The),https://www.champlainhealthline.ca/listservices.aspx?id=10652
+50 College Drive,North Bay,North Bay Regional Health Centre Emergency Department,https://www.champlainhealthline.ca/listServicesDetailed.aspx?id=10652&region=Ottawa
+150 Sherway Drive,Toronto,Queensway Health Centre,https://connectingottawa.com/social-services/community-health-and-resource-centre/
+"50 College Drive, P.O. Box 2500, North Bay, ON P1B 5A4",North Bay,North Bay Regional Health Centre (North Bay),https://rmh.org/
+"680 Kirkwood Drive, Sudbury, ON P3E 1X3",Sudbury,North Bay Regional Health Centre (Sudbury Campus),https://rmh.org/
+"Main Level, 24 Centennial Dr, PO Box 99, N0K 1W0",Seaforth,Seaforth Community Hospital,https://www.northernontariolocal.ca/l/on/hospitals
+750 Great Northern Road,Sault Ste. Marie,Sault Area Hospital,https://www.cbc.ca/news2/health/features/ratemyhospital/hospitalratings.html
+"750 Great Northern Road, P6B 0A8",Sault Ste Marie,Sault Area Hospital,https://www.cbc.ca/news2/health/features/ratemyhospital/hospitalratings.html
+1017 Wilson Ave,North York,North York Medical Center,https://www.nipissingwellness.ca/partner-category/acute-care/
+10 Angeline St. North,Lindsay,Ross Memorial Hospital,https://gmch.whca.ca/
+30 The Queensway,Toronto,St. Joseph's Health Centre,https://www.southwesthealthline.ca/mapMultipleServices.aspx?id=10078
+30 Bond St.,Toronto,St. Michael's Hospital,https://www.southwesthealthline.ca/mapMultipleServices.aspx?id=10078
+3276 St. Clair Ave. East,Scarborough,Providence Healthcare,https://www.southwesthealthline.ca/mapMultipleServices.aspx?id=10078
+"596 Davis Drive, Newmarket, Ontario L3Y 2P9",Newmarket,Southlake Hospital,https://news.ontario.ca/en/release/1001411/ontario-continues-to-add-hospital-beds-and-build-up-health-workforce
+980 Oliver Road,Thunder Bay,Thunder Bay Regional Health Sciences Centre,https://www.hqontario.ca/System-Performance/Yearly-Reports/Measuring-Up-2019/Value-and-Efficiency
+30 The Queensway,Toronto,St. Joseph's Health Centre,https://211ontario.ca/service/69798022/eglinton-station-medical-centre-walk-in-clinic-and-family-medicine/
+"Floor 1, Toronto General Hospital, 585 University Ave",Toronto,Princess Margaret Cancer Centre,https://www.torontocentralhealthline.ca/displayservice.aspx?id=170578
+585 University Ave,Toronto,Toronto General Hospital,https://www.torontocentralhealthline.ca/displayservice.aspx?id=170578
+825 Coxwell Ave,East York,Michael Garron Hospital,https://www.torontocentralhealthline.ca/displayservice.aspx?id=170578
+"1605 Orleans Boulevard, Unit 3a",Orleans,Chapel Hill Health Centre,https://dfcm.utoronto.ca/unity-health-toronto-st-josephs-health-centre
+30 Bond Street,Toronto,St. Michael's Hospital,https://211central.ca/record/69798022/
+"700 Coronation Blvd, N1R 3G2",Cambridge,Cambridge Memorial Hospital,https://m.yelp.com/search?find_desc=walk+in+clinic&find_loc=Metropolitan+Toronto+Police+Museum+and+Discovery+Centre%2C+40+College+St%2C+Toronto%2C+ON
+401 Smyth Road,Ottawa,CHEO (Children's Hospital of Eastern Ontario),https://www.shchc.ca/contact-us
+"401 Smyth Road, Ottawa ON K1H 8L1",Ottawa,Children's Hospital of Eastern Ontario (CHEO),https://www.shchc.ca/contact-us
+"499 Raglan Street North, Renfrew ON H7V 1P6",Renfrew,Renfrew Victoria Hospital,https://www.shchc.ca/contact-us
+"237 Barton St E Hamilton, ON L8L 2X2",Hamilton,Hamilton General Hospital,https://www.centretownchc.org/contact
+"699 Concession Street Hamilton, ON L8V 5C2",Hamilton,Juravinski Cancer Centre,https://www.centretownchc.org/contact
+711 Concession Street,Hamilton,Juravinski Hospital,https://www.centretownchc.org/contact
+1200 Main St W,Hamilton,McMaster Children’s Hospital,https://www.centretownchc.org/contact
+"1200 Main St W Hamilton, ON L8N 3Z5",Hamilton,McMaster University Medical Centre,https://www.centretownchc.org/contact
+"300 Wellington St N Hamilton, Ontario L8L 0A4",Hamilton,Regional Rehabilitation Centre,https://www.centretownchc.org/contact
+"325 Wellington St N Hamilton, ON L8L 0A4",Hamilton,Ron Joyce Children’s Health Centre,https://www.centretownchc.org/contact
+"150 King Street East Hamilton, ON L8N 1B2",Hamilton,Satellite Health Facility,https://www.centretownchc.org/contact
+"88 Maplewood Avenue Hamilton, ON L8M 1W9",Hamilton,St. Peter’s Hospital,https://www.centretownchc.org/contact
+"690 Main Street West Hamilton, ON L8S 1A4",Hamilton,West End Clinic/Urgent Care Centre,https://www.centretownchc.org/contact
+169 Main Street East,Grimsby,West Lincoln Memorial Hospital,https://www.centretownchc.org/contact
+"500 Hogarth Ave. W, Postal Bag #4",Geraldton,Geraldton District Hospital,https://lignesantechamplain.ca/displayService.aspx?id=211902
+725 Bronte Street South,Milton,Milton District Hospital,https://www.northeasthealthline.ca/listservices.aspx?id=10077
+"550 N Monterey Avenue, Ontario, CA 91764",Ontario,Kindred Hospital Ontario,https://hsnsudbury.ca/en/emergency
+169 Main Street East,Grimsby,West Lincoln Memorial Hospital,https://tbrhsc.net/programs-services/emergency-critical-care-services/emergency-and-critical-care-services/
+"98 Shipley Street, ON N0M 1L0",Clinton,Clinton Public Hospital,https://northbayemerg.ca/
+"267 Queen Street West, P.O. Box 940, ON N4X 1B6",St. Marys,St. Marys Memorial Hospital,https://northbayemerg.ca/
+"24 Centennial Drive, P.O. Box 99, ON N0K 1W0",Seaforth,Seaforth Community Hospital,https://northbayemerg.ca/
+"46 General Hospital Drive, ON N5A 2Y6",Stratford,Stratford General Hospital,https://northbayemerg.ca/
+98 Shipley St.,Clinton,Clinton Public Hospital,https://northbayemerg.ca/
+267 Queen St. W.,St Marys,St Marys Memorial Hospital,https://northbayemerg.ca/
+24 Centennial Dr.,Seaforth,Seaforth Community Hospital,https://northbayemerg.ca/
+46 General Hospital Dr.,Stratford,Stratford General Hospital,https://northbayemerg.ca/
+"61 Fifth St, Englehart, ON P0J 1H0",Englehart,Blanche River Health - Englehart Site - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"145 Government Rd E, Kirkland Lake, ON P2N 3P4",Kirkland Lake,Blanche River Health - Kirkland Lake Site - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"825 McKinnon Dr, Espanola, ON P5E 1R4",Espanola,Espanola Regional Hospital and Health Centre - Emergency and Acute Care,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"41 Ramsey Lake Rd, Sudbury, ON P3E 5J1",Sudbury,Health Sciences North - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"1405 Edward St, Hearst, ON P0L 1N0",Hearst,Hôpital Notre-Dame Hospital - Hearst - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"278 Front St, Hornepayne, ON P0M 1Z0",Hornepayne,Hornepayne Community Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"17 Government Rd, Wawa, ON P0S 1K0",Wawa,Lady Dunn Health Centre - Wawa - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"11 Meredith St E, Little Current, ON P0P 1K0",Little Current,Manitoulin Health Centre - Little Current - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"2120B Hwy 551, Mindemoya, ON P0P 1S0",Mindemoya,Manitoulin Health Centre - Mindemoya - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"217 Turcotte Park Rd, Mattawa, ON P0H 1V0",Mattawa,Mattawa Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"58 Anson Dr, Iroquois Falls, ON P0K 1E0",Iroquois Falls,MICs Group of Health Services - Anson General Hospital - Iroquois Falls - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"507 8th Ave, Matheson, ON P0K 1N0",Matheson,MICs Group of Health Services - Bingham Memorial Hospital - Matheson - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"241 Eighth St, Cochrane, ON P0L 1C0",Cochrane,MICs Group of Health Services - Lady Minto Hospital - Cochrane - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"50 College Dr, North Bay, ON P1B 5A4",North Bay,North Bay Regional Health Centre - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"525 Causley St, Blind River, ON P0R 1B0",Blind River,North Shore Health Network - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"1180 Richards St, Richards Landing, ON P0R 1J0",Richards Landing,North Shore Health Network - Richards Landing - Matthews Site - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"135 Dawson St, Thessalon, ON P0R 1L0",Thessalon,North Shore Health Network - Thessalon Site - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"750 Great Northern Rd, Sault Ste Marie, ON P6B 0A8",Sault Ste Marie,Sault Area Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"101 Progress Cres, Kapuskasing, ON P5N 3H5",Kapuskasing,Sensenbrenner Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"6 Broomhead Rd, Chapleau, ON P0M 1K0",Chapleau,Services de santé de Chapleau Health Services - Chapleau General Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"107 Kelly Rd, Smooth Rock Falls, ON P0L 2B0",Smooth Rock Falls,Smooth Rock Falls Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"70 Spine Rd, Elliot Lake, ON P5A 1X2",Elliot Lake,St Joseph's General Hospital Elliot Lake - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"421 Shepherdson Rd, New Liskeard, ON P0J 1P0",New Liskeard,Temiskaming Hospital - New Liskeard - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"700 Ross Ave E, Timmins, ON P4N 8P2",Timmins,Timmins and District Hospital (TADH) - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"972 Riverside E, Attawapiskat, ON P0L 1A0",Attawapiskat,Weeneebayko Area Health Authority (WAHA) - Attawapiskat Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"5 Airport Rd, Fort Albany, ON P0L 1H0",Fort Albany,Weeneebayko Area Health Authority (WAHA) - Fort Albany Hospital - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"19 Hospital Dr, Moose Factory, ON P0L 1W0",Moose Factory,Weeneebayko Area Health Authority (WAHA) - Weeneebayko General Hospital (WGH) - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"725 Coursol Rd, Sturgeon Falls, ON P2B 2Y6",Sturgeon Falls,West Nipissing General Hospital (The) - Sturgeon Falls - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"6 Albert St, Parry Sound, ON P2A 3A4",Parry Sound,West Parry Sound Health Centre - Emergency Department,https://211ontario.ca/results/?searchLocation=Greater+Sudbury&topicPath=95&latitude=46.4917317&longitude=-80.993029
+"125 Hogan Rd, PO Box 37, Nipigon, ON P0T 2J0",Nipigon,Nipigon District Memorial Hospital,https://www.ontario.ca/page/classification-hospitals
+"1200 Fourth Ave., St. Catharines, ON, L2S 0A9",St. Catharines,Niagara Health,https://en.wikipedia.org/wiki/Trillium_Health_Partners
+339 Windermere Road,London,University Hospital,https://www.nygh.on.ca/about-us/overview/
+58 Anson Dr,Iroquois Falls,Anson General Hospital,https://www.greybruceoht.ca/
+507 - 8th Ave,Matheson,Bingham Memorial Hospital,https://www.greybruceoht.ca/
+525 Causley St,Blind River,Blind River District Health Centre,https://www.greybruceoht.ca/
+55 Hwy 118 W,Bracebridge,Bracebridge Medical Centre & Walk In,https://www.greybruceoht.ca/
+150 Houston St,Burk's Falls,Burk's Falls & District Health Centre,https://www.greybruceoht.ca/
+15 Godfrey St,Larder Lake,Centre De Sante Communautaire Du Temiskaming,https://www.greybruceoht.ca/
+180 rue Anvik,Temiscaming,Centre Integre de Sante et de Services Sociaux (CISSS) de L'Abitibi-Temiscamingue - Pavillon Temiscaming-Kipawa (CH CLSC CHSLD),https://www.greybruceoht.ca/
+6 Broomhead Rd,Chapleau,Chapleau General Hospital,https://www.greybruceoht.ca/
+5th St,Englehart,Englehart & District Hospital Inc,https://www.greybruceoht.ca/
+825 McKinnon Dr,Espanola,Espanola Regional Hospital & Health Centre,https://www.greybruceoht.ca/
+Pickering Parkway,Pickering,Gifted Hands Health Services,https://www.greybruceoht.ca/
+41 Ramsay Lake Rd,Sudbury,Health Sciences North,https://www.greybruceoht.ca/
+41 Ramsey Lake Rd,Sudbury,Health Sciences North/Horizon Sante-Nord,https://www.greybruceoht.ca/
+1405 Edward St,Hearst,Hopital Notre Dame Hospital (Hearst),https://www.greybruceoht.ca/
+"4001 Leslie St., Toronto, ON M2K 1E1",Toronto,North York General Hospital,https://www.brightshores.ca/about-us/
+"4001 Leslie Street, Toronto ON M2K 1E1",Toronto,North York General Hospital,https://www.niagarahealth.on.ca/site/home
+"4001 Leslie St., Toronto, ON M2K 1E1",Toronto,North York General Hospital,https://ontariohealthathome.ca/document-library/
+"4319 Cove Road at Hwy 15, P.O. Box 58",Portland,Country Roads Community Health Centre,https://www.cms.gov/team-model-participant-list
+79 Bedford Street,Westport,Country Roads Community Health Centre – Westport,https://www.cms.gov/team-model-participant-list
+1900 Davenport Road,Toronto,Davenport-Perth Neighbourhood and Community Health Centre,https://www.cms.gov/team-model-participant-list
+1619 Queen Street East,Toronto,East End Community Health Centre,https://www.cms.gov/team-model-participant-list
+"2555 Dixie Road, Unit 7",Mississauga,East Mississauga Community Health Centre (Satellite of Lamp CHC),https://www.cms.gov/team-model-participant-list
+10 Gateway Boulevard,Toronto,Flemingdon Health Centre,https://www.cms.gov/team-model-participant-list
+"5 Fairview Mall Drive, Suite 359",Toronto,Flemingdon Health Centre - Fairview Community Health,https://www.cms.gov/team-model-participant-list
+"41 McClellan Street, Post Box 99",Tweed,Gateway Community Health Centre,https://www.cms.gov/team-model-participant-list
+"69 Main Street East, P.O. Box 1269",Grand Bend,Grand Bend Area Community Health Centre Inc.,https://www.cms.gov/team-model-participant-list
+"122 King Street, Box 159",Hensall,Grand Bend Area Community Health Centre – Hensall,https://www.cms.gov/team-model-participant-list
+"99 Victoria Street, Box 9",Thedford,Grand Bend Area Community Health Centre – Thedford,https://www.cms.gov/team-model-participant-list
+363 Colborne Street,Brantford,Grand River Community Health Centre,https://www.cms.gov/team-model-participant-list
+176 Wyndham Street North,Guelph,Guelph Community Health Centre,https://www.cms.gov/team-model-participant-list
+20 Shelldale Crescent,Guelph,Guelph Community Health Centre – Shelldale Satellite Clinic,https://www.cms.gov/team-model-participant-list
+1320 Barton Street East,Hamilton,Hamilton-Niagara Community Health Centre – Hamilton Site,https://www.cms.gov/team-model-participant-list
+810 East Main Street,Welland,Hamilton-Niagara Community Health Centre – Welland Site,https://www.cms.gov/team-model-participant-list
+181 Main Street West,Hamilton,Hamilton Urban Core Community Health Centre,https://www.cms.gov/team-model-participant-list
+"263 Weller Avenue, Unit 4",Kingston,Kingston Community Health Centres,https://www.cms.gov/team-model-participant-list
+26 Dundas Street West,Napanee,Kingston Community Health Centres – Greater Napanee Health Home,https://www.cms.gov/team-model-participant-list
+115 Barrack Street,Kingston,Kingston Community Health Centres – Street Health Centre,https://www.cms.gov/team-model-participant-list
+"791 Princess Street, Suite 201",Kingston,Kingston Community Health Centres – Midtown Kingston Health Home,https://www.cms.gov/team-model-participant-list
+44 Francis Street South,Kitchener,Kitchener Downtown Community Health Centre,https://www.cms.gov/team-model-participant-list
+185 – 5th Street,Etobicoke,Lakeshore Area Multi-Service Project (LAMP),https://www.cms.gov/team-model-participant-list
+1145 Concession Road,Cambridge,Langs,https://www.cms.gov/team-model-participant-list
+2958 Greenfield Road,Ayr,Langs – North Dumfries Community Health Centre Satellite,https://www.cms.gov/team-model-participant-list
+"1700 Dundas Street, Unit 1",London,London Intercommunity Health Centre – Argyle Site,https://www.cms.gov/team-model-participant-list
+659 Dundas Street East,London,London InterCommunity Health Centre - Dundas Site,https://www.cms.gov/team-model-participant-list
+"1355 Huron Street, Unit 7",London,London Intercommunity Health Centre – Huron Site,https://www.cms.gov/team-model-participant-list
+"1100 Main Street, P.O. Box 450",Ignace,Mary Berglund Community Health Centre,https://www.cms.gov/team-model-participant-list
+130 Wilson Avenue,Timmins,Misiway Milopemahtesewin Community Health Centre,https://www.cms.gov/team-model-participant-list
+4790 Victoria Avenue,Niagara Falls,Niagara Falls Community Health Centre,https://www.cms.gov/team-model-participant-list
+99 Toronto Road,Port Hope,Northumberland Community Health Centre,https://www.cms.gov/team-model-participant-list
+"3-59 King Street West, P.O. Box 1120",Forest,North Lambton Community Health Centre,https://www.cms.gov/team-model-participant-list
+"6275 Indian Lane, RR #2",Kettle Point,North Lambton Community Health Centre – Kettle Point,https://www.cms.gov/team-model-participant-list
+"429 Exmouth Street, Suite 100",Sarnia,North Lambton Community Health Centre – West Lambton Community Health Centre,https://www.cms.gov/team-model-participant-list
+525 Simpson Street,Thunder Bay,NorWest Community Health Centres,https://www.cms.gov/team-model-participant-list
+P.O. Box 104,Armstrong,Norwest Community Health Centres – Armstrong,https://www.cms.gov/team-model-participant-list
+"99 Skinner Avenue, P.O. Box 910",Longlac,Norwest Community Health Centres – Longlac,https://www.cms.gov/team-model-participant-list
+96 Tillson Avenue,Tillsonburg,Oxford County Community Health Centre – Tillsonburg Point of Access Livingston Centre,https://www.cms.gov/team-model-participant-list
+1229 Queen Street West,Toronto,Parkdale Community Health Centre,https://www.cms.gov/team-model-participant-list
+"27 Roncesvalles Avenue, Suite 301",Toronto,Parkdale Community Health Centre – 27 Roncesvalles Avenue,https://www.cms.gov/team-model-participant-list
+"4100 Strandherd Drive, Suite 201",Nepean,Pinecrest-Queensway Community Health Centre – South Nepean Community Health Centre,https://www.cms.gov/team-model-participant-list
+203-1365 Richmond Road,Ottawa,Pinecrest-Queensway Health and Community Services,https://www.cms.gov/team-model-participant-list
+36B Prince Arthur Avenue,Toronto,Planned Parenthood of Toronto,https://www.cms.gov/team-model-participant-list
+"145 Queenston Street, Suite 100",St. Catharines,Quest Community Health Centre,https://www.cms.gov/team-model-participant-list
+49 Mill Street,Killaloe,Rainbow Valley Community Health Centre,https://www.cms.gov/team-model-participant-list
+465 Dundas Street East,Toronto,Regent Park Community Health Centre,https://www.cms.gov/team-model-participant-list
+8 Taber Road,Etobicoke,Rexdale Community Health Centre,https://www.cms.gov/team-model-participant-list
+301-222 Dixon Road,Etobicoke,Rexdale Community Health Centre Satellite,https://www.cms.gov/team-model-participant-list
+"609 The East Mall, Unit 32",Etobicoke,Rexdale Community Health Centre – Burnhamthorpe 427 Community Centre,https://www.cms.gov/team-model-participant-list
+"21 Panorama Court, Unit 15",Toronto,Rexdale Community Health Centre – Jamestown Hub,https://www.cms.gov/team-model-participant-list
+"354 Read Street, P.O. Box 550",Merrickville,Rideau Community Health Services,https://www.cms.gov/team-model-participant-list
+200 Fletcher Crescent,Alliston,Stevenson Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+201 Georgian Drive,Barrie,Royal Victoria Regional Health Centre,https://www.williamoslerhs.ca/en/index.aspx
+2100 Bovaird Drive East,Brampton,Brampton Civic Hospital,https://www.williamoslerhs.ca/en/index.aspx
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital (Toronto),https://www.williamoslerhs.ca/en/index.aspx
+20 Lynch Street,Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.williamoslerhs.ca/en/index.aspx
+200 Church Street,Toronto,Reactivation Care Centre – Church (Toronto),https://www.williamoslerhs.ca/en/index.aspx
+459 Hume Street,Collingwood,Collingwood General And Marine Hospital,https://www.williamoslerhs.ca/en/index.aspx
+100 Frank Miller Drive,Huntsville,Huntsville District Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+75 Ann Street,Bracebridge,South Muskoka Memorial Hospital (Bracebridge),https://www.williamoslerhs.ca/en/index.aspx
+381 Church Street,Markham,Markham-Stouffville Hospital,https://www.williamoslerhs.ca/en/index.aspx
+4 Campbell Drive,Uxbridge,Uxbridge Hospital,https://www.williamoslerhs.ca/en/index.aspx
+2111 Finch Avenue West,Toronto,Reactivation Care Centre – Finch (Toronto),https://www.williamoslerhs.ca/en/index.aspx
+1112 St. Andrew's Drive,Midland,Main Site,https://www.williamoslerhs.ca/en/index.aspx
+611 Prospect Boulevard,Midland,Prospect Boulevard Site,https://www.williamoslerhs.ca/en/index.aspx
+2200 Eglinton Avenue West,Mississauga,Credit Valley Hospital,https://www.williamoslerhs.ca/en/index.aspx
+100 Queensway West,Mississauga,Mississauga Hospital,https://www.williamoslerhs.ca/en/index.aspx
+150 Sherway Drive,Toronto,Queensway Health Centre (Toronto),https://www.williamoslerhs.ca/en/index.aspx
+"2180 Speakman Drive, Ground Floor",Mississauga,Speakman Dialysis Care Centre,https://www.williamoslerhs.ca/en/index.aspx
+82 Buttonwood Avenue,Toronto,UHN Reactivation Care Centre (Toronto),https://www.williamoslerhs.ca/en/index.aspx
+596 Davis Drive,Newmarket,Newmarket Site,https://www.williamoslerhs.ca/en/index.aspx
+3001 Hospital Drive,Oakville,Oakville Trafalgar Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+725 Bronte Street South,Milton,Milton District Hospital,https://www.williamoslerhs.ca/en/index.aspx
+1 Princess Anne Drive,Georgetown,Georgetown Hospital,https://www.williamoslerhs.ca/en/index.aspx
+100 Rolling Hills Drive,Orangeville,Headwaters Health Care Centre,https://www.williamoslerhs.ca/en/index.aspx
+170 Colborne Street West,Orillia,Orillia Soldiers' Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+500 Church Street,Penetanguishene,Waypoint Centre for Mental Health Care (main site),https://www.williamoslerhs.ca/en/index.aspx
+287 Bayshore Drive,Midland,Bayshore Drive Site (Midland),https://www.williamoslerhs.ca/en/index.aspx
+10 Trench Street,Richmond Hill,Mackenzie Richmond Hill Hospital,https://www.williamoslerhs.ca/en/index.aspx
+3200 Major Mackenzie Drive West,Vaughan,Cortellucci Vaughan Hospital (Vaughan),https://www.williamoslerhs.ca/en/index.aspx
+"9401 Jane Street, Suite 101",Vaughan,Jane Street Site (Vaughan),https://www.williamoslerhs.ca/en/index.aspx
+20260 County Road 43,Alexandria,Glengarry Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+75 Spring Street,Almonte,Almonte General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+350 John Street North,Arnprior,Arnprior And District Memorial Hospital (The),https://www.williamoslerhs.ca/en/index.aspx
+7 St. Francis Memorial Drive,Barry's Bay,St Francis Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+265 Dundas Street East,Belleville,Belleville General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+1-H Manor Lane,Bancroft,North Hastings Hospital (Bancroft),https://www.williamoslerhs.ca/en/index.aspx
+403 Main Street East,Picton,Prince Edward County Memorial Hospital (Picton),https://www.williamoslerhs.ca/en/index.aspx
+242 King Street,Trenton,Trenton Memorial Hospital (Trenton),https://www.williamoslerhs.ca/en/index.aspx
+75 Charles Street,Brockville,Brockville General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+146 Oliver Road,Campbellford,Campbellford Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+211 Lake Avenue East,Carleton Place,Carleton Place And District Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+1000 DePalma Drive,Coburg,Northumberland Hills Hospital,https://www.williamoslerhs.ca/en/index.aspx
+14 York Street,Cornwall,St. Joseph's Continuing Care Centre,https://www.williamoslerhs.ca/en/index.aspx
+840 McConnell Avenue,Cornwall,Cornwall Community Hospital/Hôpital communautaire de Cornwall,https://www.williamoslerhs.ca/en/index.aspx
+117 Banting Drive,Deep River,Deep River And District Health,https://www.williamoslerhs.ca/en/index.aspx
+"7199 Gelert Road, P.O. Box 115",Haliburton,Haliburton Site,https://www.williamoslerhs.ca/en/index.aspx
+4575 Deep Bay Road,Minden,Minden Site,https://www.williamoslerhs.ca/en/index.aspx
+1111 Ghislain Street,Hawkesbury,Hawkesbury And District General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+2675 Concession Road,Kemptville,Kemptville District Hospital,https://www.williamoslerhs.ca/en/index.aspx
+166 Brock Street,Kingston,Hotel Dieu Hospital,https://www.williamoslerhs.ca/en/index.aspx
+76 Stuart Street,Kingston,Kingston General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+820 John Marks Avenue,Kingston,Breast Imaging Kingston Centre,https://www.williamoslerhs.ca/en/index.aspx
+"555 California Avenue, Unit 7 & 8",Brockville,Brockville Dialysis Clinic,https://www.williamoslerhs.ca/en/index.aspx
+115 Barrack Street,Kingston,Street Health Centre,https://www.williamoslerhs.ca/en/index.aspx
+752 King Street West,Kingston,Providence Care Hospital,https://www.williamoslerhs.ca/en/index.aspx
+340 Union Street,Kingston,Transitional Care Centre,https://www.williamoslerhs.ca/en/index.aspx
+10 Angeline Street North,Lindsay,Ross Memorial Hospital,https://www.williamoslerhs.ca/en/index.aspx
+8 Richmond Park Drive,Napanee,Lennox And Addington County General Hospital,https://www.williamoslerhs.ca/en/index.aspx
+1 Hospital Court,Oshawa,Oshawa Hospital,https://www.williamoslerhs.ca/en/index.aspx
+47 Liberty Street South,Bowmanville,Bowmanville Hospital,https://www.williamoslerhs.ca/en/index.aspx
+580 Harwood Avenue South,Ajax,Ajax and Pickering Health Centre (Ajax),https://www.williamoslerhs.ca/en/index.aspx
+451 Paxton Street,Port Perry,Port Perry Hospital,https://www.williamoslerhs.ca/en/index.aspx
+300 Gordon Street,Whitby,Whitby Hospital,https://www.williamoslerhs.ca/en/index.aspx
+1690 Dersan Street,Pickering,Jerry Coughlan Health and Wellness Centre (Pickering),https://www.williamoslerhs.ca/en/index.aspx
+"1453 Prince Road, Windsor, ON N9C 3Z4",Windsor,Hôtel-Dieu Grace Healthcare - Tayfour Campus,https://www.williamoslerhs.ca/en/index.aspx
+"1995 Lens Avenue, Windsor, ON N8W 1L9",Windsor,Windsor Regional Hospital - Metropolitan Campus,https://www.williamoslerhs.ca/en/index.aspx
+"1030 Ouellette Avenue, Windsor, ON N9A 1E1",Windsor,Windsor Regional Hospital - Ouellette Campus,https://www.williamoslerhs.ca/en/index.aspx
+"3640 Wells Street, Windsor, ON N9C 1T9",Windsor,Windsor Regional Hospital - Maryvale Campus,https://www.williamoslerhs.ca/en/index.aspx
+"270 Carling Terrace, Wingham, ON N0G 2W0",Wingham,Wingham And District Hospital,https://www.williamoslerhs.ca/en/index.aspx
+"270 Riddell Street, Woodstock, ON N4S 6N6",Woodstock,Woodstock Hospital,https://www.williamoslerhs.ca/en/index.aspx
+"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,Royal Victoria Regional Health Centre,https://www.sickkids.ca/
+"555 University Avenue, Toronto, ON M5G 1X8",Toronto,The Hospital for Sick Children (SickKids),https://www.sickkids.ca/
+"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,RVH,https://www.sickkids.ca/
+"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,Royal Victoria Regional Health Centre (RVH),https://www.sickkids.ca/
+"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,RVH,https://www.sickkids.ca/
+"300 Peter St N, Orillia, ON",Orillia,Orillia Soldiers’ Memorial Hospital,https://www.sickkids.ca/
+201 Georgian Drive,Barrie,RVH,https://www.sickkids.ca/
+"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,RVH,https://www.sickkids.ca/
+"70 Wellington Street West, Barrie, ON L4N 1K4",Barrie,RVH Withdrawal Management Services,https://www.sickkids.ca/
+"201 Georgian Drive, Barrie, ON L4M 6M2",Barrie,Royal Victoria Regional Health Centre,https://www.sickkids.ca/
+"66 Wellington Street West, Barrie, ON L4N 1K4",Barrie,Regional Renal Outpatient Program (Satellite Dialysis),https://www.sickkids.ca/
+"7325 Yonge St, Innisfil, ON L9S 2M6",Innisfil,RVH-Innisfil (Rizzardo Health & Wellness Centre),https://www.sickkids.ca/
+"201 Georgian Drive, ON L4N 6M2",Barrie,Royal Victoria Regional Health Centre,https://www.sickkids.ca/
+"201 Georgian Drive, Barrie ON L4M 6M2",Barrie,Royal Victoria Regional Health Centre,https://www.sickkids.ca/
+"100 Frank Miller Drive, Huntsville, ON P1H 1H7",Huntsville,Huntsville District Memorial Hospital Site,https://wellspring.ca/locations/gta/
+"75 Ann Street, Bracebridge, ON P1L 2E4",Bracebridge,South Muskoka Memorial Hospital Site,https://wellspring.ca/locations/gta/
+100 Frank Miller Drive,Huntsville,Huntsville District Memorial Hospital,https://www.immigrationmedtoronto.com/
+75 Ann Street,Bracebridge,South Muskoka Memorial Hospital,https://www.immigrationmedtoronto.com/
+"100 Frank Miller Drive, Huntsville, ON P1H 1H7",Huntsville,Huntsville District Memorial Hospital Site,https://www.immigrationmedtoronto.com/
+"75 Ann Street, Bracebridge, ON P1L 2E4",Bracebridge,South Muskoka Memorial Hospital Site,https://www.immigrationmedtoronto.com/
+351 SW 9th Street,Ontario,Saint Alphonsus Medical Center - Ontario,https://healthone.ca/
+7 St. Francis Memorial Drive,Barry's Bay,St. Francis Memorial Hospital,https://www.ottawapublichealth.ca/en/public-health-services/annual-reports.aspx
+"1800 8th St E, Box 1800, ON N4K 6M9",Owen Sound,Brightshores Health System,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"22 Moore St, ON N0H 1W0",Lion's Head,Brightshores Health System - Lion's Head Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"220 Toronto St S, ON N0C 1H0",Markdale,Brightshores Health System - Markdale Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"229 Nelson St W, ON N4L 1A3",Meaford,Brightshores Health System - Meaford Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"1800 8th St E, Box 1800, ON N4K 6M9",Owen Sound,Brightshores Health System - Owen Sound Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"340 High St, ON N0H 2L0",Southampton,Brightshores Health System - Southampton Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"369 Mary St, ON N0H 2T0",Wiarton,Brightshores Health System - Wiarton Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"800 Commissioners Rd E, ON N6A 5W9",London,Children's Hospital London Health Sciences Centre,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"98 Shipley St, ON N0M 1L0",Clinton,Clinton Public Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"1824 Concession Dr, ON N0L 1Z0",Newbury,Four Counties Health Services,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"90 7th Ave, ON N4N 1N1",Hanover,Hanover and District Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"120 Napier St, ON N7A 1W5",Goderich,Huron Health System - Alexandra Marine and General Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"24 Huron St W, ON N0M 1S2",Exeter,Huron Health System - South Huron Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"255 Elizabeth St E, ON N4W 2P5",Listowel,Listowel Memorial Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"800 Commissioners Rd E, ON N6A 5W9",London,London Health Sciences Centre,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"339 Windermere Rd, ON N6A 5A5",London,London Health Sciences Centre - University Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"800 Commissioners Rd E, ON N6A 5W9",London,London Health Sciences Centre - Victoria Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"29 Noxon St, ON N5C 1B8",Ingersoll,Rural Roads Health Services - Alexandra Hospital Ingersoll,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"24 Centennial Dr, PO Box 99, ON N0K 1W0",Seaforth,Seaforth Community Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"21 McGivern St, ON N0G 2V0",Walkerton,South Bruce Grey Health Centre,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"39 2nd St SE, ON N0G 1L0",Chesley,South Bruce Grey Health Centre - Chesley,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"320 College St N, PO Box 638, ON N0G 1R0",Durham,South Bruce Grey Health Centre - Durham,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"1199 Queen St, ON N2Z 1G6",Kincardine,South Bruce Grey Health Centre - Kincardine,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"21 McGivern St, ON N0G 2V0",Walkerton,South Bruce Grey Health Centre - Walkerton,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"268 Grosvenor St, ON N6A 4V2",London,St Joseph's Health Care London,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"550 Wellington Rd, ON N6A 4V2",London,St Joseph's Health Care London - Parkwood Institute,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"401 Sunset Dr, ON N5R 3C6",St Thomas,St Joseph's Health Care London - Southwest Centre for Forensic Mental Health Care,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"268 Grosvenor St, ON N6A 4V2",London,St Joseph's Health Care London - St Joseph's Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+"267 Queen St W, Box 940, ON N4X 1B6",St Marys,St Marys Memorial Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+46 General Hospital Dr,Stratford,Stratford General Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+395 Carrie St,Strathroy,Strathroy Middlesex General Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+167 Rolph St,Tillsonburg,Tillsonburg District Memorial Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+270 Carling Terrace,Wingham,Wingham and District Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+310 Juliana Dr,Woodstock,Woodstock Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+459 Hume St,Collingwood,Collingwood General and Marine Hospital,https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+555 University Ave,Toronto,Hospital for Sick Children (The),https://www.canada.ca/en/public-health/corporate/publications/chief-public-health-officer-reports-state-public-health-canada/working-together-thrive-well-being-public-health-2025/report.html
+600 University Avenue,Toronto,Mount Sinai Hospital,http://www.ontario.ca/page/published-plans-and-annual-reports-2023-2024-ministry-health
+1 Bridgepoint Drive,Toronto,Hennick Bridgepoint Hospital,http://www.ontario.ca/page/published-plans-and-annual-reports-2023-2024-ministry-health
+600 University Avenue,Toronto,Mount Sinai Hospital,https://datadiscovery.nlm.nih.gov/api/views/vp2h-kf33/rows.csv?accessType=DOWNLOAD
+75 Parkview Road,Hagersville,West Haldimand General Hospital,https://data.ontario.ca/dataset/8ba078b2-ca9b-44c1-b5db-9674d85421f9/resource/c60993bb-3988-4648-9be9-398dee480514/download/assessment_centre_locations.csv
+2100 Bovaird Drive East,Brampton,Brampton Civic Hospital,https://data.ontario.ca/dataset/?_update_frequency_limit=0&organization_jurisdiction=provincial&_res_format_limit=0&_organization_limit=0&access_level=open&sort=views_recent+desc&keywords_en=Education+and+Training
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://data.ontario.ca/dataset/?_update_frequency_limit=0&organization_jurisdiction=provincial&_res_format_limit=0&_organization_limit=0&access_level=open&sort=views_recent+desc&keywords_en=Education+and+Training
+20 Lynch Street,Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://data.ontario.ca/dataset/?_update_frequency_limit=0&organization_jurisdiction=provincial&_res_format_limit=0&_organization_limit=0&access_level=open&sort=views_recent+desc&keywords_en=Education+and+Training
+200 Church Street,Etobicoke,Reactivation Care Centre,https://data.ontario.ca/dataset/?_update_frequency_limit=0&organization_jurisdiction=provincial&_res_format_limit=0&_organization_limit=0&access_level=open&sort=views_recent+desc&keywords_en=Education+and+Training
+135 McLaughlin Road South,Brampton,Withdrawal Management Centre,https://data.ontario.ca/dataset/?_update_frequency_limit=0&organization_jurisdiction=provincial&_res_format_limit=0&_organization_limit=0&access_level=open&sort=views_recent+desc&keywords_en=Education+and+Training
+"55 Eccles Street, Ottawa, ON K1R 6S3",Ottawa,Somerset West Community Health Centre - Eccles Branch,https://michaelminn.net/tutorials/data/2020-hospitals.csv
+"30 Rosemount Avenue, Ottawa, ON K1Y 1P4",Ottawa,Somerset West Community Health Centre - Rosemount Branch,https://michaelminn.net/tutorials/data/2020-hospitals.csv
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://www.google.com/maps/dir/
+2100 Bovaird Drive East,Brampton,Brampton Civic Hospital,https://www.google.com/maps/dir/
+101 Humber College Boulevard,Etobicoke,Etobicoke General Hospital,https://www.google.com/maps/dir/
+20 Lynch Street,Brampton,Peel Memorial Centre for Integrated Health and Wellness,https://www.google.com/maps/dir/
+200 Church Street,Etobicoke,Reactivation Care Centre,https://www.google.com/maps/dir/
+135 McLaughlin Road South,Brampton,Withdrawal Management Centre,https://www.google.com/maps/dir/
+"2863 Ellesmere Rd, Suite 208, Toronto, ON M1E 4B9",Toronto,Scarborough Health Network - Centenary Site - Urgent Care Centre,https://www.haltonhealthcare.on.ca/locations/milton-district-hospital
+"Our Lady of Mercy (OLM) Wing, 3rd Fl, 100 Sunnyside Ave, Toronto, ON M6R 2P1",Toronto,Unity Health Toronto - St Joseph's Health Centre - Paediatrics - CIBC Just for Kids Clinic - Children's Walk-in Clinic,https://www.haltonhealthcare.on.ca/locations/milton-district-hospital
+200 Elizabeth Street,Toronto,Toronto General Hospital,https://www.rvh.on.ca/patients-visitors/directions-maps/
+"2100 Bovaird Dr E, Brampton, ON L6R 3J7",Brampton,William Osler Health System,https://unityhealth.to/locations/st-michaels-hospital/
+"381 Church st, Markham, ON L3P 7P3",Markham,Markham Stouffville Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"101 Humber College Blvd, Etobicoke, ON M9V 1R8",Etobicoke,William Osler Health System,https://unityhealth.to/locations/st-michaels-hospital/
+"20 Lynch St, Brampton, ON L6W 2Z8",Brampton,William Osler Health System,https://unityhealth.to/locations/st-michaels-hospital/
+"30 Bond St, Toronto, ON M5B 1W8",Toronto,St Michael's Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"7750 Bayview Avenue, Thornhill, ON L3T 4A3",Thornhill,Shouldice Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"65 Underwriters Rd, Scarborough, ON M1R 3B4",Scarborough,Zee Medical Service,https://unityhealth.to/locations/st-michaels-hospital/
+"3276 St Clair Ave E, Scarborough, ON M1L 1W1",Scarborough,Providence Healthcare,https://unityhealth.to/locations/st-michaels-hospital/
+"9600 Bathurst St, Maple, ON L6A 3Z8",Maple,Mount Sinai Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"600 University Ave, Toronto, ON M5G 1X5",Toronto,Mount Sinai Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"2111 Finch Ave W, North York, ON M3N 1N1",North York,Humber River,https://unityhealth.to/locations/st-michaels-hospital/
+"B119-600 University Ave, Toronto, ON M5G 1X5",Toronto,Mount Sinai Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"250 Dundas St W 7th Fl, Toronto, ON M5T 2Z5",Toronto,Mount Sinai Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"76 Grenville St, Toronto, ON M5S 1B2",Toronto,Women's College Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"2769 Dundas St W, Toronto, ON M6P 1Y4",Toronto,St Joseph's Health Centre,https://unityhealth.to/locations/st-michaels-hospital/
+"596 Davis Dr, Newmarket, ON L3Y 2P9",Newmarket,Southlake Regional Health Centre,https://unityhealth.to/locations/st-michaels-hospital/
+"700 Gordon St, Whitby, ON L1N 5S9",Whitby,Ontario Shores Centre for Mental Health Sciences,https://unityhealth.to/locations/st-michaels-hospital/
+"13085 Yonge St, Richmond Hill, ON L4E 3S8",Richmond Hill,Oakridges Medical Center,https://unityhealth.to/locations/st-michaels-hospital/
+"13175 Yonge St, Richmond Hill, ON L4E 0G6",Richmond Hill,Markham Stouffville Hospi,https://unityhealth.to/locations/st-michaels-hospital/
+"13311 Yonge St, Richmond Hill, ON L4E 3L6",Richmond Hill,Mackenzie Health,https://unityhealth.to/locations/st-michaels-hospital/
+"200 Élizabeth St S, Brampton, ON L6Y 1S1",Brampton,Brent Michael Dr Toronto Western Hospital,https://unityhealth.to/locations/st-michaels-hospital/
+"179 Moffatt Ave, Brampton, ON L6Y 4R3",Brampton,Hospitality Needs,https://unityhealth.to/locations/st-michaels-hospital/
+"80 Clémentine Dr, Brampton, ON L6Y 0L8",Brampton,Advanced Cardio Diagnostics,https://unityhealth.to/locations/st-michaels-hospital/
+29 Noxon Street,Ingersoll,Alexandra Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+120 Napier Street,Goderich,Alexandra Marine & General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+75 Spring Street,Almonte,Almonte General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+58 Anson Drive,Iroquois Falls,Anson General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+350 John Street North,Arnprior,Arnprior and District Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+120 Dorothy Street,Atikokan,Atikokan General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+3560 Bathurst Street,Toronto,Baycrest Center for Geriatric Care,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+507 8th Ave,Matheson,Bingham Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+525 Causley Street,Blind River,Blind River District Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+89 Norman Street,Sarnia,"Bluewater Health, Sarnia",http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+200 Terrace Hill Street,Brantford,Brant Community Healthcare System,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+14 St. Matthews Road,Toronto,Bridgepoint Health,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+75 Charles Street,Brockville,Brockville General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+43 Bruyere Street,Ottawa,Bruyere Continuing Care,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+700 Coronation Blvd.,Cambridge,Cambridge Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+146 Oliver Road,Campbellford,Campbellford Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+211 Lake Avenue East,Carleton Place,Carleton Place & District Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+901 King Street West,Toronto,Centre for Addiction & Mental Health,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+6 Broomhead Road,Chapleau,Chapleau Health Services,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+98 Shipley St,Clinton,Clinton Public Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+459 Hume Street,Collingwood,Collingwood General & Marine Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+840 McConnell Avenue,Cornwall,Cornwall Community Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+PO Box 2030,Chatham,Chatham-Kent Health Alliance,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+2200 Eglinton Avenue West,Mississauga,The Credit Valley Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+117 Banting Road,Deep River,Deep River and District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+58 Goodall Street,Dryden,Dryden Regional Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+61 5th Street,Englehart,Englehart & District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+825 McKinnon Drive,Espanola,Espanola Regional Hospital and Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+395 Carrie St.,Strathroy,Four Counties Health Services,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1112 St. Andrew’s Dr. P.O. Box 760,Midland,Georgian Bay General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+500 Hogarth Ave. W,Geraldton,Geraldton District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+20260 County Road 43,Alexandria,Glengarry Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+853 King Street West,Kitchener,Grand River Hospital Corporation,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+Box 1800 8th Street East,Owen Sound,Grey Bruce Health Services,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+235 Union Street East,Fergus,Groves Memorial Community Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+115 Delhi Street,Guelph,Guelph General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+206 John Street,Dunnville,Haldimand War Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+7199 Gelert Road,Haliburton,Haliburton Highlands Heath Services Corporation,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+30 Derry Road East,Milton,Halton Healthcare Services Corporation,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1200 Main Street West,Hamilton,Hamilton Health Sciences Corporation,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+90 7th Avenue,Hanover,Hanover & District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1111 Ghislain St.,Hawkesbury,Hawkesbury & District General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+150 Kilgour Road,Toronto,Holland Bloorview Kids Rehabilitation Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+100 Rolling Hills Dr,Orangeville,Headwaters Health Care Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"41, chemin du lac Ramsey Lake Road",Sudbury,Health Sciences North / Horizon Santé-Nord,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+150 Delhi Street,Guelph,Homewood Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"P.O. Box 70, 217 Turcotte Park Road",Mattawa,Hôpital de Mattawa Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1405 Edward Street,Hearst,Hôpital Notre-Dame Hospital (Hearst),http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+278 Fronts,Hornepayne,Hornepayne Community Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+555 University Ave.,Toronto,Hospital for Sick Children,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1030 Ouellette Avenue Room JM 2-813,Windsor,Hotel Dieu Grace Hospital Windsor,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+200 Church Street,Weston,Humber River Regional Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1230 North Shore Boulevard,Burlington,Joseph Brant Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+2675 Concession Road,Kemptville,Kemptville District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+76 Stuart Street,Kingston,Kingston General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+145 Government Road East,Kirkland Lake,Kirkland & District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+17 Government Road,Wawa,Lady Dunn Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+21 Sylvan St. W,Kenora,Lake of the Woods District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1 Hospital Court,Oshawa,Lakeridge Health,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+194 Talbot Street West,Leamington,Leamington District Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+8 Richmond Park Drive,Napanee,Lennox & Addington County General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+255 Elizabeth Street East,Listowel,Listowel Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+339 Windermere Road,London,London Health Sciences Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+10 Trench Street,Richmond Hill,Mackenzie Health,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+11 Meredith St,Little Current,Manitoulin Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1 Health Care Crescent,Manitouwadge,Manitouwadge General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+PO Box 1800381 Church Street,Markham,Markham Stouffville Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+20B Cartier Road,Terrace Bay,McCausland Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+713 Montreal Road,Ottawa,Montfort Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+600 University Avenue,Toronto,Mount Sinai Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+100 Frank Miller Drive,Huntsville,Muskoka Algonquin Healthcare,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+155 Ontario Street,St. Catharines,Niagara Health System,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+125 Hogan Road,Nipigon,Nipigon District Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+365 West Street,Simcoe,Norfolk General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+50 College Drive,North Bay,North Bay Regional Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+525 Dublin Street,Mount Forest,North Wellington Health Care Corporation,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+4001 Leslie Street,Toronto,North York General Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1000 DePalma Drive,Cobourg,Northumberland Hills Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+700 Gordon Street,Whitby,Ontario Shores Centre for Mental Health Sciences,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+170 Colborne Street West,Orillia,Orillia Soldier’s Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+501 Smyth Road,Ottawa,Ottawa Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+705 Mackay Street,Pembroke,Pembroke Regional Hospital Inc.,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+60 Cornelia Street West,Smiths Falls,Perth & Smiths Falls District Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1 Hospital Drive,Peterborough,Peterborough Regional Health Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+340 Union Street,Kingston,Providence Care,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+3276 St. Clair Avenue East,Toronto,Providence Health Care,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+80 Grand Avenue West,Chatham,Public General Hospital Society of Chatham,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+3045 Baseline Road,Ottawa,Queensway Carleton Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+265 Dundas Street East,Belleville,Quinte Health Care Corporation,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+#51 Highway 105,Red Lake,Red Lake Margaret Cochenour Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+76 Stuart Street,Kingston,Religious Hospitallers of Saint Joseph of the Hotel Dieu of Kingston,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+541 Glenridge Avenue,St. Catharines,Hotel Dieu Shaver Health and Rehabilitation Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"499 Raglan Street, North",Renfrew,Renfrew Victoria Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+110 Victoria Avenue,Fort France,Riverside Health Care Facilities Inc.,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+10 Angeline Street North,Lindsay,Ross Memorial Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+2867 Ellesmere Road,Toronto,Rouge Valley Health System,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+1145 Carling Avenue,Ottawa,Royal Ottawa Health Care Group,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+2 Bloor Street East,Toronto,Royal Victoria Regional Health Care,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+625 Runnymede Road,Toronto,Runnymede Healthcare Centre,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+750 Great Northern Road,Sault Ste. Marie,Sault Area Hospital,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"3030 Birchmount Road, M1W 3W3",Scarborough,"Scarborough Hospital, The Freedom of Information and Privacy Coordinator",http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"21 McGivern Street West, N0G 2V0",Walkerton,South Bruce Grey Health Centre Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"101 Progress Crescent, P5N 3H5",Kapuskasing,Sensenbrenner Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"P.O. Box 909, P8T 1B4",Sioux Lookout,Sioux Lookout Meno Ya Win Health Centre Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"107 Kelly Road, 219, P0L 2B0",Smooth Rock Falls,Smooth Rock Falls Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"596 Davis Drive, L3Y 2P9",Newmarket,Southlake Regional Health Centre Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"24 Huron Street West, N1M 1S2",Exeter,South Huron Hospital Association Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"30 The Queensway, M6R 1B5",Toronto,St. Joseph’s Health Centre Toronto Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"50 Charlton Avenue East, L8N 4A6",Hamilton,"St. Joseph’s Health care Center Hamilton Director, Health Information Management & Chief Privacy Officer",http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"46 General Hospital Drive, N5A 2Y6",Stratford,St. Marys Memorial Hospital Site Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"7 St. Francis Memorial Drive, K0J 1B0",Barry's Bay,St. Francis Memorial Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"285 Cummer Avenue, M2M 2G1",Toronto,St. John’s Rehabilitation Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"911 Queen’s Boulevard, N2M 1B2",Kitchener,(St. Joseph’s) St. Mary’s General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"30 Bond Street, M5B 1W8",Toronto,St. Michael’s Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"189 Elm Street, N5R 5C4",St. Thomas,St. Thomas Elgin General Hospital (STEGH) Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"200 Fletcher Cr., L9R 1W7",Alliston,Stevenson Memorial Hospital Access / Privacy Officer,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"46 General Hospital Drive, N5A 2Y6",Stratford,Stratford General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"395 Carrie Street, N7G 3J4",Strathroy,Strathroy Middlesex General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"2075 Bayview Avenue, M4K 3G9",Toronto,Sunnybrook health sciences center Chief Privacy Officer SHSC Privacy Office,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"PO Box 2030, N7M 5L9",Chatham,Sydenham District Hospital (See Chatham-Kent Health Alliance) Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+421 Shepherdson Road,New Liskeard,Temiskaming Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"700 Ross Avenue East, P4N 8P2",Timmins,Timmins and District Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"650 Church Street, M4Y 2G5",Toronto,Toronto Grace Health Centre Privacy Officer,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"980 Oliver Road, P7B 6V4",Thunder Bay,Thunder Bay Regional Health Sciences Centre Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"167 Rolph Street, N4G 3Y9",Tillsonburg,Tillsonburg District Memorial Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"825 Coxwell Avenue, M4C 3E7",Toronto,"Toronto East General Hospital, The Freedom of Information and Privacy Coordinator",http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"190 Elizabeth St., M5G 2C4",Toronto,University Health Network Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"500 Church Street, L9M 1G3",Penetanguishene,Waypoint Centre for Mental Health Care Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"19 Hospital Drive, Box 664",Moose Factory,Weneebayko Area Health Authority Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"725 Coursol Road, P2B 2Y6",Sturgeon Falls,West Nipissing General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"82 Buttonwood Ave., M6M 2J5",Toronto,West Park Healthcare Centre Freedom of Information and Privacy Office,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"75 Parkview Road, N0A 1H0",Hagersville,West Haldimand General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"6 Albert Street, P2A 3A4",Parry Sound,West Parry Sound Health Centre Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"2100 Bovaird Drive East, L6R 3J7",Brampton,William Osler Health System Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"26 Peninsula Road, P0T 2E0",Marathon,Wilson Memorial General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"566 Louise Street, K0C 2K0",Winchester,Winchester District Memorial Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"1995 Lens Avenue, N8W 1L9",Windsor,Windsor Regional Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"270 Carling Terrace, N0G 2W0",Wingham,Wingham & District Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"76 Grenville St., M5S 1B2",Toronto,Women's College Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"310 Juliana Drive, N4V 0A4",Woodstock,Woodstock General Hospital Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+"40 Ruskin Street, K1Y 4W7",Ottawa,University of Ottawa Heart Institute Freedom of Information and Privacy Coordinator,http://docs.files.ontario.ca/documents/5009/foi-directory-of-institutions-en-final-jan10.pdf
+29 Noxon Street,Ingersoll,Alexandra Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+120 Napier Street,Goderich,Alexandra Marine & General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+75 Spring Street,Almonte,Almonte General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+58 Anson Drive,Iroquois Falls,Anson General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+350 John Street North,Arnprior,Arnprior and District Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+120 Dorothy Street,Atikokan,Atikokan General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+3560 Bathurst Street,Toronto,Baycrest Center for Geriatric Care,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+507 8th Ave,Matheson,Bingham Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+525 Causley Street,Blind River,Blind River District Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+200 Terrace Hill Street,Brantford,Brant Community Healthcare System,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+14 St. Matthews Road,Toronto,Bridgepoint Health,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+75 Charles Street,Brockville,Brockville General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+43 Bruyere Street,Ottawa,Bruyere Continuing Care,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+700 Coronation Blvd.,Cambridge,Cambridge Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+146 Oliver Road,Campbellford,Campbellford Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+211 Lake Avenue East,Carleton Place,Carleton Place & District Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+901 King Street West,Toronto,Centre for Addiction & Mental Health,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+6 Broomhead Road,Chapleau,Chapleau Heath Services / Services de santé de Chapleau,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+401 Smyth Road,Ottawa,Children's Hospital of Eastern Ontario,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+98 Shipley St,Clinton,Clinton Public Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+459 Hume Street,Collingwood,Collingwood General & Marine Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+840 McConnell Avenue,Cornwall,Cornwall Community Hospital / Hôpital communautaire de Cornwall,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+PO Box 2030,Chatham,Chatham-Kent Health Alliance,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+2200 Eglinton Avenue West,Mississauga,The Credit Valley Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+117 Banting Road,Deep River,Deep River and District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+58 Goodall Street,Dryden,Dryden Regional Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"61, 5th Street",Englehart,Englehart & District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+825 McKinnon Drive,Espanola,Espanola Regional Hospital and Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+395 Carrie St.,Strathroy,Four Counties Health Services,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1112 St. Andrew’s Dr. P.O. Box 760,Midland,Georgian Bay General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+500 Hogarth Ave. W,Geraldton,Geraldton District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+20260 County Road 43,Alexandria,Glengarry Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+853 King Street West,Kitchener,Grand River Hospital Corporation,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+Box 1800 8th Street East,Owen Sound,Grey Bruce Health Services,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+235 Union Street East,Fergus,Groves Memorial Community Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+115 Delhi Street,Guelph,Guelph General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+206 John Street,Dunnville,Haldimand War Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+7199 Gelert Road,Haliburton,Haliburton Highlands Heath Services Corporation,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+30 Derry Road East,Milton,Halton Healthcare Services Corporation,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1200 Main Street West,Hamilton,Hamilton Health Sciences Corporation,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+90-7th Avenue,Hanover,Hanover & District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1111 Ghislain St.,Hawkesbury,Hawkesbury & District General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+150 Kilgour Road,Toronto,Holland Bloorview Kids Rehabilitation Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+100 Rolling Hills Dr,Orangeville,Headwaters Health Care Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"41, chemin du lac / Ramsey Lake Road",Sudbury,Health Sciences North / Horizon Santé-Nord,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+150 Delhi Street,Guelph,Homewood Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"P.O. Box 70, 217 Turcotte Park Road",Mattawa,Hôpital de Mattawa Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1405 Edward Street,Hearst,Hôpital Notre-Dame Hospital (Hearst),https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+278 Fronts,Hornepayne,Hornepayne Community Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+555 University Ave.,Toronto,Hospital for Sick Children,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1030 Ouellette Avenue,Windsor,Hotel Dieu Grace Hospital Windsor,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+200 Church Street,Weston,Humber River Regional Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1230 North Shore Boulevard,Burlington,Joseph Brant Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+2675 Concession Road,Kemptville,Kemptville District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+76 Stuart Street,Kingston,Kingston General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+2 Bloor Street East,Toronto,Royal Victoria Regional Health Care,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+625 Runnymede Road,Toronto,Runnymede Healthcare Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+750 Great Northern Road,Sault Ste. Marie,Sault Area Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+46 General Hospital Drive,Stratford,Seaforth Community Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+3030 Birchmount Road,Scarborough,"Scarborough Hospital, The",https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+21 McGivern Street West,Walkerton,South Bruce Grey Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+101 Progress Crescent,Kapuskasing,Sensenbrenner Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+P.O. Box 909,Sioux Lookout,Sioux Lookout Meno Ya Win Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"107 Kelly Road, 219",Smooth Rock Falls,Smooth Rock Falls Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+596 Davis Drive,Newmarket,Southlake Regional Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+24 Huron Street West,Exeter,South Huron Hospital Association,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+30 The Queensway,Toronto,St. Joseph’s Health Centre Toronto,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+50 Charlton Avenue East,Hamilton,St. Joseph’s Health care Center Hamilton,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+46 General Hospital Drive,Stratford,St. Marys Memorial Hospital Site,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+7 St. Francis Memorial Drive,Barry's Bay,St. Francis Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+285 Cummer Avenue,Toronto,St. John’s Rehabilitation Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+911 Queen’s Boulevard,Kitchener,(St. Joseph’s) St. Mary’s General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+30 Bond Street,Toronto,St. Michael’s Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+189 Elm Street,St. Thomas,St. Thomas Elgin General Hospital (STEGH),https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+200 Fletcher Cr.,Alliston,Stevenson Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+46 General Hospital Drive,Stratford,Stratford General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+395 Carrie Street,Strathroy,Strathroy Middlesex General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+2075 Bayview Avenue,Toronto,Sunnybrook health sciences center,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+PO Box 2030,Chatham,Sydenham District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+421 Shepherdson Road,New Liskeard,Temiskaming Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+700 Ross Avenue East,Timmins,Timmins and District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+650 Church Street,Toronto,Toronto Grace Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+980 Oliver Road,Thunder Bay,Thunder Bay Regional Health Sciences Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+167 Rolph Street,Tillsonburg,Tillsonburg District Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+825 Coxwell Avenue,Toronto,"Toronto East General Hospital, The",https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+190 Elizabeth St.,Toronto,University Health Network,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+500 Church Street,Penetanguishene,Waypoint Centre for Mental Health Care,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"19 Hospital Drive, Box 664",Moose Factory,Weneebayko Area Health Authority,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+725 Coursol Road,Sturgeon Falls,West Nipissing General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+82 Buttonwood Ave.,Toronto,West Park Healthcare Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+75 Parkview Road,Hagersville,West Haldimand General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+6 Albert Street,Parry Sound,West Parry Sound Health Centre,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+2100 Bovaird Drive East,Brampton,William Osler Health System,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"26 Peninsula Road, Bag West",Marathon,Wilson Memorial General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+566 Louise Street,Winchester,Winchester District Memorial Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+1995 Lens Avenue,Windsor,Windsor Regional Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+270 Carling Terrace,Wingham,Wingham & District Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+76 Grenville St.,Toronto,Women's College Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+310 Juliana Drive,Woodstock,Woodstock General Hospital,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+163 Church Street,Bowmanville,Bowmanville,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+200 Ontario Street,Cobourg,Cobourg,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+100 Second Street,Collingwood,Collingwood,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+208 Main Street,Picton,Picton,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+170 Dorion Loop Road,Dorion,Dorion,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+36 Van Horne Avenue,Dryden,Dryden,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+450 Sunset Drive,St. Thomas,St. Thomas,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+151 Ontario Avenue,Elliot Lake,Elliot Lake,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+245 Avery Drive,Espanola,Espanola,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+18 King Street,Angus,Angus,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"360 Fairview Avenue West, Suite 101",Essex,Essex,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+136 Gilmore Road,Fort Erie,Fort Erie,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+363 Church Street,Fort Frances,Fort Frances,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+100 Park Street,Gananoque,Gananoque,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+90 Wexford Drive,Keswick,Keswick,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+180 Sharpe Street West,Gravenhurst,Gravenhurst,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+74 MacKenzie Street,Greater Sudbury,Greater Sudbury,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+18 Carnegie Lane,Grimsby,Grimsby,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+100 Norfolk Street,Guelph,Guelph,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+9 Church Street,Georgetown,Georgetown,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+15 Township Hall Road,Stonecliffe,Stonecliffe,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+7 Minerva Street East,Huntsville,Huntsville,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+24 Mundy Avenue,Kapuskasing,Kapuskasing,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+190 Kent Street West,Lindsay,Lindsay,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+24 Main Street South,Kenora,Kenora,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+130 Johnson Street,Kingston,Kingston,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+10 Kirkland Street East,Kirkland Lake,Kirkland Lake,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+85 Queen Street North,Kitchener,Kitchener,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"34465 Highway 17, RR 1",Deep River,Deep River,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+97 Thomas Street East,Napanee,Napanee,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+251 Dundas St.,London,London,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+"2 Manitou rd Community Centre, Manitou Road",Manitouwadge,Manitouwadge,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+6031 Highway 7,Markham,Markham,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+15 Trowbridge Street West,Meaford,Meaford,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+399 Ridout Street North,London,London,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+320 King Street,Midland,Midland,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+45 Bruce Street,Milton,Milton,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+301 Burnhamthorpe Road West,Mississauga,Mississauga,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf
+438 Park Avenue,Newmarket,Newmarket,https://dr6j45jk9xcmk.cloudfront.net/documents/4993/foi-directory-of-institutions-en-final-april11.pdf

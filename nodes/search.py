@@ -28,10 +28,13 @@ class SearchNode(BaseNode):
         """Search for URLs across SEARXNG and Google API"""
         
         raw_queries = state['queries']
-        searxng_url = os.getenv("SEARXNG_URL", "http://localhost:8888").rstrip("/")
+        searxng_url = os.getenv("SEARXNG_URL", "http://localhost:8080").rstrip("/")
         google_key = os.getenv("GOOGLE_API_KEY")
         google_cx = os.getenv("GOOGLE_CX")
 
+        limits = state.get("pathways_limits") or {}
+        max_queries = int(limits.get("max_queries", len(raw_queries)))
+        max_urls = int(limits.get("max_urls", 0))
         query_rows = []
         for q in raw_queries:
             if isinstance(q, dict):
@@ -50,6 +53,7 @@ class SearchNode(BaseNode):
                     "query": query_text,
                     "query_technique": "simple_generation",
                 })
+        query_rows = query_rows[:max_queries]
         
         all_results = []
         
@@ -131,6 +135,11 @@ class SearchNode(BaseNode):
             if url not in seen:
                 seen.add(url)
                 deduped.append(r)
+                if max_urls and len(deduped) >= max_urls:
+                    break
+        
+            if max_urls and len(deduped) >= max_urls:
+                break
         
         state['search_results'] = deduped
         

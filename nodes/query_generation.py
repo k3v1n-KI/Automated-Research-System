@@ -9,6 +9,7 @@ import os
 from typing import TYPE_CHECKING
 
 from openai import AsyncOpenAI
+from llm_compat import get_async_client
 # GEMINI - Temporarily commented out
 # import google.generativeai as genai
 from nodes.base import BaseNode
@@ -56,11 +57,7 @@ _openai_model = None
 def get_openai_client():
     global _openai_client, _openai_model
     if _openai_client is None:
-        api_key = os.getenv("OPENAI_API_KEY")
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY not set in environment")
-        _openai_client = AsyncOpenAI(api_key=api_key)
-        _openai_model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
+        _openai_client, _openai_model = get_async_client()
     return _openai_client, _openai_model
 
 # GEMINI - Temporarily commented out

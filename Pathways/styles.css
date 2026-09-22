@@ -1,0 +1,400 @@
+/* Pathways — wireframe styling
+   Warm-tinted wireframes: paper, ink, one terracotta accent.
+   Conventions:
+   - .stripe       = striped placeholder for imagery
+   - .ai-zone      = dashed outline for AI-generated content
+   - .ph           = solid placeholder block
+   - .meta         = monospace caption
+*/
+
+:root {
+  --paper: oklch(0.985 0.008 75);
+  --paper-2: oklch(0.97 0.01 75);
+  --paper-3: oklch(0.94 0.014 72);
+  --ink: oklch(0.22 0.01 60);
+  --ink-2: oklch(0.42 0.012 60);
+  --ink-3: oklch(0.62 0.014 65);
+  --stroke: oklch(0.88 0.012 70);
+  --stroke-2: oklch(0.82 0.014 70);
+  --accent: oklch(0.62 0.12 45);
+  --accent-soft: oklch(0.93 0.04 45);
+  --accent-ink: oklch(0.42 0.13 42);
+  --good: oklch(0.66 0.10 150);
+  --warn: oklch(0.72 0.13 75);
+  --crit: oklch(0.58 0.16 28);
+
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+.wf {
+  font-family: var(--font-ui);
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 13px;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+}
+
+.wf h1, .wf h2, .wf h3 { margin: 0; font-weight: 600; letter-spacing: -0.015em; }
+.wf p { margin: 0; }
+.wf button { font-family: inherit; cursor: pointer; }
+
+/* ── stripes & placeholders ────────────────────────── */
+.stripe {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 6px,
+    var(--stroke) 6px 7px
+  );
+  background-color: var(--paper-2);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+
+.ai-zone {
+  border: 1px dashed var(--accent);
+  background: color-mix(in oklch, var(--accent-soft) 50%, transparent);
+  border-radius: var(--r-md);
+  position: relative;
+}
+.ai-zone::before {
+  content: '✦ ai';
+  position: absolute;
+  top: -8px; left: 8px;
+  background: var(--paper);
+  padding: 0 4px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  color: var(--accent-ink);
+  text-transform: uppercase;
+}
+
+.ph {
+  background: var(--paper-3);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-sm);
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  letter-spacing: 0;
+}
+
+/* ── App chrome (used inside artboards) ──────────────────── */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--paper);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 18px;
+  border-bottom: 1px solid var(--stroke);
+  background: var(--paper);
+  flex-shrink: 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.logo-dot {
+  width: 10px; height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2px;
+  margin-left: 8px;
+}
+.nav-links a {
+  font-size: 12px;
+  color: var(--ink-2);
+  padding: 5px 10px;
+  border-radius: var(--r-sm);
+  text-decoration: none;
+}
+.nav-links a.active {
+  color: var(--ink);
+  background: var(--paper-3);
+}
+
+.nav-spacer { flex: 1; }
+
+.region-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--paper-2);
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--ink-2);
+}
+.region-pill .dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--paper-3);
+  border: 1px solid var(--stroke);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+/* ── Buttons ──────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--stroke-2);
+  background: var(--paper);
+  color: var(--ink);
+}
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.btn.ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--ink-2);
+}
+.btn.sm { padding: 4px 8px; font-size: 11px; }
+
+/* ── Chips ────────────────────────────────────────── */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  font-size: 11px;
+  border-radius: 999px;
+  background: var(--paper-2);
+  border: 1px solid var(--stroke);
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.chip.accent {
+  background: var(--accent-soft);
+  border-color: color-mix(in oklch, var(--accent) 30%, transparent);
+  color: var(--accent-ink);
+}
+.chip.solid {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.chip.outline { background: transparent; }
+.chip-x { opacity: 0.5; cursor: pointer; margin-left: 2px; }
+
+/* ── Cards & containers ──────────────────────────── */
+.card {
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-md);
+  background: var(--paper);
+  padding: 14px;
+}
+.card.muted { background: var(--paper-2); }
+.card.accent { border-color: color-mix(in oklch, var(--accent) 35%, var(--stroke)); }
+
+.divider {
+  height: 1px;
+  background: var(--stroke);
+  margin: 0;
+  border: 0;
+}
+.divider.v { width: 1px; height: auto; align-self: stretch; }
+
+/* ── Forms ────────────────────────────────────────── */
+.field {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-sm);
+  padding: 8px 10px;
+  font-size: 12px;
+  background: var(--paper);
+  font-family: inherit;
+  color: var(--ink);
+}
+.field:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.label {
+  font-size: 11px;
+  color: var(--ink-2);
+  margin-bottom: 4px;
+  display: block;
+  font-weight: 500;
+}
+textarea.field { resize: none; }
+
+/* ── Tables ───────────────────────────────────────── */
+.tbl {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 11.5px;
+}
+.tbl th, .tbl td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--stroke);
+  vertical-align: top;
+}
+.tbl th {
+  font-weight: 500;
+  color: var(--ink-3);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--stroke);
+}
+.tbl td.num { font-family: var(--font-mono); }
+
+/* ── Score / confidence ──────────────────────────── */
+.score-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--paper-3);
+  overflow: hidden;
+  position: relative;
+}
+.score-bar > i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.score-bar.good > i { background: var(--good); }
+.score-bar.warn > i { background: var(--warn); }
+
+/* ── Misc ─────────────────────────────────────────── */
+.row { display: flex; align-items: center; gap: 8px; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+.between { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.muted-text { color: var(--ink-2); }
+.dim-text { color: var(--ink-3); }
+.title-1 { font-size: 22px; font-weight: 600; letter-spacing: -0.025em; }
+.title-2 { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; }
+.title-3 { font-size: 13px; font-weight: 600; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  letter-spacing: 0.06em;
+}
+
+.scroll-y { overflow-y: auto; }
+.scroll-y::-webkit-scrollbar { width: 6px; }
+.scroll-y::-webkit-scrollbar-thumb { background: var(--stroke-2); border-radius: 3px; }
+.body { flex: 1; padding: 18px 22px; overflow-y: auto; }
+
+.sidebar {
+  width: 200px;
+  border-right: 1px solid var(--stroke);
+  background: var(--paper-2);
+  padding: 14px 12px;
+  flex-shrink: 0;
+}
+.sidebar .item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 8px;
+  border-radius: var(--r-sm);
+  font-size: 12px;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.sidebar .item.active { background: var(--paper); color: var(--ink); border: 1px solid var(--stroke); }
+.sidebar .group-label {
+  font-size: 10px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 14px 8px 6px;
+}
+
+/* ── Badges ──────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--paper-3);
+  color: var(--ink-2);
+}
+.badge.good  { background: color-mix(in oklch, var(--good) 18%, var(--paper)); color: oklch(0.36 0.12 150); }
+.badge.warn  { background: color-mix(in oklch, var(--warn) 22%, var(--paper)); color: oklch(0.42 0.12 70); }
+.badge.crit  { background: color-mix(in oklch, var(--crit) 18%, var(--paper)); color: var(--crit); }
+.badge.acc   { background: var(--accent-soft); color: var(--accent-ink); }
+.badge.verified { background: var(--ink); color: var(--paper); }
+
+/* ── Annotation callouts (designer notes on wireframes) ─── */
+.note {
+  position: relative;
+  background: oklch(0.96 0.05 95);
+  border: 1px solid oklch(0.85 0.06 95);
+  border-radius: var(--r-sm);
+  padding: 7px 9px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: oklch(0.38 0.06 80);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.note b { color: oklch(0.28 0.08 70); font-weight: 600; }
+
+/* ── Indigenous trefoil marker (abstract, non-imitative) ─── */
+.indig-marker {
+  display: inline-block;
+  width: 10px; height: 10px;
+  background: radial-gradient(circle at 50% 50%, var(--accent) 0 30%, transparent 31%),
+              radial-gradient(circle at 30% 70%, var(--accent) 0 28%, transparent 29%),
+              radial-gradient(circle at 70% 70%, var(--accent) 0 28%, transparent 29%);
+  opacity: 0.55;
+}

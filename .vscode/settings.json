@@ -1,4 +1,43 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda"
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "chat.tools.terminal.autoApprove": {
+        "/^python -m http\\.server 8766 --directory Pathways$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m py_compile Pathways/pathways_domain\\.py && python - <<'PY'\nfrom datetime import datetime, timedelta, timezone\nfrom Pathways\\.pathways_domain import PathwaysStore, seed_resources\n\nbase = datetime\\(2026, 1, 1, tzinfo=timezone\\.utc\\)\nstore = PathwaysStore\\(seed_resources\\(\\), freshness_window_days=30, aging_window_days=90\\)\nrecord = store\\.project\\(now=base\\)\\['res-yee-hong'\\]\nassert record\\['field_states'\\]\\['phone'\\] == 'unknown'\nstore\\.verify\\('res-yee-hong', 'phone', actor='nurse-1', source='call', display_actor='Rita', anonymous=True, created_at=base\\)\nassert store\\.project\\(now=base \\+ timedelta\\(days=10\\)\\)\\['res-yee-hong'\\]\\['field_states'\\]\\['phone'\\] == 'verified-fresh'\nassert store\\.project\\(now=base \\+ timedelta\\(days=45\\)\\)\\['res-yee-hong'\\]\\['field_states'\\]\\['phone'\\] == 'verified-aging'\nstore\\.flag\\('res-yee-hong', 'phone', 'wrong', actor='nurse-1', correction='416-321-3001', source='web', created_at=base \\+ timedelta\\(days=45\\)\\)\nflagged = store\\.project\\(now=base \\+ timedelta\\(days=45\\)\\)\\['res-yee-hong'\\]\nassert flagged\\['field_states'\\]\\['phone'\\] == 'flagged-stale'\nassert flagged\\['chain_of_custody'\\]\\['phone'\\]\\[0\\]\\['display_actor'\\] == 'AOHT member'\nstore\\.accept_suggestion\\('res-yee-hong', 'phone', '416-321-3001', actor='operator', created_at=base \\+ timedelta\\(days=46\\)\\)\nresolved = store\\.project\\(now=base \\+ timedelta\\(days=46\\)\\)\\['res-yee-hong'\\]\nassert resolved\\['field_states'\\]\\['phone'\\] == 'verified-fresh'\nassert len\\(resolved\\['chain_of_custody'\\]\\['phone'\\]\\) == 3\nprint\\('M1 event-state transition smoke test passed'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m py_compile Pathways/pathways_domain\\.py && python - <<'PY'\nfrom datetime import datetime, timedelta, timezone\nfrom Pathways\\.pathways_domain import PathwaysStore, seed_resources\n\nbase = datetime\\(2026, 1, 1, tzinfo=timezone\\.utc\\)\nstore = PathwaysStore\\(seed_resources\\(\\), freshness_window_days=30, aging_window_days=90\\)\nassert store\\.project\\(now=base\\)\\['res-yee-hong'\\]\\['field_states'\\]\\['phone'\\] == 'unknown'\nstore\\.verify\\('res-yee-hong', 'phone', actor='nurse-1', source='call', display_actor='Rita', anonymous=True, created_at=base\\)\nassert store\\.project\\(now=base \\+ timedelta\\(days=10\\)\\)\\['res-yee-hong'\\]\\['field_states'\\]\\['phone'\\] == 'verified-fresh'\nassert store\\.project\\(now=base \\+ timedelta\\(days=45\\)\\)\\['res-yee-hong'\\]\\['field_states'\\]\\['phone'\\] == 'verified-aging'\nstore\\.flag\\('res-yee-hong', 'phone', 'wrong', actor='nurse-1', correction='416-321-3001', source='web', created_at=base \\+ timedelta\\(days=45\\)\\)\nflagged = store\\.project\\(now=base \\+ timedelta\\(days=45\\)\\)\\['res-yee-hong'\\]\nassert flagged\\['field_states'\\]\\['phone'\\] == 'flagged-stale'\nassert flagged\\['chain_of_custody'\\]\\['phone'\\]\\[0\\]\\['display_actor'\\] == 'AOHT member'\nstore\\.accept_suggestion\\('res-yee-hong', 'phone', '416-321-3001', actor='operator', created_at=base \\+ timedelta\\(days=46\\)\\)\nresolved = store\\.project\\(now=base \\+ timedelta\\(days=46\\)\\)\\['res-yee-hong'\\]\nassert resolved\\['field_states'\\]\\['phone'\\] == 'verified-fresh'\nassert len\\(resolved\\['chain_of_custody'\\]\\['phone'\\]\\) == 3\nprint\\('M1 event-state transition smoke test passed'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m pytest Pathways/test_pathways_domain\\.py -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m pytest Pathways -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m py_compile Pathways/pathways_domain\\.py Pathways/import_pathways_data\\.py && python - <<'PY'\nfrom datetime import datetime, timezone\nfrom Pathways\\.pathways_domain import PathwaysStore, seed_resources\nstore = PathwaysStore\\(seed_resources\\(\\)\\)\nstore\\.verify\\('res-yee-hong', 'phone', created_at=datetime\\(2026, 1, 1, tzinfo=timezone\\.utc\\)\\)\nfirst = store\\.project\\(now=datetime\\(2026, 1, 15, tzinfo=timezone\\.utc\\)\\)\nsecond = store\\.project\\(now=datetime\\(2026, 1, 15, tzinfo=timezone\\.utc\\)\\)\nassert first == second\nassert first\\['res-yee-hong'\\]\\['field_states'\\]\\['phone'\\] == 'verified-fresh'\nprint\\('M1 projection replay check passed'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m pytest Pathways/test_pathways_find\\.py -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m http\\.server 8768 --directory Pathways$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "conda": true,
+        "/^conda run -n auto-research python -m py_compile Pathways/pathways_backend\\.py && node --check Pathways/pathways_app\\.js && conda run -n auto-research pytest Pathways/test_pathways_domain\\.py -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }

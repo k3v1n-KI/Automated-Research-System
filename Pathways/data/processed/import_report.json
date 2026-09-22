@@ -1,0 +1,35 @@
+{
+  "candidate_records": 2325,
+  "datasets": {
+    "Addiction_Dataset.csv": {
+      "malformed_source_urls": 1,
+      "missing_values": {
+        "postal_code": 540,
+        "website": 540
+      },
+      "rows": 540
+    },
+    "Hospital_Dataset.csv": {
+      "malformed_source_urls": 0,
+      "missing_values": {
+        "phone": 801,
+        "postal_code": 801,
+        "website": 801
+      },
+      "rows": 801
+    },
+    "Pharmacy_Dataset.csv": {
+      "malformed_source_urls": 0,
+      "missing_values": {},
+      "rows": 984
+    }
+  },
+  "domains": {
+    "addiction_services": 540,
+    "hospitals": 801,
+    "pharmacy_services": 984
+  },
+  "duplicate_candidate_groups": 324,
+  "schema_version": 1,
+  "total_rows": 2325
+}

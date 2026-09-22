@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pathways — Wireframes (round 1)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body class="wf">
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="parts.jsx"></script>
+<script type="text/babel" src="pages-home.jsx"></script>
+<script type="text/babel" src="pages-entry.jsx"></script>
+<script type="text/babel" src="pages-results.jsx"></script>
+<script type="text/babel" src="pages-resource-forum.jsx"></script>
+<script type="text/babel" src="pages-rest.jsx"></script>
+<script type="text/babel" src="pages-shortage-v2.jsx"></script>
+
+<script type="text/babel">
+const W = 1280, H = 820;
+
+function Cover() {
+  return (
+    <div style={{ padding: 36, fontFamily: 'var(--font-ui)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div className="eyebrow" style={{ marginBottom: 8 }}>Round 1 · Wireframes · May 3 2026</div>
+      <h1 style={{ fontSize: 38, fontWeight: 600, letterSpacing: '-0.025em', lineHeight: 1.1, marginBottom: 6 }}>
+        <span style={{ display: 'inline-block', width: 14, height: 14, background: 'var(--accent)', borderRadius: '50%', marginRight: 10, verticalAlign: 'middle' }} />
+        Pathways
+      </h1>
+      <p style={{ fontSize: 16, color: 'var(--ink-2)', maxWidth: 720, marginBottom: 24 }}>Your shared notebook, smarter — Ontario healthcare resource referral. <span className="meta">working name; 5 alternates below.</span></p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: 20, flex: 1, minHeight: 0 }}>
+        <div className="card">
+          <div className="title-2" style={{ marginBottom: 10 }}>System decisions</div>
+          <table className="tbl">
+            <tbody>
+              {[
+                ['Primary user', 'Generic referral coordinator (RN, social worker, NP-led teams)'],
+                ['Context', 'Desktop between patients · bedside tablet (same layout, no separate mobile)'],
+                ['Session length', '< 2 minutes — speed is the brief'],
+                ['Region model', 'Ontario Health Team (OHT) — postal / picker / map all available'],
+                ['AI posture', '"Magic suggestions" — visible reasoning, never a chat'],
+                ['Privacy', 'No patient identifiers · case labels are nurse-typed shorthand'],
+                ['Trust', 'Source per claim · last-verified · plain-language reasoning · peer ★'],
+                ['Verification', 'Employer email or referral by existing RN; verified badge'],
+                ['Languages', 'EN/FR UI · resources tagged with all spoken languages'],
+                ['Aesthetic', 'Warm wireframes · paper, ink, terracotta accent'],
+              ].map(r => <tr key={r[0]}><td className="meta" style={{ width: 130 }}>{r[0]}</td><td>{r[1]}</td></tr>)}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="col">
+          <div className="card">
+            <div className="title-2" style={{ marginBottom: 10 }}>Sitemap</div>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, lineHeight: 1.85, color: 'var(--ink-2)' }}>
+              <div><b style={{ color: 'var(--ink)' }}>/</b> &nbsp; home · two paths (3 variations)</div>
+              <div style={{ paddingLeft: 16 }}>├─ <b style={{ color: 'var(--ink)' }}>/case</b> &nbsp; patient-needs entry (3 variations)</div>
+              <div style={{ paddingLeft: 32 }}>└─ <b style={{ color: 'var(--ink)' }}>/case/results</b> &nbsp; recommendations (3 variations)</div>
+              <div style={{ paddingLeft: 48 }}>└─ <b style={{ color: 'var(--ink)' }}>/r/:id</b> &nbsp; resource detail</div>
+              <div><b style={{ color: 'var(--ink)' }}>/directory</b> &nbsp; browse + search</div>
+              <div><b style={{ color: 'var(--ink)' }}>/forum</b> &nbsp; feed (regional filter) → <b style={{ color: 'var(--ink)' }}>/forum/:id</b> thread</div>
+              <div><b style={{ color: 'var(--ink)' }}>/shortage</b> &nbsp; public summary &nbsp;·&nbsp; <b style={{ color: 'var(--ink)' }}>/shortage/admin</b></div>
+              <div><b style={{ color: 'var(--ink)' }}>/admin</b> &nbsp; oversight (queue · directory · quality)</div>
+              <div><b style={{ color: 'var(--ink)' }}>/saved</b> · <b style={{ color: 'var(--ink)' }}>/notifications</b> · <b style={{ color: 'var(--ink)' }}>/submit</b> · <b style={{ color: 'var(--ink)' }}>/about</b></div>
+              <div><b style={{ color: 'var(--ink)' }}>/onboarding</b> &nbsp; first-run · 4 steps</div>
+            </div>
+          </div>
+
+          <div className="card muted">
+            <div className="title-2" style={{ marginBottom: 10 }}>Name candidates</div>
+            <div className="col" style={{ gap: 6, fontSize: 12 }}>
+              <div className="between"><b>Pathways</b><span className="meta">used in mocks · roadmap, neutral</span></div>
+              <div className="between"><b>Trillium Notebook</b><span className="meta">Ontario flower · "shared notebook"</span></div>
+              <div className="between"><b>Compass Care</b><span className="meta">direction without colonial baggage</span></div>
+              <div className="between"><b>Kindred</b><span className="meta">peer-network feel</span></div>
+              <div className="between"><b>Wayfind</b><span className="meta">verb · neutral · action-y</span></div>
+              <div className="between"><b>Beacon ON</b><span className="meta">public-good · advocacy-friendly</span></div>
+            </div>
+          </div>
+
+          <div className="card accent">
+            <div className="title-3" style={{ marginBottom: 6 }}>How to read these</div>
+            <p style={{ fontSize: 12, color: 'var(--ink-2)' }}>Wireframes have a <b>terracotta accent</b> for the things that hold meaning (active region, primary action, AI zones). Striped blocks are placeholder imagery. Dashed boxes mark <span style={{ color: 'var(--accent-ink)' }}>AI-generated content</span>. Yellow notes are designer commentary.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="cover" title="Pathways" subtitle="System overview · sitemap · names">
+        <DCArtboard id="cover" label="Cover" width={1100} height={720}><Cover /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="home" title="01 — Home / Dashboard" subtitle="3 variations · how does the user start?">
+        <DCArtboard id="home-a" label="A · Two-path split" width={W} height={H}><HomeA /></DCArtboard>
+        <DCArtboard id="home-b" label="B · Search-first" width={W} height={H}><HomeB /></DCArtboard>
+        <DCArtboard id="home-c" label="C · Dashboard-rich" width={W} height={H}><HomeC /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="entry" title="02 — Patient-needs entry" subtitle="3 variations · how does the case go in?">
+        <DCArtboard id="entry-a" label="A · Free text + AI parse" width={W} height={H}><EntryA /></DCArtboard>
+        <DCArtboard id="entry-b" label="B · Tag-only fast path" width={W} height={H}><EntryB /></DCArtboard>
+        <DCArtboard id="entry-c" label="C · Hybrid (text + tags)" width={W} height={H}><EntryC /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="results" title="03 — Results" subtitle="3 variations · multi-dimensional ranking">
+        <DCArtboard id="res-a" label="A · Triaged tiers" width={W} height={H}><ResultsA /></DCArtboard>
+        <DCArtboard id="res-b" label="B · Comparison table" width={W} height={H}><ResultsB /></DCArtboard>
+        <DCArtboard id="res-c" label="C · Map + list" width={W} height={H}><ResultsC /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="resource" title="04 — Resource detail">
+        <DCArtboard id="resource" label="Resource page" width={W} height={H}><ResourceDetail /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="forum" title="05 — Forum" subtitle="single feed · regional filter · AI auto-categorizes">
+        <DCArtboard id="forum-feed" label="Feed" width={W} height={H}><ForumFeed /></DCArtboard>
+        <DCArtboard id="forum-thread" label="Thread (with AI extract)" width={W} height={H}><ForumThread /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="shortage" title="06 — Shortage" subtitle="public summary · admin overview · single-finding drill-down">
+        <DCArtboard id="shortage-public" label="Public · stat of the week" width={W} height={H}><ShortagePublic /></DCArtboard>
+        <DCArtboard id="shortage-admin-v2" label="Admin v2 · OHT planner overview" width={W} height={H}><ShortageAdminV2 /></DCArtboard>
+        <DCArtboard id="shortage-drill" label="Drill-down · single finding" width={W} height={H}><ShortageDrilldown /></DCArtboard>
+        <DCArtboard id="shortage-admin-v1" label="v1 · superseded" width={W} height={H}><ShortageAdmin /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="oversight" title="07 — Oversight workspace" subtitle="moderation queue · directory · data quality">
+        <DCArtboard id="oversight" label="Moderation queue (hero)" width={W} height={H}><Oversight /></DCArtboard>
+      </DCSection>
+
+      <DCSection id="other" title="08 — Other pages">
+        <DCArtboard id="onboarding" label="Onboarding · OHT step" width={W} height={H}><Onboarding /></DCArtboard>
+        <DCArtboard id="submit" label="Submit a resource" width={W} height={H}><Submission /></DCArtboard>
+        <DCArtboard id="notif" label="Notifications" width={W} height={H}><Notifications /></DCArtboard>
+        <DCArtboard id="saved" label="Saved cases" width={W} height={H}><SavedCases /></DCArtboard>
+        <DCArtboard id="about" label="About / mission" width={W} height={H}><About /></DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

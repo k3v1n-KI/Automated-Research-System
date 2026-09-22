@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pathways · 2-Minute Pitch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper:    #fcfcfd;
+    --paper-2:  #f7f7f9;
+    --paper-3:  #f1f1f4;
+    --ink:      #18181b;
+    --ink-2:    #3f3f46;
+    --ink-3:    #71717a;
+    --ink-4:    #a1a1aa;
+    --stroke:   #e4e4e7;
+    --stroke-2: #d4d4d8;
+    --accent:       #7c3aed;
+    --accent-2:     #6d28d9;
+    --accent-soft:  #f3eefe;
+    --accent-tint:  #faf6ff;
+    --accent-ink:   #5b21b6;
+    --r-sm: 5px; --r-md: 7px; --r-lg: 10px;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper-2); }
+  body {
+    font-family: var(--font-ui);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.005em;
+  }
+
+  /* ── topnav ─────────────────────────────────────────────── */
+  .topnav {
+    height: 52px;
+    display: flex; align-items: center; gap: 18px;
+    padding: 0 28px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--stroke);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: 9px; font-weight: 600; font-size: 14.5px; letter-spacing: -0.02em; }
+  .brand-mark {
+    width: 20px; height: 20px; border-radius: 5px;
+    background: var(--accent); position: relative;
+  }
+  .brand-mark::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgb(255 255 255 / 0.45), transparent 55%);
+    border-radius: inherit;
+  }
+  .brand-sub { color: var(--ink-3); font-weight: 400; margin-left: 2px; }
+  .nav-spacer { flex: 1; }
+  .nav-back {
+    font-size: 12.5px; color: var(--ink-3);
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 10px; border-radius: var(--r-sm);
+    border: 1px solid var(--stroke); background: var(--paper);
+    text-decoration: none;
+  }
+  .nav-back:hover { background: var(--paper-2); color: var(--ink); }
+  .nav-tag {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-soft);
+    padding: 3px 9px;
+    border-radius: 999px;
+  }
+
+  /* ── shell ──────────────────────────────────────────────── */
+  main { max-width: 880px; margin: 0 auto; padding: 48px 32px 80px; }
+
+  /* ── header ─────────────────────────────────────────────── */
+  .header { margin-bottom: 32px; }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--ink-3);
+    font-weight: 500;
+  }
+  h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.022em; line-height: 1.18; }
+  h1 { font-size: 32px; margin: 10px 0 12px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 15px; }
+  .lead {
+    font-size: 16px; color: var(--ink-2); line-height: 1.55; max-width: 620px;
+  }
+
+  /* ── the hook box ────────────────────────────────────────── */
+  .hook {
+    margin: 30px 0 40px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: var(--r-md);
+    padding: 26px 28px;
+    position: relative;
+  }
+  .hook .tag {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 0.55);
+    margin-bottom: 12px;
+  }
+  .hook .pitch-line {
+    font-size: 21px;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: var(--paper);
+    max-width: 720px;
+  }
+  .hook .pitch-line strong {
+    background: linear-gradient(0deg, rgb(124 58 237 / 0.35) 0%, rgb(124 58 237 / 0.35) 38%, transparent 38%);
+    padding: 0 2px;
+    font-weight: 500;
+  }
+
+  /* ── timeline ─────────────────────────────────────────────── */
+  .meter {
+    display: flex; align-items: center; gap: 12px;
+    margin: 0 0 22px;
+    padding: 14px 18px;
+    background: var(--paper);
+    border: 1px solid var(--stroke);
+    border-radius: var(--r-md);
+    font-size: 13px;
+  }
+  .meter-bar {
+    flex: 1; height: 6px; background: var(--paper-3);
+    border-radius: 999px; position: relative; overflow: hidden;
+  }
+  .meter-bar span {
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg,
+      var(--accent) 0%, var(--accent) 25%,
+      var(--accent-2) 25%, var(--accent-2) 70%,
+      var(--accent-ink) 70%, var(--accent-ink) 100%);
+  }
+  .meter .labels { display: flex; gap: 14px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
+  .meter .labels b { color: var(--accent-ink); font-weight: 500; }
+
+  /* ── beats ──────────────────────────────────────────────── */
+  .beats { display: flex; flex-direction: column; gap: 18px; }
+
+  .beat {
+    background: var(--paper);
+    border: 1px solid var(--stroke);
+    border-radius: var(--r-md);
+    overflow: hidden;
+  }
+  .beat-head {
+    display: grid;
+    grid-template-columns: 64px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--paper-2);
+    border-bottom: 1px solid var(--stroke);
+  }
+  .beat-num {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .beat-title { font-size: 16px; font-weight: 600; letter-spacing: -0.015em; }
+  .beat-sub { font-size: 12.5px; color: var(--ink-3); margin-top: 2px; }
+  .beat-time {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    padding: 4px 9px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+  }
+
+  .beat-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .col { padding: 18px 20px; }
+  .col + .col { border-left: 1px solid var(--stroke); }
+  .col .col-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .col .col-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--stroke);
+  }
+
+  /* SAY column — italic, looks like a script */
+  .say-text {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .say-text em {
+    background: var(--accent-tint);
+    font-style: normal;
+    padding: 0 3px;
+    border-radius: 2px;
+    color: var(--accent-ink);
+    font-weight: 500;
+  }
+  .say-text + .say-text { margin-top: 8px; }
+
+  /* DO column — list of actions */
+  .do-list {
+    margin: 0; padding: 0; list-style: none;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .do-list li {
+    display: grid; grid-template-columns: 18px 1fr; gap: 8px;
+    font-size: 13px; color: var(--ink-2); line-height: 1.5;
+  }
+  .do-list li::before {
+    content: ''; width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin-top: 8px;
+    grid-column: 1; align-self: flex-start;
+    justify-self: center;
+  }
+  .do-list b {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .do-list .kbd {
+    display: inline-block;
+    background: var(--paper-2);
+    border: 1px solid var(--stroke);
+    border-radius: 3px;
+    padding: 0 5px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--ink-2);
+    margin: 0 1px;
+  }
+  .do-list .file {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    padding: 1px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  /* ── opener & closer banded rows ────────────────────────── */
+  .band {
+    padding: 18px 22px;
+    border-radius: var(--r-md);
+    border: 1px dashed var(--stroke-2);
+    background: var(--paper);
+  }
+  .band .col-label { margin-bottom: 8px; }
+  .band p { font-size: 14.5px; line-height: 1.55; color: var(--ink); }
+  .band p em {
+    background: var(--accent-tint);
+    font-style: normal;
+    padding: 0 3px;
+    border-radius: 2px;
+    color: var(--accent-ink);
+    font-weight: 500;
+  }
+
+  /* ── tips row ──────────────────────────────────────────── */
+  .tips {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .tip {
+    background: var(--paper);
+    border: 1px solid var(--stroke);
+    border-radius: var(--r-md);
+    padding: 14px 16px;
+  }
+  .tip .col-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 6px;
+  }
+  .tip p { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+
+  /* ── section dividers ──────────────────────────────────── */
+  .divider {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 18px;
+  }
+  .divider .num {
+    font-family: var(--font-mono);
+    font-size: 11px; color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 9px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+  }
+  .divider h2 { flex: 1; }
+  .divider .meta { font-size: 12px; color: var(--ink-3); font-family: var(--font-mono); }
+
+  @media print {
+    body { background: white; }
+    .topnav { position: static; }
+    .nav-back, .nav-tag { display: none; }
+    main { padding: 20px 0; max-width: 100%; }
+    .beat, .band, .hook { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    Pathways
+    <span class="brand-sub">· The 2-minute pitch</span>
+  </div>
+  <span class="nav-spacer"></span>
+  <span class="nav-tag">Demo script</span>
+  <a class="nav-back" href="Pathways Hi-Fi.html">Open the prototype →</a>
+</nav>
+
+<main>
+
+  <header class="header">
+    <div class="eyebrow">For navigators, by a navigator · Algoma OHT</div>
+    <h1>Two minutes. One promise.</h1>
+    <p class="lead">
+      Show, don't sell. The whole pitch is built around the <strong>search experience</strong> —
+      because once they see how fast it is to find, verify, or ask, they're already convinced.
+    </p>
+  </header>
+
+  <!-- ── The hook (the one sentence) ───────────────────────── -->
+  <div class="hook">
+    <div class="tag">The pitch in one line</div>
+    <p class="pitch-line">
+      "Today, finding the right service for a patient takes <strong>twenty phone calls</strong>.
+      With Pathways, it's <strong>one sentence.</strong> Let me show you."
+    </p>
+  </div>
+
+  <!-- ── Timing meter ─────────────────────────────────────── -->
+  <div class="meter">
+    <div class="meter-bar"><span></span></div>
+    <div class="labels">
+      <span><b>30s</b> Find</span>
+      <span><b>50s</b> Verify</span>
+      <span><b>30s</b> Ask</span>
+      <span><b>10s</b> Close</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ THE PITCH ════════════════════════ -->
+
+  <!-- 0 · Opener -->
+  <div class="divider">
+    <span class="num">00:00</span>
+    <h2>Open with the friction.</h2>
+    <span class="meta">10 seconds · no clicks yet</span>
+  </div>
+  <div class="band">
+    <div class="col-label" style="font-family: var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-4); margin-bottom:8px;">Say · before sharing screen</div>
+    <p>
+      "If you're a navigator in Algoma right now, finding the right service for a patient means
+      <em>juggling three spreadsheets, an old PDF directory, and a group text.</em>
+      Every minute on the phone is a minute you're not with someone who needs you.
+      Pathways replaces all of that with one search box. Watch."
+    </p>
+  </div>
+
+  <!-- ═══════════════════ BEAT 1 — FIND ═══════════════════ -->
+  <div class="beats" style="margin-top: 24px;">
+
+    <article class="beat">
+      <div class="beat-head">
+        <div class="beat-num">01</div>
+        <div>
+          <div class="beat-title">Find — one sentence becomes ranked services.</div>
+          <div class="beat-sub">The magic moment. Spend the most time here.</div>
+        </div>
+        <div class="beat-time">00:10 — 00:40</div>
+      </div>
+      <div class="beat-body">
+        <div class="col">
+          <div class="col-label">Say</div>
+          <p class="say-text">
+            "This is Rita. She just got a call from a school —
+            <em>14-year-old, recent self-harm disclosure, no OHIP, family wants to avoid hospital.</em>
+            She has three minutes before her next call. Watch what she does."
+          </p>
+          <p class="say-text">
+            "She doesn't pick filters. She doesn't know a category code. She just
+            <em>describes the case the way she'd say it out loud</em> — and she can sketch it,
+            dictate it, or tag it."
+          </p>
+          <p class="say-text">
+            "Look — her sentence just became <em>structured filters</em>: MH, walk-in, uninsured,
+            youth, Sault Ste. Marie. She didn't tag any of that. And here are
+            <em>ranked services across the entire region</em>, in seconds."
+          </p>
+        </div>
+        <div class="col">
+          <div class="col-label">Do</div>
+          <ul class="do-list">
+            <li><div><b>Open</b> <a class="file" href="Pathways Hi-Fi.html">Pathways Hi-Fi.html</a></div></li>
+            <li><div><b>Click Dictate</b> on the dark hero card. The sample sentence streams in (~4s) — let it finish.</div></li>
+            <li><div><b>Press <span class="kbd">↵ Enter</span></b> (or click Search) to fly to the results page.</div></li>
+            <li><div><b>Point at the auto-extracted chips</b> above the results — that's the "she didn't tag any of that" moment.</div></li>
+            <li><div><b>Hover the top result</b> so the audience tracks ranking, distance, and the green Verified badge.</div></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══════════════════ BEAT 2 — VERIFY ═══════════════════ -->
+    <article class="beat">
+      <div class="beat-head">
+        <div class="beat-num">02</div>
+        <div>
+          <div class="beat-title">Verify — is this information still true?</div>
+          <div class="beat-sub">The trust answer. The reason they'll actually use it.</div>
+        </div>
+        <div class="beat-time">00:40 — 01:30</div>
+      </div>
+      <div class="beat-body">
+        <div class="col">
+          <div class="col-label">Say</div>
+          <p class="say-text">
+            "Every navigator asks the same question:
+            <em>how do I know this info is still good?</em>
+            Hours change. Programs close. Old directories lie."
+          </p>
+          <p class="say-text">
+            "Look at the hours field. <em>Verified by Mia at Group Health, six days ago.</em>
+            The intake number — verified by Tom this morning. Every field has a
+            <em>chain of custody</em> — who, when, from where."
+          </p>
+          <p class="say-text">
+            "Rita just called this clinic — they answered. She clicks Confirm.
+            One second. That field is now fresh, and it just got <em>promoted in search</em>
+            for the next navigator. That's it. That's the whole contribution."
+          </p>
+        </div>
+        <div class="col">
+          <div class="col-label">Do</div>
+          <ul class="do-list">
+            <li><div><b>Click the top result</b> to open the resource page.</div></li>
+            <li><div><b>Pause for two seconds.</b> Let them read the green / amber / red badges next to each field.</div></li>
+            <li><div><b>Click Confirm</b> on the Hours field. The toast appears. A history entry slides in below.</div></li>
+            <li><div><b>Scroll down</b> so the chain-of-custody history feed is visible — every action, attributed.</div></li>
+            <li><div><b>Optional:</b> open the <b>Flag</b> dialog on a different field, show the anonymous option, then Cancel.</div></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══════════════════ BEAT 3 — ASK ═══════════════════ -->
+    <article class="beat">
+      <div class="beat-head">
+        <div class="beat-num">03</div>
+        <div>
+          <div class="beat-title">Ask — when the index doesn't have it.</div>
+          <div class="beat-sub">The honest answer. No system is complete; this one knows it.</div>
+        </div>
+        <div class="beat-time">01:30 — 02:00</div>
+      </div>
+      <div class="beat-body">
+        <div class="col">
+          <div class="col-label">Say</div>
+          <p class="say-text">
+            "Sometimes nothing fits. The kid needs a francophone counsellor with after-school hours.
+            That's not in any directory, anywhere."
+          </p>
+          <p class="say-text">
+            "Same search box. <em>Post as Ask.</em> Other navigators across Algoma see it.
+            Three replies, including one with an actual resource <em>attached</em>.
+            Next time someone searches for this case — it's in the index. Permanently."
+          </p>
+        </div>
+        <div class="col">
+          <div class="col-label">Do</div>
+          <ul class="do-list">
+            <li><div><b>Navigate to Asks</b> from the top nav (or open <a class="file" href="hifi/asks.html">hifi/asks.html</a>).</div></li>
+            <li><div><b>Land on Rita's open Ask</b> at the top of the feed — three replies visible.</div></li>
+            <li><div><b>Point at the reply with the attached resource card.</b> That's the knowledge-capture moment.</div></li>
+            <li><div><b>Don't resolve it.</b> Leave it open. You're done.</div></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- ═══════════════════ THE CLOSE ════════════════════════ -->
+  <div class="divider">
+    <span class="num">02:00</span>
+    <h2>Close — the one-sentence ask.</h2>
+    <span class="meta">10 seconds · stop the demo, look up</span>
+  </div>
+  <div class="band">
+    <div class="col-label" style="font-family: var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-4); margin-bottom:8px;">Say · look them in the eye</div>
+    <p>
+      "<em>Find. Verify. Ask.</em> One screen. No training. And every search makes the next one sharper.
+      If we get Algoma navigators using this for thirty days, we'll have the best
+      service map in Northern Ontario — built by the people who actually use it.
+      Want to be one of the first ten?"
+    </p>
+  </div>
+
+  <!-- ── Delivery tips ───────────────────────────────────── -->
+  <div class="tips">
+    <div class="tip">
+      <div class="col-label">Pace</div>
+      <p>Stay on Verify (Beat 2) the longest — it's where skepticism lives and where you win it. Don't rush past Confirm.</p>
+    </div>
+    <div class="tip">
+      <div class="col-label">Words to avoid</div>
+      <p>"Platform", "ecosystem", "AI-powered". Use "search box", "one click", "the next navigator". Real words for real work.</p>
+    </div>
+    <div class="tip">
+      <div class="col-label">If they interrupt</div>
+      <p>Good — they're engaged. Answer briefly and steer back: <em>"Great question. Let me finish the loop and that'll answer it."</em></p>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div style="margin-top:48px; padding-top:24px; border-top:1px solid var(--stroke); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;">
+    <span class="eyebrow">Pathways · Algoma OHT</span>
+    <span style="font-size:12.5px; color:var(--ink-3);">Two minutes. Three beats. One ask. Print this for a one-page reference.</span>
+    <span style="flex:1;"></span>
+    <a class="nav-back" href="Pathways Hi-Fi.html">Open the prototype →</a>
+  </div>
+
+</main>
+
+</body>
+</html>

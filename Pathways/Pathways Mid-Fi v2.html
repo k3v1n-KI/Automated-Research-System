@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pathways v2 — Dashboard exploration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="mid-fi-v2/v2.css" />
+<style>
+  body { margin: 0; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="mid-fi-v2/design-canvas.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/ios-frame.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/v2-shared.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-shared.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/home-a.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/home-b.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/home-c.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-home.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-search.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-resource.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-asks.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-mobile.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-teams.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-onboarding.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-case-resolve.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-ask-browse.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-mobile-screens.jsx"></script>
+<script type="text/babel" src="mid-fi-v2/workflow-search-seam.jsx"></script>
+
+<script type="text/babel">
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="system" title="Pathways · Dashboard explorations"
+                 subtitle="Visual system: Inter + violet accent (#7c3aed) · cool white paper · clinical-precise · generous whitespace">
+        <DCArtboard id="system-card" label="System" width={760} height={420}>
+          <SystemCard />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="dashboards" title="Three dashboard directions"
+                 subtitle="Same visual system, different layout philosophies. Click an artboard to expand fullscreen.">
+        <DCArtboard id="home-a" label="A · Command-first" width={1280} height={860}>
+          <HomeCommand />
+        </DCArtboard>
+        <DCArtboard id="home-b" label="B · Editorial brief" width={1280} height={860}>
+          <HomeEditorial />
+        </DCArtboard>
+        <DCArtboard id="home-c" label="C · Workbench (2-up)" width={1280} height={860}>
+          <HomeWorkbench />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="workflow" title="Workflow — verification + contribution loop"
+                 subtitle="AI proposes · members verify or correct in passing · search misses become Asks · every resource carries its chain of custody.">
+        <DCArtboard id="workflow-overview" label="The loop" width={760} height={520}>
+          <WorkflowOverview />
+        </DCArtboard>
+        <DCArtboard id="home-c3" label="Home C v3 · search + Asks + verify" width={1280} height={860}>
+          <HomeWorkbenchV3 />
+        </DCArtboard>
+        <DCArtboard id="search" label="Search results · with Asks rail" width={1280} height={860}>
+          <SearchResults />
+        </DCArtboard>
+        <DCArtboard id="resource" label="Resource detail · chain of custody" width={1280} height={860}>
+          <ResourceDetail />
+        </DCArtboard>
+        <DCArtboard id="resource-flag" label="Resource detail · flag sheet open" width={1280} height={860}>
+          <ResourceDetailWithFlag />
+        </DCArtboard>
+        <DCArtboard id="asks" label="Asks feed · your Ask + replies" width={1280} height={860}>
+          <AsksFeed />
+        </DCArtboard>
+        <DCArtboard id="mobile-paste" label="Mobile · shared from Facebook" width={420} height={870}>
+          <MobilePaste />
+        </DCArtboard>
+        <DCArtboard id="teams" label="Teams · setup" width={760} height={560}>
+          <TeamsSetup />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="sprint-2" title="Sprint 2 — close the loop end-to-end"
+                 subtitle="Onboarding · case resolution capture · answer someone else's Ask · mobile companion. Every contribution surface, every device.">
+        <DCArtboard id="search-seam-mech" label="Search ↔ Ask · mechanism" width={760} height={520}>
+          <SearchSeamMechanism />
+        </DCArtboard>
+        <DCArtboard id="search-seam-strong" label="Live search · strong matches" width={960} height={780}>
+          <SearchSeamStrong />
+        </DCArtboard>
+        <DCArtboard id="search-seam-weak" label="Live search · weak matches → Ask" width={960} height={780}>
+          <SearchSeamWeak />
+        </DCArtboard>
+        <DCArtboard id="onboard-signin" label="Onboarding · sign in" width={760} height={780}>
+          <OnboardSignIn />
+        </DCArtboard>
+        <DCArtboard id="onboard-welcome" label="Onboarding · welcome + team detect" width={1180} height={860}>
+          <OnboardWelcome />
+        </DCArtboard>
+        <DCArtboard id="onboard-cold" label="Day 1 · cold-start home" width={1280} height={860}>
+          <OnboardColdHome />
+        </DCArtboard>
+        <DCArtboard id="case-resolve" label="Case resolution · capture new resource" width={1280} height={920}>
+          <CaseResolve />
+        </DCArtboard>
+        <DCArtboard id="asks-browse" label="Asks browse · answer a colleague" width={1280} height={920}>
+          <AsksBrowse />
+        </DCArtboard>
+        <DCArtboard id="ask-answer" label="Ask · reply with new resource" width={1080} height={920}>
+          <AskAnswer />
+        </DCArtboard>
+        <DCArtboard id="mobile-search" label="Mobile · search results" width={420} height={870}>
+          <MobileSearch />
+        </DCArtboard>
+        <DCArtboard id="mobile-resource" label="Mobile · resource detail (verify)" width={420} height={870}>
+          <MobileResource />
+        </DCArtboard>
+        <DCArtboard id="mobile-ask" label="Mobile · answer an Ask" width={420} height={870}>
+          <MobileAskAnswer />
+        </DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+function WorkflowOverview() {
+  const steps = [
+    { glyph: '1', title: 'AI seeds + proposes', body: 'On launch and continuously, AI extracts candidate resources from public sources. Every field starts as ⬡ AI-extracted, never verified — clearly labeled.' },
+    { glyph: '2', title: 'Members search', body: 'A worker types a case in plain language. Results are ranked by fit, boosted by verification freshness, penalized by active stale flags.' },
+    { glyph: '3', title: 'Verify in passing · ✓ or ⚠', body: 'Each field carries its own state. One tap to confirm; one tap + 1-line note to flag. Named by default — anonymous is a per-action toggle. The flag itself is the record; nobody overwrites.' },
+    { glyph: '4', title: 'Search miss → Ask', body: 'When results are weak, the member posts the search as an Ask. Public to their AOHT region for 7d (longer in rural). Other members reply with a known resource or a new one.' },
+    { glyph: '5', title: 'Answers become resources', body: 'Replying to an Ask with a name + phone is enough. AI enriches the rest; subsequent members verify. Mobile share-sheet ("Share to Pathways" from FB / browser) drops straight in.' },
+    { glyph: '6', title: 'Case resolution captures', body: 'Closing a case asks "Where did you refer them?" Free-text outside the index becomes a new resource candidate. Doing your work seeds the index.' },
+  ];
+  return (
+    <div className="v2" style={{ padding: 28, height: '100%', background: 'var(--paper)', overflow: 'auto' }}>
+      <div className="eyebrow" style={{ marginBottom: 8 }}>Workflow · contribution + verification loop</div>
+      <h2 style={{ fontSize: 22, fontWeight: 600, letterSpacing: '-0.022em', marginBottom: 4 }}>
+        AI proposes. Members verify in passing.
+      </h2>
+      <p style={{ fontSize: 13, color: 'var(--ink-3)', lineHeight: 1.5, marginBottom: 18, maxWidth: 620 }}>
+        Contribution rides on top of the work members already do — not a separate task with its own form.
+        Every resource carries its chain of custody from origin Ask to last confirmation.
+      </p>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+        {steps.map(s => (
+          <div key={s.glyph} style={{
+            display: 'grid', gridTemplateColumns: '24px 1fr', gap: 12,
+            padding: '12px 14px', border: '1px solid var(--stroke)', borderRadius: 'var(--r-md)',
+            background: 'var(--paper)',
+          }}>
+            <div style={{
+              width: 24, height: 24, borderRadius: '50%',
+              background: 'var(--accent-soft)', color: 'var(--accent-ink)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 11, fontWeight: 600, fontFamily: 'var(--font-mono)',
+            }}>{s.glyph}</div>
+            <div>
+              <div style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--ink)', marginBottom: 3, letterSpacing: '-0.01em' }}>
+                {s.title}
+              </div>
+              <div style={{ fontSize: 11.5, color: 'var(--ink-3)', lineHeight: 1.5 }}>
+                {s.body}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SystemCard() {
+  return (
+    <div className="v2" style={{ padding: 32, height: '100%', background: 'var(--paper)' }}>
+      <div className="eyebrow" style={{ marginBottom: 12 }}>Visual system · v2</div>
+      <h2 style={{ fontSize: 32, fontWeight: 600, letterSpacing: '-0.025em', marginBottom: 4 }}>Cool white + violet.</h2>
+      <p className="ital" style={{ fontSize: 18, color: 'var(--ink-3)', marginBottom: 28 }}>
+        Linear-y, clinical, generous. One focal point per screen.
+      </p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+        <div>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>Palette</div>
+          <div className="row" style={{ gap: 6, marginBottom: 14 }}>
+            {[
+              ['#fcfcfd', 'paper'],
+              ['#f3eefe', 'soft'],
+              ['#7c3aed', 'accent'],
+              ['#71717a', 'ink-3'],
+              ['#18181b', 'ink'],
+            ].map(([c, l]) => (
+              <div key={c} style={{ flex: 1 }}>
+                <div style={{ height: 48, background: c, border: '1px solid var(--stroke)', borderRadius: 5 }}/>
+                <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)', marginTop: 4 }}>{l}</div>
+                <div className="mono" style={{ fontSize: 9, color: 'var(--ink-4)' }}>{c}</div>
+              </div>
+            ))}
+          </div>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>Components</div>
+          <div className="row" style={{ gap: 8, flexWrap: 'wrap' }}>
+            <button className="btn accent">Primary</button>
+            <button className="btn dark">Dark</button>
+            <button className="btn">Secondary</button>
+            <button className="btn ghost">Ghost</button>
+            <span className="chip">tag</span>
+            <span className="chip accent">accent</span>
+            <span className="kbd">⌘K</span>
+          </div>
+        </div>
+        <div>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>Type</div>
+          <div className="stack-8">
+            <div>
+              <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: '-0.025em', lineHeight: 1.1 }}>Display sans</div>
+              <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)' }}>Inter 600 · -2.5% tracking</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 22, color: 'var(--ink-2)' }}>Quiet supporting copy.</div>
+              <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)' }}>Inter regular · used for soft secondary text</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 13.5 }}>Body text reads at 13.5 px with a 1.5 line-height. Medium density.</div>
+              <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)' }}>Inter 400 · 13.5/20</div>
+            </div>
+            <div>
+              <div className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>c-241 · senior · 2h ago</div>
+              <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)' }}>JetBrains Mono · for data/meta</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

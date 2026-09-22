@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pathways — Software Requirements & Research Validation Specification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper:    #fcfcfd;
+    --paper-2:  #f7f7f9;
+    --paper-3:  #f1f1f4;
+    --ink:      #18181b;
+    --ink-2:    #3f3f46;
+    --ink-3:    #71717a;
+    --ink-4:    #a1a1aa;
+    --stroke:   #e4e4e7;
+    --stroke-2: #d4d4d8;
+    --accent:       #7c3aed;
+    --accent-2:     #6d28d9;
+    --accent-soft:  #f3eefe;
+    --accent-tint:  #faf6ff;
+    --accent-ink:   #5b21b6;
+    --good:    #15803d;
+    --good-bg: #ecfdf5;
+    --good-br: #bbf7d0;
+    --warn:    #a16207;
+    --warn-bg: #fefce8;
+    --warn-br: #fde68a;
+    --crit:    #b91c1c;
+    --crit-bg: #fef2f2;
+    --crit-br: #fecaca;
+    --r-sm: 5px; --r-md: 8px; --r-lg: 12px;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    --font-serif: 'Newsreader', Georgia, serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: #fff; }
+  body {
+    font-family: var(--font-ui);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.003em;
+  }
+
+  .doc {
+    box-sizing: border-box;
+    max-width: 8.5in;
+    margin: 0 auto;
+    background: inherit;
+    padding: 64px clamp(24px, 5vw, 0.85in) 96px;
+  }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame td { padding: 0; }
+  .hdr-space, .ftr-space { display: none; }
+
+  /* ── type scale ─────────────────────────────────────────── */
+  h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -0.024em; line-height: 1.16; text-wrap: balance; }
+  h1 { font-size: 33px; margin-bottom: 6px; }
+  h2 { font-size: 22px; margin: 0 0 14px; padding-top: 6px; }
+  h3 { font-size: 16.5px; margin: 26px 0 8px; letter-spacing: -0.018em; }
+  h4 { font-size: 13.5px; margin: 18px 0 6px; color: var(--ink-2); }
+  p { margin: 0 0 12px; text-wrap: pretty; }
+  p, li { text-wrap: pretty; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 5px; }
+  li::marker { color: var(--ink-4); }
+  strong { font-weight: 600; color: var(--ink); }
+  em { font-style: italic; }
+  a { color: var(--accent-ink); text-decoration: none; }
+  code, .mono { font-family: var(--font-mono); font-size: 0.875em; }
+  p code, li code, td code {
+    background: var(--paper-2); border: 1px solid var(--stroke);
+    border-radius: 4px; padding: 0.5px 5px; color: var(--accent-ink);
+    font-size: 0.83em; white-space: nowrap;
+  }
+  .eyebrow {
+    font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--accent-ink); font-weight: 500;
+  }
+  .muted { color: var(--ink-3); }
+  .lead { font-size: 17px; color: var(--ink-2); line-height: 1.6; }
+
+  /* ── masthead ───────────────────────────────────────────── */
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 22px; margin-bottom: 32px;
+  }
+  .masthead .kicker {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  }
+  .brand-mark {
+    width: 22px; height: 22px; border-radius: 6px;
+    background: var(--accent); position: relative; flex-shrink: 0;
+  }
+  .brand-mark::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgb(255 255 255 / 0.5), transparent 55%);
+    border-radius: inherit;
+  }
+  .brand-name { font-weight: 600; font-size: 15px; letter-spacing: -0.02em; }
+  .doc-meta {
+    display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 16px;
+    font-size: 12px; color: var(--ink-3); font-family: var(--font-mono);
+  }
+  .doc-meta b { color: var(--ink-2); font-weight: 500; }
+
+  /* ── section divider ────────────────────────────────────── */
+  .sec {
+    display: flex; align-items: baseline; gap: 14px;
+    margin: 46px 0 18px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--stroke);
+  }
+  .sec .num {
+    font-family: var(--font-mono); font-size: 13px; font-weight: 600;
+    color: var(--accent); flex-shrink: 0;
+  }
+  .sec h2 { margin: 0; padding: 0; }
+  .sec-lead { font-size: 14px; color: var(--ink-3); margin-left: auto; text-align: right; max-width: 260px; font-style: italic; }
+
+  /* ── callout boxes ──────────────────────────────────────── */
+  .callout {
+    border: 1px solid var(--stroke); border-left: 3px solid var(--accent);
+    background: var(--accent-tint); border-radius: var(--r-sm);
+    padding: 14px 18px; margin: 16px 0; font-size: 13.5px;
+  }
+  .callout .ct { font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent-ink); margin-bottom: 5px; font-family: var(--font-mono); }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout.warn { border-left-color: var(--warn); background: var(--warn-bg); }
+  .callout.warn .ct { color: var(--warn); }
+  .callout.good { border-left-color: var(--good); background: var(--good-bg); }
+  .callout.good .ct { color: var(--good); }
+  .callout.ink { border-left-color: var(--ink); background: var(--paper-2); }
+  .callout.ink .ct { color: var(--ink-2); }
+
+  /* ── tables ─────────────────────────────────────────────── */
+  table.t {
+    width: 100%; border-collapse: collapse; margin: 14px 0 20px;
+    font-size: 13px; line-height: 1.5;
+  }
+  table.t th {
+    text-align: left; font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-3);
+    padding: 9px 12px; border-bottom: 1.5px solid var(--stroke-2);
+    background: var(--paper-2); vertical-align: bottom;
+  }
+  table.t td {
+    padding: 9px 12px; border-bottom: 1px solid var(--stroke);
+    vertical-align: top; color: var(--ink-2);
+  }
+  table.t td:first-child, table.t th:first-child { padding-left: 14px; }
+  table.t tr:last-child td { border-bottom: none; }
+  table.t .id { font-family: var(--font-mono); font-size: 11.5px; color: var(--accent-ink); font-weight: 500; white-space: nowrap; }
+  table.t .center { text-align: center; }
+  table.t code { white-space: normal; }
+  .req-table td:nth-child(2) { color: var(--ink); }
+
+  /* priority pills */
+  .pri { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 0.04em;
+    padding: 2px 7px; border-radius: 999px; text-transform: uppercase; display: inline-block; white-space: nowrap; }
+  .pri.must { background: var(--crit-bg); color: var(--crit); border: 1px solid var(--crit-br); }
+  .pri.should { background: var(--warn-bg); color: var(--warn); border: 1px solid var(--warn-br); }
+  .pri.could { background: var(--paper-2); color: var(--ink-3); border: 1px solid var(--stroke-2); }
+
+  /* ── tag / chip ─────────────────────────────────────────── */
+  .chip {
+    display: inline-block; font-family: var(--font-mono); font-size: 11px;
+    padding: 2px 8px; border-radius: 999px; background: var(--accent-soft);
+    color: var(--accent-ink); border: 1px solid color-mix(in srgb, var(--accent) 16%, transparent);
+    margin: 0 2px 3px 0;
+  }
+
+  /* ── stat tiles ─────────────────────────────────────────── */
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 18px 0; }
+  .tile { border: 1px solid var(--stroke); border-radius: var(--r-md); padding: 14px 16px; background: var(--paper); }
+  .tile .big { font-size: 26px; font-weight: 600; letter-spacing: -0.03em; color: var(--accent-ink); line-height: 1.1; }
+  .tile .lbl { font-size: 11.5px; color: var(--ink-3); margin-top: 4px; line-height: 1.4; }
+
+  /* ── architecture diagram ───────────────────────────────── */
+  .arch { border: 1px solid var(--stroke); border-radius: var(--r-md); background: var(--paper-2); padding: 20px; margin: 18px 0; }
+  .arch-row { display: flex; gap: 12px; align-items: stretch; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+  .arch-row:last-child { margin-bottom: 0; }
+  .node {
+    flex: 1; min-width: 120px; background: var(--paper); border: 1px solid var(--stroke-2);
+    border-radius: var(--r-sm); padding: 11px 13px; text-align: center;
+  }
+  .node .nh { font-weight: 600; font-size: 12.5px; margin-bottom: 2px; }
+  .node .ns { font-size: 10.5px; color: var(--ink-3); font-family: var(--font-mono); line-height: 1.4; }
+  .node.accent { background: var(--ink); border-color: var(--ink); }
+  .node.accent .nh { color: var(--paper); }
+  .node.accent .ns { color: rgb(255 255 255 / 0.65); }
+  .node.hl { border-color: var(--accent); background: var(--accent-tint); }
+  .node.hl .nh { color: var(--accent-ink); }
+  .arch-band { text-align: center; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); margin: 4px 0 8px; }
+  .arch-arrow { text-align: center; color: var(--ink-4); font-size: 16px; margin: 2px 0; }
+
+  /* ── formula block ──────────────────────────────────────── */
+  .formula {
+    background: var(--ink); color: var(--paper); border-radius: var(--r-md);
+    padding: 18px 22px; margin: 16px 0; font-family: var(--font-mono);
+    font-size: 13.5px; line-height: 1.7; overflow-x: auto;
+  }
+  .formula .var { color: #c4b5fd; }
+  .formula .op { color: #fca5a5; }
+  .formula .cm { color: rgb(255 255 255 / 0.45); }
+  .formula b { color: #fff; font-weight: 600; }
+
+  /* ── code-ish pre ───────────────────────────────────────── */
+  pre.code {
+    background: var(--paper-2); border: 1px solid var(--stroke);
+    border-radius: var(--r-md); padding: 14px 16px; margin: 14px 0;
+    font-family: var(--font-mono); font-size: 12px; line-height: 1.6;
+    overflow-x: auto; color: var(--ink-2);
+  }
+  pre.code .k { color: var(--accent-ink); font-weight: 500; }
+  pre.code .s { color: var(--good); }
+  pre.code .c { color: var(--ink-4); }
+
+  /* ── study card ─────────────────────────────────────────── */
+  .study {
+    border: 1px solid var(--stroke); border-radius: var(--r-md);
+    margin: 16px 0; overflow: hidden;
+  }
+  .study-h {
+    background: var(--paper-2); border-bottom: 1px solid var(--stroke);
+    padding: 13px 18px; display: flex; align-items: baseline; gap: 12px;
+  }
+  .study-h .sid { font-family: var(--font-mono); font-size: 11px; font-weight: 600; color: var(--accent); }
+  .study-h .st { font-weight: 600; font-size: 15px; }
+  .study-h .sgoal { margin-left: auto; font-size: 12px; color: var(--ink-3); font-style: italic; }
+  .study-b { padding: 16px 18px; }
+  .study-b h4 { margin-top: 0; }
+  .kv { display: grid; grid-template-columns: 130px 1fr; gap: 4px 14px; font-size: 13px; margin: 10px 0; }
+  .kv dt { font-weight: 600; color: var(--ink-2); }
+  .kv dd { margin: 0; color: var(--ink-2); }
+
+  /* phase loop mini */
+  .loop-mini { display: flex; align-items: stretch; gap: 8px; margin: 16px 0; flex-wrap: wrap; }
+  .loop-step { flex: 1; min-width: 110px; border: 1px solid var(--stroke); border-radius: var(--r-sm); padding: 12px 14px; background: var(--paper); }
+  .loop-step .ln { font-family: var(--font-mono); font-size: 11px; color: var(--accent); font-weight: 600; }
+  .loop-step .lt { font-weight: 600; font-size: 14px; margin: 2px 0 4px; }
+  .loop-step .lb { font-size: 11.5px; color: var(--ink-3); line-height: 1.45; }
+  .loop-sep { display: flex; align-items: center; color: var(--ink-4); font-size: 18px; }
+
+  hr { border: none; border-top: 1px solid var(--stroke); margin: 28px 0; }
+
+  /* TOC */
+  .toc { border: 1px solid var(--stroke); border-radius: var(--r-md); background: var(--paper-2); padding: 18px 22px; margin: 24px 0 8px; }
+  .toc ol { columns: 2; column-gap: 36px; margin: 0; padding-left: 18px; font-size: 13px; }
+  .toc li { margin-bottom: 5px; break-inside: avoid; }
+  .toc a { color: var(--ink-2); }
+  .toc .tnum { font-family: var(--font-mono); color: var(--accent); font-size: 11px; }
+
+  @page { size: letter; margin: 0; }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    html, body { margin: 0; padding: 0; }
+    .doc { max-width: none !important; margin: 0 !important; padding: 0 0.75in !important; box-shadow: none !important; }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.7in; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .sec, .study-h, table.t thead { break-after: avoid; }
+    figure, pre, blockquote, .callout, .arch, .formula, .study, .tile, .loop-step, tr { break-inside: avoid; }
+    table.t { break-inside: auto; }
+    p, li { orphans: 3; widows: 3; }
+    .screen-only { display: none !important; }
+    .running-foot { display: block !important; }
+  }
+  .running-foot { display: none; position: fixed; bottom: 0; left: 0; right: 0;
+    padding: 0.28in 0.75in; font-size: 9.5px; color: var(--ink-4);
+    font-family: var(--font-mono); display: none;
+    justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<div class="running-foot">
+  <span>Pathways · SRS &amp; Validation Spec v1.0</span>
+  <span>Algoma OHT · Confidential draft</span>
+</div>
+
+<main class="doc">
+<table class="doc-frame" role="presentation">
+<thead><tr><td class="hdr-space"></td></tr></thead>
+<tbody><tr><td>
+
+  <!-- ════════════════ MASTHEAD ════════════════ -->
+  <header class="masthead">
+    <div class="kicker">
+      <span class="brand-mark"></span>
+      <span class="brand-name">Pathways</span>
+      <span class="muted" style="font-size:13px;">· Algoma Ontario Health Team</span>
+    </div>
+    <h1>Software Requirements &amp; Research Validation Specification</h1>
+    <p class="lead">A build-and-evaluate brief for re-implementing the Pathways prototype as a working
+      system — and for producing the quantitative evidence a research paper needs <em>without testing on real people</em>.</p>
+    <div class="doc-meta">
+      <span><b>Document</b> SRS + Evaluation Plan</span>
+      <span><b>Version</b> 1.0 · draft</span>
+      <span><b>Date</b> 29 Jun 2026</span>
+      <span><b>Audience</b> Implementing developer · paper author</span>
+      <span><b>Source</b> Pathways Hi-Fi prototype</span>
+    </div>
+  </header>
+
+  <!-- ════════════════ TOC ════════════════ -->
+  <nav class="toc">
+    <div class="eyebrow" style="margin-bottom:10px;">Contents</div>
+    <ol>
+      <li><a href="#s1"><span class="tnum">1</span> &nbsp;Purpose &amp; scope</a></li>
+      <li><a href="#s2"><span class="tnum">2</span> &nbsp;Problem, users &amp; the core loop</a></li>
+      <li><a href="#s3"><span class="tnum">3</span> &nbsp;Functional requirements</a></li>
+      <li><a href="#s4"><span class="tnum">4</span> &nbsp;Non-functional requirements</a></li>
+      <li><a href="#s5"><span class="tnum">5</span> &nbsp;Data model</a></li>
+      <li><a href="#s6"><span class="tnum">6</span> &nbsp;System architecture</a></li>
+      <li><a href="#s7"><span class="tnum">7</span> &nbsp;Key feature: NL search + freshness ranking</a></li>
+      <li><a href="#s8"><span class="tnum">8</span> &nbsp;Testing plan</a></li>
+      <li><a href="#s9"><span class="tnum">9</span> &nbsp;Validation &amp; evaluation methodology</a></li>
+      <li><a href="#s10"><span class="tnum">10</span> &nbsp;Research questions &amp; hypotheses</a></li>
+      <li><a href="#s11"><span class="tnum">11</span> &nbsp;Build plan &amp; milestones</a></li>
+      <li><a href="#s12"><span class="tnum">12</span> &nbsp;Appendices &amp; glossary</a></li>
+    </ol>
+  </nav>
+
+  <!-- ════════════════ 1 · PURPOSE ════════════════ -->
+  <div class="sec" id="s1">
+    <span class="num">01</span>
+    <h2>Purpose &amp; scope</h2>
+  </div>
+
+  <p>Pathways is a <strong>service-search and directory-maintenance tool for healthcare navigators</strong> — the
+  nurses, social workers, and community health workers who spend their days connecting patients to social and
+  health services. In a region like the Algoma OHT, finding the right service today means juggling stale PDF
+  directories, spreadsheets, and group texts. Pathways replaces that with a single search box backed by a
+  directory that the navigators themselves keep alive.</p>
+
+  <p>This document specifies what must be built to turn the existing <strong>high-fidelity prototype</strong>
+  (a click-through React mock) into a <strong>functional system capable of running a research evaluation</strong>.
+  It is written for two readers at once:</p>
+
+  <ul>
+    <li><strong>The implementing developer</strong> — who needs functional and non-functional requirements, a
+      data model, an architecture, and a test plan precise enough to build from.</li>
+    <li><strong>The paper author</strong> — who needs an evaluation methodology that yields defensible
+      quantitative results <em>without recruiting human participants</em>.</li>
+  </ul>
+
+  <div class="callout ink">
+    <div class="ct">Scope of the build</div>
+    <p style="margin:0;">A <strong>research-grade MVP of the core loop</strong> — Find → Verify → Ask → Close —
+    with real persistence, a real natural-language pipeline, and an instrumented ranking engine. Production
+    concerns (SSO with provincial identity providers, full moderation tooling, mobile apps) are documented as
+    <span class="pri could">COULD</span> but are out of scope for the evaluation.</p>
+  </div>
+
+  <h3>What the prototype already establishes</h3>
+  <p>The prototype is the <em>functional specification of the UX</em>. Where this document and the prototype
+  disagree, the prototype wins on interaction and layout; this document wins on what happens on the server,
+  how the AI behaves, and how we measure it. The prototype currently fakes three things that the real system
+  must implement for real:</p>
+  <ul>
+    <li><strong>Natural-language extraction</strong> — the prototype uses regular expressions to turn a typed
+      sentence into filter chips. The real system uses an LLM-based extractor (§7).</li>
+    <li><strong>Ranking</strong> — results are hard-coded in a fixed order. The real system computes a
+      fit + freshness − flag score (§7).</li>
+    <li><strong>The flywheel</strong> — confirms, flags, Asks, and case-closes mutate in-memory React state and
+      vanish on refresh. The real system persists every event as an immutable <em>chain of custody</em> (§5).</li>
+  </ul>
+
+  <!-- ════════════════ 2 · PROBLEM & USERS ════════════════ -->
+  <div class="sec" id="s2">
+    <span class="num">02</span>
+    <h2>Problem, users &amp; the core loop</h2>
+    <span class="sec-lead">One loop keeps a directory alive.</span>
+  </div>
+
+  <h3>The users</h3>
+  <table class="t">
+    <thead><tr><th style="width:150px;">Actor</th><th>Description</th><th>Primary goal</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Navigator</strong><div class="muted" style="font-size:11.5px;">primary user</div></td>
+        <td>A nurse / social worker / community health worker who is a member of an Ontario Health Team. Example persona: <em>Rita LaFlamme, Algoma OHT.</em></td>
+        <td>Find a service that fits a patient's case in seconds, and trust that the information is current.</td></tr>
+      <tr><td><strong>Contributing navigator</strong></td>
+        <td>The same person in a different mode — confirming, flagging, answering Asks, closing cases.</td>
+        <td>Keep the directory accurate with near-zero extra effort, as a by-product of doing their job.</td></tr>
+      <tr><td><strong>OHT coordinator / moderator</strong></td>
+        <td>Manages membership for a region, reviews flagged content and candidate resources.</td>
+        <td>Maintain regional data quality and resolve disputes.</td></tr>
+      <tr><td><strong>System / AI agents</strong></td>
+        <td>Background services: the extractor, the resource enricher, the freshness-decay job.</td>
+        <td>Seed and structure data; keep freshness signals current; never overwrite human verification.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <div class="ct">A note on patient data</div>
+    <p style="margin:0;">Navigators search by <strong>structured needs, never patient identifiers</strong>
+    ("same-day MH walk-in, adolescent, no OHIP, Sault Ste. Marie"). The system is designed so that no personal
+    health information (PHI) is required to operate it — a deliberate privacy posture that also simplifies the
+    research ethics story (§4, §9).</p>
+  </div>
+
+  <h3>The core loop</h3>
+  <p>Pathways is a single flywheel. Every pass a navigator makes through it leaves the shared directory more
+  accurate than they found it — which is the central claim the research must validate.</p>
+
+  <div class="loop-mini">
+    <div class="loop-step"><div class="ln">1</div><div class="lt">Find</div><div class="lb">A sentence becomes structured filters and a ranked, freshness-aware result list.</div></div>
+    <div class="loop-sep">→</div>
+    <div class="loop-step"><div class="ln">2</div><div class="lt">Verify</div><div class="lb">Confirm or flag any field. Fresh facts climb in ranking; stale ones drop.</div></div>
+    <div class="loop-sep">→</div>
+    <div class="loop-step"><div class="ln">3</div><div class="lt">Ask</div><div class="lb">Nothing fits? Ask the regional network; replies seed services that were never indexed.</div></div>
+    <div class="loop-sep">→</div>
+    <div class="loop-step"><div class="ln">4</div><div class="lt">Close</div><div class="lb">Record the referral; the note seeds the directory and re-confirms what was used.</div></div>
+  </div>
+  <p class="muted" style="font-size:13px;"><span class="mono" style="color:var(--accent-ink);">↻</span>
+  Close feeds Find: every closed case sharpens the next navigator's search. This feedback edge is what the
+  flywheel simulation in §9 measures.</p>
+
+  <!-- ════════════════ 3 · FUNCTIONAL REQUIREMENTS ════════════════ -->
+  <div class="sec" id="s3">
+    <span class="num">03</span>
+    <h2>Functional requirements</h2>
+    <span class="sec-lead">What the system must do.</span>
+  </div>
+
+  <p>Requirements are grouped by module and prioritised with <strong>MoSCoW</strong>:
+  <span class="pri must">MUST</span> is required for the evaluation,
+  <span class="pri should">SHOULD</span> strengthens it,
+  <span class="pri could">COULD</span> is production polish out of evaluation scope.
+  Each ID is stable and is referenced by the test plan (§8).</p>
+
+  <h3>3.1 &nbsp;Accounts &amp; membership</h3>
+  <table class="t req-table">
+    <thead><tr><th style="width:74px;">ID</th><th>Requirement</th><th style="width:78px;">Priority</th></tr></thead>
+    <tbody>
+      <tr><td class="id">FR-A1</td><td>A navigator can authenticate and is bound to exactly one <strong>home OHT region</strong> (e.g. Algoma). All contributions are attributed to their account unless explicitly anonymised.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-A2</td><td>Every contribution stores a <strong>display identity</strong> (e.g. "Rita · AOHT") and a stable internal user id; the two are separable so anonymity can be applied per-event.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-A3</td><td>A coordinator role can manage members, review flags, and promote/merge candidate resources within their region.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-A4</td><td>Integration with a provincial / institutional identity provider (SSO).</td><td><span class="pri could">COULD</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>3.2 &nbsp;Find — search</h3>
+  <table class="t req-table">
+    <thead><tr><th style="width:74px;">ID</th><th>Requirement</th><th style="width:78px;">Priority</th></tr></thead>
+    <tbody>
+      <tr><td class="id">FR-F1</td><td>A navigator can describe a case in <strong>free-text</strong> ("same-day MH walk-in for an adolescent, no OHIP, Sault Ste. Marie") in a single input.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-F2</td><td>The system <strong>extracts structured filters</strong> from the sentence — need, population, coverage, modality, location, language — and shows them as editable chips. The user never has to choose a category code. (See §7 for the extraction schema.)</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-F3</td><td>Two additional input modalities feed the same query: <strong>tag picker</strong> (grouped chips) and <strong>voice dictation</strong> (speech-to-text streamed into the field).</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-F4</td><td>The system returns a <strong>ranked list of resources</strong> scored by fit to the extracted filters, boosted by verification freshness and penalised by active stale flags (§7).</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-F5</td><td>Each result shows a <strong>match strength</strong> (5-level meter), a one-line rationale, the verification aggregate (<code>n/total fields verified</code>), and any active flags.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-F6</td><td>The user can <strong>edit the extracted filters</strong> and the results re-rank live.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-F7</td><td>If results are weak/empty, the system offers to <strong>post the query as an Ask</strong> (→ FR-K1) and to add a known resource.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-F8</td><td>Every search is <strong>logged</strong> (query text, extracted filters, returned ids + scores, click-throughs) for evaluation instrumentation.</td><td><span class="pri must">MUST</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>3.3 &nbsp;Verify — resource detail &amp; chain of custody</h3>
+  <table class="t req-table">
+    <thead><tr><th style="width:74px;">ID</th><th>Requirement</th><th style="width:78px;">Priority</th></tr></thead>
+    <tbody>
+      <tr><td class="id">FR-V1</td><td>A resource is a set of <strong>fields</strong> (hours, phone, address, eligibility, fees, referral path, typical wait, accessibility). Each field carries an independent <strong>verification state</strong>: <code>verified-fresh</code>, <code>verified-aging</code>, <code>ai-only</code>, <code>flagged-stale</code>, <code>unknown</code>.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-V2</td><td>A navigator can <strong>Confirm</strong> a field in one click. This appends a confirm event, resets the field's freshness clock, and raises the resource's ranking weight.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-V3</td><td>A navigator can <strong>Flag</strong> a field with a reason (stale / wrong / closed / unsure), a one-line correction, and an optional attached source. Flagging moves the field to <code>flagged-stale</code> and lowers ranking weight.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-V4</td><td>Either action can be submitted <strong>anonymously</strong> per-event (shows as "AOHT member"), without losing the internal attribution needed for abuse handling.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-V5</td><td>Every field exposes its <strong>chain of custody</strong>: an append-only, attributed history of who did what, when, and from where (call / in-person / web / anonymous).</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-V6</td><td>Verification events are <strong>immutable</strong>; a field's <em>current</em> value is derived from its event history. No event is ever edited or deleted (a correction is a new event).</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-V7</td><td>A background job recomputes <strong>freshness decay</strong>: a field's state ages <code>verified-fresh → verified-aging</code> after a configurable window, independent of any user action.</td><td><span class="pri must">MUST</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>3.4 &nbsp;Ask — the network</h3>
+  <table class="t req-table">
+    <thead><tr><th style="width:74px;">ID</th><th>Requirement</th><th style="width:78px;">Priority</th></tr></thead>
+    <tbody>
+      <tr><td class="id">FR-K1</td><td>A navigator can <strong>post an Ask</strong> (free-text + tags) to their region. Asks expire after a window (<code>7 days</code> urban, <code>12 days</code> rural-extended).</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-K2</td><td>Other members can <strong>reply</strong>, and a reply can <strong>attach an existing resource</strong> or <strong>mention a not-yet-indexed service</strong> (which becomes a candidate resource — FR-C3).</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-K3</td><td>Members can <strong>watch</strong> an Ask and are notified of replies. The asker is notified of new replies.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-K4</td><td>An Ask can be <strong>resolved</strong>, optionally linked to the case that prompted it (→ FR-C2).</td><td><span class="pri must">MUST</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>3.5 &nbsp;Close — cases &amp; seeding</h3>
+  <table class="t req-table">
+    <thead><tr><th style="width:74px;">ID</th><th>Requirement</th><th style="width:78px;">Priority</th></tr></thead>
+    <tbody>
+      <tr><td class="id">FR-C1</td><td>A navigator can <strong>close a case</strong> recording an outcome (referred / self-managed / no-fit / declined) and, if referred, the service.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-C2</td><td>Closing can <strong>resolve a linked Ask</strong> and <strong>re-confirm the resource used</strong> (a "drive-by" verification) in the same step.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-C3</td><td>A referral to a service <strong>not in the index</strong> creates a <strong>candidate resource</strong>; a background job enriches its fields (<code>ai-only</code> state) for later human verification.</td><td><span class="pri must">MUST</span></td></tr>
+      <tr><td class="id">FR-C4</td><td>The close screen <strong>summarises the contributions</strong> the navigator just made to the shared index (confirmed X, seeded Y, resolved Ask Z).</td><td><span class="pri should">SHOULD</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>3.6 &nbsp;Notifications, directory &amp; moderation</h3>
+  <table class="t req-table">
+    <thead><tr><th style="width:74px;">ID</th><th>Requirement</th><th style="width:78px;">Priority</th></tr></thead>
+    <tbody>
+      <tr><td class="id">FR-N1</td><td>A navigator can <strong>browse the directory</strong> directly (filter by category, region, language, keyword) without starting from a case.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-N2</td><td><strong>Region updates</strong>: when a field a navigator depends on changes (e.g. a saved case's resource is flagged), they are surfaced an actionable update.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-N3</td><td>A coordinator can <strong>review the flag/candidate queue</strong>, merge duplicate candidates, and resolve disputes.</td><td><span class="pri should">SHOULD</span></td></tr>
+      <tr><td class="id">FR-N4</td><td>Rate-limiting / abuse controls on verification events to prevent gaming the ranking.</td><td><span class="pri could">COULD</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ════════════════ 4 · NON-FUNCTIONAL ════════════════ -->
+  <div class="sec" id="s4">
+    <span class="num">04</span>
+    <h2>Non-functional requirements</h2>
+    <span class="sec-lead">How well it must do it.</span>
+  </div>
+
+  <table class="t req-table">
+    <thead><tr><th style="width:120px;">Category</th><th style="width:74px;">ID</th><th>Requirement &amp; target</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="3"><strong>Performance</strong></td>
+        <td class="id">NFR-P1</td><td>Search end-to-end (submit → ranked results) returns in <strong>&lt; 2.5 s p95</strong>, of which extraction is <strong>&lt; 1.2 s p95</strong>. Cache/streamed extraction is acceptable.</td></tr>
+      <tr><td class="id">NFR-P2</td><td>Confirm / flag actions reflect optimistically in <strong>&lt; 150 ms</strong> and persist within <strong>1 s</strong>.</td></tr>
+      <tr><td class="id">NFR-P3</td><td>Ranking must scale to <strong>≥ 10,000 resources</strong> per region with sub-second retrieval before LLM re-rank.</td></tr>
+      <tr><td rowspan="3"><strong>Privacy &amp; security</strong></td>
+        <td class="id">NFR-S1</td><td><strong>No PHI by design.</strong> Query text is treated as sensitive but is structured-needs only; the UI actively discourages identifiers. Compliant with <strong>PHIPA / PIPEDA</strong> handling for any free-text retained.</td></tr>
+      <tr><td class="id">NFR-S2</td><td>All traffic over TLS; data encrypted at rest; verification events are append-only and tamper-evident.</td></tr>
+      <tr><td class="id">NFR-S3</td><td>Anonymity is <strong>presentation-layer only</strong> — internal attribution is always retained for moderation, never shown when a user opts anonymous.</td></tr>
+      <tr><td><strong>Accessibility</strong></td>
+        <td class="id">NFR-A1</td><td><strong>WCAG 2.1 AA.</strong> Full keyboard operation, visible focus, semantic landmarks, ≥ 4.5:1 text contrast, hit targets ≥ 44 px. Dictation provides a non-keyboard input path.</td></tr>
+      <tr><td><strong>Localisation</strong></td>
+        <td class="id">NFR-L1</td><td>UI and resource content support <strong>English &amp; French</strong> at minimum; data model must not preclude Indigenous-language fields (e.g. Ojibwe interpretation notes).</td></tr>
+      <tr><td rowspan="2"><strong>Reliability</strong></td>
+        <td class="id">NFR-R1</td><td>The directory is <strong>read-available even if the LLM extractor is down</strong> — fall back to keyword/tag search so navigators are never blocked.</td></tr>
+      <tr><td class="id">NFR-R2</td><td>Rural / low-bandwidth tolerant: core search usable on a constrained connection; graceful degradation of map/rich views.</td></tr>
+      <tr><td rowspan="2"><strong>Instrumentation</strong></td>
+        <td class="id">NFR-I1</td><td>Every loop event (search, extract, confirm, flag, ask, reply, close, seed) is <strong>logged with a timestamp and actor</strong> in an analyzable form — this is the backbone of the evaluation (§9).</td></tr>
+      <tr><td class="id">NFR-I2</td><td>The system exposes a <strong>deterministic "simulation mode"</strong>: a seedable clock and event API so the flywheel can be driven by synthetic agents (§9, Study 3) reproducibly.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout warn">
+    <div class="ct">NFR-I2 is not optional for the paper</div>
+    <p style="margin:0;">The single most important non-functional requirement for the research is that the
+    same code path a human would exercise can be driven <strong>programmatically and deterministically</strong>.
+    Build the loop logic behind a service API the UI calls — then the simulation calls the identical API. This
+    is what lets you claim the simulation tests the real system, not a separate model of it.</p>
+  </div>
+
+  <!-- ════════════════ 5 · DATA MODEL ════════════════ -->
+  <div class="sec" id="s5">
+    <span class="num">05</span>
+    <h2>Data model</h2>
+    <span class="sec-lead">An append-only spine.</span>
+  </div>
+
+  <p>The central design decision: a resource's current state is not stored as mutable rows — it is
+  <strong>derived from an append-only stream of verification events</strong>. This is what makes the chain of
+  custody trustworthy and the flywheel measurable. Core entities:</p>
+
+  <table class="t">
+    <thead><tr><th style="width:150px;">Entity</th><th>Key fields</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="id">User</td><td><code>id, display_name, oht_id, role</code></td><td>Role ∈ {navigator, coordinator}. Bound to one region.</td></tr>
+      <tr><td class="id">OHT (Region)</td><td><code>id, name, is_rural</code></td><td>Drives Ask expiry windows and result scoping.</td></tr>
+      <tr><td class="id">Resource</td><td><code>id, oht_id, name, neighborhood, status, source</code></td><td><code>status ∈ {active, candidate, merged}</code>. Candidates come from FR-C3 / FR-K2.</td></tr>
+      <tr><td class="id">ResourceField</td><td><code>id, resource_id, key, current_value, current_state, last_event_id</code></td><td>A <em>materialised view</em> of the latest events. Re-derivable from the event log.</td></tr>
+      <tr><td class="id">VerificationEvent</td><td><code>id, field_id, actor_id, kind, value?, note?, source, anonymous, created_at</code></td><td><strong>Append-only.</strong> <code>kind ∈ {ai-seed, confirm, flag, correct}</code>. The chain of custody <em>is</em> this table, ordered.</td></tr>
+      <tr><td class="id">Ask</td><td><code>id, oht_id, author_id, text, tags[], expires_at, status, linked_case_id?</code></td><td>Region-scoped. Status ∈ {open, resolved, expired}.</td></tr>
+      <tr><td class="id">AskReply</td><td><code>id, ask_id, author_id, text, attached_resource_id?, candidate_name?</code></td><td>A reply may attach an indexed resource or name a new candidate.</td></tr>
+      <tr><td class="id">Case</td><td><code>id, owner_id, title, summary, extracted_filters, status, region</code></td><td>The navigator's private working record. Filters are the structured extraction.</td></tr>
+      <tr><td class="id">Referral</td><td><code>id, case_id, resource_id?, free_text?, outcome, note, created_at</code></td><td>On close. A free-text referral with no <code>resource_id</code> spawns a candidate Resource.</td></tr>
+      <tr><td class="id">SearchLog</td><td><code>id, actor_id, query, filters, result_ids[], scores[], clicks[], ts</code></td><td>Instrumentation (FR-F8). Powers the ranking evaluation (§9).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <div class="ct">Why event-sourced</div>
+    <p style="margin:0;">Three payoffs: (1) the chain of custody is free and tamper-evident; (2) freshness is
+    just <code>now − latest confirm event</code>, computed not stored; (3) the flywheel simulation can replay or
+    inject events through the same write path the UI uses — so the thing you measure is the thing you built.</p>
+  </div>
+
+  <!-- ════════════════ 6 · ARCHITECTURE ════════════════ -->
+  <div class="sec" id="s6">
+    <span class="num">06</span>
+    <h2>System architecture</h2>
+    <span class="sec-lead">React SPA · Node API · Postgres · async AI.</span>
+  </div>
+
+  <p>A conventional three-tier web application with an asynchronous AI/NLP layer alongside it. The default stack
+  is <strong>React (SPA) + Node/Express (API) + PostgreSQL</strong>, chosen to continue directly from the
+  existing React prototype. Substitute equivalents freely (FastAPI, etc.) — the boundaries matter more than the
+  languages.</p>
+
+  <div class="arch">
+    <div class="arch-band">Client</div>
+    <div class="arch-row">
+      <div class="node hl"><div class="nh">React SPA</div><div class="ns">Find · Verify · Ask · Close<br/>continues the prototype</div></div>
+    </div>
+    <div class="arch-arrow">↕ &nbsp;HTTPS / JSON</div>
+    <div class="arch-band">Application tier — Node / Express API</div>
+    <div class="arch-row">
+      <div class="node"><div class="nh">Search service</div><div class="ns">orchestrates extract → retrieve → rank</div></div>
+      <div class="node"><div class="nh">Verification service</div><div class="ns">confirm / flag → append event</div></div>
+      <div class="node"><div class="nh">Ask &amp; Case service</div><div class="ns">posts, replies, close, seeding</div></div>
+    </div>
+    <div class="arch-row">
+      <div class="node hl"><div class="nh">Ranking engine</div><div class="ns">fit + freshness − flags (§7)</div></div>
+      <div class="node"><div class="nh">Event log writer</div><div class="ns">append-only, derives field state</div></div>
+      <div class="node"><div class="nh">Sim / event API</div><div class="ns">deterministic driver (NFR-I2)</div></div>
+    </div>
+    <div class="arch-arrow">↕</div>
+    <div class="arch-band">Data &amp; index</div>
+    <div class="arch-row">
+      <div class="node accent"><div class="nh">PostgreSQL</div><div class="ns">entities + event log</div></div>
+      <div class="node"><div class="nh">Search index</div><div class="ns">Postgres FTS / BM25 / pgvector</div></div>
+    </div>
+    <div class="arch-arrow">↕ &nbsp;async (queue)</div>
+    <div class="arch-band">AI / NLP layer — background workers</div>
+    <div class="arch-row">
+      <div class="node hl"><div class="nh">Extractor</div><div class="ns">LLM: sentence → filters (§7.1)</div></div>
+      <div class="node"><div class="nh">Enricher</div><div class="ns">seeds candidate fields (ai-only)</div></div>
+      <div class="node"><div class="nh">Freshness-decay job</div><div class="ns">ages states on a clock (FR-V7)</div></div>
+    </div>
+  </div>
+
+  <h3>6.1 &nbsp;Request flow — a search</h3>
+  <ol>
+    <li>SPA sends the raw sentence to the <strong>Search service</strong>.</li>
+    <li>Search service calls the <strong>Extractor</strong> (LLM) → structured filters; returns them immediately so chips render while ranking runs.</li>
+    <li>Filters drive <strong>retrieval</strong> against the search index (candidate set, e.g. top 100 by BM25 + vector similarity).</li>
+    <li>The <strong>Ranking engine</strong> scores each candidate by fit + freshness − flags (§7.2) and returns the ordered list.</li>
+    <li>Everything is written to <code>SearchLog</code> (FR-F8 / NFR-I1).</li>
+  </ol>
+
+  <h3>6.2 &nbsp;The AI approach (hybrid)</h3>
+  <p>Recommended default is a <strong>hybrid</strong>: an LLM does the linguistically hard part (turning messy
+  natural language into a typed filter object), while <strong>classic information-retrieval ranking</strong>
+  (BM25 / vector retrieval + a transparent scoring formula) does the part that must be fast, explainable, and
+  cheap to run thousands of times in simulation. This keeps the ranking <em>auditable</em> — essential for the
+  paper — and avoids burning an LLM call per candidate.</p>
+  <p>The extractor can be a hosted LLM API or a self-hosted open model; either way it sits behind a single
+  <code>extract(text) → Filters</code> interface so it is swappable and mockable in tests.</p>
+
+  <!-- ════════════════ 7 · KEY FEATURE ════════════════ -->
+  <div class="sec" id="s7">
+    <span class="num">07</span>
+    <h2>Key feature: NL search + freshness-weighted ranking</h2>
+    <span class="sec-lead">The claim the paper rests on.</span>
+  </div>
+
+  <p>This is the feature the evaluation targets. It has two halves that are tested separately (§9): an
+  <strong>extractor</strong> (language → structured filters) and a <strong>ranker</strong> (filters + a living
+  index → an ordered, trustworthy list).</p>
+
+  <h3>7.1 &nbsp;Extraction schema</h3>
+  <p>The extractor maps a free-text sentence to a typed <code>Filters</code> object. This schema is also the
+  <strong>gold-label format</strong> for the extraction benchmark (Study 1).</p>
+
+  <pre class="code"><span class="c">// extract("Same-day MH walk-in for an adolescent, no OHIP, Sault Ste. Marie")</span>
+{
+  <span class="k">need</span>:        [<span class="s">"mental-health"</span>],        <span class="c">// service domain(s)</span>
+  <span class="k">modality</span>:    [<span class="s">"walk-in"</span>, <span class="s">"same-day"</span>], <span class="c">// how care is delivered</span>
+  <span class="k">population</span>:  [<span class="s">"adolescent"</span>],          <span class="c">// age / group</span>
+  <span class="k">coverage</span>:    [<span class="s">"no-OHIP"</span>],             <span class="c">// funding / eligibility</span>
+  <span class="k">location</span>:    <span class="s">"Sault Ste. Marie"</span>,       <span class="c">// region / community</span>
+  <span class="k">language</span>:    [],                       <span class="c">// e.g. "fr", "ojibwe"</span>
+  <span class="k">urgency</span>:     <span class="s">"same-day"</span>,
+  <span class="k">confidence</span>:  { <span class="k">need</span>: 0.97, <span class="k">location</span>: 0.92, ... }
+}</pre>
+
+  <p>Low-confidence fields are shown as <em>suggested</em> chips the navigator can confirm or drop (FR-F2/F6),
+  which both improves trust and yields a free correction signal.</p>
+
+  <h3>7.2 &nbsp;Ranking score</h3>
+  <p>Each candidate resource <code>r</code> for query filters <code>q</code> gets a transparent, tunable score.
+  The freshness term is the novel part — it makes the directory's <em>self-maintenance</em> visible in the
+  ranking itself.</p>
+
+  <div class="formula">
+    <b>score(r, q)</b> &nbsp;=&nbsp; w<span class="var">f</span>·<b>Fit</b>(r,q) <span class="op">+</span> w<span class="var">v</span>·<b>Fresh</b>(r) <span class="op">−</span> w<span class="var">s</span>·<b>Flag</b>(r)<br/>
+    <br/>
+    <span class="cm">Fit  — semantic + filter match, 0..1 (BM25 ⊕ vector ⊕ filter overlap)</span><br/>
+    <span class="cm">Fresh — index over fields used by q:</span><br/>
+    &nbsp;&nbsp;<b>Fresh</b>(r) = mean<span class="var">i∈q</span> [ exp( <span class="op">−</span> age(field<span class="var">i</span>) / τ ) · g(confirms<span class="var">i</span>) ]<br/>
+    <span class="cm">Flag — fraction of q-relevant fields currently flagged-stale, 0..1</span><br/>
+    <br/>
+    <span class="cm">τ = freshness half-life (config, e.g. 60d) · g(·) = saturating confirm-count weight</span><br/>
+    <span class="cm">defaults: w_f = 0.6,  w_v = 0.3,  w_s = 0.4</span>
+  </div>
+
+  <p>The weights <code>(w_f, w_v, w_s)</code> and half-life <code>τ</code> are configuration, not constants —
+  the ablation in Study 2 sweeps them. Setting <code>w_v = w_s = 0</code> recovers a pure fit ranking, which is
+  exactly the baseline the freshness mechanism is measured against.</p>
+
+  <div class="callout good">
+    <div class="ct">Design property to preserve</div>
+    <p style="margin:0;">Freshness is computed <strong>only over the fields the query actually depends on</strong>
+    — a clinic with stale accessibility info isn't penalised on a query that never asked about accessibility.
+    This makes freshness <em>query-relative</em> and is worth stating explicitly in the paper.</p>
+  </div>
+
+  <!-- ════════════════ 8 · TESTING PLAN ════════════════ -->
+  <div class="sec" id="s8">
+    <span class="num">08</span>
+    <h2>Testing plan</h2>
+    <span class="sec-lead">Does it work? (vs. §9: does it help?)</span>
+  </div>
+
+  <p>Testing answers <em>"is the system correct and robust"</em>. It is distinct from validation (§9), which
+  answers <em>"does the key feature actually work as a claim"</em>. Four levels, each with an exit criterion.</p>
+
+  <h3>8.1 &nbsp;Unit / component tests</h3>
+  <table class="t">
+    <thead><tr><th style="width:170px;">Component</th><th>What to test</th><th style="width:120px;">Tooling</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Extractor</strong></td><td>Pure function over a frozen prompt: given sentence → filters. Snapshot tests on a fixture set; schema-validity of every output; graceful handling of empty / nonsense / multilingual input. <em>LLM mocked</em> for determinism.</td><td>Jest / Vitest</td></tr>
+      <tr><td><strong>Ranking engine</strong></td><td>Score monotonicity (more fit ⇒ higher; staler ⇒ lower; a flag ⇒ lower); query-relative freshness (irrelevant stale fields don't penalise); weight = 0 recovers fit ordering. <strong>Pure, deterministic, no I/O.</strong></td><td>Jest / Vitest</td></tr>
+      <tr><td><strong>Event log → field state</strong></td><td>Deriving <code>current_state</code> from event sequences; freshness-decay transitions at the window boundary; immutability (no event mutated/deleted).</td><td>Jest + test DB</td></tr>
+      <tr><td><strong>UI components</strong></td><td>VerifyBadge / MatchMeter render per state; confirm/flag handlers fire; anonymity toggle; keyboard + ARIA (NFR-A1).</td><td>React Testing Library</td></tr>
+      <tr><td><strong>Candidate seeding</strong></td><td>Free-text referral with no match → candidate created exactly once; dedupe against existing.</td><td>Jest + test DB</td></tr>
+    </tbody>
+  </table>
+  <p class="muted" style="font-size:13px;"><strong>Exit:</strong> ≥ 80% line coverage on the ranking engine, event-log, and seeding modules (the logic the paper depends on); 100% of verification-state transitions covered.</p>
+
+  <h3>8.2 &nbsp;Integration tests</h3>
+  <ul>
+    <li><strong>Search pipeline:</strong> real extractor (or a pinned fixture model) → retrieval → ranking → <code>SearchLog</code> written. Assert ordering and that logging is complete.</li>
+    <li><strong>Verification round-trip:</strong> confirm/flag via API → event appended → field state + ranking weight change on the next search.</li>
+    <li><strong>Ask → reply → candidate → search:</strong> a mentioned service becomes a candidate and appears (as <code>ai-only</code>) in a later search.</li>
+    <li><strong>Close → seed + re-confirm + resolve Ask:</strong> one close mutates three things atomically (FR-C2).</li>
+    <li><strong>Fallback:</strong> extractor down ⇒ keyword search still returns results (NFR-R1).</li>
+  </ul>
+
+  <h3>8.3 &nbsp;System / end-to-end tests</h3>
+  <p>Drive the whole loop through the UI, mirroring the prototype's demo script:
+  Find (dictate → search) → Verify (confirm Hours, flag Referral) → Ask (post, see reply) → Close (refer, seed,
+  resolve). Run on Chromium + WebKit; include a keyboard-only pass and an axe-core accessibility scan.</p>
+  <table class="t">
+    <thead><tr><th style="width:90px;">ID</th><th>Scenario → expected</th></tr></thead>
+    <tbody>
+      <tr><td class="id">E2E-1</td><td>Type a case sentence → correct chips extracted → ranked results, top result freshest-relevant.</td></tr>
+      <tr><td class="id">E2E-2</td><td>Confirm a field → toast + new history entry + that resource rises on re-search.</td></tr>
+      <tr><td class="id">E2E-3</td><td>Flag a field anonymously → shows "AOHT member" publicly; internal attribution retained in DB.</td></tr>
+      <tr><td class="id">E2E-4</td><td>Empty-ish search → "post as Ask" → Ask appears in region feed with correct expiry.</td></tr>
+      <tr><td class="id">E2E-5</td><td>Close case with off-index referral → candidate created → contribution summary correct.</td></tr>
+    </tbody>
+  </table>
+  <p class="muted" style="font-size:13px;"><strong>Exit:</strong> all E2E green on two engines; zero critical/serious axe violations; p95 search &lt; 2.5 s on the seed dataset (NFR-P1).</p>
+
+  <h3>8.4 &nbsp;Non-functional / load</h3>
+  <p>Load-test search and verification at the index sizes used in the evaluation; confirm NFR-P1–P3 targets;
+  verify the freshness-decay job is idempotent and correct under a fast-forwarded clock (this same harness
+  becomes the simulation driver in §9).</p>
+
+  <!-- ════════════════ 9 · VALIDATION ════════════════ -->
+  <div class="sec" id="s9">
+    <span class="num">09</span>
+    <h2>Validation &amp; evaluation methodology</h2>
+    <span class="sec-lead">Quantitative evidence — no human subjects.</span>
+  </div>
+
+  <p>The constraint shapes everything here: <strong>we will not test with real people</strong>, yet we need
+  numbers a paper can stand on. The strategy is to evaluate the key feature on three fronts that together cover
+  its claims, each producing reportable metrics with confidence intervals. The first two are standard
+  information-retrieval evaluations on a labelled corpus; the third — the centrepiece — is an
+  <strong>agent-based simulation of the flywheel</strong> driven through the real system API (NFR-I2).</p>
+
+  <div class="tiles">
+    <div class="tile"><div class="big">Study 1</div><div class="lbl">Extraction accuracy — language → filters. Metrics: precision / recall / F1.</div></div>
+    <div class="tile"><div class="big">Study 2</div><div class="lbl">Ranking quality — fit + freshness vs. baselines. Metrics: nDCG, MRR, P@k.</div></div>
+    <div class="tile"><div class="big">Study 3</div><div class="lbl">Flywheel simulation — index accuracy &amp; freshness over time. The core contribution.</div></div>
+  </div>
+
+  <h3>9.1 &nbsp;Building the evaluation corpus</h3>
+  <p>All three studies need a labelled dataset, built once with no live participants:</p>
+  <ul>
+    <li><strong>Case vignettes (queries).</strong> Author <strong>150–300 case sentences</strong> spanning the
+      need / population / coverage / location / language space. Seed them from the prototype's realistic Algoma
+      examples, then expand by combination. Optionally use an LLM to paraphrase each into 2–3 surface forms to
+      test robustness — but the <em>gold labels are written/checked by hand</em>.</li>
+    <li><strong>Gold filters.</strong> For each vignette, the correct <code>Filters</code> object (§7.1) —
+      this is the answer key for Study 1.</li>
+    <li><strong>Resource corpus + ground truth.</strong> A synthetic-but-realistic directory of
+      <strong>~200–500 Algoma-style services</strong> with full fields. Crucially, define a <em>ground-truth
+      value</em> for every field so the simulation can know when the stored value is right or wrong.</li>
+    <li><strong>Relevance judgments.</strong> For each query, graded relevance (0–3) of resources — for Study 2's
+      nDCG. Generate candidate judgments by rule + LLM, then have <strong>1–2 domain reviewers adjudicate</strong>
+      a sample to establish inter-rater reliability (report Cohen's κ). This is expert review of <em>data</em>,
+      not human-subjects testing.</li>
+  </ul>
+
+  <div class="study">
+    <div class="study-h"><span class="sid">Study 1</span><span class="st">Natural-language extraction accuracy</span><span class="sgoal">RQ1</span></div>
+    <div class="study-b">
+      <dl class="kv">
+        <dt>Question</dt><dd>Does the extractor turn a navigator's sentence into the correct structured filters?</dd>
+        <dt>Method</dt><dd>Run the extractor over all vignettes; compare predicted <code>Filters</code> to gold, per field type.</dd>
+        <dt>Metrics</dt><dd><strong>Precision, recall, F1</strong> per field (need/modality/population/coverage/location/language); <strong>exact-match accuracy</strong> of the whole filter set; location/urgency accuracy separately. Macro- and micro-averaged.</dd>
+        <dt>Baselines</dt><dd>The prototype's <strong>regex extractor</strong>; a keyword/dictionary tagger. Shows what the LLM buys you.</dd>
+        <dt>Robustness</dt><dd>F1 on paraphrased vs. canonical phrasings; degradation on noisy / abbreviated / bilingual input.</dd>
+        <dt>Stats</dt><dd>Bootstrap 95% CIs over vignettes; McNemar's test vs. the regex baseline on exact-match.</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="study">
+    <div class="study-h"><span class="sid">Study 2</span><span class="st">Ranking quality &amp; the value of freshness</span><span class="sgoal">RQ2</span></div>
+    <div class="study-b">
+      <dl class="kv">
+        <dt>Question</dt><dd>Does freshness-weighted ranking surface more relevant <em>and</em> more trustworthy results than fit-only ranking?</dd>
+        <dt>Method</dt><dd>For each query, score the corpus with each ranker; evaluate against graded relevance judgments. Run an <strong>ablation</strong> over the weights and half-life of §7.2.</dd>
+        <dt>Metrics</dt><dd><strong>nDCG@5/@10, MRR, Precision@k, MAP.</strong> Plus a freshness-aware metric: <strong>stale-result rate@k</strong> (share of top-k results whose query-relevant fields are stale/flagged) and a combined <em>trust-weighted nDCG</em>.</dd>
+        <dt>Conditions</dt><dd>(a) BM25 keyword baseline; (b) fit-only (<code>w_v=w_s=0</code>); (c) fit + freshness; (d) fit + freshness − flags (full). Sweep <code>τ</code> and weights.</dd>
+        <dt>Twist</dt><dd>Evaluate on index snapshots at varying staleness levels — freshness ranking should help <em>more</em> as the index ages. This links Study 2 to Study 3.</dd>
+        <dt>Stats</dt><dd>Per-query paired comparison; Wilcoxon signed-rank across queries; bootstrap CIs; Bonferroni correction across conditions.</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="study">
+    <div class="study-h"><span class="sid">Study 3</span><span class="st">Agent-based simulation of the flywheel</span><span class="sgoal">RQ3 · RQ4 — core contribution</span></div>
+    <div class="study-b">
+      <p style="margin-top:0;">This is what makes "the directory maintains itself" a measurable claim rather
+      than a slogan. We model a population of synthetic navigators acting on the real system over simulated
+      time, and watch whether the index stays accurate.</p>
+
+      <h4>The model</h4>
+      <ul>
+        <li><strong>World.</strong> The resource corpus, each field with a hidden <em>ground-truth</em> value and a stored value + last-verified time.</li>
+        <li><strong>Drift.</strong> Each field's ground truth changes as a Poisson process at rate <code>λ_change</code> (hours change, programs close). On change, the stored value silently becomes <em>wrong</em> until someone corrects it — this is the decay a static directory suffers.</li>
+        <li><strong>Agents.</strong> <code>P</code> navigators. Each timestep an agent issues searches drawn from the query distribution, opens top-k results, and — modelling real behaviour — with probability <code>p_confirm</code> confirms a field it relied on, and with probability <code>p_flag</code> flags a field it discovers is wrong. A flag triggers a correction after delay <code>d</code>.</li>
+        <li><strong>Coverage.</strong> A fraction of searches that fail spawn an Ask; some Asks seed a new candidate resource — modelling growth (FR-C3/K2).</li>
+        <li><strong>Driven through the real API.</strong> Agents call the same confirm/flag/seed/search endpoints the UI calls (NFR-I2), against a seedable clock. The simulation exercises production code.</li>
+      </ul>
+
+      <h4>Outcome metrics (over simulated time t)</h4>
+      <table class="t" style="margin-top:6px;">
+        <thead><tr><th style="width:180px;">Metric</th><th>Definition</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Index accuracy A(t)</strong></td><td>Fraction of fields where stored value = ground truth.</td></tr>
+          <tr><td><strong>Freshness F(t)</strong></td><td>Fraction of fields verified within window W.</td></tr>
+          <tr><td><strong>Usage-weighted accuracy</strong></td><td>A(t) weighted by how often each resource is actually returned — popular resources should stay fresher. (Key hypothesis.)</td></tr>
+          <tr><td><strong>MTTC</strong></td><td>Mean time-to-correction: from a fact changing to its stored value being fixed.</td></tr>
+          <tr><td><strong>Coverage C(t)</strong></td><td>Resources / fields present in the index over time (growth via seeding).</td></tr>
+          <tr><td><strong>Effective search accuracy</strong></td><td>Accuracy of the fields actually shown to agents in their top-k results — the number a navigator experiences.</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Conditions &amp; sweeps</h4>
+      <ul>
+        <li><strong>Baseline:</strong> static directory — no verification (stored never updates). A(t) decays monotonically; this is the "old PDF" world.</li>
+        <li><strong>Pathways:</strong> the full loop. Hypothesis: A(t) reaches and holds a steady state well above baseline.</li>
+        <li><strong>Parameter sweep:</strong> population <code>P</code> (5 → 100), participation <code>p_confirm</code> / <code>p_flag</code> (e.g. 0.02 → 0.3), drift rate <code>λ_change</code>, correction delay <code>d</code>. Find the minimum participation at which the index self-sustains — a headline result.</li>
+      </ul>
+
+      <dl class="kv">
+        <dt>Replication</dt><dd>Monte Carlo: <strong>≥ 100 runs</strong> per cell with different seeds; report mean ± 95% CI (and shaded bands on time-series plots).</dd>
+        <dt>Stats</dt><dd>Compare steady-state A and MTTC across conditions (Mann–Whitney / t-test as appropriate); regression of steady-state accuracy on <code>P</code> and participation to expose the scaling law.</dd>
+        <dt>Calibration</dt><dd>Parameter ranges grounded in literature on directory decay / link rot and stated explicitly as assumptions; sensitivity analysis shows which assumptions matter.</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="study">
+    <div class="study-h"><span class="sid">Study 4</span><span class="st">LLM-as-simulated-navigator (optional, strengthening)</span><span class="sgoal">supports RQ1–RQ3</span></div>
+    <div class="study-b">
+      <p style="margin:0 0 8px;">To make the synthetic query stream more realistic than hand-written
+      vignettes, drive a subset of agents with an LLM prompted as navigator personas: given a generated patient
+      scenario, it writes the search sentence and decides whether to confirm/flag what it's shown. This produces
+      a richer, less hand-tuned query distribution for Studies 1–3 and a qualitative error analysis of where
+      extraction breaks. <strong>Use as a supplement, not the sole evidence</strong> — and disclose it plainly,
+      since LLM-simulated users are not human users.</p>
+    </div>
+  </div>
+
+  <div class="callout warn">
+    <div class="ct">Threats to validity — state these in the paper</div>
+    <p style="margin:0;"><strong>Construct:</strong> simulated navigators are a model of behaviour, not real
+    clinicians — calibrate parameters and run sensitivity analysis. <strong>Internal:</strong> the query corpus
+    is partly author-generated; mitigate with expert-adjudicated relevance and inter-rater κ. <strong>External:</strong>
+    one synthetic region; generalisation to other OHTs is argued, not measured. <strong>Honest framing:</strong>
+    this is a <em>systems + simulation</em> evaluation that establishes feasibility and the self-maintenance
+    mechanism — a human field study is named explicitly as future work.</p>
+  </div>
+
+  <!-- ════════════════ 10 · RESEARCH QUESTIONS ════════════════ -->
+  <div class="sec" id="s10">
+    <span class="num">10</span>
+    <h2>Research questions &amp; hypotheses</h2>
+    <span class="sec-lead">What the numbers answer.</span>
+  </div>
+
+  <table class="t">
+    <thead><tr><th style="width:60px;">RQ</th><th>Question</th><th style="width:90px;">Study</th></tr></thead>
+    <tbody>
+      <tr><td class="id">RQ1</td><td>Can natural language from navigators be converted into structured service filters accurately enough to drive search?</td><td>Study 1</td></tr>
+      <tr><td class="id">RQ2</td><td>Does freshness-weighted ranking improve both relevance and trustworthiness of results over fit-only and keyword baselines?</td><td>Study 2</td></tr>
+      <tr><td class="id">RQ3</td><td>Does the crowd-verification flywheel keep a directory accurate over time where a static directory decays?</td><td>Study 3</td></tr>
+      <tr><td class="id">RQ4</td><td>What level of navigator participation is required for the index to become self-sustaining, and how does it scale with population?</td><td>Study 3</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Hypotheses</h4>
+  <table class="t">
+    <thead><tr><th style="width:60px;">H</th><th>Hypothesis (directional)</th></tr></thead>
+    <tbody>
+      <tr><td class="id">H1</td><td>The hybrid LLM extractor achieves <strong>macro-F1 ≥ 0.85</strong> on filter extraction and significantly beats the regex baseline on exact-match (McNemar, p &lt; 0.05).</td></tr>
+      <tr><td class="id">H2</td><td>Freshness-weighted ranking yields <strong>higher nDCG@10 and lower stale-result-rate@10</strong> than fit-only ranking, and the advantage <strong>grows as the index ages</strong>.</td></tr>
+      <tr><td class="id">H3</td><td>Under the flywheel, steady-state index accuracy <strong>strictly dominates</strong> the static baseline, and <strong>usage-weighted accuracy exceeds overall accuracy</strong> (popular resources stay fresher).</td></tr>
+      <tr><td class="id">H4</td><td>MTTC <strong>decreases monotonically</strong> with population and participation rate; there exists a participation threshold above which accuracy self-sustains above a target (e.g. 0.9).</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ════════════════ 11 · BUILD PLAN ════════════════ -->
+  <div class="sec" id="s11">
+    <span class="num">11</span>
+    <h2>Build plan &amp; milestones</h2>
+    <span class="sec-lead">A path for one developer.</span>
+  </div>
+
+  <table class="t">
+    <thead><tr><th style="width:78px;">Phase</th><th>Deliverable</th><th>Unlocks</th></tr></thead>
+    <tbody>
+      <tr><td class="id">M0</td><td><strong>Schema + event log.</strong> Postgres, entities (§5), append-only events, field-state derivation, freshness-decay job + seedable clock (NFR-I2).</td><td>Everything; Study 3 driver.</td></tr>
+      <tr><td class="id">M1</td><td><strong>Verify path.</strong> Resource detail, confirm/flag → events → chain of custody. Ported from prototype, now persistent.</td><td>FR-V*; E2E-2/3.</td></tr>
+      <tr><td class="id">M2</td><td><strong>Find path.</strong> Extractor service + retrieval + ranking engine (§7) + SearchLog. Keyword fallback (NFR-R1).</td><td>FR-F*; Studies 1 &amp; 2.</td></tr>
+      <tr><td class="id">M3</td><td><strong>Ask + Close.</strong> Asks/replies, case close, candidate seeding, contribution summary.</td><td>FR-K*, FR-C*; closes the loop.</td></tr>
+      <tr><td class="id">M4</td><td><strong>Evaluation corpus + harnesses.</strong> Vignettes, gold filters, synthetic directory w/ ground truth, relevance judgments. Study 1 &amp; 2 runners.</td><td>RQ1, RQ2.</td></tr>
+      <tr><td class="id">M5</td><td><strong>Simulation engine.</strong> Agent loop over the real API, metric logging, Monte Carlo runner, sweep + plotting.</td><td>RQ3, RQ4 — the paper's core.</td></tr>
+      <tr><td class="id">M6</td><td><strong>Polish + write-up.</strong> Accessibility pass, load test, figures, threats-to-validity.</td><td>Submission.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <div class="ct">Critical path for the paper</div>
+    <p style="margin:0;">M0 → M2 → M5. The verification path (M1) and the simulation driver (M0) are the
+    long poles. If time is short, a thinner Ask/Close (M3) is acceptable — but <strong>do not cut the event log
+    or the deterministic API</strong>, because Study 3 cannot run without them.</p>
+  </div>
+
+  <!-- ════════════════ 12 · APPENDICES ════════════════ -->
+  <div class="sec" id="s12">
+    <span class="num">12</span>
+    <h2>Appendices &amp; glossary</h2>
+  </div>
+
+  <h3>A · Simulation parameters</h3>
+  <table class="t">
+    <thead><tr><th style="width:140px;">Parameter</th><th>Meaning</th><th style="width:150px;">Range to sweep</th></tr></thead>
+    <tbody>
+      <tr><td class="id">P</td><td>Number of active navigators in the region</td><td>5 – 100</td></tr>
+      <tr><td class="id">λ_change</td><td>Per-field ground-truth change rate (drift)</td><td>1 / 30d – 1 / 365d</td></tr>
+      <tr><td class="id">p_confirm</td><td>Prob. an agent confirms a relied-on field</td><td>0.02 – 0.30</td></tr>
+      <tr><td class="id">p_flag</td><td>Prob. an agent flags a field it finds wrong</td><td>0.05 – 0.50</td></tr>
+      <tr><td class="id">d</td><td>Delay from flag to correction</td><td>0 – 14d</td></tr>
+      <tr><td class="id">τ</td><td>Freshness half-life in the ranker (§7.2)</td><td>14 – 120d</td></tr>
+      <tr><td class="id">searches/agent/day</td><td>Activity level</td><td>1 – 10</td></tr>
+      <tr><td class="id">seed_rate</td><td>Fraction of failed searches that seed a candidate</td><td>0.0 – 0.2</td></tr>
+    </tbody>
+  </table>
+
+  <h3>B · Verification states</h3>
+  <p>
+    <span class="chip">verified-fresh</span> confirmed within window ·
+    <span class="chip">verified-aging</span> confirmed but past window ·
+    <span class="chip">ai-only</span> seeded, never human-verified ·
+    <span class="chip">flagged-stale</span> active flag ·
+    <span class="chip">unknown</span> no data.
+  </p>
+
+  <h3>C · Glossary</h3>
+  <table class="t">
+    <thead><tr><th style="width:170px;">Term</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><strong>OHT</strong></td><td>Ontario Health Team — a regional grouping of providers. The unit of membership and scoping (e.g. Algoma OHT).</td></tr>
+      <tr><td><strong>Navigator</strong></td><td>A nurse / social worker / community health worker who connects patients to services — the primary user.</td></tr>
+      <tr><td><strong>The loop / flywheel</strong></td><td>Find → Verify → Ask → Close, with Close feeding Find. The self-maintenance mechanism.</td></tr>
+      <tr><td><strong>Chain of custody</strong></td><td>The append-only, attributed history of who verified a field, when, and from where.</td></tr>
+      <tr><td><strong>Candidate resource</strong></td><td>A service mentioned but not yet indexed; AI-enriched, awaiting human verification.</td></tr>
+      <tr><td><strong>Freshness</strong></td><td>How recently a field was human-verified; decays over time; feeds ranking.</td></tr>
+      <tr><td><strong>MTTC</strong></td><td>Mean time-to-correction — lag between a fact changing and the index being fixed.</td></tr>
+      <tr><td><strong>nDCG / MRR / P@k</strong></td><td>Standard ranked-retrieval quality metrics used in Study 2.</td></tr>
+      <tr><td><strong>PHIPA / PIPEDA</strong></td><td>Ontario / Canadian privacy law. Pathways avoids PHI by design (structured needs, not identifiers).</td></tr>
+    </tbody>
+  </table>
+
+  <hr/>
+  <p class="muted" style="font-size:12.5px;">Pathways · Algoma OHT — Software Requirements &amp; Research Validation Specification v1.0.
+  Derived from the Pathways high-fidelity prototype. All names, phone numbers, hours, and verification logs in
+  the prototype and corpus are illustrative. This document defines the build target and the evaluation; it is
+  not itself a claim of results.</p>
+
+</td></tr></tbody>
+<tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+</table>
+</main>
+
+</body>
+</html>

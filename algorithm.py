@@ -6,6 +6,7 @@ Research Algorithm - LangGraph based dataset generation pipeline.
 import json
 from datetime import datetime
 from typing import Dict, Optional, Callable, TypedDict, List
+from pathlib import Path
 
 from langgraph.graph import StateGraph, START, END
 from dotenv import find_dotenv, load_dotenv
@@ -22,6 +23,10 @@ from nodes.deduplicate import DeduplicateNode
 
 # Load environment
 dotenv_path = find_dotenv()
+if not dotenv_path:
+    candidate_dotenv = Path(__file__).resolve().parent / "searxng" / ".env"
+    if candidate_dotenv.exists():
+        dotenv_path = str(candidate_dotenv)
 if dotenv_path:
     load_dotenv(dotenv_path)
 
