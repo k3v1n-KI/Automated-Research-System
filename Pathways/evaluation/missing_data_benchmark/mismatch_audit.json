@@ -1,0 +1,6094 @@
+{
+  "schema_version": 1,
+  "source_report": "Pathways/evaluation/missing_data_benchmark/report_hybrid.json",
+  "evaluation_type": "entity_supported_mismatch_audit",
+  "mismatch_count": 357,
+  "categories": {
+    "different_domain": 56,
+    "same_base_number_extension_or_format": 8,
+    "different_postal_code": 6,
+    "same_area_code_different_number": 18,
+    "same_street_number_partial_overlap": 57,
+    "near_equivalent_address_wording": 53,
+    "same_street_number_expanded_or_abbreviated": 91,
+    "materially_different_address_text": 57,
+    "different_number_or_area_code": 8,
+    "same_domain_different_path": 3
+  },
+  "tiers": {
+    "needs_manual_verification": 127,
+    "high_confidence_representation": 155,
+    "likely_valid_alternate": 75
+  },
+  "rows": [
+    {
+      "benchmark_id": "e32efdae70641981",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.pharmachoice.com/locations/main-bronte-pharmacy/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=200002"
+    },
+    {
+      "benchmark_id": "b99ef19d8311d296",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "416-438-3697",
+      "expected": "416-438-3697 ext 381"
+    },
+    {
+      "benchmark_id": "0523eb34806fd1f2",
+      "field": "postal_code",
+      "category": "different_postal_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "M5A 3A3",
+      "expected": "M5A 3K3"
+    },
+    {
+      "benchmark_id": "941153b420f7ad6d",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.7948,
+        "name_score": 1.0,
+        "address_score": 0.4186,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(613) 722-4000",
+      "expected": "613-722-9731"
+    },
+    {
+      "benchmark_id": "5ba6504cb6403347",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.shoppersdrugmart.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120821"
+    },
+    {
+      "benchmark_id": "c25a207e385009bc",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1 Oak St, Toronto, ON M5A 0A1, Canada",
+      "expected": "1 Oak St, Units 1-2"
+    },
+    {
+      "benchmark_id": "43cc2d2849973d22",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9772,
+        "name_score": 1.0,
+        "address_score": 0.9355,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(613) 233-4443",
+      "expected": "613-233-4443 ext 2109"
+    },
+    {
+      "benchmark_id": "347c269dfc8f8992",
+      "field": "postal_code",
+      "category": "different_postal_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7293,
+        "name_score": 0.68,
+        "address_score": 0.7812,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "L6R 0K1",
+      "expected": "L6R 3X1"
+    },
+    {
+      "benchmark_id": "f3d033214281aeb6",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3671 Dundas St W, York, ON M6S 2T3, Canada",
+      "expected": "3671 Dundas St W"
+    },
+    {
+      "benchmark_id": "022189e5f16c9dc5",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "8 Taber Road Etobicoke, 8 Taber Rd, Etobicoke, ON M9W 3A4, Canada",
+      "expected": "8 Taber Road"
+    },
+    {
+      "benchmark_id": "349b8d3dc2dad19a",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9818,
+        "name_score": 0.975,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1111 Ghislain St, Hawkesbury, ON K6A 3G5, Canada",
+      "expected": "1111 Ghislain Street"
+    },
+    {
+      "benchmark_id": "40a79b2b50a2454b",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8756,
+        "name_score": 1.0,
+        "address_score": 0.9394,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.raxlenpharmacy.com/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151347"
+    },
+    {
+      "benchmark_id": "c86425db03a20cbe",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "4319 Cove Rd, Portland, ON K0G 1V0",
+      "expected": "4319 Cove Road at Hwy 15, P.O. Box 58"
+    },
+    {
+      "benchmark_id": "9cfd72ee8d5dbbe4",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "58 Goodall St, Dryden, ON P8N 2Z6, Canada",
+      "expected": "58 Goodall Street"
+    },
+    {
+      "benchmark_id": "efbe95de92aa7ebf",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "167 Rolph St, Tillsonburg, ON N4G 3Y9, Canada",
+      "expected": "167 Rolph Street, N4G 3Y9"
+    },
+    {
+      "benchmark_id": "e4f06540da6a386f",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "600 University Ave, Toronto, ON M5G 1X5, Canada",
+      "expected": "250 Dundas St W 7th Fl, Toronto, ON M5T 2Z5"
+    },
+    {
+      "benchmark_id": "be0aa87b949196f6",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "285 Cummer Avenue, Toronto, ON M2M 2G1",
+      "expected": "285 Cummer Avenue"
+    },
+    {
+      "benchmark_id": "d063d28ac726f5fe",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8337,
+        "name_score": 1.0,
+        "address_score": 0.5287,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(905) 867-8734",
+      "expected": "905-790-7707"
+    },
+    {
+      "benchmark_id": "948aed83ce47dde6",
+      "field": "postal_code",
+      "category": "different_postal_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8846,
+        "name_score": 1.0,
+        "address_score": 0.8205,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "L6L 5B3",
+      "expected": "L6L 5W4"
+    },
+    {
+      "benchmark_id": "6b1f703457aec283",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1678 Dufferin St, Toronto, ON M6H 3M1, Canada",
+      "expected": "1678 Dufferin St, Toronto, ON M6H 3P1"
+    },
+    {
+      "benchmark_id": "b0f69d06d50f50c9",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 392-6874",
+      "expected": "416-355-6796"
+    },
+    {
+      "benchmark_id": "4da67d86068773a9",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "155 Gordon Baker Rd. suite 400, Toronto, ON M2H 3N5, CA",
+      "expected": "393 King St E, Toronto, ON, M5A 1L3"
+    },
+    {
+      "benchmark_id": "74e840c23629a86e",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8788,
+        "name_score": 0.8214,
+        "address_score": 0.8542,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.guardian-ida-remedysrx.ca/en/ontario/brampton/upper-mount-gdn-pharmacy-7058511?utm_source=google&utm_medium=maps&utm_campaign=local_presence",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=213044"
+    },
+    {
+      "benchmark_id": "f9d641e16bc83d4a",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "200 Fletcher Crescent, Alliston, ON L9R 1W7, Canada",
+      "expected": "200 Fletcher Cr."
+    },
+    {
+      "benchmark_id": "558fa96af10bea45",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3300 Bloor St W #146, Etobicoke, ON M8X 2X2, Canada",
+      "expected": "Bloor Islington Place, 3300 Bloor St W, Unit 146"
+    },
+    {
+      "benchmark_id": "2ae0e491fc7e1dff",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2555 Dixie Rd Unit 7, Mississauga, ON L4Y 4C4, Canada",
+      "expected": "2555 Dixie Road, Unit 7"
+    },
+    {
+      "benchmark_id": "9e19f75e3cc2dbeb",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "800 Commissioners Rd E, London, ON N6A 5W9, Canada",
+      "expected": "800 Commissioners Rd E, ON N6A 5W9"
+    },
+    {
+      "benchmark_id": "783c38625d55e6e7",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7463,
+        "name_score": 0.6512,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2285 New St, Burlington, ON L7R 1J4, Canada",
+      "expected": "5230 South Service Road"
+    },
+    {
+      "benchmark_id": "bcd791dd02d8bb0b",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "325 Margaret Ave, P.O. Box 2030, Wallaceburg, Ontario N8A 2A7, Canada",
+      "expected": "PO Box 2030"
+    },
+    {
+      "benchmark_id": "b228a77af0ee0752",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1 Hospital Dr, Peterborough, ON K9J 7C6, Canada",
+      "expected": "1 Hospital Drive"
+    },
+    {
+      "benchmark_id": "b4f9cb9121a4a16b",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7745,
+        "name_score": 0.6667,
+        "address_score": 0.8056,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 920-3515 ext. 5115",
+      "expected": "416-920-3515"
+    },
+    {
+      "benchmark_id": "94e1699473509fc3",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8619,
+        "name_score": 0.8101,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "680 Kirkwood Dr, Greater Sudbury, ON P3E 1X3, Canada",
+      "expected": "680 Kirkwood Drive, Sudbury, ON P3E 1X3"
+    },
+    {
+      "benchmark_id": "f4b7b6b28a9c810c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9809,
+        "name_score": 0.9737,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1690 Dersan St, Pickering, ON L1V 0G9, Canada",
+      "expected": "1690 Dersan Street"
+    },
+    {
+      "benchmark_id": "2371ec2a1b37f2a6",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "{'mailing_address': 'Box 243, Adelaide PO E, Toronto, ON M5C 2J4', 'site_location': 'Brampton'}",
+      "expected": "Brampton - Mailing Address"
+    },
+    {
+      "benchmark_id": "ff190825d59b864f",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9792,
+        "name_score": 0.9714,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "21 Sylvan St, Kenora, ON P9N 3W7, Canada",
+      "expected": "21 Sylvan St W, Kenora, ON P9N 3W7"
+    },
+    {
+      "benchmark_id": "f15f40fdbd8db073",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "50 College Dr, North Bay, ON P1B 5A4, Canada",
+      "expected": "50 College Dr, North Bay, ON P1B 5A4"
+    },
+    {
+      "benchmark_id": "1540f0658e0354d2",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "277 Stone Church Rd E, Hamilton, ON L9B 1B1, Canada",
+      "expected": "277 Stone Church Road East, Hamilton, ON L9B 1B1"
+    },
+    {
+      "benchmark_id": "1c7de63e8c69aaec",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "752 King St W, Kingston, ON K7L 4X3, Canada",
+      "expected": "752 King Street West"
+    },
+    {
+      "benchmark_id": "0eeb7efe3457fac4",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Queensway W, Mississauga, ON L5B 1B8, Canada",
+      "expected": "100 Queensway West"
+    },
+    {
+      "benchmark_id": "5ee578c8794913cb",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "17 Government Rd, Wawa, ON P0S 1K0, Canada",
+      "expected": "17 Government Rd, Wawa, ON P0S 1K0"
+    },
+    {
+      "benchmark_id": "ba3c59e7ed9ccb38",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "4001 Leslie Street, Toronto, Ontario, M2K 1E1, Canada",
+      "expected": "4001 Leslie Street, Toronto ON M2K 1E1"
+    },
+    {
+      "benchmark_id": "dadf2ab747bdde40",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "401 Smyth Rd, Ottawa, ON K1H 8L6, Canada",
+      "expected": "401 Smyth Road"
+    },
+    {
+      "benchmark_id": "ede1b9b432044e78",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "7750 Hurontario St, Brampton, ON L6V 3W6, Canada",
+      "expected": "7750 Hurontario Street"
+    },
+    {
+      "benchmark_id": "126773a32d3b9548",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 1.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.guardian-ida-remedysrx.ca/en/Ontario/Mississauga/Erin-Mills-IDA-Pharmacy-7045121?utm_source=google&utm_medium=maps&utm_campaign=local_presence",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147723"
+    },
+    {
+      "benchmark_id": "d8babbd6025742b4",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "519 Church St, Toronto, ON M4Y 2C9, Canada",
+      "expected": "519 Church Street"
+    },
+    {
+      "benchmark_id": "83014955be5ca8b9",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "802 7 Ave NE, Calgary, AB T2E 0N7, Canada",
+      "expected": "Calgary, Alberta"
+    },
+    {
+      "benchmark_id": "0ee13b198fd8c90d",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8235,
+        "name_score": 0.625,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.metrodrugs.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151474"
+    },
+    {
+      "benchmark_id": "6a63eafe4483d485",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9514,
+        "name_score": 1.0,
+        "address_score": 0.8462,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.foodbasics.ca/?utm_source=G&utm_medium=local&utm_campaign=google-local",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154944"
+    },
+    {
+      "benchmark_id": "d73d3fce4caaf956",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8641,
+        "name_score": 0.8132,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "96 Tillson Ave, Tillsonburg, ON N4G 3A3, Canada",
+      "expected": "96 Tillson Avenue"
+    },
+    {
+      "benchmark_id": "805ed34e5eadc1ea",
+      "field": "postal_code",
+      "category": "different_postal_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9136,
+        "name_score": 1.0,
+        "address_score": 0.7407,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      },
+      "predicted": "M4S 3C4",
+      "expected": "M4S 1Y6"
+    },
+    {
+      "benchmark_id": "d3e3a313511944d2",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7556,
+        "name_score": 0.6957,
+        "address_score": 0.7317,
+        "city_score": 0.963,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(289) 438-1540",
+      "expected": "289-438-1540 ext 555"
+    },
+    {
+      "benchmark_id": "a5d972f41eb44830",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.915,
+        "name_score": 0.8831,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "865 Regent St, Sudbury, ON P3E 3Y9, Canada",
+      "expected": "865 Regent St S, Sudbury, ON P3E 3Y9"
+    },
+    {
+      "benchmark_id": "2805c1ea95c99703",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8615,
+        "name_score": 0.8095,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1700 Dundas St Unit 1, London, ON N5W 3C9, Canada",
+      "expected": "1700 Dundas Street, Unit 1"
+    },
+    {
+      "benchmark_id": "20da8a787c5e36b9",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "49 Bathurst St #101, Toronto, ON M5V 2P2, Canada",
+      "expected": "49 Bathurst St Ste 200"
+    },
+    {
+      "benchmark_id": "ab49979b95f2e175",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2333 Wyecroft Rd Unit 8, Oakville, ON L6L 6L4, Canada",
+      "expected": "2333 Wyecroft Rd, Unit 8"
+    },
+    {
+      "benchmark_id": "e50a06e411c6824b",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "11 Meredith St W, Little Current, ON P0P 1K0, Canada",
+      "expected": "11 Meredith Street West"
+    },
+    {
+      "benchmark_id": "5d5d425f0a3b3007",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "+18669876453",
+      "expected": "416-763-1502"
+    },
+    {
+      "benchmark_id": "6099df42badb4908",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "29 Noxon St, Ingersoll, ON N5C 1B8, Canada",
+      "expected": "29 Noxon Street"
+    },
+    {
+      "benchmark_id": "f9dd20ddf8713d7b",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "20 Shelldale Crescent, Guelph, ON N1H 1C8, Canada",
+      "expected": "20 Shelldale Crescent"
+    },
+    {
+      "benchmark_id": "6a99cb3be30fd2e8",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8013,
+        "name_score": 1.0,
+        "address_score": 0.7042,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.thompsonsquarepharmacy.ca/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=219600"
+    },
+    {
+      "benchmark_id": "8d5d70796b28e936",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "90 Littles Rd, Toronto, ON M1B 5E2",
+      "expected": "1321 Neilson Rd"
+    },
+    {
+      "benchmark_id": "fab88c548f0ebc02",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "360 College St, Toronto, ON M5T 1S6, Canada",
+      "expected": "360 College St, Toronto, ON M5T 1S6"
+    },
+    {
+      "benchmark_id": "6eb089dd2be69886",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3111 Dufferin St #102, North York, ON M6A 2S7, Canada",
+      "expected": "1292 Weston Rd, (in back of pharmacy), York, ON M6M 4R3"
+    },
+    {
+      "benchmark_id": "959a9bd0899fea83",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "20 Gerrard St E, Toronto, ON M5B 2P3, Canada",
+      "expected": "20 Gerrard St E"
+    },
+    {
+      "benchmark_id": "7032b58b8583d06e",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 386-9761",
+      "expected": "1-833-575-5437"
+    },
+    {
+      "benchmark_id": "56ef24e054fd368a",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "416-226-6442",
+      "expected": "416-226-9193"
+    },
+    {
+      "benchmark_id": "8abce48ba5169116",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "196 Wentworth St N, Hamilton, ON L8L 5V7, Canada",
+      "expected": "196 Wentworth St N"
+    },
+    {
+      "benchmark_id": "bb044265a1b8a264",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "115 Delhi St, Guelph, ON N1E 4J4, Canada",
+      "expected": "115 Delhi Street"
+    },
+    {
+      "benchmark_id": "f818fe4b4c8b6b40",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 9:00 AM \u2013 7:00 PM | Tuesday: 9:00 AM \u2013 6:00 PM | Wednesday: 9:00 AM \u2013 7:00 PM | Thursday: 9:00 AM \u2013 5:00 PM | Friday: 9:00 AM \u2013 4:00 PM | Saturday: 9:00 AM \u2013 3:00 PM | Sunday: Closed",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=199187"
+    },
+    {
+      "benchmark_id": "916dffa8ebc0f12c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      },
+      "predicted": "15017 Yonge St, Aurora, ON L4G 1M5, Canada",
+      "expected": "15017 Yonge St. Suite 204 Aurora ON L4G 1M5"
+    },
+    {
+      "benchmark_id": "0ddc6dca42f5aae8",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 867-7480",
+      "expected": "416-867-7421"
+    },
+    {
+      "benchmark_id": "fae43c8707f51377",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9829,
+        "name_score": 1.0,
+        "address_score": 0.9459,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://regalhpharmacy.com/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=218482"
+    },
+    {
+      "benchmark_id": "52ca9aa5a0ec820c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "6655 Kitimat Rd #5, Mississauga, ON L5N 6J4, Canada",
+      "expected": "6655 Kitimat Rd, Unit 5, Mississauga, ON L5N 6J4"
+    },
+    {
+      "benchmark_id": "832a52be1ca0ea5a",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 530-6000",
+      "expected": "416-603-6418"
+    },
+    {
+      "benchmark_id": "d780879ebbd043b8",
+      "field": "website",
+      "category": "same_domain_different_path",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9673,
+        "name_score": 1.0,
+        "address_score": 0.8966,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://sobeyspharmacy.com/stores/airport-countryside/?utm_source=G&utm_medium=lpm&utm_campaign=Sobeys",
+      "expected": "http://sobeyspharmacy.com/location/Airport-Countryside/"
+    },
+    {
+      "benchmark_id": "495a69396d63edd7",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "14 Vaughan Rd, Toronto, ON M6G 2N1, Canada",
+      "expected": "14 Vaughn Rd"
+    },
+    {
+      "benchmark_id": "08632eac20ec7dcc",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "905-339-0200",
+      "expected": "905-339-0200 ext 1"
+    },
+    {
+      "benchmark_id": "d4858b55ebbcdd1e",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2200 Eglinton Ave W, Mississauga, ON L5M 2N1, Canada",
+      "expected": "2200 Eglinton Avenue West"
+    },
+    {
+      "benchmark_id": "dcf0e630ddcbfec0",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9872,
+        "name_score": 0.9825,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "7 St Francis Memorial Dr, Barry's Bay, ON K0J 1B0, Canada",
+      "expected": "7 St. Francis Memorial Drive"
+    },
+    {
+      "benchmark_id": "db61f54caf4f84c6",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8695,
+        "name_score": 0.8205,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "300 Gordon St, Whitby, ON L1N 5T2, Canada",
+      "expected": "118 Cochrane Street"
+    },
+    {
+      "benchmark_id": "b4e502fa14ea0a28",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "416-604-3362",
+      "expected": "416-604-0640"
+    },
+    {
+      "benchmark_id": "367d1d825891922b",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.facebook.com/305617959928006",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61082"
+    },
+    {
+      "benchmark_id": "009eacd79153a75c",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.facebook.com/446528905783991",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147847"
+    },
+    {
+      "benchmark_id": "b2b4faa84c5c1429",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1-866-366-9513",
+      "expected": "416-530-6400"
+    },
+    {
+      "benchmark_id": "29dab905762f5783",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "87 Pembroke St, Toronto, ON M5A 2N9, Canada",
+      "expected": "87 Pembroke St"
+    },
+    {
+      "benchmark_id": "0092cdbba883e103",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Meaford, ON, Canada",
+      "expected": "15 Trowbridge Street West"
+    },
+    {
+      "benchmark_id": "75051ae39072ecba",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.facebook.com/1937931106444074",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=174719"
+    },
+    {
+      "benchmark_id": "ee772f2d54c2761c",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9772,
+        "name_score": 1.0,
+        "address_score": 0.9355,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(613) 233-4443",
+      "expected": "613-233-4697"
+    },
+    {
+      "benchmark_id": "e0ba838340c5bf57",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8143,
+        "name_score": 0.8,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "60 Lacoste Blvd, Brampton, ON L6P 4B5, Canada",
+      "expected": "60 Lacoste Blvd, Unit 104, Brampton, ON L6P 4B5"
+    },
+    {
+      "benchmark_id": "f134412789473c2a",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9036,
+        "name_score": 1.0,
+        "address_score": 0.8454,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(905) 793-4844",
+      "expected": "905-793-4844 * 905-793-4843"
+    },
+    {
+      "benchmark_id": "3e44730a358fb354",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 9:00 AM \u2013 6:30 PM | Tuesday: 9:00 AM \u2013 6:30 PM | Wednesday: 9:00 AM \u2013 6:30 PM | Thursday: 9:00 AM \u2013 6:30 PM | Friday: 9:00 AM \u2013 6:30 PM | Saturday: 9:00 AM \u2013 2:00 PM | Sunday: Closed",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61105"
+    },
+    {
+      "benchmark_id": "b643f83a84e96975",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7673,
+        "name_score": 0.68,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "7325 Yonge St, Innisfil, ON L9S 2M6, Canada",
+      "expected": "7325 Yonge St, Innisfil, ON L9S 2M6"
+    },
+    {
+      "benchmark_id": "dfe6b1ddc19d1afc",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8094,
+        "name_score": 0.6667,
+        "address_score": 0.8409,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://pharmachoice.com/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61101"
+    },
+    {
+      "benchmark_id": "7e2c5bb7ccc5b309",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2075 Bayview Ave, North York, ON M4N 3M5, Canada",
+      "expected": "2075 Bayview Avenue, M4K 3G9"
+    },
+    {
+      "benchmark_id": "fcd22b031e173a57",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Frank Miller Dr, Huntsville, ON P1H 1H7, Canada",
+      "expected": "100 Frank Miller Drive"
+    },
+    {
+      "benchmark_id": "28d9c6412edc3407",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 9:00 \u2013 11:00 AM | Tuesday: 9:00 \u2013 11:00 AM | Wednesday: 9:00 \u2013 11:00 AM | Thursday: 1:00 \u2013 3:00 PM | Friday: 1:00 \u2013 3:00 PM | Saturday: Closed | Sunday: Closed",
+      "expected": "416-469-6580 ext. 2517"
+    },
+    {
+      "benchmark_id": "bede8c77f786fd01",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "399 Bathurst Street, Toronto, ON, Canada, Ontario",
+      "expected": "5th Floor, Gilgan Family Wing, Room 5G-122, St. Joseph's Hospital (Unity Health Toronto)"
+    },
+    {
+      "benchmark_id": "c78bd4b3c34dc910",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9901,
+        "name_score": 1.0,
+        "address_score": 0.972,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(902) 706-8205",
+      "expected": "1-866-938-6492"
+    },
+    {
+      "benchmark_id": "95069b184a020791",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8545,
+        "name_score": 0.8,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1331 Precipice Rd, Haliburton County, ON K0M 1S0, Canada",
+      "expected": "7199 Gelert Road, P.O. Box 115"
+    },
+    {
+      "benchmark_id": "dbfae702a499a30b",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "150 Sherway Dr, Etobicoke, ON M9C 1A5",
+      "expected": "150 Sherway Drive"
+    },
+    {
+      "benchmark_id": "e730ad96428a41d8",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2075 Bayview Ave, Toronto, ON M4N 3M5",
+      "expected": "2075 Bayview Avenue"
+    },
+    {
+      "benchmark_id": "336afa072ed416dc",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9931,
+        "name_score": 0.9905,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "840 McConnell Ave, Cornwall, ON K6H 5S5, Canada",
+      "expected": "840 McConnell Avenue"
+    },
+    {
+      "benchmark_id": "20bdf99969edbccc",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "200 Church St., Toronto, Ontario M9N 1N8",
+      "expected": "200 Church Street"
+    },
+    {
+      "benchmark_id": "c299abfe57a772fe",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8737,
+        "name_score": 0.8,
+        "address_score": 0.8667,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/sams-ida-pharmacy-7008620",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120404"
+    },
+    {
+      "benchmark_id": "e13cda82d6ae020a",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "98 Shipley St, Clinton, ON N0M 1L0, Canada",
+      "expected": "98 Shipley St"
+    },
+    {
+      "benchmark_id": "a5670bd86f6ea976",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "75 Spring St, Almonte, ON K0A 1A0, Canada",
+      "expected": "75 Spring Street"
+    },
+    {
+      "benchmark_id": "06733c467b765d83",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "310 Juliana Dr, Woodstock, ON N4V 0A6, Canada",
+      "expected": "310 Juliana Drive"
+    },
+    {
+      "benchmark_id": "e654cfc9123834dd",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3020 Lawrence Avenue East, Scarborough, Toronto ON M1P 2T7",
+      "expected": "3020 Lawrence Ave E"
+    },
+    {
+      "benchmark_id": "f93ee4c2f69deeee",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9517,
+        "name_score": 1.0,
+        "address_score": 0.8471,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://dayspringmedical.ca/dayspring-pharmacy/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=172507"
+    },
+    {
+      "benchmark_id": "b365e9b4213fb00e",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "911 Queen's Blvd, Kitchener, Ontario, Canada",
+      "expected": "911 Queen\u2019s Boulevard, N2M 1B2"
+    },
+    {
+      "benchmark_id": "97401fcecf680e19",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9321,
+        "name_score": 0.9067,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1112 St Andrews Dr, Midland, ON L4R 4P4, Canada",
+      "expected": "1112 St. Andrew's Drive"
+    },
+    {
+      "benchmark_id": "476f391fc76449a6",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 481-4451",
+      "expected": "416-923-0800"
+    },
+    {
+      "benchmark_id": "9dfc554f7b9c6ecc",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "12531 Kennedy Road, Caledon, ON L7C 3T6",
+      "expected": "12531 Kennedy Rd, Caledon, ON L7C 3T6"
+    },
+    {
+      "benchmark_id": "de9444314cbf2130",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8182,
+        "name_score": 0.75,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3030 Birchmount Rd, Scarborough, ON M1W 3W3, Canada",
+      "expected": "3030 Birchmount Road"
+    },
+    {
+      "benchmark_id": "845b0d73ff21686a",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "750 Great Northern Rd, Sault Ste. Marie, ON P6B 0A8, Canada",
+      "expected": "750 Great Northern Road"
+    },
+    {
+      "benchmark_id": "45b681309e013c02",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.933,
+        "name_score": 0.9091,
+        "address_score": 0.9091,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.pocketpills.com/?utm_source=google&utm_medium=organic&utm_campaign=google-my-business&utm_content=eastern-canada-listing&utm_term=website-link",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=199105"
+    },
+    {
+      "benchmark_id": "7676b206781a387e",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "5 The Market Place Above street-level Crescent Town Market Place, East York, ON M4C 5M2, Canada",
+      "expected": "5 The Market Place, East York, ON M4C 5M2"
+    },
+    {
+      "benchmark_id": "9efc1339c5f04bd3",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "76 Grenville St, Toronto, ON M5S 1B2, Canada",
+      "expected": "76 Grenville St, Toronto, ON M5S 1B2"
+    },
+    {
+      "benchmark_id": "e751f82745d7f5e8",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "241 Eighth St, Cochrane, ON P0L 1C0, Canada",
+      "expected": "241 Eighth Street"
+    },
+    {
+      "benchmark_id": "02bb378671adf033",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "250 Dundas St W Suite 401, Toronto, ON M5T 2Z5, Canada",
+      "expected": "700 Lawrence Ave W Ste 480"
+    },
+    {
+      "benchmark_id": "0899b89212d0a0a2",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "140 Woodbridge Ave Unit 28-29, Woodbridge, ON L4L 4K9, Canada",
+      "expected": "140 Woodbridge Ave, Unit 28-29, Woodbridge, ON L4L 4K9"
+    },
+    {
+      "benchmark_id": "055019a74e43b192",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.pharmachoice.com/locations/professional-arts/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154822"
+    },
+    {
+      "benchmark_id": "e67d9da72b9fcef2",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "90 7th Ave, Hanover, ON N4N 1N1, Canada",
+      "expected": "90-7th Avenue"
+    },
+    {
+      "benchmark_id": "ce3ae6a9edb4b3a8",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "525 Causley Street, Blind River, Ontario, P0R 1B0, CANADA",
+      "expected": "525 Causley St"
+    },
+    {
+      "benchmark_id": "1ad26c046ac13413",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "220 Toronto St S, Markdale, ON N0C 1H0, Canada",
+      "expected": "220 Toronto St S, ON N0C 1H0"
+    },
+    {
+      "benchmark_id": "895723fbb46cb0f4",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2721 Jane St Unit 9, Downsview, ON M3L 1S3, Canada",
+      "expected": "2705 Jane St, Unit 9, North York, ON M3L 1S3"
+    },
+    {
+      "benchmark_id": "d4b795194b64243c",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9792,
+        "name_score": 0.9714,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "170 Colborne St W, Orillia, ON L3V 3B5, Canada",
+      "expected": "170 Colborne Street West"
+    },
+    {
+      "benchmark_id": "9339a26067661936",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7613,
+        "name_score": 0.7073,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2 Dewside Dr 25 & 26, Brampton, ON L6R 3Y5, Canada",
+      "expected": "2 Dewside Dr, Units 25-26, Brampton, ON L6R 3Y5"
+    },
+    {
+      "benchmark_id": "559cbf003af2340e",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8553,
+        "name_score": 0.8718,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "265 Enfield Pl, Mississauga, ON L5B 3Y6, Canada",
+      "expected": "265 Enfield Place, Unit R210, Mississauga, ON L5B 3Y6"
+    },
+    {
+      "benchmark_id": "fd780604b39ad6e2",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "20260 County Rd 43, Alexandria, ON K0C 1A0, Canada",
+      "expected": "20260 County Road 43"
+    },
+    {
+      "benchmark_id": "3daf7dd2767fcee2",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8758,
+        "name_score": 0.8293,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "101 17th St E, Owen Sound, ON N4K 0A5, Canada",
+      "expected": "Box 1800 8th Street East"
+    },
+    {
+      "benchmark_id": "1348aed7c6839072",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "416-665-3209",
+      "expected": "416-665-7636"
+    },
+    {
+      "benchmark_id": "d90ebdc6b6e1579f",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8322,
+        "name_score": 0.7692,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "850 King St W, Kitchener, ON N2G 1G5, Canada",
+      "expected": "853 King Street West"
+    },
+    {
+      "benchmark_id": "802392e6e94cfb86",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Queensway Professional Centre, 190 Sherway Dr, Unit 107, Toronto, ON M9C 5N2",
+      "expected": "Queensway Professional Centre, 190 Sherway Dr, Unit 107"
+    },
+    {
+      "benchmark_id": "a37d2e8a182d88dd",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "596 Davis Dr, Newmarket, ON L3Y 2P9, Canada",
+      "expected": "596 Davis Drive"
+    },
+    {
+      "benchmark_id": "596a9173350f8924",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.972,
+        "name_score": 0.9615,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "30 The Queensway, Toronto, ON M6R 1B5, Canada",
+      "expected": "30 The Queensway, Ground Floor, East Wing, M6R 1B5"
+    },
+    {
+      "benchmark_id": "5e368c006dcb868e",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9549,
+        "name_score": 1.0,
+        "address_score": 0.8571,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.shoppersdrugmart.ca/en/stores/934-shoppers-drug-mart-broadway-and-townline/?utm_source=G&utm_medium=lpm&utm_campaign=LPM_SDM",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61047"
+    },
+    {
+      "benchmark_id": "56c9474a89536575",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "135 Dawson St, Thessalon, ON P0R 1L0, Canada",
+      "expected": "135 Dawson St, Thessalon, ON P0R 1L0"
+    },
+    {
+      "benchmark_id": "1018d8ac5b320b47",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 9:00 AM \u2013 8:00 PM | Tuesday: 9:00 AM \u2013 8:00 PM | Wednesday: 9:00 AM \u2013 8:00 PM | Thursday: 9:00 AM \u2013 8:00 PM | Friday: 9:00 AM \u2013 8:00 PM | Saturday: 9:00 AM \u2013 6:00 PM | Sunday: 10:00 AM \u2013 4:00 PM",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151406"
+    },
+    {
+      "benchmark_id": "2fa44a1c0721c085",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.shoppersdrugmart.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120797"
+    },
+    {
+      "benchmark_id": "6564b49ab101f800",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "905-693-4250 ext 0",
+      "expected": "1-877-517-2237"
+    },
+    {
+      "benchmark_id": "392df85633da23c0",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "58 Anson Dr, Iroquois Falls, ON P0K 1E0, Canada",
+      "expected": "58 Anson Dr"
+    },
+    {
+      "benchmark_id": "600fa8d1a9b4e9c4",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "58 Goodall St, Dryden, ON P8N 2Z6, Canada",
+      "expected": "58 Goodall St, Dryden, ON P8N 2Z6"
+    },
+    {
+      "benchmark_id": "f275649c96e65997",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Frank Miller Dr, Huntsville, ON P1H 1H7, Canada",
+      "expected": "100 Frank Miller Drive, Huntsville, ON P1H 1H7"
+    },
+    {
+      "benchmark_id": "0c023f60e59ac1a1",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8545,
+        "name_score": 0.8,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1141 Carling Ave, Ottawa, ON K1Y 1G4, Canada",
+      "expected": "1145 Carling Avenue"
+    },
+    {
+      "benchmark_id": "713e58e1795b4833",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "725 Coursol Road, Sturgeon Falls, ON P2B 2Y6",
+      "expected": "725 Coursol Rd, Sturgeon Falls, ON P2B 2Y6"
+    },
+    {
+      "benchmark_id": "2b280f3768f5b0df",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "507 8th Ave, Matheson, ON P0K 1N0, Canada",
+      "expected": "507 8th Ave"
+    },
+    {
+      "benchmark_id": "033d4d0e831d6b1f",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(613) 361-6363",
+      "expected": "613-938-8506"
+    },
+    {
+      "benchmark_id": "48534185a3fe1796",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9314,
+        "name_score": 1.0,
+        "address_score": 0.7826,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.shoppersdrugmart.ca/en/stores/1168-shoppers-drug-mart-acton/?utm_source=G&utm_medium=lpm&utm_campaign=LPM_SDM",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154200"
+    },
+    {
+      "benchmark_id": "755652d1769275cc",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Frank Miller Dr, Huntsville, ON P1H 1H7, Canada",
+      "expected": "100 Frank Miller Drive"
+    },
+    {
+      "benchmark_id": "7909169b7d015b79",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "75 Charles St, Brockville, ON K6V 1S8, Canada",
+      "expected": "75 Charles Street"
+    },
+    {
+      "benchmark_id": "34a08a09441cb13c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "190 Elizabeth St, Toronto, ON M5G 2C4, Canada",
+      "expected": "190 Elizabeth St."
+    },
+    {
+      "benchmark_id": "20c9ce1a075d93fd",
+      "field": "postal_code",
+      "category": "different_postal_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9141,
+        "name_score": 1.0,
+        "address_score": 0.9091,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "L5A 4E4",
+      "expected": "L5A 2G9"
+    },
+    {
+      "benchmark_id": "b91ae945c3836bc6",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "600 University Ave, Toronto, ON M5G 1X5, Canada",
+      "expected": "600 University Avenue"
+    },
+    {
+      "benchmark_id": "13b4657bb12f97e1",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(613) 361-6363",
+      "expected": "613-361-6363 Ext 8151 | 1-888-286-5437 Ext 815"
+    },
+    {
+      "benchmark_id": "9a2f725efa6e4d74",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "125 Hogan Rd, Nipigon, ON P0T 2J0, Canada",
+      "expected": "125 Hogan Rd, Nipigon, ON P0T 2J0"
+    },
+    {
+      "benchmark_id": "0ecb3ea83e5cf80d",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "38 Elizabeth St, Guelph, ON N1E 2X2",
+      "expected": "Administration Office, Guelph, ON N1E 2X2"
+    },
+    {
+      "benchmark_id": "2d2ed68e1a566644",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "6 Albert St, Parry Sound, ON P2A 3A4, Canada",
+      "expected": "6 Albert Street"
+    },
+    {
+      "benchmark_id": "ca65c90df77efcfd",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "200 Terrace Hill St, Brantford, ON N3R 1G9, Canada",
+      "expected": "200 Terrace Hill Street"
+    },
+    {
+      "benchmark_id": "5c2fead1c2969af3",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "200 Fletcher Crescent, Alliston, ON L9R 1W7, Canada",
+      "expected": "200 Fletcher Cr., L9R 1W7"
+    },
+    {
+      "benchmark_id": "1f2a0f1aa29f138d",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "278 Front St, Hornepayne, ON P0M 1Z0, Canada",
+      "expected": "278 Front St, Hornepayne, ON P0M 1Z0"
+    },
+    {
+      "benchmark_id": "a9892e30bc8b9fdc",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Queensway W, Mississauga, ON L5B 1B8, Canada",
+      "expected": "100 Queensway West"
+    },
+    {
+      "benchmark_id": "2ba4a4ae21d93195",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1 Princess Anne Drive, Georgetown, ON, L7G 2B8",
+      "expected": "1 Princess Anne Drive"
+    },
+    {
+      "benchmark_id": "f3982f3a16786e1d",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "430 Cannon St E, Hamilton, ON L8L 2C8, Canada",
+      "expected": "181 Main Street West"
+    },
+    {
+      "benchmark_id": "56ef3f4cbcf98223",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9803,
+        "name_score": 1.0,
+        "address_score": 0.9375,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.shoppersdrugmart.ca/en/stores/1320-shoppers-drug-mart-king-and-peter/?utm_source=G&utm_medium=lpm&utm_campaign=LPM_SDM",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120779"
+    },
+    {
+      "benchmark_id": "12882aa3ef3f333d",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Springhill, Whitby, North Yorkshire, YO21 1DP",
+      "expected": "300 Gordon Street"
+    },
+    {
+      "benchmark_id": "af19e252a6c97cf7",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.shoppersdrugmart.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120759"
+    },
+    {
+      "benchmark_id": "07718aacddca5461",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8321,
+        "name_score": 0.7179,
+        "address_score": 0.8444,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/brampton-queen-st/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=220237"
+    },
+    {
+      "benchmark_id": "72a7dd2bcdf4e447",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7857,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "114 Cumberland St, Toronto, ON M5R 1A6, Canada",
+      "expected": "114 Cumberland St, Toronto, ON M5S 2W7"
+    },
+    {
+      "benchmark_id": "590520f9a8070fe8",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9823,
+        "name_score": 0.9756,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "8 Richmond Park Dr, Napanee, ON K7R 2B5, Canada",
+      "expected": "8 Richmond Park Drive"
+    },
+    {
+      "benchmark_id": "272de24799393b07",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8322,
+        "name_score": 0.7692,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "850 King St W, Kitchener, ON N2G 1G5, Canada",
+      "expected": "853 King Street West"
+    },
+    {
+      "benchmark_id": "363cf8bba41fbbcc",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8182,
+        "name_score": 0.75,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "88 Maplewood Ave, Hamilton, ON L8M 1W9, Canada",
+      "expected": "88 Maplewood Avenue Hamilton, ON L8M 1W9"
+    },
+    {
+      "benchmark_id": "96d58cdb422bf7df",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://golfdalemedical.ca/pharmacy",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=150667"
+    },
+    {
+      "benchmark_id": "a177bb6556af272d",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "171 E Liberty St Unit 102, Toronto, ON M6K 3P6, Canada",
+      "expected": "171 Liberty St E, Unit 102, Toronto, ON M6K 3P6"
+    },
+    {
+      "benchmark_id": "7e020ea768cb5577",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://medcab.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=200045"
+    },
+    {
+      "benchmark_id": "b999c0dcc017fb58",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.982,
+        "name_score": 1.0,
+        "address_score": 0.9429,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.metro.ca/find-a-store/details.en.html?id=330&utm_source=G&utm_medium=local&utm_campaign=google-local",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151005"
+    },
+    {
+      "benchmark_id": "5d52f5f6fa81cb00",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "60 West Dr, Brampton, ON L6T 3T6, Canada",
+      "expected": "60 West Drive, Suite 201"
+    },
+    {
+      "benchmark_id": "a7780205f70edd38",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7908,
+        "name_score": 0.7123,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "41 Ramsey Lake Rd, Greater Sudbury, ON P3E 5J1, Canada",
+      "expected": "41 Ramsey Lake Rd"
+    },
+    {
+      "benchmark_id": "02b1a1c4e2711e8e",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9388,
+        "name_score": 0.9474,
+        "address_score": 0.8764,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/woodbridge",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=170226"
+    },
+    {
+      "benchmark_id": "5cfa7fb1b6821024",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8881,
+        "name_score": 0.8462,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "101 Progress Crescent, Kapuskasing, ON P5N 3H5, Canada",
+      "expected": "101 Progress Crescent, P5N 3H5"
+    },
+    {
+      "benchmark_id": "7cd94b195470dd40",
+      "field": "postal_code",
+      "category": "different_postal_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7493,
+        "name_score": 0.7619,
+        "address_score": 0.6071,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "L5A 4E1",
+      "expected": "L5A 4K3"
+    },
+    {
+      "benchmark_id": "b4a97cc47590f3e9",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "265 Dundas St E, Belleville, ON K8N 5A9, Canada",
+      "expected": "265 Dundas Street East"
+    },
+    {
+      "benchmark_id": "a4946e8c0abef003",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8664,
+        "name_score": 0.8163,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "90 Burnhamthorpe Rd W, Mississauga, ON L5B 3C3, Canada",
+      "expected": "2180 Speakman Drive, Ground Floor"
+    },
+    {
+      "benchmark_id": "3cfce2f17a08b496",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7647,
+        "name_score": 1.0,
+        "address_score": 0.3333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(888) 486-8236",
+      "expected": "416-486-8046"
+    },
+    {
+      "benchmark_id": "ce0d6f727e889639",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "76 Grenville St, Toronto, ON M5S 1B2, Canada",
+      "expected": "76 Grenville St, Toronto, ON M5S 1B2"
+    },
+    {
+      "benchmark_id": "60e85aad690b4760",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "20 Lynch St, Brampton, ON L6W 2Z8, Canada",
+      "expected": "20 Lynch Street"
+    },
+    {
+      "benchmark_id": "709a3c0c31c353ce",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1101 McBride Ave, Mississauga, ON L5C 1M6, Canada",
+      "expected": "1101 McBride Ave, Mississauga, ON L5C 1M6"
+    },
+    {
+      "benchmark_id": "cc8735ce45404951",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "146 Oliver Rd, Campbellford, ON K0L 1L0, Canada",
+      "expected": "146 Oliver Road"
+    },
+    {
+      "benchmark_id": "811db81bd107eef2",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "175 Commerce Valley Drive West, Markham, ON, CANADA",
+      "expected": "175 Commerce Valley Drive West, Suite 300, Markham, Ontario L3T 7P6"
+    },
+    {
+      "benchmark_id": "182239b36e50c854",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.nofrills.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151656"
+    },
+    {
+      "benchmark_id": "dd823e728f8b4032",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "200 Terrace Hill St, Brantford, ON N3R 1G9, Canada",
+      "expected": "200 Terrace Hill Street"
+    },
+    {
+      "benchmark_id": "de559a5cb20719e1",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2385 Burnhamthorpe Rd W #6, Mississauga, ON L5L 6A4, Canada",
+      "expected": "2385 Burnhamthorpe Rd W, Unit 6, Mississauga, ON L5L 6A4"
+    },
+    {
+      "benchmark_id": "29ce3970135df3b2",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/theodore-pharmacy-7057664",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=200224"
+    },
+    {
+      "benchmark_id": "5c93803bf9e7016b",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8182,
+        "name_score": 0.75,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "150 Huston St, Burk's Falls, ON P0A 1C0, Canada",
+      "expected": "150 Houston St"
+    },
+    {
+      "benchmark_id": "eb53a7ade08ec403",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2401 Bristol Cir Unit 105, Oakville, ON L6H 5S9, Canada",
+      "expected": "Oakville Trafalgar Memorial Hospital, L6M 0L8"
+    },
+    {
+      "benchmark_id": "666b3309965da344",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "425 Cherry St, Toronto, ON M5A 0X9, Canada",
+      "expected": "22 Vaughn Rd"
+    },
+    {
+      "benchmark_id": "249da7f20f1169be",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3363 Bloor St W, Toronto, ON, M8X 1G2, Canada",
+      "expected": "Bloor/Islington (Etobicoke)"
+    },
+    {
+      "benchmark_id": "2b9e20a978d99c20",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "795 Eglinton Ave E, East York, ON M4G 4E4, Canada",
+      "expected": "795 Eglinton Ave E"
+    },
+    {
+      "benchmark_id": "fbc312367810dba1",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "170 Dorion Loop Road, Dorion, Ontario P0T 1K0",
+      "expected": "170 Dorion Loop Road"
+    },
+    {
+      "benchmark_id": "a86578e8ef8cae0b",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "4211 Yonge St #302, North York, ON M2P 2A9, Canada",
+      "expected": "5th Floor, Morrow/Gilgan Family Wing, St. Joseph's Health Centre"
+    },
+    {
+      "benchmark_id": "f5931827a0ada61b",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2450 Old Bronte Rd Unit C, Oakville, ON L6M 5P6, Canada",
+      "expected": "2450 Old Bronte Rd, Unit C, Oakville, ON L6M 5P6"
+    },
+    {
+      "benchmark_id": "6d31aecb41af5d47",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "131 Frederick Campbell Street, Fergus, Ontario N1M 0H3",
+      "expected": "131 Frederick Campbell Street"
+    },
+    {
+      "benchmark_id": "1017cbf0233fc112",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "625 Runnymede Rd, Toronto, ON M6S 3A3, Canada",
+      "expected": "625 Runnymede Road"
+    },
+    {
+      "benchmark_id": "df355dc4127441a8",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9707,
+        "name_score": 0.9524,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "15 Roncesvalles Ave, Toronto, ON M6R 2K2, Canada",
+      "expected": "15 Roncesvalles Ave, Toronto, ON M6R 2K2"
+    },
+    {
+      "benchmark_id": "b5053c8d52e4feb9",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2441 Lakeshore Rd W, Oakville, ON L6L 1H6, Canada",
+      "expected": "Bronte Village Mall, 2441 Lakeshore Rd W, Unit 2"
+    },
+    {
+      "benchmark_id": "ee5220d70c77c49a",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "699 Concession St, Hamilton, ON L8V 5C2, Canada",
+      "expected": "699 Concession Street Hamilton, ON L8V 5C2"
+    },
+    {
+      "benchmark_id": "83e86c5ff21698ce",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "217 Turcotte Park Rd, Mattawa, ON P0H 1V0, Canada",
+      "expected": "P.O. Box 70, 217 Turcotte Park Road"
+    },
+    {
+      "benchmark_id": "39dd24c0acac665c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "76 Grenville St, Toronto, ON M5S 1B2, Canada",
+      "expected": "76 Grenville St."
+    },
+    {
+      "benchmark_id": "a418f3457a0bf4bf",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "55 Ontario St S, Milton, ON L9T 2M3, Canada",
+      "expected": "45 Bruce Street"
+    },
+    {
+      "benchmark_id": "be1f8ca0d5d849db",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/true-light-pharmacy-7040321",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=150902"
+    },
+    {
+      "benchmark_id": "6ed91f5bb4a637c3",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Manitouwadge, ON P0T 2C0, Canada",
+      "expected": "2 Manitou rd Community Centre, Manitou Road"
+    },
+    {
+      "benchmark_id": "5eb9b6d81f75fada",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "85 Aventura Ct, Mississauga, ON L5T 2Y6, Canada",
+      "expected": "85 Aventura Court, L5T 2Y6"
+    },
+    {
+      "benchmark_id": "5affe170f71bb33d",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9238,
+        "name_score": 1.0,
+        "address_score": 0.7586,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://britannia-pharmacy.com/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147679"
+    },
+    {
+      "benchmark_id": "d88ea7d8d0eecfba",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 9:00 AM \u2013 7:01 PM | Tuesday: 9:00 AM \u2013 7:00 PM | Wednesday: 9:00 AM \u2013 7:00 PM | Thursday: 9:00 AM \u2013 7:00 PM | Friday: 9:00 AM \u2013 7:00 PM | Saturday: 9:00 AM \u2013 5:00 PM | Sunday: 10:00 AM \u2013 4:00 PM",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61001"
+    },
+    {
+      "benchmark_id": "f91579f2f47384aa",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9852,
+        "name_score": 0.9796,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1 Health Care Cres, Manitouwadge, ON P0T 2C0, Canada",
+      "expected": "1 Health Care Crescent"
+    },
+    {
+      "benchmark_id": "97d16704fe6575d5",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "659 Dundas St, London, ON N5W 2Z1, Canada",
+      "expected": "659 Dundas Street East"
+    },
+    {
+      "benchmark_id": "ddc0f44c90cbba5f",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "242 King St, Trenton, ON K8V 5S6, Canada",
+      "expected": "242 King Street"
+    },
+    {
+      "benchmark_id": "bfb8d5ef9ce050a0",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 0.875,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      },
+      "predicted": "2 Poyntz St #101, Penetanguishene, ON L9M 1M2, Canada",
+      "expected": "101 - 2 Poyntz Street"
+    },
+    {
+      "benchmark_id": "972bc4b00c697269",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Main entrance, John Sutherland Drive",
+      "expected": "3045 Baseline Road"
+    },
+    {
+      "benchmark_id": "35681898e468f205",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "75 Parkview Rd, Hagersville, ON N0A 1H0, Canada",
+      "expected": "75 Parkview Road"
+    },
+    {
+      "benchmark_id": "05824cc83bfa871b",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "19 Hospital Dr, Moose Factory, ON P0L 0A2, Canada",
+      "expected": "19 Hospital Dr, Moose Factory, ON P0L 1W0"
+    },
+    {
+      "benchmark_id": "cf025c9e878f156d",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9192,
+        "name_score": 0.8889,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "229 Nelson St W, Meaford, ON N4L 1A3, Canada",
+      "expected": "229 Nelson St W, ON N4L 1A3"
+    },
+    {
+      "benchmark_id": "95415f0f58271f6b",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "36B Prince Arthur Ave, Toronto, ON M5R 1B5, Canada",
+      "expected": "36B Prince Arthur Avenue"
+    },
+    {
+      "benchmark_id": "467517dc21d1b12b",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9078,
+        "name_score": 0.8732,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "611 Prospect Blvd, Midland, ON L4R 4K3, Canada",
+      "expected": "611 Prospect Boulevard"
+    },
+    {
+      "benchmark_id": "b8c5285ec6292143",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "201 Georgian Dr, Barrie, ON L4M 6M2, Canada",
+      "expected": "201 Georgian Dr, Barrie, ON L4M 6M2"
+    },
+    {
+      "benchmark_id": "c59b9dc0ed3a80f6",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "150 Delhi St, Guelph, ON N1E 6K9, Canada",
+      "expected": "150 Delhi Street"
+    },
+    {
+      "benchmark_id": "b2314c2c038720e4",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "552 Adelaide St W, Toronto, ON M5V 3W8, Canada",
+      "expected": "552 Adelaide St. W"
+    },
+    {
+      "benchmark_id": "5bc8e2ea2c6256b8",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.986,
+        "name_score": 0.9808,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "6275 Indian Ln, Kettle and Stony Point, ON N0N 1J1, Canada",
+      "expected": "6275 Indian Lane, RR #2"
+    },
+    {
+      "benchmark_id": "81b4a8f11e3c7e00",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "905-677-0889",
+      "expected": "905-790-0808"
+    },
+    {
+      "benchmark_id": "05446c4663a10e10",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 10:00 AM \u2013 6:00 PM | Tuesday: 10:00 AM \u2013 6:00 PM | Wednesday: 10:00 AM \u2013 6:00 PM | Thursday: 10:00 AM \u2013 6:00 PM | Friday: 10:00 AM \u2013 6:00 PM | Saturday: 10:00 AM \u2013 3:00 PM | Sunday: Closed",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151204"
+    },
+    {
+      "benchmark_id": "4ff5d3a68a56b551",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "550 Matheson Blvd W #106, Mississauga, ON L5R 4B8, Canada",
+      "expected": "Heartland Town Centre, 550 Matheson Blvd W, Unit 106, Mississauga, ON L5R 4B8"
+    },
+    {
+      "benchmark_id": "bb4aeb9dec744d32",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "840 McConnell Avenue, Cornwall, Ontario, K6H5S5",
+      "expected": "840 McConnell Avenue"
+    },
+    {
+      "benchmark_id": "2bf7ce1ef3afad9f",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "365 Evans Ave, Toronto, ON, M8Z 1K2",
+      "expected": "365 Evans Ave, Unit 105A, Toronto, ON M8Z 1K2"
+    },
+    {
+      "benchmark_id": "62a01f8f60193729",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "107 Kelly Rd, Smooth Rock Falls, ON P0L 2B0, Canada",
+      "expected": "107 Kelly Rd, Smooth Rock Falls, ON P0L 2B0"
+    },
+    {
+      "benchmark_id": "f99ba2bbaa5e4b41",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "600 University Ave, Toronto, ON M5G 1X5, Canada",
+      "expected": "600 University Avenue, Toronto, ON M5G 1X5"
+    },
+    {
+      "benchmark_id": "7685b4d990d93025",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "630 Dublin Street, Mount Forest, Ontario N0G 2L3",
+      "expected": "525 Dublin Street"
+    },
+    {
+      "benchmark_id": "3f515bc680af5d1c",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "19 Hospital Dr, Moose Factory, ON P0L 0A2, Canada",
+      "expected": "19 Hospital Drive, Box 664"
+    },
+    {
+      "benchmark_id": "e1210c6a3e6c65f4",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.getwellrx.ca/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154382"
+    },
+    {
+      "benchmark_id": "1fb8bb7ecc0dfeca",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8155,
+        "name_score": 0.6452,
+        "address_score": 0.8889,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/brampton-castlemore",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61092"
+    },
+    {
+      "benchmark_id": "8dbe78a83b0144d5",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "270 Carling Terrace, Wingham, ON N0G 2W0, Canada",
+      "expected": "270 Carling Terrace, N0G 2W0"
+    },
+    {
+      "benchmark_id": "c2f75dfad2c36613",
+      "field": "phone",
+      "category": "different_number_or_area_code",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(905) 451-1100",
+      "expected": "416-863-0511"
+    },
+    {
+      "benchmark_id": "99c4a5c28c3fc3e6",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8242,
+        "name_score": 0.6897,
+        "address_score": 0.8571,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/toronto-balmoral",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=131401"
+    },
+    {
+      "benchmark_id": "2e78b89a8898a720",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8891,
+        "name_score": 1.0,
+        "address_score": 0.6857,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 645-6000",
+      "expected": "416-645-6000 ext 2512, 1367"
+    },
+    {
+      "benchmark_id": "5655b1ad93c7d665",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Minden, Minden Hills, ON K0M 2K0, Canada",
+      "expected": "4575 Deep Bay Road"
+    },
+    {
+      "benchmark_id": "79c65ceacc8825ea",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "278 Front St, Hornepayne, ON P0M 1Z0, Canada",
+      "expected": "278 Front St, Hornepayne, ON P0M 1Z0"
+    },
+    {
+      "benchmark_id": "6e5c3bede66624d9",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8384,
+        "name_score": 0.7778,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "41 Ramsey Lake Rd, Greater Sudbury, ON P3E 5J1, Canada",
+      "expected": "41, chemin du lac Ramsey Lake Road"
+    },
+    {
+      "benchmark_id": "ca2827b4b34ad0aa",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "145 Queenston St, St. Catharines, ON L2R 2Z9, Canada",
+      "expected": "145 Queenston Street, Suite 100"
+    },
+    {
+      "benchmark_id": "c028f3531a855831",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "160 Jarvis St, Toronto, ON M5B 2E1, Canada",
+      "expected": "160 Jarvis Avenue"
+    },
+    {
+      "benchmark_id": "1b8ccd7ef05d4005",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7857,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "85 Steeles Ave W, Brampton, ON L6Y 0B5, Canada",
+      "expected": "85 Steeles Ave W, Brampton, ON L6Y 0K3"
+    },
+    {
+      "benchmark_id": "f83dcba22fc07b84",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "404 McArthur Ave., Ottawa, ON K1K 1G8, Canada",
+      "expected": "404 McArthur Ave, Ottawa, ON K1K 1G8"
+    },
+    {
+      "benchmark_id": "6eb4f397fc7daa07",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "345 Queen Street, Acton, ON L7J 1N1",
+      "expected": "345 Queen St E, Acton, ON L7J 1R1"
+    },
+    {
+      "benchmark_id": "d7385ff952865135",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "725 Bronte Street South, Milton, ON, L9T 9K1",
+      "expected": "30 Derry Road East"
+    },
+    {
+      "benchmark_id": "c61a31923c069025",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "{'mailing_address': 'PO Box 910, Longlac, ON P0T 2A0', 'street_address': '99 Skinner Ave, Longlac, ON'}",
+      "expected": "99 Skinner Avenue, P.O. Box 910"
+    },
+    {
+      "benchmark_id": "bc0c70906d5e4b90",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2111 Finch Avenue West, Toronto, Ontario M3N 1N1",
+      "expected": "2111 Finch Avenue West"
+    },
+    {
+      "benchmark_id": "caf9418cfa8e5be3",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8636,
+        "name_score": 0.8,
+        "address_score": 0.8348,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/caledon-village",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=199034"
+    },
+    {
+      "benchmark_id": "7b04f16601e78761",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2163 Sixth Line, Oakville, ON L6H 3N7, Canada",
+      "expected": "2163 Sixth Line, Unit A3"
+    },
+    {
+      "benchmark_id": "df65b58ce6a0bf4b",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "9 Oakland Blvd, Elliot Lake, ON P5A 2Z2, Canada",
+      "expected": "9 Oakland Boulevard"
+    },
+    {
+      "benchmark_id": "7d966a081eb598f8",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "241 Eighth St, Cochrane, ON P0L 1C0, Canada",
+      "expected": "241 Eighth St, Cochrane, ON P0L 1C0"
+    },
+    {
+      "benchmark_id": "6c5106a1cbacc78b",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.remedys.ca/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=169760"
+    },
+    {
+      "benchmark_id": "86cee12ea554af91",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8383,
+        "name_score": 0.7619,
+        "address_score": 0.8056,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://mississaugachinesecentre.com/en/stores/jc-pharmacy/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147785"
+    },
+    {
+      "benchmark_id": "4ed85f34b8547d1c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "75 Ann St, Bracebridge, ON P1L 1L9, Canada",
+      "expected": "75 Ann Street, Bracebridge, ON P1L 2E4"
+    },
+    {
+      "benchmark_id": "1eff4d7db087ec43",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "69 Main St E, Grand Bend, ON N0M 1T0, Canada",
+      "expected": "99 Victoria Street, Box 9"
+    },
+    {
+      "benchmark_id": "bfcf80edc927af84",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "20260 County Rd 43, Alexandria, ON K0C 1A0, Canada",
+      "expected": "20260 County Road 43"
+    },
+    {
+      "benchmark_id": "487fafe990c05437",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1093 Queen Street W, Toronto, ON, M6J1J1",
+      "expected": "1093 Queen St W, Toronto, ON M6J 1J1"
+    },
+    {
+      "benchmark_id": "7b681941d7569236",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "150 Sherway Dr, Etobicoke, ON M9C 1A5, Canada",
+      "expected": "150 Sherway Dr, Etobicoke, ON M9C 1A5"
+    },
+    {
+      "benchmark_id": "fb7ef3ab2fc564e1",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9039,
+        "name_score": 0.8679,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "820 John Marks Ave, Kingston, ON K7K 0J7, Canada",
+      "expected": "820 John Marks Avenue"
+    },
+    {
+      "benchmark_id": "ae87474bc47b8067",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "135 McLaughlin Rd S, Brampton, ON L6Y 2C8, Canada",
+      "expected": "135 McLaughlin Road South"
+    },
+    {
+      "benchmark_id": "2bb24a93d028dd11",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "750 Great Northern Rd, Sault Ste. Marie, ON P6B 0A8, Canada",
+      "expected": "750 Great Northern Road"
+    },
+    {
+      "benchmark_id": "79535341cca88be3",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9153,
+        "name_score": 0.8519,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      },
+      "predicted": "723 Rymal Rd W #200, Hamilton, ON L9B 2W2, Canada",
+      "expected": "723 Rymal Rd. West Hamilton, ON L9B 2W2"
+    },
+    {
+      "benchmark_id": "d5e6007514d34fa6",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "58 Anson Dr, Iroquois Falls, ON P0K 1E0, Canada",
+      "expected": "58 Anson Drive"
+    },
+    {
+      "benchmark_id": "56c42f14bb25d1f5",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "360 Sunnyside Ave, Ottawa, ON K1S 0S4, Canada",
+      "expected": "360 Sunnyside Ave, Ottawa, ON K1S 0S4"
+    },
+    {
+      "benchmark_id": "708915f2af45d9e7",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8074,
+        "name_score": 0.7879,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "8405 Financial Dr Unit 11, Brampton, ON L6Y 0E3, Canada",
+      "expected": "8405 Financial Dr, Unit 11, Brampton, ON L6Y 0E3"
+    },
+    {
+      "benchmark_id": "81762f356343524c",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9823,
+        "name_score": 0.9756,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "8 Richmond Park Dr, Napanee, ON K7R 2B5, Canada",
+      "expected": "8 Richmond Park Drive"
+    },
+    {
+      "benchmark_id": "b5af5a292884178e",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "752 King St W, Kingston, ON K7L 4X3, Canada",
+      "expected": "752 King Street West"
+    },
+    {
+      "benchmark_id": "d7d0060b66065213",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7219,
+        "name_score": 0.6176,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "55 Dundas St E, Mississauga, ON L5A 1W1, Canada",
+      "expected": "755 Queensway E, Unit 3, Mississauga, ON L4Y 4C5"
+    },
+    {
+      "benchmark_id": "6fd15f801e9a2573",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "840 Queenston Rd Unit 826, Stoney Creek, ON L8G 4A8",
+      "expected": "Stoney Creek, Hamilton, ON L8G 1A9"
+    },
+    {
+      "benchmark_id": "8335ad890a8e1135",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1453 Prince Rd.",
+      "expected": "1030 Ouellette Avenue Room JM 2-813"
+    },
+    {
+      "benchmark_id": "3d8481bb69522376",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1824 Concession Dr, Newbury, ON N0L 1Z0, Canada",
+      "expected": "1824 Concession Dr, ON N0L 1Z0"
+    },
+    {
+      "benchmark_id": "aca2785fddb42ad4",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "4 Campbell Dr, Uxbridge, ON L9P 1S4, Canada",
+      "expected": "4 Campbell Drive"
+    },
+    {
+      "benchmark_id": "8844b0dce4eb75fa",
+      "field": "phone",
+      "category": "same_base_number_extension_or_format",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8571,
+        "name_score": 0.9762,
+        "address_score": 0.7037,
+        "city_score": 0.8462,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(905) 629-1007",
+      "expected": "905-629-1007 ext.22"
+    },
+    {
+      "benchmark_id": "c8f43033fafc24fb",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8335,
+        "name_score": 0.8831,
+        "address_score": 0.6842,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 646-5557",
+      "expected": "416-977-5580"
+    },
+    {
+      "benchmark_id": "e0676498c961f0a9",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "499 Raglan St N, Renfrew, ON K7V 1P6, Canada",
+      "expected": "499 Raglan Street North, Renfrew ON H7V 1P6"
+    },
+    {
+      "benchmark_id": "e41a0395d372d7b2",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9838,
+        "name_score": 1.0,
+        "address_score": 0.9487,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.mylocalrx.ca/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61008"
+    },
+    {
+      "benchmark_id": "1316deb87bb70c05",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7321,
+        "name_score": 0.6316,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "290 N Queen St Ste 224, Etobicoke, ON M9C 5L2, Canada",
+      "expected": "2245 Lawrence Avenue West, Etobicoke, ON M9P 3W3"
+    },
+    {
+      "benchmark_id": "7549c47b2f3d5fa7",
+      "field": "website",
+      "category": "same_domain_different_path",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8421,
+        "name_score": 1.0,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://healthone.ca/north-york/medical-walk-in-ny/?utm_source=googlelocal&utm_medium=website&utm_campaign=medical_walkin&utm_id=north-york",
+      "expected": "https://healthone.ca/north-york/pharmacy-ny/"
+    },
+    {
+      "benchmark_id": "fa39bba0f8aaa1f0",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9624,
+        "name_score": 1.0,
+        "address_score": 0.881,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.ironoakpharmacy.ca/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=219271"
+    },
+    {
+      "benchmark_id": "707406be51bc72cd",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "416-498-8600",
+      "expected": "416-498-0043"
+    },
+    {
+      "benchmark_id": "5a49f31833a14370",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "705 MacKay St, Pembroke, ON K8A 1G8, Canada",
+      "expected": "705 MacKay Street"
+    },
+    {
+      "benchmark_id": "8a0b806c28dd3868",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Main Hospital Switchboard, Toronto, ON",
+      "expected": "2867 Ellesmere Road"
+    },
+    {
+      "benchmark_id": "cb21beacb9aa76c9",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8338,
+        "name_score": 0.7714,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "21 Sylvan St, Kenora, ON P9N 3W7, Canada",
+      "expected": "21 Sylvan Street"
+    },
+    {
+      "benchmark_id": "a83fd52484be5161",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "421 Shepherdson Rd, New Liskeard, ON P0J 1P0",
+      "expected": "421 Shepherdson Road"
+    },
+    {
+      "benchmark_id": "1924e87597f3b24f",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2 Broomhead Rd, Chapleau, ON P0M 1K0, Canada",
+      "expected": "6 Broomhead Road"
+    },
+    {
+      "benchmark_id": "a72960eaebf4669a",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9757,
+        "name_score": 1.0,
+        "address_score": 0.9231,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/virgil",
+      "expected": "https://www.google.ca/maps?q=Simpson%27s+Pharmasave%2C1882+Niagara+Stone+Rd%2C+Virgil%2C+ON+L0S+1T0%2C+Canada"
+    },
+    {
+      "benchmark_id": "5a27876a32002297",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "525 Causley Street, Blind River, Ontario, P0R 1B0, Canada",
+      "expected": "525 Causley Street"
+    },
+    {
+      "benchmark_id": "163463b8baa7237b",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "120 Dorothy St, Atikokan, ON P0T 1C0, Canada",
+      "expected": "120 Dorothy Street"
+    },
+    {
+      "benchmark_id": "e7285de02f75b3f1",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8523,
+        "name_score": 0.6933,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/toronto-swansea",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151121"
+    },
+    {
+      "benchmark_id": "2bfb7af37b044f0d",
+      "field": "website",
+      "category": "same_domain_different_path",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9002,
+        "name_score": 0.9259,
+        "address_score": 0.7826,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.boggios.com/?utm_source=Google&utm_medium=maps&utm_campaign=Local_Presence",
+      "expected": "https://www.boggios.com/pharmacy/ridegway/"
+    },
+    {
+      "benchmark_id": "aadce46825d7d432",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.8039,
+        "name_score": 0.7619,
+        "address_score": 0.7619,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(613) 732-9000",
+      "expected": "613-735-7469"
+    },
+    {
+      "benchmark_id": "e2df198fc12025f1",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8323,
+        "name_score": 0.7857,
+        "address_score": 0.0,
+        "city_score": 0.9565,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Confederation Dr, Smiths Falls, ON K7A 1V6, Canada",
+      "expected": "60 Cornelia Street West"
+    },
+    {
+      "benchmark_id": "9a1ff66d640965c2",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9814,
+        "name_score": 1.0,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.ottawahospital.on.ca/",
+      "expected": "http://www.pharmaciedesjardins.ca/"
+    },
+    {
+      "benchmark_id": "a5578ee1dd1a6fae",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 9:00 AM \u2013 7:00 PM | Tuesday: 9:00 AM \u2013 7:00 PM | Wednesday: 9:00 AM \u2013 7:00 PM | Thursday: 9:00 AM \u2013 7:00 PM | Friday: 9:00 AM \u2013 7:00 PM | Saturday: 9:00 AM \u2013 3:00 PM | Sunday: Closed",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151527"
+    },
+    {
+      "benchmark_id": "0f514f1c98a2a02f",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "333 Sherbourne St, Toronto, ON M5A 2S5, Canada",
+      "expected": "333 Sherbourne St."
+    },
+    {
+      "benchmark_id": "edeaefcd6b055123",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://www.guardian-ida-remedysrx.ca/en/ontario/milton/glen-eden-pharmacy-7063184",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154884"
+    },
+    {
+      "benchmark_id": "0fa99d433768dc1f",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8769,
+        "name_score": 0.8308,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "20 Lynch St, Brampton, ON L6W 2Z8, Canada",
+      "expected": "2100 Bovaird Drive East, L6R 3J7"
+    },
+    {
+      "benchmark_id": "b759dbcf63e34fc1",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2 - 511 Ray Lawson Blvd, Brampton, ON L6Y 0N2, Canada",
+      "expected": "511 Ray Lawson Blvd, Unit 2, Brampton, ON L6Y 0N2"
+    },
+    {
+      "benchmark_id": "b431e809821f9f24",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "465 Morden Rd, Oakville, ON L6K 3W6, Canada",
+      "expected": "465 Morden Rd, Oakville, ON L6K 3W6"
+    },
+    {
+      "benchmark_id": "62ffaed8c97d9746",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "http://eglintonmedical.ca/",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151368"
+    },
+    {
+      "benchmark_id": "d3561acc96c232b6",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.7449,
+        "name_score": 0.9286,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3 Brewster Rd #19, Brampton, ON L6T 5G9, Canada",
+      "expected": "3 Brewster Rd, Unit 19, Brampton, ON L6R 0S9"
+    },
+    {
+      "benchmark_id": "9249083a85c7d366",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9809,
+        "name_score": 0.9737,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1690 Dersan St, Pickering, ON L1V 0G9, Canada",
+      "expected": "1690 Dersan Street"
+    },
+    {
+      "benchmark_id": "667a60a2363f4b43",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.797,
+        "name_score": 0.6429,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://eglinton.princerx.ca/",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147720"
+    },
+    {
+      "benchmark_id": "51d5e6f6356c68f5",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3955 Erin Centre Blvd, Mississauga, ON L5M 0H1, Canada",
+      "expected": "Erin Centre Plaza, 3955 Erin Centre Blvd"
+    },
+    {
+      "benchmark_id": "343893605673cf34",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "150 Sherway Dr, Etobicoke, ON M9C 1A5",
+      "expected": "150 Sherway Drive"
+    },
+    {
+      "benchmark_id": "0419dce34e2898b2",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "78 Admiral Rd, Toronto, ON M5R 2L6, Canada",
+      "expected": "78 Admiral Rd"
+    },
+    {
+      "benchmark_id": "57bd00a1a0ef43de",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.8695,
+        "name_score": 0.8966,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2940 Dundas St W, Toronto, ON M6P 1Y8, Canada",
+      "expected": "2940 Dundas St W, Toronto, ON M6P 1Y8"
+    },
+    {
+      "benchmark_id": "a7926c55cca71217",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2575 Danforth Ave, Toronto, ON M4C 1L5",
+      "expected": "2291 Danforth Ave, Toronto, ON M4C 1K5"
+    },
+    {
+      "benchmark_id": "bb08517c55619401",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "365 West St, Simcoe, ON N3Y 1T7, Canada",
+      "expected": "365 West Street"
+    },
+    {
+      "benchmark_id": "6d47a596a79393f6",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.7882,
+        "name_score": 1.0,
+        "address_score": 0.4,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 360-4000",
+      "expected": "416-864-3920"
+    },
+    {
+      "benchmark_id": "69ef73d086c03d9e",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "5030 Tenth Line W #5, Mississauga, ON L5M 7Z5, Canada",
+      "expected": "5030 Tenth Line W, Unit 6, Mississauga, ON L5M 7Z5"
+    },
+    {
+      "benchmark_id": "5d1ca7517cdf1a96",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.7648,
+        "name_score": 0.8163,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://pharmasave.com/store/pharmasave-shelburne-pharmacy/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=220209"
+    },
+    {
+      "benchmark_id": "53e31e9a167638ed",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8462,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "4040 Creditview Rd, Mississauga, ON L5C 3Y8, Canada",
+      "expected": "6085 Creditview Rd, Mississauga, ON L5V 2A8"
+    },
+    {
+      "benchmark_id": "89e970eb437bc4a6",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "76 Stuart St, Kingston, ON K7L 2V7, Canada",
+      "expected": "76 Stuart Street"
+    },
+    {
+      "benchmark_id": "51a5e3b1eda1d0b8",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "41 McClellan St, Tweed, ON K0K 3J0, Canada",
+      "expected": "41 McClellan Street, Post Box 99"
+    },
+    {
+      "benchmark_id": "396c38d81a12ce86",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.9792,
+        "name_score": 0.9714,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "170 Colborne St W, Orillia, ON L3V 3B5, Canada",
+      "expected": "300 Peter St N, Orillia, ON"
+    },
+    {
+      "benchmark_id": "e5bff3723f667e2a",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "169 Main St E, Grimsby, ON L3M 1P2, Canada",
+      "expected": "169 Main Street East"
+    },
+    {
+      "benchmark_id": "ca1f5c5e7b8ce156",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "610 avenue McConnell, Cornwall, ON K6H 4M1",
+      "expected": "\u00c9quipe psycho-sociale (S.D. & G.)"
+    },
+    {
+      "benchmark_id": "92f8cd8c2382df54",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "354 Read St, Merrickville, ON K0G 1N0, Canada",
+      "expected": "354 Read Street, P.O. Box 550"
+    },
+    {
+      "benchmark_id": "9436c4f44ef4cd1c",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "724 Grid Rd, Lumsden, SK S0G 3C0, Canada",
+      "expected": "Grid Rd. 724, PO Box 220, Lumsden, Saskatchewan, S0G 3C0"
+    },
+    {
+      "benchmark_id": "c849d14ee7156ba3",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "109-1265 Morningside Ave, Toronto, Ontario, M1B 3V9",
+      "expected": "109-1265 Morningside Ave"
+    },
+    {
+      "benchmark_id": "d09f03d4af5c5060",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8462,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "812 Britannia Rd W #109, Mississauga, ON L5V 0A6, Canada",
+      "expected": "Heartland Town Centre, 775 Britannia Rd W, Unit 12, Mississauga, ON L5V 2Y1"
+    },
+    {
+      "benchmark_id": "0747b51a48264c43",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "5 Airport Rd, Fort Albany, ON P0L 1H0, Canada",
+      "expected": "5 Airport Rd, Fort Albany, ON P0L 1H0"
+    },
+    {
+      "benchmark_id": "cff81c7364e85bc5",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "285 Cummer Avenue, Toronto, ON M2M 2G1",
+      "expected": "285 Cummer Avenue, M2M 2G1"
+    },
+    {
+      "benchmark_id": "9c8ae5ed207e834c",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8222,
+        "name_score": 0.7556,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1288 Danforth Ave, Toronto, ON M4J 1M6, Canada",
+      "expected": "260 Augusta Ave"
+    },
+    {
+      "benchmark_id": "35c60dd9b11d8da1",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 0.8585,
+        "name_score": 0.8571,
+        "address_score": 0.7423,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.pharmasavebrameast.com/",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=61046"
+    },
+    {
+      "benchmark_id": "5b1b4781d0e79e2d",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "488 Rue Wilbrod St, Ottawa, ON K1N 8L3, Canada",
+      "expected": "488 Wilbrod St, Ottawa, ON K1N 6M8"
+    },
+    {
+      "benchmark_id": "b4b9d8926efaf48e",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9814,
+        "name_score": 0.9744,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "459 Hume St, Collingwood, ON L9Y 3W9, Canada",
+      "expected": "459 Hume Street"
+    },
+    {
+      "benchmark_id": "48739a5bbe7e8849",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "7 St Francis Memorial Dr, Barry's Bay, ON K0J 1B0, Canada",
+      "expected": "7 St. Francis Memorial Drive"
+    },
+    {
+      "benchmark_id": "e3b54f8c6da3971d",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "3323 Bathurst St, North York, ON M6A 2B7, Canada",
+      "expected": "1065 Steeles Ave W"
+    },
+    {
+      "benchmark_id": "f8978eda96bec630",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9461,
+        "name_score": 0.9259,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "70 Spine Rd, Elliot Lake, ON P5A 1X2, Canada",
+      "expected": "70 Spine Road"
+    },
+    {
+      "benchmark_id": "475ec225e94bef5a",
+      "field": "phone",
+      "category": "same_area_code_different_number",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.7584,
+        "name_score": 0.7826,
+        "address_score": 0.6053,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "(416) 645-6000",
+      "expected": "416-572-3575"
+    },
+    {
+      "benchmark_id": "4259e58e25a419dd",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.facebook.com/pages/Drug-Centre-Discount-Pharmacy/148939515136278",
+      "expected": "https://www.torontocentralhealthline.ca/displayService.aspx?id=150843"
+    },
+    {
+      "benchmark_id": "7a20905d87518e1e",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "333 Sherbourne St, Toronto, ON M5A 2S5, Canada",
+      "expected": "333 Sherbourne St"
+    },
+    {
+      "benchmark_id": "3e1fcaba807cb4d1",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Springhill, Whitby, North Yorkshire, YO21 1DP",
+      "expected": "300 Gordon Street"
+    },
+    {
+      "benchmark_id": "ff5f92290195bb19",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.7512,
+        "name_score": 0.6897,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Pertosa Dr, Brampton, ON L6X 0H9, Canada",
+      "expected": "100 Pertosa Dr, Suite 101, Brampton, ON L6X 0H9"
+    },
+    {
+      "benchmark_id": "c2475cd0ee41f486",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "https://www.remedys.ca/en/ontario/brampton/saveon-rx-brampton-7026501",
+      "expected": "https://www.centralwesthealthline.ca/displayService.aspx?id=191888"
+    },
+    {
+      "benchmark_id": "ef84284a9acb0c7c",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      },
+      "predicted": "501 Coldstream Dr Unit 6, Oshawa, ON L1K 3B3, Canada",
+      "expected": "501 Coldstream Dr #6"
+    },
+    {
+      "benchmark_id": "f4dd310e2c4c9f0e",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "725 Coursol Rd, Sturgeon Falls, ON P2B 2Y6, Canada",
+      "expected": "725 Coursol Road"
+    },
+    {
+      "benchmark_id": "5a7490e8abfa1dfe",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.9286,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "966 Dundas St E Unit 8A, Mississauga, ON L4Y 4H5, Canada",
+      "expected": "Canada Post Plaza, 966 Dundas St E, Unit 8A"
+    },
+    {
+      "benchmark_id": "780eb6cc109a4875",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "100 Consilium Pl Suite 200, Scarborough, ON M1H 3E3, Canada",
+      "expected": "100 Consilium Place, Suite 200, Scarborough, ON M1H 3E3"
+    },
+    {
+      "benchmark_id": "98e099ed262e7910",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9912,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 0.9677,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "750 Great Northern Rd, Sault Ste. Marie, ON P6B 0A8, Canada",
+      "expected": "750 Great Northern Rd, Sault Ste Marie, ON P6B 0A8"
+    },
+    {
+      "benchmark_id": "d5ef99c7c967f719",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "2978 Danforth Ave, East York, ON M4C 1M6, Canada",
+      "expected": "2978 Danforth Ave"
+    },
+    {
+      "benchmark_id": "8e4fb51841cb19f5",
+      "field": "address",
+      "category": "near_equivalent_address_wording",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "700 Coronation Blvd, Cambridge, ON N1R 3G2, Canada",
+      "expected": "700 Coronation Blvd, N1R 3G2"
+    },
+    {
+      "benchmark_id": "43b93b19d46027e3",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "24 Centennial Dr, Seaforth, ON N0K 1W0, Canada",
+      "expected": "24 Centennial Dr, PO Box 99, ON N0K 1W0"
+    },
+    {
+      "benchmark_id": "5baec6447dc9b831",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "414 Victoria Ave N, Hamilton, ON L8L 5G4, Canada",
+      "expected": "1320 Barton Street East"
+    },
+    {
+      "benchmark_id": "940715d9969746da",
+      "field": "website",
+      "category": "different_domain",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "Monday: 10:00 AM \u2013 5:30 PM | Tuesday: 10:00 AM \u2013 5:30 PM | Wednesday: 10:00 AM \u2013 5:30 PM | Thursday: 10:00 AM \u2013 5:30 PM | Friday: 10:00 AM \u2013 5:30 PM | Saturday: 10:00 AM \u2013 2:00 PM | Sunday: Closed",
+      "expected": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=176178"
+    },
+    {
+      "benchmark_id": "a6097bd16f987bb7",
+      "field": "address",
+      "category": "materially_different_address_text",
+      "tier": "needs_manual_verification",
+      "entity_match": {
+        "score": 1.0,
+        "name_score": 1.0,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "South Bay, Greater Sudbury, ON P3E 6H7, Canada",
+      "expected": "1140 South Bay Road"
+    },
+    {
+      "benchmark_id": "6ab082ad8b5cf72f",
+      "field": "address",
+      "category": "same_street_number_expanded_or_abbreviated",
+      "tier": "high_confidence_representation",
+      "entity_match": {
+        "score": 0.9254,
+        "name_score": 0.8974,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "1 Meno Ya Win Way, Sioux Lookout, ON P8T 1B4, Canada",
+      "expected": "1 Meno Ya Win Way"
+    },
+    {
+      "benchmark_id": "087b9fab311c3400",
+      "field": "address",
+      "category": "same_street_number_partial_overlap",
+      "tier": "likely_valid_alternate",
+      "entity_match": {
+        "score": 0.974,
+        "name_score": 0.9643,
+        "address_score": 0.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      },
+      "predicted": "381 Church St, Markham, ON L3P 7P3, Canada",
+      "expected": "381 Church Street"
+    }
+  ]
+}

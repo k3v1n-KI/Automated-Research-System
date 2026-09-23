@@ -28,7 +28,7 @@ def get_async_client() -> tuple[AsyncOpenAI, str]:
                     "https://generativelanguage.googleapis.com/v1beta/openai/",
                 ),
             ),
-            os.getenv("GEMINI_MODEL", "gemini-3.6-flash"),
+            os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
         )
 
     api_key = os.getenv("OPENAI_API_KEY")

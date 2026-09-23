@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "condition": "google_places_fuzzy_v2",
+  "public_input": "Pathways/evaluation/missing_data_benchmark/missing_data_public.jsonl",
+  "public_sha256": "0ffccaf8e303f66576d6cc61c26e7e4f719cfcea268a6bee5932f08fa3587675",
+  "rows_requested": 500,
+  "rows_completed": 500,
+  "output": "Pathways/evaluation/missing_data_benchmark/predictions_places_fuzzy_v2.jsonl",
+  "matcher": "rapidfuzz name/address/city/postal/website with abstention",
+  "provider": "Google Places Text Search"
+}

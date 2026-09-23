@@ -95,6 +95,10 @@ class Crawl4AIExtractNode(BaseNode):
 
     async def execute(self, state: "ResearchState", progress: "ProgressTracker") -> "ResearchState":
         scraped_items = state.get("scraped_content", [])
+        limits = state.get("pathways_limits") or {}
+        max_documents = max(1, int(limits.get("max_extraction_documents", len(scraped_items))))
+        max_chunks = max(1, int(limits.get("max_extraction_chunks", 1)))
+        scraped_items = scraped_items[:max_documents]
         initial_prompt = state.get("initial_prompt", "")
         columns = state.get("columns") or state.get("column_specs") or []
         openai_client, openai_model = get_openai_client()
@@ -131,7 +135,7 @@ class Crawl4AIExtractNode(BaseNode):
             if not markdown_text.strip():
                 continue
 
-            chunks = self._chunk_markdown(markdown_text)
+            chunks = self._chunk_markdown(markdown_text)[:max_chunks]
 
             for chunk_index, chunk in enumerate(chunks, 1):
                 if not chunk.strip():

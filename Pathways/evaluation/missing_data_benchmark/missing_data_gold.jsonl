@@ -1,0 +1,500 @@
+{"benchmark_id": "e32efdae70641981", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=200002"}, "missing_fields": ["website"]}
+{"benchmark_id": "b99ef19d8311d296", "expected": {"phone": "416-438-3697 ext 381"}, "missing_fields": ["phone"]}
+{"benchmark_id": "0523eb34806fd1f2", "expected": {"postal_code": "M5A 3K3"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "941153b420f7ad6d", "expected": {"phone": "613-722-9731"}, "missing_fields": ["phone"]}
+{"benchmark_id": "699b490debe1d939", "expected": {"postal_code": "M4L 2A4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "9d87b17effd04632", "expected": {"phone": "416-243-3600"}, "missing_fields": ["phone"]}
+{"benchmark_id": "5ba6504cb6403347", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120821"}, "missing_fields": ["website"]}
+{"benchmark_id": "c25a207e385009bc", "expected": {"address": "1 Oak St, Units 1-2"}, "missing_fields": ["address"]}
+{"benchmark_id": "43cc2d2849973d22", "expected": {"phone": "613-233-4443 ext 2109"}, "missing_fields": ["phone"]}
+{"benchmark_id": "5601ff92b9a00dc6", "expected": {"phone": "416-256-7888"}, "missing_fields": ["phone"]}
+{"benchmark_id": "e4b56563f21ff5ea", "expected": {"postal_code": "L5J 1K5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "347c269dfc8f8992", "expected": {"postal_code": "L6R 3X1"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "ddd75f9eba98f516", "expected": {"phone": "(905) 318-0070"}, "missing_fields": ["phone"]}
+{"benchmark_id": "f3d033214281aeb6", "expected": {"address": "3671 Dundas St W"}, "missing_fields": ["address"]}
+{"benchmark_id": "022189e5f16c9dc5", "expected": {"address": "8 Taber Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "349b8d3dc2dad19a", "expected": {"address": "1111 Ghislain Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "67f09aac4127547c", "expected": {"postal_code": "M6G 1L8"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "c8fad7ab1b120fbc", "expected": {"address": "Bayview Cummer Shopping Centre, 3265 Bayview Ave, Toronto, ON M2K 1G4"}, "missing_fields": ["address"]}
+{"benchmark_id": "fc2ff804be0c4b7b", "expected": {"phone": "416-207-5032"}, "missing_fields": ["phone"]}
+{"benchmark_id": "40a79b2b50a2454b", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151347"}, "missing_fields": ["website"]}
+{"benchmark_id": "c86425db03a20cbe", "expected": {"address": "4319 Cove Road at Hwy 15, P.O. Box 58"}, "missing_fields": ["address"]}
+{"benchmark_id": "9ae9b515b2a176fc", "expected": {"phone": "905-848-9955"}, "missing_fields": ["phone"]}
+{"benchmark_id": "9cfd72ee8d5dbbe4", "expected": {"address": "58 Goodall Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "efbe95de92aa7ebf", "expected": {"address": "167 Rolph Street, N4G 3Y9"}, "missing_fields": ["address"]}
+{"benchmark_id": "e4f06540da6a386f", "expected": {"address": "250 Dundas St W 7th Fl, Toronto, ON M5T 2Z5"}, "missing_fields": ["address"]}
+{"benchmark_id": "be0aa87b949196f6", "expected": {"address": "285 Cummer Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "d063d28ac726f5fe", "expected": {"phone": "905-790-7707"}, "missing_fields": ["phone"]}
+{"benchmark_id": "af02a57ee4a78ba8", "expected": {"phone": "1-844-561-1254"}, "missing_fields": ["phone"]}
+{"benchmark_id": "948aed83ce47dde6", "expected": {"postal_code": "L6L 5W4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "6b1f703457aec283", "expected": {"address": "1678 Dufferin St, Toronto, ON M6H 3P1"}, "missing_fields": ["address"]}
+{"benchmark_id": "b0f69d06d50f50c9", "expected": {"phone": "416-355-6796"}, "missing_fields": ["phone"]}
+{"benchmark_id": "4da67d86068773a9", "expected": {"address": "393 King St E, Toronto, ON, M5A 1L3"}, "missing_fields": ["address"]}
+{"benchmark_id": "74e840c23629a86e", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=213044"}, "missing_fields": ["website"]}
+{"benchmark_id": "f9d641e16bc83d4a", "expected": {"address": "200 Fletcher Cr."}, "missing_fields": ["address"]}
+{"benchmark_id": "558fa96af10bea45", "expected": {"address": "Bloor Islington Place, 3300 Bloor St W, Unit 146"}, "missing_fields": ["address"]}
+{"benchmark_id": "2ae0e491fc7e1dff", "expected": {"address": "2555 Dixie Road, Unit 7"}, "missing_fields": ["address"]}
+{"benchmark_id": "9e19f75e3cc2dbeb", "expected": {"address": "800 Commissioners Rd E, ON N6A 5W9"}, "missing_fields": ["address"]}
+{"benchmark_id": "783c38625d55e6e7", "expected": {"address": "5230 South Service Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "bcd791dd02d8bb0b", "expected": {"address": "PO Box 2030"}, "missing_fields": ["address"]}
+{"benchmark_id": "b228a77af0ee0752", "expected": {"address": "1 Hospital Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "b4f9cb9121a4a16b", "expected": {"phone": "416-920-3515"}, "missing_fields": ["phone"]}
+{"benchmark_id": "94e1699473509fc3", "expected": {"address": "680 Kirkwood Drive, Sudbury, ON P3E 1X3"}, "missing_fields": ["address"]}
+{"benchmark_id": "f4b7b6b28a9c810c", "expected": {"address": "1690 Dersan Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "d7bd25408567b4a9", "expected": {"postal_code": "M6E 1B5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "2371ec2a1b37f2a6", "expected": {"address": "Brampton - Mailing Address"}, "missing_fields": ["address"]}
+{"benchmark_id": "ff190825d59b864f", "expected": {"address": "21 Sylvan St W, Kenora, ON P9N 3W7"}, "missing_fields": ["address"]}
+{"benchmark_id": "f15f40fdbd8db073", "expected": {"address": "50 College Dr, North Bay, ON P1B 5A4"}, "missing_fields": ["address"]}
+{"benchmark_id": "1540f0658e0354d2", "expected": {"address": "277 Stone Church Road East, Hamilton, ON L9B 1B1"}, "missing_fields": ["address"]}
+{"benchmark_id": "1c7de63e8c69aaec", "expected": {"address": "752 King Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "0eeb7efe3457fac4", "expected": {"address": "100 Queensway West"}, "missing_fields": ["address"]}
+{"benchmark_id": "5ee578c8794913cb", "expected": {"address": "17 Government Rd, Wawa, ON P0S 1K0"}, "missing_fields": ["address"]}
+{"benchmark_id": "ba3c59e7ed9ccb38", "expected": {"address": "4001 Leslie Street, Toronto ON M2K 1E1"}, "missing_fields": ["address"]}
+{"benchmark_id": "db3ad3921867775c", "expected": {"phone": "(705) 726-5033"}, "missing_fields": ["phone"]}
+{"benchmark_id": "dadf2ab747bdde40", "expected": {"address": "401 Smyth Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "ede1b9b432044e78", "expected": {"address": "7750 Hurontario Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "2fe5017d30a15e13", "expected": {"postal_code": "M2R 1Z1"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "52b92f175b6432a7", "expected": {"phone": "416-654-2942"}, "missing_fields": ["phone"]}
+{"benchmark_id": "126773a32d3b9548", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147723"}, "missing_fields": ["website"]}
+{"benchmark_id": "c7c583f75c7cc834", "expected": {"postal_code": "L5N 3N5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "d8babbd6025742b4", "expected": {"address": "519 Church Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "83014955be5ca8b9", "expected": {"address": "Calgary, Alberta"}, "missing_fields": ["address"]}
+{"benchmark_id": "97d5ff592c95a5a1", "expected": {"phone": "905-875-2151"}, "missing_fields": ["phone"]}
+{"benchmark_id": "0ee13b198fd8c90d", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151474"}, "missing_fields": ["website"]}
+{"benchmark_id": "6a63eafe4483d485", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154944"}, "missing_fields": ["website"]}
+{"benchmark_id": "0e109e2a40a270cb", "expected": {"address": "80 Cl\u00e9mentine Dr, Brampton, ON L6Y 0L8"}, "missing_fields": ["address"]}
+{"benchmark_id": "ea542261c183df1d", "expected": {"phone": "416-408-4357"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d73d3fce4caaf956", "expected": {"address": "96 Tillson Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "805ed34e5eadc1ea", "expected": {"postal_code": "M4S 1Y6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "d3e3a313511944d2", "expected": {"phone": "289-438-1540 ext 555"}, "missing_fields": ["phone"]}
+{"benchmark_id": "a5d972f41eb44830", "expected": {"address": "865 Regent St S, Sudbury, ON P3E 3Y9"}, "missing_fields": ["address"]}
+{"benchmark_id": "04c6e409302ebe2c", "expected": {"postal_code": "M6M 1B9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "2805c1ea95c99703", "expected": {"address": "1700 Dundas Street, Unit 1"}, "missing_fields": ["address"]}
+{"benchmark_id": "20da8a787c5e36b9", "expected": {"address": "49 Bathurst St Ste 200"}, "missing_fields": ["address"]}
+{"benchmark_id": "ab49979b95f2e175", "expected": {"address": "2333 Wyecroft Rd, Unit 8"}, "missing_fields": ["address"]}
+{"benchmark_id": "e50a06e411c6824b", "expected": {"address": "11 Meredith Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "5d5d425f0a3b3007", "expected": {"phone": "416-763-1502"}, "missing_fields": ["phone"]}
+{"benchmark_id": "6099df42badb4908", "expected": {"address": "29 Noxon Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "f9dd20ddf8713d7b", "expected": {"address": "20 Shelldale Crescent"}, "missing_fields": ["address"]}
+{"benchmark_id": "6a99cb3be30fd2e8", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=219600"}, "missing_fields": ["website"]}
+{"benchmark_id": "3fa0fdf88f621398", "expected": {"phone": "905-430-4055"}, "missing_fields": ["phone"]}
+{"benchmark_id": "8d5d70796b28e936", "expected": {"address": "1321 Neilson Rd"}, "missing_fields": ["address"]}
+{"benchmark_id": "3bb39d7d2110dd6d", "expected": {"phone": "416-392-0520"}, "missing_fields": ["phone"]}
+{"benchmark_id": "fab88c548f0ebc02", "expected": {"address": "360 College St, Toronto, ON M5T 1S6"}, "missing_fields": ["address"]}
+{"benchmark_id": "082e20e26e4367f4", "expected": {"phone": "416-782-7426"}, "missing_fields": ["phone"]}
+{"benchmark_id": "6eb089dd2be69886", "expected": {"address": "1292 Weston Rd, (in back of pharmacy), York, ON M6M 4R3"}, "missing_fields": ["address"]}
+{"benchmark_id": "e659dcb04eb5f151", "expected": {"postal_code": "L4Z 4B4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "959a9bd0899fea83", "expected": {"address": "20 Gerrard St E"}, "missing_fields": ["address"]}
+{"benchmark_id": "7032b58b8583d06e", "expected": {"phone": "1-833-575-5437"}, "missing_fields": ["phone"]}
+{"benchmark_id": "56ef24e054fd368a", "expected": {"phone": "416-226-9193"}, "missing_fields": ["phone"]}
+{"benchmark_id": "8abce48ba5169116", "expected": {"address": "196 Wentworth St N"}, "missing_fields": ["address"]}
+{"benchmark_id": "bb044265a1b8a264", "expected": {"address": "115 Delhi Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "8e8ca5d92ec51f8f", "expected": {"phone": "416-482-1980 ext 5"}, "missing_fields": ["phone"]}
+{"benchmark_id": "f818fe4b4c8b6b40", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=199187"}, "missing_fields": ["website"]}
+{"benchmark_id": "916dffa8ebc0f12c", "expected": {"address": "15017 Yonge St. Suite 204 Aurora ON L4G 1M5"}, "missing_fields": ["address"]}
+{"benchmark_id": "0ddc6dca42f5aae8", "expected": {"phone": "416-867-7421"}, "missing_fields": ["phone"]}
+{"benchmark_id": "1e1ed01d8e4f77e2", "expected": {"postal_code": "L4T 0A7"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "fae43c8707f51377", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=218482"}, "missing_fields": ["website"]}
+{"benchmark_id": "52ca9aa5a0ec820c", "expected": {"address": "6655 Kitimat Rd, Unit 5, Mississauga, ON L5N 6J4"}, "missing_fields": ["address"]}
+{"benchmark_id": "832a52be1ca0ea5a", "expected": {"phone": "416-603-6418"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d780879ebbd043b8", "expected": {"website": "http://sobeyspharmacy.com/location/Airport-Countryside/"}, "missing_fields": ["website"]}
+{"benchmark_id": "495a69396d63edd7", "expected": {"address": "14 Vaughn Rd"}, "missing_fields": ["address"]}
+{"benchmark_id": "08632eac20ec7dcc", "expected": {"phone": "905-339-0200 ext 1"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d4858b55ebbcdd1e", "expected": {"address": "2200 Eglinton Avenue West"}, "missing_fields": ["address"]}
+{"benchmark_id": "dcf0e630ddcbfec0", "expected": {"address": "7 St. Francis Memorial Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "4240cbf84293885c", "expected": {"phone": "905-450-3500"}, "missing_fields": ["phone"]}
+{"benchmark_id": "db61f54caf4f84c6", "expected": {"address": "118 Cochrane Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "2385a6952fafdd8c", "expected": {"phone": "416-926-8267"}, "missing_fields": ["phone"]}
+{"benchmark_id": "b4e502fa14ea0a28", "expected": {"phone": "416-604-0640"}, "missing_fields": ["phone"]}
+{"benchmark_id": "367d1d825891922b", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61082"}, "missing_fields": ["website"]}
+{"benchmark_id": "007208895d0c9de9", "expected": {"postal_code": "L4B 3M6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "009eacd79153a75c", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147847"}, "missing_fields": ["website"]}
+{"benchmark_id": "b2b4faa84c5c1429", "expected": {"phone": "416-530-6400"}, "missing_fields": ["phone"]}
+{"benchmark_id": "29dab905762f5783", "expected": {"address": "87 Pembroke St"}, "missing_fields": ["address"]}
+{"benchmark_id": "0092cdbba883e103", "expected": {"address": "15 Trowbridge Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "75051ae39072ecba", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=174719"}, "missing_fields": ["website"]}
+{"benchmark_id": "ee772f2d54c2761c", "expected": {"phone": "613-233-4697"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d5548f82a623fc53", "expected": {"phone": "647-340-4681"}, "missing_fields": ["phone"]}
+{"benchmark_id": "e0ba838340c5bf57", "expected": {"address": "60 Lacoste Blvd, Unit 104, Brampton, ON L6P 4B5"}, "missing_fields": ["address"]}
+{"benchmark_id": "f134412789473c2a", "expected": {"phone": "905-793-4844 * 905-793-4843"}, "missing_fields": ["phone"]}
+{"benchmark_id": "bf946fcae69beb58", "expected": {"phone": "416-491-3570"}, "missing_fields": ["phone"]}
+{"benchmark_id": "394167da062a8526", "expected": {"phone": "905-851-8063"}, "missing_fields": ["phone"]}
+{"benchmark_id": "3e44730a358fb354", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61105"}, "missing_fields": ["website"]}
+{"benchmark_id": "b643f83a84e96975", "expected": {"address": "7325 Yonge St, Innisfil, ON L9S 2M6"}, "missing_fields": ["address"]}
+{"benchmark_id": "dfe6b1ddc19d1afc", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61101"}, "missing_fields": ["website"]}
+{"benchmark_id": "7e2c5bb7ccc5b309", "expected": {"address": "2075 Bayview Avenue, M4K 3G9"}, "missing_fields": ["address"]}
+{"benchmark_id": "fcd22b031e173a57", "expected": {"address": "100 Frank Miller Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "28d9c6412edc3407", "expected": {"phone": "416-469-6580 ext. 2517"}, "missing_fields": ["phone"]}
+{"benchmark_id": "b6aeaf02e299bd2a", "expected": {"postal_code": "L6L 2X4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "e9b365818527f9ff", "expected": {"phone": "905-451-0111"}, "missing_fields": ["phone"]}
+{"benchmark_id": "bede8c77f786fd01", "expected": {"address": "5th Floor, Gilgan Family Wing, Room 5G-122, St. Joseph's Hospital (Unity Health Toronto)"}, "missing_fields": ["address"]}
+{"benchmark_id": "c78bd4b3c34dc910", "expected": {"phone": "1-866-938-6492"}, "missing_fields": ["phone"]}
+{"benchmark_id": "95069b184a020791", "expected": {"address": "7199 Gelert Road, P.O. Box 115"}, "missing_fields": ["address"]}
+{"benchmark_id": "613e3b7a17f18de7", "expected": {"phone": "519-255-7440"}, "missing_fields": ["phone"]}
+{"benchmark_id": "dbfae702a499a30b", "expected": {"address": "150 Sherway Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "b926167aeba78f79", "expected": {"phone": "416-786-1391"}, "missing_fields": ["phone"]}
+{"benchmark_id": "e730ad96428a41d8", "expected": {"address": "2075 Bayview Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "336afa072ed416dc", "expected": {"address": "840 McConnell Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "eba7582bb1a30b75", "expected": {"postal_code": "L5B 4M6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "20bdf99969edbccc", "expected": {"address": "200 Church Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "c299abfe57a772fe", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120404"}, "missing_fields": ["website"]}
+{"benchmark_id": "eb1f892eb256cb2c", "expected": {"phone": "416-242-1000"}, "missing_fields": ["phone"]}
+{"benchmark_id": "df40475becea4b91", "expected": {"postal_code": "L5M 4N4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "e13cda82d6ae020a", "expected": {"address": "98 Shipley St"}, "missing_fields": ["address"]}
+{"benchmark_id": "a5670bd86f6ea976", "expected": {"address": "75 Spring Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "06733c467b765d83", "expected": {"address": "310 Juliana Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "e654cfc9123834dd", "expected": {"address": "3020 Lawrence Ave E"}, "missing_fields": ["address"]}
+{"benchmark_id": "f93ee4c2f69deeee", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=172507"}, "missing_fields": ["website"]}
+{"benchmark_id": "b365e9b4213fb00e", "expected": {"address": "911 Queen\u2019s Boulevard, N2M 1B2"}, "missing_fields": ["address"]}
+{"benchmark_id": "31238cebbd554178", "expected": {"postal_code": "L5N 2W7"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "97401fcecf680e19", "expected": {"address": "1112 St. Andrew's Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "476f391fc76449a6", "expected": {"phone": "416-923-0800"}, "missing_fields": ["phone"]}
+{"benchmark_id": "08994ae39e788e3f", "expected": {"postal_code": "M3H 1S8"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "9dfc554f7b9c6ecc", "expected": {"address": "12531 Kennedy Rd, Caledon, ON L7C 3T6"}, "missing_fields": ["address"]}
+{"benchmark_id": "de9444314cbf2130", "expected": {"address": "3030 Birchmount Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "823679247baa7380", "expected": {"phone": "416-785-8385"}, "missing_fields": ["phone"]}
+{"benchmark_id": "845b0d73ff21686a", "expected": {"address": "750 Great Northern Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "86b6dc5775d762b7", "expected": {"website": "https://www.opatoday.com"}, "missing_fields": ["website"]}
+{"benchmark_id": "71fd00213b0a0148", "expected": {"phone": "905-495-5855"}, "missing_fields": ["phone"]}
+{"benchmark_id": "45b681309e013c02", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=199105"}, "missing_fields": ["website"]}
+{"benchmark_id": "7676b206781a387e", "expected": {"address": "5 The Market Place, East York, ON M4C 5M2"}, "missing_fields": ["address"]}
+{"benchmark_id": "9efc1339c5f04bd3", "expected": {"address": "76 Grenville St, Toronto, ON M5S 1B2"}, "missing_fields": ["address"]}
+{"benchmark_id": "e751f82745d7f5e8", "expected": {"address": "241 Eighth Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "99c5a48d45786118", "expected": {"postal_code": "M6R 1X3"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "4683fe1860be501b", "expected": {"phone": "(519) 474-1313"}, "missing_fields": ["phone"]}
+{"benchmark_id": "02bb378671adf033", "expected": {"address": "700 Lawrence Ave W Ste 480"}, "missing_fields": ["address"]}
+{"benchmark_id": "0899b89212d0a0a2", "expected": {"address": "140 Woodbridge Ave, Unit 28-29, Woodbridge, ON L4L 4K9"}, "missing_fields": ["address"]}
+{"benchmark_id": "d10e2d23bf37ffbb", "expected": {"address": "Parkway Plaza, 85 Ellesmere Rd, Unit 31, Toronto, ON M1R 4B7"}, "missing_fields": ["address"]}
+{"benchmark_id": "055019a74e43b192", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154822"}, "missing_fields": ["website"]}
+{"benchmark_id": "e67d9da72b9fcef2", "expected": {"address": "90-7th Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "2446b7b1cac4d110", "expected": {"address": "Renforth Plaza, 460 Renforth Dr, Unit 10, Toronto, ON M9C 2N2"}, "missing_fields": ["address"]}
+{"benchmark_id": "ce3ae6a9edb4b3a8", "expected": {"address": "525 Causley St"}, "missing_fields": ["address"]}
+{"benchmark_id": "1ad26c046ac13413", "expected": {"address": "220 Toronto St S, ON N0C 1H0"}, "missing_fields": ["address"]}
+{"benchmark_id": "895723fbb46cb0f4", "expected": {"address": "2705 Jane St, Unit 9, North York, ON M3L 1S3"}, "missing_fields": ["address"]}
+{"benchmark_id": "d4b795194b64243c", "expected": {"address": "170 Colborne Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "9339a26067661936", "expected": {"address": "2 Dewside Dr, Units 25-26, Brampton, ON L6R 3Y5"}, "missing_fields": ["address"]}
+{"benchmark_id": "4a51a4d253abc34e", "expected": {"phone": "705-495-4515"}, "missing_fields": ["phone"]}
+{"benchmark_id": "559cbf003af2340e", "expected": {"address": "265 Enfield Place, Unit R210, Mississauga, ON L5B 3Y6"}, "missing_fields": ["address"]}
+{"benchmark_id": "2dd6f010da13a981", "expected": {"postal_code": "M6S 1M4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "054efc81eed05d61", "expected": {"postal_code": "M4C 1L7"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "fd780604b39ad6e2", "expected": {"address": "20260 County Road 43"}, "missing_fields": ["address"]}
+{"benchmark_id": "3daf7dd2767fcee2", "expected": {"address": "Box 1800 8th Street East"}, "missing_fields": ["address"]}
+{"benchmark_id": "6f0aa020f5af3032", "expected": {"postal_code": "L6H 6X6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "1348aed7c6839072", "expected": {"phone": "416-665-7636"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d90ebdc6b6e1579f", "expected": {"address": "853 King Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "d42705118973927e", "expected": {"postal_code": "M5M 3X2"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "802392e6e94cfb86", "expected": {"address": "Queensway Professional Centre, 190 Sherway Dr, Unit 107"}, "missing_fields": ["address"]}
+{"benchmark_id": "a37d2e8a182d88dd", "expected": {"address": "596 Davis Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "596a9173350f8924", "expected": {"address": "30 The Queensway, Ground Floor, East Wing, M6R 1B5"}, "missing_fields": ["address"]}
+{"benchmark_id": "5e368c006dcb868e", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61047"}, "missing_fields": ["website"]}
+{"benchmark_id": "56c9474a89536575", "expected": {"address": "135 Dawson St, Thessalon, ON P0R 1L0"}, "missing_fields": ["address"]}
+{"benchmark_id": "1018d8ac5b320b47", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151406"}, "missing_fields": ["website"]}
+{"benchmark_id": "2fa44a1c0721c085", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120797"}, "missing_fields": ["website"]}
+{"benchmark_id": "ed1570f57bda870e", "expected": {"phone": "416-741-7711"}, "missing_fields": ["phone"]}
+{"benchmark_id": "6564b49ab101f800", "expected": {"phone": "1-877-517-2237"}, "missing_fields": ["phone"]}
+{"benchmark_id": "bab94f6ee00e0b70", "expected": {"postal_code": "M9W 3W6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "392df85633da23c0", "expected": {"address": "58 Anson Dr"}, "missing_fields": ["address"]}
+{"benchmark_id": "600fa8d1a9b4e9c4", "expected": {"address": "58 Goodall St, Dryden, ON P8N 2Z6"}, "missing_fields": ["address"]}
+{"benchmark_id": "f275649c96e65997", "expected": {"address": "100 Frank Miller Drive, Huntsville, ON P1H 1H7"}, "missing_fields": ["address"]}
+{"benchmark_id": "c3f8cd009b639c30", "expected": {"phone": "(905) 306-1212"}, "missing_fields": ["phone"]}
+{"benchmark_id": "0c023f60e59ac1a1", "expected": {"address": "1145 Carling Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "713e58e1795b4833", "expected": {"address": "725 Coursol Rd, Sturgeon Falls, ON P2B 2Y6"}, "missing_fields": ["address"]}
+{"benchmark_id": "2b280f3768f5b0df", "expected": {"address": "507 8th Ave"}, "missing_fields": ["address"]}
+{"benchmark_id": "486244fd59090eac", "expected": {"postal_code": "M4T 2S9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "6883cb2c2424066d", "expected": {"phone": "416-502-2323"}, "missing_fields": ["phone"]}
+{"benchmark_id": "ffcc28d8db9f4ed6", "expected": {"postal_code": "L6R 0W3"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "033d4d0e831d6b1f", "expected": {"phone": "613-938-8506"}, "missing_fields": ["phone"]}
+{"benchmark_id": "e1e621137eda4ac4", "expected": {"postal_code": "M1T 3G8"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "48534185a3fe1796", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154200"}, "missing_fields": ["website"]}
+{"benchmark_id": "755652d1769275cc", "expected": {"address": "100 Frank Miller Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "7909169b7d015b79", "expected": {"address": "75 Charles Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "235beaa8eff6d3a3", "expected": {"postal_code": "M8V 1C4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "34a08a09441cb13c", "expected": {"address": "190 Elizabeth St."}, "missing_fields": ["address"]}
+{"benchmark_id": "eb957c45efea9ac2", "expected": {"phone": "416-588-4973"}, "missing_fields": ["phone"]}
+{"benchmark_id": "20c9ce1a075d93fd", "expected": {"postal_code": "L5A 2G9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "b91ae945c3836bc6", "expected": {"address": "600 University Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "13b4657bb12f97e1", "expected": {"phone": "613-361-6363 Ext 8151 | 1-888-286-5437 Ext 815"}, "missing_fields": ["phone"]}
+{"benchmark_id": "1eaa4428e1e7c492", "expected": {"phone": "416-406-1727"}, "missing_fields": ["phone"]}
+{"benchmark_id": "91a147ccab4fd0ce", "expected": {"phone": "416-335-8877"}, "missing_fields": ["phone"]}
+{"benchmark_id": "4b75e8307b9f5b1f", "expected": {"postal_code": "L5V 3E5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "a6d4440a490ed29a", "expected": {"postal_code": "M4C 1L3"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "9a2f725efa6e4d74", "expected": {"address": "125 Hogan Rd, Nipigon, ON P0T 2J0"}, "missing_fields": ["address"]}
+{"benchmark_id": "0ecb3ea83e5cf80d", "expected": {"address": "Administration Office, Guelph, ON N1E 2X2"}, "missing_fields": ["address"]}
+{"benchmark_id": "2d2ed68e1a566644", "expected": {"address": "6 Albert Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "ca65c90df77efcfd", "expected": {"address": "200 Terrace Hill Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "0f1cf7379b86a8e9", "expected": {"phone": "613-562-4500"}, "missing_fields": ["phone"]}
+{"benchmark_id": "5c2fead1c2969af3", "expected": {"address": "200 Fletcher Cr., L9R 1W7"}, "missing_fields": ["address"]}
+{"benchmark_id": "333f12fa2ffc9192", "expected": {"phone": "416-221-1700"}, "missing_fields": ["phone"]}
+{"benchmark_id": "f05b4dc97a3ae79d", "expected": {"phone": "905-854-0313"}, "missing_fields": ["phone"]}
+{"benchmark_id": "9881d2815c5aa6c4", "expected": {"phone": "613-933-0418"}, "missing_fields": ["phone"]}
+{"benchmark_id": "1f2a0f1aa29f138d", "expected": {"address": "278 Front St, Hornepayne, ON P0M 1Z0"}, "missing_fields": ["address"]}
+{"benchmark_id": "8042609cb273f493", "expected": {"phone": "416-778-7780"}, "missing_fields": ["phone"]}
+{"benchmark_id": "a9892e30bc8b9fdc", "expected": {"address": "100 Queensway West"}, "missing_fields": ["address"]}
+{"benchmark_id": "2ba4a4ae21d93195", "expected": {"address": "1 Princess Anne Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "d81e61030c66d4ca", "expected": {"phone": "(289)553-7701"}, "missing_fields": ["phone"]}
+{"benchmark_id": "f3982f3a16786e1d", "expected": {"address": "181 Main Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "56ef3f4cbcf98223", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120779"}, "missing_fields": ["website"]}
+{"benchmark_id": "12882aa3ef3f333d", "expected": {"address": "300 Gordon Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "af19e252a6c97cf7", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=120759"}, "missing_fields": ["website"]}
+{"benchmark_id": "07718aacddca5461", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=220237"}, "missing_fields": ["website"]}
+{"benchmark_id": "72a7dd2bcdf4e447", "expected": {"address": "114 Cumberland St, Toronto, ON M5S 2W7"}, "missing_fields": ["address"]}
+{"benchmark_id": "590520f9a8070fe8", "expected": {"address": "8 Richmond Park Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "272de24799393b07", "expected": {"address": "853 King Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "04d8b04e5bcc072d", "expected": {"postal_code": "L6Y 3A9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "363cf8bba41fbbcc", "expected": {"address": "88 Maplewood Avenue Hamilton, ON L8M 1W9"}, "missing_fields": ["address"]}
+{"benchmark_id": "f5b28debcdd30e43", "expected": {"postal_code": "M1B 1Y9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "96d58cdb422bf7df", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=150667"}, "missing_fields": ["website"]}
+{"benchmark_id": "fc4f9af46f015e74", "expected": {"phone": "905.836.2273"}, "missing_fields": ["phone"]}
+{"benchmark_id": "a177bb6556af272d", "expected": {"address": "171 Liberty St E, Unit 102, Toronto, ON M6K 3P6"}, "missing_fields": ["address"]}
+{"benchmark_id": "0848ec91f464ef9c", "expected": {"phone": "416-979-1994"}, "missing_fields": ["phone"]}
+{"benchmark_id": "7e020ea768cb5577", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=200045"}, "missing_fields": ["website"]}
+{"benchmark_id": "112d3def35fb6aeb", "expected": {"postal_code": "M6E 2J4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "b999c0dcc017fb58", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151005"}, "missing_fields": ["website"]}
+{"benchmark_id": "5d52f5f6fa81cb00", "expected": {"address": "60 West Drive, Suite 201"}, "missing_fields": ["address"]}
+{"benchmark_id": "a7780205f70edd38", "expected": {"address": "41 Ramsey Lake Rd"}, "missing_fields": ["address"]}
+{"benchmark_id": "02b1a1c4e2711e8e", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=170226"}, "missing_fields": ["website"]}
+{"benchmark_id": "5cfa7fb1b6821024", "expected": {"address": "101 Progress Crescent, P5N 3H5"}, "missing_fields": ["address"]}
+{"benchmark_id": "7cd94b195470dd40", "expected": {"postal_code": "L5A 4K3"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "b4a97cc47590f3e9", "expected": {"address": "265 Dundas Street East"}, "missing_fields": ["address"]}
+{"benchmark_id": "a4946e8c0abef003", "expected": {"address": "2180 Speakman Drive, Ground Floor"}, "missing_fields": ["address"]}
+{"benchmark_id": "3cfce2f17a08b496", "expected": {"phone": "416-486-8046"}, "missing_fields": ["phone"]}
+{"benchmark_id": "ebacf22fe788d418", "expected": {"postal_code": "L6R 0M5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "ec844765f203256d", "expected": {"postal_code": "L5B 3B9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "ce0d6f727e889639", "expected": {"address": "76 Grenville St, Toronto, ON M5S 1B2"}, "missing_fields": ["address"]}
+{"benchmark_id": "60e85aad690b4760", "expected": {"address": "20 Lynch Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "709a3c0c31c353ce", "expected": {"address": "1101 McBride Ave, Mississauga, ON L5C 1M6"}, "missing_fields": ["address"]}
+{"benchmark_id": "9b7377ae329bfddf", "expected": {"phone": "416-744-8825"}, "missing_fields": ["phone"]}
+{"benchmark_id": "cc8735ce45404951", "expected": {"address": "146 Oliver Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "39c17e76bb6eca8d", "expected": {"phone": "905-494-2120"}, "missing_fields": ["phone"]}
+{"benchmark_id": "811db81bd107eef2", "expected": {"address": "175 Commerce Valley Drive West, Suite 300, Markham, Ontario L3T 7P6"}, "missing_fields": ["address"]}
+{"benchmark_id": "182239b36e50c854", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151656"}, "missing_fields": ["website"]}
+{"benchmark_id": "dd823e728f8b4032", "expected": {"address": "200 Terrace Hill Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "de559a5cb20719e1", "expected": {"address": "2385 Burnhamthorpe Rd W, Unit 6, Mississauga, ON L5L 6A4"}, "missing_fields": ["address"]}
+{"benchmark_id": "29ce3970135df3b2", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=200224"}, "missing_fields": ["website"]}
+{"benchmark_id": "5c93803bf9e7016b", "expected": {"address": "150 Houston St"}, "missing_fields": ["address"]}
+{"benchmark_id": "eb53a7ade08ec403", "expected": {"address": "Oakville Trafalgar Memorial Hospital, L6M 0L8"}, "missing_fields": ["address"]}
+{"benchmark_id": "666b3309965da344", "expected": {"address": "22 Vaughn Rd"}, "missing_fields": ["address"]}
+{"benchmark_id": "249da7f20f1169be", "expected": {"address": "Bloor/Islington (Etobicoke)"}, "missing_fields": ["address"]}
+{"benchmark_id": "3eb8f8f82823a635", "expected": {"phone": "905-915-8777"}, "missing_fields": ["phone"]}
+{"benchmark_id": "2b9e20a978d99c20", "expected": {"address": "795 Eglinton Ave E"}, "missing_fields": ["address"]}
+{"benchmark_id": "fbc312367810dba1", "expected": {"address": "170 Dorion Loop Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "a86578e8ef8cae0b", "expected": {"address": "5th Floor, Morrow/Gilgan Family Wing, St. Joseph's Health Centre"}, "missing_fields": ["address"]}
+{"benchmark_id": "f5931827a0ada61b", "expected": {"address": "2450 Old Bronte Rd, Unit C, Oakville, ON L6M 5P6"}, "missing_fields": ["address"]}
+{"benchmark_id": "6d31aecb41af5d47", "expected": {"address": "131 Frederick Campbell Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "ce9580cd1e55e241", "expected": {"address": "564 Sheppard Ave W, North York, ON M3H 2R9"}, "missing_fields": ["address"]}
+{"benchmark_id": "b266898a72380e5a", "expected": {"phone": "905-874-0000"}, "missing_fields": ["phone"]}
+{"benchmark_id": "1017cbf0233fc112", "expected": {"address": "625 Runnymede Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "df355dc4127441a8", "expected": {"address": "15 Roncesvalles Ave, Toronto, ON M6R 2K2"}, "missing_fields": ["address"]}
+{"benchmark_id": "bc486e19047ede39", "expected": {"phone": "905-844-7864"}, "missing_fields": ["phone"]}
+{"benchmark_id": "b5053c8d52e4feb9", "expected": {"address": "Bronte Village Mall, 2441 Lakeshore Rd W, Unit 2"}, "missing_fields": ["address"]}
+{"benchmark_id": "ee5220d70c77c49a", "expected": {"address": "699 Concession Street Hamilton, ON L8V 5C2"}, "missing_fields": ["address"]}
+{"benchmark_id": "83e86c5ff21698ce", "expected": {"address": "P.O. Box 70, 217 Turcotte Park Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "c4116ed9e6b377a9", "expected": {"phone": "416-929-7200"}, "missing_fields": ["phone"]}
+{"benchmark_id": "39dd24c0acac665c", "expected": {"address": "76 Grenville St."}, "missing_fields": ["address"]}
+{"benchmark_id": "a418f3457a0bf4bf", "expected": {"address": "45 Bruce Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "be1f8ca0d5d849db", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=150902"}, "missing_fields": ["website"]}
+{"benchmark_id": "6ed91f5bb4a637c3", "expected": {"address": "2 Manitou rd Community Centre, Manitou Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "eb8caa8e72913387", "expected": {"postal_code": "M5C 2T2"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "5eb9b6d81f75fada", "expected": {"address": "85 Aventura Court, L5T 2Y6"}, "missing_fields": ["address"]}
+{"benchmark_id": "5affe170f71bb33d", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147679"}, "missing_fields": ["website"]}
+{"benchmark_id": "8b68ae61ed99f42a", "expected": {"phone": "905-915-9171"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d88ea7d8d0eecfba", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61001"}, "missing_fields": ["website"]}
+{"benchmark_id": "77becde32db99d5f", "expected": {"postal_code": "M4C 1M9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "f91579f2f47384aa", "expected": {"address": "1 Health Care Crescent"}, "missing_fields": ["address"]}
+{"benchmark_id": "97d16704fe6575d5", "expected": {"address": "659 Dundas Street East"}, "missing_fields": ["address"]}
+{"benchmark_id": "ddc0f44c90cbba5f", "expected": {"address": "242 King Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "bfb8d5ef9ce050a0", "expected": {"address": "101 - 2 Poyntz Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "972bc4b00c697269", "expected": {"address": "3045 Baseline Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "35681898e468f205", "expected": {"address": "75 Parkview Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "05824cc83bfa871b", "expected": {"address": "19 Hospital Dr, Moose Factory, ON P0L 1W0"}, "missing_fields": ["address"]}
+{"benchmark_id": "cf025c9e878f156d", "expected": {"address": "229 Nelson St W, ON N4L 1A3"}, "missing_fields": ["address"]}
+{"benchmark_id": "88631f94b501dcd4", "expected": {"phone": "416-929-9614"}, "missing_fields": ["phone"]}
+{"benchmark_id": "07d3fb1c9c30b20d", "expected": {"postal_code": "M9W 3A4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "95415f0f58271f6b", "expected": {"address": "36B Prince Arthur Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "467517dc21d1b12b", "expected": {"address": "611 Prospect Boulevard"}, "missing_fields": ["address"]}
+{"benchmark_id": "b8c5285ec6292143", "expected": {"address": "201 Georgian Dr, Barrie, ON L4M 6M2"}, "missing_fields": ["address"]}
+{"benchmark_id": "2d5cc013672bc111", "expected": {"phone": "905-813-5666"}, "missing_fields": ["phone"]}
+{"benchmark_id": "06acc814c10a5398", "expected": {"phone": "416-224-0003"}, "missing_fields": ["phone"]}
+{"benchmark_id": "c59b9dc0ed3a80f6", "expected": {"address": "150 Delhi Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "b2314c2c038720e4", "expected": {"address": "552 Adelaide St. W"}, "missing_fields": ["address"]}
+{"benchmark_id": "5bc8e2ea2c6256b8", "expected": {"address": "6275 Indian Lane, RR #2"}, "missing_fields": ["address"]}
+{"benchmark_id": "81b4a8f11e3c7e00", "expected": {"phone": "905-790-0808"}, "missing_fields": ["phone"]}
+{"benchmark_id": "0b991fae8bb4f670", "expected": {"postal_code": "L6R 3P1"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "05446c4663a10e10", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151204"}, "missing_fields": ["website"]}
+{"benchmark_id": "54ce1adec5985112", "expected": {"postal_code": "M9W 7J7"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "4ff5d3a68a56b551", "expected": {"address": "Heartland Town Centre, 550 Matheson Blvd W, Unit 106, Mississauga, ON L5R 4B8"}, "missing_fields": ["address"]}
+{"benchmark_id": "d871aef5986d7c82", "expected": {"phone": "905-793-4828"}, "missing_fields": ["phone"]}
+{"benchmark_id": "2435196742d7bbc5", "expected": {"phone": "416-750-4494"}, "missing_fields": ["phone"]}
+{"benchmark_id": "bb4aeb9dec744d32", "expected": {"address": "840 McConnell Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "2bf7ce1ef3afad9f", "expected": {"address": "365 Evans Ave, Unit 105A, Toronto, ON M8Z 1K2"}, "missing_fields": ["address"]}
+{"benchmark_id": "62a01f8f60193729", "expected": {"address": "107 Kelly Rd, Smooth Rock Falls, ON P0L 2B0"}, "missing_fields": ["address"]}
+{"benchmark_id": "f99ba2bbaa5e4b41", "expected": {"address": "600 University Avenue, Toronto, ON M5G 1X5"}, "missing_fields": ["address"]}
+{"benchmark_id": "75c27a997f22dc6a", "expected": {"phone": "437-880-7758"}, "missing_fields": ["phone"]}
+{"benchmark_id": "7685b4d990d93025", "expected": {"address": "525 Dublin Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "3f515bc680af5d1c", "expected": {"address": "19 Hospital Drive, Box 664"}, "missing_fields": ["address"]}
+{"benchmark_id": "adec7d53545dfe3d", "expected": {"postal_code": "M2R 1Y1"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "e1210c6a3e6c65f4", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154382"}, "missing_fields": ["website"]}
+{"benchmark_id": "1fb8bb7ecc0dfeca", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61092"}, "missing_fields": ["website"]}
+{"benchmark_id": "8dbe78a83b0144d5", "expected": {"address": "270 Carling Terrace, N0G 2W0"}, "missing_fields": ["address"]}
+{"benchmark_id": "c2f75dfad2c36613", "expected": {"phone": "416-863-0511"}, "missing_fields": ["phone"]}
+{"benchmark_id": "250338b9ee2cc841", "expected": {"postal_code": "L6Y 1M1"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "99c4a5c28c3fc3e6", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=131401"}, "missing_fields": ["website"]}
+{"benchmark_id": "2e78b89a8898a720", "expected": {"phone": "416-645-6000 ext 2512, 1367"}, "missing_fields": ["phone"]}
+{"benchmark_id": "5655b1ad93c7d665", "expected": {"address": "4575 Deep Bay Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "79c65ceacc8825ea", "expected": {"address": "278 Front St, Hornepayne, ON P0M 1Z0"}, "missing_fields": ["address"]}
+{"benchmark_id": "6e5c3bede66624d9", "expected": {"address": "41, chemin du lac Ramsey Lake Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "ca2827b4b34ad0aa", "expected": {"address": "145 Queenston Street, Suite 100"}, "missing_fields": ["address"]}
+{"benchmark_id": "c028f3531a855831", "expected": {"address": "160 Jarvis Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "1b8ccd7ef05d4005", "expected": {"address": "85 Steeles Ave W, Brampton, ON L6Y 0K3"}, "missing_fields": ["address"]}
+{"benchmark_id": "c91b5fd2b1f4a9eb", "expected": {"website": "https://silverfoxrx.ca/"}, "missing_fields": ["website"]}
+{"benchmark_id": "f83dcba22fc07b84", "expected": {"address": "404 McArthur Ave, Ottawa, ON K1K 1G8"}, "missing_fields": ["address"]}
+{"benchmark_id": "6eb4f397fc7daa07", "expected": {"address": "345 Queen St E, Acton, ON L7J 1R1"}, "missing_fields": ["address"]}
+{"benchmark_id": "d7385ff952865135", "expected": {"address": "30 Derry Road East"}, "missing_fields": ["address"]}
+{"benchmark_id": "c61a31923c069025", "expected": {"address": "99 Skinner Avenue, P.O. Box 910"}, "missing_fields": ["address"]}
+{"benchmark_id": "bc0c70906d5e4b90", "expected": {"address": "2111 Finch Avenue West"}, "missing_fields": ["address"]}
+{"benchmark_id": "caf9418cfa8e5be3", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=199034"}, "missing_fields": ["website"]}
+{"benchmark_id": "281618ec4d009a18", "expected": {"postal_code": "M3B 2W6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "6c478706991ffd6e", "expected": {"postal_code": "M1V 5E6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "7b04f16601e78761", "expected": {"address": "2163 Sixth Line, Unit A3"}, "missing_fields": ["address"]}
+{"benchmark_id": "df65b58ce6a0bf4b", "expected": {"address": "9 Oakland Boulevard"}, "missing_fields": ["address"]}
+{"benchmark_id": "7d966a081eb598f8", "expected": {"address": "241 Eighth St, Cochrane, ON P0L 1C0"}, "missing_fields": ["address"]}
+{"benchmark_id": "6c5106a1cbacc78b", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=169760"}, "missing_fields": ["website"]}
+{"benchmark_id": "86cee12ea554af91", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147785"}, "missing_fields": ["website"]}
+{"benchmark_id": "eb0f9cceb3fc8bcc", "expected": {"phone": "416-322-7877"}, "missing_fields": ["phone"]}
+{"benchmark_id": "a3e3a6a0256b06be", "expected": {"phone": "416 789-7957"}, "missing_fields": ["phone"]}
+{"benchmark_id": "4ed85f34b8547d1c", "expected": {"address": "75 Ann Street, Bracebridge, ON P1L 2E4"}, "missing_fields": ["address"]}
+{"benchmark_id": "1eff4d7db087ec43", "expected": {"address": "99 Victoria Street, Box 9"}, "missing_fields": ["address"]}
+{"benchmark_id": "e282e66afa4fbbab", "expected": {"phone": "416-494-8102"}, "missing_fields": ["phone"]}
+{"benchmark_id": "bfcf80edc927af84", "expected": {"address": "20260 County Road 43"}, "missing_fields": ["address"]}
+{"benchmark_id": "487fafe990c05437", "expected": {"address": "1093 Queen St W, Toronto, ON M6J 1J1"}, "missing_fields": ["address"]}
+{"benchmark_id": "7b681941d7569236", "expected": {"address": "150 Sherway Dr, Etobicoke, ON M9C 1A5"}, "missing_fields": ["address"]}
+{"benchmark_id": "9d01706ca15da1d4", "expected": {"phone": "416-922-6337"}, "missing_fields": ["phone"]}
+{"benchmark_id": "fb7ef3ab2fc564e1", "expected": {"address": "820 John Marks Avenue"}, "missing_fields": ["address"]}
+{"benchmark_id": "ae87474bc47b8067", "expected": {"address": "135 McLaughlin Road South"}, "missing_fields": ["address"]}
+{"benchmark_id": "c5e33895a13ec4b7", "expected": {"postal_code": "L5N 6A3"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "2bb24a93d028dd11", "expected": {"address": "750 Great Northern Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "97ceaba2c9017f6a", "expected": {"postal_code": "L9V 2Z4"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "79535341cca88be3", "expected": {"address": "723 Rymal Rd. West Hamilton, ON L9B 2W2"}, "missing_fields": ["address"]}
+{"benchmark_id": "d5e6007514d34fa6", "expected": {"address": "58 Anson Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "56c42f14bb25d1f5", "expected": {"address": "360 Sunnyside Ave, Ottawa, ON K1S 0S4"}, "missing_fields": ["address"]}
+{"benchmark_id": "708915f2af45d9e7", "expected": {"address": "8405 Financial Dr, Unit 11, Brampton, ON L6Y 0E3"}, "missing_fields": ["address"]}
+{"benchmark_id": "81762f356343524c", "expected": {"address": "8 Richmond Park Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "b5af5a292884178e", "expected": {"address": "752 King Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "dc80d29ce492f15b", "expected": {"phone": "905-495-4500"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d7d0060b66065213", "expected": {"address": "755 Queensway E, Unit 3, Mississauga, ON L4Y 4C5"}, "missing_fields": ["address"]}
+{"benchmark_id": "6fd15f801e9a2573", "expected": {"address": "Stoney Creek, Hamilton, ON L8G 1A9"}, "missing_fields": ["address"]}
+{"benchmark_id": "8335ad890a8e1135", "expected": {"address": "1030 Ouellette Avenue Room JM 2-813"}, "missing_fields": ["address"]}
+{"benchmark_id": "3d8481bb69522376", "expected": {"address": "1824 Concession Dr, ON N0L 1Z0"}, "missing_fields": ["address"]}
+{"benchmark_id": "aca2785fddb42ad4", "expected": {"address": "4 Campbell Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "51930cddec3bc5f3", "expected": {"phone": "(416) 591-4411"}, "missing_fields": ["phone"]}
+{"benchmark_id": "8844b0dce4eb75fa", "expected": {"phone": "905-629-1007 ext.22"}, "missing_fields": ["phone"]}
+{"benchmark_id": "c8f43033fafc24fb", "expected": {"phone": "416-977-5580"}, "missing_fields": ["phone"]}
+{"benchmark_id": "e0676498c961f0a9", "expected": {"address": "499 Raglan Street North, Renfrew ON H7V 1P6"}, "missing_fields": ["address"]}
+{"benchmark_id": "e41a0395d372d7b2", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61008"}, "missing_fields": ["website"]}
+{"benchmark_id": "1316deb87bb70c05", "expected": {"address": "2245 Lawrence Avenue West, Etobicoke, ON M9P 3W3"}, "missing_fields": ["address"]}
+{"benchmark_id": "7549c47b2f3d5fa7", "expected": {"website": "https://healthone.ca/north-york/pharmacy-ny/"}, "missing_fields": ["website"]}
+{"benchmark_id": "64e9b5865065e2a4", "expected": {"address": "5987 Bathurst St, Toronto, ON M2R 1Z3"}, "missing_fields": ["address"]}
+{"benchmark_id": "fa39bba0f8aaa1f0", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=219271"}, "missing_fields": ["website"]}
+{"benchmark_id": "707406be51bc72cd", "expected": {"phone": "416-498-0043"}, "missing_fields": ["phone"]}
+{"benchmark_id": "5a49f31833a14370", "expected": {"address": "705 MacKay Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "8a0b806c28dd3868", "expected": {"address": "2867 Ellesmere Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "0bc44126d3157ba8", "expected": {"postal_code": "M5B 1N8"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "7f44bee278db7f59", "expected": {"phone": "(905) 544-4320"}, "missing_fields": ["phone"]}
+{"benchmark_id": "cb21beacb9aa76c9", "expected": {"address": "21 Sylvan Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "a83fd52484be5161", "expected": {"address": "421 Shepherdson Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "1924e87597f3b24f", "expected": {"address": "6 Broomhead Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "a72960eaebf4669a", "expected": {"website": "https://www.google.ca/maps?q=Simpson%27s+Pharmasave%2C1882+Niagara+Stone+Rd%2C+Virgil%2C+ON+L0S+1T0%2C+Canada"}, "missing_fields": ["website"]}
+{"benchmark_id": "5a27876a32002297", "expected": {"address": "525 Causley Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "4f548899835fd618", "expected": {"phone": "905-877-0700"}, "missing_fields": ["phone"]}
+{"benchmark_id": "163463b8baa7237b", "expected": {"address": "120 Dorothy Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "e7285de02f75b3f1", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151121"}, "missing_fields": ["website"]}
+{"benchmark_id": "7f2edd6873588d38", "expected": {"phone": "416-979-9373"}, "missing_fields": ["phone"]}
+{"benchmark_id": "2bfb7af37b044f0d", "expected": {"website": "https://www.boggios.com/pharmacy/ridegway/"}, "missing_fields": ["website"]}
+{"benchmark_id": "aadce46825d7d432", "expected": {"phone": "613-735-7469"}, "missing_fields": ["phone"]}
+{"benchmark_id": "b9187efe2ea10e5e", "expected": {"address": "241 Eighth St, Cochrane, ON P0L 1C0"}, "missing_fields": ["address"]}
+{"benchmark_id": "e2df198fc12025f1", "expected": {"address": "60 Cornelia Street West"}, "missing_fields": ["address"]}
+{"benchmark_id": "9a1ff66d640965c2", "expected": {"website": "http://www.pharmaciedesjardins.ca/"}, "missing_fields": ["website"]}
+{"benchmark_id": "1417dd0ce9bcc085", "expected": {"phone": "905-848-7100"}, "missing_fields": ["phone"]}
+{"benchmark_id": "a5578ee1dd1a6fae", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151527"}, "missing_fields": ["website"]}
+{"benchmark_id": "60efa6387a6bc773", "expected": {"phone": "416-222-1153"}, "missing_fields": ["phone"]}
+{"benchmark_id": "0f514f1c98a2a02f", "expected": {"address": "333 Sherbourne St."}, "missing_fields": ["address"]}
+{"benchmark_id": "edeaefcd6b055123", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=154884"}, "missing_fields": ["website"]}
+{"benchmark_id": "0fa99d433768dc1f", "expected": {"address": "2100 Bovaird Drive East, L6R 3J7"}, "missing_fields": ["address"]}
+{"benchmark_id": "b759dbcf63e34fc1", "expected": {"address": "511 Ray Lawson Blvd, Unit 2, Brampton, ON L6Y 0N2"}, "missing_fields": ["address"]}
+{"benchmark_id": "b431e809821f9f24", "expected": {"address": "465 Morden Rd, Oakville, ON L6K 3W6"}, "missing_fields": ["address"]}
+{"benchmark_id": "497853fbdf7cfc01", "expected": {"phone": "416-609-2222"}, "missing_fields": ["phone"]}
+{"benchmark_id": "4727cfcacee90248", "expected": {"phone": "416-822-3474"}, "missing_fields": ["phone"]}
+{"benchmark_id": "62ffaed8c97d9746", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=151368"}, "missing_fields": ["website"]}
+{"benchmark_id": "84ff0b734537e995", "expected": {"address": "Jane and Shoreham Plaza, 4702 Jane St, Toronto, ON M3N 2L3"}, "missing_fields": ["address"]}
+{"benchmark_id": "0b1f54d444c9aaeb", "expected": {"postal_code": "M4W 3Y8"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "d3561acc96c232b6", "expected": {"address": "3 Brewster Rd, Unit 19, Brampton, ON L6R 0S9"}, "missing_fields": ["address"]}
+{"benchmark_id": "9249083a85c7d366", "expected": {"address": "1690 Dersan Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "667a60a2363f4b43", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=147720"}, "missing_fields": ["website"]}
+{"benchmark_id": "a876a9b720733efd", "expected": {"address": "8350 Holmes Rd, Fort Steele, BC, V0B 1N0, Canada"}, "missing_fields": ["address"]}
+{"benchmark_id": "9fe8109fae908cad", "expected": {"address": "68 Main St S, Georgetown, ON L7G 3G3"}, "missing_fields": ["address"]}
+{"benchmark_id": "51d5e6f6356c68f5", "expected": {"address": "Erin Centre Plaza, 3955 Erin Centre Blvd"}, "missing_fields": ["address"]}
+{"benchmark_id": "343893605673cf34", "expected": {"address": "150 Sherway Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "0419dce34e2898b2", "expected": {"address": "78 Admiral Rd"}, "missing_fields": ["address"]}
+{"benchmark_id": "8f4237be9fa9ac40", "expected": {"phone": "905-822-6621"}, "missing_fields": ["phone"]}
+{"benchmark_id": "57bd00a1a0ef43de", "expected": {"address": "2940 Dundas St W, Toronto, ON M6P 1Y8"}, "missing_fields": ["address"]}
+{"benchmark_id": "a7926c55cca71217", "expected": {"address": "2291 Danforth Ave, Toronto, ON M4C 1K5"}, "missing_fields": ["address"]}
+{"benchmark_id": "15532d3d95ab596c", "expected": {"phone": "905-792-0821"}, "missing_fields": ["phone"]}
+{"benchmark_id": "bb08517c55619401", "expected": {"address": "365 West Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "6d47a596a79393f6", "expected": {"phone": "416-864-3920"}, "missing_fields": ["phone"]}
+{"benchmark_id": "69ef73d086c03d9e", "expected": {"address": "5030 Tenth Line W, Unit 6, Mississauga, ON L5M 7Z5"}, "missing_fields": ["address"]}
+{"benchmark_id": "5d1ca7517cdf1a96", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=220209"}, "missing_fields": ["website"]}
+{"benchmark_id": "53e31e9a167638ed", "expected": {"address": "6085 Creditview Rd, Mississauga, ON L5V 2A8"}, "missing_fields": ["address"]}
+{"benchmark_id": "ef9a628531e1a145", "expected": {"phone": "416-929-5200"}, "missing_fields": ["phone"]}
+{"benchmark_id": "89e970eb437bc4a6", "expected": {"address": "76 Stuart Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "51a5e3b1eda1d0b8", "expected": {"address": "41 McClellan Street, Post Box 99"}, "missing_fields": ["address"]}
+{"benchmark_id": "396c38d81a12ce86", "expected": {"address": "300 Peter St N, Orillia, ON"}, "missing_fields": ["address"]}
+{"benchmark_id": "e5bff3723f667e2a", "expected": {"address": "169 Main Street East"}, "missing_fields": ["address"]}
+{"benchmark_id": "ca1f5c5e7b8ce156", "expected": {"address": "\u00c9quipe psycho-sociale (S.D. & G.)"}, "missing_fields": ["address"]}
+{"benchmark_id": "92f8cd8c2382df54", "expected": {"address": "354 Read Street, P.O. Box 550"}, "missing_fields": ["address"]}
+{"benchmark_id": "a1328d3fbb63e424", "expected": {"phone": "905-250-0415"}, "missing_fields": ["phone"]}
+{"benchmark_id": "9436c4f44ef4cd1c", "expected": {"address": "Grid Rd. 724, PO Box 220, Lumsden, Saskatchewan, S0G 3C0"}, "missing_fields": ["address"]}
+{"benchmark_id": "c04c724a9b58c95c", "expected": {"phone": "416-259-1330"}, "missing_fields": ["phone"]}
+{"benchmark_id": "d67dd097a487698f", "expected": {"phone": "416-864-3022"}, "missing_fields": ["phone"]}
+{"benchmark_id": "ed153695031e6a94", "expected": {"phone": "416-537-2455"}, "missing_fields": ["phone"]}
+{"benchmark_id": "5e46fbb24f8e9190", "expected": {"postal_code": "M4W 2K9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "0d884e039b401e65", "expected": {"postal_code": "L6R 3S9"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "887630070feda833", "expected": {"phone": "416-603-5686"}, "missing_fields": ["phone"]}
+{"benchmark_id": "f18a900ee32e4615", "expected": {"phone": "905-566-7003"}, "missing_fields": ["phone"]}
+{"benchmark_id": "c849d14ee7156ba3", "expected": {"address": "109-1265 Morningside Ave"}, "missing_fields": ["address"]}
+{"benchmark_id": "cbe3559fff37750b", "expected": {"postal_code": "M6P 1Y5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "d09f03d4af5c5060", "expected": {"address": "Heartland Town Centre, 775 Britannia Rd W, Unit 12, Mississauga, ON L5V 2Y1"}, "missing_fields": ["address"]}
+{"benchmark_id": "1a7d0b1396be73a2", "expected": {"postal_code": "L6S 6E8"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "0747b51a48264c43", "expected": {"address": "5 Airport Rd, Fort Albany, ON P0L 1H0"}, "missing_fields": ["address"]}
+{"benchmark_id": "9eba9f1865ec0f1f", "expected": {"phone": "416-251-1126"}, "missing_fields": ["phone"]}
+{"benchmark_id": "cff81c7364e85bc5", "expected": {"address": "285 Cummer Avenue, M2M 2G1"}, "missing_fields": ["address"]}
+{"benchmark_id": "9c8ae5ed207e834c", "expected": {"address": "260 Augusta Ave"}, "missing_fields": ["address"]}
+{"benchmark_id": "35c60dd9b11d8da1", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=61046"}, "missing_fields": ["website"]}
+{"benchmark_id": "5b1b4781d0e79e2d", "expected": {"address": "488 Wilbrod St, Ottawa, ON K1N 6M8"}, "missing_fields": ["address"]}
+{"benchmark_id": "b4b9d8926efaf48e", "expected": {"address": "459 Hume Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "48739a5bbe7e8849", "expected": {"address": "7 St. Francis Memorial Drive"}, "missing_fields": ["address"]}
+{"benchmark_id": "e3b54f8c6da3971d", "expected": {"address": "1065 Steeles Ave W"}, "missing_fields": ["address"]}
+{"benchmark_id": "f8978eda96bec630", "expected": {"address": "70 Spine Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "475ec225e94bef5a", "expected": {"phone": "416-572-3575"}, "missing_fields": ["phone"]}
+{"benchmark_id": "4259e58e25a419dd", "expected": {"website": "https://www.torontocentralhealthline.ca/displayService.aspx?id=150843"}, "missing_fields": ["website"]}
+{"benchmark_id": "6e4e2158d54f3380", "expected": {"postal_code": "M8Y 1H6"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "7a20905d87518e1e", "expected": {"address": "333 Sherbourne St"}, "missing_fields": ["address"]}
+{"benchmark_id": "3e1fcaba807cb4d1", "expected": {"address": "300 Gordon Street"}, "missing_fields": ["address"]}
+{"benchmark_id": "ff5f92290195bb19", "expected": {"address": "100 Pertosa Dr, Suite 101, Brampton, ON L6X 0H9"}, "missing_fields": ["address"]}
+{"benchmark_id": "c2475cd0ee41f486", "expected": {"website": "https://www.centralwesthealthline.ca/displayService.aspx?id=191888"}, "missing_fields": ["website"]}
+{"benchmark_id": "ef84284a9acb0c7c", "expected": {"address": "501 Coldstream Dr #6"}, "missing_fields": ["address"]}
+{"benchmark_id": "1e63f39dbd5d2fba", "expected": {"postal_code": "M1K 2K5"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "f4dd310e2c4c9f0e", "expected": {"address": "725 Coursol Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "291714368656b8ae", "expected": {"address": "400 Guelph St, Unit 3, Georgetown, ON L7G 0J2"}, "missing_fields": ["address"]}
+{"benchmark_id": "5a7490e8abfa1dfe", "expected": {"address": "Canada Post Plaza, 966 Dundas St E, Unit 8A"}, "missing_fields": ["address"]}
+{"benchmark_id": "780eb6cc109a4875", "expected": {"address": "100 Consilium Place, Suite 200, Scarborough, ON M1H 3E3"}, "missing_fields": ["address"]}
+{"benchmark_id": "98e099ed262e7910", "expected": {"address": "750 Great Northern Rd, Sault Ste Marie, ON P6B 0A8"}, "missing_fields": ["address"]}
+{"benchmark_id": "d5ef99c7c967f719", "expected": {"address": "2978 Danforth Ave"}, "missing_fields": ["address"]}
+{"benchmark_id": "8e4fb51841cb19f5", "expected": {"address": "700 Coronation Blvd, N1R 3G2"}, "missing_fields": ["address"]}
+{"benchmark_id": "43b93b19d46027e3", "expected": {"address": "24 Centennial Dr, PO Box 99, ON N0K 1W0"}, "missing_fields": ["address"]}
+{"benchmark_id": "a0c6d8dc703e7fa6", "expected": {"postal_code": "M6N 1B7"}, "missing_fields": ["postal_code"]}
+{"benchmark_id": "5baec6447dc9b831", "expected": {"address": "1320 Barton Street East"}, "missing_fields": ["address"]}
+{"benchmark_id": "940715d9969746da", "expected": {"website": "https://www.mississaugahaltonhealthline.ca/displayService.aspx?id=176178"}, "missing_fields": ["website"]}
+{"benchmark_id": "a6097bd16f987bb7", "expected": {"address": "1140 South Bay Road"}, "missing_fields": ["address"]}
+{"benchmark_id": "6ab082ad8b5cf72f", "expected": {"address": "1 Meno Ya Win Way"}, "missing_fields": ["address"]}
+{"benchmark_id": "f2610463337c53d8", "expected": {"phone": "(905) 845-3811"}, "missing_fields": ["phone"]}
+{"benchmark_id": "087b9fab311c3400", "expected": {"address": "381 Church Street"}, "missing_fields": ["address"]}

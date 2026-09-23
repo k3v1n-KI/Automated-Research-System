@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "missing_data_condition_comparison",
+  "conditions": {
+    "first_result_places": {
+      "requested": 500,
+      "filled": 427,
+      "exact": 77,
+      "entity_supported": 427,
+      "wrong_entity": 0,
+      "unresolved": 73,
+      "unexpected_fills": 0,
+      "fill_rate": 0.854,
+      "validated_fill_rate": 0.854,
+      "exact_rate": 0.154,
+      "wrong_entity_rate": 0.0,
+      "unexpected_fill_rate": 0.0
+    },
+    "fuzzy_places_abstention": {
+      "requested": 500,
+      "filled": 114,
+      "exact": 72,
+      "entity_supported": 114,
+      "wrong_entity": 0,
+      "unresolved": 386,
+      "unexpected_fills": 0,
+      "fill_rate": 0.228,
+      "validated_fill_rate": 0.228,
+      "exact_rate": 0.144,
+      "wrong_entity_rate": 0.0,
+      "unexpected_fill_rate": 0.0
+    }
+  },
+  "interpretation": {
+    "first_result_places": "Invalid for entity accuracy if identity leakage is detected; original runner copied target identity fields.",
+    "fuzzy_places_abstention": "Branch-aware fuzzy matching with abstention when identity evidence is weak."
+  },
+  "identity_leakage_rows": {
+    "first_result_places": 500,
+    "fuzzy_places_abstention": 123
+  }
+}

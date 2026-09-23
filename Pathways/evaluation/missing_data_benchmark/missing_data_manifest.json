@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "seed": 20260922,
+  "requested_rows": 500,
+  "benchmark_rows": 500,
+  "gold_file": "missing_data_gold.jsonl"
+}

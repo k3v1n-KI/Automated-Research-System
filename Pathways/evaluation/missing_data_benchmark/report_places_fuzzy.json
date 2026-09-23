@@ -1,0 +1,3660 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "automated_sealed_benchmark",
+  "metrics": {
+    "requested": 500,
+    "filled": 114,
+    "exact": 72,
+    "entity_supported": 114,
+    "wrong_entity": 0,
+    "unresolved": 386,
+    "unexpected_fills": 156,
+    "fill_rate": 0.228,
+    "validated_fill_rate": 0.228,
+    "exact_rate": 0.144,
+    "wrong_entity_rate": 0.0,
+    "unexpected_fill_rate": 0.312
+  },
+  "fields": [
+    {
+      "benchmark_id": "e32efdae70641981",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b99ef19d8311d296",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0523eb34806fd1f2",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "941153b420f7ad6d",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "699b490debe1d939",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M4L 2A4",
+      "entity_match": {
+        "score": 0.8333,
+        "name_score": 1.0,
+        "address_score": 0.9444,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "9d87b17effd04632",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5ba6504cb6403347",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c25a207e385009bc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "43cc2d2849973d22",
+      "field": "phone",
+      "status": "mismatch",
+      "value": "(613) 233-4443",
+      "entity_match": {
+        "score": 0.8306,
+        "name_score": 1.0,
+        "address_score": 0.9355,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5601ff92b9a00dc6",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e4b56563f21ff5ea",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5J 1K5",
+      "entity_match": {
+        "score": 0.87,
+        "name_score": 1.0,
+        "address_score": 0.9,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "347c269dfc8f8992",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ddd75f9eba98f516",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f3d033214281aeb6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "022189e5f16c9dc5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "349b8d3dc2dad19a",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "67f09aac4127547c",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M6G 1L8",
+      "entity_match": {
+        "score": 0.8318,
+        "name_score": 1.0,
+        "address_score": 0.9394,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "c8fad7ab1b120fbc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fc2ff804be0c4b7b",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "40a79b2b50a2454b",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://www.raxlenpharmacy.com/",
+      "entity_match": {
+        "score": 0.8318,
+        "name_score": 1.0,
+        "address_score": 0.9394,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "c86425db03a20cbe",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9ae9b515b2a176fc",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 848-9955",
+      "entity_match": {
+        "score": 0.884,
+        "name_score": 1.0,
+        "address_score": 0.78,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "9cfd72ee8d5dbbe4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "efbe95de92aa7ebf",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e4f06540da6a386f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "be0aa87b949196f6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d063d28ac726f5fe",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "af02a57ee4a78ba8",
+      "field": "phone",
+      "status": "exact",
+      "value": "(844) 561-1254",
+      "entity_match": {
+        "score": 0.8095,
+        "name_score": 1.0,
+        "address_score": 0.8649,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "948aed83ce47dde6",
+      "field": "postal_code",
+      "status": "mismatch",
+      "value": "L6L 5B3",
+      "entity_match": {
+        "score": 0.7962,
+        "name_score": 1.0,
+        "address_score": 0.8205,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "6b1f703457aec283",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b0f69d06d50f50c9",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4da67d86068773a9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "74e840c23629a86e",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.guardian-ida-remedysrx.ca/en/ontario/brampton/upper-mount-gdn-pharmacy-7058511?utm_source=google&utm_medium=maps&utm_campaign=local_presence",
+      "entity_match": {
+        "score": 0.8348,
+        "name_score": 0.8214,
+        "address_score": 0.8542,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "f9d641e16bc83d4a",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "558fa96af10bea45",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2ae0e491fc7e1dff",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9e19f75e3cc2dbeb",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "783c38625d55e6e7",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bcd791dd02d8bb0b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b228a77af0ee0752",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b4f9cb9121a4a16b",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "94e1699473509fc3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f4b7b6b28a9c810c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d7bd25408567b4a9",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M6E 1B5",
+      "entity_match": {
+        "score": 0.8279,
+        "name_score": 1.0,
+        "address_score": 0.9263,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "2371ec2a1b37f2a6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ff190825d59b864f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f15f40fdbd8db073",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1540f0658e0354d2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1c7de63e8c69aaec",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0eeb7efe3457fac4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5ee578c8794913cb",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ba3c59e7ed9ccb38",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "db3ad3921867775c",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "dadf2ab747bdde40",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ede1b9b432044e78",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2fe5017d30a15e13",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "52b92f175b6432a7",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 654-2942",
+      "entity_match": {
+        "score": 0.9342,
+        "name_score": 1.0,
+        "address_score": 0.9474,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "126773a32d3b9548",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.guardian-ida-remedysrx.ca/en/Ontario/Mississauga/Erin-Mills-IDA-Pharmacy-7045121?utm_source=google&utm_medium=maps&utm_campaign=local_presence",
+      "entity_match": {
+        "score": 0.95,
+        "name_score": 1.0,
+        "address_score": 1.0,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "c7c583f75c7cc834",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5N 3N5",
+      "entity_match": {
+        "score": 0.7534,
+        "name_score": 0.878,
+        "address_score": 0.8406,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "d8babbd6025742b4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "83014955be5ca8b9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "97d5ff592c95a5a1",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0ee13b198fd8c90d",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://www.metrodrugs.ca/",
+      "entity_match": {
+        "score": 0.7824,
+        "name_score": 0.625,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "6a63eafe4483d485",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://www.foodbasics.ca/?utm_source=G&utm_medium=local&utm_campaign=google-local",
+      "entity_match": {
+        "score": 0.9038,
+        "name_score": 1.0,
+        "address_score": 0.8462,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "0e109e2a40a270cb",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ea542261c183df1d",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d73d3fce4caaf956",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "805ed34e5eadc1ea",
+      "field": "postal_code",
+      "status": "mismatch",
+      "value": "M4S 3C4",
+      "entity_match": {
+        "score": 0.8222,
+        "name_score": 1.0,
+        "address_score": 0.7407,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "d3e3a313511944d2",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a5d972f41eb44830",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "04c6e409302ebe2c",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2805c1ea95c99703",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "20da8a787c5e36b9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ab49979b95f2e175",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e50a06e411c6824b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5d5d425f0a3b3007",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6099df42badb4908",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f9dd20ddf8713d7b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6a99cb3be30fd2e8",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.thompsonsquarepharmacy.ca/",
+      "entity_match": {
+        "score": 0.7613,
+        "name_score": 1.0,
+        "address_score": 0.7042,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "3fa0fdf88f621398",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8d5d70796b28e936",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3bb39d7d2110dd6d",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fab88c548f0ebc02",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "082e20e26e4367f4",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6eb089dd2be69886",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e659dcb04eb5f151",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L4Z 4B4",
+      "entity_match": {
+        "score": 0.7983,
+        "name_score": 1.0,
+        "address_score": 0.8276,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "959a9bd0899fea83",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7032b58b8583d06e",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "56ef24e054fd368a",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8abce48ba5169116",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bb044265a1b8a264",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8e8ca5d92ec51f8f",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f818fe4b4c8b6b40",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "916dffa8ebc0f12c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0ddc6dca42f5aae8",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1e1ed01d8e4f77e2",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fae43c8707f51377",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://regalhpharmacy.com/",
+      "entity_match": {
+        "score": 0.9338,
+        "name_score": 1.0,
+        "address_score": 0.9459,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "52ca9aa5a0ec820c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "832a52be1ca0ea5a",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d780879ebbd043b8",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://sobeyspharmacy.com/stores/airport-countryside/?utm_source=G&utm_medium=lpm&utm_campaign=Sobeys",
+      "entity_match": {
+        "score": 0.919,
+        "name_score": 1.0,
+        "address_score": 0.8966,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "495a69396d63edd7",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "08632eac20ec7dcc",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d4858b55ebbcdd1e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "dcf0e630ddcbfec0",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4240cbf84293885c",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 450-3500",
+      "entity_match": {
+        "score": 0.9324,
+        "name_score": 1.0,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "db61f54caf4f84c6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2385a6952fafdd8c",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 926-8267",
+      "entity_match": {
+        "score": 0.7252,
+        "name_score": 0.8824,
+        "address_score": 0.7407,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "b4e502fa14ea0a28",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "367d1d825891922b",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "007208895d0c9de9",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L4B 3M6",
+      "entity_match": {
+        "score": 0.7496,
+        "name_score": 0.8205,
+        "address_score": 0.9048,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "009eacd79153a75c",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b2b4faa84c5c1429",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "29dab905762f5783",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0092cdbba883e103",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "75051ae39072ecba",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ee772f2d54c2761c",
+      "field": "phone",
+      "status": "mismatch",
+      "value": "(613) 233-4443",
+      "entity_match": {
+        "score": 0.8306,
+        "name_score": 1.0,
+        "address_score": 0.9355,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "d5548f82a623fc53",
+      "field": "phone",
+      "status": "exact",
+      "value": "(647) 340-4681",
+      "entity_match": {
+        "score": 0.9203,
+        "name_score": 1.0,
+        "address_score": 0.9011,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "e0ba838340c5bf57",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f134412789473c2a",
+      "field": "phone",
+      "status": "mismatch",
+      "value": "(905) 793-4844",
+      "entity_match": {
+        "score": 0.9036,
+        "name_score": 1.0,
+        "address_score": 0.8454,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "bf946fcae69beb58",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "394167da062a8526",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 851-8063",
+      "entity_match": {
+        "score": 0.9129,
+        "name_score": 1.0,
+        "address_score": 0.8764,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "3e44730a358fb354",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b643f83a84e96975",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "dfe6b1ddc19d1afc",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://pharmachoice.com/",
+      "entity_match": {
+        "score": 0.7689,
+        "name_score": 0.6667,
+        "address_score": 0.8409,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "7e2c5bb7ccc5b309",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fcd22b031e173a57",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "28d9c6412edc3407",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b6aeaf02e299bd2a",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6L 2X4",
+      "entity_match": {
+        "score": 0.8026,
+        "name_score": 1.0,
+        "address_score": 0.8421,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "e9b365818527f9ff",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 451-0111",
+      "entity_match": {
+        "score": 0.9014,
+        "name_score": 1.0,
+        "address_score": 0.8378,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "bede8c77f786fd01",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c78bd4b3c34dc910",
+      "field": "phone",
+      "status": "mismatch",
+      "value": "(902) 706-8205",
+      "entity_match": {
+        "score": 0.8416,
+        "name_score": 1.0,
+        "address_score": 0.972,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "95069b184a020791",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "613e3b7a17f18de7",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "dbfae702a499a30b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b926167aeba78f79",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e730ad96428a41d8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "336afa072ed416dc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "eba7582bb1a30b75",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5B 4M6",
+      "entity_match": {
+        "score": 0.8354,
+        "name_score": 1.0,
+        "address_score": 0.9512,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "20bdf99969edbccc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c299abfe57a772fe",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.guardian-ida-remedysrx.ca/en/ontario/toronto/sams-ida-pharmacy-7008620",
+      "entity_match": {
+        "score": 0.83,
+        "name_score": 0.8,
+        "address_score": 0.8667,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "eb1f892eb256cb2c",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "df40475becea4b91",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5M 4N4",
+      "entity_match": {
+        "score": 0.8125,
+        "name_score": 1.0,
+        "address_score": 0.875,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "e13cda82d6ae020a",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a5670bd86f6ea976",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "06733c467b765d83",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e654cfc9123834dd",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f93ee4c2f69deeee",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://dayspringmedical.ca/dayspring-pharmacy/",
+      "entity_match": {
+        "score": 0.9041,
+        "name_score": 1.0,
+        "address_score": 0.8471,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "b365e9b4213fb00e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "31238cebbd554178",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5N 2W7",
+      "entity_match": {
+        "score": 0.8078,
+        "name_score": 1.0,
+        "address_score": 0.8593,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "97401fcecf680e19",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "476f391fc76449a6",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "08994ae39e788e3f",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9dfc554f7b9c6ecc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "de9444314cbf2130",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "823679247baa7380",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "845b0d73ff21686a",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "86b6dc5775d762b7",
+      "field": "website",
+      "status": "exact",
+      "value": "https://www.opatoday.com/",
+      "entity_match": {
+        "score": 0.7677,
+        "name_score": 1.0,
+        "address_score": 0.7257,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "71fd00213b0a0148",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 495-5855",
+      "entity_match": {
+        "score": 0.9471,
+        "name_score": 1.0,
+        "address_score": 0.8235,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "45b681309e013c02",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.pocketpills.com/?utm_source=google&utm_medium=organic&utm_campaign=google-my-business&utm_content=eastern-canada-listing&utm_term=website-link",
+      "entity_match": {
+        "score": 0.8864,
+        "name_score": 0.9091,
+        "address_score": 0.9091,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "7676b206781a387e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9efc1339c5f04bd3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e751f82745d7f5e8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "99c5a48d45786118",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4683fe1860be501b",
+      "field": "phone",
+      "status": "exact",
+      "value": "(519) 474-1313",
+      "entity_match": {
+        "score": 0.9087,
+        "name_score": 1.0,
+        "address_score": 0.6957,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "02bb378671adf033",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0899b89212d0a0a2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d10e2d23bf37ffbb",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "055019a74e43b192",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e67d9da72b9fcef2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2446b7b1cac4d110",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ce3ae6a9edb4b3a8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1ad26c046ac13413",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "895723fbb46cb0f4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d4b795194b64243c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9339a26067661936",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4a51a4d253abc34e",
+      "field": "phone",
+      "status": "exact",
+      "value": "(705) 495-4515",
+      "entity_match": {
+        "score": 0.9571,
+        "name_score": 1.0,
+        "address_score": 0.8571,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "559cbf003af2340e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2dd6f010da13a981",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M6S 1M4",
+      "entity_match": {
+        "score": 0.7358,
+        "name_score": 0.7586,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "054efc81eed05d61",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M4C 1L7",
+      "entity_match": {
+        "score": 0.8333,
+        "name_score": 1.0,
+        "address_score": 0.9444,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "fd780604b39ad6e2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3daf7dd2767fcee2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6f0aa020f5af3032",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6H 6X6",
+      "entity_match": {
+        "score": 0.7314,
+        "name_score": 1.0,
+        "address_score": 0.6047,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "1348aed7c6839072",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d90ebdc6b6e1579f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d42705118973927e",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M5M 3X2",
+      "entity_match": {
+        "score": 0.8318,
+        "name_score": 1.0,
+        "address_score": 0.9394,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "802392e6e94cfb86",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a37d2e8a182d88dd",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "596a9173350f8924",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5e368c006dcb868e",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.shoppersdrugmart.ca/en/stores/934-shoppers-drug-mart-broadway-and-townline/?utm_source=G&utm_medium=lpm&utm_campaign=LPM_SDM",
+      "entity_match": {
+        "score": 0.9071,
+        "name_score": 1.0,
+        "address_score": 0.8571,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "56c9474a89536575",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1018d8ac5b320b47",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2fa44a1c0721c085",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ed1570f57bda870e",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 741-7711",
+      "entity_match": {
+        "score": 0.9159,
+        "name_score": 1.0,
+        "address_score": 0.8864,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "6564b49ab101f800",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bab94f6ee00e0b70",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "392df85633da23c0",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "600fa8d1a9b4e9c4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f275649c96e65997",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c3f8cd009b639c30",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 306-1212",
+      "entity_match": {
+        "score": 0.9846,
+        "name_score": 1.0,
+        "address_score": 0.9487,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "0c023f60e59ac1a1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "713e58e1795b4833",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2b280f3768f5b0df",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "486244fd59090eac",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M4T 2S9",
+      "entity_match": {
+        "score": 0.8,
+        "name_score": 1.0,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "6883cb2c2424066d",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ffcc28d8db9f4ed6",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6R 0W3",
+      "entity_match": {
+        "score": 0.7967,
+        "name_score": 1.0,
+        "address_score": 0.8224,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "033d4d0e831d6b1f",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e1e621137eda4ac4",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M1T 3G8",
+      "entity_match": {
+        "score": 0.8694,
+        "name_score": 1.0,
+        "address_score": 0.898,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "48534185a3fe1796",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.shoppersdrugmart.ca/en/stores/1168-shoppers-drug-mart-acton/?utm_source=G&utm_medium=lpm&utm_campaign=LPM_SDM",
+      "entity_match": {
+        "score": 0.8848,
+        "name_score": 1.0,
+        "address_score": 0.7826,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "755652d1769275cc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7909169b7d015b79",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "235beaa8eff6d3a3",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "34a08a09441cb13c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "eb957c45efea9ac2",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 588-4973",
+      "entity_match": {
+        "score": 0.9109,
+        "name_score": 1.0,
+        "address_score": 0.8696,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "20c9ce1a075d93fd",
+      "field": "postal_code",
+      "status": "mismatch",
+      "value": "L5A 4E4",
+      "entity_match": {
+        "score": 0.8227,
+        "name_score": 1.0,
+        "address_score": 0.9091,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "b91ae945c3836bc6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "13b4657bb12f97e1",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1eaa4428e1e7c492",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "91a147ccab4fd0ce",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4b75e8307b9f5b1f",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5V 3E5",
+      "entity_match": {
+        "score": 0.8017,
+        "name_score": 0.9474,
+        "address_score": 0.9091,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "a6d4440a490ed29a",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M4C 1L3",
+      "entity_match": {
+        "score": 0.81,
+        "name_score": 1.0,
+        "address_score": 0.8667,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "9a2f725efa6e4d74",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0ecb3ea83e5cf80d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2d2ed68e1a566644",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ca65c90df77efcfd",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0f1cf7379b86a8e9",
+      "field": "phone",
+      "status": "exact",
+      "value": "(613) 562-4500",
+      "entity_match": {
+        "score": 0.8227,
+        "name_score": 1.0,
+        "address_score": 0.9091,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5c2fead1c2969af3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "333f12fa2ffc9192",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f05b4dc97a3ae79d",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 854-0313",
+      "entity_match": {
+        "score": 0.8192,
+        "name_score": 1.0,
+        "address_score": 0.5641,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "9881d2815c5aa6c4",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1f2a0f1aa29f138d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8042609cb273f493",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 778-7780",
+      "entity_match": {
+        "score": 0.9233,
+        "name_score": 1.0,
+        "address_score": 0.9109,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "a9892e30bc8b9fdc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2ba4a4ae21d93195",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d81e61030c66d4ca",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f3982f3a16786e1d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "56ef3f4cbcf98223",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.shoppersdrugmart.ca/en/stores/1320-shoppers-drug-mart-king-and-peter/?utm_source=G&utm_medium=lpm&utm_campaign=LPM_SDM",
+      "entity_match": {
+        "score": 0.9313,
+        "name_score": 1.0,
+        "address_score": 0.9375,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "12882aa3ef3f333d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "af19e252a6c97cf7",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "07718aacddca5461",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/brampton-queen-st/",
+      "entity_match": {
+        "score": 0.7905,
+        "name_score": 0.7179,
+        "address_score": 0.8444,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "72a7dd2bcdf4e447",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "590520f9a8070fe8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "272de24799393b07",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "04d8b04e5bcc072d",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6Y 3A9",
+      "entity_match": {
+        "score": 0.8159,
+        "name_score": 1.0,
+        "address_score": 0.8864,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "363cf8bba41fbbcc",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f5b28debcdd30e43",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M1B 1Y9",
+      "entity_match": {
+        "score": 0.84,
+        "name_score": 1.0,
+        "address_score": 0.8,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "96d58cdb422bf7df",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fc4f9af46f015e74",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a177bb6556af272d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0848ec91f464ef9c",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7e020ea768cb5577",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "112d3def35fb6aeb",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b999c0dcc017fb58",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://www.metro.ca/find-a-store/details.en.html?id=330&utm_source=G&utm_medium=local&utm_campaign=google-local",
+      "entity_match": {
+        "score": 0.9329,
+        "name_score": 1.0,
+        "address_score": 0.9429,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5d52f5f6fa81cb00",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a7780205f70edd38",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "02b1a1c4e2711e8e",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/woodbridge",
+      "entity_match": {
+        "score": 0.8919,
+        "name_score": 0.9474,
+        "address_score": 0.8764,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5cfa7fb1b6821024",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7cd94b195470dd40",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b4a97cc47590f3e9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a4946e8c0abef003",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3cfce2f17a08b496",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ebacf22fe788d418",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6R 0M5",
+      "entity_match": {
+        "score": 0.7851,
+        "name_score": 1.0,
+        "address_score": 0.7838,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "ec844765f203256d",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5B 3B9",
+      "entity_match": {
+        "score": 0.8033,
+        "name_score": 1.0,
+        "address_score": 0.8444,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "ce0d6f727e889639",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "60e85aad690b4760",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "709a3c0c31c353ce",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9b7377ae329bfddf",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 744-8825",
+      "entity_match": {
+        "score": 0.9036,
+        "name_score": 1.0,
+        "address_score": 0.8454,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "cc8735ce45404951",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "39c17e76bb6eca8d",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "811db81bd107eef2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "182239b36e50c854",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "dd823e728f8b4032",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "de559a5cb20719e1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "29ce3970135df3b2",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5c93803bf9e7016b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "eb53a7ade08ec403",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "666b3309965da344",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "249da7f20f1169be",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3eb8f8f82823a635",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 915-8777",
+      "entity_match": {
+        "score": 0.8461,
+        "name_score": 0.7778,
+        "address_score": 0.95,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "2b9e20a978d99c20",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fbc312367810dba1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a86578e8ef8cae0b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f5931827a0ada61b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6d31aecb41af5d47",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ce9580cd1e55e241",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b266898a72380e5a",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1017cbf0233fc112",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "df355dc4127441a8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bc486e19047ede39",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 844-7864",
+      "entity_match": {
+        "score": 0.7275,
+        "name_score": 1.0,
+        "address_score": 0.5915,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "b5053c8d52e4feb9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ee5220d70c77c49a",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "83e86c5ff21698ce",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c4116ed9e6b377a9",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "39dd24c0acac665c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a418f3457a0bf4bf",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "be1f8ca0d5d849db",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6ed91f5bb4a637c3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "eb8caa8e72913387",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5eb9b6d81f75fada",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5affe170f71bb33d",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://britannia-pharmacy.com/",
+      "entity_match": {
+        "score": 0.8776,
+        "name_score": 1.0,
+        "address_score": 0.7586,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "8b68ae61ed99f42a",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 915-9171",
+      "entity_match": {
+        "score": 0.8177,
+        "name_score": 0.7692,
+        "address_score": 0.8667,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "d88ea7d8d0eecfba",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "77becde32db99d5f",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f91579f2f47384aa",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "97d16704fe6575d5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ddc0f44c90cbba5f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bfb8d5ef9ce050a0",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "972bc4b00c697269",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "35681898e468f205",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "05824cc83bfa871b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "cf025c9e878f156d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "88631f94b501dcd4",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "07d3fb1c9c30b20d",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M9W 3A4",
+      "entity_match": {
+        "score": 0.8306,
+        "name_score": 1.0,
+        "address_score": 0.9355,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "95415f0f58271f6b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "467517dc21d1b12b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b8c5285ec6292143",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2d5cc013672bc111",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 813-5666",
+      "entity_match": {
+        "score": 0.9212,
+        "name_score": 1.0,
+        "address_score": 0.9038,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "06acc814c10a5398",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c59b9dc0ed3a80f6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b2314c2c038720e4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5bc8e2ea2c6256b8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "81b4a8f11e3c7e00",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0b991fae8bb4f670",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6R 3P1",
+      "entity_match": {
+        "score": 0.7936,
+        "name_score": 1.0,
+        "address_score": 0.8119,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "05446c4663a10e10",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "54ce1adec5985112",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M9W 7J7",
+      "entity_match": {
+        "score": 0.835,
+        "name_score": 1.0,
+        "address_score": 0.95,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "4ff5d3a68a56b551",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d871aef5986d7c82",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 793-4828",
+      "entity_match": {
+        "score": 0.971,
+        "name_score": 1.0,
+        "address_score": 0.9032,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "2435196742d7bbc5",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bb4aeb9dec744d32",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "2bf7ce1ef3afad9f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "62a01f8f60193729",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f99ba2bbaa5e4b41",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "75c27a997f22dc6a",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7685b4d990d93025",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3f515bc680af5d1c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "adec7d53545dfe3d",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e1210c6a3e6c65f4",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1fb8bb7ecc0dfeca",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/brampton-castlemore",
+      "entity_match": {
+        "score": 0.7747,
+        "name_score": 0.6452,
+        "address_score": 0.8889,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "8dbe78a83b0144d5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c2f75dfad2c36613",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "250338b9ee2cc841",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "99c4a5c28c3fc3e6",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/toronto-balmoral",
+      "entity_match": {
+        "score": 0.783,
+        "name_score": 0.6897,
+        "address_score": 0.8571,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "2e78b89a8898a720",
+      "field": "phone",
+      "status": "mismatch",
+      "value": "(416) 645-6000",
+      "entity_match": {
+        "score": 0.7557,
+        "name_score": 1.0,
+        "address_score": 0.6857,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5655b1ad93c7d665",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "79c65ceacc8825ea",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6e5c3bede66624d9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ca2827b4b34ad0aa",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c028f3531a855831",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1b8ccd7ef05d4005",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c91b5fd2b1f4a9eb",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f83dcba22fc07b84",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6eb4f397fc7daa07",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d7385ff952865135",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c61a31923c069025",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bc0c70906d5e4b90",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "caf9418cfa8e5be3",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/caledon-village",
+      "entity_match": {
+        "score": 0.8204,
+        "name_score": 0.8,
+        "address_score": 0.8348,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "281618ec4d009a18",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M3B 2W6",
+      "entity_match": {
+        "score": 0.8259,
+        "name_score": 0.8889,
+        "address_score": 0.9011,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "6c478706991ffd6e",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7b04f16601e78761",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "df65b58ce6a0bf4b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7d966a081eb598f8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6c5106a1cbacc78b",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "86cee12ea554af91",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://mississaugachinesecentre.com/en/stores/jc-pharmacy/",
+      "entity_match": {
+        "score": 0.7964,
+        "name_score": 0.7619,
+        "address_score": 0.8056,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "eb0f9cceb3fc8bcc",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 322-7877",
+      "entity_match": {
+        "score": 0.7269,
+        "name_score": 1.0,
+        "address_score": 0.5897,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "a3e3a6a0256b06be",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4ed85f34b8547d1c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1eff4d7db087ec43",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e282e66afa4fbbab",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bfcf80edc927af84",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "487fafe990c05437",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7b681941d7569236",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9d01706ca15da1d4",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 922-6337",
+      "entity_match": {
+        "score": 0.9313,
+        "name_score": 1.0,
+        "address_score": 0.9375,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "fb7ef3ab2fc564e1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ae87474bc47b8067",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c5e33895a13ec4b7",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L5N 6A3",
+      "entity_match": {
+        "score": 0.7654,
+        "name_score": 1.0,
+        "address_score": 0.7179,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "2bb24a93d028dd11",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "97ceaba2c9017f6a",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L9V 2Z4",
+      "entity_match": {
+        "score": 0.8184,
+        "name_score": 1.0,
+        "address_score": 0.8947,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "79535341cca88be3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d5e6007514d34fa6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "56c42f14bb25d1f5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "708915f2af45d9e7",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "81762f356343524c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b5af5a292884178e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "dc80d29ce492f15b",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 495-4500",
+      "entity_match": {
+        "score": 0.8572,
+        "name_score": 0.8444,
+        "address_score": 0.898,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "d7d0060b66065213",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6fd15f801e9a2573",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8335ad890a8e1135",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3d8481bb69522376",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "aca2785fddb42ad4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "51930cddec3bc5f3",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8844b0dce4eb75fa",
+      "field": "phone",
+      "status": "mismatch",
+      "value": "(905) 629-1007",
+      "entity_match": {
+        "score": 0.7285,
+        "name_score": 0.9762,
+        "address_score": 0.7037,
+        "city_score": 0.8462,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "c8f43033fafc24fb",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e0676498c961f0a9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e41a0395d372d7b2",
+      "field": "website",
+      "status": "mismatch",
+      "value": "http://www.mylocalrx.ca/",
+      "entity_match": {
+        "score": 0.9346,
+        "name_score": 1.0,
+        "address_score": 0.9487,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "1316deb87bb70c05",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7549c47b2f3d5fa7",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://healthone.ca/north-york/medical-walk-in-ny/?utm_source=googlelocal&utm_medium=website&utm_campaign=medical_walkin&utm_id=north-york",
+      "entity_match": {
+        "score": 0.8,
+        "name_score": 1.0,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "64e9b5865065e2a4",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "fa39bba0f8aaa1f0",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.ironoakpharmacy.ca/",
+      "entity_match": {
+        "score": 0.9143,
+        "name_score": 1.0,
+        "address_score": 0.881,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "707406be51bc72cd",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5a49f31833a14370",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8a0b806c28dd3868",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0bc44126d3157ba8",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M5B 1N8",
+      "entity_match": {
+        "score": 0.8306,
+        "name_score": 1.0,
+        "address_score": 0.9355,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "7f44bee278db7f59",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "cb21beacb9aa76c9",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a83fd52484be5161",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1924e87597f3b24f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a72960eaebf4669a",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/virgil",
+      "entity_match": {
+        "score": 0.9269,
+        "name_score": 1.0,
+        "address_score": 0.9231,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5a27876a32002297",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4f548899835fd618",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 877-0700",
+      "entity_match": {
+        "score": 0.7877,
+        "name_score": 0.6462,
+        "address_score": 0.9307,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "163463b8baa7237b",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e7285de02f75b3f1",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/toronto-swansea",
+      "entity_match": {
+        "score": 0.8097,
+        "name_score": 0.6933,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "7f2edd6873588d38",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 979-9373",
+      "entity_match": {
+        "score": 0.9114,
+        "name_score": 1.0,
+        "address_score": 0.8713,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "2bfb7af37b044f0d",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.boggios.com/?utm_source=Google&utm_medium=maps&utm_campaign=Local_Presence",
+      "entity_match": {
+        "score": 0.8552,
+        "name_score": 0.9259,
+        "address_score": 0.7826,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "aadce46825d7d432",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b9187efe2ea10e5e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e2df198fc12025f1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9a1ff66d640965c2",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.ottawahospital.on.ca/",
+      "entity_match": {
+        "score": 0.9324,
+        "name_score": 1.0,
+        "address_score": 0.9412,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "1417dd0ce9bcc085",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 848-7100",
+      "entity_match": {
+        "score": 0.8342,
+        "name_score": 1.0,
+        "address_score": 0.9474,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "a5578ee1dd1a6fae",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "60efa6387a6bc773",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0f514f1c98a2a02f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "edeaefcd6b055123",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0fa99d433768dc1f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b759dbcf63e34fc1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b431e809821f9f24",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "497853fbdf7cfc01",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4727cfcacee90248",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 822-3474",
+      "entity_match": {
+        "score": 0.8144,
+        "name_score": 0.9565,
+        "address_score": 0.9394,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "62ffaed8c97d9746",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "84ff0b734537e995",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0b1f54d444c9aaeb",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M4W 3Y8",
+      "entity_match": {
+        "score": 0.7805,
+        "name_score": 0.7407,
+        "address_score": 0.9474,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "d3561acc96c232b6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9249083a85c7d366",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "667a60a2363f4b43",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://eglinton.princerx.ca/",
+      "entity_match": {
+        "score": 0.7571,
+        "name_score": 0.6429,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "a876a9b720733efd",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9fe8109fae908cad",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "51d5e6f6356c68f5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "343893605673cf34",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0419dce34e2898b2",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8f4237be9fa9ac40",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 822-6621",
+      "entity_match": {
+        "score": 0.9117,
+        "name_score": 1.0,
+        "address_score": 0.8723,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "57bd00a1a0ef43de",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a7926c55cca71217",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "15532d3d95ab596c",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "bb08517c55619401",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6d47a596a79393f6",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "69ef73d086c03d9e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5d1ca7517cdf1a96",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://pharmasave.com/store/pharmasave-shelburne-pharmacy/",
+      "entity_match": {
+        "score": 0.7265,
+        "name_score": 0.8163,
+        "address_score": 0.8333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "53e31e9a167638ed",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ef9a628531e1a145",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 929-5200",
+      "entity_match": {
+        "score": 0.83,
+        "name_score": 1.0,
+        "address_score": 0.9333,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "89e970eb437bc4a6",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "51a5e3b1eda1d0b8",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "396c38d81a12ce86",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e5bff3723f667e2a",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ca1f5c5e7b8ce156",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "92f8cd8c2382df54",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a1328d3fbb63e424",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 250-0415",
+      "entity_match": {
+        "score": 0.85,
+        "name_score": 1.0,
+        "address_score": 1.0,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "9436c4f44ef4cd1c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c04c724a9b58c95c",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d67dd097a487698f",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ed153695031e6a94",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 537-2455",
+      "entity_match": {
+        "score": 0.7983,
+        "name_score": 1.0,
+        "address_score": 0.8276,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5e46fbb24f8e9190",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M4W 2K9",
+      "entity_match": {
+        "score": 0.8313,
+        "name_score": 1.0,
+        "address_score": 0.9375,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "0d884e039b401e65",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "L6R 3S9",
+      "entity_match": {
+        "score": 0.869,
+        "name_score": 1.0,
+        "address_score": 0.8966,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "887630070feda833",
+      "field": "phone",
+      "status": "exact",
+      "value": "(416) 603-5686",
+      "entity_match": {
+        "score": 0.9026,
+        "name_score": 1.0,
+        "address_score": 0.8421,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "f18a900ee32e4615",
+      "field": "phone",
+      "status": "exact",
+      "value": "(905) 566-7003",
+      "entity_match": {
+        "score": 0.8808,
+        "name_score": 1.0,
+        "address_score": 0.7692,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "c849d14ee7156ba3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "cbe3559fff37750b",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d09f03d4af5c5060",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1a7d0b1396be73a2",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "0747b51a48264c43",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9eba9f1865ec0f1f",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "cff81c7364e85bc5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "9c8ae5ed207e834c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "35c60dd9b11d8da1",
+      "field": "website",
+      "status": "mismatch",
+      "value": "https://www.pharmasavebrameast.com/",
+      "entity_match": {
+        "score": 0.8155,
+        "name_score": 0.8571,
+        "address_score": 0.7423,
+        "city_score": 1.0,
+        "postal_score": 1.0,
+        "website_score": 0.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5b1b4781d0e79e2d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "b4b9d8926efaf48e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "48739a5bbe7e8849",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "e3b54f8c6da3971d",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f8978eda96bec630",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "475ec225e94bef5a",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "4259e58e25a419dd",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6e4e2158d54f3380",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "7a20905d87518e1e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "3e1fcaba807cb4d1",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ff5f92290195bb19",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "c2475cd0ee41f486",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "ef84284a9acb0c7c",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "1e63f39dbd5d2fba",
+      "field": "postal_code",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f4dd310e2c4c9f0e",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "291714368656b8ae",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "5a7490e8abfa1dfe",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "780eb6cc109a4875",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "98e099ed262e7910",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "d5ef99c7c967f719",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "8e4fb51841cb19f5",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "43b93b19d46027e3",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a0c6d8dc703e7fa6",
+      "field": "postal_code",
+      "status": "exact",
+      "value": "M6N 1B7",
+      "entity_match": {
+        "score": 0.8545,
+        "name_score": 1.0,
+        "address_score": 0.8485,
+        "city_score": 1.0,
+        "postal_score": 0.0,
+        "website_score": 1.0,
+        "supported": true
+      }
+    },
+    {
+      "benchmark_id": "5baec6447dc9b831",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "940715d9969746da",
+      "field": "website",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "a6097bd16f987bb7",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "6ab082ad8b5cf72f",
+      "field": "address",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "f2610463337c53d8",
+      "field": "phone",
+      "status": "unresolved"
+    },
+    {
+      "benchmark_id": "087b9fab311c3400",
+      "field": "address",
+      "status": "unresolved"
+    }
+  ]
+}

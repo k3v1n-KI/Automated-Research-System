@@ -46,3 +46,6 @@ black==23.12.0
 flake8==6.1.0
 pytest==7.4.3
 pytest-asyncio==0.21.1
+
+# Web research scraping
+crawl4ai>=0.9.3

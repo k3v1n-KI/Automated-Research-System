@@ -57,6 +57,7 @@ class ResearchState(TypedDict):
     priority_columns: List[str]
     hard_identifier_columns: List[str]
     soft_identifier_columns: List[str]
+    pathways_limits: Dict[str, int]
 
 
 # ============================================================================

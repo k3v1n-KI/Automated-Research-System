@@ -413,9 +413,42 @@ class PathwaysDatabase:
                     conn.commit()
                     return None
                 if status == "accepted":
+                    candidate_resource_id = row[2]
+                    if candidate_resource_id is None and row[3] is None:
+                        candidate_resource_id = f"candidate-{uuid4()}"
+                        cur.execute(
+                            f"""
+                            INSERT INTO {self.resources_table} (
+                                id, name, category, city, website, tags, source_url, source_dataset, status
+                            )
+                            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, 'candidate')
+                            ON CONFLICT (id) DO NOTHING;
+                            """,
+                            (
+                                candidate_resource_id,
+                                row[4],
+                                "candidate resource",
+                                "Unknown",
+                                row[6],
+                                json.dumps(["candidate", "ask-research"]),
+                                row[6],
+                                "ars-ask",
+                            ),
+                        )
+                        cur.execute(
+                            f"UPDATE {self.research_suggestions_table} SET resource_id = %s WHERE id = %s",
+                            (candidate_resource_id, suggestion_id),
+                        )
+                        self._append_event_in_cursor(
+                            cur,
+                            candidate_resource_id,
+                            "resource_seeded",
+                            reviewer,
+                            {"suggestion_id": suggestion_id, "source_url": row[6], "source": "ask-research"},
+                        )
                     self._append_event_in_cursor(
                         cur,
-                        row[2],
+                        candidate_resource_id,
                         "suggestion_accepted",
                         reviewer,
                         {"field": row[3], "value": row[4], "source_url": row[6], "suggestion_id": row[0]},
@@ -424,6 +457,8 @@ class PathwaysDatabase:
                     f"UPDATE {self.research_jobs_table} SET status = 'completed', updated_at = NOW() WHERE id = %s",
                     (row[1],),
                 )
+                cur.execute(f"SELECT * FROM {self.research_suggestions_table} WHERE id = %s", (suggestion_id,))
+                row = cur.fetchone()
                 conn.commit()
         return self._row_to_research_suggestion(row)
 
@@ -872,7 +907,7 @@ def create_app(database_url: str | None = None, table_prefix: str = "pathways") 
     def create_ask():
         payload = request.get_json(silent=True) or {}
         ask = db.create_ask(
-            region=payload["region"],
+            region=payload.get("region", "Ontario") or "Ontario",
             text=payload["text"],
             author=payload.get("author", "system"),
             tags=payload.get("tags", []),
@@ -880,6 +915,27 @@ def create_app(database_url: str | None = None, table_prefix: str = "pathways") 
             ask_id=payload.get("id"),
         )
         return jsonify(ask), 201
+
+    @app.post("/api/asks/<ask_id>/research")
+    def research_ask(ask_id: str):
+        asks = [ask for ask in db.list_asks() if ask["id"] == ask_id]
+        if not asks:
+            return jsonify({"error": "ask not found"}), 404
+        ask = asks[0]
+        job_id = f"ask-research-{ask_id}"
+        existing = [job for job in db.list_research_jobs() if job["id"] == job_id]
+        if existing and existing[0]["status"] in {"queued", "running", "needs_review", "completed"}:
+            return jsonify(existing[0]), 200
+        if existing and existing[0]["status"] == "failed":
+            job_id = f"{job_id}-retry-{int(datetime.now(timezone.utc).timestamp())}"
+        job = db.create_research_job(
+            job_id=job_id,
+            trigger_type="ask",
+            ask_id=ask_id,
+            prompt=f"Region: {ask['region']}. Need: {ask['text']}. Tags: {', '.join(ask.get('tags', []))}",
+            requested_by=ask["author"],
+        )
+        return jsonify(job), 201
 
     @app.post("/api/asks/<ask_id>/watchers")
     def watch_ask(ask_id: str):

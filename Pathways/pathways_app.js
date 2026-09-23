@@ -9,8 +9,8 @@
       name: "Yee Hong Centre - Scarborough",
       category: "PSW and home care",
       city: "Scarborough",
-      address: "5 Crown Princess Crescent",
-      phone: "416-321-3000",
+      address: "2319 McNicoll Ave",
+      phone: "416-321-6333",
       website: "https://www.yeehong.com",
       languages: ["Mandarin", "Cantonese", "English"],
       tags: ["OHIP", "meal support", "mobility"],
@@ -72,7 +72,8 @@
       linkedAskId: null,
       note: ""
     },
-    backend: { connected: false, loading: true }
+    backend: { connected: false, loading: true },
+    suggestions: []
   };
 
   async function apiRequest(path, options) {
@@ -102,14 +103,16 @@
   async function loadBackend() {
     try {
       await apiRequest("/health");
-      const [remoteResources, remoteEvents, remoteAsks] = await Promise.all([
+      const [remoteResources, remoteEvents, remoteAsks, remoteSuggestions] = await Promise.all([
         apiRequest("/api/resources"),
         apiRequest("/api/events"),
-        apiRequest("/api/asks")
+        apiRequest("/api/asks"),
+        apiRequest("/api/research/suggestions")
       ]);
       if (remoteResources.length) resources = remoteResources.map(fromApiResource);
       if (remoteEvents.length) state.events = remoteEvents.map(fromApiEvent);
       state.asks = await Promise.all(remoteAsks.map(async (ask) => fromApiAsk(ask, await apiRequest(`/api/asks/${encodeURIComponent(ask.id)}/replies`))));
+      state.suggestions = remoteSuggestions;
       state.backend = { connected: true, loading: false };
       state.notice = "Connected to the Pathways database.";
     } catch (_) {
@@ -189,12 +192,16 @@
     apiRequest("/api/events", { method: "POST", body: JSON.stringify({ id: event.id, resource_id: resourceId, kind, actor: event.actor, payload: event.payload }) }).catch(() => {});
   }
 
-  function createAsk(text, tags) {
-    const ask = { id: "ask-" + Date.now(), region: "Algoma OHT", author: "Jamie Morgan", text: text.trim(), tags, status: "open", watchers: ["Jamie Morgan"], replies: [], createdAt: new Date().toISOString(), expiresAt: new Date(Date.now() + 7 * 86400000).toISOString() };
+  function createAsk(text, tags, region) {
+    const ask = { id: "ask-" + Date.now(), region: region.trim() || "Ontario", author: "Jamie Morgan", text: text.trim(), tags, status: "open", watchers: ["Jamie Morgan"], replies: [], createdAt: new Date().toISOString(), expiresAt: new Date(Date.now() + 7 * 86400000).toISOString() };
     state.asks.unshift(ask);
     appendEvent("", "ask_created", { askId: ask.id, region: ask.region, text: ask.text, tags: ask.tags });
     saveAsks();
-    apiRequest("/api/asks", { method: "POST", body: JSON.stringify({ id: ask.id, region: ask.region, author: ask.author, text: ask.text, tags: ask.tags }) }).catch(() => {});
+    apiRequest("/api/asks", { method: "POST", body: JSON.stringify({ id: ask.id, region: ask.region, author: ask.author, text: ask.text, tags: ask.tags }) }).then(() => apiRequest(`/api/asks/${encodeURIComponent(ask.id)}/research`, { method: "POST" })).then((job) => apiRequest(`/api/research/jobs/${encodeURIComponent(job.id)}/run`, { method: "POST" })).then((result) => {
+      if (result.suggestions) state.suggestions = state.suggestions.concat(result.suggestions);
+      state.notice = result.status === "needs_review" ? "ARS found evidence-backed Ask suggestions for review." : "ARS could not find a reviewable answer for this Ask.";
+      render();
+    }).catch((error) => { state.notice = `ARS research failed: ${error.message}`; render(); });
   }
 
   function projection(resource) {
@@ -330,12 +337,14 @@
       return `<div class="verify-field"><div class="between"><div><strong>${esc(field.replace("_", " "))}</strong><div class="verify-value">${esc(value)}</div></div><span class="badge ${tone}">${esc(status)}</span></div><div class="resource-actions">${button("Confirm", "verify:" + selected.id + ":" + field, "sm")} ${button("Flag issue", "show-flag:" + selected.id + ":" + field, "sm")}</div>${state.flagDraft && state.flagDraft.resourceId === selected.id && state.flagDraft.field === field ? renderFlagForm() : ""}</div>`;
     }).join("");
     const custody = fields.flatMap((field) => (selected.chainOfCustody[field] || []).map((entry) => `<div class="custody-entry"><strong>${esc(field)}</strong> · ${esc(entry.kind.replace("field_", "").replace("suggestion_", ""))}<span>${esc(entry.displayActor)} · ${esc(entry.source)} · ${new Date(entry.createdAt).toLocaleString()}</span>${entry.sourceUrl ? `<a href="${esc(entry.sourceUrl)}" target="_blank" rel="noreferrer">source</a>` : ""}${entry.correction ? `<em>correction: ${esc(entry.correction)}</em>` : ""}</div>`)).join("") || `<div class="empty-state">No verification events yet.</div>`;
-    return `<div class="between"><div><div class="eyebrow">Phase 2 · frictionless validation</div><h2 class="title-2" style="margin:6px 0 4px">${esc(selected.name)}</h2><p class="resource-meta">Confirm current fields or flag stale information. Every action is appended to the ledger.</p></div>${button("Back to Find", "back-find", "sm")}</div><div class="verify-source">${esc(selected.sourceDataset || "Imported corpus")} · source row ${esc(selected.sourceRowNumber || "n/a")} · <a href="${esc(selected.sourceUrl || "#")}" target="_blank" rel="noreferrer">evidence URL</a></div><div class="verify-fields">${fieldRows}</div><div class="pathways-card custody-card"><div class="eyebrow">Chain of custody</div><h3 class="title-3" style="margin:6px 0 10px">Field history</h3>${custody}</div>`;
+    const suggestions = state.suggestions.filter((suggestion) => suggestion.resource_id === selected.id && suggestion.status === "proposed");
+    const suggestionPanel = suggestions.length ? `<div class="pathways-card custody-card"><div class="eyebrow">ARS evidence review</div><h3 class="title-3" style="margin:6px 0 10px">Proposed updates</h3>${suggestions.map((suggestion) => `<div class="ask-board-item"><div class="between"><strong>${esc(suggestion.field)}: ${esc(suggestion.value)}</strong><span class="badge warn">needs review</span></div><p>${esc(suggestion.evidence || "No excerpt returned; inspect the source before accepting.")}</p><div class="verify-source"><a href="${esc(suggestion.source_url)}" target="_blank" rel="noreferrer">${esc(suggestion.source_url)}</a></div><div class="resource-actions">${button("Accept", "review-suggestion:" + suggestion.id + ":accepted", "primary sm")} ${button("Reject", "review-suggestion:" + suggestion.id + ":rejected", "sm")}</div></div>`).join("")}</div>` : "";
+    return `<div class="between"><div><div class="eyebrow">Phase 2 · frictionless validation</div><h2 class="title-2" style="margin:6px 0 4px">${esc(selected.name)}</h2><p class="resource-meta">Confirm current fields or flag stale information. Every action is appended to the ledger.</p></div>${button("Back to Find", "back-find", "sm")}</div><div class="verify-source">${esc(selected.sourceDataset || "Imported corpus")} · source row ${esc(selected.sourceRowNumber || "n/a")} · <a href="${esc(selected.sourceUrl || "#")}" target="_blank" rel="noreferrer">evidence URL</a></div>${suggestionPanel}<div class="verify-fields">${fieldRows}</div><div class="pathways-card custody-card"><div class="eyebrow">Chain of custody</div><h3 class="title-3" style="margin:6px 0 10px">Field history</h3>${custody}</div>`;
   }
 
   function renderAskBoard(fieldAsks) {
-    const askCards = state.asks.map((ask) => `<div class="ask-board-item"><div class="between"><div><span class="badge ${ask.status === "open" ? "good" : "warn"}">${esc(ask.status)}</span><strong>${esc(ask.region)}</strong></div><span class="meta">expires ${new Date(ask.expiresAt).toLocaleDateString()}</span></div><p>${esc(ask.text)}</p><div class="row" style="flex-wrap:wrap">${ask.tags.map((tag) => `<span class="chip">${esc(tag)}</span>`).join("")}<span class="meta">${ask.replies.length} replies · ${ask.watchers.length} watching</span></div>${ask.replies.map((reply) => `<div class="ask-reply"><strong>${esc(reply.author)}</strong><span>${esc(reply.text)}</span>${reply.candidateName ? `<em>candidate: ${esc(reply.candidateName)}</em>` : ""}${reply.attachedResourceId ? `<em>attached resource: ${esc(reply.attachedResourceId)}</em>` : ""}</div>`).join("")}${ask.status === "open" ? `<div class="ask-reply-form"><input class="field" data-reply-text="${ask.id}" placeholder="Reply with a service or suggestion" /><input class="field" data-reply-candidate="${ask.id}" placeholder="New candidate service (optional)" /><div class="resource-actions">${button("Reply", "reply:" + ask.id, "primary sm")} ${button(ask.watchers.includes("Jamie Morgan") ? "Watching" : "Watch", "watch:" + ask.id, "sm")} ${button("Resolve", "resolve:" + ask.id, "sm")}</div></div>` : ""}</div>`).join("");
-    return `<div class="between"><div><div class="eyebrow">Phase 3 · regional network</div><h2 class="title-2" style="margin:6px 0 4px">Ask the network</h2><p class="resource-meta">Post a need, attach an indexed service, or name a candidate that ARS can enrich.</p></div><span class="badge acc">${state.asks.filter((ask) => ask.status === "open").length} open</span></div><div class="ask-create-form"><input class="field" data-ask-text placeholder="What resource is missing?" /><input class="field" data-ask-tags placeholder="Tags, separated by commas" />${button("Post Ask", "create-ask", "primary")}</div>${askCards || `<div class="empty-state">No network Asks yet.</div>`}${fieldAsks.length ? `<div class="ask-board-item"><div class="eyebrow">Flagged field queue</div>${fieldAsks.map((ask) => `<div class="ask-item"><strong>${esc(ask.resource.name)} · ${esc(ask.event.payload.field)}</strong><span>${esc(ask.event.payload.reason || "Needs review")}</span>${button("Review in Close", "suggest:" + ask.resource.id + ":" + ask.event.payload.field, "primary sm")}</div>`).join("")}</div>` : ""}`;
+    const askCards = state.asks.map((ask) => { const askSuggestions = state.suggestions.filter((suggestion) => suggestion.job_id === `ask-research-${ask.id}` && suggestion.status === "proposed"); return `<div class="ask-board-item"><div class="between"><div><span class="badge ${ask.status === "open" ? "good" : "warn"}">${esc(ask.status)}</span><strong>${esc(ask.region)}</strong></div><span class="meta">expires ${new Date(ask.expiresAt).toLocaleDateString()}</span></div><p>${esc(ask.text)}</p><div class="row" style="flex-wrap:wrap">${ask.tags.map((tag) => `<span class="chip">${esc(tag)}</span>`).join("")}<span class="meta">${ask.replies.length} replies · ${ask.watchers.length} watching</span></div>${askSuggestions.map((suggestion) => `<div class="ask-reply"><strong>ARS candidate: ${esc(suggestion.value)}</strong><span>${esc(suggestion.evidence || "Review the source before accepting.")}</span><em><a href="${esc(suggestion.source_url)}" target="_blank" rel="noreferrer">evidence source</a></em><div class="resource-actions">${button("Accept", "review-suggestion:" + suggestion.id + ":accepted", "primary sm")} ${button("Reject", "review-suggestion:" + suggestion.id + ":rejected", "sm")}</div></div>`).join("")}${ask.replies.map((reply) => `<div class="ask-reply"><strong>${esc(reply.author)}</strong><span>${esc(reply.text)}</span>${reply.candidateName ? `<em>candidate: ${esc(reply.candidateName)}</em>` : ""}${reply.attachedResourceId ? `<em>attached resource: ${esc(reply.attachedResourceId)}</em>` : ""}</div>`).join("")}${ask.status === "open" ? `<div class="ask-reply-form"><input class="field" data-reply-text="${ask.id}" placeholder="Reply with a service or suggestion" /><input class="field" data-reply-candidate="${ask.id}" placeholder="New candidate service (optional)" /><div class="resource-actions">${button("Reply", "reply:" + ask.id, "primary sm")} ${button(ask.watchers.includes("Jamie Morgan") ? "Watching" : "Watch", "watch:" + ask.id, "sm")} ${button("Resolve", "resolve:" + ask.id, "sm")}</div></div>` : ""}</div>`; }).join("");
+    return `<div class="between"><div><div class="eyebrow">Phase 3 · regional network</div><h2 class="title-2" style="margin:6px 0 4px">Ask the network</h2><p class="resource-meta">Post a need, attach an indexed service, or name a candidate that ARS can enrich.</p></div><span class="badge acc">${state.asks.filter((ask) => ask.status === "open").length} open</span></div><div class="ask-create-form"><input class="field" data-ask-text placeholder="What resource is missing?" /><input class="field" data-ask-region placeholder="Region (optional, defaults to Ontario)" /><input class="field" data-ask-tags placeholder="Tags, separated by commas" />${button("Post Ask", "create-ask", "primary")}</div>${askCards || `<div class="empty-state">No network Asks yet.</div>`}${fieldAsks.length ? `<div class="ask-board-item"><div class="eyebrow">Flagged field queue</div>${fieldAsks.map((ask) => `<div class="ask-item"><strong>${esc(ask.resource.name)} · ${esc(ask.event.payload.field)}</strong><span>${esc(ask.event.payload.reason || "Needs review")}</span>${button("Review in Close", "suggest:" + ask.resource.id + ":" + ask.event.payload.field, "primary sm")}</div>`).join("")}</div>` : ""}`;
   }
 
   function renderFlagForm() {
@@ -386,7 +395,8 @@
     if (kind === "create-ask") {
       const text = document.querySelector("[data-ask-text]")?.value || "";
       const tags = (document.querySelector("[data-ask-tags]")?.value || "").split(",").map((tag) => tag.trim()).filter(Boolean);
-      if (text.trim()) { createAsk(text, tags); state.notice = "Ask posted to Algoma OHT."; } else { state.notice = "Add a short description before posting an Ask."; }
+      const region = document.querySelector("[data-ask-region]")?.value || "";
+      if (text.trim()) { createAsk(text, tags, region); state.notice = `Ask posted to ${region.trim() || "Ontario"}.`; } else { state.notice = "Add a short description before posting an Ask."; }
       state.phase = "ask";
     }
     if (kind === "reply") {
@@ -423,6 +433,30 @@
     }
     if (kind === "suggest") { state.phase = "close"; state.notice = "ARS returned a candidate. Human review is required before it changes the directory."; }
     if (kind === "accept") { appendEvent(parts[1], "suggestion_accepted", { field: parts[2], value: suggestedValue(parts[1], parts[2]), sourceUrl: "https://www.yeehong.com/contact" }); state.phase = "close"; state.notice = "Suggestion accepted; projection and trust score updated."; }
+    if (kind === "review-suggestion") {
+      const suggestion = state.suggestions.find((item) => item.id === parts[1]);
+      if (suggestion) {
+        apiRequest(`/api/research/suggestions/${encodeURIComponent(suggestion.id)}/review`, { method: "POST", body: JSON.stringify({ status: parts[2], reviewer: "Jamie Morgan" }) }).then((reviewed) => {
+          suggestion.status = reviewed.status;
+          if (reviewed.status === "accepted") {
+            const resource = resources.find((item) => item.id === suggestion.resource_id);
+            if (resource) resource[suggestion.field] = suggestion.value;
+            state.events.push({
+              id: "ars-review-" + Date.now(),
+              resourceId: suggestion.resource_id || "",
+              kind: "suggestion_accepted",
+              actor: "Jamie Morgan",
+              createdAt: reviewed.reviewed_at || new Date().toISOString(),
+              payload: { field: suggestion.field, value: suggestion.value, sourceUrl: suggestion.source_url, suggestionId: suggestion.id }
+            });
+            saveEvents();
+          }
+          state.notice = reviewed.status === "accepted" ? "ARS suggestion accepted and added to the ledger." : "ARS suggestion rejected.";
+          render();
+        }).catch(() => { state.notice = "Suggestion review could not be saved."; render(); });
+      }
+      state.phase = "verify";
+    }
     if (kind === "set-case-outcome") {
       state.caseDraft.outcome = parts[1];
       state.phase = "close";

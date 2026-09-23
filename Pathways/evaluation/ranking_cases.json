@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "description": "Small deterministic smoke fixture for the Pathways ranking harness. Relevance labels are hand-authored for development only.",
+  "cases": [
+    {
+      "id": "mandarin-scarborough-care",
+      "query": "Mandarin Scarborough",
+      "relevant_ids": ["res-yee-hong", "res-spectrum", "res-meals"],
+      "graded_relevance": {"res-yee-hong": 3, "res-meals": 2, "res-spectrum": 2},
+      "verification_events": [
+        {"resource_id": "res-yee-hong", "field": "phone", "days_ago": 2},
+        {"resource_id": "res-spectrum", "field": "phone", "days_ago": 75}
+      ]
+    },
+    {
+      "id": "mandarin-meals-scarborough",
+      "query": "Mandarin meals Scarborough",
+      "relevant_ids": ["res-meals"],
+      "graded_relevance": {"res-meals": 3},
+      "verification_events": [
+        {"resource_id": "res-meals", "field": "phone", "days_ago": 2},
+        {"resource_id": "res-spectrum", "field": "phone", "days_ago": 75}
+      ]
+    }
+  ]
+}

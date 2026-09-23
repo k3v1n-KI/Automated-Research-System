@@ -1,16 +1,23 @@
 """
 Node 2: Search
-Searches for URLs using SEARXNG and Google API fallback.
+Searches for URLs using SEARXNG, Google CSE, and Tavily fallbacks.
 """
 
 import os
+from pathlib import Path
 import requests
+from dotenv import load_dotenv
 from typing import TYPE_CHECKING
 
 from nodes.base import BaseNode
 
 if TYPE_CHECKING:
     from algorithm import ResearchState, ProgressTracker
+
+
+_dotenv_path = Path(__file__).resolve().parents[1] / "searxng" / ".env"
+if _dotenv_path.exists():
+    load_dotenv(_dotenv_path)
 
 
 class SearchNode(BaseNode):
@@ -25,12 +32,14 @@ class SearchNode(BaseNode):
     """
     
     async def execute(self, state: "ResearchState", progress: "ProgressTracker") -> "ResearchState":
-        """Search for URLs across SEARXNG and Google API"""
+        """Search for URLs across configured search providers."""
         
         raw_queries = state['queries']
         searxng_url = os.getenv("SEARXNG_URL", "http://localhost:8080").rstrip("/")
         google_key = os.getenv("GOOGLE_API_KEY")
-        google_cx = os.getenv("GOOGLE_CX")
+        google_cx = os.getenv("GOOGLE_CX") or os.getenv("GOOGLE_SEARCH_ENGINE_ID")
+        tavily_key = os.getenv("TAVILY_API_KEY")
+        prefer_tavily = bool(state.get("pathways_prefer_tavily"))
 
         limits = state.get("pathways_limits") or {}
         max_queries = int(limits.get("max_queries", len(raw_queries)))
@@ -69,6 +78,24 @@ class SearchNode(BaseNode):
                 "🔎 Searching",
                 f"Query {idx+1}/{len(query_rows)}: {query}"
             )
+
+            if prefer_tavily and tavily_key:
+                try:
+                    response = requests.post(
+                        "https://api.tavily.com/search",
+                        headers={"Content-Type": "application/json"},
+                        json={"api_key": tavily_key, "query": query, "search_depth": "basic", "max_results": min(10, max_urls or 10), "include_answer": False, "include_raw_content": False},
+                        timeout=20,
+                    )
+                    if response.status_code == 200:
+                        tavily_items = response.json().get("results", [])
+                        for item in tavily_items:
+                            if item.get("url"):
+                                all_results.append({"url": item["url"], "title": item.get("title", ""), "snippet": item.get("content", ""), "source_query": query, "query_technique": "tavily"})
+                        if tavily_items:
+                            continue
+                except Exception as error:
+                    print(f"❌ Tavily preferred search error for '{query}': {error}")
             
             # Try SEARXNG first
             try:
@@ -126,6 +153,37 @@ class SearchNode(BaseNode):
                                 })
                 except Exception as e:
                     print(f"❌ Google API error for '{query}': {e}")
+
+            # Tavily fallback for AI-oriented web research.
+            if len(all_results) < (idx + 1) * 25 and tavily_key:
+                try:
+                    response = requests.post(
+                        "https://api.tavily.com/search",
+                        headers={"Content-Type": "application/json"},
+                        json={
+                            "api_key": tavily_key,
+                            "query": query,
+                            "search_depth": "basic",
+                            "max_results": min(10, max_urls or 10),
+                            "include_answer": False,
+                            "include_raw_content": False,
+                        },
+                        timeout=20,
+                    )
+                    if response.status_code == 200:
+                        for item in response.json().get("results", []):
+                            if item.get("url"):
+                                all_results.append({
+                                    "url": item["url"],
+                                    "title": item.get("title", ""),
+                                    "snippet": item.get("content", ""),
+                                    "source_query": query,
+                                    "query_technique": "tavily",
+                                })
+                    else:
+                        print(f"❌ Tavily error for '{query}': HTTP {response.status_code}")
+                except Exception as error:
+                    print(f"❌ Tavily request error for '{query}': {error}")
         
         # Deduplicate by URL
         seen = set()
@@ -140,6 +198,34 @@ class SearchNode(BaseNode):
         
             if max_urls and len(deduped) >= max_urls:
                 break
+
+        fallback_queries = state.get("pathways_fallback_queries") or []
+        if not deduped and fallback_queries:
+            for fallback_query in fallback_queries[:2]:
+                try:
+                    response = requests.get(
+                        f"{searxng_url}/search",
+                        params={"q": fallback_query, "format": "json", "language": "en", "safesearch": 1, "categories": "general"},
+                        headers={"User-Agent": "Pathways-ARS/1.0"},
+                        timeout=12,
+                    )
+                    for result in response.json().get("results", []):
+                        url = result.get("url")
+                        if url and url not in seen:
+                            seen.add(url)
+                            deduped.append({
+                                "url": url,
+                                "title": result.get("title", ""),
+                                "snippet": result.get("content", ""),
+                                "source_query": fallback_query,
+                                "query_technique": "pathways_fallback",
+                            })
+                            if max_urls and len(deduped) >= max_urls:
+                                break
+                except Exception as error:
+                    print(f"❌ SearXNG fallback error for '{fallback_query}': {error}")
+                if deduped:
+                    break
         
         state['search_results'] = deduped
         

@@ -4,6 +4,7 @@ Scrapes pages with Crawl4AI and returns markdown for each URL.
 Handles PDF URLs with the PDF crawler strategy.
 """
 
+import asyncio
 from typing import TYPE_CHECKING, List, Dict
 
 from nodes.base import BaseNode
@@ -54,6 +55,10 @@ class Crawl4AIScrapeNode(BaseNode):
 
         progress.update("📄 Scraping Starting", f"Scraping {len(urls)} URLs with Crawl4AI...")
 
+        limits = state.get("pathways_limits") or {}
+        max_concurrency = max(1, int(limits.get("scrape_concurrency", 4)))
+        timeout_ms = max(1000, int(limits.get("scrape_timeout_ms", self.timeout_ms)))
+
         pdf_urls = [u for u in urls if ".pdf" in u.lower()]
         html_urls = [u for u in urls if u not in pdf_urls]
 
@@ -63,15 +68,29 @@ class Crawl4AIScrapeNode(BaseNode):
             browser_config = BrowserConfig(verbose=True, headless=True)
             run_config = CrawlerRunConfig(
                 process_iframes=True,
-                remove_overlay_elements=True,
                 cache_mode=CacheMode.BYPASS
             )
             async with AsyncWebCrawler(config=browser_config) as crawler:
-                results = await crawler.arun_many(html_urls, run_config=run_config)
-                for i, result in enumerate(results):
-                    url = html_urls[i]
-                    if result.success:
-                        markdown = result.markdown or ""
+                semaphore = asyncio.Semaphore(max_concurrency)
+
+                async def scrape_one(url: str):
+                    async with semaphore:
+                        try:
+                            result = await asyncio.wait_for(
+                                crawler.arun(url=url, config=run_config),
+                                timeout=timeout_ms / 1000,
+                            )
+                            return url, result, ""
+                        except asyncio.TimeoutError:
+                            return url, None, f"timeout after {timeout_ms}ms"
+                        except Exception as error:
+                            return url, None, str(error)
+
+                results = await asyncio.gather(*(scrape_one(url) for url in html_urls))
+                for url, result, error in results:
+                    if result is not None and result.success:
+                        markdown_value = result.markdown or ""
+                        markdown = getattr(markdown_value, "raw_markdown", None) or str(markdown_value)
                         meta = url_to_meta.get(url, {})
                         scraped.append({
                             "url": url,
@@ -80,7 +99,8 @@ class Crawl4AIScrapeNode(BaseNode):
                             "query_technique": meta.get("query_technique", "unspecified"),
                         })
                     else:
-                        print(f"⚠️  Crawl failed for {url}: {result.error_message}")
+                        detail = error or getattr(result, "error_message", "unknown crawl error")
+                        print(f"⚠️  Crawl failed for {url}: {detail}")
 
         if pdf_urls:
             pdf_crawler_strategy = PDFCrawlerStrategy()
@@ -88,7 +108,17 @@ class Crawl4AIScrapeNode(BaseNode):
             run_config = CrawlerRunConfig(scraping_strategy=pdf_scraping_strategy)
             async with AsyncWebCrawler(crawler_strategy=pdf_crawler_strategy) as crawler:
                 for url in pdf_urls:
-                    result = await crawler.arun(url=url, config=run_config)
+                    try:
+                        result = await asyncio.wait_for(
+                            crawler.arun(url=url, config=run_config),
+                            timeout=timeout_ms / 1000,
+                        )
+                    except asyncio.TimeoutError:
+                        print(f"⚠️  PDF crawl failed for {url}: timeout after {timeout_ms}ms")
+                        continue
+                    except Exception as error:
+                        print(f"⚠️  PDF crawl failed for {url}: {error}")
+                        continue
                     if result.success:
                         if result.markdown and hasattr(result.markdown, "raw_markdown"):
                             markdown = result.markdown.raw_markdown

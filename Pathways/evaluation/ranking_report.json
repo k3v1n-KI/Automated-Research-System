@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "fixture": "evaluation/ranking_cases.json",
+  "generated_at": "2026-01-01T00:00:00+00:00",
+  "evaluation_type": "development_smoke_fixture",
+  "case_count": 2,
+  "summary": {
+    "pathways_precision_at_5": 0.6666666666666666,
+    "fit_only_precision_at_5": 0.6666666666666666,
+    "pathways_ndcg_at_5": 1.0,
+    "fit_only_ndcg_at_5": 0.9037794402528603,
+    "pathways_mrr": 1.0,
+    "fit_only_mrr": 1.0,
+    "pathways_map": 1.0,
+    "fit_only_map": 1.0
+  },
+  "cases": [
+    {
+      "id": "mandarin-scarborough-care",
+      "query": "Mandarin Scarborough",
+      "pathways_top_ids": [
+        "res-yee-hong",
+        "res-spectrum",
+        "res-meals"
+      ],
+      "fit_only_top_ids": [
+        "res-meals",
+        "res-spectrum",
+        "res-yee-hong"
+      ],
+      "pathways_precision_at_5": 1.0,
+      "fit_only_precision_at_5": 1.0,
+      "pathways_ndcg_at_5": 1.0,
+      "fit_only_ndcg_at_5": 0.8075588805057204,
+      "pathways_mrr": 1.0,
+      "fit_only_mrr": 1.0,
+      "pathways_map": 1.0,
+      "fit_only_map": 1.0
+    },
+    {
+      "id": "mandarin-meals-scarborough",
+      "query": "Mandarin meals Scarborough",
+      "pathways_top_ids": [
+        "res-meals",
+        "res-spectrum",
+        "res-yee-hong"
+      ],
+      "fit_only_top_ids": [
+        "res-meals",
+        "res-spectrum",
+        "res-yee-hong"
+      ],
+      "pathways_precision_at_5": 0.3333333333333333,
+      "fit_only_precision_at_5": 0.3333333333333333,
+      "pathways_ndcg_at_5": 1.0,
+      "fit_only_ndcg_at_5": 1.0,
+      "pathways_mrr": 1.0,
+      "fit_only_mrr": 1.0,
+      "pathways_map": 1.0,
+      "fit_only_map": 1.0
+    }
+  ]
+}
