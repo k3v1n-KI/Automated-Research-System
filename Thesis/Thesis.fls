@@ -2,7 +2,7 @@ PWD /home/Kageshi/Documents/Projects/Automated-Research-System/Thesis
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /home/Kageshi/.texlive2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT Thesis.tex
+INPUT /home/Kageshi/Documents/Projects/Automated-Research-System/Thesis/Thesis.tex
 OUTPUT Thesis.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls

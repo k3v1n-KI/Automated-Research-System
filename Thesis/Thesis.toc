@@ -65,11 +65,10 @@
 \contentsline {subsection}{\numberline {4.5.3}Study 3: Simulated flywheel maintenance}{59}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {4.5.4}Study 4: Targeted missing-data restoration}{59}{subsection.4.5.4}%
 \contentsline {subsection}{\numberline {4.5.5}Evaluation results}{60}{subsection.4.5.5}%
-\contentsline {subsubsection}{How to interpret the evaluation measures}{60}{subsubsection*.15}%
-\contentsline {subsubsection}{Study 1 results}{62}{subsubsection*.16}%
-\contentsline {subsubsection}{Study 2 results}{63}{subsubsection*.17}%
-\contentsline {subsubsection}{Study 3 results}{64}{subsubsection*.18}%
-\contentsline {subsubsection}{Study 4 results}{65}{subsubsection*.19}%
+\contentsline {subsubsection}{Study 1 results}{62}{subsubsection*.15}%
+\contentsline {subsubsection}{Study 2 results}{63}{subsubsection*.16}%
+\contentsline {subsubsection}{Study 3 results}{64}{subsubsection*.17}%
+\contentsline {subsubsection}{Study 4 results}{65}{subsubsection*.18}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{67}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Major Contributions of the Thesis}{67}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Summary of Contributions}{68}{section.5.2}%
