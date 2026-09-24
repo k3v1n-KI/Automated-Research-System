@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "fixture": "evaluation/study2_corpus.json",
+  "generated_at": "2026-01-01T00:00:00+00:00",
+  "evaluation_type": "controlled_development_corpus",
+  "corpus_size": 12,
+  "case_count": 8,
+  "baselines": [
+    "pathways",
+    "fit_only",
+    "bm25"
+  ],
+  "summary": {
+    "pathways_precision_at_5": 0.35000000000000003,
+    "pathways_ndcg_at_5": 0.8041282639451813,
+    "pathways_mrr": 0.875,
+    "pathways_map": 0.7083333333333333,
+    "fit_only_precision_at_5": 0.30000000000000004,
+    "fit_only_ndcg_at_5": 0.8788530383064249,
+    "fit_only_mrr": 1.0,
+    "fit_only_map": 0.8177083333333334,
+    "bm25_precision_at_5": 0.325,
+    "bm25_ndcg_at_5": 0.9157024813866312,
+    "bm25_mrr": 1.0,
+    "bm25_map": 0.8581349206349207,
+    "pathways_minus_bm25_ndcg_at_5": -0.11157421744144991,
+    "pathways_minus_fit_only_ndcg_at_5": -0.07472477436124358
+  },
+  "cases": [
+    {
+      "id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "relevance": {
+        "r-yee-hong": 3,
+        "r-spectrum": 2
+      },
+      "pathways_top_ids": [
+        "r-yee-hong",
+        "r-scarborough-chc",
+        "r-meals",
+        "r-spectrum",
+        "r-youth",
+        "r-access",
+        "r-french",
+        "r-connex",
+        "r-pharmacy",
+        "r-woodgreen"
+      ],
+      "pathways": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.9324441894571632,
+        "mrr": 1.0,
+        "map": 0.75
+      },
+      "fit_only_top_ids": [
+        "r-spectrum",
+        "r-yee-hong",
+        "r-scarborough-chc",
+        "r-youth",
+        "r-meals",
+        "r-access",
+        "r-woodgreen",
+        "r-french",
+        "r-camh",
+        "r-connex"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.8339912323981488,
+        "mrr": 1.0,
+        "map": 1.0
+      },
+      "bm25_top_ids": [
+        "r-spectrum",
+        "r-yee-hong",
+        "r-scarborough-chc",
+        "r-meals",
+        "r-youth",
+        "r-french",
+        "r-woodgreen",
+        "r-access",
+        "r-camh",
+        "r-connex"
+      ],
+      "bm25": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.8339912323981488,
+        "mrr": 1.0,
+        "map": 1.0
+      }
+    },
+    {
+      "id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "relevance": {
+        "r-meals": 3,
+        "r-yee-hong": 2,
+        "r-woodgreen": 1
+      },
+      "pathways_top_ids": [
+        "r-meals",
+        "r-yee-hong",
+        "r-scarborough-chc",
+        "r-youth",
+        "r-spectrum",
+        "r-access",
+        "r-french",
+        "r-connex",
+        "r-pharmacy",
+        "r-woodgreen"
+      ],
+      "pathways": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.9467676761267002,
+        "mrr": 1.0,
+        "map": 0.7666666666666666
+      },
+      "fit_only_top_ids": [
+        "r-meals",
+        "r-yee-hong",
+        "r-youth",
+        "r-scarborough-chc",
+        "r-spectrum",
+        "r-woodgreen",
+        "r-access",
+        "r-camh",
+        "r-french",
+        "r-connex"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.9467676761267002,
+        "mrr": 1.0,
+        "map": 0.8333333333333334
+      },
+      "bm25_top_ids": [
+        "r-meals",
+        "r-yee-hong",
+        "r-woodgreen",
+        "r-scarborough-chc",
+        "r-spectrum",
+        "r-youth",
+        "r-access",
+        "r-camh",
+        "r-french",
+        "r-connex"
+      ],
+      "bm25": {
+        "precision_at_5": 0.6,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      }
+    },
+    {
+      "id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "relevance": {
+        "r-access": 3,
+        "r-scarborough-chc": 1
+      },
+      "pathways_top_ids": [
+        "r-french",
+        "r-access",
+        "r-camh",
+        "r-connex",
+        "r-scarborough-chc",
+        "r-pharmacy",
+        "r-meals",
+        "r-yee-hong",
+        "r-youth",
+        "r-hospital"
+      ],
+      "pathways": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.6294594810005499,
+        "mrr": 0.5,
+        "map": 0.45
+      },
+      "fit_only_top_ids": [
+        "r-access",
+        "r-camh",
+        "r-french",
+        "r-hospital",
+        "r-woodgreen",
+        "r-connex",
+        "r-youth",
+        "r-scarborough-chc",
+        "r-spectrum",
+        "r-pharmacy"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.9173194127129571,
+        "mrr": 1.0,
+        "map": 0.625
+      },
+      "bm25_top_ids": [
+        "r-access",
+        "r-french",
+        "r-camh",
+        "r-connex",
+        "r-hospital",
+        "r-youth",
+        "r-woodgreen",
+        "r-spectrum",
+        "r-scarborough-chc",
+        "r-pharmacy"
+      ],
+      "bm25": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.9173194127129571,
+        "mrr": 1.0,
+        "map": 0.6111111111111112
+      }
+    },
+    {
+      "id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "relevance": {
+        "r-scarborough-chc": 3,
+        "r-access": 2
+      },
+      "pathways_top_ids": [
+        "r-scarborough-chc",
+        "r-yee-hong",
+        "r-meals",
+        "r-youth",
+        "r-spectrum",
+        "r-access",
+        "r-french",
+        "r-pharmacy",
+        "r-connex",
+        "r-woodgreen"
+      ],
+      "pathways": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.7871546029909718,
+        "mrr": 1.0,
+        "map": 0.6666666666666666
+      },
+      "fit_only_top_ids": [
+        "r-scarborough-chc",
+        "r-youth",
+        "r-spectrum",
+        "r-yee-hong",
+        "r-meals",
+        "r-access",
+        "r-woodgreen",
+        "r-french",
+        "r-pharmacy",
+        "r-camh"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.7871546029909718,
+        "mrr": 1.0,
+        "map": 0.6666666666666666
+      },
+      "bm25_top_ids": [
+        "r-scarborough-chc",
+        "r-yee-hong",
+        "r-spectrum",
+        "r-french",
+        "r-youth",
+        "r-meals",
+        "r-access",
+        "r-pharmacy",
+        "r-woodgreen",
+        "r-camh"
+      ],
+      "bm25": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.7871546029909718,
+        "mrr": 1.0,
+        "map": 0.6428571428571428
+      }
+    },
+    {
+      "id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "relevance": {
+        "r-camh": 3,
+        "r-connex": 3
+      },
+      "pathways_top_ids": [
+        "r-french",
+        "r-camh",
+        "r-connex",
+        "r-access",
+        "r-scarborough-chc",
+        "r-pharmacy",
+        "r-meals",
+        "r-yee-hong",
+        "r-youth",
+        "r-hospital"
+      ],
+      "pathways": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.6934264036172708,
+        "mrr": 0.5,
+        "map": 0.5833333333333333
+      },
+      "fit_only_top_ids": [
+        "r-camh",
+        "r-access",
+        "r-french",
+        "r-hospital",
+        "r-woodgreen",
+        "r-connex",
+        "r-youth",
+        "r-scarborough-chc",
+        "r-spectrum",
+        "r-pharmacy"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.6131471927654584,
+        "mrr": 1.0,
+        "map": 0.6666666666666666
+      },
+      "bm25_top_ids": [
+        "r-camh",
+        "r-connex",
+        "r-youth",
+        "r-french",
+        "r-access",
+        "r-hospital",
+        "r-woodgreen",
+        "r-spectrum",
+        "r-scarborough-chc",
+        "r-pharmacy"
+      ],
+      "bm25": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      }
+    },
+    {
+      "id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "relevance": {
+        "r-youth": 3,
+        "r-scarborough-chc": 1
+      },
+      "pathways_top_ids": [
+        "r-scarborough-chc",
+        "r-meals",
+        "r-yee-hong",
+        "r-youth",
+        "r-connex",
+        "r-spectrum",
+        "r-french",
+        "r-pharmacy",
+        "r-access",
+        "r-camh"
+      ],
+      "pathways": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.5261135977086879,
+        "mrr": 1.0,
+        "map": 0.75
+      },
+      "fit_only_top_ids": [
+        "r-youth",
+        "r-scarborough-chc",
+        "r-spectrum",
+        "r-meals",
+        "r-yee-hong",
+        "r-access",
+        "r-camh",
+        "r-connex",
+        "r-french",
+        "r-pharmacy"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      },
+      "bm25_top_ids": [
+        "r-youth",
+        "r-scarborough-chc",
+        "r-camh",
+        "r-connex",
+        "r-access",
+        "r-spectrum",
+        "r-yee-hong",
+        "r-pharmacy",
+        "r-meals",
+        "r-french"
+      ],
+      "bm25": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      }
+    },
+    {
+      "id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "relevance": {
+        "r-pharmacy": 3
+      },
+      "pathways_top_ids": [
+        "r-pharmacy",
+        "r-scarborough-chc",
+        "r-french",
+        "r-connex",
+        "r-meals",
+        "r-yee-hong",
+        "r-access",
+        "r-youth",
+        "r-camh",
+        "r-spectrum"
+      ],
+      "pathways": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      },
+      "fit_only_top_ids": [
+        "r-pharmacy",
+        "r-access",
+        "r-youth",
+        "r-scarborough-chc",
+        "r-camh",
+        "r-french",
+        "r-connex",
+        "r-meals",
+        "r-hospital",
+        "r-spectrum"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      },
+      "bm25_top_ids": [
+        "r-pharmacy",
+        "r-youth",
+        "r-scarborough-chc",
+        "r-access",
+        "r-camh",
+        "r-french",
+        "r-connex",
+        "r-meals",
+        "r-hospital",
+        "r-spectrum"
+      ],
+      "bm25": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 1.0,
+        "mrr": 1.0,
+        "map": 1.0
+      }
+    },
+    {
+      "id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "relevance": {
+        "r-french": 3,
+        "r-access": 2
+      },
+      "pathways_top_ids": [
+        "r-french",
+        "r-camh",
+        "r-connex",
+        "r-scarborough-chc",
+        "r-access",
+        "r-yee-hong",
+        "r-pharmacy",
+        "r-meals",
+        "r-hospital",
+        "r-spectrum"
+      ],
+      "pathways": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.9176601606601069,
+        "mrr": 1.0,
+        "map": 0.7
+      },
+      "fit_only_top_ids": [
+        "r-french",
+        "r-camh",
+        "r-connex",
+        "r-access",
+        "r-hospital",
+        "r-woodgreen",
+        "r-scarborough-chc",
+        "r-spectrum",
+        "r-yee-hong",
+        "r-youth"
+      ],
+      "fit_only": {
+        "precision_at_5": 0.4,
+        "ndcg_at_5": 0.9324441894571632,
+        "mrr": 1.0,
+        "map": 0.75
+      },
+      "bm25_top_ids": [
+        "r-french",
+        "r-scarborough-chc",
+        "r-connex",
+        "r-camh",
+        "r-spectrum",
+        "r-yee-hong",
+        "r-hospital",
+        "r-woodgreen",
+        "r-access",
+        "r-youth"
+      ],
+      "bm25": {
+        "precision_at_5": 0.2,
+        "ndcg_at_5": 0.7871546029909718,
+        "mrr": 1.0,
+        "map": 0.6111111111111112
+      }
+    }
+  ]
+}

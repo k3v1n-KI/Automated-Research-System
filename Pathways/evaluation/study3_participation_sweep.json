@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "flywheel_participation_sweep",
+  "timepoints": [
+    0,
+    30,
+    90
+  ],
+  "final_timepoint": 90,
+  "verification_rates": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "seed_count": 10,
+  "stale_after_days": 90,
+  "scenarios": {
+    "0.0": {
+      "seed_count": 10,
+      "t90_flywheel_fresh_rate_mean": 0.0,
+      "t90_flywheel_fresh_rate_std": 0.0,
+      "t90_flywheel_stale_rate_mean": 1.0,
+      "t90_static_fresh_rate_mean": 0.0
+    },
+    "0.25": {
+      "seed_count": 10,
+      "t90_flywheel_fresh_rate_mean": 0.26,
+      "t90_flywheel_fresh_rate_std": 0.1562049935181331,
+      "t90_flywheel_stale_rate_mean": 0.74,
+      "t90_static_fresh_rate_mean": 0.0
+    },
+    "0.5": {
+      "seed_count": 10,
+      "t90_flywheel_fresh_rate_mean": 0.5,
+      "t90_flywheel_fresh_rate_std": 0.161245154965971,
+      "t90_flywheel_stale_rate_mean": 0.5,
+      "t90_static_fresh_rate_mean": 0.0
+    },
+    "0.75": {
+      "seed_count": 10,
+      "t90_flywheel_fresh_rate_mean": 0.72,
+      "t90_flywheel_fresh_rate_std": 0.14,
+      "t90_flywheel_stale_rate_mean": 0.28,
+      "t90_static_fresh_rate_mean": 0.0
+    },
+    "1.0": {
+      "seed_count": 10,
+      "t90_flywheel_fresh_rate_mean": 1.0,
+      "t90_flywheel_fresh_rate_std": 0.0,
+      "t90_flywheel_stale_rate_mean": 0.0,
+      "t90_static_fresh_rate_mean": 0.0
+    }
+  }
+}

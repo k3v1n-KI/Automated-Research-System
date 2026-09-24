@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "study1_filter_extraction",
+  "fixture": "evaluation/study1_extraction_cases.json",
+  "case_count": 8,
+  "fields": [
+    "need",
+    "modality",
+    "population",
+    "coverage",
+    "location",
+    "language",
+    "urgency"
+  ],
+  "summary": {
+    "exact_case_accuracy": 1.0,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "field_exact_accuracy": {
+      "need": 1.0,
+      "modality": 1.0,
+      "population": 1.0,
+      "coverage": 1.0,
+      "location": 1.0,
+      "language": 1.0,
+      "urgency": 1.0
+    }
+  },
+  "cases": [
+    {
+      "id": "home-care",
+      "query": "Mandarin home care Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "same-day-addiction",
+      "query": "same-day addiction support for an adolescent, no OHIP, Scarborough",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "predicted": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "french-care",
+      "query": "French primary care Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "youth-walk-in",
+      "query": "youth mental health walk-in Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "medication-pharmacy",
+      "query": "medication pharmacy walk-in Scarborough",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "mandarin-ohip",
+      "query": "Mandarin OHIP walk-in primary care Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Scarborough",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Scarborough",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "virtual-french",
+      "query": "virtual French mental health support Ontario",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "hospital-child",
+      "query": "child hospital services Scarborough",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "predicted": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "exact_match": true,
+      "mismatched_fields": []
+    }
+  ]
+}

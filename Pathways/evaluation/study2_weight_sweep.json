@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "in_sample_weight_sensitivity",
+  "fixture": "/home/Kageshi/Documents/Projects/Automated-Research-System/Pathways/evaluation/study2_corpus.json",
+  "case_count": 8,
+  "reports": [
+    {
+      "fit_weight": 1.0,
+      "freshness_weight": 0.0,
+      "summary": {
+        "precision_at_5": 0.30000000000000004,
+        "ndcg_at_5": 0.8788530383064249,
+        "mrr": 1.0,
+        "map": 0.8177083333333334
+      }
+    },
+    {
+      "fit_weight": 0.9,
+      "freshness_weight": 0.1,
+      "summary": {
+        "precision_at_5": 0.325,
+        "ndcg_at_5": 0.9326126495782302,
+        "mrr": 1.0,
+        "map": 0.8303571428571428
+      }
+    },
+    {
+      "fit_weight": 0.8,
+      "freshness_weight": 0.2,
+      "summary": {
+        "precision_at_5": 0.325,
+        "ndcg_at_5": 0.8172881800306621,
+        "mrr": 0.875,
+        "map": 0.7366071428571428
+      }
+    },
+    {
+      "fit_weight": 0.7,
+      "freshness_weight": 0.3,
+      "summary": {
+        "precision_at_5": 0.35000000000000003,
+        "ndcg_at_5": 0.8041282639451813,
+        "mrr": 0.875,
+        "map": 0.7136904761904762
+      }
+    },
+    {
+      "fit_weight": 0.6,
+      "freshness_weight": 0.4,
+      "summary": {
+        "precision_at_5": 0.325,
+        "ndcg_at_5": 0.7885329331183676,
+        "mrr": 0.875,
+        "map": 0.7
+      }
+    },
+    {
+      "fit_weight": 0.5,
+      "freshness_weight": 0.5,
+      "summary": {
+        "precision_at_5": 0.275,
+        "ndcg_at_5": 0.6790012864628524,
+        "mrr": 0.8541666666666666,
+        "map": 0.6495084776334776
+      }
+    }
+  ],
+  "best_by_ndcg_at_5": {
+    "fit_weight": 0.9,
+    "freshness_weight": 0.1,
+    "summary": {
+      "precision_at_5": 0.325,
+      "ndcg_at_5": 0.9326126495782302,
+      "mrr": 1.0,
+      "map": 0.8303571428571428
+    }
+  },
+  "caveat": "The best weight is selected in-sample and must be validated on held-out or independently adjudicated queries."
+}

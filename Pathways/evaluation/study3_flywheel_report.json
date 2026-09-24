@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "flywheel_simulation",
+  "timepoints": [
+    0,
+    30,
+    90
+  ],
+  "conditions": [
+    "static_control",
+    "flywheel"
+  ],
+  "static_control": {
+    "0": {
+      "fresh_rate": 1.0,
+      "stale_rate": 0.0,
+      "mean_freshness": 1.0
+    },
+    "30": {
+      "fresh_rate": 1.0,
+      "stale_rate": 0.0,
+      "mean_freshness": 0.75
+    },
+    "90": {
+      "fresh_rate": 0.0,
+      "stale_rate": 0.0,
+      "mean_freshness": 0.25
+    }
+  },
+  "flywheel": {
+    "0": {
+      "fresh_rate": 1.0,
+      "stale_rate": 0.0,
+      "mean_freshness": 1.0
+    },
+    "30": {
+      "fresh_rate": 1.0,
+      "stale_rate": 0.0,
+      "mean_freshness": 0.925
+    },
+    "90": {
+      "fresh_rate": 0.6,
+      "stale_rate": 0.0,
+      "mean_freshness": 0.7
+    }
+  },
+  "summary": {
+    "static_fresh_rate": 0.0,
+    "flywheel_fresh_rate": 0.6,
+    "static_stale_rate": 0.0,
+    "flywheel_stale_rate": 0.0
+  }
+}

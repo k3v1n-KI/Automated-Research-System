@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "description": "Gold filter extraction cases for Study 1.",
+  "cases": [
+    {"id": "home-care", "query": "Mandarin home care Scarborough", "gold": {"need": [], "modality": [], "population": [], "coverage": [], "location": "Scarborough", "language": ["Mandarin"], "urgency": ""}},
+    {"id": "same-day-addiction", "query": "same-day addiction support for an adolescent, no OHIP, Scarborough", "gold": {"need": ["addiction_services"], "modality": ["same-day"], "population": ["adolescent"], "coverage": ["no-ohip"], "location": "Scarborough", "language": [], "urgency": "same-day"}},
+    {"id": "french-care", "query": "French primary care Scarborough", "gold": {"need": [], "modality": [], "population": [], "coverage": [], "location": "Scarborough", "language": ["French"], "urgency": ""}},
+    {"id": "youth-walk-in", "query": "youth mental health walk-in Scarborough", "gold": {"need": [], "modality": ["walk-in"], "population": ["youth"], "coverage": [], "location": "Scarborough", "language": [], "urgency": ""}},
+    {"id": "medication-pharmacy", "query": "medication pharmacy walk-in Scarborough", "gold": {"need": ["pharmacy_services"], "modality": ["walk-in"], "population": [], "coverage": [], "location": "Scarborough", "language": [], "urgency": ""}},
+    {"id": "mandarin-ohip", "query": "Mandarin OHIP walk-in primary care Scarborough", "gold": {"need": [], "modality": ["walk-in"], "population": [], "coverage": ["ohip"], "location": "Scarborough", "language": ["Mandarin"], "urgency": ""}},
+    {"id": "virtual-french", "query": "virtual French mental health support Ontario", "gold": {"need": [], "modality": ["virtual"], "population": [], "coverage": [], "location": "", "language": ["French"], "urgency": ""}},
+    {"id": "hospital-child", "query": "child hospital services Scarborough", "gold": {"need": ["hospitals"], "modality": [], "population": ["child"], "coverage": [], "location": "Scarborough", "language": [], "urgency": ""}}
+  ]
+}

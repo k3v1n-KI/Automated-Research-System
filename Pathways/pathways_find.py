@@ -131,7 +131,16 @@ class FindSearch:
         ranked = []
         for record in projected.values():
             haystack = " ".join(
-                [record["name"], record["category"], record["city"], record["address"], record.get("postal_code", ""), record.get("domain", "")]
+                [
+                    record["name"],
+                    record["category"],
+                    record["city"],
+                    record["address"],
+                    record.get("postal_code", ""),
+                    record.get("domain", ""),
+                    *record.get("languages", ()),
+                    *record.get("tags", ()),
+                ]
             ).casefold()
             term_fit = sum(term in haystack for term in terms) / len(terms) if terms else 0.0
             need_fit = 1.0 if not filters.need or any(need in record.get("tags", ()) for need in filters.need) else 0.0

@@ -1,5 +1,25 @@
 # Pathways evaluation
 
+## Study 1 filter extraction
+
+The expanded extraction benchmark is available at
+`Pathways/evaluation/study1_extraction_broad_cases.json`. It contains 50 queries:
+25 canonical requests and 25 natural-language paraphrases. Run it against the
+full normalized resource vocabulary with:
+
+```bash
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study1.py \
+	--cases Pathways/evaluation/study1_extraction_broad_cases.json \
+	--resources Pathways/data/processed/normalized_resources.jsonl \
+	--output Pathways/evaluation/study1_broad_report.json
+```
+
+The current result is 0.917 micro-F1 and 0.68 exact-case accuracy. Canonical
+queries are 1.00 exact, while paraphrases are 0.36 exact. This establishes a
+clear generalization limitation: the current rule-based extractor recognizes the
+controlled vocabulary reliably but needs synonym and discourse handling for
+natural-language requests, especially population and modality expressions.
+
 This recovery has two executable evaluation surfaces:
 
 - `test_pathways_domain.py` checks ledger replay, Fit + Freshness ranking, and IR metrics.
@@ -22,6 +42,30 @@ are not thesis ground truth. The fixture includes fixed-clock fresh and aging
 verification events, so it exercises the freshness weighting path. A thesis-quality
 study still requires a larger independently adjudicated relevance corpus, BM25
 comparison, repeated queries/seeds, confidence intervals, and stale-result metrics.
+
+An expanded controlled development corpus is available at
+`Pathways/evaluation/study2_corpus.json`. It contains 12 resources, 8 queries, graded
+relevance labels, and deterministic verification events. Run it with:
+
+```bash
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study2.py \
+	--output Pathways/evaluation/study2_report.json
+```
+
+The evaluator compares Pathways, fit-only, and a local BM25 implementation using
+Precision@5, graded nDCG@5, MRR, and MAP. The current controlled-corpus result is a
+diagnostic only: Pathways nDCG@5 is 0.804, fit-only is 0.879, and BM25 is 0.916;
+Pathways Precision@5 is 0.350 versus 0.300 for fit-only and 0.325 for BM25. This
+indicates that freshness can improve some cases while also promoting recently verified
+lower-grade resources above lexically stronger results. The labels are hand-authored
+and the corpus is not yet suitable as thesis evidence.
+
+A sensitivity sweep is available at
+`Pathways/evaluation/sweep_study2_weights.py`. On the current corpus, the best
+in-sample blend among the tested settings is 0.9 fit / 0.1 freshness, with nDCG@5
+0.933, compared with 0.804 for the current freshness-heavy setting and 0.916 for
+BM25. This is calibration evidence only; the weight must be selected and evaluated
+on held-out or independently adjudicated queries before changing production ranking.
 
 ## Automated missing-data benchmark
 

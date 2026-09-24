@@ -133,6 +133,54 @@ The result should be described as:
 
 It should not be described as proof that Pathways generally outperforms BM25 or a fit-only ranker. A larger independently adjudicated relevance corpus, BM25 baseline, repeated queries, and confidence intervals are still required.
 
+### 5.4 Expanded controlled-corpus run
+
+To begin the larger study, an additional controlled corpus was created with 12
+resources, 8 queries, graded relevance labels, and deterministic verification events.
+The evaluator compares Pathways, fit-only, and a local BM25 implementation. This is
+an engineering diagnostic because the labels are still hand-authored.
+
+| Metric | Pathways | Fit-only | BM25 |
+|---|---:|---:|---:|
+| Precision@5 | 0.350 | 0.300 | 0.325 |
+| nDCG@5 | 0.804 | 0.879 | 0.916 |
+| MRR | 0.875 | 1.000 | 1.000 |
+| MAP | 0.708 | 0.818 | 0.858 |
+
+The per-query results show that freshness-aware ranking improves some cases, including
+the home-care query and the addiction query relative to fit-only, but can also promote
+recently verified lower-grade resources above lexically stronger results. In this first
+expanded run, BM25 provides the strongest graded ordering. This is a useful diagnostic
+finding: the next Study 2 iteration should independently adjudicate labels and evaluate
+freshness weights rather than assume that freshness improves relevance in every query.
+
+The reproducible artifacts are
+[study2_corpus.json](Pathways/evaluation/study2_corpus.json),
+[evaluate_study2.py](Pathways/evaluation/evaluate_study2.py), and
+[study2_report.json](Pathways/evaluation/study2_report.json).
+
+### 5.5 Freshness-weight sensitivity
+
+An in-sample sweep tested freshness weights from 0.0 through 0.5, with the fit
+weight set to the complement. The best tested blend was 0.9 fit / 0.1 freshness:
+
+| Blend | Precision@5 | nDCG@5 | MRR | MAP |
+|---|---:|---:|---:|---:|
+| 1.0 fit / 0.0 freshness | 0.300 | 0.879 | 1.000 | 0.818 |
+| **0.9 fit / 0.1 freshness** | **0.325** | **0.933** | **1.000** | **0.830** |
+| 0.8 fit / 0.2 freshness | 0.325 | 0.817 | 0.875 | 0.737 |
+| 0.7 fit / 0.3 freshness | 0.350 | 0.804 | 0.875 | 0.714 |
+| 0.6 fit / 0.4 freshness | 0.325 | 0.789 | 0.875 | 0.700 |
+| 0.5 fit / 0.5 freshness | 0.275 | 0.679 | 0.854 | 0.650 |
+
+This indicates that the current freshness-heavy behavior gives freshness too much
+influence for this corpus. However, selecting the best blend on the same cases is
+in-sample optimization, so the result must not be presented as a final performance
+estimate. The production ranking weights should remain unchanged until the blend is
+tested on held-out or independently adjudicated queries. The sweep artifact is
+[study2_weight_sweep.json](Pathways/evaluation/study2_weight_sweep.json), generated
+by [sweep_study2_weights.py](Pathways/evaluation/sweep_study2_weights.py).
+
 ## 6. Study 4: Sealed Missing-Data Benchmark
 
 ### 6.1 Benchmark design

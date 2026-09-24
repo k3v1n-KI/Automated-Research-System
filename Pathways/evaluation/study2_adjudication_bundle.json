@@ -1,0 +1,2019 @@
+{
+  "schema_version": 1,
+  "evaluation_type": "independent_adjudication_bundle",
+  "generated_at": "2026-09-23T21:15:37.166717+00:00",
+  "fixture": "evaluation/study2_corpus.json",
+  "resource_count": 12,
+  "case_count": 8,
+  "instructions": {
+    "scale": {
+      "0": "not relevant",
+      "1": "weakly relevant / partial fit",
+      "2": "relevant / strong fit",
+      "3": "highly relevant / exact fit"
+    },
+    "task": "For each query, judge whether the candidate resource is a good answer for the requester, independent of any existing system ranking or development labels."
+  },
+  "items": [
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-home-care",
+      "query": "Mandarin home care Scarborough",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-mandarin-meals",
+      "query": "Mandarin meal support Scarborough",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-newcomer-health",
+      "query": "newcomer multicultural health Toronto",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-walk-in-mandarin",
+      "query": "Mandarin walk-in primary care Scarborough",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-addiction-help",
+      "query": "addiction mental health help Toronto",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "scarborough-youth-mental-health",
+      "query": "youth mental health walk-in Scarborough",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "milton-medication-pharmacy",
+      "query": "medication pharmacy walk-in Milton",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-yee-hong",
+      "name": "Yee Hong Centre Scarborough",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "2319 McNicoll Ave",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "meal support",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-spectrum",
+      "name": "Spectrum Home Health",
+      "category": "PSW and home care",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "private",
+        "mobility"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-meals",
+      "name": "Mandarin Meals on Wheels",
+      "category": "meal support",
+      "city": "Scarborough",
+      "address": "2500 Lawrence Ave E",
+      "languages": [
+        "Mandarin",
+        "English"
+      ],
+      "tags": [
+        "sliding scale",
+        "meal support"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-access",
+      "name": "Access Alliance Multicultural Health Centre",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "340 College Street",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "English"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "newcomer"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-scarborough-chc",
+      "name": "Scarborough Centre for Healthy Communities",
+      "category": "community health centre",
+      "city": "Scarborough",
+      "address": "629 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "OHIP",
+        "walk-in",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-woodgreen",
+      "name": "WoodGreen Community Services",
+      "category": "seniors and social support",
+      "city": "Toronto",
+      "address": "815 Danforth Avenue",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "seniors",
+        "meal support",
+        "housing"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-camh",
+      "name": "CAMH Access CAMH",
+      "category": "addiction and mental health",
+      "city": "Toronto",
+      "address": "1001 Queen Street West",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "mental health",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-connex",
+      "name": "ConnexOntario",
+      "category": "addiction and mental health",
+      "city": "Ontario",
+      "address": "Toronto service line",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "tags": [
+        "addiction services",
+        "24 hour",
+        "phone"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-youth",
+      "name": "East Metro Youth Services",
+      "category": "youth mental health",
+      "city": "Scarborough",
+      "address": "1200 Markham Road",
+      "languages": [
+        "English",
+        "Mandarin"
+      ],
+      "tags": [
+        "youth",
+        "mental health",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-pharmacy",
+      "name": "Main and Bronte Pharmacy",
+      "category": "pharmacy services",
+      "city": "Milton",
+      "address": "10 Bronte Street South",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "pharmacy services",
+        "medication",
+        "walk-in"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-hospital",
+      "name": "Michael Garron Hospital",
+      "category": "hospital",
+      "city": "Toronto",
+      "address": "825 Coxwell Avenue",
+      "languages": [
+        "English"
+      ],
+      "tags": [
+        "hospital",
+        "emergency",
+        "OHIP"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    },
+    {
+      "case_id": "toronto-french-care",
+      "query": "French primary care Toronto",
+      "candidate_id": "r-french",
+      "name": "Centre francophone du Grand Toronto",
+      "category": "community health centre",
+      "city": "Toronto",
+      "address": "555 Richmond Street West",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "tags": [
+        "French",
+        "OHIP",
+        "primary care"
+      ],
+      "label": null,
+      "label_name": null,
+      "notes": ""
+    }
+  ]
+}
