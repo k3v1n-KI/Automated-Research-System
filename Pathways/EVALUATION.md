@@ -2,6 +2,26 @@
 
 ## Study 1 filter extraction
 
+### Version 1: original 8-case smoke test
+
+The original fixture remains available at
+`Pathways/evaluation/study1_extraction_cases.json`. It contains 8 controlled
+queries and is retained as a regression check. The original report is
+`Pathways/evaluation/study1_extraction_report.json`.
+
+| Metric | Result |
+|---|---:|
+| Cases | 8 |
+| Exact-case accuracy | 1.00 |
+| Micro-precision | 1.00 |
+| Micro-recall | 1.00 |
+| Micro-F1 | 1.00 |
+
+This result is a smoke-test baseline, not evidence of broad natural-language
+generalization.
+
+### Version 2: expanded rule-based baseline
+
 The expanded extraction benchmark is available at
 `Pathways/evaluation/study1_extraction_broad_cases.json`. It contains 50 queries:
 25 canonical requests and 25 natural-language paraphrases. Run it against the
@@ -19,6 +39,183 @@ queries are 1.00 exact, while paraphrases are 0.36 exact. This establishes a
 clear generalization limitation: the current rule-based extractor recognizes the
 controlled vocabulary reliably but needs synonym and discourse handling for
 natural-language requests, especially population and modality expressions.
+
+The original expanded report is retained as
+`Pathways/evaluation/study1_broad_report.json`.
+
+| Category | Cases | Exact-case accuracy |
+|---|---:|---:|
+| Canonical | 25 | 1.00 |
+| Paraphrased | 25 | 0.36 |
+| **Overall** | **50** | **0.68** |
+
+### Version 3: hybrid ontology-alias extractor
+
+The development hybrid condition adds an ontology alias layer while preserving
+the deterministic structured filter output. It is generated with:
+
+```bash
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study1.py \
+	--cases Pathways/evaluation/study1_extraction_broad_cases.json \
+	--resources Pathways/data/processed/normalized_resources.jsonl \
+	--extractor hybrid \
+	--output Pathways/evaluation/study1_hybrid_report.json
+```
+
+The enriched report retains all 50 case rows and records the category, gold
+filter, system output, per-field results, matched aliases, unresolved terms,
+extraction route, and ontology version (`hybrid-aliases-v1`).
+
+| Category | Cases | Exact-case accuracy |
+|---|---:|---:|
+| Canonical | 25 | 1.00 |
+| Paraphrased | 25 | 0.88 |
+| **Overall** | **50** | **0.94** |
+
+| Metric | Result |
+|---|---:|
+| Micro-precision | 0.9857 |
+| Micro-recall | 0.9787 |
+| Micro-F1 | 0.9822 |
+
+The hybrid extractor failed on three paraphrases:
+
+- `p10`: “A hospital serving Indigenous language speakers in Thunder Bay”; the
+  gold label expects `Ojibwe`, but the query does not name that language and the
+  ontology has no supported mapping for the phrase.
+- `p14`: “Addiction support for a teenager in London”; the system returned
+  `youth` while the fixture expects `adolescent`.
+- `p19`: “A walk-in clinic for a teenager in Vaughan”; the same
+  `youth`/`adolescent` ontology mismatch occurred.
+
+This hybrid score is calibration/development evidence because the alias mappings
+were created while examining this benchmark. It must not replace the Version 2
+result as the primary thesis claim until a held-out paraphrase fixture is
+evaluated. The progression nevertheless demonstrates the engineering effect of
+alias coverage: paraphrase exact accuracy increased from 0.36 to 0.88 while
+canonical accuracy remained 1.00.
+
+### Version 4: semantic and constrained-fallback ablation
+
+The extractor now includes an optional semantic candidate stage and an optional
+constrained LLM fallback. The semantic stage ranks unresolved query n-grams
+against ontology phrase entries using TF-IDF character similarity. It only fills
+an empty field and cannot overwrite a deterministic alias. The LLM stage receives
+the unresolved or ambiguous residue plus the allowed ontology values, returns a
+JSON proposal, and is validated before it can replace an ambiguous field. Prompt,
+raw response, validated proposal, and route are recorded in the report.
+
+The evaluator supports:
+
+```bash
+# Semantic stage, no LLM
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study1.py \
+	--extractor hybrid --semantic-mode on --llm-mode off \
+	--cases Pathways/evaluation/study1_extraction_broad_cases.json \
+	--resources Pathways/data/processed/normalized_resources.jsonl \
+	--output Pathways/evaluation/study1_semantic_report.json
+
+# Deterministic mock LLM for reproducible control-flow testing
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study1.py \
+	--extractor hybrid --semantic-mode on --llm-mode mock \
+	--cases Pathways/evaluation/study1_extraction_broad_cases.json \
+	--resources Pathways/data/processed/normalized_resources.jsonl \
+	--output Pathways/evaluation/study1_semantic_llm_mock_report.json
+
+# Real OpenAI-compatible fallback; requires OPENAI_API_KEY
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study1.py \
+	--extractor hybrid --semantic-mode on --llm-mode openai \
+	--cases Pathways/evaluation/study1_extraction_broad_cases.json \
+	--resources Pathways/data/processed/normalized_resources.jsonl \
+	--output Pathways/evaluation/study1_semantic_llm_openai_report.json
+
+# Real Gemini fallback; loads GEMINI_API_KEY from searxng/.env
+PYTHONPATH=.:Pathways python Pathways/evaluation/evaluate_study1.py \
+	--extractor hybrid --semantic-mode on --llm-mode gemini \
+	--cases Pathways/evaluation/study1_extraction_broad_cases.json \
+	--resources Pathways/data/processed/normalized_resources.jsonl \
+	--output Pathways/evaluation/study1_semantic_llm_gemini_report.json
+```
+
+| Condition | Exact-case accuracy | Paraphrased exact | Micro-F1 |
+|---|---:|---:|---:|
+| Alias-only | 0.94 | 0.88 | 0.9822 |
+| Semantic, no LLM | 0.94 | 0.88 | 0.9822 |
+| Semantic + mock LLM | 0.98 | 0.96 | 0.9964 |
+| Semantic + Gemini | 0.96 | 0.92 | 0.9894 |
+
+The semantic stage accepted 11 candidates without changing the aggregate score
+on this fixture. The mock fallback was involved in 33 cases and improved the
+context-sensitive population cases, including the distinction between general
+teenage support and adolescent addiction or walk-in care. This is a viability
+test of the constrained architecture, not a claim about an external model's
+performance: the mock provider is deterministic, and the OpenAI condition must
+be evaluated separately with a recorded model, prompt, cost, and held-out data.
+The real Gemini run used the configured OpenAI-compatible endpoint and model
+`gemini-3.8-flash`. It involved 33 of 50 cases and produced 22 validated
+suggestion payloads. Its result is still development-fixture evidence, not
+held-out thesis evidence; the report records each gold filter, system output,
+route, and LLM provenance in
+`Pathways/evaluation/study1_semantic_llm_gemini_report.json`.
+
+### Version 5: structured 200-query five-condition study
+
+To increase query coverage, a structured fixture was generated from ten filter
+families crossed with ten Ontario locations. Each family contributes one
+canonical and one paraphrased form, producing 100 canonical and 100
+paraphrased queries. The fixture and generation formula are recorded in
+`Pathways/evaluation/study1_extraction_200_cases.json` and
+`Pathways/evaluation/generate_study1_200_fixture.py`.
+
+The five conditions are independently switchable:
+
+```bash
+# Basic rules
+PYTHONPATH=.:Pathways python -m evaluation.evaluate_study1 \
+	--cases Pathways/evaluation/study1_extraction_200_cases.json \
+	--extractor baseline --alias-mode off --semantic-mode off --llm-mode off \
+	--output Pathways/evaluation/study1_200_basic_rules_report.json
+
+# Hybrid aliases
+PYTHONPATH=.:Pathways python -m evaluation.evaluate_study1 \
+	--cases Pathways/evaluation/study1_extraction_200_cases.json \
+	--extractor hybrid --alias-mode on --semantic-mode off --llm-mode off \
+	--output Pathways/evaluation/study1_200_hybrid_aliases_report.json
+
+# Semantic-only
+PYTHONPATH=.:Pathways python -m evaluation.evaluate_study1 \
+	--cases Pathways/evaluation/study1_extraction_200_cases.json \
+	--extractor hybrid --alias-mode off --semantic-mode on --llm-mode off \
+	--output Pathways/evaluation/study1_200_semantic_only_report.json
+
+# Gemini-only, batched in groups of 50
+PYTHONPATH=.:Pathways python -m evaluation.evaluate_study1 \
+	--cases Pathways/evaluation/study1_extraction_200_cases.json \
+	--extractor hybrid --alias-mode off --semantic-mode off --llm-mode gemini \
+	--llm-batch-size 50 \
+	--output Pathways/evaluation/study1_200_gemini_only_report.json
+
+# Semantic + Gemini, batched in groups of 50
+PYTHONPATH=.:Pathways python -m evaluation.evaluate_study1 \
+	--cases Pathways/evaluation/study1_extraction_200_cases.json \
+	--extractor hybrid --alias-mode on --semantic-mode on --llm-mode gemini \
+	--llm-batch-size 50 \
+	--output Pathways/evaluation/study1_200_semantic_gemini_report.json
+```
+
+| Condition | Overall exact | Canonical exact | Paraphrased exact | Micro-F1 |
+|---|---:|---:|---:|---:|
+| Basic rules | 0.600 | 1.000 | 0.200 | 0.8916 |
+| Hybrid aliases | 0.750 | 1.000 | 0.500 | 0.9318 |
+| Semantic-only | 0.900 | 1.000 | 0.800 | 0.9663 |
+| Gemini-only | 0.950 | 1.000 | 0.900 | 0.9890 |
+| Semantic + Gemini | 1.000 | 1.000 | 1.000 | 1.0000 |
+
+The two Gemini conditions used four batched requests of 50 cases rather than
+200 sequential requests. These remain same-fixture development results, not
+held-out evidence. The semantic-plus-Gemini condition should therefore be
+treated as evidence that the combined control flow resolves this structured
+fixture, not as a general claim about open-ended language understanding.
 
 This recovery has two executable evaluation surfaces:
 

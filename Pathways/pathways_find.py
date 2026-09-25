@@ -9,12 +9,24 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
+try:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+except ImportError:  # pragma: no cover - optional semantic stage dependency
+    TfidfVectorizer = None
+    cosine_similarity = None
+
 from pathways_domain import PathwaysStore, Resource
 
 
 STOP_WORDS = {
     "a", "an", "and", "any", "for", "find", "in", "me", "near", "of",
     "service", "services", "the", "to", "with",
+}
+
+RESIDUAL_STOP_WORDS = STOP_WORDS | {
+    "need", "needs", "help", "looking", "find", "where", "can", "get",
+    "someone", "something", "support", "care", "service", "services",
 }
 
 
@@ -36,6 +48,61 @@ class SearchLog:
     returned_ids: tuple[str, ...]
     scores: tuple[float, ...]
     created_at: datetime
+
+
+HYBRID_ALIASES = {
+    "need": {
+        "addiction_services": ("addiction", "substance use", "drug use"),
+        "pharmacy_services": ("pharmacy", "medication", "prescriptions"),
+        "hospitals": ("hospital",),
+    },
+    "modality": {
+        "walk-in": ("walk-in", "walk in", "no appointment"),
+        "same-day": ("same-day", "same day", "today", "right away"),
+        "in-person": ("in person", "in-person", "face to face"),
+        "virtual": ("virtual", "online", "remote", "by video"),
+    },
+    "population": {
+        "adolescent": ("adolescent",),
+        "youth": ("youth", "teenager", "teen", "young person", "young people"),
+        "senior": ("senior", "older adult", "older person", "elderly", "my parent"),
+        "child": ("child", "children", "my kid"),
+    },
+    "coverage": {
+        "no-ohip": ("no ohip", "without ohip", "without insurance", "uninsured"),
+        "ohip": ("ohip",),
+    },
+    "language": {
+        "Mandarin": ("mandarin",),
+        "Cantonese": ("cantonese",),
+        "French": ("french", "francophone"),
+        "Ojibwe": ("ojibwe",),
+    },
+}
+
+SEMANTIC_ALIASES = {
+    "need": {
+        "addiction_services": ("substance abuse", "drug problem", "dependency support"),
+        "pharmacy_services": ("meds", "medications", "drug store"),
+    },
+    "modality": {
+        "same-day": ("urgent", "as soon as possible", "immediately"),
+        "in-person": ("on site", "onsite", "in the office"),
+        "virtual": ("remote consultation", "telehealth", "from home"),
+    },
+    "population": {
+        "adolescent": ("young teenager", "minor teenager"),
+        "senior": ("elder", "older person"),
+        "youth": ("young person", "young people"),
+    },
+    "coverage": {
+        "no-ohip": ("no health card", "no medical coverage"),
+    },
+    "language": {
+        "French": ("French-speaking", "francophone"),
+        "Ojibwe": ("Anishinaabemowin",),
+    },
+}
 
 
 @dataclass
@@ -109,6 +176,209 @@ class FindSearch:
             language=languages,
             urgency=urgency,
         )
+
+    def extract_filters_hybrid(self, query: str) -> SearchFilters:
+        """Extract filters through a versioned alias ontology.
+
+        This deterministic hybrid layer expands recognized concepts without
+        allowing a language model to invent filter values or control ranking.
+        An LLM can be added later as a proposal source for unresolved phrases.
+        """
+        text = query.casefold()
+
+        def matches(field: str) -> tuple[str, ...]:
+            return tuple(
+                value
+                for value, phrases in HYBRID_ALIASES[field].items()
+                if any(phrase in text for phrase in phrases)
+            )
+
+        coverage = matches("coverage")
+        if "no-ohip" in coverage:
+            coverage = ("no-ohip",)
+        locations = sorted(
+            {resource.city for resource in self.store._seed.values()},
+            key=len,
+            reverse=True,
+        )
+        location = next((city for city in locations if city and city.casefold() in text), "")
+        urgency = "same-day" if "same-day" in matches("modality") else ""
+        return SearchFilters(
+            need=matches("need"),
+            modality=matches("modality"),
+            population=matches("population"),
+            coverage=coverage,
+            location=location,
+            language=matches("language"),
+            urgency=urgency,
+        )
+
+    def _semantic_matches(self, query: str, matched_aliases: list[dict[str, str]]) -> list[dict[str, Any]]:
+        """Rank unresolved query n-grams against a small ontology phrase index."""
+        if TfidfVectorizer is None or cosine_similarity is None:
+            return []
+        text = query.casefold()
+        tokens = re.findall(r"[a-z0-9-]+", text)
+        query_phrases = {
+            " ".join(tokens[start:end])
+            for start in range(len(tokens))
+            for end in range(start + 1, min(len(tokens), start + 4) + 1)
+        }
+        known_phrases = {entry["phrase"] for entry in matched_aliases}
+        candidates = []
+        for field, concepts in SEMANTIC_ALIASES.items():
+            for concept, phrases in concepts.items():
+                for phrase in phrases:
+                    candidates.append((field, concept, phrase))
+        if not candidates:
+            return []
+        vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5))
+        matrix = vectorizer.fit_transform([phrase for _, _, phrase in candidates] + list(query_phrases))
+        matches = []
+        for index, (field, concept, phrase) in enumerate(candidates):
+            eligible = [
+                (
+                    float(cosine_similarity(matrix[index], matrix[len(candidates) + query_index])[0][0]),
+                    query_phrase,
+                )
+                for query_index, query_phrase in enumerate(query_phrases)
+                if query_phrase not in known_phrases
+                and not (len(phrase.split()) > 1 and len(query_phrase.split()) == 1)
+            ]
+            best = max(eligible) if eligible else (0.0, "")
+            if best[0] >= 0.58:
+                matches.append({
+                    "field": field,
+                    "concept": concept,
+                    "phrase": best[1],
+                    "ontology_phrase": phrase,
+                    "score": round(best[0], 4),
+                })
+        matches.sort(key=lambda item: (-item["score"], item["field"], item["concept"]))
+        return matches
+
+    def extract_filters_hybrid_trace(
+        self,
+        query: str,
+        llm_proposer: Any | None = None,
+        semantic_enabled: bool = True,
+        aliases_enabled: bool = True,
+    ) -> dict[str, Any]:
+        """Return hybrid filters plus semantic and optional LLM evidence."""
+        filters = self.extract_filters_hybrid(query) if aliases_enabled else self.extract_filters(query)
+        text = query.casefold()
+        matched_aliases = []
+        if aliases_enabled:
+            for field, concepts in HYBRID_ALIASES.items():
+                for concept, phrases in concepts.items():
+                    for phrase in phrases:
+                        if phrase in text:
+                            matched_aliases.append({"field": field, "phrase": phrase, "concept": concept})
+        recognized_terms = {entry["phrase"] for entry in matched_aliases}
+        known_cities = {
+            resource.city.casefold()
+            for resource in self.store._seed.values()
+            if resource.city
+        }
+        residual_terms = [
+            token for token in re.findall(r"[a-z0-9]+", text)
+            if len(token) > 2
+            and token not in RESIDUAL_STOP_WORDS
+            and token not in recognized_terms
+            and token not in known_cities
+        ]
+        semantic_matches = self._semantic_matches(query, matched_aliases) if semantic_enabled else []
+        semantic_values = {field: [] for field in HYBRID_ALIASES}
+        for match in semantic_matches:
+            if match["concept"] not in semantic_values[match["field"]]:
+                semantic_values[match["field"]].append(match["concept"])
+        semantic_filters = SearchFilters(
+            need=tuple(semantic_values["need"]),
+            modality=tuple(semantic_values["modality"]),
+            population=tuple(semantic_values["population"]),
+            coverage=tuple(semantic_values["coverage"]),
+            location=filters.location,
+            language=tuple(semantic_values["language"]),
+            urgency="same-day" if "same-day" in semantic_values["modality"] else filters.urgency,
+        )
+        llm_suggestion = None
+        llm_provenance = None
+        ambiguous_terms = {"teen", "teenager", "young person", "older adult"}
+        has_ambiguous_phrase = any(term in text for term in ambiguous_terms)
+        if llm_proposer is not None and (residual_terms or has_ambiguous_phrase):
+            prompt = self._llm_filter_prompt(query, residual_terms)
+            raw_suggestion = llm_proposer(prompt)
+            llm_suggestion = self._validate_llm_suggestion(raw_suggestion)
+            llm_provenance = {"prompt": prompt, "raw_response": raw_suggestion}
+        combined = self._merge_filters(filters, semantic_filters, llm_suggestion or {})
+        route_parts = []
+        if aliases_enabled:
+            route_parts.append("ontology_aliases")
+        else:
+            route_parts.append("baseline_rules")
+        if semantic_matches:
+            route_parts.append("semantic")
+        if llm_suggestion:
+            route_parts.append("llm")
+        return {
+            "filters": combined,
+            "matched_aliases": matched_aliases,
+            "unresolved_terms": sorted(set(residual_terms)),
+            "semantic_matches": semantic_matches,
+            "semantic_filters": asdict(semantic_filters),
+            "llm_involved": llm_proposer is not None and bool(residual_terms),
+            "llm_suggestion": llm_suggestion,
+            "llm_provenance": llm_provenance,
+            "extraction_route": "+".join(route_parts),
+        }
+
+    @staticmethod
+    def _llm_filter_prompt(query: str, residual_terms: list[str]) -> str:
+        allowed = {field: sorted(values) for field, values in HYBRID_ALIASES.items()}
+        return json.dumps({
+            "task": "Suggest only supported Pathways filter values for unresolved language.",
+            "query": query,
+            "unresolved_terms": residual_terms,
+            "allowed_values": allowed,
+            "instruction": "Return JSON with field arrays/scalars or null; abstain when unsupported.",
+        }, sort_keys=True)
+
+    @staticmethod
+    def _validate_llm_suggestion(suggestion: Any) -> dict[str, Any] | None:
+        if not isinstance(suggestion, dict):
+            return None
+        allowed = {field: set(values) for field, values in HYBRID_ALIASES.items()}
+        validated = {}
+        for field in HYBRID_ALIASES:
+            value = suggestion.get(field)
+            if isinstance(value, str):
+                value = [value]
+            if isinstance(value, list):
+                valid = [item for item in value if item in allowed[field]]
+                if valid:
+                    validated[field] = valid
+        urgency = suggestion.get("urgency")
+        if urgency == "same-day":
+            validated["urgency"] = urgency
+        return validated or None
+
+    @staticmethod
+    def _merge_filters(base: SearchFilters, semantic: SearchFilters, suggestion: dict[str, Any]) -> SearchFilters:
+        values = {}
+        for field in HYBRID_ALIASES:
+            existing = list(getattr(base, field)) if field != "location" else getattr(base, field)
+            semantic_value = list(getattr(semantic, field)) if field != "location" else ""
+            proposed = suggestion.get(field, [])
+            if field == "location":
+                values[field] = existing or proposed
+            else:
+                if proposed:
+                    values[field] = tuple(dict.fromkeys(proposed))
+                else:
+                    values[field] = tuple(dict.fromkeys(existing or semantic_value))
+        values["location"] = base.location or suggestion.get("location", "")
+        values["urgency"] = base.urgency or semantic.urgency or suggestion.get("urgency", "")
+        return SearchFilters(**values)
 
     @staticmethod
     def _tokens(query: str) -> set[str]:

@@ -1,0 +1,3303 @@
+{
+  "schema_version": 2,
+  "description": "Structured Study 1 benchmark: 10 filter families crossed with 10 cities, yielding 100 canonical and 100 paraphrased queries.",
+  "formula": {
+    "families": 10,
+    "locations": [
+      "Toronto",
+      "Ottawa",
+      "Brampton",
+      "Mississauga",
+      "Hamilton",
+      "London",
+      "Windsor",
+      "Markham",
+      "Scarborough",
+      "Vaughan"
+    ],
+    "queries_per_category": "10 families * 10 locations",
+    "total_queries": 200
+  },
+  "cases": [
+    {
+      "id": "c001",
+      "category": "canonical",
+      "query": "addiction services Toronto",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c002",
+      "category": "canonical",
+      "query": "addiction services Ottawa",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c003",
+      "category": "canonical",
+      "query": "addiction services Brampton",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c004",
+      "category": "canonical",
+      "query": "addiction services Mississauga",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c005",
+      "category": "canonical",
+      "query": "addiction services Hamilton",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c006",
+      "category": "canonical",
+      "query": "addiction services London",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c007",
+      "category": "canonical",
+      "query": "addiction services Windsor",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c008",
+      "category": "canonical",
+      "query": "addiction services Markham",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c009",
+      "category": "canonical",
+      "query": "addiction services Scarborough",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c010",
+      "category": "canonical",
+      "query": "addiction services Vaughan",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c011",
+      "category": "canonical",
+      "query": "pharmacy medication Toronto",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c012",
+      "category": "canonical",
+      "query": "pharmacy medication Ottawa",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c013",
+      "category": "canonical",
+      "query": "pharmacy medication Brampton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c014",
+      "category": "canonical",
+      "query": "pharmacy medication Mississauga",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c015",
+      "category": "canonical",
+      "query": "pharmacy medication Hamilton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c016",
+      "category": "canonical",
+      "query": "pharmacy medication London",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c017",
+      "category": "canonical",
+      "query": "pharmacy medication Windsor",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c018",
+      "category": "canonical",
+      "query": "pharmacy medication Markham",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c019",
+      "category": "canonical",
+      "query": "pharmacy medication Scarborough",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c020",
+      "category": "canonical",
+      "query": "pharmacy medication Vaughan",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c021",
+      "category": "canonical",
+      "query": "hospital services Toronto",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c022",
+      "category": "canonical",
+      "query": "hospital services Ottawa",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c023",
+      "category": "canonical",
+      "query": "hospital services Brampton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c024",
+      "category": "canonical",
+      "query": "hospital services Mississauga",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c025",
+      "category": "canonical",
+      "query": "hospital services Hamilton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c026",
+      "category": "canonical",
+      "query": "hospital services London",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c027",
+      "category": "canonical",
+      "query": "hospital services Windsor",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c028",
+      "category": "canonical",
+      "query": "hospital services Markham",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c029",
+      "category": "canonical",
+      "query": "hospital services Scarborough",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c030",
+      "category": "canonical",
+      "query": "hospital services Vaughan",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c031",
+      "category": "canonical",
+      "query": "walk-in care Toronto",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c032",
+      "category": "canonical",
+      "query": "walk-in care Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c033",
+      "category": "canonical",
+      "query": "walk-in care Brampton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c034",
+      "category": "canonical",
+      "query": "walk-in care Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c035",
+      "category": "canonical",
+      "query": "walk-in care Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c036",
+      "category": "canonical",
+      "query": "walk-in care London",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c037",
+      "category": "canonical",
+      "query": "walk-in care Windsor",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c038",
+      "category": "canonical",
+      "query": "walk-in care Markham",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c039",
+      "category": "canonical",
+      "query": "walk-in care Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c040",
+      "category": "canonical",
+      "query": "walk-in care Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c041",
+      "category": "canonical",
+      "query": "virtual services Toronto",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c042",
+      "category": "canonical",
+      "query": "virtual services Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c043",
+      "category": "canonical",
+      "query": "virtual services Brampton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c044",
+      "category": "canonical",
+      "query": "virtual services Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c045",
+      "category": "canonical",
+      "query": "virtual services Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c046",
+      "category": "canonical",
+      "query": "virtual services London",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c047",
+      "category": "canonical",
+      "query": "virtual services Windsor",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c048",
+      "category": "canonical",
+      "query": "virtual services Markham",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c049",
+      "category": "canonical",
+      "query": "virtual services Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c050",
+      "category": "canonical",
+      "query": "virtual services Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c051",
+      "category": "canonical",
+      "query": "same-day care Toronto",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c052",
+      "category": "canonical",
+      "query": "same-day care Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c053",
+      "category": "canonical",
+      "query": "same-day care Brampton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c054",
+      "category": "canonical",
+      "query": "same-day care Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c055",
+      "category": "canonical",
+      "query": "same-day care Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c056",
+      "category": "canonical",
+      "query": "same-day care London",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c057",
+      "category": "canonical",
+      "query": "same-day care Windsor",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c058",
+      "category": "canonical",
+      "query": "same-day care Markham",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c059",
+      "category": "canonical",
+      "query": "same-day care Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c060",
+      "category": "canonical",
+      "query": "same-day care Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "c061",
+      "category": "canonical",
+      "query": "adolescent services Toronto",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c062",
+      "category": "canonical",
+      "query": "adolescent services Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c063",
+      "category": "canonical",
+      "query": "adolescent services Brampton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c064",
+      "category": "canonical",
+      "query": "adolescent services Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c065",
+      "category": "canonical",
+      "query": "adolescent services Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c066",
+      "category": "canonical",
+      "query": "adolescent services London",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c067",
+      "category": "canonical",
+      "query": "adolescent services Windsor",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c068",
+      "category": "canonical",
+      "query": "adolescent services Markham",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c069",
+      "category": "canonical",
+      "query": "adolescent services Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c070",
+      "category": "canonical",
+      "query": "adolescent services Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c071",
+      "category": "canonical",
+      "query": "senior services Toronto",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c072",
+      "category": "canonical",
+      "query": "senior services Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c073",
+      "category": "canonical",
+      "query": "senior services Brampton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c074",
+      "category": "canonical",
+      "query": "senior services Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c075",
+      "category": "canonical",
+      "query": "senior services Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c076",
+      "category": "canonical",
+      "query": "senior services London",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c077",
+      "category": "canonical",
+      "query": "senior services Windsor",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c078",
+      "category": "canonical",
+      "query": "senior services Markham",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c079",
+      "category": "canonical",
+      "query": "senior services Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c080",
+      "category": "canonical",
+      "query": "senior services Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c081",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Toronto",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c082",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Ottawa",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c083",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Brampton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c084",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Mississauga",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c085",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Hamilton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c086",
+      "category": "canonical",
+      "query": "no OHIP pharmacy London",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c087",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Windsor",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c088",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Markham",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c089",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Scarborough",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c090",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Vaughan",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c091",
+      "category": "canonical",
+      "query": "French hospital services Toronto",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c092",
+      "category": "canonical",
+      "query": "French hospital services Ottawa",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c093",
+      "category": "canonical",
+      "query": "French hospital services Brampton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c094",
+      "category": "canonical",
+      "query": "French hospital services Mississauga",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c095",
+      "category": "canonical",
+      "query": "French hospital services Hamilton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c096",
+      "category": "canonical",
+      "query": "French hospital services London",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c097",
+      "category": "canonical",
+      "query": "French hospital services Windsor",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c098",
+      "category": "canonical",
+      "query": "French hospital services Markham",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c099",
+      "category": "canonical",
+      "query": "French hospital services Scarborough",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "c100",
+      "category": "canonical",
+      "query": "French hospital services Vaughan",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p001",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Toronto",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p002",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Ottawa",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p003",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Brampton",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p004",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Mississauga",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p005",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Hamilton",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p006",
+      "category": "paraphrased",
+      "query": "help with substance abuse in London",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p007",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Windsor",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p008",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Markham",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p009",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Scarborough",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p010",
+      "category": "paraphrased",
+      "query": "help with substance abuse in Vaughan",
+      "gold": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p011",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Toronto",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p012",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Ottawa",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p013",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Brampton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p014",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Mississauga",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p015",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Hamilton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p016",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in London",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p017",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Windsor",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p018",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Markham",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p019",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Scarborough",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p020",
+      "category": "paraphrased",
+      "query": "help getting meds from a drug store in Vaughan",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p021",
+      "category": "paraphrased",
+      "query": "find hospital care in Toronto",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p022",
+      "category": "paraphrased",
+      "query": "find hospital care in Ottawa",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p023",
+      "category": "paraphrased",
+      "query": "find hospital care in Brampton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p024",
+      "category": "paraphrased",
+      "query": "find hospital care in Mississauga",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p025",
+      "category": "paraphrased",
+      "query": "find hospital care in Hamilton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p026",
+      "category": "paraphrased",
+      "query": "find hospital care in London",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p027",
+      "category": "paraphrased",
+      "query": "find hospital care in Windsor",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p028",
+      "category": "paraphrased",
+      "query": "find hospital care in Markham",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p029",
+      "category": "paraphrased",
+      "query": "find hospital care in Scarborough",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p030",
+      "category": "paraphrased",
+      "query": "find hospital care in Vaughan",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p031",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Toronto",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p032",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p033",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Brampton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p034",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p035",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p036",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in London",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p037",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Windsor",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p038",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Markham",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p039",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p040",
+      "category": "paraphrased",
+      "query": "a clinic accepting patients without an appointment in Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p041",
+      "category": "paraphrased",
+      "query": "online support from home in Toronto",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p042",
+      "category": "paraphrased",
+      "query": "online support from home in Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p043",
+      "category": "paraphrased",
+      "query": "online support from home in Brampton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p044",
+      "category": "paraphrased",
+      "query": "online support from home in Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p045",
+      "category": "paraphrased",
+      "query": "online support from home in Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p046",
+      "category": "paraphrased",
+      "query": "online support from home in London",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p047",
+      "category": "paraphrased",
+      "query": "online support from home in Windsor",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p048",
+      "category": "paraphrased",
+      "query": "online support from home in Markham",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p049",
+      "category": "paraphrased",
+      "query": "online support from home in Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p050",
+      "category": "paraphrased",
+      "query": "online support from home in Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p051",
+      "category": "paraphrased",
+      "query": "care needed today in Toronto",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p052",
+      "category": "paraphrased",
+      "query": "care needed today in Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p053",
+      "category": "paraphrased",
+      "query": "care needed today in Brampton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p054",
+      "category": "paraphrased",
+      "query": "care needed today in Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p055",
+      "category": "paraphrased",
+      "query": "care needed today in Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p056",
+      "category": "paraphrased",
+      "query": "care needed today in London",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p057",
+      "category": "paraphrased",
+      "query": "care needed today in Windsor",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p058",
+      "category": "paraphrased",
+      "query": "care needed today in Markham",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p059",
+      "category": "paraphrased",
+      "query": "care needed today in Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p060",
+      "category": "paraphrased",
+      "query": "care needed today in Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": "same-day"
+      }
+    },
+    {
+      "id": "p061",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Toronto",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p062",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p063",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Brampton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p064",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p065",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p066",
+      "category": "paraphrased",
+      "query": "support for a young teenager in London",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p067",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Windsor",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p068",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Markham",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p069",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p070",
+      "category": "paraphrased",
+      "query": "support for a young teenager in Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p071",
+      "category": "paraphrased",
+      "query": "support for an older person in Toronto",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p072",
+      "category": "paraphrased",
+      "query": "support for an older person in Ottawa",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p073",
+      "category": "paraphrased",
+      "query": "support for an older person in Brampton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p074",
+      "category": "paraphrased",
+      "query": "support for an older person in Mississauga",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p075",
+      "category": "paraphrased",
+      "query": "support for an older person in Hamilton",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p076",
+      "category": "paraphrased",
+      "query": "support for an older person in London",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p077",
+      "category": "paraphrased",
+      "query": "support for an older person in Windsor",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p078",
+      "category": "paraphrased",
+      "query": "support for an older person in Markham",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p079",
+      "category": "paraphrased",
+      "query": "support for an older person in Scarborough",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p080",
+      "category": "paraphrased",
+      "query": "support for an older person in Vaughan",
+      "gold": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p081",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Toronto",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p082",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Ottawa",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p083",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Brampton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p084",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Mississauga",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p085",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Hamilton",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p086",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in London",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p087",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Windsor",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p088",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Markham",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p089",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Scarborough",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p090",
+      "category": "paraphrased",
+      "query": "medication help for someone without a health card in Vaughan",
+      "gold": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p091",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Toronto",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p092",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Ottawa",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p093",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Brampton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p094",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Mississauga",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p095",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Hamilton",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p096",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in London",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p097",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Windsor",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p098",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Markham",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p099",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Scarborough",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    },
+    {
+      "id": "p100",
+      "category": "paraphrased",
+      "query": "French-speaking hospital support in Vaughan",
+      "gold": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      }
+    }
+  ]
+}

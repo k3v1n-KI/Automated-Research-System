@@ -1,0 +1,6695 @@
+{
+  "schema_version": 3,
+  "evaluation_type": "study1_hybrid_filter_extraction",
+  "extractor": "hybrid",
+  "ontology_version": "hybrid-aliases-v1",
+  "llm_mode": "off",
+  "llm_summary": {
+    "involved_case_count": 0,
+    "involved_case_ids": [],
+    "suggestions": [],
+    "note": "Mock mode uses an injected deterministic provider for control-flow testing; off mode makes no LLM calls."
+  },
+  "fixture": "evaluation/study1_extraction_broad_cases.json",
+  "resources": "data/processed/normalized_resources.jsonl",
+  "case_count": 50,
+  "fields": [
+    "need",
+    "modality",
+    "population",
+    "coverage",
+    "location",
+    "language",
+    "urgency"
+  ],
+  "summary": {
+    "exact_case_accuracy": 0.86,
+    "micro_precision": 0.9583333333333334,
+    "micro_recall": 0.9787234042553191,
+    "micro_f1": 0.968421052631579,
+    "field_exact_accuracy": {
+      "need": 1.0,
+      "modality": 1.0,
+      "population": 0.92,
+      "coverage": 0.96,
+      "location": 1.0,
+      "language": 0.98,
+      "urgency": 1.0
+    },
+    "by_category": {
+      "canonical": {
+        "case_count": 25,
+        "exact_case_accuracy": 0.92
+      },
+      "paraphrased": {
+        "case_count": 25,
+        "exact_case_accuracy": 0.8
+      }
+    },
+    "unresolved_term_count": 69
+  },
+  "cases": [
+    {
+      "id": "c01",
+      "category": "canonical",
+      "query": "addiction help Toronto",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "addiction",
+          "concept": "addiction_services"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c02",
+      "category": "canonical",
+      "query": "substance use support Ottawa",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "substance use",
+          "concept": "addiction_services"
+        }
+      ],
+      "unresolved_terms": [
+        "substance",
+        "use"
+      ],
+      "semantic_matches": [
+        {
+          "field": "need",
+          "concept": "addiction_services",
+          "phrase": "substance",
+          "ontology_phrase": "substance abuse",
+          "score": 0.736
+        }
+      ],
+      "semantic_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c03",
+      "category": "canonical",
+      "query": "pharmacy medication Scarborough",
+      "gold_filter": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "pharmacy_services"
+          ],
+          "predicted": [
+            "pharmacy_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Scarborough",
+          "predicted": "Scarborough",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "pharmacy",
+          "concept": "pharmacy_services"
+        },
+        {
+          "field": "need",
+          "phrase": "medication",
+          "concept": "pharmacy_services"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c04",
+      "category": "canonical",
+      "query": "hospital services Markham",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Markham",
+          "predicted": "Markham",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c05",
+      "category": "canonical",
+      "query": "walk-in care Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk-in",
+          "concept": "walk-in"
+        }
+      ],
+      "unresolved_terms": [
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c06",
+      "category": "canonical",
+      "query": "same-day addiction help Brampton",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "same-day"
+          ],
+          "predicted": [
+            "same-day"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Brampton",
+          "predicted": "Brampton",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "same-day",
+          "predicted": "same-day",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "addiction",
+          "concept": "addiction_services"
+        },
+        {
+          "field": "modality",
+          "phrase": "same-day",
+          "concept": "same-day"
+        }
+      ],
+      "unresolved_terms": [
+        "day",
+        "same"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c07",
+      "category": "canonical",
+      "query": "virtual French services Ottawa",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "virtual"
+          ],
+          "predicted": [
+            "virtual"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "French"
+          ],
+          "predicted": [
+            "French"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "virtual",
+          "concept": "virtual"
+        },
+        {
+          "field": "language",
+          "phrase": "french",
+          "concept": "French"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c08",
+      "category": "canonical",
+      "query": "Mandarin primary care Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Mandarin"
+          ],
+          "predicted": [
+            "Mandarin"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "language",
+          "phrase": "mandarin",
+          "concept": "Mandarin"
+        }
+      ],
+      "unresolved_terms": [
+        "primary"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c09",
+      "category": "canonical",
+      "query": "Cantonese walk-in care Richmond Hill",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Richmond Hill",
+          "predicted": "Richmond Hill",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Cantonese"
+          ],
+          "predicted": [
+            "Cantonese"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk-in",
+          "concept": "walk-in"
+        },
+        {
+          "field": "language",
+          "phrase": "cantonese",
+          "concept": "Cantonese"
+        }
+      ],
+      "unresolved_terms": [
+        "hill",
+        "richmond",
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c10",
+      "category": "canonical",
+      "query": "Ojibwe hospital services Thunder Bay",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [
+          "Ojibwe"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [
+          "Ojibwe"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [
+          "Ojibwe"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [
+          "Ojibwe"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Thunder Bay",
+          "predicted": "Thunder Bay",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Ojibwe"
+          ],
+          "predicted": [
+            "Ojibwe"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "language",
+          "phrase": "ojibwe",
+          "concept": "Ojibwe"
+        }
+      ],
+      "unresolved_terms": [
+        "bay",
+        "thunder"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c11",
+      "category": "canonical",
+      "query": "senior services Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "senior"
+          ],
+          "predicted": [
+            "senior"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "population",
+          "phrase": "senior",
+          "concept": "senior"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c12",
+      "category": "canonical",
+      "query": "youth mental health Scarborough",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "youth"
+          ],
+          "predicted": [
+            "youth"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [
+            "no-ohip"
+          ],
+          "exact": false
+        },
+        "location": {
+          "expected": "Scarborough",
+          "predicted": "Scarborough",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "population",
+          "phrase": "youth",
+          "concept": "youth"
+        }
+      ],
+      "unresolved_terms": [
+        "health",
+        "mental"
+      ],
+      "semantic_matches": [
+        {
+          "field": "coverage",
+          "concept": "no-ohip",
+          "phrase": "health",
+          "ontology_phrase": "no health card",
+          "score": 0.587
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "coverage"
+      ]
+    },
+    {
+      "id": "c13",
+      "category": "canonical",
+      "query": "child hospital care Hamilton",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "child"
+          ],
+          "predicted": [
+            "child"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Hamilton",
+          "predicted": "Hamilton",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "population",
+          "phrase": "child",
+          "concept": "child"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c14",
+      "category": "canonical",
+      "query": "adolescent addiction support London",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "adolescent"
+          ],
+          "predicted": [
+            "adolescent"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "London",
+          "predicted": "London",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "addiction",
+          "concept": "addiction_services"
+        },
+        {
+          "field": "population",
+          "phrase": "adolescent",
+          "concept": "adolescent"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c15",
+      "category": "canonical",
+      "query": "OHIP walk-in care Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "ohip"
+          ],
+          "predicted": [
+            "ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk-in",
+          "concept": "walk-in"
+        },
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        }
+      ],
+      "unresolved_terms": [
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c16",
+      "category": "canonical",
+      "query": "no OHIP pharmacy Windsor",
+      "gold_filter": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "pharmacy_services"
+          ],
+          "predicted": [
+            "pharmacy_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "no-ohip"
+          ],
+          "predicted": [
+            "no-ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Windsor",
+          "predicted": "Windsor",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "pharmacy",
+          "concept": "pharmacy_services"
+        },
+        {
+          "field": "coverage",
+          "phrase": "no ohip",
+          "concept": "no-ohip"
+        },
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c17",
+      "category": "canonical",
+      "query": "same day French care Ottawa",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "same-day"
+          ],
+          "predicted": [
+            "same-day"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "French"
+          ],
+          "predicted": [
+            "French"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "same-day",
+          "predicted": "same-day",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "same day",
+          "concept": "same-day"
+        },
+        {
+          "field": "language",
+          "phrase": "french",
+          "concept": "French"
+        }
+      ],
+      "unresolved_terms": [
+        "day",
+        "same"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c18",
+      "category": "canonical",
+      "query": "in person Mandarin services Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "in-person"
+          ],
+          "predicted": [
+            "in-person"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [
+            "youth"
+          ],
+          "exact": false
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Mandarin"
+          ],
+          "predicted": [
+            "Mandarin"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "in person",
+          "concept": "in-person"
+        },
+        {
+          "field": "language",
+          "phrase": "mandarin",
+          "concept": "Mandarin"
+        }
+      ],
+      "unresolved_terms": [
+        "person"
+      ],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "youth",
+          "phrase": "person",
+          "ontology_phrase": "young person",
+          "score": 0.6279
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "population"
+      ]
+    },
+    {
+      "id": "c19",
+      "category": "canonical",
+      "query": "walk in adolescent care Vaughan",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "adolescent"
+          ],
+          "predicted": [
+            "adolescent"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Vaughan",
+          "predicted": "Vaughan",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk in",
+          "concept": "walk-in"
+        },
+        {
+          "field": "population",
+          "phrase": "adolescent",
+          "concept": "adolescent"
+        }
+      ],
+      "unresolved_terms": [
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c20",
+      "category": "canonical",
+      "query": "French OHIP primary care Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "ohip"
+          ],
+          "predicted": [
+            "ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "French"
+          ],
+          "predicted": [
+            "French"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        },
+        {
+          "field": "language",
+          "phrase": "french",
+          "concept": "French"
+        }
+      ],
+      "unresolved_terms": [
+        "primary"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c21",
+      "category": "canonical",
+      "query": "hospital for seniors Ottawa",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "senior"
+          ],
+          "predicted": [
+            "senior"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "population",
+          "phrase": "senior",
+          "concept": "senior"
+        }
+      ],
+      "unresolved_terms": [
+        "seniors"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c22",
+      "category": "canonical",
+      "query": "virtual youth support Brampton",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "virtual"
+          ],
+          "predicted": [
+            "virtual"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "youth"
+          ],
+          "predicted": [
+            "youth"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Brampton",
+          "predicted": "Brampton",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "virtual",
+          "concept": "virtual"
+        },
+        {
+          "field": "population",
+          "phrase": "youth",
+          "concept": "youth"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c23",
+      "category": "canonical",
+      "query": "Mandarin medication help Markham",
+      "gold_filter": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "pharmacy_services"
+          ],
+          "predicted": [
+            "pharmacy_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Markham",
+          "predicted": "Markham",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Mandarin"
+          ],
+          "predicted": [
+            "Mandarin"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "medication",
+          "concept": "pharmacy_services"
+        },
+        {
+          "field": "language",
+          "phrase": "mandarin",
+          "concept": "Mandarin"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [
+        {
+          "field": "need",
+          "concept": "pharmacy_services",
+          "phrase": "medication help",
+          "ontology_phrase": "medications",
+          "score": 0.6261
+        }
+      ],
+      "semantic_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c24",
+      "category": "canonical",
+      "query": "Cantonese no OHIP care Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "no-ohip"
+          ],
+          "predicted": [
+            "no-ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Cantonese"
+          ],
+          "predicted": [
+            "Cantonese"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "coverage",
+          "phrase": "no ohip",
+          "concept": "no-ohip"
+        },
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        },
+        {
+          "field": "language",
+          "phrase": "cantonese",
+          "concept": "Cantonese"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "c25",
+      "category": "canonical",
+      "query": "same-day hospital care Mississauga",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "same-day"
+          ],
+          "predicted": [
+            "same-day"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Mississauga",
+          "predicted": "Mississauga",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "same-day",
+          "predicted": "same-day",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "modality",
+          "phrase": "same-day",
+          "concept": "same-day"
+        }
+      ],
+      "unresolved_terms": [
+        "day",
+        "same"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p01",
+      "category": "paraphrased",
+      "query": "I need help with an addiction in Toronto",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "addiction",
+          "concept": "addiction_services"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p02",
+      "category": "paraphrased",
+      "query": "Where can I find help for drug use near Ottawa?",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "drug use",
+          "concept": "addiction_services"
+        }
+      ],
+      "unresolved_terms": [
+        "drug",
+        "use"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p03",
+      "category": "paraphrased",
+      "query": "Can someone help me get my prescriptions in Scarborough?",
+      "gold_filter": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "pharmacy_services"
+          ],
+          "predicted": [
+            "pharmacy_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Scarborough",
+          "predicted": "Scarborough",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "prescriptions",
+          "concept": "pharmacy_services"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p04",
+      "category": "paraphrased",
+      "query": "I need a hospital in Markham",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Markham",
+          "predicted": "Markham",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p05",
+      "category": "paraphrased",
+      "query": "Is there a clinic that accepts walk in patients in Toronto?",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk in",
+          "concept": "walk-in"
+        }
+      ],
+      "unresolved_terms": [
+        "accepts",
+        "clinic",
+        "patients",
+        "that",
+        "there",
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p06",
+      "category": "paraphrased",
+      "query": "I need help today with substance use in Brampton",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "same-day"
+          ],
+          "predicted": [
+            "same-day"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Brampton",
+          "predicted": "Brampton",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "same-day",
+          "predicted": "same-day",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "substance use",
+          "concept": "addiction_services"
+        },
+        {
+          "field": "modality",
+          "phrase": "today",
+          "concept": "same-day"
+        }
+      ],
+      "unresolved_terms": [
+        "substance",
+        "use"
+      ],
+      "semantic_matches": [
+        {
+          "field": "need",
+          "concept": "addiction_services",
+          "phrase": "substance",
+          "ontology_phrase": "substance abuse",
+          "score": 0.67
+        }
+      ],
+      "semantic_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p07",
+      "category": "paraphrased",
+      "query": "French-speaking support I can access online in Ottawa",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "virtual"
+          ],
+          "predicted": [
+            "virtual"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "French"
+          ],
+          "predicted": [
+            "French"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "online",
+          "concept": "virtual"
+        },
+        {
+          "field": "language",
+          "phrase": "french",
+          "concept": "French"
+        }
+      ],
+      "unresolved_terms": [
+        "access",
+        "speaking"
+      ],
+      "semantic_matches": [
+        {
+          "field": "language",
+          "concept": "French",
+          "phrase": "french-speaking",
+          "ontology_phrase": "French-speaking",
+          "score": 1.0
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p08",
+      "category": "paraphrased",
+      "query": "My parent needs care in Mandarin in Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "senior"
+          ],
+          "predicted": [
+            "senior"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Mandarin"
+          ],
+          "predicted": [
+            "Mandarin"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "population",
+          "phrase": "my parent",
+          "concept": "senior"
+        },
+        {
+          "field": "language",
+          "phrase": "mandarin",
+          "concept": "Mandarin"
+        }
+      ],
+      "unresolved_terms": [
+        "parent"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p09",
+      "category": "paraphrased",
+      "query": "Cantonese help for a walk-in appointment in Richmond Hill",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Richmond Hill",
+          "predicted": "Richmond Hill",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Cantonese"
+          ],
+          "predicted": [
+            "Cantonese"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk-in",
+          "concept": "walk-in"
+        },
+        {
+          "field": "language",
+          "phrase": "cantonese",
+          "concept": "Cantonese"
+        }
+      ],
+      "unresolved_terms": [
+        "appointment",
+        "hill",
+        "richmond",
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Richmond Hill",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p10",
+      "category": "paraphrased",
+      "query": "A hospital serving Indigenous language speakers in Thunder Bay",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [
+          "Ojibwe"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [
+          "Ojibwe"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Thunder Bay",
+          "predicted": "Thunder Bay",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Ojibwe"
+          ],
+          "predicted": [],
+          "exact": false
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        }
+      ],
+      "unresolved_terms": [
+        "bay",
+        "indigenous",
+        "language",
+        "serving",
+        "speakers",
+        "thunder"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Thunder Bay",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "language"
+      ]
+    },
+    {
+      "id": "p11",
+      "category": "paraphrased",
+      "query": "Support for an older adult in Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "senior"
+          ],
+          "predicted": [
+            "senior"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "population",
+          "phrase": "older adult",
+          "concept": "senior"
+        }
+      ],
+      "unresolved_terms": [
+        "adult",
+        "older"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p12",
+      "category": "paraphrased",
+      "query": "Mental health help for a teenager in Scarborough",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "youth"
+          ],
+          "predicted": [
+            "youth"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [
+            "no-ohip"
+          ],
+          "exact": false
+        },
+        "location": {
+          "expected": "Scarborough",
+          "predicted": "Scarborough",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "population",
+          "phrase": "teenager",
+          "concept": "youth"
+        },
+        {
+          "field": "population",
+          "phrase": "teen",
+          "concept": "youth"
+        }
+      ],
+      "unresolved_terms": [
+        "health",
+        "mental"
+      ],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "adolescent",
+          "phrase": "a teenager",
+          "ontology_phrase": "young teenager",
+          "score": 0.6589
+        },
+        {
+          "field": "population",
+          "concept": "adolescent",
+          "phrase": "a teenager",
+          "ontology_phrase": "minor teenager",
+          "score": 0.6027
+        },
+        {
+          "field": "coverage",
+          "concept": "no-ohip",
+          "phrase": "health",
+          "ontology_phrase": "no health card",
+          "score": 0.5882
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Scarborough",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "coverage"
+      ]
+    },
+    {
+      "id": "p13",
+      "category": "paraphrased",
+      "query": "A hospital for my child in Hamilton",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "child"
+        ],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "child"
+          ],
+          "predicted": [
+            "child"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Hamilton",
+          "predicted": "Hamilton",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "population",
+          "phrase": "child",
+          "concept": "child"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Hamilton",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p14",
+      "category": "paraphrased",
+      "query": "Addiction support for a teenager in London",
+      "gold_filter": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "addiction_services"
+        ],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "addiction_services"
+          ],
+          "predicted": [
+            "addiction_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "adolescent"
+          ],
+          "predicted": [
+            "youth"
+          ],
+          "exact": false
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "London",
+          "predicted": "London",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "addiction",
+          "concept": "addiction_services"
+        },
+        {
+          "field": "population",
+          "phrase": "teenager",
+          "concept": "youth"
+        },
+        {
+          "field": "population",
+          "phrase": "teen",
+          "concept": "youth"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "adolescent",
+          "phrase": "a teenager",
+          "ontology_phrase": "young teenager",
+          "score": 0.6553
+        },
+        {
+          "field": "population",
+          "concept": "adolescent",
+          "phrase": "a teenager",
+          "ontology_phrase": "minor teenager",
+          "score": 0.5973
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "London",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "population"
+      ]
+    },
+    {
+      "id": "p15",
+      "category": "paraphrased",
+      "query": "A walk-in provider in Toronto that takes OHIP",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "ohip"
+          ],
+          "predicted": [
+            "ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk-in",
+          "concept": "walk-in"
+        },
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        }
+      ],
+      "unresolved_terms": [
+        "provider",
+        "takes",
+        "that",
+        "walk"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p16",
+      "category": "paraphrased",
+      "query": "Medication help in Windsor even without OHIP",
+      "gold_filter": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "pharmacy_services"
+          ],
+          "predicted": [
+            "pharmacy_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "no-ohip"
+          ],
+          "predicted": [
+            "no-ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Windsor",
+          "predicted": "Windsor",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "medication",
+          "concept": "pharmacy_services"
+        },
+        {
+          "field": "coverage",
+          "phrase": "without ohip",
+          "concept": "no-ohip"
+        },
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        }
+      ],
+      "unresolved_terms": [
+        "even",
+        "without"
+      ],
+      "semantic_matches": [
+        {
+          "field": "need",
+          "concept": "pharmacy_services",
+          "phrase": "medication help",
+          "ontology_phrase": "medications",
+          "score": 0.6802
+        }
+      ],
+      "semantic_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Windsor",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p17",
+      "category": "paraphrased",
+      "query": "French care needed today in Ottawa",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [
+          "French"
+        ],
+        "urgency": "same-day"
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "same-day"
+          ],
+          "predicted": [
+            "same-day"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "French"
+          ],
+          "predicted": [
+            "French"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "same-day",
+          "predicted": "same-day",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "today",
+          "concept": "same-day"
+        },
+        {
+          "field": "language",
+          "phrase": "french",
+          "concept": "French"
+        }
+      ],
+      "unresolved_terms": [
+        "needed"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p18",
+      "category": "paraphrased",
+      "query": "Mandarin services delivered in person in Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "in-person"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "in-person"
+          ],
+          "predicted": [
+            "in-person"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [
+            "youth"
+          ],
+          "exact": false
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Mandarin"
+          ],
+          "predicted": [
+            "Mandarin"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "in person",
+          "concept": "in-person"
+        },
+        {
+          "field": "language",
+          "phrase": "mandarin",
+          "concept": "Mandarin"
+        }
+      ],
+      "unresolved_terms": [
+        "delivered",
+        "person"
+      ],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "youth",
+          "phrase": "person",
+          "ontology_phrase": "young person",
+          "score": 0.6067
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "population"
+      ]
+    },
+    {
+      "id": "p19",
+      "category": "paraphrased",
+      "query": "A walk-in clinic for a teenager in Vaughan",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "walk-in"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "walk-in"
+          ],
+          "predicted": [
+            "walk-in"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "adolescent"
+          ],
+          "predicted": [
+            "youth"
+          ],
+          "exact": false
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Vaughan",
+          "predicted": "Vaughan",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "walk-in",
+          "concept": "walk-in"
+        },
+        {
+          "field": "population",
+          "phrase": "teenager",
+          "concept": "youth"
+        },
+        {
+          "field": "population",
+          "phrase": "teen",
+          "concept": "youth"
+        }
+      ],
+      "unresolved_terms": [
+        "clinic",
+        "walk"
+      ],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "adolescent",
+          "phrase": "a teenager",
+          "ontology_phrase": "young teenager",
+          "score": 0.661
+        },
+        {
+          "field": "population",
+          "concept": "adolescent",
+          "phrase": "a teenager",
+          "ontology_phrase": "minor teenager",
+          "score": 0.6042
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "adolescent"
+        ],
+        "coverage": [],
+        "location": "Vaughan",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": false,
+      "mismatched_fields": [
+        "population"
+      ]
+    },
+    {
+      "id": "p20",
+      "category": "paraphrased",
+      "query": "French primary care that accepts OHIP in Toronto",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "French"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "ohip"
+          ],
+          "predicted": [
+            "ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "French"
+          ],
+          "predicted": [
+            "French"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        },
+        {
+          "field": "language",
+          "phrase": "french",
+          "concept": "French"
+        }
+      ],
+      "unresolved_terms": [
+        "accepts",
+        "primary",
+        "that"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p21",
+      "category": "paraphrased",
+      "query": "A hospital for an older person in Ottawa",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [],
+        "population": [
+          "senior"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "senior"
+          ],
+          "predicted": [
+            "senior"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Ottawa",
+          "predicted": "Ottawa",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "population",
+          "phrase": "older person",
+          "concept": "senior"
+        }
+      ],
+      "unresolved_terms": [
+        "older",
+        "person"
+      ],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "senior",
+          "phrase": "an older person",
+          "ontology_phrase": "older person",
+          "score": 0.9451
+        },
+        {
+          "field": "population",
+          "concept": "youth",
+          "phrase": "person",
+          "ontology_phrase": "young person",
+          "score": 0.6116
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "senior",
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Ottawa",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p22",
+      "category": "paraphrased",
+      "query": "Online help for a young person in Brampton",
+      "gold_filter": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [
+          "virtual"
+        ],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "virtual"
+          ],
+          "predicted": [
+            "virtual"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [
+            "youth"
+          ],
+          "predicted": [
+            "youth"
+          ],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Brampton",
+          "predicted": "Brampton",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "modality",
+          "phrase": "online",
+          "concept": "virtual"
+        },
+        {
+          "field": "population",
+          "phrase": "young person",
+          "concept": "youth"
+        }
+      ],
+      "unresolved_terms": [
+        "person",
+        "young"
+      ],
+      "semantic_matches": [
+        {
+          "field": "population",
+          "concept": "youth",
+          "phrase": "a young person",
+          "ontology_phrase": "young person",
+          "score": 0.9794
+        }
+      ],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [
+          "youth"
+        ],
+        "coverage": [],
+        "location": "Brampton",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p23",
+      "category": "paraphrased",
+      "query": "Mandarin help getting medication in Markham",
+      "gold_filter": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [
+          "Mandarin"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "pharmacy_services"
+          ],
+          "predicted": [
+            "pharmacy_services"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Markham",
+          "predicted": "Markham",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Mandarin"
+          ],
+          "predicted": [
+            "Mandarin"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "medication",
+          "concept": "pharmacy_services"
+        },
+        {
+          "field": "language",
+          "phrase": "mandarin",
+          "concept": "Mandarin"
+        }
+      ],
+      "unresolved_terms": [
+        "getting"
+      ],
+      "semantic_matches": [
+        {
+          "field": "need",
+          "concept": "pharmacy_services",
+          "phrase": "medication in",
+          "ontology_phrase": "medications",
+          "score": 0.6736
+        }
+      ],
+      "semantic_filters": {
+        "need": [
+          "pharmacy_services"
+        ],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Markham",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases+semantic",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p24",
+      "category": "paraphrased",
+      "query": "Cantonese care in Toronto for someone without OHIP",
+      "gold_filter": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "gold_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_output": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "system_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [
+          "no-ohip"
+        ],
+        "location": "Toronto",
+        "language": [
+          "Cantonese"
+        ],
+        "urgency": ""
+      },
+      "field_results": {
+        "need": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "modality": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [
+            "no-ohip"
+          ],
+          "predicted": [
+            "no-ohip"
+          ],
+          "exact": true
+        },
+        "location": {
+          "expected": "Toronto",
+          "predicted": "Toronto",
+          "exact": true
+        },
+        "language": {
+          "expected": [
+            "Cantonese"
+          ],
+          "predicted": [
+            "Cantonese"
+          ],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "",
+          "predicted": "",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "coverage",
+          "phrase": "without ohip",
+          "concept": "no-ohip"
+        },
+        {
+          "field": "coverage",
+          "phrase": "ohip",
+          "concept": "ohip"
+        },
+        {
+          "field": "language",
+          "phrase": "cantonese",
+          "concept": "Cantonese"
+        }
+      ],
+      "unresolved_terms": [
+        "without"
+      ],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Toronto",
+        "language": [],
+        "urgency": ""
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    },
+    {
+      "id": "p25",
+      "category": "paraphrased",
+      "query": "I need hospital care today in Mississauga",
+      "gold_filter": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "gold_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_output": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "system_filters": {
+        "need": [
+          "hospitals"
+        ],
+        "modality": [
+          "same-day"
+        ],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "field_results": {
+        "need": {
+          "expected": [
+            "hospitals"
+          ],
+          "predicted": [
+            "hospitals"
+          ],
+          "exact": true
+        },
+        "modality": {
+          "expected": [
+            "same-day"
+          ],
+          "predicted": [
+            "same-day"
+          ],
+          "exact": true
+        },
+        "population": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "coverage": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "location": {
+          "expected": "Mississauga",
+          "predicted": "Mississauga",
+          "exact": true
+        },
+        "language": {
+          "expected": [],
+          "predicted": [],
+          "exact": true
+        },
+        "urgency": {
+          "expected": "same-day",
+          "predicted": "same-day",
+          "exact": true
+        }
+      },
+      "matched_aliases": [
+        {
+          "field": "need",
+          "phrase": "hospital",
+          "concept": "hospitals"
+        },
+        {
+          "field": "modality",
+          "phrase": "today",
+          "concept": "same-day"
+        }
+      ],
+      "unresolved_terms": [],
+      "semantic_matches": [],
+      "semantic_filters": {
+        "need": [],
+        "modality": [],
+        "population": [],
+        "coverage": [],
+        "location": "Mississauga",
+        "language": [],
+        "urgency": "same-day"
+      },
+      "extraction_route": "ontology_aliases",
+      "llm_involved": false,
+      "llm_suggestion": null,
+      "llm_provenance": null,
+      "exact_match": true,
+      "mismatched_fields": []
+    }
+  ]
+}

@@ -1,18 +1,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Synthesis of Reviewed Systems and the ARS Research Gap}}{22}{table.2.1}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Synthesis of Reviewed Systems and the ARS Research Gap}}{23}{table.2.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces ARS Performance Evaluation}}{38}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Geographic Distribution of ARS Extracted Entities (Urban vs. Rural)}}{39}{table.3.2}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Commercial LLM Comparison}}{42}{table.3.3}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Estimated Geographic Distribution: Gemini 1.5 vs. ARS}}{42}{table.3.4}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Multi-Agent System Comparison}}{44}{table.3.5}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Estimated Geographic Footprint: MAS (InfoSeeker) vs. ARS}}{45}{table.3.6}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces ARS Performance Evaluation}}{39}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Geographic Distribution of ARS Extracted Entities (Urban vs. Rural)}}{40}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Commercial LLM Comparison}}{43}{table.3.3}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Estimated Geographic Distribution: Gemini 1.5 vs. ARS}}{43}{table.3.4}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Multi-Agent System Comparison}}{45}{table.3.5}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Estimated Geographic Footprint: MAS (InfoSeeker) vs. ARS}}{46}{table.3.6}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Worked interpretation examples across Studies 1--3}}{61}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Summary of Pathways evaluation studies}}{62}{table.4.2}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Study 1 filter-extraction results}}{63}{table.4.3}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Study 2 independently adjudicated ranking results}}{64}{table.4.4}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Worked examples of Study 4 field outcomes}}{66}{table.4.5}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Study 4 missing-data restoration conditions}}{66}{table.4.6}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Pathways filter-extraction stages and responsibilities}}{57}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Worked interpretation examples across Studies 1--3}}{64}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Summary of Pathways evaluation studies}}{65}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Expanded Study 1 five-condition results}}{66}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Study 2 independently adjudicated ranking results}}{67}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Worked examples of Study 4 field outcomes}}{69}{table.4.6}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Study 4 Pathways Data Restoration results by missing-field category}}{69}{table.4.7}%
 \addvspace {10\p@ }
