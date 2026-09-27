@@ -38,6 +38,10 @@
         "/^conda run -n auto-research python -m py_compile Pathways/pathways_backend\\.py && node --check Pathways/pathways_app\\.js && conda run -n auto-research pytest Pathways/test_pathways_domain\\.py -q$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^cd /home/Kageshi/Documents/Projects/Automated-Research-System && python - <<'PY'\nimport json, collections\np='Pathways/evaluation/missing_data_benchmark/missing_data_public\\.jsonl'\nrows=\\[json\\.loads\\(x\\) for x in open\\(p\\)\\]\nfor city,n in sorted\\(collections\\.Counter\\(r\\.get\\('city',''\\) for r in rows\\)\\.items\\(\\)\\): print\\(f'\\{city\\}\\\\t\\{n\\}'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

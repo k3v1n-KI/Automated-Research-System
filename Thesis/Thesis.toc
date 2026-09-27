@@ -69,14 +69,14 @@
 \contentsline {subsubsection}{Study 2 results}{67}{subsubsection*.16}%
 \contentsline {subsubsection}{Study 3 results}{67}{subsubsection*.17}%
 \contentsline {subsubsection}{Study 4 results}{68}{subsubsection*.18}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{70}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Major Contributions of the Thesis}{70}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{71}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Implications for Health Informatics}{72}{section.5.3}%
-\contentsline {section}{\numberline {5.4}System Limitations}{72}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Future Work}{74}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Multimodal Discovery Pipelines}{74}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}EHR Integration via SMART on FHIR}{74}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Longitudinal Clinical Trials}{74}{subsection.5.5.3}%
-\contentsline {section}{\numberline {5.6}Conclusion}{75}{section.5.6}%
-\contentsline {section}{References}{76}{section.5.6}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{72}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Major Contributions of the Thesis}{72}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{73}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Implications for Health Informatics}{74}{section.5.3}%
+\contentsline {section}{\numberline {5.4}System Limitations}{74}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Future Work}{76}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Multimodal Discovery Pipelines}{76}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}EHR Integration via SMART on FHIR}{76}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Longitudinal Clinical Trials}{76}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.6}Conclusion}{77}{section.5.6}%
+\contentsline {section}{References}{78}{section.5.6}%

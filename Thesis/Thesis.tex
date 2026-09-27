@@ -15,6 +15,7 @@
 \usepackage{algorithmic}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18} % This natively centers the text and prevents cumulative addition
+\usepackage{pgf-pie}
 \usepackage{booktabs}
 \usepackage{float}
 
@@ -1018,7 +1019,7 @@ Study 2 evaluates ranking quality on eight cases and twelve resources using 96 i
 \subsection{Study 3: Simulated flywheel maintenance}
 Study 3 evaluates whether verification participation counteracts freshness decay. A deterministic simulator compares an unmaintained static directory with a flywheel condition at $T=0$, $30$, and $90$ days. Verification participation is swept from 0\% to 100\% in 25\% increments, with ten seeds per condition. This is simulated longitudinal evidence rather than observation from a 90-day clinical deployment.
 \subsection{Study 4: Targeted missing-data restoration}
-Study 4 evaluates Pathways Data Restoration on a sealed 500-field benchmark. The workflow combines entity-supported Places results with the ARS fallback for unresolved cases. We report requested fields by category and classify each result as exact, supported but non-exact, weakly supported, or unresolved after manual review.
+Study 4 evaluates Pathways Data Restoration on a sealed 500-field benchmark. The Pathways workflow restores missing organizational fields and applies entity evidence and manual review before classification. We report requested fields by category and classify each result as exact, supported but non-exact, weakly supported, or unresolved after manual review.
 
 \subsection{Evaluation results}
 Table~\ref{tab:pathways_study_summary} summarizes the completed studies. The extraction and ranking experiments use different targets: Study 1 measures structured interpretation of requests, while Study 2 measures ordering of candidate resources. Study 3 tests the maintenance mechanism under controlled simulated time, and Study 4 measures evidence-backed recovery of missing fields.
@@ -1061,7 +1062,7 @@ The same principle applies across the other studies: each metric is tied to a de
 1 & Natural-language filter extraction & 200 queries; 100 canonical and 100 paraphrased & Basic F1 $=0.892$; semantic + Gemini F1 $=1.000$, exact $=1.000$ \\
 2 & Ranked retrieval quality & 8 cases, 12 resources, 96 adjudicated judgments & BM25 nDCG@5 $=0.916$; Pathways $=0.804$ \\
 3 & Freshness maintenance & 0--100\% participation; 10 seeds; $T=0,30,90$ days & Day-90 fresh rate: $0.00$ to $1.00$ \\
-4 & Missing-data restoration & 500 requested fields; Places plus ARS fallback & 142 exact; 284 supported non-exact; 63 weak; 11 unresolved \\
+4 & Missing-data restoration & 500 requested fields; Pathways Data Restoration & 142 exact; 284 supported non-exact; 63 weak; 11 unresolved \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -1124,7 +1125,7 @@ Semantic + Gemini & 1.000 & 1.000 & 1.000 & 1.0000 \\
 \addlegendentry{Paraphrased exact}
 \end{axis}
 \end{tikzpicture}
-\caption{Expanded Study 1 exact-case accuracy across the five extraction conditions. Values are development-fixture results; labels are placed inside the bars.}
+\caption{Study 1 exact-case accuracy across the five extraction conditions. Values are development-fixture results; labels are placed inside the bars.}
 \label{fig:study1_expanded_accuracy}
 \end{figure}
 
@@ -1181,6 +1182,136 @@ The deterministic sweep produced a monotonic relationship between participation 
 
 \subsubsection{Study 4 results}
 The Pathways Data Restoration condition requested 500 missing fields. After manual review, 142 values were exact, 284 were supported but non-exact, 63 were weakly supported, and 11 were unresolved. The categories are intentionally separate: exact values match the sealed reference; supported non-exact values are accepted alternate representations, including departmental phone numbers and alternate website representations; weakly supported values are plausible but require further confirmation; unresolved cases produced no acceptable value. The result supports Pathways as an assistive restoration workflow, not as an autonomous source of truth.
+
+The benchmark was geographically concentrated in the GTA: 336 of the 500 requested fields (67.2\%) were associated with GTA municipalities. The remaining records were grouped into Northern Ontario (48 fields), Eastern Ontario (42), Southwestern Ontario (47), and Central Ontario (27). Municipality labels were normalized before classification, including variants such as ``Cornwall, ON'' and ``Sault Ste. Marie.''
+
+\begin{table}[H]
+\caption{Study 4 restoration outcomes by analytical region}
+\label{tab:study4_geography}
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{Region} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \textbf{Supported} & \textbf{Weak} & \textbf{Unresolved} \\
+\midrule
+GTA & 336 & 67.2\% & 131 & 159 & 35 & 11 \\
+Northern Ontario & 48 & 9.6\% & 3 & 40 & 5 & 0 \\
+Eastern Ontario & 42 & 8.4\% & 2 & 35 & 5 & 0 \\
+Southwestern Ontario & 47 & 9.4\% & 4 & 32 & 11 & 0 \\
+Central Ontario & 27 & 5.4\% & 2 & 18 & 7 & 0 \\
+\textbf{Total} & \textbf{500} & \textbf{100.0\%} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[every node/.style={font=\scriptsize}]
+\pie[rotate=90, text=legend, sum=auto, after number=\%,
+     color={blue!55,green!55,orange!60,red!45,yellow!65}]
+    {67.2/GTA,9.6/Northern Ontario,8.4/Eastern Ontario,9.4/Southwestern Ontario,5.4/Central Ontario}
+\end{tikzpicture}
+\caption{Study 4 geographic composition by analytical region. The GTA contributes most of the benchmark fields; the outcome breakdown remains in Table~\ref{tab:study4_geography}.}
+\label{fig:study4_geography}
+\end{figure}
+
+The benchmark also spans three service categories derived from the source
+datasets: addiction services, hospitals, and pharmacy services. Pharmacy
+records constitute the largest group (223 fields), followed by hospitals (167)
+and addiction services (110). The distribution of restoration outcomes varies
+by category: hospital records contain many supported non-exact representations,
+while pharmacy records contain most of the exact matches and the unresolved
+website cases.
+
+\begin{table}[H]
+\caption{Study 4 restoration outcomes by service category}
+\label{tab:study4_service_categories}
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{Service category} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \textbf{Supported} & \textbf{Weak} & \textbf{Unresolved} \\
+\midrule
+Addiction services & 110 & 22.0\% & 33 & 57 & 19 & 1 \\
+Hospitals & 167 & 33.4\% & 2 & 134 & 31 & 0 \\
+Pharmacy services & 223 & 44.6\% & 107 & 93 & 13 & 10 \\
+\textbf{Total} & \textbf{500} & \textbf{100.0\%} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=20pt,
+    width=0.92\textwidth,
+    height=7cm,
+    ymin=0,
+    ymax=155,
+    ylabel={Requested fields},
+    symbolic x coords={Addiction,Hospitals,Pharmacy},
+    xtick=data,
+    xticklabels={Addiction services,Hospitals,Pharmacy services},
+    x tick label style={font=\scriptsize, rotate=15, anchor=east},
+    nodes near coords,
+    nodes near coords align={center},
+    nodes near coords style={font=\scriptsize, text=black, yshift=-8pt},
+    enlarge x limits=0.18,
+    ymajorgrids=true,
+    grid style={dashed,gray!35},
+    legend style={at={(0.5,-0.24)},anchor=north,legend columns=2}
+]
+\addplot[fill=blue!55,
+    bar shift=-30pt,
+    visualization depends on=\thisrow{label}\as\label,
+    nodes near coords={\pgfmathprintnumber[fixed,precision=0]{\label}}]
+    table [x=category,y=height] {
+        category height label
+        Addiction 33 33
+        Hospitals 12 2
+        Pharmacy 107 107
+    };
+\addlegendentry{Exact}
+\addplot[fill=green!55,
+    bar shift=-10pt,
+    visualization depends on=\thisrow{label}\as\label,
+    nodes near coords={\pgfmathprintnumber[fixed,precision=0]{\label}}]
+    table [x=category,y=height] {
+        category height label
+        Addiction 57 57
+        Hospitals 134 134
+        Pharmacy 93 93
+    };
+\addlegendentry{Supported, non-exact}
+\addplot[fill=orange!60,
+    bar shift=10pt,
+    visualization depends on=\thisrow{label}\as\label,
+    nodes near coords={\pgfmathprintnumber[fixed,precision=0]{\label}}]
+    table [x=category,y=height] {
+        category height label
+        Addiction 19 19
+        Hospitals 31 31
+        Pharmacy 21 13
+    };
+\addlegendentry{Weakly supported}
+\addplot[fill=red!45,
+    bar shift=30pt,
+    visualization depends on=\thisrow{label}\as\label,
+    nodes near coords={\pgfmathprintnumber[fixed,precision=0]{\label}}]
+    table [x=category,y=height] {
+        category height label
+        Addiction 12 1
+        Hospitals 0 0
+        Pharmacy 18 10
+    };
+\addlegendentry{Unresolved}
+\end{axis}
+\end{tikzpicture}
+\caption{Study 4 restoration outcomes by service category. Bars are widened and nonzero segments below 18 are enlarged visually for label readability; labels and Table~\ref{tab:study4_service_categories} report the actual integer counts.}
+\label{fig:study4_service_categories}
+\end{figure}
 
 Table~\ref{tab:study4_examples} gives concrete examples from the benchmark. In the first example, the input record is missing only a postal code. Pathways returns ``M4L 2A4'', which agrees exactly with the sealed reference and is supported by the matching pharmacy name and address. In the second example, the requested website differs from the stored reference: the reference contains a directory URL, while Pathways returns the pharmacy's organizational website. The value is supported but non-exact, illustrating why exact and supported categories are reported separately. In the third example, the system returns no phone number; this is unresolved. The final example is weakly supported because the returned address is plausible for the named pharmacy but does not match the expected unit-level representation. Such values require manual review rather than automatic acceptance.
 
