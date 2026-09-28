@@ -9,7 +9,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\hypersetup{hypertexnames=false}
 \usepackage{tabularx}
+\usepackage{makecell}
 \usepackage{tikz}
 \usetikzlibrary{positioning,shapes.geometric}
 \usepackage{algorithmic}
@@ -19,6 +21,8 @@
 \usepackage{booktabs}
 \usepackage{float}
 
+\renewcommand{\arraystretch}{1.15}
+
 \newcommand{\thesisfigure}[2]{%
     \IfFileExists{#1}{\includegraphics[width=#2]{#1}}{%
         \fbox{\parbox[c][0.18\textheight][c]{#2}{\centering Figure asset ``#1'' was not available at compilation time.}}%
@@ -26,6 +30,7 @@
 }
 
 \doublespacing
+\setlength{\emergencystretch}{3em}
 
 \begin{document}
 
@@ -83,8 +88,7 @@ Effective care coordination requires healthcare professionals to connect patient
 
 The ARS formalizes community healthcare mapping as a long-tail retrieval problem. Here, a long-tail domain is one in which a small number of highly visible organizations account for much of the searchable content while many valid services appear infrequently across local pages, PDFs, and directories. The ARS uses a four-axis Query Expansion Matrix (QEM)—entity, scope, attribute, and source—to decouple query diversity from LLM sampling through deterministic template permutations. Retrieved web data flows through extraction, entity resolution, and a three-stage evidence pipeline combining registry matching, domain-targeted search, and API signals. Manual review establishes the extended ground truth for entities absent from the baseline registries. Benchmarked against three curated datasets (addiction counseling, hospitals, and pharmacy services), the ARS achieved 78.3\% average baseline recall and surfaced additional manually verified resources absent from the reference inventories.
 
-To address the subsequent maintenance problem, Project 2 introduces Pathways, an interactive service-search and directory-maintenance platform. Pathways uses an event-sourced data model and a Find--Verify--Ask--Close flywheel to capture human validation and support longitudinal directory maintenance. Four focused evaluations characterize the combined system. The structured 200-query extraction benchmark evaluated five conditions: basic rules achieved micro-F1 of 0.892, aliases 0.932, semantic-only extraction 0.966, Gemini-only extraction 0.989, and semantic plus Gemini 1.000. These results are development-fixture evidence rather than held-out estimates because the ontology and query families were used during implementation. On an independently adjudicated ranking set, BM25 achieved higher nDCG@5 than the current Pathways ranker (0.916 versus 0.804). A simulated participation sweep showed that day-90 freshness increased from 0.00 with no verification participation to 1.00 under full participation. Finally, the Pathways Data Restoration benchmark classified 142 of 500 requested fields as exact, 284 as supported non-exact values, 63 as weakly supported, and 11 as unresolved after manual review. These results support Pathways as an auditable maintenance prototype, while identifying language coverage, ontology calibration, ranking calibration, simulation realism, and source-level validation as limitations.
-
+To address the subsequent maintenance problem, Project 2 introduces Pathways, an interactive service-search and directory-maintenance platform. Pathways uses an event-sourced data model and a Find--Verify--Ask--Close flywheel to capture human validation and support longitudinal directory maintenance. Two focused evaluations characterize the platform. The structured 200-query extraction benchmark evaluated five conditions: basic rules achieved micro-F1 of 0.892, aliases 0.932, semantic-only extraction 0.966, Gemini-only extraction 0.989, and semantic plus Gemini 1.000. These results are development-fixture evidence rather than held-out estimates because the ontology and query families were used during implementation. Finally, the Pathways Data Restoration benchmark classified 142 of 500 requested fields as exact, 284 as supported non-exact values, 63 as weakly supported, and 11 as unresolved after manual review. These results support Pathways as an auditable maintenance prototype, while identifying language coverage, ontology calibration, and source-level validation as limitations.
 % --- Table of Contents ---
 \tableofcontents
 \newpage
@@ -108,14 +112,12 @@ To address the subsequent maintenance problem, Project 2 introduces Pathways, an
 
 \subsection{The Landscape of Care Coordination and Community Resources}
 Modern healthcare delivery increasingly treats patient outcomes as the result of both clinical treatment and the conditions in which patients live. Social determinants of health (SDoH), including housing, transportation, social support, income, and access to community services, shape whether a patient can follow a treatment plan after leaving a hospital or clinic. Care coordination therefore extends beyond the clinical encounter. It requires professionals to identify appropriate services, determine whether those services are operating, and connect a patient with an organization that can respond to the patient's practical circumstances \cite{44,45}.
-
 This task is particularly important during discharge and referral workflows. A discharge planner or social worker may need to locate addiction counseling, peer-support groups, rehabilitation programs, specialized care, or pharmacy services within a particular geographic area. The relevant resource may be a large institution, but it may also be a small organization with limited online visibility, a program embedded in a larger community organization, or a service described only in a local directory or document. The quality of a referral is therefore determined not only by whether an organization exists, but also by whether the service type, location, contact information, eligibility requirements, and operating status match the patient's needs.
 
 Community healthcare resource discovery is consequently a data-integration problem as well as a clinical coordination problem. Information is distributed across municipal registries, institutional websites, commercial listings, nonprofit pages, social-care portals, and documents published in different formats. These sources use inconsistent names and descriptions, provide different levels of detail, and often describe the same organization from different perspectives. A useful discovery system must combine these heterogeneous signals into records that can be searched and compared without removing the provenance needed to assess their reliability.
 
 \subsection{The Fragility of Manual Directories}
 Despite their importance, community resources are not represented by one stable, complete, and consistently maintained information system. A service may change its telephone number, intake process, hours, eligibility criteria, or website without those changes appearing simultaneously in every directory. Organizations may also open, merge, relocate, suspend a program, or stop publishing information while remaining present in older records. The resulting directory is fragile because its usefulness depends on several mutable fields remaining accurate at the same time.
-
 Manual curation is valuable for establishing trusted reference information, but it does not scale easily to the full discovery problem. Staff must find candidate organizations, reconcile duplicates, inspect sources, update fields, and repeat the process as conditions change. This creates two related weaknesses. First, a manually maintained directory tends to prioritize sources that are already known to administrators, which can preserve visibility and geographic biases. Second, updates are expensive and sporadic, so a record can become stale between review cycles. The problem is not simply that a directory contains too few rows; it may contain the wrong level of detail or fail to communicate which fields were recently supported by evidence.
 
 These limitations also affect clinical workload. When a directory cannot answer a referral question, the professional must conduct additional web searches, call organizations, or enter information manually into another system. The result is repeated administrative work and a loss of time during transitions of care. Community-resource referral research similarly identifies organizational and workflow barriers to implementing resource-referral technologies \cite{20}. An automated system must therefore reduce discovery effort without presenting unverified outputs as authoritative clinical recommendations.
@@ -499,15 +501,15 @@ Table~\ref{tab:performance_eval} reports the authoritative ARS true-positive, fa
 \caption{ARS Performance Evaluation}
 \label{tab:performance_eval}
 \centering
-\begin{tabular}{lcccccc}
+\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
-\textbf{Experiment} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+\textbf{Experiment} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \makecell{\textbf{Precision}} & \textbf{Recall} & \makecell{\textbf{F1-}\textbf{Score}} \\
 \midrule
 Addiction & 528 & 45 & 79 & 92.1\% & 80.6\% & 86.0\% \\
 Hospitals & 647 & 154 & 37 & 80.8\% & 77.4\% & 79.1\% \\
 Pharmacy & 911 & 71 & 93 & 92.8\% & 77.0\% & 84.1\% \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsubsection{Geographic Distribution and the Long-Tail Fragmentation}
@@ -516,9 +518,9 @@ To empirically validate the ARS's ability to bypass generative convergence, the 
 \caption{Geographic Distribution of ARS Extracted Entities (Urban vs. Rural)}
 \label{tab:ars_geo_distribution}
 \centering
-\begin{tabular}{lccc}
+\begin{tabularx}{\textwidth}{@{}Xrrr@{}}
 \toprule
-\textbf{Service Domain} & \textbf{Urban Centers} & \textbf{Rural \& Long-Tail} & \textbf{Total Extracted} \\
+\textbf{Service domain} & \makecell{\textbf{Urban}\\\textbf{centers}} & \makecell{\textbf{Rural /}\\\textbf{long-tail}} & \makecell{\textbf{Total}\\\textbf{extracted}} \\
 \midrule
 Addiction Counseling & 367 (64.0\%) & 206 (36.0\%) & 573 \\
 Hospitals & 347 (40.5\%) & 454 (59.5\%) & 801 \\
@@ -526,7 +528,7 @@ Pharmacy Services & 882 (90.1\%) & 97 (9.9\%) & 979 \\
 \midrule
 \textbf{Total} & \textbf{1,596 (69.8\%)} & \textbf{757 (30.2\%)} & \textbf{2,353} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \footnotesize{\textit{Note:} "Urban Centers" denotes high-density municipalities and major Ontario CMAs. "Rural \& Long-Tail" represents decentralized, lower-density townships where traditional SEO indexing is historically weakest.}
 \end{table}
 
@@ -604,9 +606,9 @@ To contextualize the ARS's performance against the current state-of-the-art, we 
 \label{tab:llm_performance}
 \centering
 \scriptsize
-\begin{tabular}{lrrrrrr}
+\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
-\textbf{System} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\textbf{System} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \makecell{\textbf{Precision}} & \textbf{Recall} & \textbf{F1} \\
 \midrule
 \multicolumn{7}{l}{\textbf{Hospitals}} \\
 ARS & 647 & 154 & 37 & 80.8\% & 77.4\% & 79.1\% \\
@@ -623,7 +625,7 @@ ARS & 911 & 71 & 93 & 92.8\% & 77.0\% & 84.1\% \\
 Gemini Deep & 42$^{*}$ & 0$^{*}$ & 937$^{*}$ & 100$^{*}$ & 4.3$^{*}$ & 8.2$^{*}$ \\
 ChatGPT Deep & 40$^{*}$ & 0$^{*}$ & 939$^{*}$ & 100$^{*}$ & 4.1$^{*}$ & 7.9$^{*}$ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \vspace{2pt}
 \footnotesize\parbox{\columnwidth}{\textit{Note:} ARS rows use the independently annotated values in Table~\ref{tab:performance_eval}. Values marked $^{*}$ are optimistic proxies: the reported retrieval count is treated as TP, FP is assumed to be zero, and FN is the difference from the ARS reported count. Precision, recall, and F1 are therefore coverage proxies, not independently annotated metrics. Pharmacy results for systems using a centralized API are excluded.}
 \end{table}
@@ -637,16 +639,16 @@ To quantify this failure, we estimated the geographic distribution of the highes
 \caption{Estimated Geographic Distribution: Gemini 1.5 vs. ARS}
 \label{tab:llm_geo_estimate}
 \centering
-\begin{tabular}{lcccc}
-	oprule
-	extbf{Domain} & \multicolumn{2}{c}{\textbf{Urban Centers}} & \multicolumn{2}{c}{\textbf{Rural \& Long-Tail}} \\
+\begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
+\toprule
+\textbf{Domain} & \multicolumn{2}{c}{\textbf{Urban Centers}} & \multicolumn{2}{c}{\textbf{Rural \& Long-Tail}} \\
 \cmidrule(lr){2-3}\cmidrule(lr){4-5}
  & \textit{Gemini} & \textit{ARS (Ours)} & \textit{Gemini} & \textit{ARS (Ours)} \\
 \midrule
 Hospitals & $\sim$205 & 350 & $\sim$19 & 451 \\
 Addictions & $\sim$285 & 360 & $\sim$17 & 206 \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 This geographic stratification reveals that the SEO bias is inherently spatial. Gemini's extraction plateaued entirely within major metropolitan hubs. Without a centralized data source to summarize, conversational models suffer from \textit{Generative Exhaustion}. Once the highly visible urban entities are depleted from their context windows, the models assume the domain is exhausted. In the highly unstructured Addiction Counseling domain, ChatGPT collapsed entirely, yielding only 38 highly indexed, urban treatment centers with \textbf{zero overlap} with the ARS dataset. In contrast, the ARS bypassed this popularity bias to natively map hundreds of hyper-local, decentralized rural facilities.
@@ -666,9 +668,9 @@ The empirical results, summarized in Table~\ref{tab:mas_performance}, align with
 \label{tab:mas_performance}
 \centering
 \scriptsize
-\begin{tabular}{lrrrrrr}
+\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
-\textbf{System} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\textbf{System} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \makecell{\textbf{Precision}} & \textbf{Recall} & \textbf{F1} \\
 \midrule
 \multicolumn{7}{l}{\textbf{Hospitals}} \\
 ARS & 647 & 154 & 37 & 80.8\% & 77.4\% & 79.1\% \\
@@ -683,7 +685,7 @@ ARS & 911 & 71 & 93 & 92.8\% & 77.0\% & 84.1\% \\
 InfoSeeker & -- & -- & -- & -- & -- & -- \\
 Browser-Use & -- & -- & -- & -- & -- & -- \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \vspace{2pt}
 \footnotesize\parbox{\columnwidth}{\textit{Note:} ARS rows use the independently annotated values in Table~\ref{tab:performance_eval}. Values marked $^{*}$ are optimistic proxies: the reported retrieval count is treated as TP, FP is assumed to be zero, and FN is the difference from the ARS reported count. Precision, recall, and F1 are therefore coverage proxies, not independently annotated metrics. Pharmacy systems used a centralized API rather than comparable open-web discovery.}
 \end{table}
@@ -700,7 +702,7 @@ When deprived of structured APIs and forced to scrape traditional, unstructured 
 \caption{Estimated Geographic Footprint: MAS (InfoSeeker) vs. ARS}
 \label{tab:mas_geo_estimate}
 \centering
-\begin{tabular}{lcccc}
+\begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
 	oprule
 \textbf{Domain} & \multicolumn{2}{c||}{\textbf{Urban Centers}} & \multicolumn{2}{c|}{\textbf{Rural \& Long-Tail}} \\
 \cmidrule(lr){2-3}\cmidrule(lr){4-5}
@@ -709,7 +711,7 @@ When deprived of structured APIs and forced to scrape traditional, unstructured 
 Hospitals (API) & $\sim$200 & 350 & $\sim$31 & 451 \\
 Addictions (Web) & 33 & 360 & 0 & 206 \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \footnotesize{\textit{Note:} InfoSeeker's Hospital data reflects the inherent urban skew of the centralized API it scraped, while its Addictions data reflects a complete failure to penetrate the rural web.}
 \end{table}
 
@@ -825,7 +827,7 @@ Building on these insights, this chapter introduces \textbf{Pathways}, an intera
 
 \section{Related Works}
 
-The development and evaluation of the Pathways platform intersects with several specialized domains across computer science and health informatics. This section outlines the theoretical and technical precursors to the system, specifically focusing on human-computer interaction (HCI) in clinical AI, immutable data architectures, and the emerging paradigm of agent-based system evaluation.
+The development of the Pathways platform intersects with several specialized domains across computer science and health informatics. This section outlines the theoretical and technical precursors to the system, specifically focusing on human-computer interaction (HCI) in clinical AI and immutable data architectures.
 
 \subsection{Sociotechnical Collaboration and Trust in Clinical AI}
 While autonomous algorithms can process data at unprecedented scales, their integration into clinical workflows frequently fails due to a lack of user trust. Extensive reviews on Human-in-the-Loop (HITL) artificial intelligence in healthcare \cite{48, 51} demonstrate that clinicians are highly hesitant to adopt "black box" systems unless they are provided with mechanisms for collaborative oversight. In high-stakes environments, human operators must feel they have the agency to correct algorithmic assumptions and co-design the system's operational reality \cite{52}. Furthermore, recent scoping reviews on human-AI collaboration emphasize that clinical trust is directly tied to a system's capacity to accept and reflect user feedback \cite{53, 54}.
@@ -836,13 +838,6 @@ This HCI principle is foundational to the Pathways architecture. If the Agentic 
 In traditional Create, Read, Update, Delete (CRUD) databases, state changes are destructive; updating a clinic's phone number overwrites the previous value, entirely destroying the historical context of the edit. In healthcare informatics, maintaining an immutable audit trail—data provenance—is highly critical. While alternative cryptographic ledgers are frequently proposed to solve this, they often introduce unnecessary computational overhead for internal clinical software.
 
 Instead, Pathways implements an Event-Sourced Architecture (ESA). As conceptualized by Fowler \cite{55} and standardized in modern data-intensive applications \cite{57}, event-sourced systems store state as an immutable sequence of domain events rather than a table of current values. This real-time, responsive paradigm \cite{60} perfectly serves the crowdsourced flywheel of Pathways. In the proposed data model, a clinic's profile is dynamically derived by folding a chronologically ordered ledger of \texttt{VerificationEvents}. This non-destructive architecture preserves the exact chain of custody for every AI extraction and human correction. Most importantly, it allows the backend to dynamically calculate the temporal "freshness" of any specific data field without relying on a static, easily corrupted timestamp.
-
-\subsection{System Evaluation via Agent-Based Simulation}
-Evaluating an interactive, crowdsourced platform traditionally requires long-term deployment with real human cohorts. Because testing the Pathways flywheel on active hospital staff presents significant ethical, privacy, and temporal constraints, this thesis relies on advanced simulated evaluation methodologies. 
-
-The viability of simulation for evaluating human-in-the-loop systems has been explored in computational social science and recommendation research \cite{61,62,64}. However, the present Study 3 does not claim to simulate realistic LLM personas. It uses a deterministic resource model, seeded randomness, controlled verification participation, and a seedable clock to isolate the relationship between participation and freshness decay. This narrower design improves reproducibility but does not estimate how real navigators would behave.
-
-The Pathways system is therefore evaluated through a controlled simulation rather than a synthetic population of AI navigators. Resources begin with known ages, verification events refresh selected resources, and the static control receives no maintenance. This approach tests the mechanics of the proposed flywheel over simulated time while leaving live clinical engagement for future work.
 
 \section{System Architecture and Data Model}
 To solve the fragility of traditional healthcare directories, Pathways abandons the standard Create, Read, Update, Delete (CRUD) database paradigm. In a standard CRUD system, state changes are destructive; if a clinic changes its phone number, overwriting the row destroys the historical context of the data. Instead, Pathways is engineered as an Event-Sourced system, conceptually divided into three distinct operational layers: the Ledger, the Projection, and the Interface.
@@ -904,7 +899,7 @@ The Find phase begins with a filter-extraction layer that translates a navigator
     \node (semantic) [stage, right=of rules] {Semantic\\matching};
     \node (fallback) [stage, below=of semantic] {Constrained\\LLM fallback};
     \node (filters) [stage, left=of fallback] {Validate\\ontology values};
-    \node (search) [stage, left=of filters] {SearchFilters\\and residuals};
+    \node (search) [stage, left=of filters] {Search\\filters\\and residuals};
     \draw [arrow] (request) -- (normalise);
     \draw [arrow] (normalise) -- (rules);
     \draw [arrow] (rules) -- (semantic);
@@ -1001,8 +996,8 @@ In the final phase of the socio-technical loop, a human operator reviews the ARS
 \end{figure}
 
 
-\section{Validation and Simulation Methodology}
-Evaluating an interactive, crowdsourced platform traditionally requires long-term deployment across active clinical cohorts. Because deploying an experimental prototype in a live hospital setting presents significant privacy and temporal constraints, this thesis evaluates Pathways through complementary offline studies covering request interpretation, ranking quality, simulated freshness maintenance, and targeted restoration. Interface telemetry and live clinical engagement remain future work.
+\section{Validation Methodology}
+Evaluating an interactive, crowdsourced platform traditionally requires long-term deployment across active clinical cohorts. Because deploying an experimental prototype in a live hospital setting presents significant privacy and temporal constraints, this thesis evaluates Pathways through two focused offline studies covering request interpretation and targeted restoration. Interface telemetry and live clinical engagement remain future work.
 
 \subsection{Study 1: Natural-language filter extraction}
 Study 1 evaluates whether ordinary requests can be converted into the structured filters used by Pathways search. The fixture contains 200 structured queries generated from ten filter families crossed with ten Ontario locations, with 100 canonical and 100 paraphrased queries. Gold labels cover need, modality, population, coverage, location, language, and urgency. We report exact-case accuracy, field-level exact accuracy, and micro-averaged precision, recall, and F1.
@@ -1013,28 +1008,23 @@ The real-provider condition used the OpenAI-compatible Gemini endpoint configure
 
 Table~\ref{tab:filter_extraction_stages} is located in the System Architecture section because it describes implementation responsibilities rather than an experimental result.
 
-\subsection{Study 2: Information retrieval quality}
-Study 2 evaluates ranking quality on eight cases and twelve resources using 96 independently adjudicated graded relevance judgments. Pathways is compared with a fit-only variant and a local BM25 implementation using Precision@5, graded nDCG@5, mean reciprocal rank, and mean average precision. The adjudicated set is treated as the primary result; earlier hand-authored development labels are reported only as calibration evidence.
-
-\subsection{Study 3: Simulated flywheel maintenance}
-Study 3 evaluates whether verification participation counteracts freshness decay. A deterministic simulator compares an unmaintained static directory with a flywheel condition at $T=0$, $30$, and $90$ days. Verification participation is swept from 0\% to 100\% in 25\% increments, with ten seeds per condition. This is simulated longitudinal evidence rather than observation from a 90-day clinical deployment.
-\subsection{Study 4: Targeted missing-data restoration}
-Study 4 evaluates Pathways Data Restoration on a sealed 500-field benchmark. The Pathways workflow restores missing organizational fields and applies entity evidence and manual review before classification. We report requested fields by category and classify each result as exact, supported but non-exact, weakly supported, or unresolved after manual review.
+\subsection{Study 2: Targeted missing-data restoration}
+Study 2 evaluates Pathways Data Restoration on a sealed 500-field benchmark. The Pathways workflow restores missing organizational fields and applies entity evidence and manual review before classification. We report requested fields by category and classify each result as exact, supported but non-exact, weakly supported, or unresolved after manual review.
 
 \subsection{Evaluation results}
-Table~\ref{tab:pathways_study_summary} summarizes the completed studies. The extraction and ranking experiments use different targets: Study 1 measures structured interpretation of requests, while Study 2 measures ordering of candidate resources. Study 3 tests the maintenance mechanism under controlled simulated time, and Study 4 measures evidence-backed recovery of missing fields.
+Table~\ref{tab:pathways_study_summary} summarizes the completed studies. Study 1 measures structured interpretation of requests, while Study 2 measures evidence-backed recovery of missing fields.
 
 % \subsubsection{How to interpret the evaluation measures}
-The four studies answer different questions and should not be collapsed into a single accuracy number. Study 1 asks whether a request is translated into the intended structured filters. Study 2 asks whether relevant resources appear near the top of a ranked list. Study 3 asks whether a specified verification process can counteract simulated freshness decay. Study 4 asks whether a missing organizational field can be restored with evidence that belongs to the intended organization.
+The two studies answer different questions and should not be collapsed into a single accuracy number. Study 1 asks whether a request is translated into the intended structured filters. Study 2 asks whether a missing organizational field can be restored with evidence that belongs to the intended organization.
 
-For Study 1, \textit{precision} is the proportion of extracted filter values that are correct, \textit{recall} is the proportion of gold filter values that were extracted, and F1 is their harmonic mean. Exact-case accuracy is stricter: every field for a query must match the gold record for the query to count as correct. For Study 2, Precision@5 measures the fraction of the first five results that are relevant, while nDCG@5 additionally rewards putting highly relevant resources above merely relevant ones. MRR records the reciprocal rank of the first relevant result, and MAP averages precision at the ranks where relevant results occur. For Study 3, a resource is counted as fresh when its simulated freshness score is at least 0.75 and stale when it is below 0.25. For Study 4, a \textit{filled} field is non-empty, an \textit{entity-supported} field has sufficient agreement between the candidate and the target organization, and an \textit{exact} field matches the sealed reference after field normalization.
+For Study 1, \textit{precision} is the proportion of extracted filter values that are correct, \textit{recall} is the proportion of gold filter values that were extracted, and F1 is their harmonic mean. Exact-case accuracy is stricter: every field for a query must match the gold record for the query to count as correct. For Study 2, a \textit{filled} field is non-empty, an \textit{entity-supported} field has sufficient agreement between the candidate and the target organization, and an \textit{exact} field matches the sealed reference after field normalization.
 
-The Study 4 entity-support check combines available identity evidence such as name, city, address, postal code, and website domain. It is deliberately stricter than checking whether a returned value merely looks plausible. Consequently, a supported value may be non-exact because an organization has changed its website or because the same value has a different representation. Conversely, a value classified as unsupported should be treated as unsafe for automatic acceptance, even when it appears superficially reasonable. In this thesis, ``wrong entity'' means ``failed the entity-support threshold''; it is not a claim that every such case was manually proven to belong to a different organization.
+The Study 2 entity-support check combines available identity evidence such as name, city, address, postal code, and website domain. It is deliberately stricter than checking whether a returned value merely looks plausible. Consequently, a supported value may be non-exact because an organization has changed its website or because the same value has a different representation. Conversely, a value classified as unsupported should be treated as unsafe for automatic acceptance, even when it appears superficially reasonable. In this thesis, ``wrong entity'' means ``failed the entity-support threshold''; it is not a claim that every such case was manually proven to belong to a different organization.
 
-The same principle applies across the other studies: each metric is tied to a defined decision. Study 1 correctly maps the canonical query ``youth mental health Scarborough'' to the population filter ``youth''. In the hybrid condition, the paraphrase ``mental health help for a teenager in Scarborough'' is also mapped to the ontology's ``youth'' value, although the fixture distinguishes ``youth'' from ``adolescent'' in three cases. This is an ontology-alignment issue rather than a ranking failure. In Study 2, a result can be relevant without being the highest-graded result; nDCG distinguishes those ordering differences even when MRR remains perfect. In Study 3, a day-90 fresh rate of 0.50 means that half of the simulated resources satisfy the freshness threshold at that time point; it is not a percentage of real users or a clinical success probability.
+The same principle applies across the retained studies: each metric is tied to a defined decision. Study 1 correctly maps the canonical query ``youth mental health Scarborough'' to the population filter ``youth''. In the hybrid condition, the paraphrase ``mental health help for a teenager in Scarborough'' is also mapped to the ontology's ``youth'' value, although the fixture distinguishes ``youth'' from ``adolescent'' in three cases. This is an ontology-alignment issue rather than evidence of general language understanding.
 
 \begin{table}[H]
-\caption{Worked interpretation examples across Studies 1--3}
+\caption{Worked interpretation examples for Study 1}
 \label{tab:cross_study_examples}
 \centering
 \scriptsize
@@ -1044,8 +1034,6 @@ The same principle applies across the other studies: each metric is tied to a de
 \midrule
 1 & ``youth mental health Scarborough'' & Population = youth; location = Scarborough & Exact extraction on a canonical vocabulary case \\
 1 & ``mental health help for a teenager in Scarborough'' & Hybrid maps teenager to population = youth & Alias coverage improves interpretation; exact ontology alignment still matters \\
-2 & ``Mandarin home care Scarborough'' & Pathways ranks Yee Hong first; BM25 ranks Spectrum first & Both return relevant candidates; nDCG evaluates the graded ordering \\
-3 & 50\% participation at day 90 & Mean fresh rate = 0.50 across ten seeds & Half of simulated resources meet the freshness threshold; not a real-world adoption rate \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -1057,12 +1045,10 @@ The same principle applies across the other studies: each metric is tied to a de
 \small
 \begin{tabularx}{\textwidth}{@{}p{1.1cm}X p{3.2cm} p{2.5cm}@{}}
 \toprule
-\textbf{Study} & \textbf{Evaluation target} & \textbf{Dataset or conditions} & \textbf{Primary result} \\
+\textbf{No.} & \textbf{Evaluation target} & \textbf{Dataset or conditions} & \textbf{Primary result} \\
 \midrule
 1 & Natural-language filter extraction & 200 queries; 100 canonical and 100 paraphrased & Basic F1 $=0.892$; semantic + Gemini F1 $=1.000$, exact $=1.000$ \\
-2 & Ranked retrieval quality & 8 cases, 12 resources, 96 adjudicated judgments & BM25 nDCG@5 $=0.916$; Pathways $=0.804$ \\
-3 & Freshness maintenance & 0--100\% participation; 10 seeds; $T=0,30,90$ days & Day-90 fresh rate: $0.00$ to $1.00$ \\
-4 & Missing-data restoration & 500 requested fields; Pathways Data Restoration & 142 exact; 284 supported non-exact; 63 weak; 11 unresolved \\
+2 & Missing-data restoration & 500 requested fields; Pathways Data Restoration & \parbox[t]{2.5cm}{142 Exact; 284 Supported, non-exact; 63 Weakly supported; 11 Unresolved} \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -1079,9 +1065,9 @@ alone, and semantic matching combined with Gemini.
 \label{tab:study1_expanded_results}
 \centering
 \small
-\begin{tabular}{lrrrr}
+\begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
 \toprule
-\textbf{Condition} & \textbf{Overall exact} & \textbf{Canonical exact} & \textbf{Paraphrased exact} & \textbf{Micro-F1} \\
+\textbf{Condition} & \makecell{\textbf{Overall}\\\textbf{exact}} & \makecell{\textbf{Canonical}\\\textbf{exact}} & \makecell{\textbf{Paraphrased}\\\textbf{exact}} & \textbf{Micro-F1} \\
 \midrule
 Basic rules & 0.600 & 1.000 & 0.200 & 0.8916 \\
 Hybrid aliases & 0.750 & 1.000 & 0.500 & 0.9318 \\
@@ -1089,7 +1075,7 @@ Semantic-only & 0.900 & 1.000 & 0.800 & 0.9663 \\
 Gemini-only & 0.950 & 1.000 & 0.900 & 0.9890 \\
 Semantic + Gemini & 1.000 & 1.000 & 1.000 & 1.0000 \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{figure}[H]
@@ -1115,11 +1101,11 @@ Semantic + Gemini & 1.000 & 1.000 & 1.000 & 1.0000 \\
     grid style={dashed,gray!35},
     legend style={at={(0.5,-0.24)},anchor=north,legend columns=2}
 ]
-\addplot[fill=blue!50, bar shift=-7pt] coordinates {
+\addplot[fill=blue!50, bar shift=-8pt] coordinates {
     (Rules,0.600) (Aliases,0.750) (Semantic,0.900) (Gemini,0.950) (Semantic+Gemini,1.000)
 };
 \addlegendentry{Overall exact}
-\addplot[fill=orange!60, bar shift=7pt] coordinates {
+\addplot[fill=orange!60, bar shift=8pt] coordinates {
     (Rules,0.200) (Aliases,0.500) (Semantic,0.800) (Gemini,0.900) (Semantic+Gemini,1.000)
 };
 \addlegendentry{Paraphrased exact}
@@ -1139,60 +1125,18 @@ during implementation, these results are development evidence rather than
 held-out estimates of general language understanding.
 
 \subsubsection{Study 2 results}
-On the independently adjudicated relevance set, all three methods retrieved at least one relevant result at the top of the ranking, producing MRR and MAP of 1.00. The more discriminating graded metric favored BM25: nDCG@5 was 0.916 for BM25, 0.879 for the fit-only variant, and 0.804 for Pathways. Precision@5 was 1.00 for all three methods on this small set. Thus, the current Pathways ranking demonstrates strong early retrieval but does not outperform lexical BM25 on graded ordering. This is a limitation of the current fit--freshness weighting, not evidence that provenance and freshness are unhelpful objectives.
-
-\begin{table}[H]
-\caption{Study 2 independently adjudicated ranking results}
-\label{tab:study2_results}
-\centering
-\small
-\begin{tabular}{lrrrr}
-\toprule
-\textbf{Ranker} & \textbf{Precision@5} & \textbf{nDCG@5} & \textbf{MRR} & \textbf{MAP} \\
-\midrule
-Pathways & 1.000 & 0.804 & 1.000 & 1.000 \\
-Fit-only & 1.000 & 0.879 & 1.000 & 1.000 \\
-BM25 & 1.000 & 0.916 & 1.000 & 1.000 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsubsection{Study 3 results}
-The deterministic sweep produced a monotonic relationship between participation and day-90 freshness. With no verification participation, the flywheel condition behaved like the static control: mean fresh rate was 0.00 and mean stale rate was 1.00. At 50\% participation, mean fresh rate was 0.50 and mean stale rate was 0.50. At full participation, all simulated resources were fresh at day 90. The 25\%, 50\%, and 75\% conditions had fresh-rate standard deviations of 0.156, 0.161, and 0.140 across ten seeds. These results support the mechanism under the simulator's assumptions, but they do not estimate real navigator participation or prove clinical self-maintenance.
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-    width=0.86\textwidth, height=6.2cm,
-    xlabel={Verification participation}, ylabel={Day-90 mean fresh rate},
-    xmin=0, xmax=1, ymin=0, ymax=1.05,
-    xtick={0,0.25,0.5,0.75,1}, xticklabels={0\%,25\%,50\%,75\%,100\%},
-    ymajorgrids=true, grid style={dashed,gray!35}, legend pos=north west
-]
-\addplot[mark=*, thick, blue] coordinates {(0,0) (0.25,0.26) (0.5,0.50) (0.75,0.72) (1,1.00)};
-\addlegendentry{Flywheel}
-\addplot[dashed, thick, black] coordinates {(0,0) (1,0)};
-\addlegendentry{Static decay control}
-\end{axis}
-\end{tikzpicture}
-\caption{Study 3 simulated day-90 freshness as verification participation increases.}
-\label{fig:study3_participation}
-\end{figure}
-
-\subsubsection{Study 4 results}
-The Pathways Data Restoration condition requested 500 missing fields. After manual review, 142 values were exact, 284 were supported but non-exact, 63 were weakly supported, and 11 were unresolved. The categories are intentionally separate: exact values match the sealed reference; supported non-exact values are accepted alternate representations, including departmental phone numbers and alternate website representations; weakly supported values are plausible but require further confirmation; unresolved cases produced no acceptable value. The result supports Pathways as an assistive restoration workflow, not as an autonomous source of truth.
+The Pathways Data Restoration condition requested 500 missing fields. After manual review, 142 values were Exact, 284 were Supported, non-exact, 63 were Weakly supported, and 11 were Unresolved. The categories are intentionally separate: Exact values match the sealed reference; Supported, non-exact values are accepted alternate representations, including departmental phone numbers and alternate website representations; Weakly supported values are plausible but require further confirmation; Unresolved cases produced no acceptable value. The result supports Pathways as an assistive restoration workflow, not as an autonomous source of truth.
 
 The benchmark was geographically concentrated in the GTA: 336 of the 500 requested fields (67.2\%) were associated with GTA municipalities. The remaining records were grouped into Northern Ontario (48 fields), Eastern Ontario (42), Southwestern Ontario (47), and Central Ontario (27). Municipality labels were normalized before classification, including variants such as ``Cornwall, ON'' and ``Sault Ste. Marie.''
 
 \begin{table}[H]
-\caption{Study 4 restoration outcomes by analytical region}
-\label{tab:study4_geography}
+\caption{Study 2 restoration outcomes by analytical region}
+\label{tab:study2_geography}
 \centering
 \scriptsize
-\begin{tabular}{lrrrrrr}
+\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
-\textbf{Region} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \textbf{Supported} & \textbf{Weak} & \textbf{Unresolved} \\
+\textbf{Region} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \makecell{\textbf{Supported,}\\\textbf{non-exact}} & \makecell{\textbf{Weakly}\\\textbf{supported}} & \textbf{Unresolved} \\
 \midrule
 GTA & 336 & 67.2\% & 131 & 159 & 35 & 11 \\
 Northern Ontario & 48 & 9.6\% & 3 & 40 & 5 & 0 \\
@@ -1201,7 +1145,7 @@ Southwestern Ontario & 47 & 9.4\% & 4 & 32 & 11 & 0 \\
 Central Ontario & 27 & 5.4\% & 2 & 18 & 7 & 0 \\
 \textbf{Total} & \textbf{500} & \textbf{100.0\%} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{figure}[H]
@@ -1211,8 +1155,8 @@ Central Ontario & 27 & 5.4\% & 2 & 18 & 7 & 0 \\
      color={blue!55,green!55,orange!60,red!45,yellow!65}]
     {67.2/GTA,9.6/Northern Ontario,8.4/Eastern Ontario,9.4/Southwestern Ontario,5.4/Central Ontario}
 \end{tikzpicture}
-\caption{Study 4 geographic composition by analytical region. The GTA contributes most of the benchmark fields; the outcome breakdown remains in Table~\ref{tab:study4_geography}.}
-\label{fig:study4_geography}
+\caption{Study 2 geographic composition by analytical region. The GTA contributes most of the benchmark fields; the outcome breakdown remains in Table~\ref{tab:study2_geography}.}
+\label{fig:study2_geography}
 \end{figure}
 
 The benchmark also spans three service categories derived from the source
@@ -1224,20 +1168,20 @@ while pharmacy records contain most of the exact matches and the unresolved
 website cases.
 
 \begin{table}[H]
-\caption{Study 4 restoration outcomes by service category}
-\label{tab:study4_service_categories}
+\caption{Study 2 restoration outcomes by service category}
+\label{tab:study2_service_categories}
 \centering
 \scriptsize
-\begin{tabular}{lrrrrrr}
+\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
-\textbf{Service category} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \textbf{Supported} & \textbf{Weak} & \textbf{Unresolved} \\
+\textbf{Service category} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \makecell{\textbf{Supported,}\\\textbf{non-exact}} & \makecell{\textbf{Weakly}\\\textbf{supported}} & \textbf{Unresolved} \\
 \midrule
 Addiction services & 110 & 22.0\% & 33 & 57 & 19 & 1 \\
 Hospitals & 167 & 33.4\% & 2 & 134 & 31 & 0 \\
 Pharmacy services & 223 & 44.6\% & 107 & 93 & 13 & 10 \\
 \textbf{Total} & \textbf{500} & \textbf{100.0\%} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{figure}[H]
@@ -1309,37 +1253,37 @@ Pharmacy services & 223 & 44.6\% & 107 & 93 & 13 & 10 \\
 \addlegendentry{Unresolved}
 \end{axis}
 \end{tikzpicture}
-\caption{Study 4 restoration outcomes by service category. Bars are widened and nonzero segments below 18 are enlarged visually for label readability; labels and Table~\ref{tab:study4_service_categories} report the actual integer counts.}
-\label{fig:study4_service_categories}
+\caption{Study 2 restoration outcomes by service category. Bars are widened and nonzero segments below 21 are enlarged visually for label readability; labels and Table~\ref{tab:study2_service_categories} report the actual integer counts.}
+\label{fig:study2_service_categories}
 \end{figure}
 
-Table~\ref{tab:study4_examples} gives concrete examples from the benchmark. In the first example, the input record is missing only a postal code. Pathways returns ``M4L 2A4'', which agrees exactly with the sealed reference and is supported by the matching pharmacy name and address. In the second example, the requested website differs from the stored reference: the reference contains a directory URL, while Pathways returns the pharmacy's organizational website. The value is supported but non-exact, illustrating why exact and supported categories are reported separately. In the third example, the system returns no phone number; this is unresolved. The final example is weakly supported because the returned address is plausible for the named pharmacy but does not match the expected unit-level representation. Such values require manual review rather than automatic acceptance.
+Table~\ref{tab:study2_examples} gives concrete examples from the benchmark. In the first example, the input record is missing only a postal code. Pathways returns ``M4L 2A4'', which agrees exactly with the sealed reference and is supported by the matching pharmacy name and address. In the second example, the requested website differs from the stored reference: the reference contains a directory URL, while Pathways returns the pharmacy's organizational website. The value is supported but non-exact, illustrating why exact and supported categories are reported separately. In the third example, the system returns no phone number; this is unresolved. The final example is weakly supported because the returned address is plausible for the named pharmacy but does not match the expected unit-level representation. Such values require manual review rather than automatic acceptance.
 
 \begin{table}[H]
-\caption{Worked examples of Study 4 field outcomes}
-\label{tab:study4_examples}
+\caption{Worked examples of Study 2 field outcomes}
+\label{tab:study2_examples}
 \centering
 \scriptsize
-\begin{tabularx}{\textwidth}{@{}p{1.5cm}p{2.6cm}X X p{1.7cm}@{}}
+\begin{tabularx}{\textwidth}{@{}p{1.5cm}p{2.6cm}X X@{}}
 \toprule
-\textbf{Outcome} & \textbf{Target and missing field} & \textbf{Sealed reference} & \textbf{System output} & \textbf{Interpretation} \\
+\textbf{Outcome} & \textbf{Target and missing field} & \textbf{Sealed reference} & \textbf{System output} \\
 \midrule
-Exact & L \& A Pharmacy; postal code & M4L 2A4 & M4L 2A4, supported by matching name, address, and city & Filled; supported; exact \\
-Supported, non-exact & Main and Bronte Pharmacy; website & Healthline directory URL & Pharmacy organizational website; same named organization and address & Filled; supported; not exact \\
-Unresolved & Humber River Health; phone & 416-242-1000 & No phone value returned & No fill; requires review or another source \\
-Weakly supported baseline & Main Drug Mart; address & 1 Oak St, Units 1--2 & 1 Oak St, Toronto, ON M5A 0A1 & Plausible-looking value, but not automatically accepted without sufficient support \\
+Exact & L \& A Pharmacy; postal code & M4L 2A4 & M4L 2A4, supported by matching name, address, and city \\
+\parbox[t]{1.5cm}{Supported, non-exact} & Main and Bronte Pharmacy; website & Healthline directory URL & Pharmacy organizational website; same named organization and address \\
+Unresolved & Humber River Health; phone & 416-242-1000 & No phone value returned \\
+\parbox[t]{1.5cm}{Weakly supported baseline} & Main Drug Mart; address & 1 Oak St, Units 1--2 & 1 Oak St, Toronto, ON M5A 0A1 \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \begin{table}[H]
-\caption{Study 4 Pathways Data Restoration results by missing-field category}
-\label{tab:study4_results}
+\caption{Study 2 Pathways Data Restoration results by missing-field category}
+\label{tab:study2_results}
 \centering
 \small
-\begin{tabular}{lrrrrr}
+\begin{tabularx}{\textwidth}{@{}Xrrrrr@{}}
 \toprule
-\textbf{Missing field} & \textbf{Requested} & \textbf{Exact} & \textbf{Supported, non-exact} & \textbf{Weakly supported} & \textbf{Unresolved} \\
+\textbf{Field} & \textbf{Requested} & \textbf{Exact} & \makecell{\textbf{Supported,}\\\textbf{non-exact}} & \makecell{\textbf{Weakly}\\\textbf{supported}} & \textbf{Unresolved} \\
 \midrule
 Address & 269 & 11 & 201 & 57 & 0 \\
 Phone number & 112 & 77 & 34 & 0 & 1 \\
@@ -1347,8 +1291,34 @@ Postal code & 58 & 52 & 0 & 6 & 0 \\
 Website & 61 & 2 & 49 & 0 & 10 \\
 \textbf{Total} & \textbf{500} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
+
+\subsubsection{Quantitative failure analysis and root causes}
+The field-level outcomes show that the principal limitation was not failure to retrieve a value. The automated benchmark returned a value for 499 of 500 requests (99.8\%), and all 499 returned values passed the entity-support threshold. However, only 142 values (28.4\%) exactly matched the sealed reference. The remaining 357 entity-supported mismatches therefore require a more useful explanation than a binary correct/incorrect label: many reflect differences between the benchmark representation and a valid current or organizational representation.
+
+Table~\ref{tab:study2_root_causes} groups these 357 raw mismatches by the audit tier assigned before the final manual adjudication. The largest group, 155 cases (43.4\%), consisted of high-confidence representation differences such as expanded address wording, street abbreviations, phone formatting, extensions, or the same website under a different path. A further 75 cases (21.0\%) were likely valid alternatives, including plausible alternate addresses and phone numbers with the same area code. The remaining 127 cases (35.6\%) required manual verification. These counts are diagnostic audit categories rather than additional outcome classes, so they should not be added to the 500-field results table.
+
+\begin{table}[H]
+\caption{Quantitative audit of non-exact Study 2 results}
+\label{tab:study2_root_causes}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}p{3.1cm}rrp{2.3cm}X@{}}
+\toprule
+\textbf{Cause group} & \textbf{Count} & \textbf{Share} & \textbf{Fields} & \textbf{Action} \\
+\midrule
+Format or representation & 155 & 43.4\% & Address, phone, website & Supported, non-exact \\
+Likely alternate & 75 & 21.0\% & Address, phone & Supported or review \\
+Needs verification & 127 & 35.6\% & Address, phone, postal, website & Manual review \\
+\textbf{Total raw mismatches} & \textbf{357} & \textbf{100.0\%} & & \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The field composition clarifies the failure mechanisms. Address mismatches accounted for 258 cases: 144 were near-equivalent or expanded representations, 57 were plausible partial-overlap alternatives, and 57 were materially different address strings requiring confirmation. Phone mismatches accounted for 34 cases: 8 preserved the base number but changed formatting or extension information, 18 used a different number with the same area code, and 8 were materially different numbers that were reviewed under the broader organizational-contact rule. Postal-code mismatches were fewer (6), but they are inherently consequential because geographic plausibility does not prove the exact unit or branch. Website mismatches included 3 same-domain path differences and 56 different-domain results. Manual review accepted 46 of the latter as valid organizational or directory representations and rejected 10 as extraction errors: business-hours text or Facebook URLs. Those 10 cases account for the 10 unresolved website outcomes in the final classification.
+
+This analysis identifies four root causes. First, \textit{representation drift} separates a valid value from the sealed reference's wording or source convention; this is especially visible in addresses, phone extensions, and website paths. Second, \textit{organizational multiplicity} produces legitimate department, branch, reception, or parent-organization values that are not identical to the benchmark field. Third, \textit{granularity ambiguity} affects addresses and postal codes when a source reports a building, unit, campus, or nearby service location at a different level of detail. Fourth, \textit{field-extraction error} occurs when the retrieval pipeline selects nearby page content instead of a value of the requested type, as in the rejected hours text and Facebook outputs. The final classification treats the first two as supported when manual evidence is sufficient, the third as weak when confirmation is still required, and the fourth as unresolved.
 
 % --- CHAPTER 5 ---
 \chapter{Conclusion and Future Work}
@@ -1368,7 +1338,7 @@ Through Project 1 (ARS), this research formalized the phenomenon of \textit{Gene
 
 Through Project 2 (Pathways), this thesis addressed the longitudinal challenge of data decay. Recognizing that a static AI-generated directory rapidly loses clinical utility, Pathways transformed the ARS output into a live, interactive socio-technical system. By implementing an Event-Sourced Architecture (ESA), Pathways abandoned destructive CRUD database updates in favor of an immutable ledger. This architecture enabled the \textit{Find $\rightarrow$ Verify $\rightarrow$ Ask $\rightarrow$ Close} flywheel, allowing clinical navigators to passively validate data through low-friction micro-interactions. By mathematically linking these verification events to a custom ``Fit + Freshness'' search-ranking algorithm, the system natively incentivizes community crowdsourcing, allowing the directory to dynamically self-heal over time.
 
-The four Pathways evaluations provide a bounded account of the platform. Study 1's expanded 200-query benchmark showed a progression from micro-F1 of 0.892 for basic rules, through 0.932 for aliases, 0.966 for semantic-only extraction, and 0.989 for Gemini-only extraction, to 1.000 for semantic plus Gemini. These remain development-fixture results rather than held-out evidence. Study 2 found that BM25 exceeded Pathways on adjudicated nDCG@5 (0.916 versus 0.804). Study 3 showed a monotonic simulated relationship between verification participation and day-90 freshness. Study 4 classified 142 of 500 requested fields as exact, 284 as supported non-exact, 63 as weakly supported, and 11 as unresolved after manual review. These results support Pathways as an auditable assistive prototype, not as a finished clinical directory or superior general-purpose search engine.
+The two Pathways evaluations provide a bounded account of the platform. Study 1's expanded 200-query benchmark showed a progression from micro-F1 of 0.892 for basic rules, through 0.932 for aliases, 0.966 for semantic-only extraction, and 0.989 for Gemini-only extraction, to 1.000 for semantic plus Gemini. These remain development-fixture results rather than held-out evidence. Study 2 classified 142 of 500 requested fields as Exact, 284 as Supported, non-exact, 63 as Weakly supported, and 11 as Unresolved after manual review. These results support Pathways as an auditable assistive prototype, not as a finished clinical directory or superior general-purpose search engine.
 
 \section{Implications for Health Informatics}
 The architectural paradigms presented in this thesis represent a fundamental shift in how health informatics approaches community resource management. Historically, the field has relied on two flawed extremes: either manual data entry by overburdened clinical staff (leading to EHR fatigue and burnout) or entirely centralized, government-funded static directories (which suffer from severe data rot). 
@@ -1380,9 +1350,8 @@ While this thesis presents a robust architectural solution, several limitations 
 \begin{itemize}
     \item \textbf{Modality Constraints:} The current iteration of the ARS strictly processes HTML-to-Markdown text. It cannot currently extract entities from complex, non-standardized PDFs, scanned intake forms, or image-based community flyers, which occasionally house valuable grassroots information.
     \item \textbf{Token Cost and Latency:} The exhaustive combinatorial scraping performed by the QEM, alongside the final-stage LLM deduplication, is computationally expensive. While effective for offline batch processing, the current ARS pipeline incurs high API token costs and latency, preventing it from functioning as an instantaneous, real-time query engine.
-    \item \textbf{Simulation-Based Evaluation:} Due to the ethical, privacy, and temporal constraints associated with deploying experimental software in live hospital environments, the Pathways flywheel was evaluated using generative agent simulations. While established literature validates synthetic agents as proxies for human users, this approach cannot fully replicate the unpredictable sociotechnical dynamics of a live clinical ward.
-    \item \textbf{Ranking and language limitations:} The current Pathways ranker did not exceed BM25 on adjudicated nDCG@5. The implemented semantic stage was neutral on the current fixture, while the constrained Gemini fallback improved same-fixture paraphrase performance to 0.920 exact-case accuracy. The Gemini result is not held-out evidence, and the system still requires independent paraphrase data, stronger semantic calibration, and broader ontology testing before making claims about open-ended language coverage.
-    \item \textbf{Missing-Data Restoration:} The revised benchmark classification combines automated entity matching with manual review. Of 500 requested fields, 142 were exact, 284 were supported non-exact values, 63 were weakly supported, and 11 were unresolved. Phone and website differences may reflect valid departmental, branch, or organizational representations, while postal-code and address alternatives require stronger source-backed confirmation before clinical deployment.
+    \item \textbf{Language and evaluation limitations:} The structured extraction results are development-fixture evidence rather than held-out estimates. The constrained Gemini fallback improved same-fixture paraphrase performance, but the system still requires independent paraphrase data, stronger semantic calibration, and broader ontology testing before making claims about open-ended language coverage.
+    \item \textbf{Missing-Data Restoration:} The revised benchmark classification combines automated entity matching with manual review. Of 500 requested fields, 142 were Exact, 284 were Supported, non-exact values, 63 were Weakly supported, and 11 were Unresolved. Phone and website differences may reflect valid departmental, branch, or organizational representations, while postal-code and address alternatives require stronger source-backed confirmation before clinical deployment.
 \end{itemize}
 
 \section{Future Work}
@@ -1395,7 +1364,7 @@ Future iterations of the ARS should integrate Large Multimodal Models (LMMs) wit
 For Pathways to achieve maximum clinical utility, it must be deeply embedded into existing clinical workflows rather than existing as a standalone web portal. Future development should focus on wrapping the Pathways Event-Sourced ledger in HL7 FHIR (Fast Healthcare Interoperability Resources) standards. Utilizing the SMART on FHIR framework would allow the Pathways interface to operate natively inside major Electronic Health Record systems (e.g., Epic, Cerner), allowing discharge planners to verify community resources without ever leaving the patient's chart.
 
 \subsection{Longitudinal Clinical Trials}
-The most critical next step is transitioning from simulated evaluation to a live clinical pilot. Future work should involve deploying Pathways within a regional health network (such as the Algoma District) under a randomized controlled trial (RCT). By measuring exact telemetry data—such as human verification rates, average time-to-discharge, and clinician cognitive load (via NASA-TLX surveys)—researchers can empirically quantify the platform's impact on reducing clinician burnout and improving patient care transitions.
+The most critical next step is a live clinical pilot. Future work should involve deploying Pathways within a regional health network (such as the Algoma District) under a randomized controlled trial (RCT). By measuring exact telemetry data—such as human verification rates, average time-to-discharge, and clinician cognitive load (via NASA-TLX surveys)—researchers can empirically quantify the platform's impact on reducing clinician burnout and improving patient care transitions.
 
 \section{Conclusion}
 The fragmentation of community healthcare is not solely a data problem; it is a socio-technical problem. Current generative AI models, bound by popularity biases and single-shot reasoning, may fail to capture the hyper-local reality of social determinants of health. By encouraging broader web exploration and giving human reviewers an auditable way to validate discoveries, the Agentic Research System and Pathways platform provide a testable architecture for future care-coordination workflows. Its long-term sustainability remains an empirical question for live deployment.
@@ -1472,21 +1441,14 @@ The fragmentation of community healthcare is not solely a data problem; it is a 
 \bibitem{58} B. Stopford, \textit{Designing Event-Driven Systems}. O'Reilly Media, 2018.
 \bibitem{59} L. Vernon, \textit{Implementing Domain-Driven Design}. Addison-Wesley Professional, 2013.
 \bibitem{60} S. Pallaprolu, ``Event-driven architecture: A modern paradigm for real-time responsive systems,'' \textit{World Journal of Advanced Engineering Technology and Sciences}, vol. 15, no. 2, pp. 2860-2867, May 2025.
-\bibitem{61} N. Bougie and N. Watanabe, ``SimUSER: Simulating User Behavior with Large Language Models for Recommender System Evaluation,'' \textit{arXiv preprint arXiv:2504.12722}, Apr. 2025.
-\bibitem{62} J. S. Park et al., ``Generative Agents: Interactive Simulacra of Human Behavior,'' in \textit{ACM UIST}, 2023.
 \bibitem{63} L. Wang et al., ``A Survey on Large Language Model based Autonomous Agents,'' \textit{arXiv preprint arXiv:2308.11432}, 2023.
-\bibitem{64}  S. Thapa et al., ``Large language models (LLM) in computational social science: prospects, current state, and challenges,'' \textit{Social Network Analysis and Mining}, vol. 15, no. 1, Mar. 2025.
-\bibitem{65} T. N. Gutierezz, ``Multi-agent Simulation based Control of Complex Systems,'' in \textit{13th International Conference on Autonomous Agents and Multiagent Systems}, May 2014.
-\bibitem{66} C. D. Manning et al., \textit{Introduction to Information Retrieval}. Cambridge University Press, 2008.
-\bibitem{67} S. E. Robertson et al., ``Some simple effective approximations to the 2-poisson model for probabilistic weighted retrieval,'' in \textit{Proceedings of ACM SIGIR}, 1994.
-\bibitem{68} K. Järvelin and J. Kekäläinen, ``Cumulated gain-based evaluation of IR techniques,'' \textit{ACM Transactions on Information Systems (TOIS)}, vol. 20, 2002.
 
 \bibitem{69} T. Berkane, M.-L. Charpignon, and M. Majumder, ``LLM-Based Web Data Collection for Research Dataset Creation,'' \textit{medRxiv}, 2025.
 
 \bibitem{70} Single Grain Research, ``How AI Models Interpret Pagination LLM and Infinite Scroll,'' \textit{HCI and AI Architecture Blog}, Feb. 2026. [Online]. Available: \url{https://www.singlegrain.com/blog/ms/ai-and-writing-5/}
-\bibitem{71} K. Y. Lee, Y. Huang, Z. He, \textit{et al.}, ``InfoSeeker: A Scalable Hierarchical Parallel Agent Framework for Web Information Seeking,'' \textit{arXiv preprint arXiv:2604.02971}, 2026. [Online]. Available: https://doi.org/10.48550/arXiv.2604.02971
-\bibitem{72} I. Kulikov, C. Whitehouse, T. Wu, \textit{et al.}, ``Autodata: An agentic data scientist to create high quality synthetic data,'' \textit{arXiv preprint arXiv:2606.25996}, 2026. [Online]. Available: https://doi.org/10.48550/arXiv.2606.25996
-\bibitem{73} W. Dong, T. Fu, \textit{et al.}, ``WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation,'' \textit{arXiv preprint arXiv:2607.06118}, July 2026. Available: https://doi.org/10.48550/arXiv.2607.06118
+\bibitem{71} K. Y. Lee, Y. Huang, Z. He, \textit{et al.}, ``InfoSeeker: A Scalable Hierarchical Parallel Agent Framework for Web Information Seeking,'' \textit{arXiv preprint arXiv:2604.02971}, 2026. [Online]. Available: \url{https://doi.org/10.48550/arXiv.2604.02971}
+\bibitem{72} I. Kulikov, C. Whitehouse, T. Wu, \textit{et al.}, ``Autodata: An agentic data scientist to create high quality synthetic data,'' \textit{arXiv preprint arXiv:2606.25996}, 2026. [Online]. Available: \url{https://doi.org/10.48550/arXiv.2606.25996}
+\bibitem{73} W. Dong, T. Fu, \textit{et al.}, ``WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation,'' \textit{arXiv preprint arXiv:2607.06118}, July 2026. Available: \url{https://doi.org/10.48550/arXiv.2607.06118}
 \bibitem{74} UncleCode, ``Crawl4AI: Open-Source LLM-Friendly Web Crawler and Scraper,'' GitHub repository and documentation, 2024--2026. [Online]. Available: \url{https://github.com/unclecode/crawl4ai}
 
 \end{thebibliography}
