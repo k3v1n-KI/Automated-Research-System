@@ -19,60 +19,60 @@
 \contentsline {subsection}{\numberline {2.2.2}Tool-Augmented and Reasoning Frameworks}{21}{subsection*.27}%
 \contentsline {subsection}{\numberline {2.2.3}Multi-Agent Systems and the ''SEO Trap''}{22}{subsection*.28}%
 \contentsline {section}{\numberline {2.3}Information Extraction from Unstructured Data}{23}{section*.31}%
-\contentsline {subsection}{\numberline {2.3.1}LLMs as Zero-Shot Semantic Extractors}{24}{subsection*.32}%
-\contentsline {subsection}{\numberline {2.3.2}Grounding and Factuality in Extraction}{24}{subsection*.33}%
-\contentsline {chapter}{\numberline {3}An Agentic Research System for Long-Tail Healthcare Resource Discovery}{25}{chapter*.34}%
-\contentsline {section}{\numberline {3.1}Introduction}{25}{section*.35}%
-\contentsline {section}{\numberline {3.2}Related Works}{26}{section*.36}%
-\contentsline {subsection}{\numberline {3.2.1}Autonomous Web Scraping and LLM Agents}{27}{subsection*.37}%
-\contentsline {subsection}{\numberline {3.2.2}Healthcare Information Extraction}{27}{subsection*.38}%
-\contentsline {subsection}{\numberline {3.2.3}Small Language Models and the Scope of This Study}{28}{subsection*.39}%
-\contentsline {subsection}{\numberline {3.2.4}Entity Resolution and Deduplication}{29}{subsection*.40}%
-\contentsline {section}{\numberline {3.3}Methodology}{29}{section*.41}%
-\contentsline {subsection}{\numberline {3.3.1}Discovery Pipeline}{31}{subsection*.44}%
-\contentsline {subsection}{\numberline {3.3.2}Agent Verification Pipeline}{33}{subsection*.58}%
-\contentsline {section}{\numberline {3.4}Experiments and Evaluation}{34}{section*.59}%
-\contentsline {subsection}{\numberline {3.4.1}Experimental Design and Datasets}{34}{subsection*.60}%
-\contentsline {subsection}{\numberline {3.4.2}Evaluation Metrics}{35}{subsection*.61}%
-\contentsline {subsection}{\numberline {3.4.3}Extended Ground Truth Verification Protocol}{36}{subsection*.62}%
-\contentsline {subsection}{\numberline {3.4.4}Results and Discussion}{37}{subsection*.66}%
-\contentsline {subsubsection}{Geographic Distribution and the Long-Tail Fragmentation}{39}{subsubsection*.71}%
-\contentsline {subsubsection}{Error Analysis and Boundary Leakage}{41}{subsubsection*.74}%
-\contentsline {subsection}{\numberline {3.4.5}Comparative Evaluation Against Commercial LLMs}{42}{subsection*.77}%
-\contentsline {subsubsection}{The SEO Trap, Generative Exhaustion, and Geographic Skew}{43}{subsubsection*.80}%
-\contentsline {subsubsection}{The Single-Source Vulnerability}{44}{subsubsection*.83}%
-\contentsline {subsection}{\numberline {3.4.6}Evaluation of Multi-Agent Systems (MAS) on the Open Web}{44}{subsection*.84}%
-\contentsline {subsubsection}{The API Scraper Trap and Delegation Failure}{45}{subsubsection*.87}%
-\contentsline {subsubsection}{Open-Web Crawling Collapse and Pagination Walls}{46}{subsubsection*.88}%
-\contentsline {section}{\numberline {3.5}Limitations and Future Work}{47}{section*.91}%
-\contentsline {section}{\numberline {3.6}Conclusion}{48}{section*.92}%
-\contentsline {chapter}{\numberline {4}Pathways - An Interactive Service-Search and Directory-Maintenance Tool}{49}{chapter*.93}%
-\contentsline {section}{\numberline {4.1}Introduction}{49}{section*.94}%
-\contentsline {section}{\numberline {4.2}Related Works}{50}{section*.95}%
-\contentsline {subsection}{\numberline {4.2.1}Sociotechnical Collaboration and Trust in Clinical AI}{51}{subsection*.96}%
-\contentsline {subsection}{\numberline {4.2.2}Data Provenance and Event-Sourced Architectures}{51}{subsection*.97}%
-\contentsline {section}{\numberline {4.3}System Architecture and Data Model}{52}{section*.98}%
-\contentsline {subsection}{\numberline {4.3.1}The Three-Layer Architecture}{52}{subsection*.101}%
-\contentsline {section}{\numberline {4.4}The Continuous Maintenance Flywheel}{53}{section*.102}%
-\contentsline {subsection}{\numberline {4.4.1}Phase 1: Find (Search and Rank)}{54}{subsection*.103}%
-\contentsline {subsection}{\numberline {4.4.2}Phase 2: Verify (Frictionless Validation)}{56}{subsection*.110}%
-\contentsline {subsection}{\numberline {4.4.3}Phase 3: Ask (Flagging and ARS Integration)}{57}{subsection*.113}%
-\contentsline {subsection}{\numberline {4.4.4}Phase 4: Close (Human-AI Resolution)}{58}{subsection*.116}%
-\contentsline {section}{\numberline {4.5}Validation Methodology}{60}{section*.121}%
-\contentsline {subsection}{\numberline {4.5.1}Study 1: Natural-language filter extraction}{60}{subsection*.122}%
-\contentsline {subsection}{\numberline {4.5.2}Study 2: Targeted missing-data restoration}{61}{subsection*.123}%
-\contentsline {subsection}{\numberline {4.5.3}Evaluation results}{61}{subsection*.124}%
-\contentsline {subsubsection}{Study 1 results}{63}{subsubsection*.129}%
-\contentsline {subsubsection}{Study 2 results}{65}{subsubsection*.134}%
-\contentsline {subsubsection}{Quantitative failure analysis and root causes}{68}{subsubsection*.147}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{71}{chapter*.150}%
-\contentsline {section}{\numberline {5.1}Major Contributions of the Thesis}{71}{section*.151}%
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{72}{section*.152}%
-\contentsline {section}{\numberline {5.3}Implications for Health Informatics}{73}{section*.153}%
-\contentsline {section}{\numberline {5.4}System Limitations}{73}{section*.154}%
-\contentsline {section}{\numberline {5.5}Future Work}{74}{section*.155}%
-\contentsline {subsection}{\numberline {5.5.1}Multimodal Discovery Pipelines}{75}{subsection*.156}%
-\contentsline {subsection}{\numberline {5.5.2}EHR Integration via SMART on FHIR}{75}{subsection*.157}%
-\contentsline {subsection}{\numberline {5.5.3}Longitudinal Clinical Trials}{75}{subsection*.158}%
-\contentsline {section}{\numberline {5.6}Conclusion}{76}{section*.159}%
-\contentsline {section}{References}{77}{section*.159}%
+\contentsline {subsection}{\numberline {2.3.1}LLMs as Zero-Shot Semantic Extractors}{23}{subsection*.32}%
+\contentsline {subsection}{\numberline {2.3.2}Grounding and Factuality in Extraction}{23}{subsection*.33}%
+\contentsline {chapter}{\numberline {3}An Agentic Research System for Long-Tail Healthcare Resource Discovery}{26}{chapter*.34}%
+\contentsline {section}{\numberline {3.1}Introduction}{26}{section*.35}%
+\contentsline {section}{\numberline {3.2}Related Works}{27}{section*.36}%
+\contentsline {subsection}{\numberline {3.2.1}Autonomous Web Scraping and LLM Agents}{28}{subsection*.37}%
+\contentsline {subsection}{\numberline {3.2.2}Healthcare Information Extraction}{28}{subsection*.38}%
+\contentsline {subsection}{\numberline {3.2.3}Small Language Models and the Scope of This Study}{29}{subsection*.39}%
+\contentsline {subsection}{\numberline {3.2.4}Entity Resolution and Deduplication}{30}{subsection*.40}%
+\contentsline {section}{\numberline {3.3}Methodology}{30}{section*.41}%
+\contentsline {subsection}{\numberline {3.3.1}Discovery Pipeline}{32}{subsection*.44}%
+\contentsline {subsection}{\numberline {3.3.2}Agent Verification Pipeline}{34}{subsection*.58}%
+\contentsline {section}{\numberline {3.4}Experiments and Evaluation}{35}{section*.59}%
+\contentsline {subsection}{\numberline {3.4.1}Experimental Design and Datasets}{35}{subsection*.60}%
+\contentsline {subsection}{\numberline {3.4.2}Evaluation Metrics}{36}{subsection*.61}%
+\contentsline {subsection}{\numberline {3.4.3}Extended Ground Truth Verification Protocol}{37}{subsection*.62}%
+\contentsline {subsection}{\numberline {3.4.4}Results and Discussion}{38}{subsection*.66}%
+\contentsline {subsubsection}{Geographic Distribution and the Long-Tail Fragmentation}{40}{subsubsection*.71}%
+\contentsline {subsubsection}{Error Analysis and Boundary Leakage}{42}{subsubsection*.74}%
+\contentsline {subsection}{\numberline {3.4.5}Comparative Evaluation Against Commercial LLMs}{43}{subsection*.77}%
+\contentsline {subsubsection}{The SEO Trap, Generative Exhaustion, and Geographic Skew}{44}{subsubsection*.80}%
+\contentsline {subsubsection}{The Single-Source Vulnerability}{45}{subsubsection*.83}%
+\contentsline {subsection}{\numberline {3.4.6}Evaluation of Multi-Agent Systems (MAS) on the Open Web}{46}{subsection*.84}%
+\contentsline {subsubsection}{The API Scraper Trap and Delegation Failure}{47}{subsubsection*.87}%
+\contentsline {subsubsection}{Open-Web Crawling Collapse and Pagination Walls}{47}{subsubsection*.88}%
+\contentsline {section}{\numberline {3.5}Limitations and Future Work}{48}{section*.91}%
+\contentsline {section}{\numberline {3.6}Conclusion}{49}{section*.92}%
+\contentsline {chapter}{\numberline {4}Pathways - An Interactive Service-Search and Directory-Maintenance Tool}{51}{chapter*.93}%
+\contentsline {section}{\numberline {4.1}Introduction}{51}{section*.94}%
+\contentsline {section}{\numberline {4.2}Related Works}{52}{section*.95}%
+\contentsline {subsection}{\numberline {4.2.1}Sociotechnical Collaboration and Trust in Clinical AI}{53}{subsection*.96}%
+\contentsline {subsection}{\numberline {4.2.2}Data Provenance and Event-Sourced Architectures}{53}{subsection*.97}%
+\contentsline {section}{\numberline {4.3}System Architecture and Data Model}{54}{section*.98}%
+\contentsline {subsection}{\numberline {4.3.1}The Three-Layer Architecture}{54}{subsection*.101}%
+\contentsline {section}{\numberline {4.4}The Continuous Maintenance Flywheel}{55}{section*.102}%
+\contentsline {subsection}{\numberline {4.4.1}Phase 1: Find (Search and Rank)}{56}{subsection*.103}%
+\contentsline {subsection}{\numberline {4.4.2}Phase 2: Verify (Frictionless Validation)}{59}{subsection*.110}%
+\contentsline {subsection}{\numberline {4.4.3}Phase 3: Ask (Flagging and ARS Integration)}{60}{subsection*.113}%
+\contentsline {subsection}{\numberline {4.4.4}Phase 4: Close (Human-AI Resolution)}{61}{subsection*.116}%
+\contentsline {section}{\numberline {4.5}Validation Methodology}{62}{section*.121}%
+\contentsline {subsection}{\numberline {4.5.1}Study 1: Natural-language filter extraction}{64}{subsection*.122}%
+\contentsline {subsection}{\numberline {4.5.2}Study 2: Targeted missing-data restoration}{64}{subsection*.123}%
+\contentsline {subsection}{\numberline {4.5.3}Evaluation results}{65}{subsection*.124}%
+\contentsline {subsubsection}{Study 1 results}{66}{subsubsection*.129}%
+\contentsline {subsubsection}{Study 2 results}{68}{subsubsection*.134}%
+\contentsline {subsubsection}{Quantitative failure analysis and root causes}{72}{subsubsection*.147}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{75}{chapter*.150}%
+\contentsline {section}{\numberline {5.1}Major Contributions of the Thesis}{75}{section*.151}%
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{76}{section*.152}%
+\contentsline {section}{\numberline {5.3}Implications for Health Informatics}{77}{section*.153}%
+\contentsline {section}{\numberline {5.4}System Limitations}{77}{section*.154}%
+\contentsline {section}{\numberline {5.5}Future Work}{78}{section*.155}%
+\contentsline {subsection}{\numberline {5.5.1}Multimodal Discovery Pipelines}{79}{subsection*.156}%
+\contentsline {subsection}{\numberline {5.5.2}EHR Integration via SMART on FHIR}{79}{subsection*.157}%
+\contentsline {subsection}{\numberline {5.5.3}Longitudinal Clinical Trials}{79}{subsection*.158}%
+\contentsline {section}{\numberline {5.6}Conclusion}{80}{section*.159}%
+\contentsline {section}{References}{81}{section*.159}%

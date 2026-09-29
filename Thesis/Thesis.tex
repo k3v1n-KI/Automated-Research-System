@@ -200,7 +200,7 @@ Table~\ref{tab:literature_synthesis} summarizes the systems reviewed in this cha
 \caption{Synthesis of Reviewed Systems and the ARS Research Gap}
 \label{tab:literature_synthesis}
 \centering
-\scriptsize
+\small
 \renewcommand{\arraystretch}{1.25}
 \begin{tabularx}{\textwidth}{@{}p{2.2cm} X X X X@{}}
 \toprule
@@ -605,7 +605,7 @@ To contextualize the ARS's performance against the current state-of-the-art, we 
 \caption{Commercial LLM Comparison}
 \label{tab:llm_performance}
 \centering
-\scriptsize
+\small
 \begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
 \textbf{System} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \makecell{\textbf{Precision}} & \textbf{Recall} & \textbf{F1} \\
@@ -667,7 +667,7 @@ The empirical results, summarized in Table~\ref{tab:mas_performance}, align with
 \caption{Multi-Agent System Comparison}
 \label{tab:mas_performance}
 \centering
-\scriptsize
+\small
 \begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
 \textbf{System} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \makecell{\textbf{Precision}} & \textbf{Recall} & \textbf{F1} \\
@@ -921,12 +921,12 @@ Finally, unresolved terms are preserved rather than silently converted into unsu
 \caption{Pathways filter-extraction stages and responsibilities}
 \label{tab:filter_extraction_stages}
 \centering
-\scriptsize
+\small
 \begin{tabularx}{\textwidth}{@{}p{2.0cm}X p{3.0cm} p{2.7cm}@{}}
 \toprule
 \textbf{Stage} & \textbf{Operation} & \textbf{Evidence recorded} & \textbf{Current condition} \\
 \midrule
-Normalization & Case-folding, field separation, and location lookup. & Input query and structured field candidates. & Deterministic \\
+\makecell[l]{Normal-\\ization} & Case-folding, field separation, and location lookup. & Input query and structured field candidates. & Deterministic \\
 Baseline rules & Direct vocabulary and regular-expression matches. & Field values and mismatches. & Implemented and evaluated \\
 Ontology aliases & Maps paraphrases to existing ontology values. & Alias phrase, field, concept, and ontology version. & Implemented as development hybrid \\
 Semantic matching & TF-IDF character-similarity ranking against ontology phrase entries. & Candidate phrase, concept, and similarity score. & Implemented and ablated \\
@@ -1027,7 +1027,7 @@ The same principle applies across the retained studies: each metric is tied to a
 \caption{Worked interpretation examples for Study 1}
 \label{tab:cross_study_examples}
 \centering
-\scriptsize
+\small
 \begin{tabularx}{\textwidth}{@{}p{1.4cm}p{3.0cm}X X@{}}
 \toprule
 \textbf{Study} & \textbf{Input} & \textbf{Observed output} & \textbf{What the result means} \\
@@ -1043,12 +1043,12 @@ The same principle applies across the retained studies: each metric is tied to a
 \label{tab:pathways_study_summary}
 \centering
 \small
-\begin{tabularx}{\textwidth}{@{}p{1.1cm}X p{3.2cm} p{2.5cm}@{}}
+\begin{tabularx}{\textwidth}{@{}p{1.4cm}p{3.0cm}X X@{}}
 \toprule
 \textbf{No.} & \textbf{Evaluation target} & \textbf{Dataset or conditions} & \textbf{Primary result} \\
 \midrule
 1 & Natural-language filter extraction & 200 queries; 100 canonical and 100 paraphrased & Basic F1 $=0.892$; semantic + Gemini F1 $=1.000$, exact $=1.000$ \\
-2 & Missing-data restoration & 500 requested fields; Pathways Data Restoration & \parbox[t]{2.5cm}{142 Exact; 284 Supported, non-exact; 63 Weakly supported; 11 Unresolved} \\
+2 & Missing-data restoration & 500 requested fields; Pathways Data Restoration & 142 Exact; 284 Supported, non-exact; 63 Weakly supported; 11 Unresolved \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -1133,7 +1133,7 @@ The benchmark was geographically concentrated in the GTA: 336 of the 500 request
 \caption{Study 2 restoration outcomes by analytical region}
 \label{tab:study2_geography}
 \centering
-\scriptsize
+\small
 \begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
 \textbf{Region} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \makecell{\textbf{Supported,}\\\textbf{non-exact}} & \makecell{\textbf{Weakly}\\\textbf{supported}} & \textbf{Unresolved} \\
@@ -1171,7 +1171,7 @@ website cases.
 \caption{Study 2 restoration outcomes by service category}
 \label{tab:study2_service_categories}
 \centering
-\scriptsize
+\small
 \begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
 \toprule
 \textbf{Service category} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \makecell{\textbf{Supported,}\\\textbf{non-exact}} & \makecell{\textbf{Weakly}\\\textbf{supported}} & \textbf{Unresolved} \\
@@ -1263,15 +1263,15 @@ Table~\ref{tab:study2_examples} gives concrete examples from the benchmark. In t
 \caption{Worked examples of Study 2 field outcomes}
 \label{tab:study2_examples}
 \centering
-\scriptsize
-\begin{tabularx}{\textwidth}{@{}p{1.5cm}p{2.6cm}X X@{}}
+\small
+\begin{tabularx}{\textwidth}{@{}p{1.8cm}p{3.4cm}X@{}X@{}}
 \toprule
-\textbf{Outcome} & \textbf{Target and missing field} & \textbf{Sealed reference} & \textbf{System output} \\
+\parbox[t]{1.8cm}{\raggedright\textbf{Outcome}} & \textbf{Target and missing field} & \textbf{Sealed reference} & \textbf{System output} \\
 \midrule
-Exact & L \& A Pharmacy; postal code & M4L 2A4 & M4L 2A4, supported by matching name, address, and city \\
-\parbox[t]{1.5cm}{Supported, non-exact} & Main and Bronte Pharmacy; website & Healthline directory URL & Pharmacy organizational website; same named organization and address \\
-Unresolved & Humber River Health; phone & 416-242-1000 & No phone value returned \\
-\parbox[t]{1.5cm}{Weakly supported baseline} & Main Drug Mart; address & 1 Oak St, Units 1--2 & 1 Oak St, Toronto, ON M5A 0A1 \\
+Exact & L \& A; postal code & M4L 2A4 & M4L 2A4; name, address, and city match \\
+\parbox[t]{1.8cm}{\raggedright Sup-\\ported,\\non-exact} & Main and Bronte; website & Healthline URL & Organization website; same name and address \\
+\parbox[t]{1.8cm}{\raggedright Unresol-\\ved} & Humber River; phone & 416-242-1000 & No phone \\
+\parbox[t]{1.8cm}{\raggedright Weakly supported\\baseline} & Main Drug Mart; address & 1 Oak St, Units 1--2 & 1 Oak St, Toronto, ON \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -1304,7 +1304,7 @@ Table~\ref{tab:study2_root_causes} groups these 357 raw mismatches by the audit 
 \label{tab:study2_root_causes}
 \centering
 \small
-\begin{tabularx}{\textwidth}{@{}p{3.1cm}rrp{2.3cm}X@{}}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
 \toprule
 \textbf{Cause group} & \textbf{Count} & \textbf{Share} & \textbf{Fields} & \textbf{Action} \\
 \midrule
