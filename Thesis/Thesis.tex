@@ -1099,7 +1099,8 @@ Semantic + Gemini & 1.000 & 1.000 & 1.000 & 1.0000 \\
     enlarge x limits=0.12,
     ymajorgrids=true,
     grid style={dashed,gray!35},
-    legend style={at={(0.5,-0.24)},anchor=north,legend columns=2}
+    legend style={at={(0.5,-0.24)},anchor=north,legend columns=2},
+    legend image code/.code={\draw[#1,fill=#1] (0cm,-0.1cm) rectangle (0.22cm,0.1cm);}
 ]
 \addplot[fill=blue!50, bar shift=-8pt] coordinates {
     (Rules,0.600) (Aliases,0.750) (Semantic,0.900) (Gemini,0.950) (Semantic+Gemini,1.000)
@@ -1205,7 +1206,8 @@ Pharmacy services & 223 & 44.6\% & 107 & 93 & 13 & 10 \\
     enlarge x limits=0.18,
     ymajorgrids=true,
     grid style={dashed,gray!35},
-    legend style={at={(0.5,-0.24)},anchor=north,legend columns=2}
+    legend style={at={(0.5,-0.24)},anchor=north,legend columns=2},
+    legend image code/.code={\draw[#1,fill=#1] (0cm,-0.1cm) rectangle (0.22cm,0.1cm);}
 ]
 \addplot[fill=blue!55,
     bar shift=-30pt,
