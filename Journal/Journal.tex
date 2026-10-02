@@ -3,6 +3,8 @@
 
 %=================================================================
 \documentclass[journal,article,submit,moreauthors]{Definitions/mdpi} 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 %\documentclass[journal,article,submit,moreauthors,unicode]{Definitions/mdpi} % For some letters Palatino lacks
 %\documentclass[preprints,article,submit,moreauthors]{Definitions/mdpi} 
 %\documentclass[preprints,article,submit,moreauthors,unicode]{Definitions/mdpi} 
@@ -68,28 +70,18 @@
 %% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
 
 %=================================================================
-% Full title of the paper (Capitalized)
-\Title{Title}
+% Full title of the paper
+\Title{An Auditable AI Pipeline for Long-Tail Healthcare Resource Discovery and Directory Maintenance}
 
-% Author Orchid ID: enter ID or remove command
-\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
-%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
-
-% Authors, for the paper (add full first names)
-\Author{Firstname Lastname $^{1}$\orcidA{}, Firstname Lastname $^{2}$ and Firstname Lastname $^{2,}$*}
-
-%\longauthorlist{yes}
-
-% MDPI internal command: Authors, for metadata in PDF
-\AuthorNames{Firstname Lastname, Firstname Lastname and Firstname Lastname}
-
-% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+% Author and affiliation information
+\newcommand{\orcidauthorA}{0009-0004-6827-1373}
+\Author{Kevin Igweh $^{1}$\orcidA{}, Ajmery Sultana $^{1,}$* and Randy Lin $^{1}$}
+\AuthorNames{Kevin Igweh, Ajmery Sultana and Randy Lin}
 \address{%
-$^{1}$ \quad Affiliation 1; e-mail@e-mail.com\\
-$^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
+$^{1}$ \quad School of Graduate Studies, Algoma University, Brampton, ON, Canada}
 
-% Contact information of the corresponding author
-\corres{Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
+% Corresponding author email should be added before submission.
+\corres{Correspondence: Ajmery Sultana; School of Graduate Studies, Algoma University, Brampton, ON, Canada.}
 
 % Current address and/or shared authorship
 %\firstnote{Current address: Affiliation.}  
@@ -103,10 +95,10 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 %\conference{} % An extended version of a conference paper
 
 % Abstract (Do not insert blank lines, i.e. \\) 
-\abstract{A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: Place the question addressed in a broad context and highlight the purpose of the study. (2) Methods: Briefly describe the main methods or treatments applied. (3) Results: Summarize the article’s main findings. (4) Conclusions: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article and it must not contain results that are not presented and substantiated in the main text and should not exaggerate the main~conclusions.}
+\abstract{Community healthcare directories are fragmented across heterogeneous web sources and become unreliable as organizational information changes. This study presents an auditable pipeline that combines deterministic query-space construction, language-model extraction, entity resolution, evidence verification, and human-mediated directory maintenance. The Agentic Research System uses a four-axis Query Expansion Matrix to diversify searches across service, geographic, attribute, and source dimensions. Pathways extends this discovery workflow with event-sourced provenance and a Find--Verify--Ask--Close maintenance model. We evaluate request interpretation on a 200-query benchmark containing canonical and paraphrased requests, and evaluate missing-data restoration on a sealed benchmark of 500 organizational fields. Across five extraction conditions, micro-F1 increased from 0.8916 for basic rules to 1.0000 for semantic matching combined with Gemini on the development fixture. In the restoration benchmark, 142 fields were exact, 284 were supported but non-exact, 63 were weakly supported, and 11 were unresolved after manual review. The results characterize Pathways as an assistive and auditable prototype rather than an autonomous source of truth, and identify the need for held-out language benchmarks, independent evidence validation, and live clinical evaluation.}
 
 % Keywords
-\keyword{keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)} 
+\keyword{healthcare resource discovery; long-tail retrieval; large language models; entity resolution; human-in-the-loop systems; missing-data restoration; event-sourced architecture} 
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
@@ -157,21 +149,84 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{section}{-1} %% Remove this when starting to work on the template.
-\section{How to Use this Template}
-
-The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions on the authors' page of the journal to verify the correct order and names. 
-
-Remove this paragraph and start section numbering with 1. For any questions, please contact the Editorial Office of the journal or \href{mailto:support@mdpi.com}{support@mdpi.com}. For LaTeX-related questions please contact \href{mailto:latex@mdpi.com}{latex@mdpi.com}.%\endnote{This is an endnote.} % To use endnotes, please un-comment \printendnotes below (before References). Only journal Laws uses \footnote.
-
-% The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
-
 \section{Introduction}
 
-The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper \citep{ref-journal}.  Now citing a book reference \citep{ref-book1,ref-book2} or other reference types \citep{ref-unpublish,ref-url}. Please use the command \citep{ref-proceeding,ref-thesis} for the following MDPI journals, which use author--date citation: Administrative Sciences, AI in Education, Arts, Behavioral Sciences, Businesses, Econometrics, Economies, Education Sciences, European Journal of Investigation in Health, Psychology and Education, Family Sciences, Future Collections, Libraries, Archives, and Museums, Games, Genealogy, Histories, Humanities, Humans, International Journal of Cognitive Sciences, International Journal of Financial Studies, Investment, Journal of Intelligence, Journalism and Media, Journal of Risk and Financial Management, Journal of Strategic and Applied Marketing, Languages, Laws, Literature, Operations Management, Peace Studies, Project Management Horizons, Psychology International, Publications, Religions, Risks, Social Sciences, Tourism and Hospitality, Youth. 
+Community healthcare directories support discharge planning, referral coordination, and navigation of social determinants of health. Yet the information required for these tasks is distributed across institutional websites, local directories, municipal records, commercial listings, and documents with inconsistent terminology and uneven maintenance. A directory can therefore appear comprehensive while omitting small organizations, geographically dispersed services, or fields that have changed since the directory was compiled.
+
+Automated web agents and large language models offer a promising way to reduce the cost of discovery and enrichment \citep{nakano2021webgpt,zhou2024webarena,yao2023react}. However, an agent must decide what to search before it can extract information. Query generation driven primarily by model sampling and search-engine visibility can repeatedly favor familiar terminology and prominent organizations. This creates a long-tail coverage problem: the system may accurately summarize pages it finds while failing to issue queries capable of reaching weakly indexed community resources. We refer to this tendency as generative convergence.
+
+This article presents an auditable pipeline that separates query-space construction, web extraction, entity resolution, evidence verification, and directory maintenance. The Agentic Research System (ARS) uses a deterministic Query Expansion Matrix (QEM) to vary entity, geographic, service, and source dimensions before language-model extraction. Pathways connects the resulting inventory to an event-sourced Find--Verify--Ask--Close workflow in which human validation and issue reports become traceable maintenance events.
+
+The study evaluates two complementary questions. First, can the extraction layer translate canonical and paraphrased requests into the structured filters used for service search? Second, can the connected restoration workflow recover missing organizational fields with evidence sufficient to distinguish exact values, supported alternatives, weak candidates, and unresolved cases? The results are intended to characterize an assistive and reproducible prototype rather than claim autonomous completeness or clinical authority.
+
+\section{Related Work}
+
+\subsection{Long-Tail Retrieval and Web Agents}
+Modern web agents combine language-model reasoning with search, browsing, and external tools \citep{toolformer2023,gorilla2023,toolllm2023,webvoyager2024,autogen2023,babyagi2023}. Extended research systems have further emphasized long-horizon browsing and narrative synthesis \citep{deepresearch2025,gemini2024,claude2024}. These systems can adapt queries to the information encountered during navigation, but their search space is often determined dynamically by the model. In fragmented healthcare domains, this creates a risk of popularity bias: high-authority organizations and common service descriptions are easier to retrieve than small programs described in local pages or documents. Benchmark environments for web agents also tend to emphasize task completion on navigable sites, leaving coverage of decentralized community resources less directly evaluated.
+
+The QEM addresses this gap by treating query diversity as an explicit architectural responsibility. Rather than asking the model to invent the next search direction, it enumerates combinations of service type, geographic scope, attribute, and source type. The model is used to fill language slots within those combinations, while the resulting queries remain auditable and reproducible. This separation follows the thesis design principle that retrieval-space construction and language-model interpretation should be evaluated as distinct responsibilities.
+
+\subsection{Information Extraction and Evidence Grounding}
+Language models can extract structured information from heterogeneous text without requiring a separate parser for every website template \citep{qiu2020,lample2016,healthcare_survey2025,llm_survey2023,abdulnazar2024}. This flexibility is useful for community-resource data, but it also introduces risks of hallucination, schema drift, and extraction of nearby but irrelevant content \citep{ji2023hallucination}. Retrieval-augmented and evidence-grounded methods reduce these risks by requiring extracted values to remain connected to source material and by separating candidate generation from verification \citep{lewis2020rag,gero2023,dhuliawala2023}.
+
+The proposed pipeline converts pages into a normalized representation, applies schema-constrained extraction, resolves duplicate entities, and routes candidates through registry matching, domain-scoped search, provider signals, and manual review. This division makes it possible to distinguish extraction failure from retrieval failure and to preserve provenance for later audit.
+
+\subsection{Human-in-the-Loop Directory Maintenance}
+Discovery alone does not keep a directory reliable. Organizational websites, phone numbers, addresses, and intake processes change, while manual directory maintenance is expensive and often disconnected from normal referral workflows. Human-in-the-loop systems provide a way to use professional judgment where automated evidence is incomplete without requiring users to rebuild the entire dataset \citep{amershi2014,olawade2026human}. Event-sourced architectures additionally preserve a traceable history of changes rather than silently overwriting prior values \citep{fowler_event}.
+
+Pathways operationalizes this principle through low-friction verification and issue-reporting interactions. An event-sourced ledger preserves the history of changes, while the derived projection exposes current values and their provenance. The restoration evaluation in this article tests the evidence-backed recovery step directly and treats human adjudication as part of the trust model rather than as an undocumented correction process.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{System Architecture}
+
+The proposed system connects two complementary layers: the Agentic Research System (ARS) constructs and verifies an initial inventory of community healthcare resources, while Pathways exposes that inventory through a human-mediated search and maintenance workflow. The layers share a normalized resource representation and preserve provenance from initial discovery through later correction. This separation prevents retrieval, extraction, entity resolution, ranking, and maintenance from becoming an opaque single model operation.
+
+\subsection{ARS Discovery and Verification}
+
+The ARS begins with a service taxonomy, geographic scope, and source categories. Its Query Expansion Matrix (QEM) enumerates combinations across four dimensions: entity type, geographic scope, service attribute, and source type. A language model fills controlled language slots within each predetermined query template; it does not decide which combinations are searched. This makes query diversity reproducible and makes the search plan auditable.
+
+Retrieved pages are converted into a normalized text representation before schema-constrained extraction. The extraction layer identifies organization names, addresses, contact fields, service categories, and operational information while retaining source URLs and excerpts. Deterministic rules and semantic matching provide predictable handling for known patterns, while an optional constrained language-model fallback handles unresolved language only by proposing values from the permitted ontology. Unsupported proposals can be rejected or retained as residual terms rather than silently added to the schema.
+
+Candidate records then pass through entity resolution. Exact identifiers and normalized names and addresses provide inexpensive high-volume matching; string similarity and contextual review handle ambiguous cases. The resulting records are routed through registry matching, domain-scoped web verification, and provider signals. These automated signals support triage, but final inclusion of novel entities in the extended ground truth requires independent manual review. The pipeline therefore produces both a resource record and an evidence trail describing how that record was discovered, matched, and verified.
+
+\subsection{Pathways Maintenance Layer}
+
+Pathways converts the verified inventory into a searchable projection backed by an event-sourced ledger. The ledger stores immutable events such as field verification, issue reports, restoration requests, and accepted corrections. Current resource state is derived from those events rather than replacing the historical record. This design preserves chain of custody and allows the system to distinguish a value’s current display state from the evidence and interactions that produced it.
+
+The user workflow follows four connected phases. In \textit{Find}, structured filters and resource evidence are used to present candidate services. In \textit{Verify}, a navigator confirms individual fields when the information appears current. In \textit{Ask}, a stale or missing field becomes a structured restoration request that can be enriched by the ARS. In \textit{Close}, a human operator reviews the proposed value and accepts, rejects, or leaves it unresolved. Each action becomes an event that can update the derived projection while retaining the prior state.
+
+\subsection{Integrated Evidence Flow}
+
+The architecture treats automation as a discovery and enrichment mechanism rather than an authority. ARS broadens the candidate space and proposes structured values; Pathways makes provenance visible and reserves acceptance decisions for evidence-backed review. This creates a common contract between the systems: every restored value must identify its target organization, requested field, supporting source, and adjudication status. The contract supports reproducible evaluation and allows unresolved or weakly supported values to remain visible as review work instead of being presented as verified facts.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
+
+\subsection{Study Design}
+
+The evaluation was designed to test two distinct capabilities of the integrated system. Study 1 measures whether free-text requests are translated into the structured filters consumed by Pathways search. Study 2 measures whether missing organizational fields can be restored with evidence sufficient for manual classification. The studies use separate fixtures and metrics because request interpretation and field restoration are different technical tasks.
+
+\subsection{Study 1: Natural-Language Filter Extraction}
+
+The Study 1 fixture contains 200 structured requests generated from ten filter families crossed with ten Ontario locations. Each family contributes one canonical request and one paraphrased request, producing 100 cases in each group. Gold labels cover seven fields used by Pathways: need, modality, population, coverage, location, language, and urgency.
+
+Five extraction conditions isolate the contributions of the pipeline stages: basic deterministic rules, ontology aliases, semantic matching without language-model fallback, constrained Gemini fallback without the semantic stage, and semantic matching combined with constrained Gemini. The alias map and semantic phrase inventory are validated against the same ontology used to create the fixture; consequently, these results are treated as development-fixture evidence rather than held-out estimates of general language understanding.
+
+The primary metric is exact-case accuracy, defined as the proportion of requests for which all seven output fields match the gold record. We also report field-level precision, recall, and micro-averaged F1. Gemini was used through the configured OpenAI-compatible endpoint with batched requests. Its output was restricted to permitted ontology values, and the fallback could abstain when no valid mapping was available.
+
+\subsection{Study 2: Missing-Data Restoration}
+
+Study 2 uses a sealed benchmark of 500 requested missing fields. The requested fields comprise 269 addresses, 112 phone numbers, 58 postal codes, and 61 websites. Each benchmark row provides the public organization and location context while withholding one target field. The sealed reference stores the expected value used for evaluation; the restoration workflow receives only the public row and provider- or web-derived evidence.
+
+The workflow records whether a candidate was returned, whether it passed the entity-support check, and whether it matched the sealed value after field-specific normalization. Entity support combines name, city, address, postal code, and website-domain evidence. A candidate is not accepted solely because its value looks plausible; it must be associated with the intended organization under the matching rule. The final manual classification uses four outcomes: Exact, Supported, non-exact, Weakly supported, and Unresolved.
+
+Supported, non-exact values include valid organizational representations such as departmental or branch phone numbers and alternate website pages. Weakly supported values are plausible but require confirmation, particularly when address granularity or postal-code assignment is uncertain. Unresolved values are empty, malformed, or rejected after review. A separate mismatch audit groups non-exact values by representation difference, likely alternate value, or need for verification. The audit also records extraction errors such as business-hours text or social-media URLs returned in response to a website request.
+
+\subsection{Reproducibility and Data Governance}
+
+The fixtures, evaluation reports, mismatch audit, and implementation scripts are retained with the project materials. The compact schemas and decision rules are summarized in Appendix~\ref{app:evaluation_protocol}. The benchmark concerns public organizational metadata rather than patient records or protected health information. The article reports the provenance and adjudication rules needed to reproduce the classifications while recognizing that third-party source data and provider APIs may change over time. No live clinical deployment or human-participant intervention was conducted in these studies.
+
+\iffalse
 
 The Materials and Methods should be described with sufficient detail to allow others to replicate and build on the published results. Please note that the publication of your manuscript implies that you must make all materials, data, computer code, and protocols associated with the publication available to readers. Please disclose at the submission stage any restrictions on the availability of materials or information. New methods and protocols should be described in detail while well-established methods can be briefly described and appropriately cited.
 
@@ -352,19 +407,140 @@ Text of the proof. Note that the phrase ``of Theorem 1'' is optional if it is cl
 The text continues here.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fi
+
+\section{Results}
+
+\subsection{Study 1: Natural-Language Filter Extraction}
+
+The extraction benchmark showed a clear progression as pipeline stages were added. Basic rules achieved 0.600 overall exact-case accuracy and 0.200 paraphrase accuracy. Ontology aliases improved paraphrase accuracy to 0.500, semantic matching to 0.800, and constrained Gemini fallback to 0.900. The combined semantic-plus-Gemini condition reached 1.000 on the development fixture. Because the fixture and ontology were used during implementation, these results demonstrate behavior on the tested cases rather than held-out generalization.
+
+\begin{table}[H]
+\caption{Study 1 filter-extraction results across five conditions.}
+\label{tab:journal_study1}
+\small
+\begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
+\toprule
+\textbf{Condition} & \textbf{Overall exact} & \textbf{Canonical exact} & \textbf{Paraphrased exact} & \textbf{Micro-F1} \\
+\midrule
+Basic rules & 0.600 & 1.000 & 0.200 & 0.8916 \\
+Hybrid aliases & 0.750 & 1.000 & 0.500 & 0.9318 \\
+Semantic-only & 0.900 & 1.000 & 0.800 & 0.9663 \\
+Gemini-only & 0.950 & 1.000 & 0.900 & 0.9890 \\
+Semantic + Gemini & 1.000 & 1.000 & 1.000 & 1.0000 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	ybar, bar width=14pt, width=0.95\textwidth, height=6.5cm,
+	ymin=0, ymax=1.15, ylabel={Exact-case accuracy},
+	symbolic x coords={Rules,Aliases,Semantic,Gemini,Combined}, xtick=data,
+	xticklabels={Rules,Aliases,Semantic,Gemini,Semantic + Gemini},
+	x tick label style={font=\scriptsize, rotate=20, anchor=east},
+	nodes near coords, nodes near coords style={font=\scriptsize},
+	enlarge x limits=0.12, ymajorgrids=true, grid style={dashed,gray!35},
+	legend style={at={(0.5,-0.25)},anchor=north,legend columns=2},
+	legend image code/.code={\draw[#1,fill=#1] (0cm,-0.1cm) rectangle (0.22cm,0.1cm);}
+]
+\addplot[fill=blue!50, bar shift=-7pt] coordinates {(Rules,0.600) (Aliases,0.750) (Semantic,0.900) (Gemini,0.950) (Combined,1.000)};
+\addlegendentry{Overall exact}
+\addplot[fill=orange!60, bar shift=7pt] coordinates {(Rules,0.200) (Aliases,0.500) (Semantic,0.800) (Gemini,0.900) (Combined,1.000)};
+\addlegendentry{Paraphrased exact}
+\end{axis}
+\end{tikzpicture}
+\caption{Study 1 exact-case accuracy for overall and paraphrased requests.}
+\label{fig:journal_study1}
+\end{figure}
+
+\subsection{Study 2: Missing-Data Restoration}
+
+The restoration benchmark requested 500 missing fields. The workflow returned a candidate for 499 fields and all returned candidates passed the automated entity-support threshold. After manual review, 142 values were exact, 284 were supported but non-exact, 63 were weakly supported, and 11 were unresolved.
+
+\begin{table}[H]
+\caption{Study 2 restoration outcomes by missing-field category.}
+\label{tab:journal_study2_fields}
+\small
+\begin{tabularx}{\textwidth}{@{}Xrrrrr@{}}
+\toprule
+\textbf{Missing field} & \textbf{Requested} & \textbf{Exact} & \textbf{Supported, non-exact} & \textbf{Weakly supported} & \textbf{Unresolved} \\
+\midrule
+Address & 269 & 11 & 201 & 57 & 0 \\
+Phone number & 112 & 77 & 34 & 0 & 1 \\
+Postal code & 58 & 52 & 0 & 6 & 0 \\
+Website & 61 & 2 & 49 & 0 & 10 \\
+\textbf{Total} & \textbf{500} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The benchmark was geographically concentrated in the Greater Toronto Area (GTA), which contributed 336 of 500 requested fields (67.2\%). All 11 unresolved fields occurred in the GTA. This pattern is reported as a descriptive property of the benchmark rather than evidence that restoration performance is uniformly different across regions.
+
+\begin{table}[H]
+\caption{Study 2 restoration outcomes by analytical region.}
+\label{tab:journal_study2_geography}
+\small
+\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
+\toprule
+\textbf{Region} & \textbf{Requested} & \textbf{Share} & \textbf{Exact} & \textbf{Supported} & \textbf{Weak} & \textbf{Unresolved} \\
+\midrule
+GTA & 336 & 67.2\% & 131 & 159 & 35 & 11 \\
+Northern Ontario & 48 & 9.6\% & 3 & 40 & 5 & 0 \\
+Eastern Ontario & 42 & 8.4\% & 2 & 35 & 5 & 0 \\
+Southwestern Ontario & 47 & 9.4\% & 4 & 32 & 11 & 0 \\
+Central Ontario & 27 & 5.4\% & 2 & 18 & 7 & 0 \\
+\textbf{Total} & \textbf{500} & \textbf{100.0\%} & \textbf{142} & \textbf{284} & \textbf{63} & \textbf{11} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The non-exact mismatch audit identified three broad causes: high-confidence representation differences (155 cases, 43.4\%), likely valid alternatives (75 cases, 21.0\%), and insufficient or ambiguous evidence (127 cases, 35.6\%). Address representation and granularity were the largest sources of review work. Website review also identified ten malformed outputs, including business-hours text and Facebook URLs returned for website requests; these were classified as unresolved rather than supported.
+
+\begin{table}[H]
+\caption{Study 2 quantitative audit of non-exact outcomes.}
+\label{tab:journal_study2_root_causes}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Cause group} & \textbf{Count} & \textbf{Share} & \textbf{Fields} & \textbf{Action} \\
+\midrule
+Format or representation & 155 & 43.4\% & Address, phone, website & Supported, non-exact \\
+Likely alternate & 75 & 21.0\% & Address, phone & Supported or review \\
+Needs verification & 127 & 35.6\% & Address, phone, postal, website & Manual review \\
+\textbf{Total raw mismatches} & \textbf{357} & \textbf{100.0\%} & & \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \section{Discussion}
 
-Authors should discuss the results and how they can be interpreted from the perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
+The two evaluations support a bounded interpretation of the proposed architecture. In Study 1, each additional interpretation stage improved performance on paraphrased requests, with the combined semantic-plus-Gemini condition reaching perfect exact-case accuracy on the development fixture. This result supports the value of separating deterministic ontology handling from constrained language-model fallback. It does not establish open-ended language coverage because the query families and ontology were available during implementation.
+
+Study 2 shows why missing-data restoration should not be reduced to exact string matching. Only 142 of 500 fields matched the sealed reference exactly, but a further 284 values were accepted as supported non-exact representations after review. These differences commonly reflected address wording, phone routing or extensions, and alternate organizational website representations. Treating every mismatch as a failure would underestimate useful recovery; treating every plausible candidate as correct would overstate reliability. The four-way classification makes that distinction explicit.
+
+The root-cause audit further indicates that restoration quality depends on evidence management as much as retrieval. Representation differences and likely valid alternatives accounted for most non-exact cases, while 127 cases still required verification. The ten malformed website outputs demonstrate a separate extraction problem: a system can retrieve relevant page content while selecting the wrong field type. Provenance, field-specific validation, and human adjudication are therefore necessary safeguards for a directory intended to support care coordination.
+
+The geographic breakdown provides important context for interpreting Study 2. The benchmark is concentrated in the GTA, and all unresolved cases occur there. This is a descriptive property of the sampled benchmark, not evidence that the system performs better in other regions. More geographically balanced fixtures and independent held-out organizations are needed before regional performance claims can be made.
+
+Together, the results support Pathways as an auditable assistive workflow. The system can broaden interpretation and recover useful organizational information, but it should not be treated as an autonomous source of truth. The architecture’s contribution is the combination of deterministic coverage, constrained interpretation, evidence provenance, and explicit human review.
+
+\section{Limitations}
+
+Several limitations qualify these findings. First, Study 1 is a development-fixture evaluation: the ontology, query families, and paraphrase construction were available during implementation. A held-out benchmark created independently of the extraction rules is required to estimate generalization.
+
+Second, Study 2 combines automated entity support with manual adjudication. The outcome labels are reproducible under the stated rules, but some organizational representations remain judgment-dependent. The sealed references also represent one source convention and may not always be the only valid current value.
+
+Third, the restoration benchmark is geographically imbalanced and concerns public organizational metadata rather than live clinical referral outcomes. It does not measure user adoption, referral success, clinical workload, or longitudinal freshness in a deployed health network. The present work also relies on external web and provider evidence that can change over time or be unavailable for organizations with limited digital presence.
+
+Finally, the system was evaluated as an integrated prototype rather than through a randomized live deployment. Future work should use independent fixtures, broader geographic sampling, controlled ontology expansion, source archiving, and prospective evaluation with clinical navigators.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 
-This section is not mandatory but can be added to the manuscript if the discussion is unusually long or complex.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Patents}
-
-This section is not mandatory but may be added if there are patents resulting from the work reported in this manuscript.
+The proposed pipeline combines deterministic long-tail search construction with constrained extraction, evidence-backed restoration, and human-mediated maintenance. Across the two development evaluations, it improved paraphrase interpretation and recovered 499 candidate values, of which 426 were classified as exact or supported non-exact after review. These results support further investigation of auditable AI-assisted directory maintenance while preserving a clear boundary between useful assistance and verified clinical authority.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{6pt} 
@@ -397,17 +573,15 @@ This section is not mandatory but may be added if there are patents resulting fr
 %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.}
+\authorcontributions{Conceptualization, Kevin Igweh, Ajmery Sultana and Randy Lin; methodology, Kevin Igweh; software, Kevin Igweh; validation, Kevin Igweh, Ajmery Sultana and Randy Lin; formal analysis, Kevin Igweh; investigation, Kevin Igweh; data curation, Kevin Igweh; writing---original draft preparation, Kevin Igweh; writing---review and editing, Kevin Igweh, Ajmery Sultana and Randy Lin; visualization, Kevin Igweh; supervision, Ajmery Sultana and Randy Lin; project administration, Kevin Igweh. All authors have read and agreed to the published version of the manuscript.}
 
-\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
+\funding{This research received no external funding.}
 
-\institutionalreview{In this section, please add the Institutional Review Board Statement and approval number for studies involving humans or animals. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add ``The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans OR ``The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals OR ``Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR ``Not applicable.” for studies not involving humans or animals.}
+\institutionalreview{Not applicable. The studies analyzed public organizational metadata and did not involve human participants, patient records, or animal subjects.}
 
-\informedconsent{Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
+\informedconsent{Not applicable. The studies did not involve human participants or identifiable personal data.}
 
-Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper.” if applicable.}
-
-\dataavailability{We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Where no new data were created, or where data are unavailable due to privacy or ethical restrictions, a statement is still required. Suggested Data Availability Statements are available in the section ``MDPI Research Data Policies” at \url{https://www.mdpi.com/ethics}.} 
+\dataavailability{The study fixtures, evaluation reports, mismatch audit, and analysis scripts are available from the corresponding author on reasonable request. The benchmark uses public organizational metadata and provider-derived evidence; source availability may change over time and third-party datasets remain subject to their original access conditions.}
 
 %\durcstatement{Current research is limited to the [please insert a specific academic field, e.g., XXX], which is beneficial [share benefits and/or primary use] and does not pose a threat to public health or national security. Authors acknowledge the dual-use potential of the research involving xxx and confirm that all necessary precautions have been taken to prevent potential misuse. As an ethical responsibility, authors strictly adhere to relevant national and international laws about DURC. Authors advocate for responsible deployment, ethical considerations, regulatory compliance, and transparent reporting to mitigate misuse risks and foster beneficial outcomes.}
 
@@ -420,9 +594,9 @@ Written informed consent for publication must be obtained from participating pat
 %% Only for journal Nursing Reports
 %\useofartificialintelligence{Please describe in detail any and all uses of artificial intelligence (AI) or AI-assisted tools used in the preparation of the manuscript. This may include, but is not limited to, language translation, language editing and grammar, or generating text. Alternatively, please state that “AI or AI-assisted tools were not used in drafting any aspect of this manuscript”.}
 
-\acknowledgments{In this section, you can acknowledge any support given that is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments). Where GenAI has been used for purposes such as generating text, data, or graphics, or for study design, data collection, analysis, or interpretation of data, please add ``During the preparation of this manuscript/study, the author(s) used [tool name, version information] for the purposes of [description of use]. The authors have reviewed and edited the output and take full responsibility for the content of this publication.”}
+\acknowledgments{The authors acknowledge Algoma University for supporting the research environment. During preparation of this manuscript, the authors used GitHub Copilot for drafting assistance, language editing, and formatting support. The authors reviewed and edited all generated material and take full responsibility for the content of this publication.}
 
-\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflicts of interest.” Authors must identify and declare any personal circumstances or interests that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the~results”.} 
+\conflictsofinterest{The authors declare no conflicts of interest.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Optional
@@ -435,15 +609,64 @@ The following abbreviations are used in this manuscript:\\
 
 \noindent 
 \begin{tabular}{@{}ll}
-MDPI & Multidisciplinary Digital Publishing Institute\\
-DOAJ & Directory of open access journals\\
-TLA   & Three-letter acronym\\
-LD      & Linear dichroism
+ARS & Agentic Research System\\
+QEM & Query Expansion Matrix\\
+LLM & Large Language Model\\
+SDoH & Social Determinants of Health
 \end{tabular}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Optional
+\appendixtitles{yes}
+\appendixstart
+\appendix
+\section{Evaluation Protocol Details}\label{app:evaluation_protocol}
+
+This appendix records the compact decision schema used by the two evaluations. The full fixtures, raw reports, mismatch audit, and execution scripts are retained as research materials rather than reproduced here.
+
+\subsection{Study 1 Schema and Conditions}
+\begin{table}[H]
+\caption{Study 1 structured filter schema.}
+\label{tab:appendix_study1_schema}
+\small
+\begin{tabularx}{\textwidth}{@{}p{2.3cm}X@{}}
+\toprule
+\textbf{Field} & \textbf{Purpose} \\
+\midrule
+Need & Target service or problem area. \\
+Modality & Delivery mode, such as in-person or remote. \\
+Population & Intended population or age group. \\
+Coverage & Eligibility or payment coverage. \\
+Location & Municipality or geographic area. \\
+Language & Requested service language. \\
+Urgency & Timing requirement, such as same-day service. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The 200-query fixture contains ten filter families crossed with ten Ontario locations. Each family contributes one canonical and one paraphrased request. The evaluated conditions are: (i) basic deterministic rules; (ii) rules plus ontology aliases; (iii) semantic matching without language-model fallback; (iv) constrained Gemini fallback without semantic matching; and (v) semantic matching combined with constrained Gemini. Exact-case accuracy requires all seven fields to match the gold record.
+
+\subsection{Study 2 Classification Rules}
+\begin{table}[H]
+\caption{Study 2 field-outcome definitions.}
+\label{tab:appendix_study2_outcomes}
+\small
+\begin{tabularx}{\textwidth}{@{}p{3.0cm}X@{}}
+\toprule
+\textbf{Outcome} & \textbf{Decision rule} \\
+\midrule
+Exact & Candidate matches the sealed reference after field-specific normalization. \\
+Supported, non-exact & Candidate differs from the reference but manual evidence supports it as a valid value for the intended organization. \\
+Weakly supported & Candidate is plausible or related but requires additional confirmation before acceptance. \\
+Unresolved & No usable value was returned, or the candidate was malformed or rejected during review. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Automated entity support combines agreement across organization name, city, address, postal code, and website domain. The mismatch audit then groups non-exact values into representation differences, likely valid alternatives, and cases requiring verification. Website outputs containing business-hours text or unsuitable social-media URLs are treated as extraction errors and remain unresolved.
+
+\iffalse
 \appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
 \appendixstart
 \appendix
@@ -468,6 +691,7 @@ Entry 2		& Data			& Data\\
 \section[\appendixname~\thesection]{}
 
 All appendix sections must be cited in the main text. In the appendices, figures, tables, etc., should be labeled starting with “A”, e.g., Figure A1, Figure A2, etc.
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\isPreprints{}{% This command is only used for ``preprints''.
@@ -493,27 +717,81 @@ All appendix sections must be cited in the main text. In the appendices, figures
 
 % ACS format
 \begin{thebibliography}{999}
-% Reference 1
-\bibitem{ref-journal}
-Author~1, T. The title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149.
-% Reference 2
-\bibitem{ref-book1}
-Author~2, L. The title of the cited contribution. In {\em The Book Title}; Editor 1, F., Editor 2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58.
-% Reference 3
-\bibitem{ref-book2}
-Author 1, A.; Author 2, B. \textit{Book Title}, 3rd ed.; Publisher: Publisher Location, Country, 2008; pp. 154--196.
-% Reference 4
-\bibitem{ref-unpublish}
-Author 1, A.B.; Author 2, C. Title of Unpublished Work. \textit{Abbreviated Journal Name} year, \textit{phrase indicating stage of publication (submitted; accepted; in press)}.
-% Reference 5
-\bibitem{ref-url}
-Title of Site. Available online: URL (accessed on Day Month Year).
-% Reference 6
-\bibitem{ref-proceeding}
-Author 1, A.B.; Author 2, C.D.; Author 3, E.F. Title of presentation. In Proceedings of the Name of the Conference, Location of Conference, Country, Date of Conference (Day Month Year); Abstract Number (optional), Pagination (optional).
-% Reference 7
-\bibitem{ref-thesis}
-Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Location of University, Date of Completion.
+\bibitem{nakano2021webgpt}
+Nakano, R.; Hilton, J.; Stoica, I.; et al. WebGPT: Browser-Assisted Question-Answering with Human Feedback. In \textit{Advances in Neural Information Processing Systems}; 2021.
+
+\bibitem{zhou2024webarena}
+Zhou, Y.; et al. WebArena: A Realistic Web Environment for Building Autonomous Agents. In \textit{International Conference on Learning Representations}; 2024.
+
+\bibitem{yao2023react}
+Yao, S.; Zhao, J.; Yu, D.; et al. ReAct: Synergizing Reasoning and Acting in Language Models. In \textit{International Conference on Learning Representations}; 2023.
+
+\bibitem{khao2023seo}
+Khao, A.; et al. Agentic Search and the SEO Trap in Generative Models. \textit{Journal of Artificial Intelligence Research} \textbf{2023}.
+
+\bibitem{abdulnazar2024}
+Abdulnazar, A.; et al. Large Language Models for Clinical Text Cleansing Enhance Medical Concept Normalization. \textit{IEEE Access} \textbf{2024}.
+
+\bibitem{ji2023hallucination}
+Ji, Z.; et al. Survey of Hallucination in Natural Language Generation. \textit{ACM Computing Surveys} \textbf{2023}, \textit{55}.
+
+\bibitem{lewis2020rag}
+Lewis, P.; et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. In \textit{Advances in Neural Information Processing Systems}; 2020.
+
+\bibitem{amershi2014}
+Amershi, S.; et al. Power to the People: The Role of Humans in Interactive Machine Learning. \textit{AI Magazine} \textbf{2014}, \textit{35}.
+
+\bibitem{olawade2026human}
+Olawade, D.B.; et al. Human-in-the-Loop Artificial Intelligence in Healthcare: Applications, Outcomes, and Implementation Challenges. \textit{International Journal of Medical Informatics} \textbf{2026}, \textit{213}, 106362.
+
+\bibitem{toolformer2023}
+Schick, T.; et al. Toolformer: Language Models Can Teach Themselves to Use Tools. \textit{Advances in Neural Information Processing Systems} \textbf{2023}.
+
+\bibitem{gorilla2023}
+Patil, S.G.; et al. Gorilla: Large Language Model Connected with Massive APIs. \textit{arXiv} \textbf{2023}, arXiv:2305.15334.
+
+\bibitem{toolllm2023}
+Qin, Y.; et al. ToolLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs. \textit{arXiv} \textbf{2023}, arXiv:2307.16789.
+
+\bibitem{webvoyager2024}
+He, H.; et al. WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models. \textit{arXiv} \textbf{2024}, arXiv:2401.13919.
+
+\bibitem{autogen2023}
+Wu, Q.; et al. AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. In \textit{International Conference on Learning Representations}; 2023.
+
+\bibitem{babyagi2023}
+Richards, Y. BabyAGI: Task-Driven Autonomous Agent. GitHub Repository, 2023.
+
+\bibitem{deepresearch2025}
+OpenAI. Introducing Deep Research. OpenAI Research Blog, 2025.
+
+\bibitem{gemini2024}
+Google DeepMind. Gemini 1.5: Unlocking Multimodal Understanding across Millions of Tokens of Context. \textit{arXiv} \textbf{2024}, arXiv:2403.05530.
+
+\bibitem{claude2024}
+Anthropic. Developing a Computer Use Model. Anthropic News, 2024.
+
+\bibitem{qiu2020}
+Qiu, X.; et al. Pre-Trained Models for Natural Language Processing: A Survey. \textit{Science China Technological Sciences} \textbf{2020}, \textit{63}.
+
+\bibitem{lample2016}
+Lample, G.; et al. Neural Architectures for Named Entity Recognition. In \textit{Proceedings of NAACL}; 2016.
+
+\bibitem{healthcare_survey2025}
+He, K.; et al. A Survey of Large Language Models for Healthcare: From Data, Technology, and Applications to Accountability and Ethics. \textit{arXiv} \textbf{2025}, arXiv:2310.05694.
+
+\bibitem{llm_survey2023}
+Zhao, W.X.; et al. A Survey of Large Language Models. \textit{arXiv} \textbf{2023}, arXiv:2303.18223.
+
+\bibitem{gero2023}
+Gero, Z.; et al. Self-Verification Improves Few-Shot Clinical Information Extraction. \textit{arXiv} \textbf{2023}, arXiv:2306.00024.
+
+\bibitem{dhuliawala2023}
+Dhuliawala, S.; et al. Chain-of-Verification Reduces Hallucination in Large Language Models. \textit{arXiv} \textbf{2023}, arXiv:2309.11495.
+
+\bibitem{fowler_event}
+Fowler, M. Event Sourcing. Martin Fowler. Available online: \url{https://martinfowler.com/eaaDev/EventSourcing.html} (accessed on 2 October 2026).
+
 \end{thebibliography}
 
 % If authors have biography, please use the format below
@@ -525,10 +803,6 @@ Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Loc
 %\bio
 %{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
 %{\textbf{Firstname Lastname} Biography of second author}
-
-% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
-% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
-% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% for journal Sci
