@@ -5,6 +5,7 @@
 \documentclass[journal,article,submit,moreauthors]{Definitions/mdpi} 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning,shapes.geometric}
 %\documentclass[journal,article,submit,moreauthors,unicode]{Definitions/mdpi} % For some letters Palatino lacks
 %\documentclass[preprints,article,submit,moreauthors]{Definitions/mdpi} 
 %\documentclass[preprints,article,submit,moreauthors,unicode]{Definitions/mdpi} 
@@ -75,13 +76,13 @@
 
 % Author and affiliation information
 \newcommand{\orcidauthorA}{0009-0004-6827-1373}
-\Author{Kevin Igweh $^{1}$\orcidA{}, Ajmery Sultana $^{1,}$* and Randy Lin $^{1}$}
-\AuthorNames{Kevin Igweh, Ajmery Sultana and Randy Lin}
+\Author{Kevin Igweh $^{1}$\orcidA{}, Ajmery Sultana $^{1,}$*, Randy Lin $^{1,}$* and Teryn Bruni $^{1}$}
+\AuthorNames{Kevin Igweh, Ajmery Sultana, Randy Lin and Teryn Bruni}
 \address{%
 $^{1}$ \quad School of Graduate Studies, Algoma University, Brampton, ON, Canada}
 
 % Corresponding author email should be added before submission.
-\corres{Correspondence: Ajmery Sultana; School of Graduate Studies, Algoma University, Brampton, ON, Canada.}
+\corres{Correspondence: Ajmery Sultana and Randy Lin; School of Graduate Studies, Algoma University, Brampton, ON, Canada.}
 
 % Current address and/or shared authorship
 %\firstnote{Current address: Affiliation.}  
@@ -187,17 +188,82 @@ The ARS begins with a service taxonomy, geographic scope, and source categories.
 
 Retrieved pages are converted into a normalized text representation before schema-constrained extraction. The extraction layer identifies organization names, addresses, contact fields, service categories, and operational information while retaining source URLs and excerpts. Deterministic rules and semantic matching provide predictable handling for known patterns, while an optional constrained language-model fallback handles unresolved language only by proposing values from the permitted ontology. Unsupported proposals can be rejected or retained as residual terms rather than silently added to the schema.
 
-Candidate records then pass through entity resolution. Exact identifiers and normalized names and addresses provide inexpensive high-volume matching; string similarity and contextual review handle ambiguous cases. The resulting records are routed through registry matching, domain-scoped web verification, and provider signals. These automated signals support triage, but final inclusion of novel entities in the extended ground truth requires independent manual review. The pipeline therefore produces both a resource record and an evidence trail describing how that record was discovered, matched, and verified.
+Candidate records then pass through entity resolution. Exact identifiers and normalized names and addresses provide inexpensive high-volume matching; string similarity and contextual review handle ambiguous cases. The resulting records are routed through registry matching, domain-scoped web verification, and provider signals. These automated signals support triage, but final inclusion of novel entities in the extended ground truth requires independent manual review. The pipeline therefore produces both a resource record and an evidence trail describing how that record was discovered, matched, and verified. Figure~\ref{fig:journal_ars_pipeline} summarizes this horizontal discovery and verification flow.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+	scale=1.0, transform shape,
+	node distance=0.62cm,
+	process/.style={rectangle, rounded corners, draw=blue!65, fill=blue!8, text width=7.0cm, minimum height=0.78cm, align=center, font=\scriptsize},
+	phase/.style={font=\scriptsize\bfseries, align=center, draw=none, fill=none, inner sep=2pt},
+	verify/.style={rectangle, rounded corners, draw=green!55!black, fill=green!10, text width=7.0cm, minimum height=0.78cm, align=center, font=\scriptsize},
+	io/.style={rectangle, rounded corners, draw=black!65, fill=gray!15, text width=7.0cm, minimum height=0.72cm, align=center, font=\scriptsize},
+	arrow/.style={-latex, thick, draw=black!65}
+]
+\node (input) [io] {\textbf{Input:} Service taxonomy + geographic scope};
+\node (phase1) [phase, below=of input] {Phase 1 --- Discovery Pipeline};
+\node (qem) [process, below=of phase1] {\textbf{Node 1: Query Expansion Matrix (QEM)}\\Deterministic four-axis query permutation};
+\node (scrape) [process, below=of qem] {\textbf{Node 2: Web Scraping and Conversion}\\HTML extraction $\rightarrow$ Markdown conversion};
+\node (extract) [process, below=of scrape] {\textbf{Node 3: LLM Extraction}\\Entity parsing into a constrained JSON schema};
+\node (dedup) [process, below=of extract] {\textbf{Node 4: Deduplication}\\Five-layer entity resolution};
+\node (phase2) [phase, below=of dedup] {Phase 2 --- Agent Verification};
+\node (match) [verify, below=of phase2] {\textbf{Stage 1: Ground-Truth Matching}\\String similarity against curated registries};
+\node (search) [verify, below=of match] {\textbf{Stage 2: Domain-Scoped Search}\\Targeted search verification of unmatched entities};
+\node (api) [verify, below=of search] {\textbf{Stage 3: Provider Validation}\\Operational and domain-alignment checks};
+\node (output) [io, below=of api, node distance=0.8cm] {\textbf{Output:} Verified community-service inventory};
+\draw [arrow] (input) -- (phase1);
+\draw [arrow] (phase1) -- (qem);
+\draw [arrow] (qem) -- (scrape);
+\draw [arrow] (scrape) -- (extract);
+\draw [arrow] (extract) -- (dedup);
+\draw [arrow] (dedup) -- (phase2);
+\draw [arrow] (phase2) -- (match);
+\draw [arrow] (match) -- (search);
+\draw [arrow] (search) -- (api);
+\draw [arrow] (api) -- (output);
+\end{tikzpicture}
+\caption{ARS discovery and verification pipeline adapted from thesis Figure 3.1. The vertical layout retains the full sequence of discovery, extraction, entity resolution, and evidence-verification stages.}
+\label{fig:journal_ars_pipeline}
+\end{figure}
 
 \subsection{Pathways Maintenance Layer}
 
 Pathways converts the verified inventory into a searchable projection backed by an event-sourced ledger. The ledger stores immutable events such as field verification, issue reports, restoration requests, and accepted corrections. Current resource state is derived from those events rather than replacing the historical record. This design preserves chain of custody and allows the system to distinguish a value’s current display state from the evidence and interactions that produced it.
 
-The user workflow follows four connected phases. In \textit{Find}, structured filters and resource evidence are used to present candidate services. In \textit{Verify}, a navigator confirms individual fields when the information appears current. In \textit{Ask}, a stale or missing field becomes a structured restoration request that can be enriched by the ARS. In \textit{Close}, a human operator reviews the proposed value and accepts, rejects, or leaves it unresolved. Each action becomes an event that can update the derived projection while retaining the prior state.
+The user workflow follows four connected phases, shown in Figure~\ref{fig:journal_pathways_flywheel}. In \textit{Find}, structured filters and resource evidence are used to present candidate services. In \textit{Verify}, a navigator confirms individual fields when the information appears current. In \textit{Ask}, a stale or missing field becomes a structured restoration request that can be enriched by the ARS. In \textit{Close}, a human operator reviews the proposed value and accepts, rejects, or leaves it unresolved. Each action becomes an event that can update the derived projection while retaining the prior state.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+	scale=0.72, transform shape,
+	node distance=1.45cm and 1.6cm,
+	process/.style={rectangle, rounded corners, draw=black!65, fill=green!8, text width=2.45cm, minimum height=0.95cm, align=center, font=\small},
+	decision/.style={diamond, aspect=2, draw=black!65, fill=yellow!12, text width=2.0cm, align=center, inner sep=2pt, font=\small},
+	worker/.style={rectangle, rounded corners, draw=black!65, fill=purple!8, text width=2.45cm, minimum height=0.95cm, align=center, font=\small},
+	arrow/.style={-latex, thick, draw=black!65}
+]
+\node (find) [process] {1. Find\\Search and rank};
+\node (fresh) [decision, below=of find] {Data\\fresh?};
+\node (verify) [process, left=of fresh] {2. Verify\\Confirm field};
+\node (ask) [process, right=of fresh] {3. Ask\\Flag stale data};
+\node (worker) [worker, below=of ask] {ARS background\\worker};
+\node (close) [process, below=of fresh, yshift=-1.35cm] {4. Close\\Resolve and update};
+\draw [arrow] (find) -- (fresh);
+\draw [arrow] (fresh) -- node[above] {Yes} (verify);
+\draw [arrow] (fresh) -- node[above] {No} (ask);
+\draw [arrow] (ask) -- (worker);
+\draw [arrow] (worker) |- node[below, pos=0.7] {Suggests fix} (close.east);
+\draw [arrow] (verify) |- (close.west);
+\draw [arrow] (close.south) -- ++(0,-0.65cm) -| node[pos=0.25, below] {Updates projection} ([xshift=-0.75cm]verify.west) |- (find.west);
+\end{tikzpicture}
+\caption{Pathways Find--Verify--Ask--Close flywheel adapted from thesis Figure 4.7. Human validation updates the derived projection, while stale-field requests delegate restoration to the ARS.}
+\label{fig:journal_pathways_flywheel}
+\end{figure}
 
 \subsection{Integrated Evidence Flow}
 
-The architecture treats automation as a discovery and enrichment mechanism rather than an authority. ARS broadens the candidate space and proposes structured values; Pathways makes provenance visible and reserves acceptance decisions for evidence-backed review. This creates a common contract between the systems: every restored value must identify its target organization, requested field, supporting source, and adjudication status. The contract supports reproducible evaluation and allows unresolved or weakly supported values to remain visible as review work instead of being presented as verified facts.
+The two figures show how the system moves from broad discovery to accountable maintenance. ARS broadens the candidate space and proposes structured values; Pathways makes provenance visible and reserves acceptance decisions for evidence-backed review. This creates a common contract between the systems: every restored value must identify its target organization, requested field, supporting source, and adjudication status. The contract supports reproducible evaluation and allows unresolved or weakly supported values to remain visible as review work instead of being presented as verified facts.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
@@ -573,7 +639,7 @@ The proposed pipeline combines deterministic long-tail search construction with 
 %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\authorcontributions{Conceptualization, Kevin Igweh, Ajmery Sultana and Randy Lin; methodology, Kevin Igweh; software, Kevin Igweh; validation, Kevin Igweh, Ajmery Sultana and Randy Lin; formal analysis, Kevin Igweh; investigation, Kevin Igweh; data curation, Kevin Igweh; writing---original draft preparation, Kevin Igweh; writing---review and editing, Kevin Igweh, Ajmery Sultana and Randy Lin; visualization, Kevin Igweh; supervision, Ajmery Sultana and Randy Lin; project administration, Kevin Igweh. All authors have read and agreed to the published version of the manuscript.}
+\authorcontributions{Conceptualization, Kevin Igweh, Ajmery Sultana and Randy Lin; methodology, Kevin Igweh; software, Kevin Igweh; validation, Kevin Igweh, Ajmery Sultana and Randy Lin; formal analysis, Kevin Igweh; investigation, Kevin Igweh; data curation, Kevin Igweh; writing---original draft preparation, Kevin Igweh; writing---review and editing, Kevin Igweh, Ajmery Sultana, Randy Lin and Teryn Bruni; visualization, Kevin Igweh; supervision, Ajmery Sultana and Randy Lin; project administration, Kevin Igweh. All authors have read and agreed to the published version of the manuscript.}
 
 \funding{This research received no external funding.}
 
@@ -695,6 +761,7 @@ All appendix sections must be cited in the main text. In the appendices, figures
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\isPreprints{}{% This command is only used for ``preprints''.
+\clearpage
 \begin{adjustwidth}{-\extralength}{0cm}
 %} % If the paper is ``preprints'', please uncomment this parenthesis.
 %\printendnotes[custom] % Un-comment to print a list of endnotes
